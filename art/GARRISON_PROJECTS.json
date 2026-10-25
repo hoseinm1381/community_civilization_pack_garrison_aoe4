@@ -1,0 +1,35 @@
+{
+  "schema": "community-civilization-pack.art-projects/v1",
+  "final_package_key": "community_civilization_pack",
+  "final_project_guid": "b7fcea91-257b-408f-b9e8-ae4d8bc402e1",
+  "gameplay_authority": "../community_civilization_pack.aoe4mod",
+  "projects": [
+    {
+      "path_from_root": "art/garrison_library/Mods/community_civilization_pack",
+      "purpose": "Original preparation settings project; not the complete release asset cook",
+      "retention": "persistent"
+    },
+    {
+      "path_from_root": "output/release_010/houses/library/Mods/community_civilization_pack",
+      "purpose": "Four house material variant carriers; native geometry remodels are integrated by exact material/collection scope",
+      "editable_sources": "art/authoring/houses_010",
+      "retained_exports": "art/exports/houses_010",
+      "frozen_handoff": "output/release_010/houses/house-handoff.json",
+      "retention": "required rebuild project/registered inputs"
+    },
+    {
+      "path_from_root": "output/release_010/integration/library/Mods/community_010_bindings",
+      "purpose": "Two scratch building exports and seven generator-owned private attachment identities",
+      "editable_sources": "art/authoring/traps_010",
+      "retained_exports": "art/exports/traps_010",
+      "frozen_handoff": "art/recipes/release_010/traps_010.json",
+      "retention": "required rebuild project/registered inputs"
+    }
+  ],
+  "generated_game_mode_enabled": false,
+  "live_reload": false,
+  "final_assembly": "tools/release_010/integration.py",
+  "release_command": "tools/build_release.ps1",
+  "current_candidate_pointer": "output/release_010/current-candidate.json",
+  "policy": "Family cooks are intermediates. Only approved private media and lists enter the final baseline archive. Generated prototype actors never replace Vietnam actors. Do not install intermediate family archives."
+}

@@ -1,0 +1,19 @@
+import("modifiers.scar")
+
+VietnamSiegeResearchState = {players = {}}
+
+-- Reinforced Frames converts to the native reinforced child. Its health_ext
+-- owns exactly 65% ranged armor; no additional received-damage multiplier.
+-- Retain these lifecycle hooks and remove any old tracked runtime modifier.
+function VietnamSiegeResearch_Update(player)
+    local entry = VietnamSiegeResearchState.players[player.index]
+    if entry ~= nil then
+        Modifier_Remove(entry.handle)
+        VietnamSiegeResearchState.players[player.index] = nil
+    end
+end
+
+function VietnamSiegeResearch_Cleanup()
+    for _, entry in pairs(VietnamSiegeResearchState.players) do Modifier_Remove(entry.handle) end
+    VietnamSiegeResearchState.players = {}
+end

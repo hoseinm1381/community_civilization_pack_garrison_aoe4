@@ -1,0 +1,148 @@
+{
+  "schema": "ccp-060-foot-tier-donor-batch/v1",
+  "status": "pinned_donor_preparation_only",
+  "design_basis": "Approved normal-distance Vietnamese representatives; each tier retains its exact stock body, 48-bone rig, age silhouette, animations, weapons, material effects and owner pattern. New art uses broad weighted native-UV garment surfaces and one native albedo variant per donor atlas.",
+  "source_inventory": {
+    "complete_donors": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\complete-donors\\complete-donors.json",
+    "complete_donors_sha256": "80dee60098c240033b91b29b7e565f94bf163ba0c54ee502bfb776975809c467",
+    "complete_donors_next": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\complete-donors-next\\complete-donors-next.json",
+    "complete_donors_next_sha256": "abee262063f60fed0c3f13597a1a8d9f5bd5a8bf451fc9d27a1cbd84df879585"
+  },
+  "models": [
+    {
+      "age": 1,
+      "model_path": "art/civilizations/chinese/humans/chi_infantry_light_age01/chi_infantry_light_age01.rgm",
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\complete-donors-next\\decoded\\chi_infantry_light_age01\\verified-50d4ef0235c4a59b122d\\e53062c25c6728df29e0\\decoded-static.json",
+      "manifest_sha256": "a391276aec5880f32c19e5d848edfa8a5b90e0f59fa62da5af8d20416b3741d6",
+      "stock_lod1_triangles": 1210,
+      "skeleton_bones": 48,
+      "consuming_families": [
+        "vn_unit_spearman",
+        "vn_unit_spearman_fire"
+      ],
+      "weapon_rule": "Preserve each consumer native weapon and attachments",
+      "source_coverage": "decoded_new"
+    },
+    {
+      "age": 2,
+      "model_path": "art/civilizations/chinese/humans/chi_infantry_light_age02/chi_infantry_light_age02.rgm",
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\pilots\\spear2\\decoded\\verified-b05b59aa8e758c48d0d7\\836b539ca5c6980f0860\\decoded-static.json",
+      "manifest_sha256": "7725efa26886ceade6020438f384fcae396ef505ecd8cbca8ad1e5ab3e2caae2",
+      "stock_lod1_triangles": 1236,
+      "skeleton_bones": 48,
+      "consuming_families": [
+        "vn_unit_spearman",
+        "vn_unit_spearman_fire"
+      ],
+      "weapon_rule": "Preserve each consumer native weapon and attachments",
+      "source_coverage": "existing_verified"
+    },
+    {
+      "age": 3,
+      "model_path": "art/civilizations/chinese/humans/chi_infantry_light_age03/chi_infantry_light_age03.rgm",
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\complete-donors-next\\decoded\\chi_infantry_light_age03\\verified-e7f933e974384f143c95\\e37a09fd923d364744ef\\decoded-static.json",
+      "manifest_sha256": "b7adf06a1c78d6ab9390c44a88aab2e15ab47ef2f39090be0a739f70e035a79d",
+      "stock_lod1_triangles": 1232,
+      "skeleton_bones": 48,
+      "consuming_families": [
+        "vn_unit_spearman",
+        "vn_unit_spearman_fire"
+      ],
+      "weapon_rule": "Preserve each consumer native weapon and attachments",
+      "source_coverage": "decoded_new"
+    },
+    {
+      "age": 4,
+      "model_path": "art/civilizations/chinese/humans/chi_infantry_light_age04/chi_infantry_light_age04.rgm",
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\complete-donors-next\\decoded\\chi_infantry_light_age04\\verified-3814fb7c5189f89f8e5f\\0a8b26d6a763a79c8628\\decoded-static.json",
+      "manifest_sha256": "ea5022219497ef1617a8c34da7d057b865a4a91bf7ad28351057bb6e70e7cf4d",
+      "stock_lod1_triangles": 1326,
+      "skeleton_bones": 48,
+      "consuming_families": [
+        "vn_unit_spearman",
+        "vn_unit_spearman_fire"
+      ],
+      "weapon_rule": "Preserve each consumer native weapon and attachments",
+      "source_coverage": "decoded_new"
+    },
+    {
+      "age": 2,
+      "model_path": "art/civilizations/chinese/humans/chi_ranged_bow_age02/chi_ranged_bow_age02.rgm",
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\donors\\decoded\\archer02\\dd37508a5894fb1dbf73\\decoded-static.json",
+      "manifest_sha256": "3aa5479635598798eb85125194e83b06ac90072dc3ab176441c538dfe11ae6db",
+      "stock_lod1_triangles": 1236,
+      "skeleton_bones": 48,
+      "consuming_families": [
+        "vn_unit_archer"
+      ],
+      "weapon_rule": "Preserve each consumer native weapon and attachments",
+      "source_coverage": "existing_verified"
+    },
+    {
+      "age": 3,
+      "model_path": "art/civilizations/chinese/humans/chi_ranged_bow_age03/chi_ranged_bow_age03.rgm",
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\ranged-rig-audit\\decoded\\chi_ranged_bow_age03\\94cd86ab105e5d8e8076\\decoded-static.json",
+      "manifest_sha256": "a8be1a104d50325d8f4e39df27a367b010c87dee36de79fb33321246d4b5e322",
+      "stock_lod1_triangles": 1192,
+      "skeleton_bones": 48,
+      "consuming_families": [
+        "vn_unit_archer"
+      ],
+      "weapon_rule": "Preserve each consumer native weapon and attachments",
+      "source_coverage": "existing_verified"
+    },
+    {
+      "age": 4,
+      "model_path": "art/civilizations/chinese/humans/chi_ranged_bow_age04/chi_ranged_bow_age04.rgm",
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\ranged-rig-audit\\decoded\\chi_ranged_bow_age04\\3242d96d53ac6954048c\\decoded-static.json",
+      "manifest_sha256": "e60b7cc2c92b529f0c984f044abd8420c7286fd18ae7fc96734f5194ef065603",
+      "stock_lod1_triangles": 1146,
+      "skeleton_bones": 48,
+      "consuming_families": [
+        "vn_unit_archer"
+      ],
+      "weapon_rule": "Preserve each consumer native weapon and attachments",
+      "source_coverage": "existing_verified"
+    },
+    {
+      "age": 3,
+      "model_path": "art/civilizations/chinese/humans/chi_ranged_crossbow_age03/chi_ranged_crossbow_age03.rgm",
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\ranged-rig-audit\\decoded\\chi_ranged_crossbow_age03\\bde87e879fc1ebde5d7a\\decoded-static.json",
+      "manifest_sha256": "f30476cc0a97b947d949d18836e6918c3764038c7a971d9bf41998a5782bc817",
+      "stock_lod1_triangles": 1475,
+      "skeleton_bones": 48,
+      "consuming_families": [
+        "vn_unit_crossbowman"
+      ],
+      "weapon_rule": "Preserve each consumer native weapon and attachments",
+      "source_coverage": "existing_verified"
+    },
+    {
+      "age": 4,
+      "model_path": "art/civilizations/chinese/humans/chi_ranged_crossbow_age04/chi_ranged_crossbow_age04.rgm",
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\ranged-rig-audit\\decoded\\chi_ranged_crossbow_age04\\a51db8e0919684cca706\\decoded-static.json",
+      "manifest_sha256": "984b383fadaedb88c74029dc5e73cea99694b5078f9ff0d709a56fc69d58482c",
+      "stock_lod1_triangles": 1499,
+      "skeleton_bones": 48,
+      "consuming_families": [
+        "vn_unit_crossbowman"
+      ],
+      "weapon_rule": "Preserve each consumer native weapon and attachments",
+      "source_coverage": "existing_verified"
+    },
+    {
+      "age": 4,
+      "model_path": "art/civilizations/chinese/humans/chi_ranged_cannoneer_age04/chi_ranged_cannoneer_age04.rgm",
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\ranged-rig-audit\\decoded\\chi_ranged_cannoneer_age04\\6eb6037cfdd06246825c\\decoded-static.json",
+      "manifest_sha256": "d2cbf376f49bcf7986e8ef994056b37b30b64c3b1ddd78a5c3370deb6501b2fb",
+      "stock_lod1_triangles": 1198,
+      "skeleton_bones": 48,
+      "consuming_families": [
+        "vn_unit_handcannon"
+      ],
+      "weapon_rule": "Preserve each consumer native weapon and attachments",
+      "source_coverage": "existing_verified"
+    }
+  ],
+  "boundaries": "No gameplay tuning or native binding changes; man-at-arms, villagers, mounted units, elephant and siege are separate. Archer tier ownership awaits artist coordination."
+}

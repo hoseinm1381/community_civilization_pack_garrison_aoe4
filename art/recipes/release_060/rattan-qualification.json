@@ -1,0 +1,23 @@
+{
+  "schema": "ccp-060-rattan-qualification/v1",
+  "status": "native-attachment-route-unresolved-no-overlay-assumption",
+  "existing_upgrade": "upgrade\\vietnam\\vn_ratten_shield_vit",
+  "unchanged_behavior_owner": "assets/scar/vietnam/rattan_armor.scar",
+  "entities": ["vn_unit_archer_2_vit", "vn_unit_archer_3_vit", "vn_unit_archer_4_vit", "vn_unit_crossbowman_3_chi", "vn_unit_crossbowman_4_chi", "vn_unit_handcannon_4_chi"],
+  "visuals": {"before": "approved base outfit without rattan armor or shield", "after": "woven torso protection and back-carried shield clear of quiver and weapon motions"},
+  "official_precedent": {
+    "member": "attrib/ebps/races/chinese/units/unit_villager_1_chi.rgd",
+    "mechanism": "tier_ext upgrade-gated attachment lists with empty entity and squad upgrade targets",
+    "evidence": "output/release_060/rattan-probe/report.json",
+    "limit": "This confirms a stock non-converting visual tier pattern, not an additive overlay. Source-parity compiled comparison finds a single complete tier group on each of the six ranged actors and overrideParent=True on its list. Do not assume a parallel group composes meshes or preserves tier behavior."
+  },
+  "compiled_compatibility_evidence": "output/release_060/rattan-probe/compatibility-matrix.json",
+  "actual_upgrade_pbgid": 1073742057,
+  "distinct_lookalike_upgrade": {"name": "vn_upgrade_rattan_shields_vit", "pbgid": 1073742066, "use_for_this_feature": false},
+  "next_fixture": "One isolated archer II with modular overlay; use current editor-generated identities and confirmed native serialization, never guessed IDs or template admission flags.",
+  "must_preserve": ["unit identity", "current orders", "health", "stock animation owner", "combat/production/discount rules", "existing +1 ranged armor only"],
+  "required_native_cases": ["research with existing archers moving and attacking", "train after research", "research before tier upgrade", "research after tier upgrade", "two players with different upgrade states", "handcannon discounted and ordinary production", "Chinese and elephants unchanged", "save/load persistence if supported by selected mode"],
+  "approved_fallback": "Defer switch if unreliable without replacement or action disruption; preserve modular art and ship other qualified unit changes.",
+  "source_edits_applied": false,
+  "native_match_tested": false
+}

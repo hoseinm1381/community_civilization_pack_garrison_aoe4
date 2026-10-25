@@ -1,0 +1,224 @@
+{
+  "schema": "ccp-060-ranged-roster/1",
+  "status": "prepared_for_exclusive_blender_authoring",
+  "source_audit": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\ranged-rig-audit\\report.json",
+  "source_audit_sha256": "c01268b5d551f269851135d188f558c089f2178e81404858279fae3050ea9a39",
+  "source_summary": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\ranged-rig-audit\\summary.json",
+  "source_summary_sha256": "3b90c0a6750fa39dc2ea74887958f274729c9a7bd0dc2c08a03a8e6c924ef7b7",
+  "approved_sample": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\selection-seven.json",
+  "approved_sample_sha256": "73bc1a4513a77cbb7f1608c8bb20854491ae5e886b57441df688952cd5de7fa4",
+  "tiers": [
+    {
+      "ebp": "vn_unit_archer_2_vit",
+      "slug": "archer2",
+      "age": 2,
+      "style": "approved v3l teal split tunic, headcloth and owner-color lower panel",
+      "exact_native_body_model": "art/civilizations/chinese/humans/chi_ranged_bow_age02/chi_ranged_bow_age02.rgm",
+      "decoded_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\donors\\decoded\\archer02\\dd37508a5894fb1dbf73\\decoded-static.json",
+      "decoded_manifest_sha256": "3aa5479635598798eb85125194e83b06ac90072dc3ab176441c538dfe11ae6db",
+      "native_lods": [
+        {
+          "lod": "lod1",
+          "vertices": 988,
+          "triangles": 1236
+        },
+        {
+          "lod": "lod2",
+          "vertices": 490,
+          "triangles": 522
+        },
+        {
+          "lod": "lod3",
+          "vertices": 187,
+          "triangles": 155
+        }
+      ],
+      "native_skeleton_bones": 48,
+      "native_palette_bones": 46,
+      "primary_weapon_attachment": "attachments\\attachment_lists\\races\\chinese\\weapons\\wpn_range_archer_2_chi",
+      "primary_weapon_models": [
+        "art/civilizations/common/weapons/ranged/bow_recurve/bow_recurve.rgm"
+      ],
+      "authoring_target": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_060\\ranged_roster\\archer2\\archer2_v1.blend",
+      "approach": "reuse pinned approved v3l source, then export three native Archer LODs"
+    },
+    {
+      "ebp": "vn_unit_archer_3_vit",
+      "slug": "archer3",
+      "age": 3,
+      "style": "fitted teal service tunic, broader cloth shoulders and retained native age-III protection",
+      "exact_native_body_model": "art/civilizations/chinese/humans/chi_ranged_bow_age03/chi_ranged_bow_age03.rgm",
+      "decoded_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\ranged-rig-audit\\decoded\\chi_ranged_bow_age03\\94cd86ab105e5d8e8076\\decoded-static.json",
+      "decoded_manifest_sha256": "a8be1a104d50325d8f4e39df27a367b010c87dee36de79fb33321246d4b5e322",
+      "native_lods": [
+        {
+          "lod": "lod1",
+          "vertices": 956,
+          "triangles": 1192
+        },
+        {
+          "lod": "lod2",
+          "vertices": 495,
+          "triangles": 525
+        },
+        {
+          "lod": "lod3",
+          "vertices": 193,
+          "triangles": 157
+        }
+      ],
+      "native_skeleton_bones": 48,
+      "native_palette_bones": 46,
+      "primary_weapon_attachment": "attachments\\attachment_lists\\races\\chinese\\weapons\\wpn_range_archer_3_chi",
+      "primary_weapon_models": [
+        "art/civilizations/common/weapons/ranged/bow_recurve/bow_recurve.rgm"
+      ],
+      "authoring_target": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_060\\ranged_roster\\archer3\\archer3_v1.blend",
+      "approach": "import exact per-tier donor and remodel native weighted garment/armor surfaces across all three LODs"
+    },
+    {
+      "ebp": "vn_unit_archer_4_vit",
+      "slug": "archer4",
+      "age": 4,
+      "style": "short split overcoat, compact dark padded shoulders and retained age-IV helmet",
+      "exact_native_body_model": "art/civilizations/chinese/humans/chi_ranged_bow_age04/chi_ranged_bow_age04.rgm",
+      "decoded_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\ranged-rig-audit\\decoded\\chi_ranged_bow_age04\\3242d96d53ac6954048c\\decoded-static.json",
+      "decoded_manifest_sha256": "e60b7cc2c92b529f0c984f044abd8420c7286fd18ae7fc96734f5194ef065603",
+      "native_lods": [
+        {
+          "lod": "lod1",
+          "vertices": 921,
+          "triangles": 1146
+        },
+        {
+          "lod": "lod2",
+          "vertices": 470,
+          "triangles": 514
+        },
+        {
+          "lod": "lod3",
+          "vertices": 202,
+          "triangles": 165
+        }
+      ],
+      "native_skeleton_bones": 48,
+      "native_palette_bones": 46,
+      "primary_weapon_attachment": "attachments\\attachment_lists\\races\\chinese\\weapons\\wpn_range_archer_4_chi",
+      "primary_weapon_models": [
+        "art/civilizations/common/weapons/ranged/bow_recurve/bow_recurve.rgm"
+      ],
+      "authoring_target": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_060\\ranged_roster\\archer4\\archer4_v1.blend",
+      "approach": "import exact per-tier donor and remodel native weighted garment/armor surfaces across all three LODs"
+    },
+    {
+      "ebp": "vn_unit_crossbowman_3_chi",
+      "slug": "crossbow3",
+      "age": 3,
+      "style": "teal close tunic under native crossbow armor and dark waist wrap",
+      "exact_native_body_model": "art/civilizations/chinese/humans/chi_ranged_crossbow_age03/chi_ranged_crossbow_age03.rgm",
+      "decoded_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\ranged-rig-audit\\decoded\\chi_ranged_crossbow_age03\\bde87e879fc1ebde5d7a\\decoded-static.json",
+      "decoded_manifest_sha256": "f30476cc0a97b947d949d18836e6918c3764038c7a971d9bf41998a5782bc817",
+      "native_lods": [
+        {
+          "lod": "lod1",
+          "vertices": 1164,
+          "triangles": 1475
+        },
+        {
+          "lod": "lod2",
+          "vertices": 543,
+          "triangles": 567
+        },
+        {
+          "lod": "lod3",
+          "vertices": 207,
+          "triangles": 179
+        }
+      ],
+      "native_skeleton_bones": 48,
+      "native_palette_bones": 46,
+      "primary_weapon_attachment": "attachments\\attachment_lists\\races\\chinese\\weapons\\wpn_range_crossbow_3_chi",
+      "primary_weapon_models": [
+        "art/civilizations/common/weapons/ranged/bow_cross/bow_cross.rgm"
+      ],
+      "authoring_target": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_060\\ranged_roster\\crossbow3\\crossbow3_v1.blend",
+      "approach": "import exact per-tier donor and remodel native weighted garment/armor surfaces across all three LODs"
+    },
+    {
+      "ebp": "vn_unit_crossbowman_4_chi",
+      "slug": "crossbow4",
+      "age": 4,
+      "style": "heavier broad chest guard over dark teal coat, native age-IV helmet and arbalest",
+      "exact_native_body_model": "art/civilizations/chinese/humans/chi_ranged_crossbow_age04/chi_ranged_crossbow_age04.rgm",
+      "decoded_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\ranged-rig-audit\\decoded\\chi_ranged_crossbow_age04\\a51db8e0919684cca706\\decoded-static.json",
+      "decoded_manifest_sha256": "984b383fadaedb88c74029dc5e73cea99694b5078f9ff0d709a56fc69d58482c",
+      "native_lods": [
+        {
+          "lod": "lod1",
+          "vertices": 1253,
+          "triangles": 1499
+        },
+        {
+          "lod": "lod2",
+          "vertices": 582,
+          "triangles": 575
+        },
+        {
+          "lod": "lod3",
+          "vertices": 264,
+          "triangles": 217
+        }
+      ],
+      "native_skeleton_bones": 48,
+      "native_palette_bones": 46,
+      "primary_weapon_attachment": "attachments\\attachment_lists\\races\\chinese\\weapons\\wpn_range_crossbow_4_chi",
+      "primary_weapon_models": [
+        "art/civilizations/common/weapons/ranged/bow_arbalest/bow_arbalest.rgm"
+      ],
+      "authoring_target": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_060\\ranged_roster\\crossbow4\\crossbow4_v1.blend",
+      "approach": "import exact per-tier donor and remodel native weighted garment/armor surfaces across all three LODs"
+    },
+    {
+      "ebp": "vn_unit_handcannon_4_chi",
+      "slug": "handcannon4",
+      "age": 4,
+      "style": "short protected gunner coat with dark padded chest and native firearm rig",
+      "exact_native_body_model": "art/civilizations/chinese/humans/chi_ranged_cannoneer_age04/chi_ranged_cannoneer_age04.rgm",
+      "decoded_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\ranged-rig-audit\\decoded\\chi_ranged_cannoneer_age04\\6eb6037cfdd06246825c\\decoded-static.json",
+      "decoded_manifest_sha256": "d2cbf376f49bcf7986e8ef994056b37b30b64c3b1ddd78a5c3370deb6501b2fb",
+      "native_lods": [
+        {
+          "lod": "lod1",
+          "vertices": 819,
+          "triangles": 1198
+        },
+        {
+          "lod": "lod2",
+          "vertices": 395,
+          "triangles": 506
+        },
+        {
+          "lod": "lod3",
+          "vertices": 185,
+          "triangles": 180
+        }
+      ],
+      "native_skeleton_bones": 48,
+      "native_palette_bones": 46,
+      "primary_weapon_attachment": "attachments\\attachment_lists\\races\\ottoman\\weapons\\wpn_range_handcannon_4_ott",
+      "primary_weapon_models": [
+        "art/civilizations/ottoman/weapons/ott_gun_janissary/ott_gun_janissary.rgm"
+      ],
+      "authoring_target": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_060\\ranged_roster\\handcannon4\\handcannon4_v1.blend",
+      "approach": "import exact per-tier donor and remodel native weighted garment/armor surfaces across all three LODs"
+    }
+  ],
+  "shared_rules": {
+    "anatomy_and_motions": "each tier keeps its exact Chinese donor anatomy, 48-bone rig, 46-bone skin palette and native weapon class/animation owner",
+    "materials": "one shared native atlas/material per tier and LOD; make a private albedo variant only after checking each tier’s own neutral cloth and owner-mask charts",
+    "owner_color": "find safe native pattern mask per tier; never assume Archer II UV coordinates fit other atlases",
+    "geometry": "visible broad garment/armor silhouette changes at stock game distance; preserve donor LOD weights and UVs outside intentional garment faces",
+    "upgrade": "keep Rattan overlay separate; native conditional upgrade switch unqualified and deferred",
+    "scope": "authoring and private art integration only, no new gameplay tiers or weapon remakes"
+  }
+}

@@ -1,0 +1,240 @@
+FFF...FFFFFFFFFFFFFFFFFFFF.FFFFFF
+======================================================================
+FAIL: test_china_view_restores_parent_and_dynasty (test_runtime_repairs.DynastyRepairTests.test_china_view_restores_parent_and_dynasty)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 139, in test_china_view_restores_parent_and_dynasty
+    self.assertIsNotNone(self.g.properties['DynastyUI'])
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_ui_recreation_gets_collapsed_again (test_runtime_repairs.DynastyRepairTests.test_ui_recreation_gets_collapsed_again)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 145, in test_ui_recreation_gets_collapsed_again
+    self.assertIsNotNone(self.g.properties['DynastyUI'])
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_vietnam_collapses_parent_and_closes_dropdown (test_runtime_repairs.DynastyRepairTests.test_vietnam_collapses_parent_and_closes_dropdown)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 132, in test_vietnam_collapses_parent_and_closes_dropdown
+    self.assertIsNotNone(self.g.properties['DynastyUI'])
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_destroyed_trap_cancels_pending_damage (test_runtime_repairs.TrapRepairTests.test_destroyed_trap_cancels_pending_damage)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 295, in test_destroyed_trap_cancels_pending_damage
+    self.assertTrue(self.has_log('VIETNAM_V2_TRAP_CANCEL'))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_diagnostics_explain_query_and_rejected_candidate_without_spam (test_runtime_repairs.TrapRepairTests.test_diagnostics_explain_query_and_rejected_candidate_without_spam)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 274, in test_diagnostics_explain_query_and_rejected_candidate_without_spam
+    self.assertTrue(self.has_log('VIETNAM_V2_TRAP_QUERY'))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_empty_query_and_construction_have_distinct_diagnostics (test_runtime_repairs.TrapRepairTests.test_empty_query_and_construction_have_distinct_diagnostics)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 283, in test_empty_query_and_construction_have_distinct_diagnostics
+    self.assertTrue(self.has_log('reason=construction'))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_research_damage_range_and_single_use (test_runtime_repairs.TrapRepairTests.test_research_damage_range_and_single_use)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 316, in test_research_damage_range_and_single_use
+    self.assertTrue(self.has_log('VIETNAM_V2_TRAP_DAMAGE'))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_all_private_destination_blueprints (test_runtime_repairs.TunnelRepairTests.test_all_private_destination_blueprints) (name='vn_building_town_center_capital_chi')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 177, in test_all_private_destination_blueprints
+    self.assertEqual(len(self.g.moves), count+1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_all_private_destination_blueprints (test_runtime_repairs.TunnelRepairTests.test_all_private_destination_blueprints) (name='vn_building_town_center_chi')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 177, in test_all_private_destination_blueprints
+    self.assertEqual(len(self.g.moves), count+1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_all_private_destination_blueprints (test_runtime_repairs.TunnelRepairTests.test_all_private_destination_blueprints) (name='vn_building_town_center_capital_2_chi')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 177, in test_all_private_destination_blueprints
+    self.assertEqual(len(self.g.moves), count+1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_all_private_destination_blueprints (test_runtime_repairs.TunnelRepairTests.test_all_private_destination_blueprints) (name='vn_building_town_center_2_chi')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 177, in test_all_private_destination_blueprints
+    self.assertEqual(len(self.g.moves), count+1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_all_private_destination_blueprints (test_runtime_repairs.TunnelRepairTests.test_all_private_destination_blueprints) (name='vn_building_defense_keep_chi')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 177, in test_all_private_destination_blueprints
+    self.assertEqual(len(self.g.moves), count+1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_all_private_destination_blueprints (test_runtime_repairs.TunnelRepairTests.test_all_private_destination_blueprints) (name='vn_building_defense_keep_2_chi')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 177, in test_all_private_destination_blueprints
+    self.assertEqual(len(self.g.moves), count+1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_all_private_destination_blueprints (test_runtime_repairs.TunnelRepairTests.test_all_private_destination_blueprints) (name='vn_building_landmark_age1_gatehouse_control_chi')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 177, in test_all_private_destination_blueprints
+    self.assertEqual(len(self.g.moves), count+1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_all_private_destination_blueprints (test_runtime_repairs.TunnelRepairTests.test_all_private_destination_blueprints) (name='vn_building_landmark_age1_headquarters_control_chi')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 177, in test_all_private_destination_blueprints
+    self.assertEqual(len(self.g.moves), count+1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_all_private_destination_blueprints (test_runtime_repairs.TunnelRepairTests.test_all_private_destination_blueprints) (name='vn_building_landmark_age1_vit_one_pilar_pagoda')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 177, in test_all_private_destination_blueprints
+    self.assertEqual(len(self.g.moves), count+1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_all_private_destination_blueprints (test_runtime_repairs.TunnelRepairTests.test_all_private_destination_blueprints) (name='vn_building_landmark_age2_headquarter_vit')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 177, in test_all_private_destination_blueprints
+    self.assertEqual(len(self.g.moves), count+1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_all_private_destination_blueprints (test_runtime_repairs.TunnelRepairTests.test_all_private_destination_blueprints) (name='vn_building_landmark_age2_imperrial_citadel_vit')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 177, in test_all_private_destination_blueprints
+    self.assertEqual(len(self.g.moves), count+1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_all_private_destination_blueprints (test_runtime_repairs.TunnelRepairTests.test_all_private_destination_blueprints) (name='vn_building_landmark_age2_minh_pagoda_control_vit')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 177, in test_all_private_destination_blueprints
+    self.assertEqual(len(self.g.moves), count+1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_all_private_destination_blueprints (test_runtime_repairs.TunnelRepairTests.test_all_private_destination_blueprints) (name='vn_building_landmark_age3_imperial_garden_vit')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 177, in test_all_private_destination_blueprints
+    self.assertEqual(len(self.g.moves), count+1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_all_private_destination_blueprints (test_runtime_repairs.TunnelRepairTests.test_all_private_destination_blueprints) (name='vn_building_landmark_age3_new_imperial_garden')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 177, in test_all_private_destination_blueprints
+    self.assertEqual(len(self.g.moves), count+1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_all_private_destination_blueprints (test_runtime_repairs.TunnelRepairTests.test_all_private_destination_blueprints) (name='vn_building_landmark_age3_trung_foundaries_vit')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 177, in test_all_private_destination_blueprints
+    self.assertEqual(len(self.g.moves), count+1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_bad_payloads_do_not_move (test_runtime_repairs.TunnelRepairTests.test_bad_payloads_do_not_move)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 235, in test_bad_payloads_do_not_move
+    self.assertEqual(len(self.g.moves), 0)
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_click_uses_building_id_even_when_ground_point_is_far_away (test_runtime_repairs.TunnelRepairTests.test_click_uses_building_id_even_when_ground_point_is_far_away)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 159, in test_click_uses_building_id_even_when_ground_point_is_far_away
+    self.assertEqual(self.g.sentMessage, '10|102')
+AssertionError: '10|500.000|500.000' != '10|102'
+- 10|500.000|500.000
++ 10|102
+
+
+======================================================================
+FAIL: test_cooldown_consumed_only_on_success (test_runtime_repairs.TunnelRepairTests.test_cooldown_consumed_only_on_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 201, in test_cooldown_consumed_only_on_success
+    self.assertTrue(self.has_log('reason=landing_unavailable'))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_foreign_destination_and_squad_are_rejected (test_runtime_repairs.TunnelRepairTests.test_foreign_destination_and_squad_are_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 182, in test_foreign_destination_and_squad_are_rejected
+    self.assertTrue(self.has_log('reason=destination_not_owned'))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_incomplete_or_destroyed_destination_is_rejected (test_runtime_repairs.TunnelRepairTests.test_incomplete_or_destroyed_destination_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 192, in test_incomplete_or_destroyed_destination_is_rejected
+    self.assertTrue(self.has_log('reason=destination_unusable'))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_missing_citadel_out_of_range_siege_and_hold (test_runtime_repairs.TunnelRepairTests.test_missing_citadel_out_of_range_siege_and_hold)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 217, in test_missing_citadel_out_of_range_siege_and_hold
+    self.assertTrue(self.has_log('reason='+reason))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_native_target_restrictions_no_longer_exclude_landmarks (test_runtime_repairs.TunnelRepairTests.test_native_target_restrictions_no_longer_exclude_landmarks)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 164, in test_native_target_restrictions_no_longer_exclude_landmarks
+    self.assertEqual(len(root.find("./group/list[@name='requirements_target']")), 0)
+AssertionError: 2 != 0
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.031s
+
+FAILED (failures=29)

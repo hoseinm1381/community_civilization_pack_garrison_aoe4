@@ -1,0 +1,176 @@
+{
+  "status": "unresolved_healthy_state_semantics_no_new_budget_pass",
+  "input_hashes": {
+    "output\\release_075\\comparators\\target-bounds.json": "40c37bb5dd5f4d48095b57b653017d4c82d433df9f24c27a6b1360f42b40c40b",
+    "output\\release_075\\comparators\\target-models.json": "3556000e2e354b2ceffbf4cb1931e2701b1fb90e3b6c5a9782e90a30aa3d9f92",
+    "output\\release_075\\schema\\reflect.db": "972e6873aed83f6efd60c50ac971f5dfcb353e68ee1031e93e9014bfdcd04ca2"
+  },
+  "cases": [
+    {
+      "family": "garden",
+      "actor": "attrib/ebps/vietnam/buildings/landmarks/imperial/vn_building_landmark_age3_imperial_garden_vit.rgd",
+      "branch": "default",
+      "retained_upper": 31512,
+      "categories": {
+        "debris": {
+          "triangles": 15562,
+          "instances": 23,
+          "models": [
+            "art/civilizations/common/structures/debris/debris_med_a_01/debris_med_a_01.rgm",
+            "art/civilizations/common/structures/debris/debris_med_a_stone_01/debris_med_a_stone_01.rgm",
+            "art/civilizations/common/structures/debris/debris_med_a_wood_01/debris_med_a_wood_01.rgm",
+            "art/civilizations/common/structures/debris/debris_med_b_01/debris_med_b_01.rgm"
+          ],
+          "unresolved_predicate_properties": [
+            "health",
+            "show_debris_piles"
+          ]
+        },
+        "other": {
+          "triangles": 15950,
+          "instances": 25,
+          "models": [
+            "art/civilizations/campaign_danish/structures/tent/dan_tent_control_a/dan_tent_control_a.rgm",
+            "art/civilizations/common/props/amphorae/amphorae.rgm",
+            "art/civilizations/common/props/barrel_single/barrel_single.rgm",
+            "art/civilizations/common/props/barrels_stack/barrels_stack.rgm",
+            "art/civilizations/common/props/bowl_earth_set_l/bowl_earth_set_l.rgm",
+            "art/civilizations/common/props/cart_2_wheeled/cart_2_wheeled.rgm",
+            "art/civilizations/common/props/wood_bench/wood_bench.rgm",
+            "art/environment/biome_tropical_dry/bushes/sagebush_row/sagebush_row.rgm",
+            "art/environment/civilization/outskirt_marker/outskirt_marker.rgm"
+          ],
+          "unresolved_predicate_properties": [
+            "build",
+            "health",
+            "object_randomizer"
+          ]
+        }
+      },
+      "healthy_exclusions_proven": []
+    },
+    {
+      "family": "foundry",
+      "actor": "attrib/ebps/vietnam/buildings/landmarks/imperial/vn_building_landmark_age3_trung_foundaries_vit.rgd",
+      "branch": "campaign",
+      "retained_upper": 93764,
+      "categories": {
+        "debris": {
+          "triangles": 35872,
+          "instances": 51,
+          "models": [
+            "art/civilizations/common/structures/debris/debris_med_a_01/debris_med_a_01.rgm",
+            "art/civilizations/common/structures/debris/debris_med_a_stone_01/debris_med_a_stone_01.rgm",
+            "art/civilizations/common/structures/debris/debris_med_a_wood_01/debris_med_a_wood_01.rgm",
+            "art/civilizations/common/structures/debris/debris_med_b_01/debris_med_b_01.rgm"
+          ],
+          "unresolved_predicate_properties": [
+            "health",
+            "show_debris_piles"
+          ]
+        },
+        "other": {
+          "triangles": 784,
+          "instances": 17,
+          "models": [
+            "art/civilizations/common/props/cart_2_wheeled/cart_2_wheeled.rgm",
+            "art/civilizations/common/props/stone_bench/stone_bench.rgm",
+            "art/environment/biome_temperate_deciduous/splats/splat_garden_8m_round_a.rgm",
+            "art/environment/biome_temperate_deciduous/splats/splat_garden_b.rgm",
+            "art/environment/biome_tropical_dry/bushes/flowerbush_small_wild/flowerbush_small_wild.rgm",
+            "art/environment/civilization/outskirt_marker/outskirt_marker.rgm",
+            "art/environment/civilization/splats/construction_wonder/construction_wonder.rgm"
+          ],
+          "unresolved_predicate_properties": [
+            "build",
+            "health",
+            "object_randomizer"
+          ]
+        },
+        "construction": {
+          "triangles": 57108,
+          "instances": 29,
+          "models": [
+            "art/civilizations/common/props/buildpile_wood_lumber/buildpile_wood_lumber.rgm",
+            "art/civilizations/common/props/scaffolding_wood_extra_high/scaffolding_wood_extra_high.rgm",
+            "art/civilizations/common/props/scaffolding_wood_extra_high_slow/scaffolding_wood_extra_high_slow.rgm",
+            "art/civilizations/common/props/scaffolding_wood_high/scaffolding_wood_high.rgm",
+            "art/civilizations/common/props/scaffolding_wood_high_slow/scaffolding_wood_high_slow.rgm",
+            "art/civilizations/common/props/scaffolding_wood_mid/scaffolding_wood_mid.rgm"
+          ],
+          "unresolved_predicate_properties": [
+            "build",
+            "scaffolding_build_stage"
+          ]
+        }
+      },
+      "healthy_exclusions_proven": []
+    },
+    {
+      "family": "foundry",
+      "actor": "attrib/ebps/vietnam/buildings/landmarks/imperial/vn_building_landmark_age3_trung_foundaries_vit.rgd",
+      "branch": "default",
+      "retained_upper": 36656,
+      "categories": {
+        "debris": {
+          "triangles": 35872,
+          "instances": 51,
+          "models": [
+            "art/civilizations/common/structures/debris/debris_med_a_01/debris_med_a_01.rgm",
+            "art/civilizations/common/structures/debris/debris_med_a_stone_01/debris_med_a_stone_01.rgm",
+            "art/civilizations/common/structures/debris/debris_med_a_wood_01/debris_med_a_wood_01.rgm",
+            "art/civilizations/common/structures/debris/debris_med_b_01/debris_med_b_01.rgm"
+          ],
+          "unresolved_predicate_properties": [
+            "health",
+            "show_debris_piles"
+          ]
+        },
+        "other": {
+          "triangles": 784,
+          "instances": 16,
+          "models": [
+            "art/civilizations/common/props/cart_2_wheeled/cart_2_wheeled.rgm",
+            "art/civilizations/common/props/stone_bench/stone_bench.rgm",
+            "art/environment/biome_temperate_deciduous/splats/splat_garden_8m_round_a.rgm",
+            "art/environment/biome_temperate_deciduous/splats/splat_garden_b.rgm",
+            "art/environment/biome_tropical_dry/bushes/flowerbush_small_wild/flowerbush_small_wild.rgm",
+            "art/environment/civilization/outskirt_marker/outskirt_marker.rgm"
+          ],
+          "unresolved_predicate_properties": [
+            "build",
+            "health",
+            "object_randomizer"
+          ]
+        }
+      },
+      "healthy_exclusions_proven": []
+    }
+  ],
+  "schema_enum_candidates": {
+    "rr::ComparisonFunc": {
+      "Never": "0",
+      "Less": "1",
+      "Equal": "2",
+      "LessEqual": "3",
+      "Greater": "4",
+      "NotEqual": "5",
+      "GreaterEqual": "6",
+      "Always": "7",
+      "Count": "8"
+    },
+    "StateModels::ComparisonOperator": {
+      "EqualTo": "0",
+      "KeyExists": "1"
+    }
+  },
+  "blockers": [
+    "Debris mesh selectors depend on show_debris_piles and remove_debris_piles; their values for each healthy parent actor and state propagation are not established by the RGM selector alone.",
+    "Campaign Foundry scaffolding selectors depend on scaffolding_build_stage. No validated mapping from completed parent lifecycle to this variable has been demonstrated.",
+    "Current reflected enums include rr::ComparisonFunc and StateModels::ComparisonOperator, but no verified type binding identifies either as the legacy RGM CNBP operand/comparison encoding. Similar numeric values are not a type proof.",
+    "A resource name such as debris or scaffolding is not visibility evidence. No native retained geometry is excluded on naming grounds.",
+    "Upper target bounds exceeding a principal-only official lower bound neither prove excess nor establish compliance. Exact healthy state evaluation and comparable full compounds remain needed."
+  ],
+  "result": "Existing conservative bounds retained unchanged. No subtraction or performance pass is authorized by this read-only refinement.",
+  "native_operations": "None; existing decoded evidence and current reflected schema read only."
+}

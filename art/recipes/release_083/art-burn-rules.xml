@@ -1,0 +1,46 @@
+<Rules xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+<BurnRule>
+			<Alias>data</Alias>
+			<Burner>RR Material Burner</Burner>
+			<Configurations>Debug Release Profile RTM</Configurations>
+			<Excludes i:nil="true" />
+			<Includes>__MODEL_PATH__\*.material</Includes>
+			<IsEnabled>true</IsEnabled>
+			<NamedParameters>Static Material</NamedParameters>
+			<PathOverride i:nil="true" />
+			<Target>Archive</Target>
+		</BurnRule>
+<BurnRule>
+			<Alias>data</Alias>
+			<Burner>RGM</Burner>
+			<Configurations>Debug Release Profile RTM</Configurations>
+			<Excludes></Excludes>
+			<Includes>__MODEL_PATH__\*.fbx</Includes>
+			<IsEnabled>true</IsEnabled>
+			<NamedParameters>RGM Static</NamedParameters>
+			<PathOverride i:nil="true" />
+			<Target>Archive</Target>
+		</BurnRule>
+<BurnRule>
+			<Alias>data</Alias>
+			<Burner>RRGeometry</Burner>
+			<Configurations>Debug Release Profile RTM</Configurations>
+			<Excludes i:nil="true" />
+			<Includes>__MODEL_PATH__\*.fbx</Includes>
+			<IsEnabled>true</IsEnabled>
+			<NamedParameters>Static RR Geometry</NamedParameters>
+			<PathOverride i:nil="true" />
+			<Target>Archive</Target>
+		</BurnRule>
+<BurnRule>
+			<Alias>data</Alias>
+			<Burner>RGO</Burner>
+			<Configurations>Debug Release Profile RTM</Configurations>
+			<Excludes i:nil="true" />
+			<Includes>__MODEL_PATH__\*.fbx;__MODEL_PATH__\*.rgo</Includes>
+			<IsEnabled>true</IsEnabled>
+			<NamedParameters>Static RGO</NamedParameters>
+			<PathOverride i:nil="true" />
+			<Target>Archive</Target>
+		</BurnRule>
+</Rules>

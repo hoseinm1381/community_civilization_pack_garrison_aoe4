@@ -1,0 +1,25 @@
+{
+  "schema": "ccp.release050.retained-native-visuals/v1",
+  "policy": "retain_unchanged",
+  "actor": "vn_building_unit_religious_control_chi",
+  "scope": "Separate outskirt_a tier group; not an age-exclusive main-model fallback",
+  "reason": "Preserve donor clearable ground dressing and native markers while remodeling Castle/Imperial main buildings and adding Vietnamese details. Visible redesign percentages remain qualitative art targets.",
+  "branches": [
+    {
+      "branch": "default",
+      "attachment_member": "attrib/attachments/attachment_lists/civilizations/english/outskirts/general/monastery_chi.rgd",
+      "stock_sha256": "ebdf0d5b47b8c5dea9b16eba37e31f0868f524bc4de1d847e35007067c9b0fea",
+      "clearable_stamp_count": 5,
+      "stamp_prefix": "art/stamps/outskirt_chinese/chi_monastery_03_"
+    },
+    {
+      "branch": "campaign",
+      "attachment_member": "attrib/attachments/attachment_lists/civilizations/english/outskirts/general/monastery_03.rgd",
+      "stock_sha256": "52dad2f76b046e7e9f1b8794e2f2dbcafa50347015c22b559090bc52e8dfae99",
+      "clearable_stamp_count": 5,
+      "stamp_prefix": "art/stamps/outskirt_english/eng_monastery_03_"
+    }
+  ],
+  "lifecycle": "Outskirts row has no requirement or tier action; may coexist with age-3/4 and their lifecycle states. Default/campaign are separate variants.",
+  "native_appearance": "pending; inspect retained dressing, adjacency, production access and construction with remodeled halls"
+}

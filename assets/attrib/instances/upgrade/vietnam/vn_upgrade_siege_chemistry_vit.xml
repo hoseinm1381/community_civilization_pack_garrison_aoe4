@@ -1,0 +1,649 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="Allows creation of gunpowder units, improves siege units and archers attack." template="upgrade">
+	<group name="upgrade_bag">
+		<bool name="enable_in_hold" value="False" />
+		<float name="global_max_limit" value="1" />
+		<bool name="has_speech_code" value="False" />
+		<float name="local_max_limit" value="1" />
+		<enum name="owner_type" value="player" />
+		<group name="time_cost">
+			<enum_table name="cost">
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="popcap" value="0" />
+				<float name="food" value="300" />
+				<float name="wood" value="0" />
+				<float name="stone" value="0" />
+				<float name="gold" value="700" />
+				<float name="militia_hre" value="0" />
+				<float name="merc_byz" value="0" />
+			</enum_table>
+			<float name="time_seconds" value="90" />
+		</group>
+		<bool name="ui_event_cue" value="True" />
+		<enum name="ui_production_group" value="command_panel" />
+		<group name="ui_info">
+			<locstring name="extra_text" value="11192900" />
+			<locstring name="help_text" value="0" />
+			<string name="hotkey_name" value="s" />
+			<file name="icon_name" value="races\common\upgrades\chemistry" />
+			<bool name="reveal_for_decryption" value="False" />
+			<locstring name="screen_name" value="11143390" />
+			<locstring name="brief_text" value="0" />
+			<locstring name="screen_name_short" value="0" />
+			<string name="debug_text" value="" />
+			<string name="tooltip_data_template" value="BuildingUpgradeDataTemplate" />
+			<enum name="ui_combine_type" value="intersection" />
+			<template_reference name="brief_text_formatter" value="">
+			</template_reference>
+			<template_reference name="extra_text_formatter" value="">
+			</template_reference>
+			<template_reference name="help_text_formatter" value="ui_text_formatter">
+				<list name="formatter_arguments">
+					<int name="int_value" value="20" List.ItemID="1073763620" />
+				</list>
+				<locstring name="formatter" value="11215372" />
+			</template_reference>
+			<template_reference name="screen_name_formatter" value="">
+			</template_reference>
+			<template_reference name="screen_name_short_formatter" value="">
+			</template_reference>
+			<string name="sound" value="sfx_ui_produce_upgrade_building_click" />
+			<string name="sound_alternative" value="" />
+			<int name="global_unit_control_row" value="1" />
+			<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+				<template_reference name="command_card_info" value="ui_command_card_info">
+					<group name="ui_position">
+						<int name="ui_position_row" value="2" />
+						<int name="ui_position_column" value="1" />
+					</group>
+					<int name="command_card_priority" value="1" />
+				</template_reference>
+				<template_reference name="quick_abilities_info" value="">
+				</template_reference>
+				<template_reference name="quick_commands_info" value="ui_quick_commands_info">
+					<int name="quick_commands_slot_index" value="0" />
+					<enum name="quick_commands_hotkey" value="x_quick_command_y" />
+					<int name="quick_commands_priority" value="5" />
+				</template_reference>
+				<template_reference name="quick_formation_info" value="">
+				</template_reference>
+				<template_reference name="ping_menu_info" value="">
+				</template_reference>
+				<enum name="category" value="Economic" />
+				<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+					<enum name="quick_commands_hotkey" value="x_quick_command_y" />
+					<int name="quick_commands_priority" value="27" />
+					<int name="quick_commands_slot_index" value="2" />
+					<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+				</template_reference>
+				<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info">
+					<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+					<int name="nominal_index" value="12" />
+					<int name="priority" value="0" />
+					<instance_reference name="linked" value="" />
+				</template_reference>
+				<enum name="observer_type" value="Disabled" />
+			</template_reference>
+			<locstring name="help_text_controller" value="0" />
+			<locstring name="extra_text_controller" value="0" />
+		</group>
+		<list name="requirements">
+			<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="1073763621">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="True" />
+				<int name="max_completed" value="100" />
+				<int name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" />
+				<bool name="include_queued" value="False" />
+				<group name="include_pbg_parenting">
+					<bool name="include_child_pbgs" value="False" />
+					<bool name="include_parent_pbgs" value="False" />
+				</group>
+				<bool name="include_completed" value="True" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="1073763622">
+				<enum name="reason" value="display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="False" />
+				<int name="max_completed" value="100" />
+				<int name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\vietnam\vn_upgrade_siege_chemistry_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+				<bool name="include_queued" value="True" />
+				<group name="include_pbg_parenting">
+					<bool name="include_child_pbgs" value="False" />
+					<bool name="include_parent_pbgs" value="False" />
+				</group>
+				<bool name="include_completed" value="True" />
+			</template_reference>
+		</list>
+		<file name="ui_kicker_icon_name" value="" />
+		<locstring name="ui_squad_name_override" value="0" />
+		<locstring name="ui_squad_help_text_override" value="0" />
+		<locstring name="ui_squad_extra_text_override" value="0" />
+		<list name="ui_preview">
+		</list>
+		<string name="speech_code" value="" />
+		<file name="ui_squad_portrait_icon_override" value="" />
+		<group name="ui_position">
+			<int name="ui_position_row" value="2" />
+			<int name="ui_position_column" value="1" />
+		</group>
+		<float name="min_music_intensity" value="0" />
+		<group name="state_tree_references">
+			<template_reference name="on_begin_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<template_reference name="on_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="common_upgrade_completion_events\speech_celebrate\celebrate" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<template_reference name="on_cancel_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<template_reference name="on_action_entity_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="common_upgrade_master\chemistry\normal_modifiers\chemistry" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<template_reference name="on_action_squad_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+		</group>
+		<list name="upgrade_type">
+			<enum name="upgrade_type" value="military_upgrade" List.ItemID="1073763624" />
+			<enum name="upgrade_type" value="abbasid_upgrade" List.ItemID="1073763625" />
+			<enum name="upgrade_type" value="abbasid_ha_01_upgrade" List.ItemID="1073763626" />
+			<enum name="upgrade_type" value="ayyubid_cmp_upgrade" List.ItemID="1073763627" />
+			<enum name="upgrade_type" value="byzantine_upgrade" List.ItemID="1073763628" />
+			<enum name="upgrade_type" value="chinese_upgrade" List.ItemID="1073763629" />
+			<enum name="upgrade_type" value="chinese_ha_01_upgrade" List.ItemID="1073763630" />
+			<enum name="upgrade_type" value="crusader_cmp_upgrade" List.ItemID="1073763631" />
+			<enum name="upgrade_type" value="english_upgrade" List.ItemID="1073763632" />
+			<enum name="upgrade_type" value="french_upgrade" List.ItemID="1073763633" />
+			<enum name="upgrade_type" value="french_ha_01_upgrade" List.ItemID="1073763634" />
+			<enum name="upgrade_type" value="hre_upgrade" List.ItemID="1073763635" />
+			<enum name="upgrade_type" value="japanese_upgrade" List.ItemID="1073763636" />
+			<enum name="upgrade_type" value="malian_upgrade" List.ItemID="1073763637" />
+			<enum name="upgrade_type" value="ottoman_upgrade" List.ItemID="1073763638" />
+			<enum name="upgrade_type" value="rus_upgrade" List.ItemID="1073763639" />
+			<enum name="upgrade_type" value="scar_military_upgrade" List.ItemID="1073763640" />
+			<enum name="upgrade_type" value="scar_nontiered_upgrade" List.ItemID="1073763641" />
+			<enum name="upgrade_type" value="scar_imperial_age_upgrade" List.ItemID="1073763642" />
+		</list>
+		<string name="requirements_openingbranch" value="" />
+		<instance_reference name="ui_menu" value="" />
+		<bool name="is_progress_permanent" value="False" />
+		<group name="ui_codex_info">
+			<int name="priority" value="5000" />
+			<bool name="exclusive" value="False" />
+			<group name="ui_position">
+				<int name="ui_position_column" value="-1" />
+				<int name="ui_position_row" value="-1" />
+			</group>
+		</group>
+		<group name="filter_conditions">
+			<state_tree_node name="apply_to_filter_condition_statetree_ref" value="" />
+			<enum name="apply_to_target_type" value="entity" />
+			<list name="apply_to_unit_classes">
+				<enum name="unit_class" value="gunpowder" List.ItemID="1073763643" />
+			</list>
+			<enum name="apply_to_application_type" value="current_and_future_units" />
+			<enum name="apply_to_future_units" value="current_and_future_units" />
+			<group name="ai_unit_types">
+				<list name="any">
+				</list>
+				<list name="none">
+				</list>
+			</group>
+		</group>
+		<enum_table name="squad_cost">
+			<float name="action" value="0" />
+			<float name="command" value="0" />
+			<float name="popcap" value="0" />
+			<float name="food" value="0" />
+			<float name="wood" value="0" />
+			<float name="stone" value="0" />
+			<float name="gold" value="0" />
+			<float name="militia_hre" value="0" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<list name="float_properties">
+		</list>
+		<list name="int_properties">
+		</list>
+		<enum name="ui_group_cast_type" value="single" />
+		<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_university\tech_upgrade_chemistry" />
+		<bool name="ignore_completion_state_tree_openingbranch" value="False" />
+	</group>
+	<uniqueid name="pbgid" value="1073742078" />
+	<instance_reference name="parent_pbg" value="" />
+	<variant name="campaign">
+		<group name="upgrade_bag">
+			<bool name="enable_in_hold" value="False" />
+			<float name="global_max_limit" value="1" />
+			<bool name="has_speech_code" value="False" />
+			<float name="local_max_limit" value="1" />
+			<enum name="owner_type" value="player" />
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="action" value="0" />
+					<float name="command" value="0" />
+					<float name="popcap" value="0" />
+					<float name="food" value="175" />
+					<float name="wood" value="0" />
+					<float name="stone" value="0" />
+					<float name="gold" value="600" />
+					<float name="militia_hre" value="0" />
+					<float name="merc_byz" value="0" />
+				</enum_table>
+				<float name="time_seconds" value="180" />
+			</group>
+			<bool name="ui_event_cue" value="True" />
+			<enum name="ui_production_group" value="command_panel" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="11166485" />
+				<locstring name="help_text" value="11121600" />
+				<string name="hotkey_name" value="s" />
+				<file name="icon_name" value="races\common\upgrades\chemistry" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="11143390" />
+				<locstring name="brief_text" value="0" />
+				<locstring name="screen_name_short" value="0" />
+				<string name="debug_text" value="" />
+				<string name="tooltip_data_template" value="BuildingUpgradeDataTemplate" />
+				<enum name="ui_combine_type" value="intersection" />
+				<template_reference name="brief_text_formatter" value="">
+				</template_reference>
+				<template_reference name="extra_text_formatter" value="">
+				</template_reference>
+				<template_reference name="help_text_formatter" value="">
+				</template_reference>
+				<template_reference name="screen_name_formatter" value="">
+				</template_reference>
+				<template_reference name="screen_name_short_formatter" value="">
+				</template_reference>
+				<string name="sound" value="sfx_ui_produce_upgrade_building_click" />
+				<string name="sound_alternative" value="" />
+				<int name="global_unit_control_row" value="1" />
+				<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+					<template_reference name="command_card_info" value="">
+					</template_reference>
+					<template_reference name="quick_abilities_info" value="">
+					</template_reference>
+					<template_reference name="quick_commands_info" value="ui_quick_commands_info">
+						<int name="quick_commands_slot_index" value="0" />
+						<enum name="quick_commands_hotkey" value="x_quick_command_y" />
+						<int name="quick_commands_priority" value="10" />
+					</template_reference>
+					<template_reference name="quick_formation_info" value="">
+					</template_reference>
+					<template_reference name="ping_menu_info" value="">
+					</template_reference>
+					<enum name="category" value="Economic" />
+					<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+						<enum name="quick_commands_hotkey" value="x_quick_command_y" />
+						<int name="quick_commands_priority" value="27" />
+						<int name="quick_commands_slot_index" value="2" />
+						<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+					</template_reference>
+					<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info">
+						<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+						<int name="nominal_index" value="0" />
+						<int name="priority" value="0" />
+						<instance_reference name="linked" value="" />
+					</template_reference>
+					<enum name="observer_type" value="Disabled" />
+				</template_reference>
+				<locstring name="help_text_controller" value="0" />
+				<locstring name="extra_text_controller" value="0" />
+			</group>
+			<list name="requirements">
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="1073763644">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="1073763645">
+					<enum name="reason" value="display" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="False" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\vietnam\vn_upgrade_siege_chemistry_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<bool name="include_queued" value="True" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+			</list>
+			<file name="ui_kicker_icon_name" value="" />
+			<locstring name="ui_squad_name_override" value="0" />
+			<locstring name="ui_squad_help_text_override" value="0" />
+			<locstring name="ui_squad_extra_text_override" value="0" />
+			<list name="ui_preview">
+			</list>
+			<string name="speech_code" value="" />
+			<file name="ui_squad_portrait_icon_override" value="" />
+			<group name="ui_position">
+				<int name="ui_position_row" value="2" />
+				<int name="ui_position_column" value="1" />
+			</group>
+			<float name="min_music_intensity" value="0" />
+			<group name="state_tree_references">
+				<template_reference name="on_begin_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="on_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_common_upgrade_completion_events\speech_celebrate\celebrate" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="on_cancel_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="on_action_entity_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_common_upgrade_master\chemistry\normal_modifiers\chemistry" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="on_action_squad_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+			</group>
+			<list name="upgrade_type">
+				<enum name="upgrade_type" value="military_upgrade" List.ItemID="1073763647" />
+				<enum name="upgrade_type" value="sultinate_upgrade" List.ItemID="1073763648" />
+				<enum name="upgrade_type" value="rus_upgrade" List.ItemID="1073763649" />
+				<enum name="upgrade_type" value="mongol_upgrade" List.ItemID="1073763650" />
+				<enum name="upgrade_type" value="hre_upgrade" List.ItemID="1073763651" />
+				<enum name="upgrade_type" value="french_upgrade" List.ItemID="1073763652" />
+				<enum name="upgrade_type" value="chinese_upgrade" List.ItemID="1073763653" />
+				<enum name="upgrade_type" value="english_upgrade" List.ItemID="1073763654" />
+			</list>
+			<string name="requirements_openingbranch" value="" />
+			<instance_reference name="ui_menu" value="" />
+			<bool name="is_progress_permanent" value="False" />
+			<group name="ui_codex_info">
+				<int name="priority" value="5000" />
+				<bool name="exclusive" value="False" />
+				<group name="ui_position">
+					<int name="ui_position_column" value="-1" />
+					<int name="ui_position_row" value="-1" />
+				</group>
+			</group>
+			<group name="filter_conditions">
+				<state_tree_node name="apply_to_filter_condition_statetree_ref" value="" />
+				<enum name="apply_to_target_type" value="entity" />
+				<list name="apply_to_unit_classes">
+				</list>
+				<enum name="apply_to_application_type" value="current_and_future_units" />
+				<enum name="apply_to_future_units" value="current_and_future_units" />
+				<group name="ai_unit_types">
+					<list name="any">
+					</list>
+					<list name="none">
+					</list>
+				</group>
+			</group>
+			<enum_table name="squad_cost">
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="popcap" value="0" />
+				<float name="food" value="0" />
+				<float name="wood" value="0" />
+				<float name="stone" value="0" />
+				<float name="gold" value="0" />
+				<float name="militia_hre" value="0" />
+				<float name="merc_byz" value="0" />
+			</enum_table>
+			<list name="float_properties">
+			</list>
+			<list name="int_properties">
+			</list>
+			<enum name="ui_group_cast_type" value="single" />
+			<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_university\tech_upgrade_chemistry" />
+			<bool name="ignore_completion_state_tree_openingbranch" value="False" />
+		</group>
+		<uniqueid name="pbgid" value="1073742078" />
+		<instance_reference name="parent_pbg" value="" />
+	</variant>
+	<variant name="xp3">
+		<group name="upgrade_bag">
+			<bool name="enable_in_hold" value="False" />
+			<float name="global_max_limit" value="1" />
+			<bool name="has_speech_code" value="False" />
+			<float name="local_max_limit" value="1" />
+			<enum name="owner_type" value="player" />
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="action" value="0" />
+					<float name="command" value="0" />
+					<float name="popcap" value="0" />
+					<float name="food" value="300" />
+					<float name="wood" value="0" />
+					<float name="stone" value="0" />
+					<float name="gold" value="700" />
+					<float name="militia_hre" value="0" />
+					<float name="merc_byz" value="0" />
+				</enum_table>
+				<float name="time_seconds" value="90" />
+			</group>
+			<bool name="ui_event_cue" value="True" />
+			<enum name="ui_production_group" value="command_panel" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="11192900" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="s" />
+				<file name="icon_name" value="races\common\upgrades\chemistry" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="11143390" />
+				<locstring name="brief_text" value="0" />
+				<locstring name="screen_name_short" value="0" />
+				<string name="debug_text" value="" />
+				<string name="tooltip_data_template" value="BuildingUpgradeDataTemplate" />
+				<enum name="ui_combine_type" value="intersection" />
+				<template_reference name="brief_text_formatter" value="">
+				</template_reference>
+				<template_reference name="extra_text_formatter" value="">
+				</template_reference>
+				<template_reference name="help_text_formatter" value="ui_text_formatter">
+					<list name="formatter_arguments">
+						<int name="int_value" value="20" List.ItemID="1073763655" />
+					</list>
+					<locstring name="formatter" value="11215372" />
+				</template_reference>
+				<template_reference name="screen_name_formatter" value="">
+				</template_reference>
+				<template_reference name="screen_name_short_formatter" value="">
+				</template_reference>
+				<string name="sound" value="sfx_ui_produce_upgrade_building_click" />
+				<string name="sound_alternative" value="" />
+				<int name="global_unit_control_row" value="1" />
+				<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+					<template_reference name="command_card_info" value="ui_command_card_info">
+						<group name="ui_position">
+							<int name="ui_position_row" value="2" />
+							<int name="ui_position_column" value="1" />
+						</group>
+						<int name="command_card_priority" value="1" />
+					</template_reference>
+					<template_reference name="quick_abilities_info" value="">
+					</template_reference>
+					<template_reference name="quick_commands_info" value="ui_quick_commands_info">
+						<int name="quick_commands_slot_index" value="0" />
+						<enum name="quick_commands_hotkey" value="x_quick_command_y" />
+						<int name="quick_commands_priority" value="5" />
+					</template_reference>
+					<template_reference name="quick_formation_info" value="">
+					</template_reference>
+					<template_reference name="ping_menu_info" value="">
+					</template_reference>
+					<enum name="category" value="Economic" />
+					<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+						<enum name="quick_commands_hotkey" value="x_quick_command_y" />
+						<int name="quick_commands_priority" value="27" />
+						<int name="quick_commands_slot_index" value="2" />
+						<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+					</template_reference>
+					<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info">
+						<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+						<int name="nominal_index" value="12" />
+						<int name="priority" value="0" />
+						<instance_reference name="linked" value="" />
+					</template_reference>
+					<enum name="observer_type" value="Disabled" />
+				</template_reference>
+				<locstring name="help_text_controller" value="0" />
+				<locstring name="extra_text_controller" value="0" />
+			</group>
+			<list name="requirements">
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="1073763656">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="1073763657">
+					<enum name="reason" value="display" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="False" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\vietnam\vn_upgrade_siege_chemistry_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<bool name="include_queued" value="True" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+			</list>
+			<file name="ui_kicker_icon_name" value="" />
+			<locstring name="ui_squad_name_override" value="0" />
+			<locstring name="ui_squad_help_text_override" value="0" />
+			<locstring name="ui_squad_extra_text_override" value="0" />
+			<list name="ui_preview">
+			</list>
+			<string name="speech_code" value="" />
+			<file name="ui_squad_portrait_icon_override" value="" />
+			<group name="ui_position">
+				<int name="ui_position_row" value="2" />
+				<int name="ui_position_column" value="1" />
+			</group>
+			<float name="min_music_intensity" value="0" />
+			<group name="state_tree_references">
+				<template_reference name="on_begin_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="on_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="xp3_common_upgrade_completion_events\speech_celebrate\celebrate" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="on_cancel_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="on_action_entity_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="xp3_common_upgrade_master\chemistry\normal_modifiers\chemistry" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="on_action_squad_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+			</group>
+			<list name="upgrade_type">
+				<enum name="upgrade_type" value="military_upgrade" List.ItemID="1073763659" />
+				<enum name="upgrade_type" value="abbasid_upgrade" List.ItemID="1073763660" />
+				<enum name="upgrade_type" value="abbasid_ha_01_upgrade" List.ItemID="1073763661" />
+				<enum name="upgrade_type" value="ayyubid_cmp_upgrade" List.ItemID="1073763662" />
+				<enum name="upgrade_type" value="byzantine_upgrade" List.ItemID="1073763663" />
+				<enum name="upgrade_type" value="chinese_upgrade" List.ItemID="1073763664" />
+				<enum name="upgrade_type" value="chinese_ha_01_upgrade" List.ItemID="1073763665" />
+				<enum name="upgrade_type" value="crusader_cmp_upgrade" List.ItemID="1073763666" />
+				<enum name="upgrade_type" value="english_upgrade" List.ItemID="1073763667" />
+				<enum name="upgrade_type" value="french_upgrade" List.ItemID="1073763668" />
+				<enum name="upgrade_type" value="french_ha_01_upgrade" List.ItemID="1073763669" />
+				<enum name="upgrade_type" value="hre_upgrade" List.ItemID="1073763670" />
+				<enum name="upgrade_type" value="japanese_upgrade" List.ItemID="1073763671" />
+				<enum name="upgrade_type" value="malian_upgrade" List.ItemID="1073763672" />
+				<enum name="upgrade_type" value="ottoman_upgrade" List.ItemID="1073763673" />
+				<enum name="upgrade_type" value="rus_upgrade" List.ItemID="1073763674" />
+				<enum name="upgrade_type" value="scar_military_upgrade" List.ItemID="1073763675" />
+				<enum name="upgrade_type" value="scar_nontiered_upgrade" List.ItemID="1073763676" />
+				<enum name="upgrade_type" value="scar_imperial_age_upgrade" List.ItemID="1073763677" />
+			</list>
+			<string name="requirements_openingbranch" value="" />
+			<instance_reference name="ui_menu" value="" />
+			<bool name="is_progress_permanent" value="False" />
+			<group name="ui_codex_info">
+				<int name="priority" value="5000" />
+				<bool name="exclusive" value="False" />
+				<group name="ui_position">
+					<int name="ui_position_column" value="-1" />
+					<int name="ui_position_row" value="-1" />
+				</group>
+			</group>
+			<group name="filter_conditions">
+				<state_tree_node name="apply_to_filter_condition_statetree_ref" value="" />
+				<enum name="apply_to_target_type" value="entity" />
+				<list name="apply_to_unit_classes">
+					<enum name="unit_class" value="gunpowder" List.ItemID="1073763678" />
+				</list>
+				<enum name="apply_to_application_type" value="current_and_future_units" />
+				<enum name="apply_to_future_units" value="current_and_future_units" />
+				<group name="ai_unit_types">
+					<list name="any">
+					</list>
+					<list name="none">
+					</list>
+				</group>
+			</group>
+			<enum_table name="squad_cost">
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="popcap" value="0" />
+				<float name="food" value="0" />
+				<float name="wood" value="0" />
+				<float name="stone" value="0" />
+				<float name="gold" value="0" />
+				<float name="militia_hre" value="0" />
+				<float name="merc_byz" value="0" />
+			</enum_table>
+			<list name="float_properties">
+			</list>
+			<list name="int_properties">
+			</list>
+			<enum name="ui_group_cast_type" value="single" />
+			<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_university\tech_upgrade_chemistry" />
+			<bool name="ignore_completion_state_tree_openingbranch" value="False" />
+		</group>
+		<uniqueid name="pbgid" value="1073742078" />
+		<instance_reference name="parent_pbg" value="" />
+	</variant>
+</instance>

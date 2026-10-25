@@ -1,0 +1,107 @@
+{
+  "schema": "ccp.020-hideout-recipe/v1",
+  "generator": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\tools\\release_020\\model_ministry_farm_hideout_hideout.py",
+  "models": [
+    {
+      "variant": "default",
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\release_020\\hideout\\default\\e9483832c31d5019ff0d\\decoded-static.json",
+      "donor_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\buildings_020\\hideout\\default\\chinese_outpost_default_donor.blend",
+      "editable_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\buildings_020\\hideout\\default\\Vietnam_Hideout_default.blend",
+      "editable_blend_sha256": "b84d5034b36337fe6891d7e579b6c6c7fb4613938878d5390a26fcf4d1e2a561",
+      "geometry_export": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\buildings_020\\hideout\\cc020_hideout_default.rrgeom",
+      "geometry_sha256": "00cb46a49cdf574ea6498842d250f6f542049057f1ef830be80f906899eb6876",
+      "donor_geometry_sha256": "d38712744e530deefb817897d951c9ca3958411577dbc799c3d953eeddd05d8e",
+      "before_bounds": {
+        "min": [
+          -1.6396484375,
+          -2.546875,
+          -1.93359375
+        ],
+        "max": [
+          1.634765625,
+          1.619140625,
+          8.1875
+        ],
+        "dimensions": [
+          3.2744140625,
+          4.166015625,
+          10.12109375
+        ]
+      },
+      "after_bounds": {
+        "min": [
+          -1.6357421875,
+          -2.546875,
+          -1.93359375
+        ],
+        "max": [
+          1.630859375,
+          1.6162109375,
+          7.5703125
+        ],
+        "dimensions": [
+          3.2666015625,
+          4.1630859375,
+          9.50390625
+        ]
+      },
+      "contact_checks": {
+        "repeat_vertices": 26933,
+        "max_gap_m": 0,
+        "below_ground_unchanged": true
+      },
+      "native_owner_marks": "Preserve existing layout_outpost, origin, top weapon marker and native stamp graph; never bake owner colour into texture"
+    },
+    {
+      "variant": "stone",
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\release_020\\hideout\\stone\\cf8e2829973f999c22c2\\decoded-static.json",
+      "donor_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\buildings_020\\hideout\\stone\\chinese_outpost_stone_donor.blend",
+      "editable_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\buildings_020\\hideout\\stone\\Vietnam_Hideout_stone.blend",
+      "editable_blend_sha256": "3c8cfe82c123c9bd3b281491308adc24a2326938eef5e1292d8f3f2b3d834014",
+      "geometry_export": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\buildings_020\\hideout\\cc020_hideout_stone.rrgeom",
+      "geometry_sha256": "d3e43330ec0a61a40b4f42c85b2e76d00e148da0aed80a3f31a8cada62536c82",
+      "donor_geometry_sha256": "bfb02e93503e56ab2b19d6e219f6395b1f564ee8d25638797385869313e9afde",
+      "before_bounds": {
+        "min": [
+          -2.79296875,
+          -3.486328125,
+          -1.607421875
+        ],
+        "max": [
+          2.79296875,
+          2.79296875,
+          12.484375
+        ],
+        "dimensions": [
+          5.5859375,
+          6.279296875,
+          14.091796875
+        ]
+      },
+      "after_bounds": {
+        "min": [
+          -2.470703125,
+          -3.486328125,
+          -1.607421875
+        ],
+        "max": [
+          2.470703125,
+          2.513671875,
+          11.5
+        ],
+        "dimensions": [
+          4.94140625,
+          6.0,
+          13.107421875
+        ]
+      },
+      "contact_checks": {
+        "repeat_vertices": 47968,
+        "max_gap_m": 0,
+        "below_ground_unchanged": true
+      },
+      "native_owner_marks": "Preserve existing layout_outpost, origin, top weapon marker and native stamp graph; never bake owner colour into texture"
+    }
+  ],
+  "design_note": "Visible remodeling of native Chinese outpost proportions; low shelter/readable lookout, stock source and topology retained; qualitative target only"
+}

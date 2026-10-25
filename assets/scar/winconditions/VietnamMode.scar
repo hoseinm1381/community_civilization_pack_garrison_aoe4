@@ -1,0 +1,315 @@
+import("cardinal.scar")
+-- Register before standard initialization so the opening hold precedes input.
+Core_RegisterModule("VietnamMode")
+import("gamemodes/standard_mode.scar")
+import("vietnam/prematch_precache.scar")
+import("vietnam/selection_core.scar")
+import("vietnam/blueprints.scar")
+import("vietnam/initialization.scar")
+import("vietnam/tunnel_core.scar")
+import("vietnam/tunnel_buildings.scar")
+import("vietnam/tunnels.scar")
+import("vietnam/garden.scar")
+import("vietnam/landmarks.scar")
+import("vietnam/hideouts.scar")
+import("vietnam/tower_training.scar")
+import("vietnam/rattan_armor.scar")
+import("vietnam/scorched_earth.scar")
+import("vietnam/foundries_discount.scar")
+import("vietnam/empty_gardens.scar")
+import("vietnam/siege_research.scar")
+import("vietnam/flooded_citadel.scar")
+import("vietnam/dynasty.scar")
+import("vietnam/traps.scar")
+import("vietnam/paddy_food.scar")
+import("vietnam/paddy_construction.scar")
+import("vietnam/paddy_wood.scar")
+import("vietnam/pagoda_buffalo.scar")
+import("vietnam/lifecycle.scar")
+import("vietnam/presentation.scar")
+
+VietnamModeState = {started = false, held = false, selection = nil,
+    protected = {}, ai = {}, civilizations = {}, networkRegistered = false,
+    popupActive = false, choiceSent = false, ending = false, banner = nil, dynastyHidden = false}
+local state = VietnamModeState
+local holdReason = "VietnamV2OpeningSelection"
+local locPrefix = "$b7fcea91257b408fb9e8ae4d8bc402e1:"
+local blueprintPrefix = "b7fcea91257b408fb9e8ae4d8bc402e1:"
+
+local function text(id)
+    return Loc_GetString(locPrefix .. tostring(id))
+end
+
+local function messageText(id)
+    -- Loc_GetString returns utf8_mt, which cannot use Lua's .. operator.
+    -- Native Cardinal uses Loc_ToAnsi for composed Lua strings. This probe
+    -- declares English only; keep localized values for the popup's UI labels.
+    return Loc_ToAnsi(text(id))
+end
+
+local function releaseHold()
+    if not state.held then return end
+    state.held = false
+    for _, player in ipairs(PLAYERS) do
+        Player_SetAllCommandAvailability(player.id, ITEM_DEFAULT, holdReason)
+        if state.ai[player.index] ~= nil and Player_IsAlive(player.id) then
+            AI_Enable(player.id, state.ai[player.index])
+        end
+    end
+    for _, item in ipairs(state.protected) do
+        -- Validity accepts the numeric world ID, not a SCAR entity handle.
+        -- Resolve a fresh handle only after validating delayed state.
+        if Entity_IsValid(item.entityID) then
+            Entity_SetInvulnerableMinCap(Entity_FromID(item.entityID), item.cap, -1)
+        end
+    end
+    state.protected = {}
+end
+
+local function holdMatch()
+    state.held = true
+    for _, player in ipairs(PLAYERS) do
+        Player_SetAllCommandAvailability(player.id, ITEM_LOCKED, holdReason)
+        if not player.isHuman then
+            state.ai[player.index] = AI_IsEnabled(player.id)
+            AI_Enable(player.id, false)
+        end
+    end
+    -- World_GetAllEntities includes World-owned resources; querying their
+    -- player owner violates Entity_GetPlayerOwner's documented precondition.
+    for _, player in ipairs(PLAYERS) do
+        local entities = EGroup_CreateUnique()
+        Player_GetEntitiesEGroup(player.id, entities)
+        for i = 1, EGroup_Count(entities) do
+            local entity = EGroup_GetEntityAt(entities, i)
+            local entityID = Entity_GetID(entity)
+            if Entity_IsValid(entityID) then
+                table.insert(state.protected, {entityID = entityID, cap = Entity_GetInvulnerableMinCap(entity)})
+                Entity_SetInvulnerableMinCap(entity, Entity_GetHealthPercentage(entity), -1)
+            end
+        end
+        EGroup_Destroy(entities)
+    end
+end
+
+function VietnamMode_MissingTuningWarning()
+    if state.ending then return end
+    if not UI_IsReplay() then
+        state.banner = messageText(1008)
+        UI_SystemMessageShow(state.banner)
+    end
+    print("VIETNAM_V2_BLUEPRINTS_UNAVAILABLE")
+    Rule_AddOneShot(VietnamMode_HideWarning, 3)
+end
+
+function VietnamMode_NoEligibleWarning()
+    if state.ending or UI_IsReplay() then return end
+    state.banner = messageText(1010)
+    local player = Core_GetPlayersTableEntry(Game_GetLocalPlayer())
+    if player ~= nil then state.banner = state.banner .. " (" .. Player_GetRaceName(player.id) .. ")" end
+    UI_SystemMessageShow(state.banner)
+    Rule_AddOneShot(VietnamMode_HideWarning, 3)
+end
+
+function VietnamMode_HideWarning()
+    if state.banner ~= nil then
+        UI_SystemMessageHide(state.banner)
+        state.banner = nil
+    end
+end
+
+function VietnamMode_DialogChoice(result)
+    if state.ending or state.selection == nil or state.selection.closed or state.choiceSent then return end
+    if result ~= DB_Button1 and result ~= DB_Button2 then return end
+    state.choiceSent = true
+    state.popupActive = false
+    local choice = result == DB_Button2 and "vietnam" or "china"
+    -- Current official network.scar derives sender identity from the engine.
+    -- The message contains no player index and cannot nominate another player.
+    Network_CallEvent("VietnamMode_NetChoose", choice)
+end
+
+function VietnamMode_NetChoose(sender, message)
+    if state.ending or state.selection == nil or state.selection.closed then return end
+    local player = Core_GetPlayersTableEntry(sender)
+    if player == nil or not player.isHuman or not Player_IsAlive(player.id) then return end
+    if VietnamSelectionCore.Choose(state.selection, player.index, message, World_GetGameTime()) then
+        print("VIETNAM_V2_CHOICE player=" .. tostring(player.index) .. " choice=" .. message)
+    end
+end
+
+local function closePopup()
+    if state.popupActive then
+        state.popupActive = false
+        state.choiceSent = true
+        UI_MessageBoxHide(DB_Button1)
+    end
+    if state.banner ~= nil then
+        UI_SystemMessageHide(state.banner)
+        state.banner = nil
+    end
+end
+
+function VietnamMode_RefreshDynastyUI()
+    if state.ending then return end
+    VietnamPresentation_Update()
+    local player = Core_GetPlayersTableEntry(Game_GetLocalPlayer())
+    local vietnam = player ~= nil and state.civilizations[player.index] == "vietnam"
+    if vietnam then
+        -- The stock template ORs its show flag with Chinese RaceID. Hide the
+        -- presenter itself so that inherited race visibility cannot win.
+        DynastyUI_HideDropdown()
+        -- The stock controller helper refuses to toggle without a selected TC.
+        -- Close that local context/handler explicitly if its guard left it open.
+        if _dynasty ~= nil and _dynasty.data_context ~= nil
+            and _dynasty.data_context.is_dropdown_visible then
+            _dynasty.data_context.is_dropdown_visible = false
+            UI_RemoveEventHandler("Scar", "HUDPageBase.Cancel", "DynastyUI_HideDropdown")
+        end
+        DynastyUI_Show(false)
+        UI_SetPropertyValue("DynastyUI", "Visibility", "Collapsed")
+        UI_SetPropertyValue("DynastyUI", "IsHitTestVisible", false)
+        state.dynastyHidden = true
+    else
+        if state.dynastyHidden then
+            UI_SetPropertyValue("DynastyUI", "Visibility", "Visible")
+            UI_SetPropertyValue("DynastyUI", "IsHitTestVisible", true)
+            state.dynastyHidden = false
+        end
+        if player ~= nil then
+            DynastyUI_Show(Player_GetRaceName(player.id) == "chinese")
+        end
+    end
+end
+
+function VietnamMode_OnLocalPlayerChanged()
+    Rule_AddOneShot(VietnamMode_RefreshDynastyUI, 0.1)
+end
+
+local function finishSelection()
+    -- Resolve in player-index order, never according to local UI order.
+    for _, index in ipairs(state.selection.order) do
+        local record = state.selection.players[index]
+        local player = PLAYERS[index]
+        state.civilizations[index] = "china"
+        if not record.dropped and record.choice == "vietnam" and Player_IsAlive(player.id) then
+            if VietnamInitialization_Apply(player) then
+                state.civilizations[index] = "vietnam"
+            else
+                print("VIETNAM_V2_FEASIBILITY_FAILED player=" .. tostring(index))
+            end
+        end
+    end
+    VietnamSelectionCore.Close(state.selection)
+    releaseHold()
+    VietnamLifecycle_Start(state.civilizations)
+    VietnamPresentation_Start()
+    VietnamMode_RefreshDynastyUI()
+    Rule_AddInterval(VietnamMode_RefreshDynastyUI, 0.5)
+    Rule_AddGlobalEvent(VietnamMode_OnLocalPlayerChanged, GE_LocalPlayerChanged)
+    closePopup()
+    Rule_Remove(VietnamMode_Tick)
+    if state.networkRegistered then
+        Network_RemoveEvent("VietnamMode_NetChoose")
+        state.networkRegistered = false
+    end
+    print("VIETNAM_V2_SELECTION_COMPLETE")
+end
+
+function VietnamMode_Tick()
+    if state.ending or state.selection == nil or state.selection.closed then return end
+    for _, index in ipairs(state.selection.order) do
+        if not Player_IsAlive(PLAYERS[index].id) then VietnamSelectionCore.Drop(state.selection, index) end
+    end
+    if VietnamSelectionCore.Tick(state.selection, World_GetGameTime()) then
+        finishSelection()
+        return
+    end
+    if not UI_IsReplay() then
+        local player = Core_GetPlayersTableEntry(Game_GetLocalPlayer())
+        local record = player and state.selection.players[player.index]
+        if record and record.choice == nil and not state.popupActive and not state.choiceSent then
+            UI_MessageBoxReset()
+            UI_MessageBoxSetText(text(1003), text(1007))
+            UI_MessageBoxSetButton(DB_Button1, text(1004), text(1004), "", true)
+            UI_MessageBoxSetButton(DB_Button2, text(1005), text(1009), "", true)
+            state.popupActive = true
+            UI_MessageBoxShow(DC_Default, VietnamMode_DialogChoice)
+        end
+        if state.banner ~= nil then UI_SystemMessageHide(state.banner) end
+        state.banner = messageText(1003) .. " (" .. tostring(math.max(0, math.ceil(state.selection.deadline - World_GetGameTime()))) .. "s)"
+        UI_SystemMessageShow(state.banner)
+    end
+end
+
+function VietnamMode_OnInit()
+    if state.started then return end
+    state.started = true
+    print("VIETNAM_V2_INIT_ENTER players=" .. tostring(#PLAYERS))
+    print("VIETNAM_V2_SOURCE revision=20261023-runtime-v12-garrison-072 hideout=400 fortified=1200 dropoff=all4 tunneling=native-target-verified-relocation paddy=native-resource-staged-completion supervision=committed-target-center-move pagoda=spawn-only-75s headquarters=user-native-proximity-stealth garden=native-100s-replacement trap_weapons=stock_outpost_poison_burst12 trap_slow=0.8x5s trap_lifetime=4")
+    local eligible = {}
+    for _, player in ipairs(PLAYERS) do
+        print("VIETNAM_V2_PLAYER index=" .. tostring(player.index) .. " human=" .. tostring(player.isHuman)
+            .. " race=" .. Player_GetRaceName(player.id) .. " alive=" .. tostring(Player_IsAlive(player.id)))
+        if player.isHuman and Player_GetRaceName(player.id) == "chinese" and Player_IsAlive(player.id) then
+            table.insert(eligible, player.index)
+        end
+    end
+    if #eligible == 0 then
+        print("VIETNAM_V2_NO_ELIGIBLE_HUMANS")
+        Rule_AddOneShot(VietnamMode_NoEligibleWarning, 1)
+        return
+    end
+    -- Exists is documented; do not resolve a missing custom blueprint first.
+    if not EBP_Exists(blueprintPrefix .. "vn_building_town_center_capital_chi") or not EBP_Exists(blueprintPrefix .. "vn_unit_villager_1_chi")
+        or not EBP_Exists(blueprintPrefix .. "vn_unit_scout_1_chi")
+        or not EBP_Exists(blueprintPrefix .. "vn_unit_water_buffalo_vit")
+        or not EBP_Exists(blueprintPrefix .. "vn_building_unit_ranged_control_chi")
+        or not SBP_Exists(blueprintPrefix .. "vn_unit_villager_1_chi")
+        or not SBP_Exists(blueprintPrefix .. "vn_unit_scout_1_chi")
+        or not SBP_Exists(blueprintPrefix .. "vn_unit_water_buffalo_vit") then
+        print("VIETNAM_V2_QUALIFIED_BLUEPRINTS_MISSING")
+        Rule_AddOneShot(VietnamMode_MissingTuningWarning, 1)
+        return
+    end
+    state.selection = VietnamSelectionCore.New(eligible, World_GetGameTime(), 30)
+    Network_RegisterEvent("VietnamMode_NetChoose")
+    state.networkRegistered = true
+    holdMatch()
+    Rule_AddInterval(VietnamMode_Tick, 1)
+    print("VIETNAM_V2_SELECTION_STARTED")
+end
+
+function VietnamMode_Start()
+    -- Start is after initialization and is the earliest presentation phase.
+    -- The interval remains responsible for authoritative timeout handling.
+    if state.held then VietnamMode_Tick() end
+end
+
+function VietnamMode_OnGameRestore()
+    VietnamPaddyWood_RestoreUI()
+    VietnamPresentation_Restore()
+    Rule_AddOneShot(VietnamMode_RefreshDynastyUI, 0.1)
+end
+
+function VietnamMode_OnGameOver()
+    if state.ending then return end
+    state.ending = true
+    if state.selection then VietnamSelectionCore.Close(state.selection) end
+    Rule_Remove(VietnamMode_Tick)
+    Rule_Remove(VietnamMode_MissingTuningWarning)
+    Rule_Remove(VietnamMode_NoEligibleWarning)
+    Rule_Remove(VietnamMode_HideWarning)
+    Rule_Remove(VietnamMode_RefreshDynastyUI)
+    Rule_RemoveGlobalEvent(VietnamMode_OnLocalPlayerChanged)
+    if state.networkRegistered then
+        Network_RemoveEvent("VietnamMode_NetChoose")
+        state.networkRegistered = false
+    end
+    releaseHold()
+    closePopup()
+    VietnamInitialization_Cleanup()
+    VietnamLifecycle_Cleanup()
+    VietnamPresentation_Cleanup()
+    print("VIETNAM_V2_CLEANUP")
+end

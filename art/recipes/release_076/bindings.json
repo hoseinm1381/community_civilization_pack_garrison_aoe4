@@ -1,0 +1,726 @@
+{
+  "schema": "ccp076-bindings/v1",
+  "status": "deferred_visual_patch_specification_not_applied",
+  "destination_guid": "b7fcea91-257b-408f-b9e8-ae4d8bc402e1",
+  "source_consumers": [
+    {
+      "source": "assets/attrib/instances/ebps/vietnam/units/economy/experimental_cattle/vn_unit_water_buffalo_vit.xml",
+      "sha256": "903a49ecff67f013b5f4eafd77a8807eccd09f5274d00523c434fc666d8eb58e",
+      "references": [
+        {
+          "variant": "default",
+          "node": "/instance[]/instance_reference[parent_pbg]",
+          "value": "ebps\\vietnam\\units\\economy\\water_buffalo\\vn_unit_war_elephant_1_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/instance_reference[parent_pbg]",
+          "value": "ebps\\vietnam\\units\\economy\\water_buffalo\\vn_unit_war_elephant_1_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        }
+      ]
+    },
+    {
+      "source": "assets/attrib/instances/ebps/vietnam/units/ranged/skirmishers/vn_unit_skirmisher_2_vit.xml",
+      "sha256": "8354730b428d8c488cfec20cbfd3210b64b7e9198b8c0326cd2d5a5b993aa031",
+      "references": [
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@-690770711/list[hardpoints]/group[hardpoint]@69747504/list[weapon_table]/group[weapon]@2147481013/template_reference[non_entity_weapon_wrapper]/instance_reference[non_entity_weapon_wrapper_pbg]",
+          "value": "weapon\\vietnam\\vn_weapon_skirmisher_2_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@-690770711/list[hardpoints]/group[hardpoint]@69747504/list[weapon_table]/group[weapon]@2147481013/template_reference[non_entity_weapon_wrapper]/instance_reference[animator_attachments]",
+          "value": "attachments\\attachment_lists\\races\\core\\weapons\\wpn_range_javelin_2",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@-690770711/list[hardpoints]/group[hardpoint]@69747504/list[weapon_table]/group[weapon]@2147481014/template_reference[non_entity_weapon_wrapper]/instance_reference[animator_attachments]",
+          "value": "attachments\\attachment_lists\\races\\core\\weapons\\wpn_siege_torch",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@126082233/list[tier_group_list]/list[tier_group]@2147481016/group[tier]@2147481017/instance_reference[attachments]",
+          "value": "attachments\\attachment_lists\\civilizations\\malian\\units\\tier2_javelin_mal",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@126082233/list[tier_group_list]/list[tier_group]@2147481016/group[tier]@2147481018/instance_reference[attachments]",
+          "value": "attachments\\attachment_lists\\civilizations\\malian\\units\\tier3_javelin_mal",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@126082233/list[tier_group_list]/list[tier_group]@2147481016/group[tier]@2147481018/instance_reference[statetree_tier_requirements_pbg]",
+          "value": "upgrade\\vietnam\\vn_upgrade_skirmisher_3_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@126082233/list[tier_group_list]/list[tier_group]@2147481016/group[tier]@2147481018/instance_reference[statetree_tier_pgb_upgrade_target_entity]",
+          "value": "ebps\\vietnam\\units\\ranged\\skirmishers\\vn_unit_skirmisher_3_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@126082233/list[tier_group_list]/list[tier_group]@2147481016/group[tier]@2147481018/instance_reference[statetree_tier_pgb_upgrade_target_squad]",
+          "value": "sbps\\vietnam\\units\\ranged\\skirmishers\\vn_unit_skirmisher_3_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@126082233/list[tier_group_list]/list[tier_group]@2147481016/group[tier]@2147481019/instance_reference[attachments]",
+          "value": "attachments\\attachment_lists\\civilizations\\malian\\units\\tier4_javelin_mal",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@126082233/list[tier_group_list]/list[tier_group]@2147481016/group[tier]@2147481019/instance_reference[statetree_tier_requirements_pbg]",
+          "value": "upgrade\\vietnam\\vn_upgrade_skirmisher_4_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@126082233/list[tier_group_list]/list[tier_group]@2147481016/group[tier]@2147481019/instance_reference[statetree_tier_pgb_upgrade_target_entity]",
+          "value": "ebps\\vietnam\\units\\ranged\\skirmishers\\vn_unit_skirmisher_4_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@126082233/list[tier_group_list]/list[tier_group]@2147481016/group[tier]@2147481019/instance_reference[statetree_tier_pgb_upgrade_target_squad]",
+          "value": "sbps\\vietnam\\units\\ranged\\skirmishers\\vn_unit_skirmisher_4_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/instance_reference[parent_pbg]",
+          "value": "ebps\\races\\core\\units\\unit_javelin_2",
+          "mod": null
+        }
+      ]
+    },
+    {
+      "source": "assets/attrib/instances/ebps/vietnam/units/ranged/skirmishers/vn_unit_skirmisher_3_vit.xml",
+      "sha256": "73e327a62835ef9cf24bc1a6ea2131a6d33593a62f12dab1a4c5f064312d4095",
+      "references": [
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@-690770711/list[hardpoints]/group[hardpoint]@69747504/list[weapon_table]/group[weapon]@2147481063/template_reference[non_entity_weapon_wrapper]/instance_reference[non_entity_weapon_wrapper_pbg]",
+          "value": "weapon\\vietnam\\vn_weapon_skirmisher_3_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@-690770711/list[hardpoints]/group[hardpoint]@69747504/list[weapon_table]/group[weapon]@2147481063/template_reference[non_entity_weapon_wrapper]/instance_reference[animator_attachments]",
+          "value": "attachments\\attachment_lists\\races\\core\\weapons\\wpn_range_javelin_3",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@-690770711/list[hardpoints]/group[hardpoint]@69747504/list[weapon_table]/group[weapon]@2147481064/template_reference[non_entity_weapon_wrapper]/instance_reference[animator_attachments]",
+          "value": "attachments\\attachment_lists\\races\\core\\weapons\\wpn_siege_torch",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@126082233/list[tier_group_list]/list[tier_group]@2147481066/group[tier]@2147481067/instance_reference[attachments]",
+          "value": "attachments\\attachment_lists\\civilizations\\malian\\units\\tier3_javelin_mal",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@126082233/list[tier_group_list]/list[tier_group]@2147481066/group[tier]@2147481068/instance_reference[attachments]",
+          "value": "attachments\\attachment_lists\\civilizations\\malian\\units\\tier4_javelin_mal",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@126082233/list[tier_group_list]/list[tier_group]@2147481066/group[tier]@2147481068/instance_reference[statetree_tier_requirements_pbg]",
+          "value": "upgrade\\vietnam\\vn_upgrade_skirmisher_4_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@126082233/list[tier_group_list]/list[tier_group]@2147481066/group[tier]@2147481068/instance_reference[statetree_tier_pgb_upgrade_target_entity]",
+          "value": "ebps\\vietnam\\units\\ranged\\skirmishers\\vn_unit_skirmisher_4_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@126082233/list[tier_group_list]/list[tier_group]@2147481066/group[tier]@2147481068/instance_reference[statetree_tier_pgb_upgrade_target_squad]",
+          "value": "sbps\\vietnam\\units\\ranged\\skirmishers\\vn_unit_skirmisher_4_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/instance_reference[parent_pbg]",
+          "value": "ebps\\races\\core\\units\\unit_javelin_3",
+          "mod": null
+        }
+      ]
+    },
+    {
+      "source": "assets/attrib/instances/ebps/vietnam/units/ranged/skirmishers/vn_unit_skirmisher_4_vit.xml",
+      "sha256": "2fc27f815082736997c961679b24976b5735074a52c43601af898958276c3bdb",
+      "references": [
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@-690770711/list[hardpoints]/group[hardpoint]@69747504/list[weapon_table]/group[weapon]@2147481109/template_reference[non_entity_weapon_wrapper]/instance_reference[non_entity_weapon_wrapper_pbg]",
+          "value": "weapon\\vietnam\\vn_weapon_skirmisher_4_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@-690770711/list[hardpoints]/group[hardpoint]@69747504/list[weapon_table]/group[weapon]@2147481109/template_reference[non_entity_weapon_wrapper]/instance_reference[animator_attachments]",
+          "value": "attachments\\attachment_lists\\races\\core\\weapons\\wpn_range_javelin_4",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@-690770711/list[hardpoints]/group[hardpoint]@69747504/list[weapon_table]/group[weapon]@2147481110/template_reference[non_entity_weapon_wrapper]/instance_reference[animator_attachments]",
+          "value": "attachments\\attachment_lists\\races\\core\\weapons\\wpn_siege_torch",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[exts]@126082233/list[tier_group_list]/list[tier_group]@2147481112/group[tier]@2147481113/instance_reference[attachments]",
+          "value": "attachments\\attachment_lists\\civilizations\\malian\\units\\tier4_javelin_mal",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/instance_reference[parent_pbg]",
+          "value": "ebps\\races\\core\\units\\unit_javelin_4",
+          "mod": null
+        }
+      ]
+    },
+    {
+      "source": "assets/attrib/instances/sbps/vietnam/units/economy/experimental_cattle/vn_unit_water_buffalo_vit.xml",
+      "sha256": "82c04746f685b843f45ca568cd802bcad28afbcdb8ad79a25378490b04400c58",
+      "references": [
+        {
+          "variant": "default",
+          "node": "/instance[]/instance_reference[parent_pbg]",
+          "value": "sbps\\vietnam\\units\\economy\\water_buffalo\\vn_unit_war_elephant_1_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/instance_reference[parent_pbg]",
+          "value": "sbps\\vietnam\\units\\economy\\water_buffalo\\vn_unit_war_elephant_1_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        }
+      ]
+    },
+    {
+      "source": "assets/attrib/instances/sbps/vietnam/units/ranged/skirmishers/vn_tower_train_skirmisher_2_vit.xml",
+      "sha256": "102ea5c313267cef7fa4dddf1b4cee976bdc0f087e92a63e779a6e8c4021e684",
+      "references": [
+        {
+          "variant": "default",
+          "node": "/instance[]/instance_reference[parent_pbg]",
+          "value": "sbps\\vietnam\\units\\ranged\\skirmishers\\vn_unit_skirmisher_2_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        }
+      ]
+    },
+    {
+      "source": "assets/attrib/instances/sbps/vietnam/units/ranged/skirmishers/vn_tower_train_skirmisher_3_vit.xml",
+      "sha256": "526911a0c94586f4bb66f26f5abdb2c21879df99d821c5a8601cac1e1e284800",
+      "references": [
+        {
+          "variant": "default",
+          "node": "/instance[]/instance_reference[parent_pbg]",
+          "value": "sbps\\vietnam\\units\\ranged\\skirmishers\\vn_unit_skirmisher_3_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        }
+      ]
+    },
+    {
+      "source": "assets/attrib/instances/sbps/vietnam/units/ranged/skirmishers/vn_tower_train_skirmisher_4_vit.xml",
+      "sha256": "77d1438da4cbf36b90ce471890fa1c5248cf310997df007303cb373d00cc34fe",
+      "references": [
+        {
+          "variant": "default",
+          "node": "/instance[]/instance_reference[parent_pbg]",
+          "value": "sbps\\vietnam\\units\\ranged\\skirmishers\\vn_unit_skirmisher_4_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        }
+      ]
+    },
+    {
+      "source": "assets/attrib/instances/sbps/vietnam/units/ranged/skirmishers/vn_unit_skirmisher_2_vit.xml",
+      "sha256": "d60a0732f834e782dcdf8d7f9bc2fc7cf24bf9ed714f418f3ed61c70bbcd857a",
+      "references": [
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[squadexts]@71247335/list[race_list]/group[race_data]@1131010880/group[info]/file[icon_name]",
+          "value": "races\\malian\\units\\javelin_thrower_2",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[squadexts]@-1479400647/list[unit_list]/group[loadout_data]@2147481029/instance_reference[type]",
+          "value": "ebps\\vietnam\\units\\ranged\\skirmishers\\vn_unit_skirmisher_2_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[squadexts]@1598045404/list[requirement_table]/template_reference[required]@2147481054/instance_reference[upgrade_name]",
+          "value": "upgrade\\vietnam\\vn_upgrade_skirmisher_3_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[squadexts]@1598045404/list[requirement_table]/template_reference[required]@2147481055/instance_reference[upgrade_name]",
+          "value": "upgrade\\vietnam\\vn_upgrade_skirmisher_4_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[squadexts]@-1816252207/list[squad_type_list]/enum[squad_type]@2147481033",
+          "value": "javelin",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[squadexts]@-1816252207/list[squad_type_list]/enum[squad_type]@2147481036",
+          "value": "scar_javelin",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/instance_reference[parent_pbg]",
+          "value": "sbps\\races\\core\\unit_archer_2",
+          "mod": null
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/list[extensions]/template_reference[squadexts]@144122097/list[race_list]/group[race_data]@-1662169946/group[info]/file[icon_name]",
+          "value": "races\\malian\\units\\javelin_thrower_2",
+          "mod": null
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/list[extensions]/template_reference[squadexts]@-2089102750/list[unit_list]/group[loadout_data]@2147481041/instance_reference[type]",
+          "value": "ebps\\vietnam\\units\\ranged\\skirmishers\\vn_unit_skirmisher_2_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/list[extensions]/template_reference[squadexts]@1212367720/list[requirement_table]/template_reference[required]@2147481057/instance_reference[upgrade_name]",
+          "value": "upgrade\\vietnam\\vn_upgrade_skirmisher_3_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/list[extensions]/template_reference[squadexts]@1212367720/list[requirement_table]/template_reference[required]@2147481058/instance_reference[upgrade_name]",
+          "value": "upgrade\\vietnam\\vn_upgrade_skirmisher_4_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/list[extensions]/template_reference[squadexts]@-2029073997/list[squad_type_list]/enum[squad_type]@2147481045",
+          "value": "javelin",
+          "mod": null
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/list[extensions]/template_reference[squadexts]@-2029073997/list[squad_type_list]/enum[squad_type]@2147481048",
+          "value": "scar_javelin",
+          "mod": null
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/instance_reference[parent_pbg]",
+          "value": "sbps\\races\\core\\unit_archer_2",
+          "mod": null
+        }
+      ]
+    },
+    {
+      "source": "assets/attrib/instances/sbps/vietnam/units/ranged/skirmishers/vn_unit_skirmisher_3_vit.xml",
+      "sha256": "d0a22e5170c5b453e8e07d681d57c34da60f8e51c9b18da7d5cdd355371c671b",
+      "references": [
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[squadexts]@71247335/list[race_list]/group[race_data]@1131010880/group[info]/file[icon_name]",
+          "value": "races\\malian\\units\\javelin_thrower_3",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[squadexts]@-1479400647/list[unit_list]/group[loadout_data]@2147481077/instance_reference[type]",
+          "value": "ebps\\vietnam\\units\\ranged\\skirmishers\\vn_unit_skirmisher_3_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[squadexts]@1598045404/list[requirement_table]/template_reference[required]@2147481101/instance_reference[upgrade_name]",
+          "value": "upgrade\\vietnam\\vn_upgrade_skirmisher_3_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[squadexts]@1598045404/list[requirement_table]/template_reference[required]@2147481102/instance_reference[upgrade_name]",
+          "value": "upgrade\\vietnam\\vn_upgrade_skirmisher_4_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[squadexts]@-1816252207/list[squad_type_list]/enum[squad_type]@2147481081",
+          "value": "javelin",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[squadexts]@-1816252207/list[squad_type_list]/enum[squad_type]@2147481084",
+          "value": "scar_javelin",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/instance_reference[parent_pbg]",
+          "value": "sbps\\races\\core\\unit_archer_3",
+          "mod": null
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/list[extensions]/template_reference[squadexts]@144122097/list[race_list]/group[race_data]@-1662169946/group[info]/file[icon_name]",
+          "value": "races\\malian\\units\\javelin_thrower_3",
+          "mod": null
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/list[extensions]/template_reference[squadexts]@-2089102750/list[unit_list]/group[loadout_data]@2147481089/instance_reference[type]",
+          "value": "ebps\\vietnam\\units\\ranged\\skirmishers\\vn_unit_skirmisher_3_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/list[extensions]/template_reference[squadexts]@1212367720/list[requirement_table]/template_reference[required]@2147481103/instance_reference[upgrade_name]",
+          "value": "upgrade\\vietnam\\vn_upgrade_skirmisher_3_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/list[extensions]/template_reference[squadexts]@1212367720/list[requirement_table]/template_reference[required]@2147481104/instance_reference[upgrade_name]",
+          "value": "upgrade\\vietnam\\vn_upgrade_skirmisher_4_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/list[extensions]/template_reference[squadexts]@-2029073997/list[squad_type_list]/enum[squad_type]@2147481093",
+          "value": "javelin",
+          "mod": null
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/list[extensions]/template_reference[squadexts]@-2029073997/list[squad_type_list]/enum[squad_type]@2147481096",
+          "value": "scar_javelin",
+          "mod": null
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/instance_reference[parent_pbg]",
+          "value": "sbps\\races\\core\\unit_archer_3",
+          "mod": null
+        }
+      ]
+    },
+    {
+      "source": "assets/attrib/instances/sbps/vietnam/units/ranged/skirmishers/vn_unit_skirmisher_4_vit.xml",
+      "sha256": "f3a314fdcbd65ebfec074bb6746645553b7fd87b6b0c9fce38a88554c4cbe700",
+      "references": [
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[squadexts]@71247335/list[race_list]/group[race_data]@1131010880/group[info]/file[icon_name]",
+          "value": "races\\malian\\units\\javelin_thrower_4",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[squadexts]@-1479400647/list[unit_list]/group[loadout_data]@2147481121/instance_reference[type]",
+          "value": "ebps\\vietnam\\units\\ranged\\skirmishers\\vn_unit_skirmisher_4_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[squadexts]@1598045404/list[requirement_table]/template_reference[required]@2147481145/instance_reference[upgrade_name]",
+          "value": "upgrade\\vietnam\\vn_upgrade_skirmisher_4_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[squadexts]@-1816252207/list[squad_type_list]/enum[squad_type]@2147481125",
+          "value": "javelin",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/list[extensions]/template_reference[squadexts]@-1816252207/list[squad_type_list]/enum[squad_type]@2147481128",
+          "value": "scar_javelin",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/instance_reference[parent_pbg]",
+          "value": "sbps\\races\\core\\unit_archer_4",
+          "mod": null
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/list[extensions]/template_reference[squadexts]@144122097/list[race_list]/group[race_data]@-1662169946/group[info]/file[icon_name]",
+          "value": "races\\malian\\units\\javelin_thrower_4",
+          "mod": null
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/list[extensions]/template_reference[squadexts]@-2089102750/list[unit_list]/group[loadout_data]@2147481133/instance_reference[type]",
+          "value": "ebps\\vietnam\\units\\ranged\\skirmishers\\vn_unit_skirmisher_4_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/list[extensions]/template_reference[squadexts]@1212367720/list[requirement_table]/template_reference[required]@2147481146/instance_reference[upgrade_name]",
+          "value": "upgrade\\vietnam\\vn_upgrade_skirmisher_4_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/list[extensions]/template_reference[squadexts]@-2029073997/list[squad_type_list]/enum[squad_type]@2147481137",
+          "value": "javelin",
+          "mod": null
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/list[extensions]/template_reference[squadexts]@-2029073997/list[squad_type_list]/enum[squad_type]@2147481140",
+          "value": "scar_javelin",
+          "mod": null
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/instance_reference[parent_pbg]",
+          "value": "sbps\\races\\core\\unit_archer_4",
+          "mod": null
+        }
+      ]
+    },
+    {
+      "source": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_skirmisher_3_vit.xml",
+      "sha256": "171724d21dba5a43375ed2858768564dad2591f9c303e30a197a0a52c4c3ed83",
+      "references": [
+        {
+          "variant": "default",
+          "node": "/instance[]/instance_reference[parent_pbg]",
+          "value": "upgrade\\races\\common\\units\\upgrade_unit_archer_3",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/group[upgrade_bag]/list[requirements]/template_reference[required]@2147481007/instance_reference[upgrade_name]",
+          "value": "upgrade\\vietnam\\vn_upgrade_skirmisher_3_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/group[upgrade_bag]/group[ui_info]/file[icon_name]",
+          "value": "races\\malian\\units\\javelin_thrower_3",
+          "mod": null
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/group[upgrade_bag]/list[requirements]/template_reference[required]@2147481021/instance_reference[upgrade_name]",
+          "value": "upgrade\\vietnam\\vn_upgrade_skirmisher_3_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/group[upgrade_bag]/group[ui_info]/file[icon_name]",
+          "value": "races\\malian\\units\\javelin_thrower_3",
+          "mod": null
+        }
+      ]
+    },
+    {
+      "source": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_skirmisher_4_vit.xml",
+      "sha256": "4a7ca9e0d6698a34d3979b1cb8a30a248813344dc2a43709d0238241acdc0dc1",
+      "references": [
+        {
+          "variant": "default",
+          "node": "/instance[]/instance_reference[parent_pbg]",
+          "value": "upgrade\\races\\common\\units\\upgrade_unit_archer_4",
+          "mod": null
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/group[upgrade_bag]/list[requirements]/template_reference[required]@2147481010/instance_reference[upgrade_name]",
+          "value": "upgrade\\vietnam\\vn_upgrade_skirmisher_3_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/group[upgrade_bag]/list[requirements]/template_reference[required]@2147481011/instance_reference[upgrade_name]",
+          "value": "upgrade\\vietnam\\vn_upgrade_skirmisher_4_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "default",
+          "node": "/instance[]/group[upgrade_bag]/group[ui_info]/file[icon_name]",
+          "value": "races\\malian\\units\\javelin_thrower_4",
+          "mod": null
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/group[upgrade_bag]/list[requirements]/template_reference[required]@2147481023/instance_reference[upgrade_name]",
+          "value": "upgrade\\vietnam\\vn_upgrade_skirmisher_3_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/group[upgrade_bag]/list[requirements]/template_reference[required]@2147481061/instance_reference[upgrade_name]",
+          "value": "upgrade\\vietnam\\vn_upgrade_skirmisher_4_vit",
+          "mod": "b7fcea91257b408fb9e8ae4d8bc402e1"
+        },
+        {
+          "variant": "campaign",
+          "node": "/instance[]/variant[campaign]/group[upgrade_bag]/group[ui_info]/file[icon_name]",
+          "value": "races\\malian\\units\\javelin_thrower_4",
+          "mod": null
+        }
+      ]
+    },
+    {
+      "source": "assets/attrib/instances/weapon/vietnam/vn_weapon_skirmisher_2_vit.xml",
+      "sha256": "6db0d940d8f895094115fd3bc29fe1d5c02496fd547468f6ecc1361fcf878218",
+      "references": [
+        {
+          "variant": "default",
+          "node": "/instance[]/instance_reference[parent_pbg]",
+          "value": "weapon\\races\\common\\ranged\\weapon_javelin_2",
+          "mod": null
+        }
+      ]
+    },
+    {
+      "source": "assets/attrib/instances/weapon/vietnam/vn_weapon_skirmisher_3_vit.xml",
+      "sha256": "52015a78b55628299b79db4c13e5cbeb4b040ef1abbceca60dc3210a582f4302",
+      "references": [
+        {
+          "variant": "default",
+          "node": "/instance[]/instance_reference[parent_pbg]",
+          "value": "weapon\\races\\common\\ranged\\weapon_javelin_3",
+          "mod": null
+        }
+      ]
+    },
+    {
+      "source": "assets/attrib/instances/weapon/vietnam/vn_weapon_skirmisher_4_vit.xml",
+      "sha256": "4364c48e0c88793aa712dd196463d9c313bfc33ed3356803a52c276148345d4e",
+      "references": [
+        {
+          "variant": "default",
+          "node": "/instance[]/instance_reference[parent_pbg]",
+          "value": "weapon\\races\\common\\ranged\\weapon_javelin_4",
+          "mod": null
+        }
+      ]
+    }
+  ],
+  "changes": [
+    {
+      "asset": "skirmisher2",
+      "stock_attachment": "attachments/attachment_lists/civilizations/malian/units/tier2_javelin_mal",
+      "private_attachment_name": "vn076_skirmisher_body_2",
+      "field": "attachment_lists/attachment_lists/attachment_list/attachment_list/animator_merge_mesh_attachment/meshes/animator0",
+      "model": "art/scenario/garrison/cc076/skirmisher2/model",
+      "preserve": "parent animator, list identities, speech, upgrade selectors and all gameplay fields"
+    },
+    {
+      "asset": "javelin2",
+      "private_attachment_name": "vn076_skirmisher_weapon_2",
+      "model": "art/scenario/garrison/cc076/javelin2/model",
+      "socket": "MetaRig_RArmPalmSocket",
+      "owner_to_preserve": "art/civilizations/malian/weapons/mal_javelin_throwing/mal_javelin_throwing",
+      "integration_gate": "Clone native throwing lifecycle privately; replace its geometry references, not the stock animation owner with a static model. Inspect held/throwing age selectors in selected baseline."
+    },
+    {
+      "asset": "projectile2",
+      "private_projectile_name": "vn076_projectile_javelin_2",
+      "model": "art/scenario/garrison/cc076/projectile2/model",
+      "consumer": "weapon/vietnam/vn_weapon_skirmisher_2_vit",
+      "field": "weapon_bag/projectile/projectile",
+      "preserve": "clone exact native projectile; change visual only, preserve motion/collision/damage and private owner qualification"
+    },
+    {
+      "asset": "skirmisher3",
+      "stock_attachment": "attachments/attachment_lists/civilizations/malian/units/tier3_javelin_mal",
+      "private_attachment_name": "vn076_skirmisher_body_3",
+      "field": "attachment_lists/attachment_lists/attachment_list/attachment_list/animator_merge_mesh_attachment/meshes/animator0",
+      "model": "art/scenario/garrison/cc076/skirmisher3/model",
+      "preserve": "parent animator, list identities, speech, upgrade selectors and all gameplay fields"
+    },
+    {
+      "asset": "javelin3",
+      "private_attachment_name": "vn076_skirmisher_weapon_3",
+      "model": "art/scenario/garrison/cc076/javelin3/model",
+      "socket": "MetaRig_RArmPalmSocket",
+      "owner_to_preserve": "art/civilizations/malian/weapons/mal_javelin_throwing/mal_javelin_throwing",
+      "integration_gate": "Clone native throwing lifecycle privately; replace its geometry references, not the stock animation owner with a static model. Inspect held/throwing age selectors in selected baseline."
+    },
+    {
+      "asset": "projectile3",
+      "private_projectile_name": "vn076_projectile_javelin_3",
+      "model": "art/scenario/garrison/cc076/projectile3/model",
+      "consumer": "weapon/vietnam/vn_weapon_skirmisher_3_vit",
+      "field": "weapon_bag/projectile/projectile",
+      "preserve": "clone exact native projectile; change visual only, preserve motion/collision/damage and private owner qualification"
+    },
+    {
+      "asset": "skirmisher4",
+      "stock_attachment": "attachments/attachment_lists/civilizations/malian/units/tier4_javelin_mal",
+      "private_attachment_name": "vn076_skirmisher_body_4",
+      "field": "attachment_lists/attachment_lists/attachment_list/attachment_list/animator_merge_mesh_attachment/meshes/animator0",
+      "model": "art/scenario/garrison/cc076/skirmisher4/model",
+      "preserve": "parent animator, list identities, speech, upgrade selectors and all gameplay fields"
+    },
+    {
+      "asset": "javelin4",
+      "private_attachment_name": "vn076_skirmisher_weapon_4",
+      "model": "art/scenario/garrison/cc076/javelin4/model",
+      "socket": "MetaRig_RArmPalmSocket",
+      "owner_to_preserve": "art/civilizations/malian/weapons/mal_javelin_throwing/mal_javelin_throwing",
+      "integration_gate": "Clone native throwing lifecycle privately; replace its geometry references, not the stock animation owner with a static model. Inspect held/throwing age selectors in selected baseline."
+    },
+    {
+      "asset": "projectile4",
+      "private_projectile_name": "vn076_projectile_javelin_4",
+      "model": "art/scenario/garrison/cc076/projectile4/model",
+      "consumer": "weapon/vietnam/vn_weapon_skirmisher_4_vit",
+      "field": "weapon_bag/projectile/projectile",
+      "preserve": "clone exact native projectile; change visual only, preserve motion/collision/damage and private owner qualification"
+    },
+    {
+      "asset": "buffalo",
+      "consumer": "vn_unit_water_buffalo_vit",
+      "private_attachment_name": "vn076_water_buffalo",
+      "native_visual_donor": "attachments/attachment_lists/gaia/animals/gaia_herdable_cattle_mal",
+      "parent_animator": "art/civilizations/common/animals/archetypes/base_cattle/base_cattle",
+      "model": "art/scenario/garrison/cc076/buffalo/model",
+      "field": "attachment_lists/attachment_lists/attachment_list/attachment_list/animator_skin_attachment/animator",
+      "preserve": "Existing Worker Elephant gameplay parent; replace only buffalo presentation; never convert entity to herdable cattle. Do not alter shared v6i93139eb if used by other elephants.",
+      "integration_gate": "Bovine movement/death/build-response coverage in native game remains unverified; custom supervision action disabled."
+    }
+  ],
+  "baseline_policy": "Resolve effective compiled consumers from explicitly selected completed release. Compare these source hashes, detect compiled-only overrides, allocate private identities through supported tools, and stage a copied candidate. Never overwrite live source.",
+  "extension_policy": "No new EBPS/SBPS singleton extensions. If a future binding needs one, resolve full private and official variant chain first.",
+  "scar_patch": null,
+  "supervision_animation": "source_only_not_enabled"
+}

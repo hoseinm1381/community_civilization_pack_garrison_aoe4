@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="Fortified Hideout; inherits the matching legacy branch." template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2017155034" List.ParentItemID="2017155034">
+			<float name="hitpoints" value="1200" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Fire" value="5" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="-773066302" List.ParentItemID="-773066302">
+			<float name="num_slots" value="3" overrideParent="True" />
+			<float name="num_squad_slots" value="3" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="536671903" List.ParentItemID="536671903">
+			<list name="standard_upgrades" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="2147470010" List.ParentItemID="2147470010">
+			<float name="range_metres" value="4" overrideParent="True" />
+			<int name="generator_value" value="0" overrideParent="True" />
+			<bool name="disable_generation_on_spawn" value="False" overrideParent="True" />
+			<bool name="is_root_generator" value="False" overrideParent="True" />
+			<int name="district_palette_id" value="0" overrideParent="True" />
+			<list name="requirements">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1544196321" List.ParentItemID="1544196321">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\vietnam\release_0710\vn_0710_hideout_fortified_visual" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1073757085" List.ParentItemID="1073757085">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" List.ItemID="1073757086">
+					<group name="tier" List.ItemID="1073757087">
+						<instance_reference name="attachments" value="attachments\attachment_lists\vietnam\release_0710\vn_0710_hideout_fortified_visual" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147480790" />
+	<instance_reference name="parent_pbg" value="ebps\vietnam\buildings\hideouts\vn_building_defense_outpost_chi" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2095670651" List.ParentItemID="2095670651">
+				<float name="hitpoints" value="1200" overrideParent="True" />
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Fire" value="5" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="-217881951" List.ParentItemID="-217881951">
+				<float name="num_slots" value="3" overrideParent="True" />
+				<float name="num_squad_slots" value="3" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1230187710" List.ParentItemID="-1230187710">
+				<list name="standard_upgrades" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="2147470011" List.ParentItemID="2147470011">
+				<float name="range_metres" value="4" overrideParent="True" />
+				<int name="generator_value" value="0" overrideParent="True" />
+				<bool name="disable_generation_on_spawn" value="False" overrideParent="True" />
+				<bool name="is_root_generator" value="False" overrideParent="True" />
+				<int name="district_palette_id" value="0" overrideParent="True" />
+				<list name="requirements">
+			</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1097396820" List.ParentItemID="-1097396820">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\vietnam\release_0710\vn_0710_hideout_fortified_visual" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1073757120" List.ParentItemID="1073757120">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" List.ItemID="1073757121">
+						<group name="tier" List.ItemID="1073757122">
+							<instance_reference name="attachments" value="attachments\attachment_lists\vietnam\release_0710\vn_0710_hideout_fortified_visual" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147480790" />
+		<instance_reference name="parent_pbg" value="ebps\vietnam\buildings\hideouts\vn_building_defense_outpost_chi" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+	</variant>
+</instance>

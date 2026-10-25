@@ -1,0 +1,23 @@
+{
+  "schema": "ccp.release030.landmark-recipes/v1",
+  "builder": "tools/release_030/landmark_build.py",
+  "export_contract": "Garrison english-house Build Building, one atlas, first visible stages 0 and 20; no native cook in this recipe",
+  "assets": {
+    "pho_minh": {
+      "reference": "https://en.vietnamplus.vn/pho-minh-pagoda-where-tran-dynasty-glory-preserved-in-stone-post323407.vnp",
+      "observed_anatomy": ["broad stone lower stage", "thirteen fired brick upper tiers", "fourteen-tier tapered tower", "deep projecting cornices", "small recessed bays", "courtyard temple roofs"],
+      "planned_proportions": {"authoring_envelope_xy_m": 6.9, "lower_stone_width_m_before_xy_compaction": 3.32, "brick_tier_start_width_m_before_xy_compaction": 2.63, "tier_count": 14, "brick_tiers": 13},
+      "stage_0": ["stone court", "tower lower stone body", "rear temple plinth"],
+      "stage_20": ["thirteen brick tier modules", "cornice and niche module", "lotus relief", "rear timber temple and tiled roof"]
+    },
+    "one_pillar": {
+      "reference": "https://thanglong.chinhphu.vn/english/the-one-pillar-pagoda-and-dien-huu-pagoda-110238.htm",
+      "focused_photo_reference": "https://homepages.bluffton.edu/~sullivanm/vietnam/hanoi/pillarpagoda/onepillar.html",
+      "observed_anatomy": ["small square timber shrine", "single stone column", "timber radial support brackets", "curved tiled roof", "square pond", "stair approach"],
+      "planned_proportions": {"authoring_envelope_xy_m": 6.9, "pond_width_m_before_xy_compaction": 5.0, "shrine_floor_width_m_before_xy_compaction": 3.34, "column_diameter_m_before_xy_compaction": 1.04},
+      "stage_0": ["court", "square pond and opaque static water", "single column", "small support hall plinth"],
+      "stage_20": ["radial brackets", "timber shrine", "curved tiled roof", "stone stair", "small support hall"]
+    }
+  },
+  "authoring_note": "Historically informed landmark interpretations scaled to the existing placement. Texture atlas is generated from deterministic procedural colors and weather, never copied from reference photographs. Native model keys, owner-color handling, gameplay and lifecycle remain integration-owned."
+}

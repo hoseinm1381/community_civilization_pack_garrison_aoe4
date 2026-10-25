@@ -1,0 +1,106 @@
+{
+  "schema": "voice-preparation.pronunciation-lexicon/v1",
+  "entries": [
+    {
+      "id": "LEX_SKY_OLD",
+      "modern_form": "trời",
+      "meaning": "sky / heaven",
+      "source_form": "*plời",
+      "historical_ipa_feature": "/pl-/",
+      "feature_scope": "initial only; not a full word or sentence transcription",
+      "source_ids": [
+        "L01"
+      ],
+      "locator": "p.55 note 2 and p.59, §1.3",
+      "status": "scholarly_reconstructed_initial_projected_modern_rime",
+      "direction": "Do not turn this into a global tr-to-pl rule. Not scheduled in current spoken lines."
+    },
+    {
+      "id": "LEX_SKY_NOM",
+      "modern_form": "trời",
+      "meaning": "sky / heaven",
+      "source_form": "pləj²",
+      "historical_ipa_feature": "pləj²",
+      "feature_scope": "source reconstruction notation, tone category 2; no absolute F0 specified",
+      "source_ids": [
+        "L03"
+      ],
+      "locator": "Phàm lệ, §B.3 Chính tả",
+      "status": "source_IPA_like_reconstruction_not_new_phonetic_measurement",
+      "direction": "Specialist comparison only. Do not collapse this with L01 notation."
+    },
+    {
+      "id": "LEX_SKY_MIDDLE",
+      "modern_form": "trời",
+      "meaning": "sky / heaven",
+      "source_form": "blời",
+      "historical_ipa_feature": null,
+      "feature_scope": "historical spelling cited indirectly, not complete IPA",
+      "source_ids": [
+        "L01",
+        "L05"
+      ],
+      "locator": "Gong p.59 cites Rhodes 1651, column 45",
+      "status": "historical_orthography_indirect",
+      "direction": "Collate original scan before prescribing a Northern pronunciation."
+    },
+    {
+      "id": "LEX_SWORD",
+      "modern_form": "gươm",
+      "meaning": "sword",
+      "source_form": "gươm",
+      "historical_ipa_feature": null,
+      "feature_scope": "historical lexical comparison; not a dated command",
+      "source_ids": [
+        "L01"
+      ],
+      "locator": "p.57, §1.2",
+      "status": "lexical_history_background",
+      "direction": "Current sword lines remain creative; do not substitute a proposed proto-form automatically."
+    },
+    {
+      "id": "LEX_TA_MODERN",
+      "modern_form": "ta",
+      "meaning": "we / our; self-reference depends on context",
+      "source_form": "ta",
+      "historical_ipa_feature": null,
+      "modern_rehearsal_ipa": "/ta/ + ngang category",
+      "feature_scope": "broad modern rehearsal segments and named tone, not medieval IPA",
+      "source_ids": [
+        "L04"
+      ],
+      "locator": "p.382 initial-consonant examples",
+      "status": "modern_only",
+      "direction": "Pronoun review required in every role; player is not automatically sovereign."
+    },
+    {
+      "id": "LEX_CHANG",
+      "modern_form": "chăng",
+      "meaning": "interrogative/modal candidate",
+      "source_form": "chăng…thì chớ",
+      "historical_ipa_feature": null,
+      "feature_scope": "inspected literary dictionary sense; not whole-sentence or A1 attestation",
+      "source_ids": [
+        "L03"
+      ],
+      "locator": "chăn/chăng entry page: chăng sense 2, Ngôn chí 16.8 and Tự thán 77.8",
+      "status": "literary_lexical_evidence_period_of_earlier_use_unresolved",
+      "direction": "A few draft questions use chăng; native editor must judge pragmatics. Not a universal A1 marker."
+    },
+    {
+      "id": "LEX_CHAN",
+      "modern_form": "chăn",
+      "meaning": "tend grazing livestock",
+      "source_form": "chăn",
+      "historical_ipa_feature": null,
+      "feature_scope": "literary lexical sense, not period pronunciation",
+      "source_ids": [
+        "L03"
+      ],
+      "locator": "chăn verb entry, Thủ vĩ ngâm 1.4",
+      "status": "inspected_dictionary_lexical_evidence",
+      "direction": "Useful herd-task lexical candidate; current full herd sentences remain creative adaptations."
+    }
+  ],
+  "all_full_sentence_historical_ipa": "unresolved; no automatic spelling substitution"
+}

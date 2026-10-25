@@ -1,0 +1,298 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:esControls="clr-namespace:WPFGUI.Shared.Controls;assembly=EngineUI"
+                    xmlns:hudModels="clr-namespace:HUDModelTypes" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    mc:Ignorable="d">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/WPFGUI;component/Resources/HUDResources.xaml" />
+        <ResourceDictionary Source="/WPFGUI;component/Resources/ControlResources.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+
+    <DataTemplate x:Key="PlayerScoresTemplate" DataType="{x:Type hudModels:CardinalHUDModel}">
+        <ItemsControl IsTabStop="False" ItemsSource="{Binding Players}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate DataType="{x:Type hudModels:CardinalPlayerModel}">
+                    <Grid Height="29" HorizontalAlignment="Right">
+                        <Grid.Style>
+                            <Style TargetType="Grid">
+                                <Setter Property="Visibility" Value="Collapsed" />
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding PlayerScoresVisibility, Source={x:Static hudModels:HUDModel.Instance}, Converter={StaticResource EqualityCompare}, ConverterParameter={x:Static Visibility.Visible}}" Value="True">
+                                        <Setter Property="Visibility" Value="Visible" />
+                                    </DataTrigger>
+                                    <DataTrigger Value="True">
+                                        <DataTrigger.Binding>
+                                            <MultiBinding Converter="{StaticResource MultiLogicalAnd}">
+                                                <Binding Converter="{StaticResource InvBool}" Path="IsLocalPlayer" />
+                                                <Binding Path="Profile.IsTalking" />
+                                            </MultiBinding>
+                                        </DataTrigger.Binding>
+                                        <Setter Property="Visibility" Value="Visible" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Grid.Style>
+                        <Grid.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                <GradientStop Offset="0" Color="#00151824" />
+                                <GradientStop Offset="0.23" Color="#EE151824" />
+                                <GradientStop Offset="0.87" Color="#DF151824" />
+                                <GradientStop Offset="1" Color="#00151824" />
+                            </LinearGradientBrush>
+                        </Grid.Background>
+                        <StackPanel Margin="10,0" HorizontalAlignment="Right"
+                                    Orientation="Horizontal">
+
+                            <ContentControl VerticalAlignment="Center"
+                                            Content="{Binding Profile}"
+                                            IsTabStop="False">
+                                <ContentControl.Resources>
+                                    <DataTemplate DataType="{x:Type hudModels:AIProfileModel}">
+                                        <!--  empty  -->
+                                    </DataTemplate>
+                                    <DataTemplate DataType="{x:Type hudModels:PlayerProfileModel}">
+                                        <ContentControl Height="24"
+                                                        HorizontalAlignment="Left" VerticalAlignment="Center"
+                                                        Content="{Binding}"
+                                                        Style="{StaticResource HUDPlayerChatStatusStyle}"
+                                                        Visibility="{Binding UsesVoiceChat, Converter={StaticResource BoolToVis}}" />
+                                    </DataTemplate>
+                                </ContentControl.Resources>
+                            </ContentControl>
+
+                            <!--  enemy icon  -->
+                            <Image Effect="{StaticResource DropShadowTextStyle}"
+                                   Source="pack://application:,,,/WPFGUI;component/icons/races/common/buildings/barracks.png"
+                                   Visibility="{Binding IsEnemy, Converter={StaticResource BoolToVis}}" />
+                            <!--  Player name  -->
+                            <Grid MaxWidth="260">
+                                <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center"
+                                           esControls:TextBlockExtensions.AutoToolTip="True"
+                                           Text="{Binding Name}"
+                                           TextTrimming="CharacterEllipsis" ToolTipService.InitialShowDelay="0"
+                                           ToolTipService.ShowDuration="86400000" ToolTipService.ShowOnDisabled="True">
+                                    <TextBlock.ToolTip>
+                                        <ToolTip Style="{StaticResource HUDBaseAutoTooltipStyle}" />
+                                    </TextBlock.ToolTip>
+                                    <TextBlock.Foreground>
+                                        <SolidColorBrush Color="{Binding RelationshipColor}" />
+                                    </TextBlock.Foreground>
+                                    <TextBlock.Style>
+                                        <Style BasedOn="{StaticResource nHUDBaseTextBlockStyle}" TargetType="{x:Type TextBlock}">
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsDarkColor}" Value="True">
+                                                    <Setter Property="Effect" Value="{StaticResource TextLightDropShadowEffect}" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+
+                                <Separator Effect="{StaticResource DropShadowTextStyle}" Visibility="{Binding IsDead, Converter={StaticResource BoolToVis}}">
+                                    <Separator.Background>
+                                        <SolidColorBrush Color="{Binding RelationshipColor}" />
+                                    </Separator.Background>
+                                </Separator>
+                            </Grid>
+
+                            <TextBlock VerticalAlignment="Center"
+                                       Text=" | "
+                                       Visibility="{Binding PlayerScoresVisibility, Source={x:Static hudModels:HUDModel.Instance}}">
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{Binding RelationshipColor}" />
+                                </TextBlock.Foreground>
+                                <TextBlock.Style>
+                                    <Style BasedOn="{StaticResource nHUDBaseTextBlockStyle}" TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding IsDarkColor}" Value="True">
+                                                <Setter Property="Effect" Value="{StaticResource TextLightDropShadowEffect}" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"
+                                       Text="{Binding CurrentAge.UIInfo.NameShort}"
+                                       TextAlignment="Center"
+                                       Visibility="{Binding PlayerScoresVisibility, Source={x:Static hudModels:HUDModel.Instance}}">
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{Binding RelationshipColor}" />
+                                </TextBlock.Foreground>
+                                <TextBlock.Style>
+                                    <Style BasedOn="{StaticResource nHUDBaseTextBlockStyle}" TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding IsDarkColor}" Value="True">
+                                                <Setter Property="Effect" Value="{StaticResource TextLightDropShadowEffect}" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                            <TextBlock VerticalAlignment="Center" Text=" | ">
+                                <TextBlock.Style>
+                                    <Style BasedOn="{StaticResource nHUDBaseTextBlockStyle}" TargetType="TextBlock">
+                                        <Setter Property="Visibility" Value="Collapsed" />
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding IsDarkColor}" Value="True">
+                                                <Setter Property="Effect" Value="{StaticResource TextLightDropShadowEffect}" />
+                                            </DataTrigger>
+                                            <MultiDataTrigger>
+                                                <MultiDataTrigger.Conditions>
+                                                    <Condition Binding="{Binding PlayerScoresVisibility, Source={x:Static hudModels:HUDModel.Instance}, Converter={StaticResource EqualityCompare}, ConverterParameter={x:Static Visibility.Visible}}" Value="True" />
+                                                    <Condition Value="True">
+                                                        <Condition.Binding>
+                                                            <MultiBinding Converter="{StaticResource MultiLogicalOr}">
+                                                                <MultiBinding.Bindings>
+                                                                    <Binding Path="Replay.IsObserver" Source="{x:Static hudModels:HUDModel.Instance}" />
+                                                                    <Binding Path="IsReplay" Source="{x:Static hudModels:HUDModel.Instance}" />
+                                                                    <Binding Path="LocalPlayer.ScarModel[show_actual_score]" Source="{x:Static hudModels:HUDModel.Instance}" />
+                                                                </MultiBinding.Bindings>
+                                                            </MultiBinding>
+                                                        </Condition.Binding>
+                                                    </Condition>
+                                                </MultiDataTrigger.Conditions>
+                                                <Setter Property="Visibility" Value="Visible" />
+                                            </MultiDataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBlock.Style>
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{Binding RelationshipColor}" />
+                                </TextBlock.Foreground>
+                            </TextBlock>
+
+                            <!--  other scores: military, economy, society, technology scores  -->
+                            <!--  Those are scripted testing scores ported from scar. Commented out for now as they are not under current desgin  -->
+                            <!--<StackPanel Orientation="Horizontal">
+
+                            -->
+                            <!--  state model military_score  -->
+                            <!--
+                                <TextBlock HorizontalAlignment="Right"
+                                           Style="{StaticResource HUDPlayerScoresTextBlockStyle}"
+                                           Text="{Binding StateModel.Float[military_score], Converter={StaticResource LocalizedStringConverter}, ConverterParameter=$11193765}"
+                                           TextAlignment="Right">
+                                    <TextBlock.Foreground>
+                                        <SolidColorBrush Color="{Binding RelationshipColor}" />
+                                    </TextBlock.Foreground>
+                                </TextBlock>
+
+                                <TextBlock VerticalAlignment="Center"
+                                           Style="{StaticResource HUDPlayerScoresTextBlockStyle}"
+                                           Text=" | ">
+                                    <TextBlock.Foreground>
+                                        <SolidColorBrush Color="{Binding RelationshipColor}" />
+                                    </TextBlock.Foreground>
+                                </TextBlock>
+
+                            -->
+                            <!--  state model economy_score  -->
+                            <!--
+                                <TextBlock HorizontalAlignment="Right"
+                                           Style="{StaticResource HUDPlayerScoresTextBlockStyle}"
+                                           Text="{Binding StateModel.Float[economy_score], Converter={StaticResource LocalizedStringConverter}, ConverterParameter=$11193765}"
+                                           TextAlignment="Right">
+                                    <TextBlock.Foreground>
+                                        <SolidColorBrush Color="{Binding RelationshipColor}" />
+                                    </TextBlock.Foreground>
+                                </TextBlock>
+
+                                <TextBlock VerticalAlignment="Center"
+                                           Style="{StaticResource HUDPlayerScoresTextBlockStyle}"
+                                           Text=" | ">
+                                    <TextBlock.Foreground>
+                                        <SolidColorBrush Color="{Binding RelationshipColor}" />
+                                    </TextBlock.Foreground>
+                                </TextBlock>
+
+                            -->
+                            <!--  state model society_score  -->
+                            <!--
+                                <TextBlock HorizontalAlignment="Right"
+                                           Style="{StaticResource HUDPlayerScoresTextBlockStyle}"
+                                           Text="{Binding StateModel.Float[society_score], Converter={StaticResource LocalizedStringConverter}, ConverterParameter=$11193765}"
+                                           TextAlignment="Right">
+                                    <TextBlock.Foreground>
+                                        <SolidColorBrush Color="{Binding RelationshipColor}" />
+                                    </TextBlock.Foreground>
+                                </TextBlock>
+
+                            -->
+                            <!--  state model technology_score  -->
+                            <!--
+                                <TextBlock HorizontalAlignment="Right"
+                                           Style="{StaticResource HUDPlayerScoresTextBlockStyle}"
+                                           Text="{Binding StateModel.Float[technology_score], Converter={StaticResource LocalizedStringConverter}, ConverterParameter=$11193765}"
+                                           TextAlignment="Right">
+                                    <TextBlock.Foreground>
+                                        <SolidColorBrush Color="{Binding RelationshipColor}" />
+                                    </TextBlock.Foreground>
+                                </TextBlock>
+
+                                <TextBlock VerticalAlignment="Center"
+                                           Style="{StaticResource HUDPlayerScoresTextBlockStyle}"
+                                           Text=" | ">
+                                    <TextBlock.Foreground>
+                                        <SolidColorBrush Color="{Binding RelationshipColor}" />
+                                    </TextBlock.Foreground>
+                                </TextBlock>
+                            </StackPanel>-->
+
+                            <!--  Total score  -->
+                            <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center"
+                                       Text="{Binding PlayerScoreTotal, Converter={StaticResource LocalizedStringConverter}, ConverterParameter=$11193765}"
+                                       TextAlignment="Right">
+                                <TextBlock.Style>
+                                    <Style BasedOn="{StaticResource nHUDBaseTextBlockStyle}" TargetType="TextBlock">
+                                        <Setter Property="Visibility" Value="Collapsed" />
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding IsDarkColor}" Value="True">
+                                                <Setter Property="Effect" Value="{StaticResource TextLightDropShadowEffect}" />
+                                            </DataTrigger>
+                                            <MultiDataTrigger>
+                                                <MultiDataTrigger.Conditions>
+                                                    <Condition Binding="{Binding PlayerScoresVisibility, Source={x:Static hudModels:HUDModel.Instance}, Converter={StaticResource EqualityCompare}, ConverterParameter={x:Static Visibility.Visible}}" Value="True" />
+                                                    <Condition Value="True">
+                                                        <Condition.Binding>
+                                                            <MultiBinding Converter="{StaticResource MultiLogicalOr}">
+                                                                <MultiBinding.Bindings>
+                                                                    <Binding Path="Replay.IsObserver" Source="{x:Static hudModels:HUDModel.Instance}" />
+                                                                    <Binding Path="IsReplay" Source="{x:Static hudModels:HUDModel.Instance}" />
+                                                                    <Binding Path="LocalPlayer.ScarModel[show_actual_score]" Source="{x:Static hudModels:HUDModel.Instance}" />
+                                                                </MultiBinding.Bindings>
+                                                            </MultiBinding>
+                                                        </Condition.Binding>
+                                                    </Condition>
+                                                </MultiDataTrigger.Conditions>
+                                                <Setter Property="Visibility" Value="Visible" />
+                                            </MultiDataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBlock.Style>
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{Binding RelationshipColor}" />
+                                </TextBlock.Foreground>
+                            </TextBlock>
+
+                            <!--  Civilization Flags  -->
+                            <Grid Width="32" Height="18"
+                                  Margin="10,0,0,0">
+                                <Grid.Background>
+                                    <ImageBrush AlignmentX="Center" AlignmentY="Center"
+                                                ImageSource="{Binding RaceIcon, FallbackValue=/WPFGUI;component/images/civ_flags/civ_icon_medium.png}"
+                                                Stretch="Fill" />
+                                </Grid.Background>
+                                <Image Source="/WPFGUI;component/images/vietnam_0710/dai_viet_dragon.png" Stretch="Fill"
+                                    Visibility="{Binding ScarModel[vietnam_hud], Converter={StaticResource BoolToVis}, FallbackValue=Collapsed}" />
+                            </Grid>
+
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </DataTemplate>
+</ResourceDictionary>

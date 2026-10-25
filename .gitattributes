@@ -1,0 +1,4 @@
+# Hash-sensitive XML, SCAR, recipes and frozen evidence must retain their bytes.
+* -text
+development-data/**/*.zip -diff -merge
+development-data/**/*.gz -diff -merge

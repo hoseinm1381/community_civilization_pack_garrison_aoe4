@@ -1,0 +1,16 @@
+{
+  "changes": [
+    "Both private trap combat blocks restored from Real_Vietnam_1; original native weapons own targeting/damage",
+    "Only trap SCAR behavior: auto-destroy four seconds after first observed native attack",
+    "vn_activate_stealth_forvills_vit: existing execution-time requirements unchanged",
+    "vn_vietnam_unit_mov_vit: original native blink/requirements/120-second recharge restored; SCAR teleport removed",
+    "Trap range and Roller research restored from original tuning data"
+  ],
+  "tests": "59 offline source tests passed; Content Editor build and native match not run",
+  "remaining": [
+    "Content Editor acceptance and native proof of restored trap/tunnel data and attack observation",
+    "Garrison weapon upgrade safety",
+    "Indirect asset dependencies and naval native proof"
+  ],
+  "revision": "20261016-native-trap-tunnel-r1"
+}

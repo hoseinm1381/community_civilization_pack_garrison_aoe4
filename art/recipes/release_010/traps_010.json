@@ -1,0 +1,139 @@
+{
+  "schema": "ccp.traps-art-handoff/v1",
+  "version": "0.1.0",
+  "assets": [
+    {
+      "name": "stake_thicket",
+      "target_ebps": "vn_building_bambo_outpost_chi",
+      "art_origin": "scratch",
+      "source_directory": "art\\authoring\\traps_010\\stake_thicket",
+      "export_directory": "art\\exports\\traps_010\\stake_thicket",
+      "source_width": 6.4,
+      "preserved_animator_scale": 0.75,
+      "expected_world_width": 4.800000000000001,
+      "source_axis": "Z up; XY centered bounds; minimum Z=0",
+      "construction_parts": [
+        {
+          "name": "garrison_part_0000",
+          "content": "earth and limited folded solid foliage",
+          "first_stage": 0
+        },
+        {
+          "name": "garrison_part_0001",
+          "content": "irregular dark hardwood stakes",
+          "first_stage": 20
+        }
+      ],
+      "owner_colour": "Neutral atlas; preserve native owner flags and markers in original graph. No owner colour baked.",
+      "source_files": {
+        "art\\authoring\\traps_010\\stake_thicket\\albedo.png": "ff83abc6a2155f71a2a72ec0850fb3f266203d7fb3a116cc020baa5cd94ae7ee",
+        "art\\authoring\\traps_010\\stake_thicket\\metalness.png": "1286fb2b35d5a81c739ea4db471a1f5b0685587b415c6663bfe97191732f17b7",
+        "art\\authoring\\traps_010\\stake_thicket\\normal.png": "abfddfc41c354f558a7ebf171e6ccf9a4d3640d66f5cb20ee6507e42beaecada",
+        "art\\authoring\\traps_010\\stake_thicket\\roughness.png": "b4ad0e044ffd547dd0ef3b268b54ebb8864a937cde0a0fe23531fe9056792c24",
+        "art\\authoring\\traps_010\\stake_thicket\\stake_thicket.blend": "add8acb7d0ef2028b22ae007f2ff90a05a04084ca7ed6ed8870552f9344533fe"
+      },
+      "export_files": {
+        "albedo.png": "ff83abc6a2155f71a2a72ec0850fb3f266203d7fb3a116cc020baa5cd94ae7ee",
+        "building.json": "8a759ac66045a94800076cf2abdfd9603da96e8615105a16e2f5ff5a66158034",
+        "metalness.png": "1286fb2b35d5a81c739ea4db471a1f5b0685587b415c6663bfe97191732f17b7",
+        "model.fbx": "b48582389d40ebe6b37ae8b65bf431258b6107c3da8a9481a8b4d6c2794422ab",
+        "normal.png": "abfddfc41c354f558a7ebf171e6ccf9a4d3640d66f5cb20ee6507e42beaecada",
+        "roughness.png": "b4ad0e044ffd547dd0ef3b268b54ebb8864a937cde0a0fe23531fe9056792c24"
+      },
+      "preview_files": {
+        "output\\release_010\\traps\\stake_thicket\\game_angle.png": "32359856823c0603257e95171b8889e2badf37b60110d7edafca1b7978b858ff",
+        "output\\release_010\\traps\\stake_thicket\\close.png": "f1eb585364b7a875c4b2c6ab6eddbfd7a77b0c2f0aac4f2fe342bb2bf3d997e6",
+        "output\\release_010\\traps\\stake_thicket\\top.png": "784089a0b4a4885f899370f51ac8ff881dace7d8ba11312bb123bef630a343b3",
+        "output\\release_010\\traps\\stake_thicket\\front.png": "95cfe2d768dc97c75112d93730345fcffaeb2904cf8990dcfcda77dc3fe18c03",
+        "output\\release_010\\traps\\stake_thicket\\back.png": "bf8072bea4f976df4667309a90860b0361360574889cf94e120cf0513a9c7b3a",
+        "output\\release_010\\traps\\stake_thicket\\left.png": "91ada9d2cc9171ea41a73eb9aaa005ea09903c477621cf416383da037e782747",
+        "output\\release_010\\traps\\stake_thicket\\right.png": "174595627738543837d291914f99f47c2162fe829f86c92b6a7893db0c876454",
+        "output\\release_010\\traps\\stake_thicket\\bottom.png": "00d95ff9e4944cbdaee6d409c2ad18dfa3631881d2143c9907cee254b76e8230"
+      },
+      "validation_report": "output\\release_010\\traps\\stake_thicket\\validation.json",
+      "stage_correction_report": "output\\release_010\\traps\\stake_thicket\\stage-correction.json",
+      "triangles": 1162
+    },
+    {
+      "name": "stake_fan",
+      "target_ebps": "vn_building_defense_outpost_bambo_chi",
+      "art_origin": "scratch",
+      "source_directory": "art\\authoring\\traps_010\\stake_fan",
+      "export_directory": "art\\exports\\traps_010\\stake_fan",
+      "source_width": 20.8,
+      "preserved_animator_scale": 0.25,
+      "expected_world_width": 5.2,
+      "source_axis": "Z up; XY centered bounds; minimum Z=0",
+      "construction_parts": [
+        {
+          "name": "garrison_part_0000",
+          "content": "earth and limited folded solid foliage",
+          "first_stage": 0
+        },
+        {
+          "name": "garrison_part_0001",
+          "content": "irregular dark hardwood stakes",
+          "first_stage": 20
+        }
+      ],
+      "owner_colour": "Neutral atlas; preserve native owner flags and markers in original graph. No owner colour baked.",
+      "source_files": {
+        "art\\authoring\\traps_010\\stake_fan\\albedo.png": "ff83abc6a2155f71a2a72ec0850fb3f266203d7fb3a116cc020baa5cd94ae7ee",
+        "art\\authoring\\traps_010\\stake_fan\\metalness.png": "1286fb2b35d5a81c739ea4db471a1f5b0685587b415c6663bfe97191732f17b7",
+        "art\\authoring\\traps_010\\stake_fan\\normal.png": "abfddfc41c354f558a7ebf171e6ccf9a4d3640d66f5cb20ee6507e42beaecada",
+        "art\\authoring\\traps_010\\stake_fan\\roughness.png": "b4ad0e044ffd547dd0ef3b268b54ebb8864a937cde0a0fe23531fe9056792c24",
+        "art\\authoring\\traps_010\\stake_fan\\stake_fan.blend": "6d11608a7c001f41980e8e72cb313e49df94182e20655ae0d23e6ef3a7d54600"
+      },
+      "export_files": {
+        "albedo.png": "ff83abc6a2155f71a2a72ec0850fb3f266203d7fb3a116cc020baa5cd94ae7ee",
+        "building.json": "8a759ac66045a94800076cf2abdfd9603da96e8615105a16e2f5ff5a66158034",
+        "metalness.png": "1286fb2b35d5a81c739ea4db471a1f5b0685587b415c6663bfe97191732f17b7",
+        "model.fbx": "5f43e9ace33ccaa9d79075d77a4c5824f0fa612b3f426f57929b3e1135bb0edb",
+        "normal.png": "abfddfc41c354f558a7ebf171e6ccf9a4d3640d66f5cb20ee6507e42beaecada",
+        "roughness.png": "b4ad0e044ffd547dd0ef3b268b54ebb8864a937cde0a0fe23531fe9056792c24"
+      },
+      "preview_files": {
+        "output\\release_010\\traps\\stake_fan\\game_angle.png": "ebc7851abc849120739cc4fd0008a7a25ccfe948c1b62bee6c79f57a3cc31cd3",
+        "output\\release_010\\traps\\stake_fan\\close.png": "664731f3e7d1c7b41e3c2c6b48244b5ef2aed7533ab84d43691bad41af09fcf9",
+        "output\\release_010\\traps\\stake_fan\\top.png": "97408483b409ecf7aa8573417babcb5d06c954b390ab4b540ee8d0a489661035",
+        "output\\release_010\\traps\\stake_fan\\front.png": "86354799748f14aa149d1993dd37d1cd6a32a7591159af1f92a2dc0a9278c8e3",
+        "output\\release_010\\traps\\stake_fan\\back.png": "85478d2e28692e667c58a3998bb7f47a187123c2ee5091a77c7d74da0ebe2461",
+        "output\\release_010\\traps\\stake_fan\\left.png": "68e24325368f47796d06170c075b204b4aa3c3e5837e61d9296bf22c5158bb25",
+        "output\\release_010\\traps\\stake_fan\\right.png": "fbfb6db51ae03c0e6c1b110d7e43772ea15981c5d105e889e84917ea951f3877",
+        "output\\release_010\\traps\\stake_fan\\bottom.png": "8559bb3e2f9c00db9e4ad5fcf0e87aad8c71d359bb105e8a5c99312b93353f76"
+      },
+      "validation_report": "output\\release_010\\traps\\stake_fan\\validation.json",
+      "stage_correction_report": "output\\release_010\\traps\\stake_fan\\stage-correction.json",
+      "triangles": 1344
+    }
+  ],
+  "reference": {
+    "url": "https://whc.unesco.org/document/211490",
+    "relevant_pages": "PDF pages 38-39 (printed 34-35)",
+    "interpretation": "Medieval Bach Dang hardwood stake-yard motif. These low infantry compositions are artistic extrapolations, not claimed archaeological devices."
+  },
+  "rebuild": {
+    "blender": "E:/Blender5.2/blender.exe",
+    "script": "tools/release_010/trap_build.py",
+    "runner": "tools/release_010/trap_art_runner.py",
+    "commands": [
+      "blender --background --factory-startup --python tools/release_010/trap_build.py -- stake_thicket 6.4",
+      "blender --background --factory-startup --python tools/release_010/trap_build.py -- stake_fan 20.8"
+    ],
+    "note": "Run tools/verify_workspace.py --storage-only first. Geometry/texture recipe is deterministic. FBX/blend container bytes can carry session metadata; regenerate and re-freeze measured hashes."
+  },
+  "native_cook": "Owned by release integration; this handoff proves source/export only.",
+  "gameplay_edits": false,
+  "prohibited_changes": [
+    "No footprint or placement change",
+    "No trigger/death/lifecycle animation added",
+    "No native actor replacement",
+    "No SCAR/name/icon/age variant change"
+  ],
+  "recipe_sha256": {
+    "tools\\release_010\\trap_freeze.py": "c78aac2a95d7034513dd41b9aca6b9f744882a8b79f82b5b4873a6a5613b2b02",
+    "tools\\release_010\\trap_build.py": "b2b75822974a66688e815ef2fa53c11990232463c9fd3d4c169ba84912492500",
+    "tools\\release_010\\trap_art_runner.py": "50118231bcf329c582f753115f518ac7083191facb050c8c0b283eae1ebc1053",
+    "tools\\release_010\\trap_stage_fix.py": "c4b5609fe6e838b9e3f9d90edf5e4f8a120ae55c2728a90a91c5737e180552c1"
+  }
+}

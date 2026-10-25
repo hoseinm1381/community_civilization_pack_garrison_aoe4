@@ -1,0 +1,17 @@
+{
+  "project_guid": "a743d7d1-d753-4cf7-8817-e29d8ded7366",
+  "date": "2026-10-15",
+  "pbg_generator": "Essence.Editor.Modding.Attributes.UniqueIDGenerator.GenerateNext",
+  "pbg_domain": "AttributePrerequisite.InitialUniqueIDDomain(true), ebps; live instance and prior migration IDs remembered with OnGenerated",
+  "pbg_ids": [1073742331, 1073742332],
+  "instances": {
+    "vn_building_unit_naval_chi": 1073742331,
+    "vn_building_unit_religious_control_chi": 1073742332
+  },
+  "reflect_generator": "Essence.Editor.Burning.DataObjectDeterministicUniqueIdGenerator.Next",
+  "reflect_ids": ["12379813733990402201", "12379813733990402202", "12379813733990402203", "12379813733990402204"],
+  "reflect_reservation": "Skipped all prior allocated IDs in identity ledgers and the live mode RDO",
+  "list_identity": "Inherited ui_ext identities retained from the native Chinese parent serialization; no new list entries",
+  "editor_assembly_root": "E:/Games/steamapps/common/Age of Empires IV",
+  "scope": "Headless identity allocation only; no editor launch, build, package, or test"
+}

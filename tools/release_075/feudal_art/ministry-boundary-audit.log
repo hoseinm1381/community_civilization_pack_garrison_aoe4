@@ -1,0 +1,39 @@
+00:00.516  blend            | Read blend: "E:\age of empires 4 mods\01_Custom_Civilizations\Community_Civilization_pack\Community_civilization_pack_garrison\art\authoring\buildings_021\ministry\ministry.blend"
+00:00.625  blend            | Read blend: "E:\age of empires 4 mods\01_Custom_Civilizations\Community_Civilization_pack\Community_civilization_pack_garrison\art\authoring\release_075\ministry\r3\ministry.blend"
+{
+  "scope": "Ministry r3 only",
+  "accepted_warning": "open_surface",
+  "original_objects": {
+    "Ministry_00_foundation": {
+      "name": "Ministry_00_foundation",
+      "vertices": 120,
+      "non_manifold_edges": 0,
+      "boundary_edges": 0,
+      "degenerate_faces": 0,
+      "geometry_uv_digest": "34f1b48b500467ea67daca38b1759758b08a4da648ef2385664270f69ae7dbee"
+    },
+    "Ministry_20_superstructure": {
+      "name": "Ministry_20_superstructure",
+      "vertices": 6815,
+      "non_manifold_edges": 2640,
+      "boundary_edges": 2640,
+      "degenerate_faces": 0,
+      "geometry_uv_digest": "121c2ca0f9043704502d0bc435e35a3bd922b8ba859c25aa4b74c8abe0d1e341"
+    }
+  },
+  "original_objects_exact": {
+    "Ministry_00_foundation": true,
+    "Ministry_20_superstructure": true
+  },
+  "new_component_count": 748,
+  "new_non_manifold_edges": 0,
+  "new_degenerate_faces": 0,
+  "old_boundary_edges": 2640,
+  "old_non_manifold_edges": 2640,
+  "export_non_manifold_edges": 2640,
+  "all_new_closed": true,
+  "reason": "Preserved approved static stock elephant vertex splits; new architectural components are watertight. No blanket warning suppression."
+}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

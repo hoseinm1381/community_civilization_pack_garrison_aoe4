@@ -1,0 +1,53 @@
+-- Native self-owned research pays for one building. The matching fortified
+-- child inherits that building's existing vision, visuals and production list.
+-- Convert in place; never destroy/recreate or unload the existing occupants.
+local fortification = nil
+local kinds = {
+    {base = "vn_building_defense_outpost_chi", fortified = "vn_building_defense_outpost_chi_fortified"},
+    {base = "vn_building_defense_outpost_2_chi", fortified = "vn_building_defense_outpost_2_chi_fortified"},
+}
+
+function VietnamHideouts_IsHideout(entity)
+    for _, kind in ipairs(kinds) do
+        if VietnamBlueprints_Matches(entity, kind.base)
+            or VietnamBlueprints_Matches(entity, kind.fortified) then return true end
+    end
+    return false
+end
+
+function VietnamHideouts_IsFortification(upgrade)
+    if fortification == nil then
+        fortification = BP_GetUpgradeBlueprint("b7fcea91257b408fb9e8ae4d8bc402e1:vn_upgrade_hideout_upgrade_vit")
+    end
+    return upgrade == fortification
+end
+
+function VietnamHideouts_Update(player, entities)
+    if fortification == nil then
+        fortification = BP_GetUpgradeBlueprint("b7fcea91257b408fb9e8ae4d8bc402e1:vn_upgrade_hideout_upgrade_vit")
+    end
+    for i = 1, EGroup_Count(entities) do
+        local entity = EGroup_GetEntityAt(entities, i)
+        local id = Entity_GetID(entity)
+        if Entity_IsValid(id) and Entity_IsAlive(entity) and not Entity_IsUnderConstruction(entity) then
+            for _, kind in ipairs(kinds) do
+                if VietnamBlueprints_Matches(entity, kind.base) and Entity_HasUpgrade(entity, fortification) then
+                    local fraction = Entity_GetHealth(entity) / Entity_GetHealthMax(entity)
+                    Entity_ConvertBlueprint(entity, VietnamBlueprints_Entity(kind.fortified))
+                    if Entity_IsValid(id) then
+                        local converted = Entity_FromID(id)
+                        if Entity_IsAlive(converted) and VietnamBlueprints_Matches(converted, kind.fortified) then
+                            Entity_SetHealth(converted, fraction)
+                            print("VIETNAM_V2_HIDEOUT_FORTIFIED entity=" .. tostring(id) .. " health_fraction=" .. tostring(fraction))
+                        end
+                    end
+                    break
+                end
+            end
+        end
+    end
+end
+
+function VietnamHideouts_Cleanup()
+    fortification = nil
+end

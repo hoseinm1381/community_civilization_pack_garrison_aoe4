@@ -1,0 +1,23 @@
+# Vietnam v2 source project
+
+This is the editable Vietnam v2 combined game-mode and tuning-pack project. The original `Real_Vietnam_1` and the Berber template remain separate. The project GUID is `a743d7d1-d753-4cf7-8817-e29d8ded7366`; its game-mode RDO selects the matching tuning part.
+
+## Current status
+
+The latest source revision is `20261016-native-trap-tunnel-r1`. Trap combat/weapon settings and native tunneling are restored from `Real_Vietnam_1`, with this project's private references and identities. SCAR only destroys a trap four seconds after its first observed attack; it does not target, damage, modify trap research, or teleport units. See `docs/native-trap-tunnel-restoration.md` for the source comparison and build/test handoff.
+
+The user-built feasibility package passed a **solo custom-skirmish** China/Vietnam selection check. The popup appeared; choosing either civilization worked. This establishes the opening selection path in that setting. It does not establish multiplayer coexistence, the migrated roster, later ages, the new SCAR mechanics, or a current package result.
+
+The editable source contains **237 active private attribute instances**, their localization, and game-mode modules for the Vietnamese starting army, landmarks, traps, tower timing, Rattan armor, and dynasty handling. Cleanup batch 1 removed 42 tower-only unit files, 13 Rattan unit variants, and seven obsolete feasibility probes; see `docs/cleanup-stage1.md` and its machine-readable deletion/replacement manifest. The later influence-tooltip repair adds two small Dock/Monastery child definitions that inherit the existing roster. Four earlier unused AI, map, and sacred-site experiments remain under `docs/retained-experiments/attrib`; the old project is untouched. The 16 original Vietnam icon PNGs are included under `assets/ui/icons`. The RDO lists 676 entity entries and 43 private squad entries, preserving surviving editor identities and all stock/foreign precache entries. The prematch hook covers the 93 private entities and 43 private squads. Effect, construction/destruction, and naval precache coverage still needs a full editor/runtime check.
+
+The starting conversion now targets one capital Town Center, six villagers, and one scout, and spawns a Worker Elephant. It keeps 150 starting wood and subtracts 50 food. The starting sheep come from the ordinary map/army setup and have not been independently established for Vietnam. The original private army file is data reference, not an engine-selected player army.
+
+Traps use the original native weapon attachments, weapon stats, projectile, range research, and Roller reload behavior. The existing 25-wood/15-second construction definitions are retained. The former SCAR one-second blast, additive research calculation, and 80%-construction shortcut have been removed in favor of the original tuning data. Landmark source gates the Headquarters ability. Tower-training SCAR applies a 1.5-times queue duration and pauses tower production without a living, completed Pho Minh Tower; ordinary military buildings retain their shared squads. Rattan Shields armor is applied by SCAR when the 100-wood/200-gold upgrade is researched. These modifiers and the persistence of an ability's already-applied effect need native verification. Tunneling uses the original native ability, requirements, blink action, and 120-second recharge; the SCAR tunneling module and hooks are removed. Safe garrison handcannons remain unresolved.
+
+## Editing boundary
+
+Codex creates and reviews source. The user owns Content Editor save/build/package and all game tests. Nothing in this folder should be described as a tested release until those gates are run on the current source. Publication requires a separate request.
+
+For the current scope, use a Dark Age start with a Chinese human choosing Vietnam and ordinary AI opponents. Nomad, later-age starts, Vietnamese AI, save/load, extra locales, and Garrison art remain later milestones. Multiplayer, teams, FFA, every age and landmark, trap races, occupied garrisons, tunneling, water, and long-match cleanup remain native acceptance gates.
+
+The immediate editor/game handoff is `docs/next-user-build-check.md`. The current cleanup inventory and rollback reference are in `docs/cleanup-stage1-manifest.json` and `docs/cleanup-stage1.md`. `docs/implementation-ledger.md`, `docs/solo-selection-pass.md`, `docs/migration-map.json`, and `docs/precache-inventory.json` preserve historical evidence; the old migration and precache inventories are not current regeneration inputs. Earlier native errors and repairs remain documented in the three native-run repair notes.

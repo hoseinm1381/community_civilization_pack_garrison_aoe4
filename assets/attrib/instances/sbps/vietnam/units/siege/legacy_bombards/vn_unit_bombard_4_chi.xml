@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" overrideParent="True" List.ItemID="388551960" List.ParentItemID="388551960">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="1073761577">
+					<float name="num" value="1" />
+					<instance_reference name="type" value="ebps\races\chinese\units\unit_bombard_4_chi" />
+					<list name="unit_attachments" overrideParent="True">
+						<group name="unit" List.ItemID="1073761578">
+							<instance_reference name="type" value="ebps\vietnam\release_060\v6i762cba1" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+							<string name="marker" value="mkr_attach" overrideParent="True" />
+						</group>
+					</list>
+					<bool name="is_default_unit" value="True" />
+				</group>
+			</list>
+			<float name="squad_female_chance" value="0" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="-968903709" List.ParentItemID="-968903709">
+			<list name="requirement_table" comment="Requires Imperial age, Tech army, chemistry upgrade&#13;&#10;">
+				<template_reference name="required" value="requirements\required_not" List.ItemID="1073761579" List.ListAction="Append">
+					<enum name="reason" value="usage_and_display" overrideParent="True" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_structure" List.ItemID="1073761580">
+							<enum name="reason" value="usage_and_display" overrideParent="True" />
+							<locstring name="ui_name" value="0" />
+							<instance_reference name="structure_name" value="ebps\vietnam\buildings\landmarks\imperial\vn_building_landmark_age3_trung_foundaries_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+							<int name="required_structure_count" value="1" />
+							<bool name="check_team" value="False" />
+							<bool name="require_construction_complete" value="True" />
+							<group name="include_pbg_parenting">
+								<bool name="include_child_pbgs" value="False" />
+								<bool name="include_parent_pbgs" value="False" />
+							</group>
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="389830191" List.ParentItemID="389830191">
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\chinese" List.ItemID="1073761581" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-787674146" List.ParentItemID="-787674146">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="851362141" List.ParentItemID="851362141">
+			<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073742009" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_bombard_4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" overrideParent="True" List.ItemID="1592277183" List.ParentItemID="1592277183">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="1073761582">
+						<float name="num" value="1" />
+						<instance_reference name="type" value="ebps\races\chinese\units\unit_bombard_4_chi" />
+						<list name="unit_attachments" overrideParent="True">
+							<group name="unit" List.ItemID="1073761583">
+								<instance_reference name="type" value="ebps\vietnam\release_060\v6i762cba1" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+								<string name="marker" value="mkr_attach" overrideParent="True" />
+							</group>
+						</list>
+						<bool name="is_default_unit" value="True" />
+					</group>
+				</list>
+				<float name="squad_female_chance" value="0" />
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="-1185221592" List.ParentItemID="-1185221592">
+				<list name="requirement_table" removedIds="1647925238">
+					<template_reference name="required" value="requirements\required_not" List.ItemID="1073761584" List.ListAction="Append">
+						<enum name="reason" value="usage_and_display" overrideParent="True" />
+						<locstring name="ui_name" value="0" />
+						<list name="requirement_table">
+							<template_reference name="required" value="requirements\required_structure" List.ItemID="1073761580">
+								<enum name="reason" value="usage_and_display" overrideParent="True" />
+								<locstring name="ui_name" value="0" />
+								<instance_reference name="structure_name" value="ebps\vietnam\buildings\landmarks\imperial\vn_building_landmark_age3_trung_foundaries_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+								<int name="required_structure_count" value="1" />
+								<bool name="check_team" value="False" />
+								<bool name="require_construction_complete" value="True" />
+								<group name="include_pbg_parenting">
+									<bool name="include_child_pbgs" value="False" />
+									<bool name="include_parent_pbgs" value="False" />
+								</group>
+							</template_reference>
+						</list>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="378728744" List.ParentItemID="378728744">
+				<list name="squad_race_type_list" overrideParent="True">
+					<instance_reference name="squad_race_type" value="racebps\chinese" List.ItemID="1073761585" />
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="2040929918" List.ParentItemID="2040929918">
+				<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="1073742009" />
+		<instance_reference name="parent_pbg" value="sbps\races\core\unit_bombard_4" />
+	</variant>
+</instance>

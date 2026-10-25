@@ -1,0 +1,15 @@
+{
+  "schema": "voice-preparation.content-validation/v1",
+  "status": "passed",
+  "errors": [],
+  "checks": [
+    "Required deliverable files",
+    "Stable IDs, actor/age/context coverage, six unique phrases and three distinct take directions",
+    "Pronunciation, source references, creative status and disclosed text reuse",
+    "JSON/readable companion complete parity and recording accounting",
+    "Every inventoried squad/producer/naval row maps to profiles or explicit exclusions/unresolved status",
+    "All decoded stock context strings retained; raw SPD hashes match structural decoder receipts",
+    "Zero audio files; stock SPD metadata is not audio media"
+  ],
+  "scope": "Dossier content only. Read VALIDATION.json and SOURCE_PRESERVATION_AFTER.json for the separate strict source-preservation gate."
+}

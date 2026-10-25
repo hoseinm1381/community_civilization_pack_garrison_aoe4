@@ -1,0 +1,59 @@
+{
+  "schema": "ccp.castle-next.landmark-recipe/v1",
+  "name": "imperial_citadel",
+  "source_script": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\tools\\castle_next\\landmark_shared.py",
+  "source_script_sha256": "dd8237a96ea85e321520e63346af0bd3e7d9395e7d3fdc2b924a4fd4a5428e1e",
+  "entrypoint": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\tools\\castle_next\\landmark_citadel.py",
+  "source_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\landmarks\\imperial_citadel\\imperial_citadel.blend",
+  "export_directory": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\landmarks\\imperial_citadel",
+  "budget_file": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\castle_next\\inventory\\castle-landmark-triangle-budget.json",
+  "detail": {
+    "tile_columns_per_m": 5.57773351022717,
+    "tile_rows_per_m": 5.57773351022717
+  },
+  "principal_stock_reference": {
+    "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\castle_next\\landmarks\\reference\\citadel\\3165b8406a73037a34d0\\decoded-static.json",
+    "sha256": "a72d29d8c0218bec62b47d629aa443e3ffa28ca313599d056dc975dea1635098",
+    "logical_path": "art/civilizations/chinese/structures/wonder_greatwall_mp/wonder_greatwall_mp.rgm",
+    "group_count": 3,
+    "bounds_min": [
+      -10.3984375,
+      -5.30078125,
+      -3.001953125
+    ],
+    "bounds_max": [
+      10.3984375,
+      5.1875,
+      17.46875
+    ],
+    "extent": [
+      20.796875,
+      10.48828125,
+      20.470703125
+    ],
+    "interpretation": "decoded source context only; Citadel includes belowground/conditional groups, HQ excludes tagged ruins/debris; neither is a native visible-bounds proof"
+  },
+  "construction_parts": [
+    0,
+    20,
+    0,
+    80,
+    20,
+    20,
+    20
+  ],
+  "ruin_part": "garrison_part_0002",
+  "heavy_damage_part": "garrison_part_0003",
+  "healthy_parts": [
+    "garrison_part_0001",
+    "garrison_part_0004",
+    "garrison_part_0005",
+    "garrison_part_0006"
+  ],
+  "export_postprocess": {
+    "script": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\tools\\castle_next\\landmark_fbx_partition.py",
+    "script_sha256": "7ffdb0de3e6dfc86e2c633681034c284f25e2a2dbf42c32fc591306318ae3b0e",
+    "input_fbx": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\castle_next\\landmarks\\imperial_citadel\\diagnostics\\model-original.fbx",
+    "input_fbx_sha256": "5ff60c7ef49f213409428c79610a302dcaf63cc4f5526d8a781153d0d65ba6f7"
+  }
+}

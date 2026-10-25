@@ -1,0 +1,13 @@
+.F.........................
+======================================================================
+FAIL: test_controller_dropdown_closes_without_selected_town_center (test_runtime_repairs.DynastyRepairTests.test_controller_dropdown_closes_without_selected_town_center)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_runtime_repairs.py", line 176, in test_controller_dropdown_closes_without_selected_town_center
+    self.assertFalse(self.g._dynasty.data_context.is_dropdown_visible)
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.045s
+
+FAILED (failures=1)

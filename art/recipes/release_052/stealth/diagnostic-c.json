@@ -1,0 +1,27 @@
+{
+  "schema": "ccp.release052.stealth-diagnostic-c-recipe/v1",
+  "intent": "Isolate three passive scheduling fields in the existing villager stealth ability for a native match diagnostic",
+  "baseline_sha256": "329b5fe1cec68fb415f21d8f6b48b75f036f53c3ad67691e093b96139e4f2901",
+  "source_relative_path": "assets/attrib/instances/abilities/vietnam/vn_activate_stealth_forvills_vit.xml",
+  "overlay_relative_path": "output/release_052/stealth/diagnostic-c/vn_activate_stealth_forvills_vit.xml",
+  "allowed_changes": {
+    "disable_when_active": ["True", "False"],
+    "recharge_time": ["6", "0"],
+    "can_queue_passive_ability": ["True", "False"]
+  },
+  "preserve": [
+    "Original activate_stealth_mal entity tree and 10-second duration property",
+    "33-metre allied HQ proximity requirement and all other requirements",
+    "PBG and localization identity",
+    "Activated archer ability and landmarks SCAR"
+  ],
+  "evidence": "output/release_052/stealth/diagnostic-c/receipt.json",
+  "native_status": "pending; official passive analogues support field pattern, but retained native timed graph still ends stealth explicitly",
+  "native_test": [
+    "Watch stationary villager inside HQ radius for at least 45 seconds and at 10-second boundaries",
+    "Exit and reenter 33 metres",
+    "Destroy last HQ and test overlap of multiple HQ coverage",
+    "Test combat, enemy reveal, and return to stealth",
+    "Verify activated archer unchanged"
+  ]
+}

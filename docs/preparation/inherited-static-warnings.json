@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "comparison_scope": "assets only in both editions; excludes archived probe and official .tools sources",
+  "warning_count": 13,
+  "context_note": "Scanning all normal-project files masks the existing Player_SetAllCommandAvailability warning because .tools contains official helper definitions. No gameplay or engine-call change was made.",
+  "records": [
+    {
+      "file": "assets/scar/vietnam/initialization.scar",
+      "warnings": [
+        "WARNING sgroup-lifetime:31: Temporary squad group `squads` from `Player_GetSquads` is not visibly destroyed.",
+        "WARNING sgroup-count-despawned:34: `SGroup_Count(squads)` includes despawned squads; use `SGroup_CountSpawned` when only active units should count.",
+        "WARNING players-contract: `PLAYERS` is used without a visible `cardinal.scar` import; confirm the loader provides it."
+      ],
+      "source_only_baseline_warnings_identical": true
+    },
+    {
+      "file": "assets/scar/vietnam/landmarks.scar",
+      "warnings": [
+        "WARNING sgroup-lifetime:31: Temporary squad group `squads` from `Player_GetSquads` is not visibly destroyed.",
+        "WARNING sgroup-count-despawned:32: `SGroup_Count(squads)` includes despawned squads; use `SGroup_CountSpawned` when only active units should count.",
+        "WARNING players-contract: `PLAYERS` is used without a visible `cardinal.scar` import; confirm the loader provides it."
+      ],
+      "source_only_baseline_warnings_identical": true
+    },
+    {
+      "file": "assets/scar/vietnam/lifecycle.scar",
+      "warnings": [
+        "WARNING players-contract: `PLAYERS` is used without a visible `cardinal.scar` import; confirm the loader provides it."
+      ],
+      "source_only_baseline_warnings_identical": true
+    },
+    {
+      "file": "assets/scar/winconditions/VietnamMode.scar",
+      "warnings": [
+        "WARNING unknown-call:39: Call `Player_SetAllCommandAvailability` is absent from official API/source evidence and local definitions.",
+        "WARNING unknown-call:121: Call `VietnamSelectionCore.Choose` is absent from official API/source evidence and local definitions.",
+        "WARNING unknown-call:187: Call `VietnamSelectionCore.Close` is absent from official API/source evidence and local definitions.",
+        "WARNING unknown-call:205: Call `VietnamSelectionCore.Drop` is absent from official API/source evidence and local definitions.",
+        "WARNING unknown-call:258: Call `VietnamSelectionCore.New` is absent from official API/source evidence and local definitions.",
+        "WARNING unknown-call:207: Call `VietnamSelectionCore.Tick` is absent from official API/source evidence and local definitions."
+      ],
+      "source_only_baseline_warnings_identical": true
+    }
+  ]
+}

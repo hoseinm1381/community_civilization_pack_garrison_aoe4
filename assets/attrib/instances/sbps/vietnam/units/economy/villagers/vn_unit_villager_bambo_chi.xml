@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="Chinese Villager" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-2056667985" List.ParentItemID="-2056667985">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="443384137" List.ParentItemID="443384137">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="422230052" List.ParentItemID="422230052">
+					<group name="info">
+						<file name="icon_name" value="races\chinese\units\villager" overrideParent="True" />
+						<locstring name="screen_name" value="2044" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<string name="selection_group" value="villagerbambo" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="1426203860" List.ParentItemID="1426203860">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="-1619519596" List.ParentItemID="-1619519596">
+					<instance_reference name="type" value="ebps\vietnam\units\economy\villagers\vn_unit_villager_bambo_chi" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="300608956" List.ParentItemID="300608956">
+			<list name="requirement_table">
+				<template_reference name="required" value="requirements\required_squad" List.ItemID="1073762582" List.ListAction="Append">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<float name="max_squad_cap" value="1" />
+					<instance_reference name="squad_name" value="sbps\vietnam\units\economy\villagers\vn_unit_villager_bambo_chi" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="891874315" List.ParentItemID="891874315">
+			<list name="squad_type_list" overrideParent="True">
+				<enum name="squad_type" value="villager" List.ItemID="1073762586" />
+				<enum name="squad_type" value="scar_age1" List.ItemID="1073762587" />
+				<enum name="squad_type" value="scar_villager" List.ItemID="1073762588" />
+				<enum name="squad_type" value="" List.ItemID="1073762589" />
+				<enum name="squad_type" value="can_be_converted" List.ItemID="1073762590" />
+				<enum name="squad_type" value="worker" List.ItemID="1073762591" />
+			</list>
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\chinese" List.ItemID="1073762592" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_engineer_ext" List.ItemID="851310113" List.ParentItemID="851310113">
+			<list name="construction_groups" overrideParent="True">
+				<group name="construction_group" comment="Dark Age" overrideParent="True" List.ItemID="1073762593">
+					<instance_reference name="construction_menu" value="menu\chi_age1" />
+					<list name="construction_items" overrideParent="True" removedIds="2147482544,2147482547">
+						<group name="construction_item" comment="House" List.ItemID="1073762594">
+							<instance_reference name="ebp" value="ebps\vietnam\buildings\traps\roller_traps\vn_building_defense_outpost_bambo_chi" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+							<group name="ui_position">
+								<int name="ui_position_row" value="1" />
+								<int name="ui_position_column" value="1" />
+							</group>
+							<list name="associated_ebps">
+							</list>
+							<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\villager_build_menu\age_1\build_house" overrideParent="True" />
+							<list name="alternate_ebps">
+							</list>
+							<list name="additional_requirements">
+							</list>
+							<state_tree_node name="additional_requirement_statetree" value="" />
+							<template_reference name="ui_info_extended" value="tables\ui_info_ext" overrideParent="True">
+								<template_reference name="command_card_info" value="ui_command_card_info" overrideParent="True">
+									<group name="ui_position">
+										<int name="ui_position_row" value="1" overrideParent="True" />
+										<int name="ui_position_column" value="1" overrideParent="True" />
+									</group>
+									<int name="command_card_priority" value="1" overrideParent="True" />
+								</template_reference>
+								<template_reference name="quick_abilities_info" value="">
+								</template_reference>
+								<template_reference name="quick_commands_info" value="">
+								</template_reference>
+								<template_reference name="quick_formation_info" value="">
+								</template_reference>
+								<template_reference name="ping_menu_info" value="">
+								</template_reference>
+								<enum name="category" value="Economic" />
+								<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info" overrideParent="True">
+									<enum name="quick_commands_hotkey" value="x_quick_command_hold_x" />
+									<int name="quick_commands_priority" value="5" />
+									<int name="quick_commands_slot_index" value="5" />
+									<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+								</template_reference>
+								<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+									<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\villager_economy" />
+									<int name="nominal_index" value="0" />
+									<int name="priority" value="0" />
+									<instance_reference name="linked" value="" />
+								</template_reference>
+								<enum name="observer_type" value="Disabled" />
+								<group name="issuable_info">
+									<bool name="is_secondary" value="False" />
+									<instance_reference name="secondary_issuable" value="" />
+								</group>
+							</template_reference>
+							<bool name="do_requirement_check_for_construction_on_existing_item" value="False" />
+							<float name="construction_range" value="0" />
+							<instance_reference name="construction_range_reticule" value="" />
+						</group>
+					</list>
+					<enum name="construction_type" value="tp_construction_base" />
+				</group>
+				<group name="construction_group" List.ItemID="1073762595">
+					<instance_reference name="construction_menu" value="menu\chi_age1_wonders" />
+					<list name="construction_items" overrideParent="True">
+					</list>
+					<enum name="construction_type" value="tp_construction_base" />
+				</group>
+				<group name="construction_group" comment="Feudal Age" List.ItemID="1073762596">
+					<instance_reference name="construction_menu" value="menu\chi_age2" />
+					<list name="construction_items" overrideParent="True">
+					</list>
+					<enum name="construction_type" value="tp_construction_base" />
+				</group>
+				<group name="construction_group" List.ItemID="1073762597">
+					<instance_reference name="construction_menu" value="menu\chi_age2_wonders" />
+					<list name="construction_items" overrideParent="True">
+					</list>
+					<enum name="construction_type" value="tp_construction_base" />
+				</group>
+				<group name="construction_group" comment="Castle Age" List.ItemID="1073762598">
+					<instance_reference name="construction_menu" value="menu\chi_age3" />
+					<list name="construction_items" overrideParent="True">
+					</list>
+					<enum name="construction_type" value="tp_construction_base" />
+				</group>
+				<group name="construction_group" List.ItemID="1073762599">
+					<instance_reference name="construction_menu" value="menu\chi_age3_wonders" />
+					<list name="construction_items" overrideParent="True">
+					</list>
+					<enum name="construction_type" value="tp_construction_base" />
+				</group>
+				<group name="construction_group" comment="Imperial Age" List.ItemID="1073762600">
+					<instance_reference name="construction_menu" value="menu\chi_age4" />
+					<list name="construction_items" overrideParent="True">
+					</list>
+					<enum name="construction_type" value="tp_construction_base" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="529555986" List.ParentItemID="529555986">
+			<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\non_formation_land_box_fill_spot_generator" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073742045" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_villager_1" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="-1987393299" List.ParentItemID="-1987393299">
+				<list name="race_list">
+					<group name="race_data" List.ItemID="1307545095" List.ParentItemID="1307545095">
+						<group name="info">
+							<file name="icon_name" value="races\chinese\units\villager" overrideParent="True" />
+							<locstring name="screen_name" value="2045" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+							<string name="selection_group" value="villagerbambo" overrideParent="True" />
+						</group>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-994703061" List.ParentItemID="-994703061">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="1815922276" List.ParentItemID="1815922276">
+						<instance_reference name="type" value="ebps\vietnam\units\economy\villagers\vn_unit_villager_bambo_chi" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="918515448" List.ParentItemID="918515448">
+				<list name="squad_type_list" overrideParent="True">
+					<enum name="squad_type" value="villager" List.ItemID="1073762604" />
+					<enum name="squad_type" value="scar_age1" List.ItemID="1073762605" />
+					<enum name="squad_type" value="scar_villager" List.ItemID="1073762606" />
+					<enum name="squad_type" value="" List.ItemID="1073762607" />
+					<enum name="squad_type" value="can_be_converted" List.ItemID="1073762608" />
+					<enum name="squad_type" value="worker" List.ItemID="1073762609" />
+				</list>
+				<list name="squad_race_type_list" overrideParent="True">
+					<instance_reference name="squad_race_type" value="racebps\chinese" List.ItemID="1073762610" />
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_engineer_ext" List.ItemID="-1745762528" List.ParentItemID="-1745762528">
+				<list name="construction_groups" overrideParent="True">
+					<group name="construction_group" comment="Dark Age" overrideParent="True" List.ItemID="1073762611">
+						<instance_reference name="construction_menu" value="menu\chi_age1" />
+						<list name="construction_items" overrideParent="True" removedIds="2147482550,2147482553">
+							<group name="construction_item" comment="House" List.ItemID="1073762612">
+								<instance_reference name="ebp" value="ebps\vietnam\buildings\traps\roller_traps\vn_building_defense_outpost_bambo_chi" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+								<group name="ui_position">
+									<int name="ui_position_row" value="1" />
+									<int name="ui_position_column" value="1" />
+								</group>
+								<list name="associated_ebps">
+								</list>
+								<list name="alternate_ebps">
+								</list>
+								<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\villager_build_menu\age_1\build_house" />
+								<list name="additional_requirements">
+								</list>
+								<state_tree_node name="additional_requirement_statetree" value="" />
+								<template_reference name="ui_info_extended" value="tables\ui_info_ext" overrideParent="True">
+									<template_reference name="command_card_info" value="ui_command_card_info">
+										<group name="ui_position">
+											<int name="ui_position_row" value="1" />
+											<int name="ui_position_column" value="1" />
+										</group>
+										<int name="command_card_priority" value="1" />
+									</template_reference>
+									<template_reference name="quick_abilities_info" value="">
+									</template_reference>
+									<template_reference name="quick_commands_info" value="">
+									</template_reference>
+									<template_reference name="quick_formation_info" value="">
+									</template_reference>
+									<template_reference name="ping_menu_info" value="">
+									</template_reference>
+									<enum name="category" value="Economic" />
+									<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info" overrideParent="True">
+										<enum name="quick_commands_hotkey" value="x_quick_command_hold_x" overrideParent="True" />
+										<int name="quick_commands_priority" value="5" overrideParent="True" />
+										<int name="quick_commands_slot_index" value="5" overrideParent="True" />
+										<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+									</template_reference>
+									<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+										<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\villager_economy" />
+										<int name="nominal_index" value="0" />
+										<int name="priority" value="0" />
+										<instance_reference name="linked" value="" />
+									</template_reference>
+									<enum name="observer_type" value="Disabled" />
+									<group name="issuable_info">
+										<bool name="is_secondary" value="False" />
+										<instance_reference name="secondary_issuable" value="" />
+									</group>
+								</template_reference>
+								<bool name="do_requirement_check_for_construction_on_existing_item" value="False" />
+								<float name="construction_range" value="0" />
+								<instance_reference name="construction_range_reticule" value="" />
+							</group>
+						</list>
+						<enum name="construction_type" value="tp_construction_base" />
+					</group>
+					<group name="construction_group" List.ItemID="1073762613">
+						<instance_reference name="construction_menu" value="menu\chi_age1_wonders" />
+						<list name="construction_items" overrideParent="True">
+						</list>
+						<enum name="construction_type" value="tp_construction_base" />
+					</group>
+					<group name="construction_group" comment="Feudal Age" List.ItemID="1073762614">
+						<instance_reference name="construction_menu" value="menu\chi_age2" />
+						<list name="construction_items" overrideParent="True">
+						</list>
+						<enum name="construction_type" value="tp_construction_base" />
+					</group>
+					<group name="construction_group" List.ItemID="1073762615">
+						<instance_reference name="construction_menu" value="menu\chi_age2_wonders" />
+						<list name="construction_items" overrideParent="True">
+						</list>
+						<enum name="construction_type" value="tp_construction_base" />
+					</group>
+					<group name="construction_group" comment="Castle Age" List.ItemID="1073762616">
+						<instance_reference name="construction_menu" value="menu\chi_age3" />
+						<list name="construction_items" overrideParent="True">
+						</list>
+						<enum name="construction_type" value="tp_construction_base" />
+					</group>
+					<group name="construction_group" List.ItemID="1073762617">
+						<instance_reference name="construction_menu" value="menu\chi_age3_wonders" />
+						<list name="construction_items" overrideParent="True">
+						</list>
+						<enum name="construction_type" value="tp_construction_base" />
+					</group>
+					<group name="construction_group" comment="Imperial Age" List.ItemID="1073762618">
+						<instance_reference name="construction_menu" value="menu\chi_age4" />
+						<list name="construction_items" overrideParent="True">
+						</list>
+						<enum name="construction_type" value="tp_construction_base" />
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="1073742045" />
+		<instance_reference name="parent_pbg" value="sbps\races\core\unit_villager_1" />
+	</variant>
+</instance>

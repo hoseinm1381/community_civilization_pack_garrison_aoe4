@@ -1,0 +1,116 @@
+{
+  "schema": "ccp-060-historical-reference/v1",
+  "title": "Dai Viet land-unit visual direction: early Ly through later Tran",
+  "scope": "Historical art direction for unit pilots only. Keep stock skeletons, weapon class, animation, and gameplay identity. No Berber files/assets referenced or reused.",
+  "period": {
+    "early": "Ly dynasty, 1009-1225; 11th-13th centuries",
+    "later": "Tran dynasty, 1225/1226-1400; 13th-14th centuries",
+    "note": "Museum pages use 1225 in dynasty narrative and 1226 in exhibition title; retain those source labels rather than force a single transition date."
+  },
+  "source_supported_observations": [
+    {
+      "claim": "The Vietnam National Museum of History summarizes Ly-Tran rule, military history, and the Ly/Tran sequence; it describes three victories over Mongol forces and dates the period 1009-1400.",
+      "source_ids": [
+        "vnmh_ly_tran_overview"
+      ]
+    },
+    {
+      "claim": "The museum describes a Tran terracotta military-officer figure, 13th-14th century, standing upright in a lion-face hat; the torso is decorated with lozenge and bodhi-leaf forms. It is a roof-ridge decorative figure, not a preserved uniform or direct portrait of field kit.",
+      "source_ids": [
+        "vnmh_officer_figure"
+      ]
+    },
+    {
+      "claim": "The museum's Ly-Tran brown-ceramic article says figures of spearmen are shown exercising/fighting or hunting with sword and shield; it also describes an elephant-shaped Tran ewer with a driver and small Tran human heads with hair bound in a turban.",
+      "source_ids": [
+        "vnmh_brown_ceramics"
+      ]
+    },
+    {
+      "claim": "The museum article distinguishes Ly lotus decoration with raised, more elaborate petals from Tran style with flatter petals and rounded tips. These are ceramic dating/design observations, not evidence of clothing patterns.",
+      "source_ids": [
+        "vnmh_brown_ceramics"
+      ]
+    },
+    {
+      "claim": "The Ho Chi Minh City History Museum's Tran-Ho room page describes an organized army, agriculture/industry/commerce, and the Tran-era resistance; its pictured objects on that page are ceramics.",
+      "source_ids": [
+        "hcm_history_museum_room5"
+      ]
+    }
+  ],
+  "design_language": {
+    "art_direction_from_user": [
+      "natural, visibly used cloth",
+      "rattan and bamboo forms",
+      "dark iron",
+      "restrained bronze player-color accents",
+      "substantial stock-donor clothing/equipment remodel while preserving skeletons, weapon class, and animation"
+    ],
+    "evidence_boundary": "The museum material consulted documents ceramics, small terracotta figures, motifs, and broad military context. It does not establish surviving Ly-Tran textile uniforms, rattan armor, bamboo armor, specific unit headgear, or the proposed material palette. Those are visual interpretations for production, not historical fact claims.",
+    "early_to_later_progression": "Early-Ly treatment: cleaner cloth shapes and selective raised/pointed lotus bands on small trim. Later-Tran treatment: more visibly martial layering and flatter rounded lotus bands. Apply motif evolution as an art cue inferred from ceramic decoration; do not present it as a documented clothing chronology.",
+    "shape_and_material_rules": [
+      "Read large garment and armor masses at gameplay distance; use a few broad weave bands, not noisy micro-weave.",
+      "Keep rattan/bamboo shapes irregular and worn, cloth matte, iron dark and low-gloss; bronze should remain limited to tiny fittings/player accents.",
+      "Do not apply the lion-face hat to ordinary troops; reserve it for a command/ceremonial variant if the unit set needs a distinct officer cue, and mark that use as interpretation."
+    ]
+  },
+  "pilot_directions": [
+    {
+      "pilot": "archer2",
+      "silhouette": "Retain donor head/limb proportions, bow, quiver, hand poses, and animation. Widen the torso vest only about 5-8% at ribs/shoulders; end it just above the hip crease. Keep one clear center overlap/opening. Add a single shallow oval or rounded-rectangle back shield on two diagonal straps, shoulder blades to belt, placed clear of bowstring and quiver.",
+      "headgear": "Simple tied cloth wrap or soft close cap; no tall helmet. This is an art choice, not established by the cited artifacts.",
+      "clothing_equipment": "Dark cloth sleeved tunic under a coarse rattan/cane vest with a few broad horizontal courses and visible diagonal ties; shallow back shield; stock bow and quiver remain readable. Restrained bronze only at a few fasteners/player accents.",
+      "evidence": "Museum describes ceramic spearmen with sword and shield, not archers, bows, rattan armor, back shields, or this garment cut. The vest/back-shield requirements are user-approved art direction; all specific construction is interpretation.",
+      "proportion_note": "Keep vest thickness visually shallow; use broad plates/ribs at torso scale, avoid changing shoulder silhouette enough to clip bow draw or stock animations."
+    },
+    {
+      "pilot": "spear2",
+      "silhouette": "Keep donor spear length, grip, and stance. Add a lightly armored broad shoulder/upper-torso layer over a knee-length split tunic; define a compact waist tie and a small forearm wrap without enlarging hands or changing weapon reach.",
+      "headgear": "Low cloth wrap/close cap for regular rank; the lion-face hat is documented only on the small terracotta roof-ridge officer figure and should not become a generic helmet.",
+      "clothing_equipment": "Layered cloth with a limited rattan/bamboo chest panel, dark-iron fittings, and one small shield only if donor equipment supports it; keep spear as the clear class read. Ly raised lotus / Tran flat rounded-petal trim can distinguish phase subtly.",
+      "evidence": "Sword-and-shield-bearing spearmen are described on Ly-Tran ceramics. Specific armor, hat, split tunic, forearm wrap, rattan and spear treatment are interpretations; the cited museum wording does not identify the figure as a spear-bearing infantryman."
+    },
+    {
+      "pilot": "male_villager1",
+      "silhouette": "Practical, lightly fitted long-sleeved or rolled-sleeve tunic with side vents above the knee, narrow tied waist, straight trousers, simple sandals or bare feet per donor; vary hem, sleeve roll, and cloth bundle while preserving donor proportions and tools.",
+      "headgear": "Optional tied cloth headband or bare head; source does not establish village headwear.",
+      "clothing_equipment": "Matte worn natural cloth, small bamboo/rattan carrying basket or tool binding where compatible with stock props; no uniform armor. Bronze accents omitted or nearly absent.",
+      "evidence": "No cited artifact documents the proposed male civilian outfit. This is practical visual interpretation consistent with the user's request for varied civilians; costume pieces must not be labeled as sourced historical dress."
+    },
+    {
+      "pilot": "female_villager1",
+      "silhouette": "Keep the donor female body and animation. Use a wrapped or cross-over upper tunic with rolled/short sleeves, tied waist, and an ankle-to-calf lower wrap or skirt over fitted trousers; keep the outline work-ready and vary hems and sleeve length across variants.",
+      "headgear": "Optional cloth wrap or hair tied back; both are interpretation in this brief.",
+      "clothing_equipment": "Worn natural cloth, simple waist pouch or shallow basket if stock-compatible; no armor and no courtly jewelry. Keep the skirt/wrap clear of locomotion and tool animations.",
+      "evidence": "The cited museums provide no clothing evidence for Ly-Tran female villagers. This is a production interpretation only."
+    },
+    {
+      "pilot": "horseman2",
+      "silhouette": "Keep stock horse body, rider scale, saddle pose, weapon, and animation. Give rider a short split riding tunic, tied waist, compact shoulder/torso protection, and close head wrap so the mounted silhouette stays distinct from foot spearmen.",
+      "headgear": "Close wrap or low cap; no documented mounted-warrior headgear in the consulted museum sources.",
+      "clothing_equipment": "Layered cloth with restrained cane/rattan reinforcing panels; dark iron fittings, small bronze accents; preserve the donor saddle/tack and weapon class. Avoid inventing a highly ornate barded horse unless the donor already has it.",
+      "evidence": "Museum sources support Tran-era military context and horse imagery among ceramic animal motifs, but not the proposed mounted uniform, armor, tack, or specific horse-warrior kit. All garment and equipment details are interpretation."
+    },
+    {
+      "pilot": "elephant",
+      "silhouette": "Retain stock elephant anatomy, proportions, gait, and all attachment points. Keep any rider/mahout low and close to the neck/back so the animal remains the dominant silhouette.",
+      "headgear": "For a mahout, use a simple tied cloth wrap or close cap as interpretation; do not copy the lion-face officer roof figure onto the handler.",
+      "clothing_equipment": "Simple cloth saddle cloth and rope/cane harness with limited dark-iron fittings; use a restrained Ly/Tran lotus band as surface decoration. Preserve stock functional equipment and animation.",
+      "evidence": "The museum describes a Tran elephant-shaped ceramic ewer with driver and an elephant-driver figurine. These support an elephant-and-driver motif, not actual war-elephant armor, harness, saddle cloth, or the proposed rider clothing."
+    },
+    {
+      "pilot": "siege_sample",
+      "silhouette": "Keep the selected stock siege unit's frame, crew count, weapon, and attack/read animation. Add broad wood beams, visible rope/lashing joints, and a few dark-iron brackets; do not add weapon mechanisms or extra moving parts that alter the class read.",
+      "headgear": "Crew use simple cloth wraps/caps as an art interpretation; preserve donor faces and animation.",
+      "clothing_equipment": "Worn cloth with limited protective panels for crew; weathered timber and rope are the proposed natural-material language. Identify the actual stock siege donor before modeling so no machine type is inferred from the museum sources.",
+      "evidence": "No cited museum source establishes this siege-engine design or its crew clothing. All forms in this direction are production interpretation; only the broad Tran military context is documented."
+    }
+  ],
+  "guardrails": [
+    "No change to skeletons, weapon class, attack timing, or animation.",
+    "Avoid presenting the proposed outfits, rattan armor, bamboo armor, or colors as documented historical fact.",
+    "Keep military protection varied by role; civilian pilots remain visibly practical and unarmored.",
+    "Use the exact selected donor resource and actual skeleton/animation contracts during integration; this brief does not nominate asset IDs."
+  ]
+}

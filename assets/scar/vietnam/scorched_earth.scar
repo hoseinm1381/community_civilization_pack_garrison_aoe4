@@ -1,0 +1,32 @@
+import("modifiers.scar")
+
+-- Only light infantry bind this private stock torch. A player-owned weapon-type
+-- multiplier follows current/future units and tiers without buffing other attacks.
+VietnamScorchedEarthState = {applied = {}}
+local upgrade = nil
+local torch = nil
+
+function VietnamScorchedEarth_Update(player)
+    if upgrade == nil then
+        upgrade = BP_GetUpgradeBlueprint("b7fcea91257b408fb9e8ae4d8bc402e1:vn_upgrade_scorched_earth_vit")
+        torch = BP_GetWeaponBlueprint("b7fcea91257b408fb9e8ae4d8bc402e1:vn_weapon_light_infantry_torch_vit")
+    end
+    local active = Player_IsAlive(player.id) and Player_HasUpgrade(player.id, upgrade)
+    local applied = VietnamScorchedEarthState.applied[player.index]
+    if active and applied == nil then
+        local modifier = Modifier_Create(MAT_WeaponType, "damage_weapon_modifier",
+            MUT_Multiplication, false, 1.2, torch)
+        VietnamScorchedEarthState.applied[player.index] = Modifier_ApplyToPlayer(modifier, player.id, 0)
+        print("VIETNAM_V2_SCORCHED player=" .. tostring(player.index) .. " torch_damage=1.2x")
+    elseif not active and applied ~= nil then
+        Modifier_Remove(applied)
+        VietnamScorchedEarthState.applied[player.index] = nil
+    end
+end
+
+function VietnamScorchedEarth_Cleanup()
+    for _, applied in pairs(VietnamScorchedEarthState.applied) do Modifier_Remove(applied) end
+    VietnamScorchedEarthState.applied = {}
+    upgrade = nil
+    torch = nil
+end

@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-440553585" List.ParentItemID="-440553585">
+			<group name="time_cost">
+				<float name="time_seconds" value="600" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="-687579933" List.ParentItemID="-687579933">
+			<list name="requirement_table" overrideParent="True">
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="1073759277">
+					<enum name="reason" value="usage" overrideParent="True" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_statemodelbool" List.ItemID="1073759278">
+					<locstring name="ui_name" value="0" />
+					<enum name="reason" value="usage_and_display" overrideParent="True" />
+					<enum name="key" value="is_wonder_construction_enabled" overrideParent="True" />
+					<enum name="data_source_type" value="player_datasource" overrideParent="True" />
+					<bool name="default_value" value="False" />
+					<bool name="compare_to_value" value="True" overrideParent="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_not" List.ItemID="1073759279">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="11168821" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="1073759280">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements" overrideParent="True">
+								<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1073759281">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<instance_reference name="structure_name" value="ebps\vietnam\buildings\wonder\vn_building_wonder_age4_forbidden_control_chi" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+									<int name="required_structure_count" value="1" />
+									<bool name="check_team" value="False" />
+									<bool name="require_construction_complete" value="False" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1564013048" List.ParentItemID="-1564013048">
+			<bool name="can_repair" value="True" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Melee" value="0" overrideParent="True" />
+				<float name="Fire" value="0" overrideParent="True" />
+			</enum_table>
+			<state_tree_node name="death_action_tree" value="building_death_actions\landmarks\landmarks_common\common_wonder_shared_death" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-3859106" List.ParentItemID="-3859106">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<float name="animator_scale" value="160" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1488008841" List.ParentItemID="-1488008841">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\chinese" List.ItemID="1073759282" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1976360599" List.ParentItemID="1976360599">
+			<float name="decorator_height" value="12" overrideParent="True" />
+			<file name="icon_name" value="races\chinese_historic\buildings\building_landmark_shaolintemple_chi" overrideParent="True" />
+			<locstring name="screen_name" value="2274" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+			<float name="minimap_icon_scale" value="0.45" overrideParent="True" />
+			<string name="telemetry_name" value="Enclave of the Emperor" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\burn_ext" List.ItemID="1489518095" List.ParentItemID="1489518095">
+			<float name="on_fire_decay_amount_per_sec" value="0" overrideParent="True" />
+			<float name="on_fire_threshold" value="59" overrideParent="True" />
+			<float name="max_fire_damage_per_second" value="10000" overrideParent="True" />
+			<float name="on_fire_health_percentage" value="0.25" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="-954154841" List.ParentItemID="-954154841">
+			<group name="footprint_scale">
+				<float name="x" value="12" overrideParent="True" />
+				<float name="y" value="12" overrideParent="True" />
+			</group>
+			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\building_presentation_ext" List.ItemID="-1059384753" List.ParentItemID="-1059384753">
+			<file name="construction_stamp" value="art\stamps\scaffolding\chinese_ha\chi_cont_land_a_02" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1073759283" List.ListAction="Append">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" List.ItemID="1073759284">
+					<group name="tier" List.ItemID="1073759285">
+						<instance_reference name="attachments" value="attachments\attachment_lists\vietnam\release_070\vn070_wonder_main" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+				<list name="tier_group" overrideParent="True" List.ItemID="1073759286">
+					<group name="tier" List.ItemID="1073759287">
+						<instance_reference name="attachments" value="attachments\attachment_lists\vietnam\release_070\vn070_wonder_outskirts" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="2147470044" List.ListAction="Append">
+			<float name="range_metres" value="4" overrideParent="True" />
+			<int name="generator_value" value="0" overrideParent="True" />
+			<bool name="disable_generation_on_spawn" value="False" overrideParent="True" />
+			<bool name="is_root_generator" value="False" overrideParent="True" />
+			<int name="district_palette_id" value="0" overrideParent="True" />
+			<list name="requirements">
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741897" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_wonder_age4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1831527407" List.ParentItemID="1831527407">
+				<group name="time_cost">
+					<float name="time_seconds" value="600" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="-975410046" List.ParentItemID="-975410046">
+				<list name="requirement_table" overrideParent="True">
+					<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="1073759288">
+						<enum name="reason" value="usage" overrideParent="True" />
+						<locstring name="ui_name" value="0" />
+						<bool name="is_present" value="True" />
+						<int name="max_completed" value="100" />
+						<int name="min_completed" value="1" />
+						<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" />
+						<bool name="include_queued" value="False" />
+						<group name="include_pbg_parenting">
+							<bool name="include_child_pbgs" value="False" />
+							<bool name="include_parent_pbgs" value="False" />
+						</group>
+						<bool name="include_completed" value="True" />
+					</template_reference>
+					<template_reference name="required" value="requirements\required_statemodelbool" List.ItemID="1073759289">
+						<locstring name="ui_name" value="0" />
+						<enum name="reason" value="usage_and_display" overrideParent="True" />
+						<enum name="key" value="is_wonder_construction_enabled" overrideParent="True" />
+						<enum name="data_source_type" value="player_datasource" overrideParent="True" />
+						<bool name="default_value" value="False" />
+						<bool name="compare_to_value" value="True" overrideParent="True" />
+					</template_reference>
+					<template_reference name="required" value="requirements\required_not" List.ItemID="1073759290">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="11168821" />
+						<list name="requirement_table">
+							<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="1073759291">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<list name="requirements" overrideParent="True">
+									<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1073759292">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<instance_reference name="structure_name" value="ebps\vietnam\buildings\wonder\vn_building_wonder_age4_forbidden_control_chi" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+										<int name="required_structure_count" value="1" />
+										<bool name="check_team" value="False" />
+										<bool name="require_construction_complete" value="False" />
+										<group name="include_pbg_parenting">
+											<bool name="include_child_pbgs" value="False" />
+											<bool name="include_parent_pbgs" value="False" />
+										</group>
+									</template_reference>
+								</list>
+							</template_reference>
+						</list>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1345214938" List.ParentItemID="1345214938">
+				<bool name="can_repair" value="True" overrideParent="True" />
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Melee" value="0" overrideParent="True" />
+					<float name="Fire" value="0" overrideParent="True" />
+				</enum_table>
+				<state_tree_node name="death_action_tree" value="campaignMod_building_death_actions\landmarks\wonders_age4\chi_wonder2" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1697624988" List.ParentItemID="-1697624988">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+				<float name="animator_scale" value="160" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="82698194" List.ParentItemID="82698194">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="building" List.ItemID="1073759293" />
+					<enum name="unit_type" value="wonder" List.ItemID="1073759294" />
+					<enum name="unit_type" value="wonder_imperial_age" List.ItemID="1073759295" />
+					<enum name="unit_type" value="siegeable" List.ItemID="1073759296" />
+					<enum name="unit_type" value="select_special_building" List.ItemID="1073759297" />
+				</list>
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\chinese" List.ItemID="1073759298" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="361736621" List.ParentItemID="361736621">
+				<file name="icon_name" value="races\chinese_historic\buildings\building_landmark_shaolintemple_chi" overrideParent="True" />
+				<locstring name="screen_name" value="2275" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+				<enum name="selection_method" value="obb_adjusted_to_terrain" overrideParent="True" />
+				<string name="telemetry_name" value="Enclave of the Emperor" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\burn_ext" List.ItemID="-1528830916" List.ParentItemID="-1528830916">
+				<float name="on_fire_decay_amount_per_sec" value="0" overrideParent="True" />
+				<float name="on_fire_threshold" value="59" overrideParent="True" />
+				<float name="max_fire_damage_per_second" value="10000" overrideParent="True" />
+				<float name="on_fire_health_percentage" value="0.25" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="-1206759612" List.ParentItemID="-1206759612">
+				<group name="footprint_scale">
+					<float name="x" value="12" overrideParent="True" />
+					<float name="y" value="12" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\impass_ext" List.ItemID="-1225677457" List.ParentItemID="-1225677457">
+				<list name="block_path" overrideParent="True">
+					<instance_reference name="path_type" value="pass_types\infantry" List.ItemID="1073759299" />
+					<instance_reference name="path_type" value="pass_types\vehicle" List.ItemID="1073759300" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1073759301" List.ListAction="Append">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" List.ItemID="1073759302">
+						<group name="tier" List.ItemID="1073759303">
+							<instance_reference name="attachments" value="attachments\attachment_lists\vietnam\release_070\vn070_wonder_main" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+					<list name="tier_group" overrideParent="True" List.ItemID="1073759304">
+						<group name="tier" List.ItemID="1073759305">
+							<instance_reference name="attachments" value="attachments\attachment_lists\vietnam\release_070\vn070_wonder_outskirts" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="2147470045" List.ListAction="Append">
+				<float name="range_metres" value="4" overrideParent="True" />
+				<int name="generator_value" value="0" overrideParent="True" />
+				<bool name="disable_generation_on_spawn" value="False" overrideParent="True" />
+				<bool name="is_root_generator" value="False" overrideParent="True" />
+				<int name="district_palette_id" value="0" overrideParent="True" />
+				<list name="requirements">
+			</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="1073741897" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_wonder_age4" />
+	</variant>
+</instance>

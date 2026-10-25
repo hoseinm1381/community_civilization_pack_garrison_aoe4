@@ -1,0 +1,3239 @@
+{
+  "schema": "community-civilization-pack.source-preservation/v1",
+  "captured_utc": "2026-10-17T21:03:19.9693804Z",
+  "source_root": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison",
+  "scope": [
+    "assets/**",
+    "tools/**",
+    "docs/**",
+    "top-level README.md, STORAGE.md, workspace.json, .gitignore, project .aoe4mod"
+  ],
+  "exclusions": [
+    "cache/**",
+    "output/**",
+    "staging/**",
+    ".git/**",
+    "art/**",
+    "archives/**",
+    "external junction targets"
+  ],
+  "file_count": 643,
+  "total_bytes": 24112716.0,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 119,
+      "sha256": "dbc0e1e7393266d07abe1679ec3ddf62c7120127aa04651355c06b04f4197878"
+    },
+    {
+      "path": "assets/_default.burnproj",
+      "bytes": 13544,
+      "sha256": "3a55fd2b3792188956dd9c8a82ee7e5754a33a21c6ac11a1bd60ee1ee9c9493c"
+    },
+    {
+      "path": "assets/attrib/community_civilization_pack.xml",
+      "bytes": 169,
+      "sha256": "7ce7aec67058b7c04da0f8db446eeb016f976d7f6ac6a9b3b6172fc68c78eac7"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_activate_stealth_for_archer.xml",
+      "bytes": 11686,
+      "sha256": "c0ee10a5c456d069d0c1d03992ee1d34d8b2cae256b4ec820d47eb6ab6894d99"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_activate_stealth_forvills_vit.xml",
+      "bytes": 13864,
+      "sha256": "329b5fe1cec68fb415f21d8f6b48b75f036f53c3ad67691e093b96139e4f2901"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_activate_stealth_vit.xml",
+      "bytes": 12817,
+      "sha256": "6fa8913ccf2cfc4d22acb9066049ccd08c73b20bad7046b773a9283c61303536"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_building_granary_aura_chi.xml",
+      "bytes": 22120,
+      "sha256": "c2e1d9ddb97cfe7e0e9b84585228d50d164fd8f2064e2c1234c2ea9b0cffdb84"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_core_pc_auto_train_elephant.xml",
+      "bytes": 35594,
+      "sha256": "0bcd679190e98c49e61ddba8757378b6655ef4c10841bff747bdee6cd5f72385"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_core_xbox_auto_train_villager_test.xml",
+      "bytes": 35588,
+      "sha256": "0694a4947387f33cf5ffa7684c3e2a9393315978d8fb7a28564a2e302c08a468"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_elephant_helper_vit.xml",
+      "bytes": 10922,
+      "sha256": "100358460f922b6dfab6e1d2eb13f44b45b16c1a8479e39a555a01e3ec3321f4"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_elephant_supervise_building_self_vit.xml",
+      "bytes": 31809,
+      "sha256": "1711c76ce7ea4f3db94d2575a2d27812ace41c5d6992eb665875c064a3088cba"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_elephant_worker_boost.xml",
+      "bytes": 13985,
+      "sha256": "eddbd353ae8ec160274aa99051b59bd581d0aef5fc40d3f4391e5e37bc20f689"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_fireship_self_detonate_trap.xml",
+      "bytes": 34608,
+      "sha256": "1a1bc267008b52ac4431a51e0ff792662f43b4be0b28598220d7d500388939bf"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_general_aura_combat_vit.xml",
+      "bytes": 36553,
+      "sha256": "1e6655c7bb17df7d7df627376894fd09a97622de880b246e5b854e90ce53306d"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_house_aura_cavalry_vit.xml",
+      "bytes": 13725,
+      "sha256": "04839fbf75dd8e060611a3f626805f58d2340450b603a0c98b71594a4214efe6"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_house_aura_melee_vit.xml",
+      "bytes": 13702,
+      "sha256": "5a11c61d87bd5203b3a4701ee21a32bf1f52ad9750d357e03d9af1daa350c1e6"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_house_aura_range_vit.xml",
+      "bytes": 13702,
+      "sha256": "7684646b0f333d532b5a1d1e861ea4dac9cf4061eaded8a98832202f058dd623"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_infantry_speed_vit.xml",
+      "bytes": 13204,
+      "sha256": "00d652d1b073b8bc8fda602f7a4d27fc835e15fb414e2141527c641e0316f9af"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_monastery_create_relic_vit.xml",
+      "bytes": 42924,
+      "sha256": "a8fcee15a83b1b7673dfbdb8b3f70ee9a544e33e08935f46ea238d4a9d2d441f"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_official_auto_collect_tax_chi.xml",
+      "bytes": 23168,
+      "sha256": "4c4c01713c52cf43b70348f195332b8e0080aca4f786ea95375d96ff4bd9552a"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_official_auto_collect_tax_toggle_chi.xml",
+      "bytes": 22918,
+      "sha256": "1c60109495041c2a69bdd09188ecbc573111cbe16257cd69d6bd445d03e65915"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_official_auto_collect_tax_toggle_vit.xml",
+      "bytes": 26669,
+      "sha256": "125f025a015fdaed916607458a2044c078a3d6c72cbc9cb164da12249b327649"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_official_auto_collect_tax_vit.xml",
+      "bytes": 23168,
+      "sha256": "7f7faaa9a48954ecbe8dc4a039b3d0af3adc264faaae73468c49459200e9cb61"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_official_collect_tax_target_auto_vit.xml",
+      "bytes": 11863,
+      "sha256": "a921e67a048601a11ee36fbb78cb8985eea0708d634d63554748bb7e0207869b"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_official_collect_tax_target_vit.xml",
+      "bytes": 27094,
+      "sha256": "f3ad10115e54ac00dfb4f65bf921d6f4334bd3f0aa80bf746f5954549397e161"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_stealth_outpost_aura_vitt.xml",
+      "bytes": 10857,
+      "sha256": "3a92e147991f36078ddfbf8ec2408adcd5ad94cfdfd0fca1ad8ad777587bd766"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_vietnam_unit_mov_vit.xml",
+      "bytes": 24538,
+      "sha256": "2eb2af76121b7b88df2ad4867d811212e6d2f77a154322b95caea06fe2e5d869"
+    },
+    {
+      "path": "assets/attrib/instances/army/vietnam/vn_normal_chinese.xml",
+      "bytes": 41482,
+      "sha256": "cf78ac7c83834968d2d5997d805e587c542de2653c4d1ac14985d8c1bc0c5d53"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_020/vn_020_barracks_age01_visual.xml",
+      "bytes": 421,
+      "sha256": "5750170799d2fb8593d78b3bc5c7d9ba587b91c4201f757a23a5007e8701794a"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_020/vn_020_barracks_age02_visual.xml",
+      "bytes": 421,
+      "sha256": "30156b992524a474511e4268819d80d02c3cf9d0d2b2e04e616f4d929c21d922"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_020/vn_020_barracks_age03_visual.xml",
+      "bytes": 421,
+      "sha256": "2dd6a9bd2ba697ac1e833c53f3cf745924162bcc4242a60151300a64b59b6724"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_020/vn_020_barracks_age04_visual.xml",
+      "bytes": 421,
+      "sha256": "e46fbe231312ccb87cc3bcdc95c1418d4d231e42627a0783bae0632cdf1bee0b"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_020/vn_020_economy_ministry_visual.xml",
+      "bytes": 407,
+      "sha256": "b0e4a588e665e7498767a57911c383195fd396265a301499c7677054fc87a1e4"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_020/vn_020_farm_outskirts_visual.xml",
+      "bytes": 389,
+      "sha256": "7557ff15632be9128665027100ea45576d721763309584f671a73eff9ffa9d30"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_020/vn_020_hideout_visual.xml",
+      "bytes": 419,
+      "sha256": "5570fb53878af819dd4060774a3af3b136a5e8998675ca3dc99a30a1ca0ae061"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_020/vn_020_town_center_age01_visual.xml",
+      "bytes": 417,
+      "sha256": "a21e631724ebf88014e77c821064cfa49c441f58b4b6cce432594abcf7f36d0a"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_020/vn_020_town_center_age02_visual.xml",
+      "bytes": 417,
+      "sha256": "6db6dabeec486223032eb9328a1a3047a5dc77756b0a203ecbfdff6976c54dd8"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_020/vn_020_town_center_age03_visual.xml",
+      "bytes": 417,
+      "sha256": "0938cdcc6c4634b194880eea642a42859486aa29d19aa1a967682af59c4ae1f5"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_020/vn_020_town_center_age04_visual.xml",
+      "bytes": 417,
+      "sha256": "87ed74a1020dcb9c2e6c31f2d0d249c347af2c9031c8cd59c3bc7347a24da704"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_030/vn_030_one_pillar_visual.xml",
+      "bytes": 353,
+      "sha256": "ad167c47b1ec3160d5df40e6e1e90e530e14800f46c2ed0c6fc340e575ae291c"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_030/vn_030_pho_minh_visual.xml",
+      "bytes": 354,
+      "sha256": "3f861fbb2406b95bb42044c60843b0ea21e4148d161744611cce0b9dbbd16c48"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_040/vn_040_archery_range_age02_visual.xml",
+      "bytes": 379,
+      "sha256": "0dd78bc08bb9e6f0d1e7127f52d5e983745a9cec64201a9b5de7cbc99e422dad"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_040/vn_040_archery_range_age03_visual.xml",
+      "bytes": 379,
+      "sha256": "17d11697d64a5cbaf8f46e585a9ca69e2810cbdcbc9bd9b2914bc69caadc049b"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_040/vn_040_archery_range_age04_visual.xml",
+      "bytes": 379,
+      "sha256": "20692dc9d841ff2b303f989e59c5d01a761c11a81d72de03339598251aa0d7cf"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_040/vn_040_blacksmith_age02_visual.xml",
+      "bytes": 387,
+      "sha256": "caa8a1124566d3b7e3ae1d8bf36e67586aa964a529945206bcd4a193165db0d2"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_040/vn_040_blacksmith_age03_visual.xml",
+      "bytes": 387,
+      "sha256": "194f0f2fc942e79d0afc869377fda7a11af2998afcb32cd02cdfa2d2e7d694bd"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_040/vn_040_blacksmith_age04_visual.xml",
+      "bytes": 387,
+      "sha256": "1d32b87fad379bcc6a48a37e0fb686e1bc75a2ec9b2b3380b630245722bf4ef2"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_040/vn_040_one_pillar_visual.xml",
+      "bytes": 353,
+      "sha256": "f18ed02501c3f3c09eb86c039cca0ad3303f48c8a6ccdf98ec05bdfffaf0b3da"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_040/vn_040_pho_minh_visual.xml",
+      "bytes": 354,
+      "sha256": "14f1f0a6cdf9ca4338f055dda6096c6fe0719bcaf590eb7c6e3452c0fb6b3c59"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_040/vn_040_stable_age02_visual.xml",
+      "bytes": 381,
+      "sha256": "d6071ac42a5980bd3e78cbccdeae4e8e957bbace631d2591436c647569a005a6"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_040/vn_040_stable_age03_visual.xml",
+      "bytes": 381,
+      "sha256": "404f7c8737b222e9823fe0fdb2e7fa7766c23cc829fde61178b06e49b39e9db7"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_040/vn_040_stable_age04_visual.xml",
+      "bytes": 381,
+      "sha256": "c3f4d3dd27e1b7799b5d54f7b7f91205e619428384e291e45fb780da40a8ee13"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_050/vn_050_imperial_citadel_outskirts_visual.xml",
+      "bytes": 350,
+      "sha256": "d97859e7475a15cde225fb221d213420f15523ae97d7f15b9eac03274914b414"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_050/vn_050_imperial_citadel_visual.xml",
+      "bytes": 367,
+      "sha256": "63fe1e27f814796af565f720669dcdf3b0c5b97d8811f3d4ac97556a2c5ab19b"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_050/vn_050_keep03_visual.xml",
+      "bytes": 363,
+      "sha256": "1f3b46c31e54da1d7e14d318662d9813a26cd23281981874db548c29529109f6"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_050/vn_050_monastery03_visual.xml",
+      "bytes": 383,
+      "sha256": "492f7b526030d4d6a97afad9d6fc0f5dcfba6bfeec234db1ae1ff87d25e31587"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_050/vn_050_monastery04_visual.xml",
+      "bytes": 383,
+      "sha256": "b0aa5aebe53f2dff37a640f2330970964321a897da31f226b7f4deb3d4392426"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_050/vn_050_resistance_hq_outskirts_visual.xml",
+      "bytes": 351,
+      "sha256": "789264675b024e446800f7633fb169ac06007caf7259461da93e5567bad0d64f"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_050/vn_050_resistance_hq_visual.xml",
+      "bytes": 362,
+      "sha256": "f904d9c1361dadfb464039db59cb63b6afb72b733dd3413ec8a05c5489347306"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_050/vn_050_siege_workshop03_visual.xml",
+      "bytes": 375,
+      "sha256": "99fe1b1dc9c63c9c87b1879aa7f29b81de12b21b80277bed3f45cb5ef0b1769e"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/release_050/vn_050_siege_workshop04_visual.xml",
+      "bytes": 375,
+      "sha256": "cd3ca8a004a359632c6bac10259fb962916858697b55cd2065663265bbe45927"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/vn_house_age01_visual.xml",
+      "bytes": 413,
+      "sha256": "0ee1e3a36468ba7eef615e8819d2d05243d56cb422ab937ac4df0ef5030b67eb"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/vn_house_age02_visual.xml",
+      "bytes": 413,
+      "sha256": "6055f9d187584270155641ff268ccea11420ca2e58e98771b3e4cfbcf39e9deb"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/vn_house_age03_visual.xml",
+      "bytes": 413,
+      "sha256": "6f44f543e633c4cc451a73b910d60f4f44e667d75a0f7fb514d7e7bda7115943"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/vn_house_age04_visual.xml",
+      "bytes": 413,
+      "sha256": "290f427e796dfcebf15f1c484748e0e4ce6ed4f05b7bf9452b6edceb739e9c77"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/vn_trap_palisade_visual.xml",
+      "bytes": 410,
+      "sha256": "88864027b07e1eb309267f0e03d80df40ef9d923ecc40ef5d773c00511fea984"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/vn_trap_parent_visual.xml",
+      "bytes": 400,
+      "sha256": "82f28f1e372006eed4f2469a2f538c5f49e3c71e5d627342e489ec67db8ff1b6"
+    },
+    {
+      "path": "assets/attrib/instances/attachments/attachment_lists/vietnam/vn_trap_thicket_visual.xml",
+      "bytes": 410,
+      "sha256": "68f333bc3ac5b71b70a84a29cdfb96d1a7f5ee8b689062dba721feae34220078"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/release_040/vn_040_market_actor.xml",
+      "bytes": 344,
+      "sha256": "ce00cbd4c130d51396bf7df2d0ac33e769cc1f2403866cb24b557313b87ef541"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_acacia_med_wild_stealth_vit.xml",
+      "bytes": 14604,
+      "sha256": "fadd67eb664c126924738196d101e52bff217276941d3309539264a036d89e41"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_bambo_outpost_chi_passable.xml",
+      "bytes": 1224,
+      "sha256": "b0039098a565ea6fcba73f3f9be0bbd30efce71c5926f76d7bf6b955f6daa7ff"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_bambo_outpost_chi.xml",
+      "bytes": 293144,
+      "sha256": "7f1d18335a20a9ba9fa9e00c86aedb9d5c7f1e2709e64c49e4a2b2e6bd213076"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_keep_2_chi.xml",
+      "bytes": 222490,
+      "sha256": "b78686d23b32da4819c705ff0e4948643b0f5b25c2ed1d8fa1bc2aa83648a419"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_keep_chi.xml",
+      "bytes": 222250,
+      "sha256": "9f0fd197ae059978123aeaab87a757a2a1f5e46942693ade9c548bb73aa72cdd"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+      "bytes": 115986,
+      "sha256": "1774268310a809c671eebb2574fed5384a6c6a361c08d94a7f89ecf833451e36"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_bambo_chi_passable.xml",
+      "bytes": 1238,
+      "sha256": "49b2714ffdbbd85796e81310daf2ce80cb486fecb540f02164028ba281a514b7"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_bambo_chi.xml",
+      "bytes": 122708,
+      "sha256": "d84fe6ccd7859b9117ea7c18674104791c9234aeacd0360632eb70b8cff80a39"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+      "bytes": 123380,
+      "sha256": "86b5ab9e4a70d22ff39123c9aa7984ed4d81e0096ac70031f98c2b9134f11870"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_dynasty_granary_control_chi.xml",
+      "bytes": 86775,
+      "sha256": "43bfc4cc379acc55a2ca7b6997c468920986e386e40f1bff1b942d5adf6c3b88"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_dynasty_granary_control_chi2.xml",
+      "bytes": 83868,
+      "sha256": "e083c07a6bb42e93c35cbb16dadfc7ed1f19544870522db10ac2d6838765ddec"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_dynasty_pagoda_control_vit.xml",
+      "bytes": 86832,
+      "sha256": "21675810d85aac4e4a75cb52a17607c3d510f2a8b364187220ceec569a6e3e43"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_econ_food_control_chi.xml",
+      "bytes": 44004,
+      "sha256": "1a1324f357c2c38c1e6f56d9099904699cb8a8b81b464335f7acda76d7e58c84"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_econ_wood_control_chi.xml",
+      "bytes": 18512,
+      "sha256": "76c07bc2075a48b9fb8e31d415cef656a699df0c92af423bff3f13b111cc4674"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_house_control_chi.xml",
+      "bytes": 25089,
+      "sha256": "9660192bc9e49e25d2c295bb3849f95d2c030898163d2125c4efa6fee60047b6"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_house_control_faster_chi.xml",
+      "bytes": 24598,
+      "sha256": "89cd438a9a63314e25fa7a3894fb38c80fec236525fdc23f58784faaecc95dfa"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_house_mon.xml",
+      "bytes": 89232,
+      "sha256": "65433bd123e0b113ff1efac33a3d68069aebe901f267a4cfed6607cbc395323d"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+      "bytes": 286589,
+      "sha256": "532bf7a904688b588217cf5fd761cccdfb0a68611051c404f809658b627262f9"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_headquarters_control_chi.xml",
+      "bytes": 113352,
+      "sha256": "f91a0c3bef995f2ff58bb0c4aac6e3961a198e0b10d20c8c5539259f08c9e9cc"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_vit_one_pilar_pagoda.xml",
+      "bytes": 51010,
+      "sha256": "ecc75320286a2abf807e182d74d30dfc10f30d7555eea245cc70b07878214cf4"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age2_headquarter_vit.xml",
+      "bytes": 270149,
+      "sha256": "1ea8d01ada8cd757bf8caac8db8cd07c1a8b197bf8042cd6407fc4f22f3fbc5f"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age2_imperrial_citadel_vit.xml",
+      "bytes": 419190,
+      "sha256": "cc30566f27edb348e498bb0ede552c0f44ec9e47397c4cd1d3e31c14e3570f76"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age2_minh_pagoda_control_vit.xml",
+      "bytes": 19337,
+      "sha256": "003103c70b1953837b9f34d4042ff11f8cc70445eadf5c13e632377bf91af49d"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_imperial_garden_vit.xml",
+      "bytes": 20327,
+      "sha256": "73f2bd03edc759ed9c25f90663ceaf43726f749eade6c490ca42c9eb362c6e80"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_new_imperial_garden.xml",
+      "bytes": 48487,
+      "sha256": "3027e92c2eb05100e59a34089cc3ddf8d0d5191d37e134ad8ed56a4dd6ba67e6"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_trung_foundaries_vit.xml",
+      "bytes": 51144,
+      "sha256": "fea31538957f18ef73db7a793ffaa999932bd93ae2a83c7cf5baa5c1570609ca"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_resource_farm_chi.xml",
+      "bytes": 14957,
+      "sha256": "b2d22b7c9e8997812c5d215258490e44347a58abbb64519a91fd964d4c73ddb5"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_resource_farm2_chi.xml",
+      "bytes": 75422,
+      "sha256": "711b1491636ce908d7bbabc2b727a3e224bcf7ca041a169942208d75789effde"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_tech_unit_infantry_control_chi.xml",
+      "bytes": 30694,
+      "sha256": "6627fef6581e8e21009ec300df8f9775e2917dcc51530e6b197362511169e539"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_tech_university_control_chi.xml",
+      "bytes": 18326,
+      "sha256": "6ae5512aa60a21c90e3cd17e568ca46ff39b6cf906829ac3b1265f53852ea5b5"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_2_chi.xml",
+      "bytes": 108426,
+      "sha256": "2b97a19bc43cff65088c1f4cd05a01347e02e69e5ab0ae1aa5e3587b4ce44fdf"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_2_chi.xml",
+      "bytes": 131898,
+      "sha256": "687e973f56ed0c3bed3dacb1902ef120334cf53d11a3c94732f477fffb5ba7c0"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_chi.xml",
+      "bytes": 150365,
+      "sha256": "96d48cf7eed86071962f3e61ae80f1076867071114b2cb6e4202f824e1ef1c56"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_chi.xml",
+      "bytes": 111843,
+      "sha256": "1651f7c0fd10d819afcc07761a4e338d65a66c35a5ae5811d20fdb45e7fffa16"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_cavalry_control_chi.xml",
+      "bytes": 77085,
+      "sha256": "1b2728eb4826eb331b549321a5c3fb2abecc68fed937e26ccbce955a630f16a7"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+      "bytes": 111946,
+      "sha256": "03a23866d42a3879c7a90172ee35779aa95e6d91ae682e0c5784616ffec4ff63"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_naval_chi.xml",
+      "bytes": 1010,
+      "sha256": "c1625c338a642b2aac40d44b5cefcada4dcc2d237723f5a76a2ddcdc402face8"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+      "bytes": 94894,
+      "sha256": "7e82ed3db40ea3512e7f3fd1dd676843339c1805182f252ff41595f57d485cdd"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_religious_control_chi.xml",
+      "bytes": 1047,
+      "sha256": "89336874686ec3176e55a56f72d5312b395b9bb6035f40f4e63fcd326dcdbef9"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+      "bytes": 83665,
+      "sha256": "31afa80a5a8af245d9a5804ef3968eeaa3e3fb18f48a826f5e84f00d8d1c8d71"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_wonder_age4_forbidden_control_chi.xml",
+      "bytes": 19279,
+      "sha256": "0db5429d6b660c71ae273ad84d71f092b940495d7a57d6bad985a84f0e96d33f"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_cherry_young_stealth_vit.xml",
+      "bytes": 33811,
+      "sha256": "f46f21202ce5db2140a219f8b0842dc90408f4f1e96966112e721e3611c6ff8e"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_projectile_trap.xml",
+      "bytes": 29632,
+      "sha256": "33fa38c5bc7cbdb5f183dd93f6552ce25967047bfb04ce5bac5fddc78f6c9a0a"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_stealth_tree_vit.xml",
+      "bytes": 12975,
+      "sha256": "2524d939f506ac64ae9bb9da86f6db4500b049a8a9526d7672fd2f36f5586377"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_2_vit.xml",
+      "bytes": 21759,
+      "sha256": "eb239e9ef3636ea66bef6dd9b1642b02be3aa09213d819e29d9f58e621826ccf"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_3_vit.xml",
+      "bytes": 18986,
+      "sha256": "cd7a04649428521e9768900d598327892bec55a857c57c0d47bdf67d8a533532"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_4_vit.xml",
+      "bytes": 15240,
+      "sha256": "43a5483ca2d4e38f41cf030a4c288eb77a7cbf48172ba8224dbe069680ed0885"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_crossbowman_3_chi.xml",
+      "bytes": 15755,
+      "sha256": "049a5b999f9f68e4e3f7122c4f88f396828f180d16c6a6ed0012fc8e4c2fa655"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_crossbowman_4_chi.xml",
+      "bytes": 12584,
+      "sha256": "9c51b28ed4feffb5ff228c7f5b865785ed61cf4f64b8b9fa7d5ff9db13c134c2"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_handcannon_4_chi.xml",
+      "bytes": 11779,
+      "sha256": "4d4fa5dfb581856d3edb0e43c27d55e70fd2cf56cb22d3a3049c1b796ce71d39"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_horseman_2_chi.xml",
+      "bytes": 19181,
+      "sha256": "25612448aa97591cd25a99a92dfbe4ef941231d5be01610072244fefdeb3e17e"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_horseman_3_chi.xml",
+      "bytes": 15952,
+      "sha256": "09cc13352120056198475488a3d2d56fbc84bf3deaceddfee338bc02068c752d"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_horseman_4_chi.xml",
+      "bytes": 12725,
+      "sha256": "8799307c4437e9fdc268da68933d2519be46341b66e3ac53d03aefaced943ba4"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_knight_3_chi.xml",
+      "bytes": 15911,
+      "sha256": "502ffc8a4f0861d121f3090c917e3388068d07eb00db4e284dc3b069124842a4"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_knight_4_chi.xml",
+      "bytes": 12722,
+      "sha256": "f008909df896845051b6c2f67e2898e66e960f79ec87ad2ba79fe73486548101"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_manatarms_3_chi.xml",
+      "bytes": 21742,
+      "sha256": "0fe6a8b4b584920e66377b63d8f3aee9e4221cf96a2bbafac063a485488926f7"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_manatarms_3_mon_for_vit.xml",
+      "bytes": 25202,
+      "sha256": "8a65a649dbbf60d9481e44c2abee6c920da5c896f9192cd6353b7190ac2c9cef"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_manatarms_4_chi.xml",
+      "bytes": 18838,
+      "sha256": "0c789f771a4364bde9948cdedc58da7031da4442d6ad3fce7ae8fbcdc68900b6"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_manatarms_4_mon_for_vit.xml",
+      "bytes": 20213,
+      "sha256": "82abb480b31ae3ba252720fa6aa1d5774b69e13e19c3699f6bf88835c0040d2c"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_monk_3_chi.xml",
+      "bytes": 9886,
+      "sha256": "aa3c7b3e82189a0d0da7afc8ad7bc9d256cf3261c5d804146326390193caab31"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_official_1_chi.xml",
+      "bytes": 46316,
+      "sha256": "21b5a9b5d119651e87974964e5e712e2342a6254bd09f506a170e80b2117f23c"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_scout_1_chi.xml",
+      "bytes": 20977,
+      "sha256": "7b944225c002af9e7237e1b8b8b99659e32841c20e7f58110f32ab243787b4e5"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_1_chi.xml",
+      "bytes": 30354,
+      "sha256": "cb0e7ffb7d59f7471ee018f72a28b5a160f4af7da7cc57ed2c9c21d74d371c2f"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_2_chi.xml",
+      "bytes": 26894,
+      "sha256": "86039e9751e5a6074cee110c077c2eea9bcd277ce7a82ff84e0b64094c7b8302"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_3_chi.xml",
+      "bytes": 23625,
+      "sha256": "56914d5deb67240404323b8e9e19450b38d676de941ef8f22723ee52a147952a"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_4_chi.xml",
+      "bytes": 20470,
+      "sha256": "d9868bfbf56b22fb1a9fbd0fc29367afdf5fa583edd8fdb936a15a0e4f216713"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_fire_1_chi.xml",
+      "bytes": 24454,
+      "sha256": "84e3d06aaa8c6142988bb8aa0f258cc9e0f77d1e96db3e622c57a6904b7b4a65"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_fire_2_chi.xml",
+      "bytes": 21038,
+      "sha256": "3b95cec9fea638e9e9c5d900e7ceb41d669fe33ed588c628a1dd096a186b9e02"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_fire_3_chi.xml",
+      "bytes": 17673,
+      "sha256": "fce5fc7188692ed9981cf28337c21628e2aaa6cbf550f10070878fba9a2b4a9d"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_fire_4_chi.xml",
+      "bytes": 14466,
+      "sha256": "e727b1a94fed4553bda8217c86592d24f61fa4693900e2d3750071aea0373071"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_trade_cart_chi.xml",
+      "bytes": 6722,
+      "sha256": "f9a205f36f778a3fba92cf2be111e71f5a780102d1444fe40708aeb4e207b706"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_villager_1_chi.xml",
+      "bytes": 28476,
+      "sha256": "47f1489a768206fcb732a9b8bffd699ddfbeb1b3773cbd0775d6ac1b509afa17"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_villager_3_chi.xml",
+      "bytes": 28705,
+      "sha256": "2e2ac52b48c4eb70a4467fcf335750b991bbbccffabc5e06855a7fb097a27a24"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_villager_bambo_chi.xml",
+      "bytes": 28167,
+      "sha256": "437d0dd6d15a1f2961c976410b954c72934f25076d77f4789d0b4d890d0733ec"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_war_elephant_1_vit.xml",
+      "bytes": 27690,
+      "sha256": "c211e02cfd267f9e866b1125c2e1923f4a0a35e5f8e6c720111956acf0b2765f"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_war_elephant_2_vit.xml",
+      "bytes": 12864,
+      "sha256": "c421420a3146eb987154dbacea2a30295853d0e2d8e9a3700aee7cb4629f0feb"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_war_elephant_handcannon_4_vit_free.xml",
+      "bytes": 9376,
+      "sha256": "08180594f049435da540f5c378d770020c4027539bb07b02baef467209c36def"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_war_elephant_handcannon_4_vit.xml",
+      "bytes": 9379,
+      "sha256": "d935aabded5f6dc04e439c62b9c2316ea64550adcf3178e517597f5e4198da5d"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_war_elephant_tower_handcannoneer_4_vit.xml",
+      "bytes": 17577,
+      "sha256": "46dcc2f7cebf3fbf3905612a3a0c6fba29ca187c0f641a503487075c7dd0709f"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_wpn_range_barbican_handcannon_chi.xml",
+      "bytes": 1132,
+      "sha256": "924f5ca6a96ad3ecf3296613b15414b035865305b624d12cba0894f552cdebe7"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_wpn_range_garrison_keep_arrows_garrison_vit.xml",
+      "bytes": 1679,
+      "sha256": "3485d6719bf949d5f41e8b4b0c7a3ad0f9d82349837b3ea66b4bb5aaa6c74e0e"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_wpn_range_keep_arrows_garrison_new_vit.xml",
+      "bytes": 1667,
+      "sha256": "7ed2de901773ccce772e86b2c7f18a45867fd427efb93bde1276a416d7757a6c"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_wpn_range_keep_arrows_garrison_vit.xml",
+      "bytes": 1676,
+      "sha256": "a28a0e11270c162f0791ecdc02bb01252e6e89b1acc49d7b79441284b659963a"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_wpn_range_keep_handcannon_vit.xml",
+      "bytes": 1770,
+      "sha256": "d0f5c415f20630b1a96cc8e4e31dee77cc689881404f1e6902c6e499c58f22f9"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_wpn_range_landmarktc_arrows_garrison_vit.xml",
+      "bytes": 1694,
+      "sha256": "3a1e7b0d85f1d46caaa05dffe123921f28c0be83695533da2d5a9b799aa30443"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_wpn_range_outpost_arrows_garrison_vit_landmark.xml",
+      "bytes": 1694,
+      "sha256": "ea03b4a3bf0907c221f8c4819478d78d2c7db6c17e413a7631ff1be51abdd0e2"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_wpn_range_outpost_arrows_garrison_vit.xml",
+      "bytes": 1688,
+      "sha256": "3e0dfd7dcf39bac6b6aaed2a9dc6df1b48eae08edc5dce28d6b3670742676519"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_wpn_range_tc_main_arrows_garrison_vit.xml",
+      "bytes": 1685,
+      "sha256": "8a5e978709dcba5455bd88c0831957f37f21a64014364382bdf2f862243b89c5"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_wpn_range_tcandkeep_arrows_garrison_vit.xml",
+      "bytes": 1691,
+      "sha256": "dd78a7807187b06affafa0a801d1296f52d1a19e5215ddc7b1a9de6430192982"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_wpn_range_town_center_arrows_garrison_for_vietnam.xml",
+      "bytes": 1712,
+      "sha256": "505ff81cd93e18c4689b36ef189a79782b2cbe4a5d4fbee9abdbb183fbf30c36"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_wpn_range_town_center_arrows_garrison_vietnam.xml",
+      "bytes": 1688,
+      "sha256": "fa7528d9031b1f80905404ba5deb379d1b9655c17da4597952697f7e246a9398"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_wpn_siege_outpost_handcannon_alarrm_chi.xml",
+      "bytes": 1627,
+      "sha256": "e0351f45282a59f3a291b0553b8a6c89d7133baf31417764b12e633c6227784b"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_wpn_siege_outpost_handcannon_chi.xml",
+      "bytes": 1545,
+      "sha256": "d5ec7a41548b6bb4d41345108140065869c9f5a3ddb41c7c97be5f31030fbc5c"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_wpn_siege_outpost_handcannon_new_chi.xml",
+      "bytes": 1615,
+      "sha256": "53e961651616847d97b942307deafc4ddc586b4b77eb499edf0d39d81b2f8f66"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_wpn_siege_outpost_handcannon_slit_chi.xml",
+      "bytes": 1603,
+      "sha256": "a0dd53e65d9bbdc3632827cdf4a69e3c02632c48db1d6e031bef2487e8d73f0c"
+    },
+    {
+      "path": "assets/attrib/instances/menu/vietnam/vn_siege_engineer_vit.xml",
+      "bytes": 4470,
+      "sha256": "9a38488d351610e30411b5a77ea2d59d9055c889e82b5cf6e0c031f96e4f72df"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_2_chi.xml",
+      "bytes": 25260,
+      "sha256": "a64c5df52c7bcb092d0244d5115729f4d2faaf261d7dd335e999f5d96ce06b76"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_2_vit.xml",
+      "bytes": 27511,
+      "sha256": "c81bf07927ef02bdc9c913bd5cb09d9c8e66c81d6aaf3af4a491bfab1feb397c"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_3_chi.xml",
+      "bytes": 25304,
+      "sha256": "60dc9de97e3b71c9faf950b992608427d3a2ce5ec7a74aeb38806d743a37914e"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_3_vit.xml",
+      "bytes": 27555,
+      "sha256": "af99c8b523fa61127d7dd2c1cfe6e30611957db0db79cedd55b36dc53e389475"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_4_chi.xml",
+      "bytes": 25306,
+      "sha256": "c8ab5e4e342e1071ced67ac265fa4617f6536fbdec24e7fc282a0fcbcb5b762a"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_4_vit.xml",
+      "bytes": 27557,
+      "sha256": "558fa5a6ca86a762c0c2e6180c98be253ac0afec2809992cb0c199845c17261f"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_bombard_4_chi_cheap.xml",
+      "bytes": 5914,
+      "sha256": "d9d98ff419f3e1a9a9019e4a003843ec167c38e5fce03061567a9835de544f58"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_bombard_4_chi.xml",
+      "bytes": 6572,
+      "sha256": "443c2df982a8b87af6ad561590493d26b25ba20fc281d7c339467fe6e3d5256a"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_3_chi.xml",
+      "bytes": 26146,
+      "sha256": "2f9a71cf8ffce558248a35bdb01b6828797a1fa234dccbd4e8ff259eab66dc7a"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_4_chi.xml",
+      "bytes": 26619,
+      "sha256": "38d943e66bf91a36482b84d06ccf87a4fa57c4a139944284c3ecf1e2d17761db"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_culverin_4_chi_cheap.xml",
+      "bytes": 5087,
+      "sha256": "77b7989d643cfcc0818101f4ea476e108fc250f1a2b0d20f828186456b1e173c"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_culverin_4_chi.xml",
+      "bytes": 5745,
+      "sha256": "a3a925093cc2c7500de5b53cb64d6e6d05acf8e11fbdc2e677fe45085d7faa56"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_4_chi_cheap.xml",
+      "bytes": 29159,
+      "sha256": "aeac67d513d3c2a7f54821a81f197759e3567b06ea6c5b3e56ace3dcd936cd9f"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_4_chi.xml",
+      "bytes": 29817,
+      "sha256": "4776f85cf530535dbcede8b64ee49575ea36ff42d834c13bdba97a98231e80a3"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_horseman_2_chi.xml",
+      "bytes": 7889,
+      "sha256": "1ae6774b58798e1ad16738f67d6b7d24018fc5bb20c9156b09004526809aab67"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_horseman_3_chi.xml",
+      "bytes": 7889,
+      "sha256": "73fee5e3de7661b841d5fd3afbdb5486028675150771cf1d80b1ca1609da073c"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_horseman_4_chi.xml",
+      "bytes": 7891,
+      "sha256": "99b64bc7a3ad6bbac9396dbfa0a92c0d67fac74cf387e7831927b22c6c873175"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_knight_3_chi.xml",
+      "bytes": 8995,
+      "sha256": "d40a20091a925d08699c2868b97f76b5abb5778f1634e5bd6f9282d123246db7"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_knight_4_chi.xml",
+      "bytes": 7330,
+      "sha256": "dfa4d9eb2bf49c35c6601292b2fcfe674e1f2b0b508126bc8bf28c939c559192"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_manatarms_3_chi.xml",
+      "bytes": 17375,
+      "sha256": "f1ea225cae1e58f954b24e7f10743ae6d6aca53d2fcc648810186ae7d5e423e0"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_manatarms_3_mon_for_vit.xml",
+      "bytes": 32658,
+      "sha256": "e5c9bed06521551cc03ed11afd2c2943e58013dc7336dafcb95d5a40a53efb5a"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_manatarms_4_chi.xml",
+      "bytes": 18571,
+      "sha256": "2f360263087a99998a1b49c0de6771ddf73aecae802d3a39b5205348890987a9"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_manatarms_4_mon_for_vit.xml",
+      "bytes": 30198,
+      "sha256": "8cf7072705e8a7e196e6a0314850859c93b897ec76fae5e103a525b6696cceb9"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_mangonel_3_chi.xml",
+      "bytes": 6060,
+      "sha256": "19028314647efc0e4cf33b430bebf1fb3fd1614a9f7e5563b005c59a7c65c910"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_monk_3_chi.xml",
+      "bytes": 35880,
+      "sha256": "e09c47afad1e4e6979fe8e9a461da3e9d40695f5b94512e5c6c666b082502b47"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_official_1_chi.xml",
+      "bytes": 39782,
+      "sha256": "bb1f9016b8fa618109e69f345e8fbb17a10f76c9d3eb51460559d00eec080b1a"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_ribauldequin_4_chi.xml",
+      "bytes": 6835,
+      "sha256": "451da0c98634a3a618b3b7cd94a8828daa1f3d621adea60c04aedf382d788feb"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_scout_1_chi.xml",
+      "bytes": 4011,
+      "sha256": "e8261339c9a1de5be5ef6d09cb72642fceedb3c45bffc8657b203e1dcde8438d"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_1_chi.xml",
+      "bytes": 27915,
+      "sha256": "e09ac159d7773101db40e06b87b05d58b9b3007965be33e190dfb7c50d48febb"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_2_chi.xml",
+      "bytes": 27917,
+      "sha256": "d215d3fa026f66302a7ece7f67e90545f29e25c2518a0dcd54b841710168adce"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_3_chi.xml",
+      "bytes": 27917,
+      "sha256": "fbf2bb7ee4f5822a39e356bd0c29038d77ef7ec1e2d51cf6c87969c0a4c5006a"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_4_chi.xml",
+      "bytes": 27919,
+      "sha256": "c6c9700dd446a7d153fbb858c3e04ab962c87e554c64d164755b4b848676668b"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_1_chi.xml",
+      "bytes": 28876,
+      "sha256": "e2d96e4c9b9d81532e8801fcf32a6b6402260d112180b2c566410cbb1260a139"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_2_chi.xml",
+      "bytes": 28878,
+      "sha256": "51e14f4fb2aace34d97e3b6d4dbb0627bbd56890e728281f4c2100ee74f03b23"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_3_chi.xml",
+      "bytes": 28878,
+      "sha256": "6dd920e3ffbeb8a8992187684e6e6c5c1f834ca649d5262a804aa844e100fa79"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_4_chi.xml",
+      "bytes": 28880,
+      "sha256": "e3f63fa1ce9ef4cc29667dd76cfedc33fd245064330b6d44f34cdbbf47a1518e"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_villager_1_chi.xml",
+      "bytes": 206420,
+      "sha256": "8ac1ea77c19484365da7b5d4f91091bd2e05ff75a3b5713aa4ec04fa577ba9df"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_villager_3_chi.xml",
+      "bytes": 276486,
+      "sha256": "d7184a2848a0098a4e46e8d6b5df41a728855a9727f8983893c9efdf63c2790b"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_villager_bambo_chi.xml",
+      "bytes": 17896,
+      "sha256": "55c8cb3f4602ac594dbc3852e38c81cbb0ab3b1dee9055e2b103b18836e926e5"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_war_elephant_1_vit.xml",
+      "bytes": 39367,
+      "sha256": "6c6d9db0c14a3a3877f52d4146cee3e8c746ba863642ecac9af9b262b774da42"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_war_elephant_2_vit.xml",
+      "bytes": 39365,
+      "sha256": "cb18fbc919a914e3185e48f2f6b37d31f5f0a9d65cdd030546b63d290650f555"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_war_elephant_handcannon_4_vit_free.xml",
+      "bytes": 17334,
+      "sha256": "636399eb1c26d3e40bece1fa3cd64ea649e9e727584631c812b74b827bd4c0ce"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_war_elephant_handcannon_4_vit.xml",
+      "bytes": 18054,
+      "sha256": "247d84776b22af323f7a5c9b2ff343464f5391658c964f41e1d06d1e59265e39"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_cheaper_house.xml",
+      "bytes": 2978,
+      "sha256": "e20111d49fb2fa59b58cb61dec342d56d8bf58856afd06e90df5fdf0fe21b8f1"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_construction_elephant_normal.xml",
+      "bytes": 3963,
+      "sha256": "193f75861aafd33eb6322edfad1087b7fce0cccf425e8ac56dddd5c29a763224"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_construction_elephant.xml",
+      "bytes": 3964,
+      "sha256": "3ba6e06f144af2f8fffedc4058c0b82b6f9f95a1279caf3c1e01b55665ddc2f8"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_fast_elephant.xml",
+      "bytes": 3028,
+      "sha256": "bd6d2efe0012c5f58f0701979d9a78b8d8412afff96cc90c844677e4daa1c2c1"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_overrseers_normal.xml",
+      "bytes": 3578,
+      "sha256": "660777d7aee3fec00a9709b1923b2367a75099fcd5b2ff96366a10232a88b804"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_overrseers_pagoda.xml",
+      "bytes": 3694,
+      "sha256": "4c5500344c540006b35e6127e83249458bb996f2b241e90c75754feb26593d3b"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_player_dynasty0_chi.xml",
+      "bytes": 6344,
+      "sha256": "4cc38f12ae0664e4fec4f221d833b657b36ed55d8ad24bdcda916c321a0ced0b"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_ratten_shield_vit.xml",
+      "bytes": 3200,
+      "sha256": "b1cf32ee1fd6694c019452ae761944b143528a103c4d0a157496367f5e9ffa4f"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_age4_upgrade_vit.xml",
+      "bytes": 10587,
+      "sha256": "fc9f5a35ec432d75ec9c57c41bf72b5239d5793de52d515f9ee1ab54c1bc501d"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_age4_vit.xml",
+      "bytes": 10098,
+      "sha256": "eb501d106577f4d3c7c59fbdc1c6d910d10c7dd9f39f2473db7bdf91e6614975"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_econ_resource_wood_harvest_rate_2_improved_mon.xml",
+      "bytes": 28707,
+      "sha256": "7c6b9deda1de13bc4e40894dde8fc2402ba9cc071412d98989ecf9b6dbc7dd89"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_econ_resource_wood_harvest_rate_2_vit.xml",
+      "bytes": 38982,
+      "sha256": "08db220a1e2ba46979ba3aefb04bdf5c467a0d87b9811c252cfb02906a99e5f4"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_econ_resource_wood_harvest_rate_3_improved_mon.xml",
+      "bytes": 31033,
+      "sha256": "424ff93e3a93fda34cd8bccdc4003b4f28431f251b97bb51f6ff93f773e3f621"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_econ_resource_wood_harvest_rate_3_vit.xml",
+      "bytes": 44554,
+      "sha256": "171079e556d26b680f7c02314adda78c0969996308f0d61ac39183d187580d8a"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_econ_resource_wood_harvest_rate_4_improved_mon.xml",
+      "bytes": 32139,
+      "sha256": "37a363a63cb3e83e744fd356ed95073a5884098ce85a9434c5d372c1ef32c5a2"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_econ_resource_wood_harvest_rate_4_vit.xml",
+      "bytes": 44627,
+      "sha256": "514abd64af0e8a4a79292615372442193e0dfad6e4b8839d3109b279443cccbb"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_elephant_gold_vit_normal.xml",
+      "bytes": 11374,
+      "sha256": "8dc39f1ad489b9b0533902356f74cbe8856b25ff9c71c66b93d3860524f9e205"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_elephant_gold_vit.xml",
+      "bytes": 11374,
+      "sha256": "fc8c0986012cacc9abdd35d377dc9dede81b18a89d72743c7e92fd651f607031"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_elephant_hp_normal_vit.xml",
+      "bytes": 31929,
+      "sha256": "476db4575db78dab3466078507d9b8a8957a52e8b9be9f8190468370cbe8293d"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_elephant_hp_pagoda_vit.xml",
+      "bytes": 32025,
+      "sha256": "4daeb1416abf69e0faaf338108cca19f8b7b45522ce2c99d439220fa11d4a978"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_elephant_limit.xml",
+      "bytes": 10871,
+      "sha256": "bae54fd94bbb91b1b44981b84d65c29a912083ee39e5bcead4cbf910064941ee"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_hideout_upgrade_vit.xml",
+      "bytes": 10675,
+      "sha256": "46f5391f08bcaa8afd4553b6af466b219c0a0f2b73eefe757adfad3cd2739eb6"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_landmark_25_gold_vit.xml",
+      "bytes": 10558,
+      "sha256": "3b9bad7d9f8bfd6547b9355edd5725b8bf36621ef01e3cbce748691a8b62d6b3"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_official_unlock_vit.xml",
+      "bytes": 10641,
+      "sha256": "93d089f0686fbb1b99415c8c9bd34d5fe1c1580f60757ea11bba2316b42c07e1"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_outpost_handcannonslits_chi.xml",
+      "bytes": 26815,
+      "sha256": "5e8323de18bdcd41214ac83713e7541b7c99c7acdb70d1a98e64b1c876a34d47"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_outpost_stone_cannon_vit.xml",
+      "bytes": 34621,
+      "sha256": "3985cdb96f8942d1a4e6aec2c6445b5cf16070087e1b17df921f44861713b9ac"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_ranged_damage_i.xml",
+      "bytes": 38860,
+      "sha256": "cda76669777974dad2251e0f80bb805961fb0109c0717371cf42c7eb89023125"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_ranged_damage_ii.xml",
+      "bytes": 44749,
+      "sha256": "4a7556712abe0d20491294d0fe0760ea6d6091bd930de1ded78ffda81427a017"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_ranged_damage_iii.xml",
+      "bytes": 50874,
+      "sha256": "00c2038820598ecb30cdf38c512610a01c9555e15dff055ec787fe6a38bc3dd8"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_rattan_shields_vit.xml",
+      "bytes": 31627,
+      "sha256": "2a48e143c6beabc3a2c1e4cdb54d6d4ddc65cdf050e24178089402d99715db6d"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_siege_chemistry_vit_cheap.xml",
+      "bytes": 35347,
+      "sha256": "c7cee8a8ecf151cd93889fc4c67046bbf9e69f4c4981fd6bf88642cb0aa727bf"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_siege_chemistry_vit.xml",
+      "bytes": 35069,
+      "sha256": "c8484029532444a369e79f549d4e60997b047f98da7ac4dfb0c1a7faafc60c24"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_spearman_firelance_vit.xml",
+      "bytes": 10118,
+      "sha256": "68a7393f906003fc6f40eb6e8f96f1a901a5ed28d8ab7f43fb93ff8caa129104"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_tech_military_academy.xml",
+      "bytes": 38195,
+      "sha256": "0dc08aeec327b8c8024745be04644d7cb0f650363ac853ea240c248e27bdf7ef"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_trap_range_vit.xml",
+      "bytes": 19008,
+      "sha256": "7a4a4fafdc8583e4081794540ba39cfb30bea191f227334b34eda55ecd5ffb2b"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_trap_roller_trigger.xml",
+      "bytes": 33507,
+      "sha256": "04bf0879592498a29f0edcaa2ad513105e868711894fc2d80e8ad19a5fa25398"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_trap_tier1.xml",
+      "bytes": 18085,
+      "sha256": "6c75d855216876aaafe739acdf7a29266a7e1d8bfe6eb6caada61dda3e28c40b"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_trap_tier2.xml",
+      "bytes": 20562,
+      "sha256": "dff9f13ea2bd58c8ae6843582d8a7533ca3b868b4723a49681f6f03ba40844f5"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_unit_manatarms_4_chi.xml",
+      "bytes": 18926,
+      "sha256": "1b32f65c480d0b2b67772322ebb9e17d0504d52153a0909614cd6f5e0b273402"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_archer_2_vit.xml",
+      "bytes": 58692,
+      "sha256": "bf31486054a19534fd05815dda0f0959cf764ad1500649363538afc87efada9f"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_archer_3_vit.xml",
+      "bytes": 7017,
+      "sha256": "6e3f2be2496e1af194d47b76e405234e83b138bbc78e5369cbb6639f945acf61"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_archer_4_vit.xml",
+      "bytes": 6293,
+      "sha256": "f7fb352dc934e116bf03790a2a441aa0254cb20419fd5f7475f28055e38b74d5"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_archer_incendiary_3_vit.xml",
+      "bytes": 38920,
+      "sha256": "e61feb967ff59589bb04550b51e387647a714c6efebae4013faaf46ff52d451e"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_archer_incendiary_4_vit.xml",
+      "bytes": 38920,
+      "sha256": "32a78833c83bc3dfd4bf963c750aada2bfad93f7c89c68e0b0f2c875f7eb3853"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_archer_incendiary_vit.xml",
+      "bytes": 58122,
+      "sha256": "d8e2c21c530fc471c31d82373069a43a216701fa3bb7dc85523822f14cfc4d85"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_archer_poisoned_2_mal.xml",
+      "bytes": 19362,
+      "sha256": "9b461bc476dddfa10516489de5a651591a7082c0582263624ad0e4f7d16e7304"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_barbican_handcannon_chi.xml",
+      "bytes": 38845,
+      "sha256": "e54d4b63788873dfdb7d1509aa518af25a4ef25f8786a5288a22601150f3a830"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_elephant_rocket_vit.xml",
+      "bytes": 2411,
+      "sha256": "5c7f54f546cc180110f3f237a2c3e7868b384a7d553f2d1b3e263179a4a77205"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_handcannon_4_vit.xml",
+      "bytes": 13213,
+      "sha256": "5b2d5639d8c04ff35cd490c1fd0fcc0e9a991800f6a85ca05d6dfdaa62da6dc8"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_keep_arrows_garrison_poison.xml",
+      "bytes": 58710,
+      "sha256": "2b4f37b5595c354a20c1ed96e9a93fd0380ace98966acd6044613b5b93205776"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_keep_arrows_garrison_vit.xml",
+      "bytes": 58661,
+      "sha256": "188492b2d2adf571ec95bea37eb172f331be8f2efb0b24ebb8e44b576d1a87b7"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_keep_handcannon_vit.xml",
+      "bytes": 38833,
+      "sha256": "81b217de69fd2f867d9bc1204a115983ef28a8a6040b4f112283f115d23cb81a"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_keeps_arrows_garrison_poison.xml",
+      "bytes": 59204,
+      "sha256": "1f7052a174f3cbc6d5362a888acab25e0d8bc2d8afa7524f89bd2b073270832a"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_landmark_tower_garrison_arrow_vit.xml",
+      "bytes": 58710,
+      "sha256": "d87cc8a4ffeb4624f540546a7141bd8ff313407b87dd8756ef1bd4240be5e7e7"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_landmarktc_arrows_garrison_poison.xml",
+      "bytes": 58728,
+      "sha256": "4171e68302eaaac29eb416b1345ade577926511de4b5526203c2e25fd32b6232"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_main_tc_arrows_garrison_poison.xml",
+      "bytes": 58728,
+      "sha256": "6e652bd63c53f9514a3846964cf3479380a80edca1a9c15b82cea5634e6577dd"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_naval_fireship.xml",
+      "bytes": 59537,
+      "sha256": "e12643dfa371e13d4a884c75312a5d9b9537a0837171eca19cc2046fe50f646b"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_new_handcannonslit_vit.xml",
+      "bytes": 38523,
+      "sha256": "b37b8a1251d0702aee0c6592808e58fd328ee1a7752cf2aa87842172681a4570"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_outpost_arrows_garrison_poison.xml",
+      "bytes": 58704,
+      "sha256": "5046789ac8ff14e32581cc1001bbc18895a9ee6ae76157d46dfc6e446e56851d"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_outpost_handcannon_bambo_alarm_chi.xml",
+      "bytes": 38845,
+      "sha256": "efb27b12f380b21ff19062cc9135b6f3dbf4e3e84c69f80660462bc2b7c2c55b"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_outpost_handcannon_bambo_chi_saved.xml",
+      "bytes": 38972,
+      "sha256": "8b2dc9b035ebd4a2bf0286abf0f49316081520462872da9aea2506201854cdb6"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_outpost_handcannon_bambo_chi_saved3.xml",
+      "bytes": 39288,
+      "sha256": "4c49e4560bd575d21ce748bbf6e87b4ea7cdfcfd04eadd317de2d7f2d8b33558"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_outpost_handcannon_bambo_chi.xml",
+      "bytes": 39117,
+      "sha256": "0b0972c930647280980bfb27dde4af375139ef2d869fbee7de56aa086030843d"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_outpost_mangonel.xml",
+      "bytes": 40145,
+      "sha256": "07bee80a1ddba17b830448c5643b9d7f0c1b6069358a509f2bcee0ee4c894037"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_spearwall_1_vit.xml",
+      "bytes": 59932,
+      "sha256": "4217d8f096f8776fd18c2b03dd15879ccdd762cf6a55b21622b8696c41c74852"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_spearwall_2_vit.xml",
+      "bytes": 2400,
+      "sha256": "8da26f6fada06c23d9d266df36d1828ce62c20dfa998ff866daa17d940a3ccfe"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_spearwall_3_vit.xml",
+      "bytes": 2400,
+      "sha256": "75e16832eb1116a13bc74d29228146f4086e58ddf1931abba47617c3ff2d0eb1"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_spearwall_4_vit.xml",
+      "bytes": 2404,
+      "sha256": "787df25826b32731c000ecc1ccd818146377cac4fb104ab38d91dd49f7885a7b"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_tc_and_tower_garrison_arrow_vit.xml",
+      "bytes": 58710,
+      "sha256": "bb023af8a194eccf524f9c6937769331655ab5b32d081b554ca285392901b04a"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_tcandkeep_arrows_garrison_poison.xml",
+      "bytes": 58734,
+      "sha256": "785cfc137d81bd1df3acd093b72ff9f2c8652781da0f3ceccfd2b9c5b991c314"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_torch_vit.xml",
+      "bytes": 76271,
+      "sha256": "cef4ce545bc68b7e4216cd56b141d943461dc5395489612c7068ee47888ecbf1"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_town_center_arrows_garrison_for_vietnam.xml",
+      "bytes": 58688,
+      "sha256": "ae28f34055d8f915156be38fb1ab68012f38297b12e91852e85b5147daa6890d"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_war_elephant_charge_3_vit.xml",
+      "bytes": 3237,
+      "sha256": "719b72fc0c58fd5c1b88a6a04aa895114978e9f80c2f7005db4f401e888b3df5"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_war_elephant_melee_3_vit.xml",
+      "bytes": 4108,
+      "sha256": "59e0f8bbcd87439f9b7e6adb57878c899eb81ef0891dd1f20292b4bb16bc53fd"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_war_elephant_ram_3_vit.xml",
+      "bytes": 4244,
+      "sha256": "c6d1db8bb5eed4bf2034869d83743782a85a49314e3383bec05bf4fdeaa94e78"
+    },
+    {
+      "path": "assets/locdb/community_civilization_pack_en.csv",
+      "bytes": 39588,
+      "sha256": "af68b0fbb7b06c31938e49b6e67b72d43ce82953931088bf26813122c2d45eb4"
+    },
+    {
+      "path": "assets/locdb/community_civilization_pack.locdb",
+      "bytes": 717,
+      "sha256": "bc73891b1dd0f07f8eaaa9c991afdd13c736d0320f56fdd34b291f521ba49fd1"
+    },
+    {
+      "path": "assets/mod.png",
+      "bytes": 2955129,
+      "sha256": "ac0a5c389d0accb34b62e4a720d35452bb4875730f210e7c145d52451c27c272"
+    },
+    {
+      "path": "assets/mod.rdo",
+      "bytes": 1465,
+      "sha256": "37c6d9a53df55bc9ff99616c030ee6ee99c2a28910bbc323ab6fba7ffc6e07cf"
+    },
+    {
+      "path": "assets/scar/vietnam/blueprints.scar",
+      "bytes": 721,
+      "sha256": "fb4f36b5874c5bf1e76d4f637485c88a057852b341e376d6bc2879dfbd23748f"
+    },
+    {
+      "path": "assets/scar/vietnam/dynasty.scar",
+      "bytes": 1771,
+      "sha256": "97c4e9ec26880b3189cbe0f059662d23f6525bd8071687981cefa640d70aecf9"
+    },
+    {
+      "path": "assets/scar/vietnam/initialization.scar",
+      "bytes": 4574,
+      "sha256": "a987233322636bef7fb42ca0c1322ad48c623c56e43e8dd6a04d600de65a1444"
+    },
+    {
+      "path": "assets/scar/vietnam/landmarks.scar",
+      "bytes": 2539,
+      "sha256": "93091d9180b4bcc285bd05d6b0a1007fc44c62ed31e9c4af80fff16974b22adf"
+    },
+    {
+      "path": "assets/scar/vietnam/lifecycle.scar",
+      "bytes": 2184,
+      "sha256": "6ef2afe064a3fe16d5dd0feb5d7b79a9652bb1d624ccf0afbff36b59100beae3"
+    },
+    {
+      "path": "assets/scar/vietnam/prematch_precache.scar",
+      "bytes": 10605,
+      "sha256": "4cfbd5ead923f4ad7c22873d3b01547c9a718974f108cc9974940208d9d136eb"
+    },
+    {
+      "path": "assets/scar/vietnam/rattan_armor.scar",
+      "bytes": 1854,
+      "sha256": "8baa76390fcf2105acb8387ac28020601190439bd377062d2cb86b9ec6a5fded"
+    },
+    {
+      "path": "assets/scar/vietnam/selection_core.scar",
+      "bytes": 1678,
+      "sha256": "c577da15bd9d04478544ec9495cb4af1ea42eed5a8a794d62885bcbba94f7979"
+    },
+    {
+      "path": "assets/scar/vietnam/tower_training.scar",
+      "bytes": 3877,
+      "sha256": "87c40de66c5827fdb760c3e58e8dba00bb2c213b68cf6789443765535dbedc6a"
+    },
+    {
+      "path": "assets/scar/vietnam/traps.scar",
+      "bytes": 3469,
+      "sha256": "9a2ee085674d40b228025d8ed275debe7de6decc120d890de7e97f02a06ed5da"
+    },
+    {
+      "path": "assets/scar/winconditions/VietnamMode.rdo",
+      "bytes": 641045,
+      "sha256": "8ea52e2819706b831e58d03f58359b9a901f16833882cfbcfb588e4bb7c8d0f2"
+    },
+    {
+      "path": "assets/scar/winconditions/VietnamMode.scar",
+      "bytes": 12423,
+      "sha256": "c67739e4763624e9848b380eabb8b3f60cfa8070438a8f510d97601356881e89"
+    },
+    {
+      "path": "assets/ui/icons/CHI_ARCHER_1.png",
+      "bytes": 13394,
+      "sha256": "04089822fcbf9b7e926f8e3cd1ce15a619aa39821030f85a0a2da8a06f2585a7"
+    },
+    {
+      "path": "assets/ui/icons/CHI_ARCHER_2.png",
+      "bytes": 13252,
+      "sha256": "5bf8ff154eef01d15cbd0142b7dd21b515cf806c292c5149c4bb87607e3a58d6"
+    },
+    {
+      "path": "assets/ui/icons/CHI_ARCHER_3.png",
+      "bytes": 13639,
+      "sha256": "b03969ca17952bf3d20dc56aacfcdba8d9530a950624d773c41df7eefd6392b0"
+    },
+    {
+      "path": "assets/ui/icons/economicministry.png",
+      "bytes": 12729,
+      "sha256": "cb0ed033e0fe22395947d8a75365b983d409b3c290bfeda6308d4e0e93ca2563"
+    },
+    {
+      "path": "assets/ui/icons/ExplosiveTrapIcon.png",
+      "bytes": 10110,
+      "sha256": "7053be1fad989ad4e1f05da12a79f7916a147e7d9bb48d32e6bb7f6dd337d25c"
+    },
+    {
+      "path": "assets/ui/icons/Headquater.png",
+      "bytes": 14043,
+      "sha256": "91d7ace91efb0e71005eb24c3405453a8ffcbd1c5ae65ccfb56f93132ee01141"
+    },
+    {
+      "path": "assets/ui/icons/HideoutIcon.png",
+      "bytes": 7128,
+      "sha256": "db5b595c982162f71627f8589ef4a915354e4a25d209fc30b4ac750213c6b44b"
+    },
+    {
+      "path": "assets/ui/icons/JiaozhiArquebusierIcon.png",
+      "bytes": 10082,
+      "sha256": "330eb646a7de6dc7cca36270820b5a495091c17c8747622a79055d43f5d1739d"
+    },
+    {
+      "path": "assets/ui/icons/one_pilar_pagoda.png",
+      "bytes": 15668,
+      "sha256": "72132a84dbba5fc294a91c2779b3dd8371014d55d3514ec23a1f00d4c4770af6"
+    },
+    {
+      "path": "assets/ui/icons/pho_minh_tower.png",
+      "bytes": 14228,
+      "sha256": "aadf47c1d2a2d661c8702e31c8ff62ef1f76b3876291f312a11bf148bd728b29"
+    },
+    {
+      "path": "assets/ui/icons/RattanShieldIcon.png",
+      "bytes": 14594,
+      "sha256": "359353a2987569b13efc27e75b4054e58912d47d1e8bddffb674f49e2c6089a1"
+    },
+    {
+      "path": "assets/ui/icons/resistant_network.png",
+      "bytes": 12818,
+      "sha256": "4df2f426fe326a80159bdfbb3e385cbc662880c7dbb93f33a10dc66866d6735e"
+    },
+    {
+      "path": "assets/ui/icons/RicaTerraceicon.png",
+      "bytes": 11183,
+      "sha256": "a1d11aa50deec07b222327112ff6d379a3f7ced3134c90ef785888cdc6daf7a1"
+    },
+    {
+      "path": "assets/ui/icons/RocketElephantIcon.png",
+      "bytes": 14844,
+      "sha256": "a15fe37ff07c4f564785da3ee5956b3aaad821b652c8ae3fc086dc1cb6e13e0c"
+    },
+    {
+      "path": "assets/ui/icons/TunnelingIcon.png",
+      "bytes": 12435,
+      "sha256": "986630399d555d682d518066086f830ea2c93346a3556392ae6b7eec3a0904b7"
+    },
+    {
+      "path": "assets/ui/icons/WorkerElephantIcon.png",
+      "bytes": 10597,
+      "sha256": "a061e4d0b2c2fe40a7423686ab3b7fa4cfd17d324e9e18a52c9d2db23089509e"
+    },
+    {
+      "path": "community_civilization_pack.aoe4mod",
+      "bytes": 414,
+      "sha256": "22fdc99d56151bad1a849a6a920d8bb8bcebe6c907b377db51208ebe1227acc8"
+    },
+    {
+      "path": "docs/CASTLE_NEXT_LEDGER.md",
+      "bytes": 8577,
+      "sha256": "301fb8c3f0e7fc45949b535e4c35c1a577a57064f0107741d48df26188c26c70"
+    },
+    {
+      "path": "docs/CASTLE_NEXT_RESEARCH.md",
+      "bytes": 2880,
+      "sha256": "f336e28ce545f1fba8898af7e6f501706387a94e24de1acc307d768ec40e5d6c"
+    },
+    {
+      "path": "docs/civilization-integration.json",
+      "bytes": 884,
+      "sha256": "dc6e7f7c4ed218e5ced98c384b4dfa4c74d39168a56b0bb8347cae1c057f5c86"
+    },
+    {
+      "path": "docs/cleanup-stage1-manifest.json",
+      "bytes": 134495,
+      "sha256": "5ff445542523fc6b9f3bcbced27551573e4f4c67a5b40e0e190a3be083e629af"
+    },
+    {
+      "path": "docs/cleanup-stage1.md",
+      "bytes": 5187,
+      "sha256": "6394c0e585eafe94ce5fe56a25079e154e9f48471dd40544553bff2c7da6e64a"
+    },
+    {
+      "path": "docs/editor-identity.json",
+      "bytes": 7046,
+      "sha256": "b9adeb125a2972d19cbec25de5e81a58db667b4f239fd5fd5bb9411e0a7d33e0"
+    },
+    {
+      "path": "docs/first-native-run-and-namespace-repair.md",
+      "bytes": 3636,
+      "sha256": "0f9766fb677a1036bba89158f9f400d86c860acb571acf0e10e785be1d812ba3"
+    },
+    {
+      "path": "docs/first-runtime-mechanics-repair.md",
+      "bytes": 4766,
+      "sha256": "e5ba4dbfe68cc8e92ec2bc97bbd6961acd47ab6ba0cf4dc816ee59f348e4276c"
+    },
+    {
+      "path": "docs/foundation-source-review.md",
+      "bytes": 1480,
+      "sha256": "4c91dbc9a704abb92fc16046765e01b80d100fedc9a6e383d4da12dd93fbc90d"
+    },
+    {
+      "path": "docs/GARRISON_WORKFLOW.md",
+      "bytes": 7526,
+      "sha256": "d3abeec21185fbc19ba6abec18e524a99250b225aab17bf0e2bd2230cf94009b"
+    },
+    {
+      "path": "docs/implementation-ledger.md",
+      "bytes": 14495,
+      "sha256": "f7ec46a4b94809c78fca3e02e96b168b163635c47626f762f372dbed81982547"
+    },
+    {
+      "path": "docs/influence-wrapper-identity.json",
+      "bytes": 1079,
+      "sha256": "8db3c69e28f48e365c9377df7cc4711d88d8bfcde4705eff0a963e7cd67e5bfd"
+    },
+    {
+      "path": "docs/migration-identity.json",
+      "bytes": 1134875,
+      "sha256": "0debcd2dac510b55184af1e475537a15f417f563308954946ab1801a29a54026"
+    },
+    {
+      "path": "docs/migration-map.json",
+      "bytes": 916776,
+      "sha256": "7a17274c5a177d259064bb6ae3e3af9cb152ac9d793fa4af70c31ff7438aab57"
+    },
+    {
+      "path": "docs/migration-provenance.json",
+      "bytes": 1885,
+      "sha256": "96254a10d4040742abd4d1c072863f4361d55cf0f05f4fc6218112ea2eb0a6d0"
+    },
+    {
+      "path": "docs/native-restore-audit.json",
+      "bytes": 3531,
+      "sha256": "79c7c0183eea8a914bbd7d2a300e6d6e1043542dfad6490fe790c33cf05b65a9"
+    },
+    {
+      "path": "docs/native-restore-baseline.json",
+      "bytes": 90647,
+      "sha256": "a4017dacef91e9cec4af4befbe1691bf8693dd8abc72d9c3a3bb55d834a4ecb1"
+    },
+    {
+      "path": "docs/native-restore-capture-red.txt",
+      "bytes": 807,
+      "sha256": "d399c13306321056e5d0824a97ddb31ad399f6b15858e097f6e4c6f9458c6e77"
+    },
+    {
+      "path": "docs/native-restore-full-tests.txt",
+      "bytes": 3432,
+      "sha256": "ba964d24c8c615224234d0ef99e592c8b56c6e1d1313fe4b5230a9afefa0ac77"
+    },
+    {
+      "path": "docs/native-restore-mcp.json",
+      "bytes": 6126,
+      "sha256": "d6a0b0e433ee904930afbde164c6453135e9433ed7ae1f360fefe57fbb504701"
+    },
+    {
+      "path": "docs/native-restore-tests-green.txt",
+      "bytes": 112,
+      "sha256": "6a5e7efec33c79c6b9cb3e3d79119bc1a4446d43b46a0e105acdc87694144977"
+    },
+    {
+      "path": "docs/native-restore-tests-red.txt",
+      "bytes": 28814,
+      "sha256": "b5d186252edc4b391b1cb4d495c7fd953556633c8baa199bb1d0c756a88e3be8"
+    },
+    {
+      "path": "docs/native-restore-validation.txt",
+      "bytes": 5751,
+      "sha256": "b88ef6ba8bf43870d124721ebe5d3f59c3181a2fb1bdb5b62c6579723cfae86d"
+    },
+    {
+      "path": "docs/native-trap-tunnel-restoration.md",
+      "bytes": 6243,
+      "sha256": "c9f8f38097980911449092623d8873212c4672702f1c38905009045d47ada83e"
+    },
+    {
+      "path": "docs/next-user-build-check.md",
+      "bytes": 4538,
+      "sha256": "4efd1d4aa4f7ec86ac3e47ccf7aebc94519fe4829b26b0be15d3b2094343d05f"
+    },
+    {
+      "path": "docs/precache-inventory.json",
+      "bytes": 4002469,
+      "sha256": "e644c5a2515b765817cdbb0c42c6d7fb6885f29d5a54cecfc1dff4002b160634"
+    },
+    {
+      "path": "docs/PREPARATION_REPORT.md",
+      "bytes": 7637,
+      "sha256": "ee682cf37a3a8009e067916915f2109631bbb299b0a2ecd149477b762f615478"
+    },
+    {
+      "path": "docs/preparation/changed-copied-files.json",
+      "bytes": 89040,
+      "sha256": "dd6012cbdc9b745fbb9164188adbeb5c652a96e874d9201a150188251c3e5723"
+    },
+    {
+      "path": "docs/preparation/final-local-source-sha256.json",
+      "bytes": 47820,
+      "sha256": "60b80589c1e2c578076ce70e3475293cd8afb124d472132b5664a34f1f7de7c7"
+    },
+    {
+      "path": "docs/preparation/IMPLEMENTATION_LEDGER.md",
+      "bytes": 3571,
+      "sha256": "19b1412fb9a577d8a83fcfb2353a4714fd42d451f1fa5e68433e24868b47c9b3"
+    },
+    {
+      "path": "docs/preparation/inherited-static-warnings.json",
+      "bytes": 2807,
+      "sha256": "9f705b817bed9f7e68c3d1e26f00eb2b7bb90b12db3e3253311b7101c9850144"
+    },
+    {
+      "path": "docs/preparation/mcp-checks.json",
+      "bytes": 6070,
+      "sha256": "f00b2bb0f406fa21ec5d6b04b082540331b28e408a6102769f457db1e0ab7c49"
+    },
+    {
+      "path": "docs/preparation/NORMAL_README.md",
+      "bytes": 4681,
+      "sha256": "38e9c145add16db11efb0b3a74f6a697973fe51a1429a83d86f7169827451881"
+    },
+    {
+      "path": "docs/preparation/normal-before.json",
+      "bytes": 86044,
+      "sha256": "fca9d15b1b9f09a0e31c9c9eb77b1ea6bf86d0bf1683f6e2b86296ed75a16b3c"
+    },
+    {
+      "path": "docs/preparation/repeatability.json",
+      "bytes": 422,
+      "sha256": "302c22b818db1817ed809a285ed5d6d966f36188f8fd0b6947cb0c0f66773a56"
+    },
+    {
+      "path": "docs/preparation/static-checks.json",
+      "bytes": 9819,
+      "sha256": "34480da52de9ded6cbbd8a0747905535871ea694c9d0254781467de6cabaa6c1"
+    },
+    {
+      "path": "docs/preparation/storage-usage.json",
+      "bytes": 247,
+      "sha256": "964bce32286047872f01c1cc6eb99d5db026f529d3ba6f8fabfc4b398906fbcb"
+    },
+    {
+      "path": "docs/preparation/test-comparison.json",
+      "bytes": 1159,
+      "sha256": "80e7eab52762f28345b2856f1d130f07593907943f6317fa08887cfe2c1e0e8d"
+    },
+    {
+      "path": "docs/preparation/workspace-validation.json",
+      "bytes": 1042,
+      "sha256": "63763ead703fea59694d44147e3eb60ddc8cdfa3cbb36ec606cebb8283a9b622"
+    },
+    {
+      "path": "docs/RELEASE_010_LEDGER.md",
+      "bytes": 7835,
+      "sha256": "b1fa6ff0273d9ec8eaed96f4d1ca45f60ff8b10ed8cb597d66679cd5a3e9daa2"
+    },
+    {
+      "path": "docs/RELEASE_010_PLAN.md",
+      "bytes": 3915,
+      "sha256": "b1afb7272bb38a007715cf07591db060b839d0ea47b51829154473d792489c16"
+    },
+    {
+      "path": "docs/RELEASE_010_REPORT.md",
+      "bytes": 7787,
+      "sha256": "7a0c6e3a2273a62c65aa6e794a640233932740d69b7ff2eeda3a88086abad51e"
+    },
+    {
+      "path": "docs/RELEASE_020_LEDGER.md",
+      "bytes": 3707,
+      "sha256": "d2e27142f67e2e8e311c78c7747b43331e9d55e16ca1be23b469fa545f8d753e"
+    },
+    {
+      "path": "docs/RELEASE_020_PLAN.md",
+      "bytes": 3703,
+      "sha256": "a962dda3c0b25b65fd2c8087135ef8652329b138f0a4509e9de3f1721618b0a7"
+    },
+    {
+      "path": "docs/RELEASE_020_REPORT.md",
+      "bytes": 7192,
+      "sha256": "a7a0d40614cffb7d60ea2931ce38d6a73f37d1a79f74cda187deb7dad1882f4a"
+    },
+    {
+      "path": "docs/RELEASE_021_PLAN.md",
+      "bytes": 4054,
+      "sha256": "9735fd2eaaef01cee3bd44c67b4dea13041e080f6154074fe564607a4e62f9e3"
+    },
+    {
+      "path": "docs/RELEASE_021_REPORT.md",
+      "bytes": 4332,
+      "sha256": "f358d33072db9adb0b0c6514613cfcf09451ea52bad0e401672d10bf0b888be5"
+    },
+    {
+      "path": "docs/RELEASE_030_PLAN.md",
+      "bytes": 3068,
+      "sha256": "ee3d328f8983f4cb67c6475f4e103ca79e49fbce0cb862da5a635172dba1c606"
+    },
+    {
+      "path": "docs/RELEASE_030_REPORT.md",
+      "bytes": 5982,
+      "sha256": "fa0c217f5d46e5525051369d7ac63712d6ac729251d3c76632905886efaf034a"
+    },
+    {
+      "path": "docs/RELEASE_030_RESEARCH.md",
+      "bytes": 7197,
+      "sha256": "718cbfc76482882a1e636fde34579f294894ffa487cfa9f480ca9989a9a8fb5b"
+    },
+    {
+      "path": "docs/RELEASE_040_PLAN.md",
+      "bytes": 2558,
+      "sha256": "7e7e2e60981e3045829e850a60ecb7f2ee3720af023227325c516c549a9df699"
+    },
+    {
+      "path": "docs/RELEASE_040_REPORT.md",
+      "bytes": 8377,
+      "sha256": "e8c6ba2beabdd1f53b1b96962c3394045d692dba07f982759dca3e4469fcd37d"
+    },
+    {
+      "path": "docs/RELEASE_040_RESEARCH.md",
+      "bytes": 8580,
+      "sha256": "d4d3d68be85fe7bc3430697de7ad3d7c8b15b22ff3334c86ae7122ce988dafcb"
+    },
+    {
+      "path": "docs/RELEASE_050_REPORT.md",
+      "bytes": 10115,
+      "sha256": "4dd1146f1539331ac7174c8924e725243330c65369606a1d5b98fbcffd1e207f"
+    },
+    {
+      "path": "docs/RELEASE_051_LEDGER.md",
+      "bytes": 3381,
+      "sha256": "bb7d08db29a1d223658957c25e0317acd955881fc582bc8ce783594d907d0d1d"
+    },
+    {
+      "path": "docs/RELEASE_051_REPORT.md",
+      "bytes": 7164,
+      "sha256": "3a678a33530a15499296f3dc9bb40786486f3b885934c57184d2c924efd779f1"
+    },
+    {
+      "path": "docs/RELEASE_052_DIAGNOSTIC.md",
+      "bytes": 4341,
+      "sha256": "23172be2071d41f44602dec90a11f0620e8caf816e1798f5535ea97813c0b0c2"
+    },
+    {
+      "path": "docs/RELEASE_060_PLAN.md",
+      "bytes": 4290,
+      "sha256": "da46c758d8546d162d58d5d7ac91922eb8b26869bc7c8d0f418f4fe1d54ccdf9"
+    },
+    {
+      "path": "docs/retained-experiments/attrib/ai/vietnam/vn_default_economy_save.xml",
+      "bytes": 1267070,
+      "sha256": "78aae9fd7ee2ac998bfd46eef7548c3d4146e047337cb5b44c77f40eeaa2b0fc"
+    },
+    {
+      "path": "docs/retained-experiments/attrib/ai/vietnam/vn_default_economy.xml",
+      "bytes": 1354377,
+      "sha256": "8ed56adab59045e697043e72138a68260f71b8b9696bcf4fb79aad8f527a0604"
+    },
+    {
+      "path": "docs/retained-experiments/attrib/ebps/vietnam/vn_holy_site.xml",
+      "bytes": 71434,
+      "sha256": "ced55ab161f12b841c5b38b04f21321e890afa00e5c3dc2163520239ec0f1428"
+    },
+    {
+      "path": "docs/retained-experiments/attrib/map_gen/vietnam/vn_dist_atacama_holy_site.xml",
+      "bytes": 907,
+      "sha256": "22eb84814bc0639a7f3751832480c03118ec5da7e942843cf57c8a33e69963d1"
+    },
+    {
+      "path": "docs/runtime-repair-aoe4-game-mode-skill-self-test.txt",
+      "bytes": 60,
+      "sha256": "fb9cfd7aa0050adc7a8958c626e19605601214114304fc2bdee3a1ed64142d70"
+    },
+    {
+      "path": "docs/runtime-repair-asset-audit.json",
+      "bytes": 1139,
+      "sha256": "ebe2f6246396f8791faa5503613bd4a5ce3896c71022f0ae97fc14c8cfa31172"
+    },
+    {
+      "path": "docs/runtime-repair-baseline.json",
+      "bytes": 39641,
+      "sha256": "ab0cfc7077ba1543d70325c7f7e8e91a3ada94fe906f40f1fa2b874258b81256"
+    },
+    {
+      "path": "docs/runtime-repair-full-tests.txt",
+      "bytes": 3418,
+      "sha256": "a87ac1b29c6c588c9b62a5ff5d528d63045085fa6c15f664817999e4a0759c89"
+    },
+    {
+      "path": "docs/runtime-repair-implementation.md",
+      "bytes": 8857,
+      "sha256": "3345371fcaf2af2a57fb0f31065473f7f8dde352140f4647150252579b637f54"
+    },
+    {
+      "path": "docs/runtime-repair-mcp.json",
+      "bytes": 7360,
+      "sha256": "ecab59388bc27ad991221d25b8241a5d20e7513b1542ef612974052cbc244b37"
+    },
+    {
+      "path": "docs/runtime-repair-modify-aoe4-tuning-packs-self-test.txt",
+      "bytes": 64,
+      "sha256": "4c491ce8e5a9b7fbac5246f5a1a5fb835cbd3fa0d7797a3f3772d0c6f1d0afae"
+    },
+    {
+      "path": "docs/runtime-repair-package-check.txt",
+      "bytes": 2449,
+      "sha256": "f9ce326b23926fe8bc3d5ea6a0f21f501ccd464f07fa6601da193fc1fff6eea0"
+    },
+    {
+      "path": "docs/runtime-repair-review-red.txt",
+      "bytes": 815,
+      "sha256": "f368e2629af9d02c40ad371215eaf1c5bc69d1bb89fa7120595125eb22a051f3"
+    },
+    {
+      "path": "docs/runtime-repair-static.txt",
+      "bytes": 2657,
+      "sha256": "a3a1733d42a2c2dedd3380072b88895aa7177a0b36ddb77b5adf5e183cffe7f6"
+    },
+    {
+      "path": "docs/runtime-repair-tests-green.txt",
+      "bytes": 136,
+      "sha256": "e2a45ff85ad8c380e3720e22b66a50bc9af8b4603be1b1660ecd3047ac85bd37"
+    },
+    {
+      "path": "docs/runtime-repair-tests-red.txt",
+      "bytes": 18144,
+      "sha256": "246005a4234d21c00d1a18e75b92758ef7c00da91ab4f0a72d50e36262d6b14f"
+    },
+    {
+      "path": "docs/runtime-traps-tunnel-building-times-repair.md",
+      "bytes": 5468,
+      "sha256": "d39f9ac1b25f96f370d2351adc9c7d8049fcf91d0dd6cd1374b984b73267316f"
+    },
+    {
+      "path": "docs/second-native-run-entity-id-repair.md",
+      "bytes": 2937,
+      "sha256": "e9a3a0f8938646fcecf8297164dc3e4eddc72d5253b2afd4fb1ab9092bebfd4a"
+    },
+    {
+      "path": "docs/solo-selection-pass.md",
+      "bytes": 1098,
+      "sha256": "242640e208e350e1acbf195ebf5c0d24b0b2b787a775236ea1dbd922ad5c6f43"
+    },
+    {
+      "path": "docs/source-baseline.json",
+      "bytes": 52449,
+      "sha256": "57a91424e0807a5fdfae122e1e72b6754c2b66afdcc4d583a8e436600ea095a5"
+    },
+    {
+      "path": "docs/squad-precache-allocation.json",
+      "bytes": 11259,
+      "sha256": "95f174d9ed414477a00bd77b269fb3df4287f9cbc1abb676b4dd242279d71794"
+    },
+    {
+      "path": "docs/tests-green.txt",
+      "bytes": 4260,
+      "sha256": "c7f536759d21e7affbbb0d6baf8ab68f77f51c15e995217612cd3d0299ccade4"
+    },
+    {
+      "path": "docs/tests-red-integration.txt",
+      "bytes": 9758,
+      "sha256": "ab272134ea89d6445d45515569e16833e16d9ba74866c4a6ab7b2afbd887dc09"
+    },
+    {
+      "path": "docs/third-native-run-localized-text-repair.md",
+      "bytes": 2158,
+      "sha256": "76360b3367183eacc385a20750db57ed2dd076a8fa22928fdda5d80fdb2c214e"
+    },
+    {
+      "path": "docs/trap-manual-delete-audit.json",
+      "bytes": 1213,
+      "sha256": "0476d83ee515dd87258a97af3492843c902b60cc390c7525804d759587c63502"
+    },
+    {
+      "path": "docs/trap-manual-delete.md",
+      "bytes": 972,
+      "sha256": "595e54473157af8c181c7e5682ecfaa4b654d909eb67d26cb53a10821d8b0678"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3861,
+      "sha256": "f069d8088602899a834f9de761725e7b71ff7e31165b7d685b96883a29df7ae0"
+    },
+    {
+      "path": "STORAGE.md",
+      "bytes": 15551,
+      "sha256": "eb7e22009ca1f365f97af5a2b46999ca39def0334ec4c92716dc8a5a33432cf5"
+    },
+    {
+      "path": "tools/build_release_020.ps1",
+      "bytes": 2506,
+      "sha256": "6524faa605142359e11b0df63b0ee38f26709e3607996b38383d1904088fbf76"
+    },
+    {
+      "path": "tools/build_release_021.ps1",
+      "bytes": 1789,
+      "sha256": "57d43204a3eb575a2aa0a4f71f496a1ac3ebdb9cc071e823649bb2051fd4f214"
+    },
+    {
+      "path": "tools/build_release_030.ps1",
+      "bytes": 3361,
+      "sha256": "facf6a68ea5a94665ae4bd355eb803d772e0b7dc9c658bc5deb4b404de2f3546"
+    },
+    {
+      "path": "tools/build_release_040.ps1",
+      "bytes": 4408,
+      "sha256": "01ba77b2dcaa1dc754565375e6ddcf021f6e80a3e70a66216dace3d7f0ec941e"
+    },
+    {
+      "path": "tools/build_release_050.ps1",
+      "bytes": 3883,
+      "sha256": "a7ad9e7fe0f413aba6ca1bca4cad6cec912c3c56b7a3227eb124d4f54ff253ff"
+    },
+    {
+      "path": "tools/build_release_051.ps1",
+      "bytes": 1572,
+      "sha256": "b9755047ff93130ecdba86a77a0e21c220e153f5d7033d1b56e45318f866193a"
+    },
+    {
+      "path": "tools/build_release.ps1",
+      "bytes": 2910,
+      "sha256": "6ba7a4ddadf6b87d53d2cbc31a989e4a5a1050ee9137c09a3eaad7859bca1458"
+    },
+    {
+      "path": "tools/build.ps1",
+      "bytes": 1454,
+      "sha256": "33a5a15060efaf83360c1f61640dba5127391aff10ccc33af494b8c3262c48d4"
+    },
+    {
+      "path": "tools/castle_next/budget_finalize_castle.py",
+      "bytes": 6194,
+      "sha256": "9e7ebc3beba749fd12732f0a7b6bf1c5f1a05a06a4c72066f1e9c236fb0d1c26"
+    },
+    {
+      "path": "tools/castle_next/building_anatomy.py",
+      "bytes": 1977,
+      "sha256": "f8f2c494e33549f31f151767758d3af08644c51ccab2fbe2961ddf71bb206770"
+    },
+    {
+      "path": "tools/castle_next/building_design.py",
+      "bytes": 10754,
+      "sha256": "7e59aab4de217ed1326cf794d083fcde4c144e5560174bc21b365c496d23ae18"
+    },
+    {
+      "path": "tools/castle_next/building_details.py",
+      "bytes": 8620,
+      "sha256": "82ffe56c1ca8751f61b2a42bc1aa00f861779e637d7eafd39c58c4ae7894aa79"
+    },
+    {
+      "path": "tools/castle_next/building_handoff.py",
+      "bytes": 5938,
+      "sha256": "3bdf39fcdbf7ee391e09402188e3308d2facbf3a519a93773a6f651afd7b00a1"
+    },
+    {
+      "path": "tools/castle_next/building_model_selectors.py",
+      "bytes": 5644,
+      "sha256": "9754728bacfaa831e77a0dbfba8698e751763c479828fc3799df8070d803dc54"
+    },
+    {
+      "path": "tools/castle_next/building_native.py",
+      "bytes": 14885,
+      "sha256": "545ea954af077c18e51929b4b7518e20d236e82d05af01ea4aacfa8890e91413"
+    },
+    {
+      "path": "tools/castle_next/building_nativecheck.py",
+      "bytes": 3883,
+      "sha256": "d2c7b2e9e34878b07f0546e6e6ff8429b92113afea36b0ec33731f10a0103336"
+    },
+    {
+      "path": "tools/castle_next/building_preview.py",
+      "bytes": 12213,
+      "sha256": "1cfc6be024b5f765d232df63512efd31d7865d816202464b3d170ec44d845a2c"
+    },
+    {
+      "path": "tools/castle_next/building_probe.py",
+      "bytes": 1376,
+      "sha256": "c230aee3927afd115c9c4c80e54dee6d258935327f8a7cfad5d3f3418cdc6fd4"
+    },
+    {
+      "path": "tools/castle_next/building_roof_probe.py",
+      "bytes": 2210,
+      "sha256": "857f44c00a24d92c845bde557d3948e303427c857376a0a2059d6abadf65cc0d"
+    },
+    {
+      "path": "tools/castle_next/building_selectors.py",
+      "bytes": 3590,
+      "sha256": "f73bfbd1fd5e2b72426cd40b0e09deb5a3f2ffdea2be197e6bf92371bb5e85ec"
+    },
+    {
+      "path": "tools/castle_next/building_shape_preflight.py",
+      "bytes": 3079,
+      "sha256": "21a26d32910beca27991bfc370a66ccb2eda114f54900aab5e4ba85d743643d0"
+    },
+    {
+      "path": "tools/castle_next/checks.py",
+      "bytes": 10797,
+      "sha256": "ce79e98a6ee4a41dbd147195f3fc7c1d6abd4645d82a913643f58a31e8090650"
+    },
+    {
+      "path": "tools/castle_next/common.py",
+      "bytes": 2148,
+      "sha256": "820bcedac68d8c0ff3fbaeee999b58128e96c1223f521576a5f8a12a91706974"
+    },
+    {
+      "path": "tools/castle_next/compiled_contract.py",
+      "bytes": 3237,
+      "sha256": "130929c098625e8fafd0397ca89d8e8c086498504168e41658b9e78297cb5e2c"
+    },
+    {
+      "path": "tools/castle_next/cook.py",
+      "bytes": 21265,
+      "sha256": "dbd04ff8a8cef4d21dc76ab56b05270a26b3200e25c651f2eb59503a2d352259"
+    },
+    {
+      "path": "tools/castle_next/fbx_audit.py",
+      "bytes": 1711,
+      "sha256": "f61c3999f93c5f11f6d865567948c732d5f353ad94dae68aa5e7a1b2a2817bfe"
+    },
+    {
+      "path": "tools/castle_next/handoff.py",
+      "bytes": 7996,
+      "sha256": "f85c0bca61c6014597ab1dd4438dc278dce7805d90868f82e2ea296766863990"
+    },
+    {
+      "path": "tools/castle_next/inventory_choices.py",
+      "bytes": 6673,
+      "sha256": "9b452a1e8dc64473b13081f0c2125959eea61492f2d9ba16a67e0ca55e0964a2"
+    },
+    {
+      "path": "tools/castle_next/inventory_donors.py",
+      "bytes": 5016,
+      "sha256": "2cd44c9e84183809f0a56b5f98fc074caa6270dbdca4cfdf4067dc61d6b68cd0"
+    },
+    {
+      "path": "tools/castle_next/landmark_citadel.py",
+      "bytes": 407,
+      "sha256": "8dd21b2af6979ad90fd891c47b84e458411bd34326788874f0e5fa0a74680793"
+    },
+    {
+      "path": "tools/castle_next/landmark_fbx_partition.py",
+      "bytes": 19357,
+      "sha256": "7ffdb0de3e6dfc86e2c633681034c284f25e2a2dbf42c32fc591306318ae3b0e"
+    },
+    {
+      "path": "tools/castle_next/landmark_hq.py",
+      "bytes": 248,
+      "sha256": "77ac9fa263a074cfed28a7961938d8acf8cd17723c03e24b6f6af617f4c2b121"
+    },
+    {
+      "path": "tools/castle_next/landmark_shared.py",
+      "bytes": 57148,
+      "sha256": "dd8237a96ea85e321520e63346af0bd3e7d9395e7d3fdc2b924a4fd4a5428e1e"
+    },
+    {
+      "path": "tools/castle_next/lifecycle_contract.py",
+      "bytes": 6871,
+      "sha256": "b2dc6b2f724ce7861b9c1b5f4a6af98830fd9a5c4955f4ed20459e38ab27903e"
+    },
+    {
+      "path": "tools/castle_next/lifecycle_modes.py",
+      "bytes": 3129,
+      "sha256": "30ff68cd8054ab52587ccb38ff2cdeecfa8c282bab7a319b75837d4d00a5c15b"
+    },
+    {
+      "path": "tools/castle_next/native_support.py",
+      "bytes": 1006,
+      "sha256": "04d691ebaee636ee7e031e9529d261105d400ffc6193644c08cc30d8b3e61e96"
+    },
+    {
+      "path": "tools/castle_next/owner_colour.py",
+      "bytes": 23872,
+      "sha256": "002bcc26fbb4b969dbc3e29b8f41353b75f7befcd7cbc9d3e3d0ff18b8de491c"
+    },
+    {
+      "path": "tools/castle_next/owner_native.py",
+      "bytes": 5463,
+      "sha256": "ca4c8c5a24c1108b1e6daa6889042e6adaa33bc97e267e74610cab86a7db861d"
+    },
+    {
+      "path": "tools/castle_next/owner_verify.py",
+      "bytes": 4408,
+      "sha256": "18533529bcfa00377bc587450b1954896957f8bcc18ef46d09afbbdb17cf96a5"
+    },
+    {
+      "path": "tools/castle_next/preservation.py",
+      "bytes": 2199,
+      "sha256": "f09c512056f66f23dfb0484ee73212f06081972bca88ef4271ec7df00de4aed8"
+    },
+    {
+      "path": "tools/castle_next/retained_debris_budget.py",
+      "bytes": 19924,
+      "sha256": "e887e3e90b9c70b9370201cdd2bcebdb2634328430e554f198a57f71d5731253"
+    },
+    {
+      "path": "tools/castle_next/selector_probe_castle.py",
+      "bytes": 23530,
+      "sha256": "f765bc4ef66a09a7ce11f7c451bd6ed22029793e3714df3e9732fb7f836dbf39"
+    },
+    {
+      "path": "tools/generate_prematch_precache.py",
+      "bytes": 2283,
+      "sha256": "781601845e367b2fb129c95b3eae9b5f5e0eefc15b6c81109eace8580b353175"
+    },
+    {
+      "path": "tools/prepare_garrison.ps1",
+      "bytes": 1823,
+      "sha256": "0d3697daa0b32680ec1b1b3ad4b1a72339496e6c96d20490d9b241dd2a2d6551"
+    },
+    {
+      "path": "tools/README.md",
+      "bytes": 1996,
+      "sha256": "a8aeea4062495c9c7800f5fb318631c377fb1c5a29b205d616bcdb2561f3cd74"
+    },
+    {
+      "path": "tools/release_010/cleanup_release.py",
+      "bytes": 5940,
+      "sha256": "61fa8e83790f00506ba10004031c122dc9994eaf1cdd22cbc06d3774077be365"
+    },
+    {
+      "path": "tools/release_010/common.py",
+      "bytes": 2133,
+      "sha256": "a1d1c0606dbd9cbef8b833b18a84cde60b6edef2c0c68f015711f4b618c85f2c"
+    },
+    {
+      "path": "tools/release_010/freeze_baseline.py",
+      "bytes": 3048,
+      "sha256": "e7559a67220807efce76083787d94ada74fd7b856c9a11899bf7e3d77fe6de73"
+    },
+    {
+      "path": "tools/release_010/house_bounds.py",
+      "bytes": 1260,
+      "sha256": "5113d3ed14ebd341892d26d57b14a37c9d3bfe988a1a198be5c8cf353ae1abad"
+    },
+    {
+      "path": "tools/release_010/house_geometry.py",
+      "bytes": 11240,
+      "sha256": "fc670b2de328c12fd65ac0549cc1e3f920c6a0c46ee8f7899b3fe065d83f9131"
+    },
+    {
+      "path": "tools/release_010/house_inspect.py",
+      "bytes": 3039,
+      "sha256": "e9cdecff87220e938ea5a2a5292edda8a85db66003078f6023f7d9b1e5445f9a"
+    },
+    {
+      "path": "tools/release_010/house_inspect4.py",
+      "bytes": 3041,
+      "sha256": "a6e7555ed585df6b04ea42b5f20c615100260303660d3e64da0ac437042f1366"
+    },
+    {
+      "path": "tools/release_010/house_manifest.py",
+      "bytes": 5030,
+      "sha256": "6112b90d6eb6b27f6e50ccc29536a6cefb6c533f7f375dced0ae4e6ec56d57ef"
+    },
+    {
+      "path": "tools/release_010/house_materials.py",
+      "bytes": 5442,
+      "sha256": "81d591ed9ded6a2b61cd9241c78b6e16a5d9243dec4229f92fbd4314f1e6d5c1"
+    },
+    {
+      "path": "tools/release_010/house_previews.py",
+      "bytes": 4432,
+      "sha256": "fc2e64e14828e7dfe1d0af2bbadc719123f1cae4ca292cafcf60c0749dbd3652"
+    },
+    {
+      "path": "tools/release_010/integration_closure.py",
+      "bytes": 7609,
+      "sha256": "1083e751fe25af15f2a22d1ae5a34723c054ce1bee14d1c4951215c4aefbed64"
+    },
+    {
+      "path": "tools/release_010/integration_codec.py",
+      "bytes": 14030,
+      "sha256": "9226119aa001c2c5fba75e4d8a74316cc3303d58d9721da45dc5a09d72ad5b52"
+    },
+    {
+      "path": "tools/release_010/integration_native.py",
+      "bytes": 6222,
+      "sha256": "3bd0129ea27df7b79f7a587cdf309712cd0884c8eb6dd7bb8da841f49a5b303f"
+    },
+    {
+      "path": "tools/release_010/integration.py",
+      "bytes": 45898,
+      "sha256": "b54808ee5628d3bfbd494ce2716dba49b896cd23af40da0166d2d63dcb82f856"
+    },
+    {
+      "path": "tools/release_010/package_release.py",
+      "bytes": 7717,
+      "sha256": "1672d39fdf1f3817f37f8fccf585d1f44d5772db81c889ad0a43c62b5ff1ea11"
+    },
+    {
+      "path": "tools/release_010/release_checks.py",
+      "bytes": 4312,
+      "sha256": "d4e947c1f6bf7f00db58f1859ef9c322249cb9bbca4b0b3fb0aeae4f52c31b8a"
+    },
+    {
+      "path": "tools/release_010/report_release.py",
+      "bytes": 8954,
+      "sha256": "93c9869fc2e2c9d3a791751d250e1a1be4e8f885476a0e90997f33e2ab79f82e"
+    },
+    {
+      "path": "tools/release_010/source_policy.py",
+      "bytes": 3066,
+      "sha256": "95f48347dd25b56f4879c92eb0290e38d6708d6bd9d0ca52ac2452c8befa2293"
+    },
+    {
+      "path": "tools/release_010/trap_art_runner.py",
+      "bytes": 5745,
+      "sha256": "50118231bcf329c582f753115f518ac7083191facb050c8c0b283eae1ebc1053"
+    },
+    {
+      "path": "tools/release_010/trap_build.py",
+      "bytes": 10185,
+      "sha256": "b2b75822974a66688e815ef2fa53c11990232463c9fd3d4c169ba84912492500"
+    },
+    {
+      "path": "tools/release_010/trap_freeze.py",
+      "bytes": 4430,
+      "sha256": "c78aac2a95d7034513dd41b9aca6b9f744882a8b79f82b5b4873a6a5613b2b02"
+    },
+    {
+      "path": "tools/release_010/trap_garrison_probe.py",
+      "bytes": 301,
+      "sha256": "400ed5ea47c7f4dc6aed2dc999c51d70e4273aa2d5d70dcdf4a434a08461a852"
+    },
+    {
+      "path": "tools/release_010/trap_stage_fix.py",
+      "bytes": 5640,
+      "sha256": "c4b5609fe6e838b9e3f9d90edf5e4f8a120ae55c2728a90a91c5737e180552c1"
+    },
+    {
+      "path": "tools/release_010/verify_archive.py",
+      "bytes": 5754,
+      "sha256": "950486e8fa8a8cd54eafc673fc69ebdef6c027206e40caaaf37d625167c083dc"
+    },
+    {
+      "path": "tools/release_020/assemble_media.py",
+      "bytes": 1986,
+      "sha256": "0b032d1aada565cf3bb563975d8aaeee965a1745c35219db4b27e501514644b9"
+    },
+    {
+      "path": "tools/release_020/cleanup_release.py",
+      "bytes": 4484,
+      "sha256": "b03516c8a3705d8145ee7a99765bc3a44b3da11af7974813bc2781ba21f32f2b"
+    },
+    {
+      "path": "tools/release_020/common.py",
+      "bytes": 2165,
+      "sha256": "39bca2a37eac9ae0613f034a6343aaa616ec7ad258af503fa04a87289e1925c1"
+    },
+    {
+      "path": "tools/release_020/compile_candidate.py",
+      "bytes": 3797,
+      "sha256": "b3a6b6767ff97e285c965c1fc575d38958cb0202f871c5fd0da0f6171328d5f5"
+    },
+    {
+      "path": "tools/release_020/compose.py",
+      "bytes": 6262,
+      "sha256": "b9289a03907034faca850ca990aa98474d3bb9c74fa09d2b1770d57cba73174b"
+    },
+    {
+      "path": "tools/release_020/cook_art.py",
+      "bytes": 4218,
+      "sha256": "5f5a9a6f8ae40714c12c04d89c99627ef9bfde984fe2fe95bfc32f0e266de412"
+    },
+    {
+      "path": "tools/release_020/cook_roofs.py",
+      "bytes": 2267,
+      "sha256": "6e78b367b413bf3302cd22ae9f8a021767da52180fdbb8b064b3500defade9d7"
+    },
+    {
+      "path": "tools/release_020/cook_shelters.py",
+      "bytes": 4284,
+      "sha256": "9be4a1d2b76dbd8ea8a764699721ecd33345d34d0c7539860e76fea435efa80d"
+    },
+    {
+      "path": "tools/release_020/freeze_art.py",
+      "bytes": 2069,
+      "sha256": "2acda7cfc83d9f4257fd610de636044172464527d9bd75dd879ed3e15bf91b7e"
+    },
+    {
+      "path": "tools/release_020/freeze_baseline.py",
+      "bytes": 10004,
+      "sha256": "aaa5085a0fad06d34f614b66cf8f56b8dfba3951928fecf5459c27faf14a2f44"
+    },
+    {
+      "path": "tools/release_020/guard_source_contract.py",
+      "bytes": 4013,
+      "sha256": "accbee25ded748d9dc50d405a5f5a2c3e9507227d598cc22cf12173eab16427d"
+    },
+    {
+      "path": "tools/release_020/integrate.py",
+      "bytes": 13957,
+      "sha256": "ed2e998261ac95e4212717587474c0dc67ab1665ab0e5a6777c1db6bb646eabe"
+    },
+    {
+      "path": "tools/release_020/inventory.py",
+      "bytes": 3928,
+      "sha256": "b7bc32c7ea9e9cb3cf0c072bf2382c220471395ea1619829d2ad4b92c02ff404"
+    },
+    {
+      "path": "tools/release_020/media.py",
+      "bytes": 23022,
+      "sha256": "0f453aba2607e30ec8c807e93cb6ba93daaa81befb524a8943db3ee927d89005"
+    },
+    {
+      "path": "tools/release_020/model_barracks_tc_inspect.py",
+      "bytes": 942,
+      "sha256": "f1ffd6cdc94c2c811b6a18412278d243c7e53f4b31ce7ed7f5ffea4991ed1a73"
+    },
+    {
+      "path": "tools/release_020/model_barracks_tc_manifest.py",
+      "bytes": 4376,
+      "sha256": "0858f30cefbc3c9a8bc0535e7052632061497ce9a1f70ce26b490c77713f02be"
+    },
+    {
+      "path": "tools/release_020/model_barracks_tc_materials.py",
+      "bytes": 5839,
+      "sha256": "cfe491abf053b291167805d43e80a1d21e04317f92e6bb6e869229923dce41ab"
+    },
+    {
+      "path": "tools/release_020/model_barracks_tc_nativecheck.py",
+      "bytes": 3751,
+      "sha256": "eaa7c671ca323e5e910ebbda54fce6cf1b9cc0907e0f70078606394ad4d785c3"
+    },
+    {
+      "path": "tools/release_020/model_barracks_tc_projectcheck.py",
+      "bytes": 1429,
+      "sha256": "8a6aa7ff7747842c42c2c76154236055f288d2c349a4fb80f08e3e5845f9afe9"
+    },
+    {
+      "path": "tools/release_020/model_barracks_tc_relocate_donors.py",
+      "bytes": 4940,
+      "sha256": "3d0d60029a212df925c5aac6b55510338f0ab6ff02ffaa1a556ef550ff8ef7f7"
+    },
+    {
+      "path": "tools/release_020/model_barracks_tc_report.py",
+      "bytes": 5890,
+      "sha256": "b7a34b476aa65a1809520df74c421c8372e1b8a866c756395c2e3f36da84af74"
+    },
+    {
+      "path": "tools/release_020/model_barracks_tc_textured.py",
+      "bytes": 5570,
+      "sha256": "65e92af382aa94598c95f2743b3c7abf6379382172242aff3d7f7f28abc5fd40"
+    },
+    {
+      "path": "tools/release_020/model_barracks_tc.py",
+      "bytes": 13014,
+      "sha256": "e3aa2a0f5ad5b65e0f2f1ba2df486c8220f2709b6c2931dfba60273cb5203a28"
+    },
+    {
+      "path": "tools/release_020/model_ministry_farm_hideout_composite.py",
+      "bytes": 1681,
+      "sha256": "5c976b2ab7b0256c6a43bd8edca9e3097ad1e987237d5297ad8ff05109ceeb12"
+    },
+    {
+      "path": "tools/release_020/model_ministry_farm_hideout_farm_context.py",
+      "bytes": 6187,
+      "sha256": "ea5ade1568c5cb03bccaa87476dcd36af0cc135e8f7ed96bf4a92d037f04e28c"
+    },
+    {
+      "path": "tools/release_020/model_ministry_farm_hideout_handoff.py",
+      "bytes": 5229,
+      "sha256": "6028eb8f1c29ed0f329e055fc4c29b2e8c5ab27e36188da36e891a80e3dff0dc"
+    },
+    {
+      "path": "tools/release_020/model_ministry_farm_hideout_hideout.py",
+      "bytes": 11149,
+      "sha256": "d650370265ad61e26c4a2f862c49c8837e173bf0c996cbb424e10626a9e80684"
+    },
+    {
+      "path": "tools/release_020/model_ministry_farm_hideout_runner.py",
+      "bytes": 10061,
+      "sha256": "10f09b47396cc1f7dc3047fe82535861ad4b88c084b4ac1b82773f69a13550b4"
+    },
+    {
+      "path": "tools/release_020/model_ministry_farm_hideout.py",
+      "bytes": 21741,
+      "sha256": "aa6603ea02783b5a05693620d90ee2c88deb5b95a68434a26dd05230fcabbd28"
+    },
+    {
+      "path": "tools/release_020/package_release.py",
+      "bytes": 7672,
+      "sha256": "9965c2b903b751f8a96c907e7388a390f4c91b4c6c107089daf3ec288445ebad"
+    },
+    {
+      "path": "tools/release_020/placement.py",
+      "bytes": 6261,
+      "sha256": "e961c994369c30131b8571106bc767fecb7829b32f1cacd40ae718af4f427855"
+    },
+    {
+      "path": "tools/release_020/reference.py",
+      "bytes": 6367,
+      "sha256": "5d89328555ae65681f621b688f334edc6b87a91a1b8dd62693218b1b092f7b30"
+    },
+    {
+      "path": "tools/release_020/release_checks.py",
+      "bytes": 5317,
+      "sha256": "dafda324d42ca1f9ae023d24b777c23ccaf92b7f6923ca39664ea5c795300e20"
+    },
+    {
+      "path": "tools/release_020/release_pipeline.py",
+      "bytes": 4599,
+      "sha256": "528c17a9382c556d519a1e9c95352b9024474fabd8baaf9f50a1c9ad0d6f0d1b"
+    },
+    {
+      "path": "tools/release_020/report_release.py",
+      "bytes": 9035,
+      "sha256": "2c22f07b672cb4c27c6b69230c352ea2a64c4429819d1566b1b4f2b064ab845a"
+    },
+    {
+      "path": "tools/release_020/source_policy.py",
+      "bytes": 3243,
+      "sha256": "5753613571d7bb4ae82ab6b84aa6c3aca360ce78c45271752175e1ab7ce5dbcd"
+    },
+    {
+      "path": "tools/release_020/verify_archive.py",
+      "bytes": 15554,
+      "sha256": "3ea89aa7c10087c1844bfcc21f7dfc1832e600497e1ce71d48e0fb94e4cd9ef4"
+    },
+    {
+      "path": "tools/release_021/common.py",
+      "bytes": 2006,
+      "sha256": "a2f39e1a719699ea899119f2225a8703530bce13dfe28de6ab8c906308fea06b"
+    },
+    {
+      "path": "tools/release_021/finalize.py",
+      "bytes": 7836,
+      "sha256": "998eb7f518d620496e9c541e10abe7fe64367e584eda794cb0a8f428f20138e7"
+    },
+    {
+      "path": "tools/release_021/footprint.py",
+      "bytes": 12277,
+      "sha256": "2d2ee47f7db30ddd9c8bc03d7e5fc49c8fda1031d2f0acdc5456d8289b4dacde"
+    },
+    {
+      "path": "tools/release_021/freeze_baseline.py",
+      "bytes": 21266,
+      "sha256": "ccf5f9e9efe124e94aae97a66cc3fcb51d8dc7d9da4ee0b252e21f7ecd492a49"
+    },
+    {
+      "path": "tools/release_021/ministry_refine.py",
+      "bytes": 17168,
+      "sha256": "ef56e8a402798d69302308eec303fb3e455931e5413eab8e12019fe6d23182be"
+    },
+    {
+      "path": "tools/release_021/release.py",
+      "bytes": 26123,
+      "sha256": "e1f6dcd086fb3a9bdacb7f797dbb1e664e8821e423ff7c8c94b0377578004af3"
+    },
+    {
+      "path": "tools/release_021/trap_art_runner.py",
+      "bytes": 5745,
+      "sha256": "3f73bfa6b266609449de2938fb617d6e77e628092d7ba60518c49490082ec943"
+    },
+    {
+      "path": "tools/release_021/trap_build.py",
+      "bytes": 11374,
+      "sha256": "79b36e25b6e18a46dd4ab19a22b26364e7426f94b980278519fc00343dc74fb4"
+    },
+    {
+      "path": "tools/release_021/trap_freeze.py",
+      "bytes": 3573,
+      "sha256": "59f06fd846e269069f5241b7e3633702aefb01090876d6b469be08aafde7d21f"
+    },
+    {
+      "path": "tools/release_030/bindings.py",
+      "bytes": 13406,
+      "sha256": "9a2e6c4a032a5bd68266d2690468dc5a590847e822c85441e1b157ed4386137b"
+    },
+    {
+      "path": "tools/release_030/budget.py",
+      "bytes": 5505,
+      "sha256": "e10cc5b2f3c829dd6c6f1334e0920465eca18f3d2aba5585bd71b787525f754a"
+    },
+    {
+      "path": "tools/release_030/common.py",
+      "bytes": 2006,
+      "sha256": "974433e49b756a8f2890c6f94616741ff5c5ea25c3aa0d19d52fe034c8af93e6"
+    },
+    {
+      "path": "tools/release_030/finalize.py",
+      "bytes": 7296,
+      "sha256": "8c8f0432a3ecfcbf190b8635950402d2e982285b57d2531cedebf461a953a574"
+    },
+    {
+      "path": "tools/release_030/footprint.py",
+      "bytes": 12487,
+      "sha256": "b434cfb735716015809b01f5880e3d8513c0babec913ad4cffbeecbac4c865b3"
+    },
+    {
+      "path": "tools/release_030/freeze_baseline.py",
+      "bytes": 6725,
+      "sha256": "479b92e1ee68fb63c955f012e7d51976ec3053b841f76d58be1e0db289a2f76a"
+    },
+    {
+      "path": "tools/release_030/inventory.py",
+      "bytes": 3170,
+      "sha256": "8e9a1d0bd92696151d40b2caf0f583651f528501772deb5376af2e109339b9aa"
+    },
+    {
+      "path": "tools/release_030/landmark_build.py",
+      "bytes": 31832,
+      "sha256": "cab3ba9eaaa6fc239d5e56c16aa6e1b5449c739ebf3bdcc8190c30e4ca2db691"
+    },
+    {
+      "path": "tools/release_030/landmark_probe_render.py",
+      "bytes": 1733,
+      "sha256": "ebf374564883998b77afae2c2331d1537aac65a848911d7c12443aa0937f6438"
+    },
+    {
+      "path": "tools/release_030/landmark_uv_probe.py",
+      "bytes": 2530,
+      "sha256": "feb3bd4709296ded29f3e92cca8732496d817aa942ec285ae936691dba7bceb7"
+    },
+    {
+      "path": "tools/release_030/reference.py",
+      "bytes": 6077,
+      "sha256": "b4068fe6358fecc224fc82a97b92ddf20be8f8de33ea03bbf59f236a28bcf207"
+    },
+    {
+      "path": "tools/release_030/release.py",
+      "bytes": 29830,
+      "sha256": "c1c3edf3002296a5dc7686053ee595b26139bf18bff246174eac1e01582a5d09"
+    },
+    {
+      "path": "tools/release_030/source_policy.py",
+      "bytes": 6926,
+      "sha256": "12276d98b56e6e4c99bf3373bf43458da579c81470cf452c8607e69ba922c123"
+    },
+    {
+      "path": "tools/release_030/stock_selector_probe.py",
+      "bytes": 8863,
+      "sha256": "4f48dcb8b8a73a6b8f68aceafee965db8c82d25230c4633ebc5921988915dc75"
+    },
+    {
+      "path": "tools/release_030/trap_art_runner.py",
+      "bytes": 5829,
+      "sha256": "c4f64f61239e356fb0743fd43a52d2baf6be6b766046e0e5a5a9f3efcc9db3cc"
+    },
+    {
+      "path": "tools/release_030/trap_audit.py",
+      "bytes": 3972,
+      "sha256": "00240bb503f8c55deea8af46a46a879a01fba331fde21f2a62943d9eb26021e9"
+    },
+    {
+      "path": "tools/release_030/trap_build.py",
+      "bytes": 9989,
+      "sha256": "d3bc91bdb33180d72bc06847ce1632336111916ef9f151acb3f91e40f396f3d8"
+    },
+    {
+      "path": "tools/release_030/trap_freeze.py",
+      "bytes": 1785,
+      "sha256": "ae5e90da6ac5db4a191a8692b731323af27eca5954f7860ef5607c38c1717291"
+    },
+    {
+      "path": "tools/release_030/trap_pixels.py",
+      "bytes": 673,
+      "sha256": "3c52eeea2bbfc49f10a446f12b2e1c0c23962f86129bd2d4dfea46b8552e8494"
+    },
+    {
+      "path": "tools/release_040/art_qa.py",
+      "bytes": 3678,
+      "sha256": "b62e33e089579fc52bd48e06e7fa77f720fe08219db5a774ef3d271ffe77a7ea"
+    },
+    {
+      "path": "tools/release_040/bindings.py",
+      "bytes": 21445,
+      "sha256": "e19b1e8cd7d9e8d66c36d1986c25b22ac33047fe1ed077a8b3875a0dfbe3c701"
+    },
+    {
+      "path": "tools/release_040/building_art.py",
+      "bytes": 14392,
+      "sha256": "9a07df4c86de230b4adb7b416db311c48448ba8580e37f6cbe482aef7a805a61"
+    },
+    {
+      "path": "tools/release_040/building_composite_textured_preview.py",
+      "bytes": 4088,
+      "sha256": "66f43aa894a00db4a5097f80dae50fb0e14fd20793661d3bb2ce97863087cb1e"
+    },
+    {
+      "path": "tools/release_040/building_contact_audit.py",
+      "bytes": 3483,
+      "sha256": "8848fbe48b929688543e63ec65a2642db5512c0fe15b494f06d4cbbaf42e4066"
+    },
+    {
+      "path": "tools/release_040/building_details_handoff.py",
+      "bytes": 2121,
+      "sha256": "99a7734eb8d1b3fd37cab39e1c361349bf14fdc5449d6bbc18fdac29e775cd46"
+    },
+    {
+      "path": "tools/release_040/building_details.py",
+      "bytes": 15641,
+      "sha256": "58411c9627ae7d8051fa3a5615c1e2d6c5f425b79a6823de6c88b69620eae1f8"
+    },
+    {
+      "path": "tools/release_040/building_donor_inventory.py",
+      "bytes": 3373,
+      "sha256": "c7aa6dfba491490358eea5fd746a1b1eaf92e0bc1dda592e0025a36a26edb7c7"
+    },
+    {
+      "path": "tools/release_040/building_handoff.py",
+      "bytes": 3980,
+      "sha256": "53320ce520abc5e874cbbce4dcdf27711b5f9eb26cea27dc512b909f64244cab"
+    },
+    {
+      "path": "tools/release_040/building_media.py",
+      "bytes": 3217,
+      "sha256": "f54a3867675daa8f3b3a7265ea6018964b0ad225adaac29c33eb02d96676da93"
+    },
+    {
+      "path": "tools/release_040/building_nativecheck.py",
+      "bytes": 3883,
+      "sha256": "22c3c64bac7dcd9a0b26bbf36d8458bb07bdb5dbd88cb289dd02cc168d8dd49c"
+    },
+    {
+      "path": "tools/release_040/building_selectors.py",
+      "bytes": 3861,
+      "sha256": "b02da293bc025fe698d36906705bc05140d321cf48e7cd4e8c304d4247b1286a"
+    },
+    {
+      "path": "tools/release_040/building_shape_preflight.py",
+      "bytes": 2784,
+      "sha256": "988b676d21bfb23f0575618d2ee03cacb3baa157b812a7834ab2d8e37c128f66"
+    },
+    {
+      "path": "tools/release_040/building_stable_detail_probe.py",
+      "bytes": 1591,
+      "sha256": "deef4e78e002e465d4aac8f5e0fe0b37287720553695663006fc834d4daab8b8"
+    },
+    {
+      "path": "tools/release_040/building_stable_intersection_probe.py",
+      "bytes": 1648,
+      "sha256": "99d9d167e3eb88ee39806f7189d7914445ca31887bedda2f1fd2078d1385fb9c"
+    },
+    {
+      "path": "tools/release_040/building_textured_preview.py",
+      "bytes": 3706,
+      "sha256": "045928c3dffa63464d370a01019aaea05498d4975018d0133618155dea0a7f8e"
+    },
+    {
+      "path": "tools/release_040/checks.py",
+      "bytes": 2087,
+      "sha256": "16fa8a0336076e2eef292f68985a0626263b08d308c9a449a5dfb7f1fc71bfff"
+    },
+    {
+      "path": "tools/release_040/common.py",
+      "bytes": 2003,
+      "sha256": "924615f4a77f0dfdf744eddcceea0cc5189cc385ba1585198cf80ca81b94cf00"
+    },
+    {
+      "path": "tools/release_040/credits.py",
+      "bytes": 1515,
+      "sha256": "60d85303831895701a85a51991e93b31cbd865492d7743a7d937932be9586e6d"
+    },
+    {
+      "path": "tools/release_040/detail_media.py",
+      "bytes": 9376,
+      "sha256": "31e3588c5cce4b65f18ca3be2d60e5cb5c38648fffdca12864d225c9ba5d16c7"
+    },
+    {
+      "path": "tools/release_040/finalize.py",
+      "bytes": 5019,
+      "sha256": "b4f48bec8832fa4f8e5467e61808423eab208e6c650f76f22ecb5a40b2559508"
+    },
+    {
+      "path": "tools/release_040/freeze_baseline.py",
+      "bytes": 7582,
+      "sha256": "f33b255005c94954dcdccbf0ceea1bede14d99f965da32dd2b71371455535669"
+    },
+    {
+      "path": "tools/release_040/inventory.py",
+      "bytes": 18561,
+      "sha256": "8b8c67a8614bba72dd1da6ad3ff02ece55a9faed23fc9d90db9ef439c36f9ca8"
+    },
+    {
+      "path": "tools/release_040/landmark_art.py",
+      "bytes": 9777,
+      "sha256": "77fd4bacdcae23f22676875f8297cf682c556860a0692132e4dcc8781d6f95b8"
+    },
+    {
+      "path": "tools/release_040/landmark_media.py",
+      "bytes": 8158,
+      "sha256": "b77bd3298ade30f007bb4fb491d7652bfb03c8d969f2d11b11048c16d2fc5f98"
+    },
+    {
+      "path": "tools/release_040/lifecycle_contract.py",
+      "bytes": 5478,
+      "sha256": "45de4c2da1360bb2614358f8170984b31fe501a93a7d18566f3bd3512a3ba441"
+    },
+    {
+      "path": "tools/release_040/lifecycle.py",
+      "bytes": 4727,
+      "sha256": "76f1ba5b13492b8a8ff31fbc007eedccc7a068f67eca02bab9201188c1c623b9"
+    },
+    {
+      "path": "tools/release_040/native_source.py",
+      "bytes": 12419,
+      "sha256": "237967793ee47b9bec48ff51a124b918c30cc961f1ac69b21b830210afdbc1e6"
+    },
+    {
+      "path": "tools/release_040/reference.py",
+      "bytes": 7013,
+      "sha256": "a0899fe3760bbb8ec2b0ab4b4616726d08de33a90b8d252a75623e406d4c3432"
+    },
+    {
+      "path": "tools/release_040/release.py",
+      "bytes": 14612,
+      "sha256": "d5c693afb70b8aae04daf40a1c33e84e3abef910f9f098c76fb09201150a3b27"
+    },
+    {
+      "path": "tools/release_040/source_policy.py",
+      "bytes": 6446,
+      "sha256": "ee98c745f71f6cdefb31c9828fbec3680983e6d79d9e90de7dd294fcd2492cdc"
+    },
+    {
+      "path": "tools/release_040/stamps.py",
+      "bytes": 5393,
+      "sha256": "c8082a31d4b73ccffb07f5aee8dcb2fc57dd076b03b953cacc70361f7918bc28"
+    },
+    {
+      "path": "tools/release_050/bindings.py",
+      "bytes": 24680,
+      "sha256": "e9807e4b659bbc954210e4c6300fd8a0c44c5260af3bbd31dbd8f4187cb4d7cc"
+    },
+    {
+      "path": "tools/release_050/checks.py",
+      "bytes": 2847,
+      "sha256": "412b2b146efafd27b7b09d864656477aef9496539ae81924318641680754402e"
+    },
+    {
+      "path": "tools/release_050/common.py",
+      "bytes": 2103,
+      "sha256": "2e048d804fad96b6e50b3cada0db2732bcc333def939df052e91e6a33f394208"
+    },
+    {
+      "path": "tools/release_050/finalize.py",
+      "bytes": 4587,
+      "sha256": "1f141d10344152a2102c5d8aef18c5c4e385c26a1ebe704f45435e9509c60c9c"
+    },
+    {
+      "path": "tools/release_050/freeze_baseline.py",
+      "bytes": 18066,
+      "sha256": "aaec169c8cb8e55a97bfd798075b0c195ae2b05120ab6417aa0608e7069e88f6"
+    },
+    {
+      "path": "tools/release_050/native_source.py",
+      "bytes": 11930,
+      "sha256": "56cca5b48a22d7ee48445029d4da3eaf561b04d8c76a363438f4cf976f4b1365"
+    },
+    {
+      "path": "tools/release_050/reference_contracts.py",
+      "bytes": 1958,
+      "sha256": "3d2f5ae6be904bfa73b149b523a4166fd25bda935aa198cdb731b858438ddfba"
+    },
+    {
+      "path": "tools/release_050/release.py",
+      "bytes": 11908,
+      "sha256": "3f32100f2d6d00deeb4ccc5a5db528283e03666c7a1df4cf57470ada78fef9a0"
+    },
+    {
+      "path": "tools/release_050/report.py",
+      "bytes": 10933,
+      "sha256": "23db92ce7f78f69b158ea6075bf367e690193af3b54c2af93621a5bb2c80598a"
+    },
+    {
+      "path": "tools/release_050/source_policy.py",
+      "bytes": 4820,
+      "sha256": "9734892de5a13a21c3213ecfe641e1eba1cf4dddcae4454727916d3e793fe11b"
+    },
+    {
+      "path": "tools/release_051/allocate_ids.ps1",
+      "bytes": 2535,
+      "sha256": "c40fcc589768d8087851b1de83432306f1ea810493a1746858dd0732b05771bb"
+    },
+    {
+      "path": "tools/release_051/checks.py",
+      "bytes": 3367,
+      "sha256": "51795f8b1c13b5460786df1f7ddb824c118e519679715b3b9f07362b1752ba77"
+    },
+    {
+      "path": "tools/release_051/common.py",
+      "bytes": 2637,
+      "sha256": "4c13ddf62f994455fa4c7c4637fa4a785141ec725c2d04f3a0ed31213aed9708"
+    },
+    {
+      "path": "tools/release_051/dependency_closure.py",
+      "bytes": 3213,
+      "sha256": "6001927cd30d7d6fc562c1a8c30163282d0f45201442d628aa008c402d6caab5"
+    },
+    {
+      "path": "tools/release_051/finalize.py",
+      "bytes": 2596,
+      "sha256": "b660fa61e153431370cafe168fbae22c5cea21e6c8b1aaf3fb33175251d85e75"
+    },
+    {
+      "path": "tools/release_051/freeze.py",
+      "bytes": 3150,
+      "sha256": "ca356ba5a4c360324299ca5362ff0ada1cf42b30feb7550119232844e9cc4ac9"
+    },
+    {
+      "path": "tools/release_051/inventory_native_lifecycle.py",
+      "bytes": 7093,
+      "sha256": "02ceafac20fc1d881eb540bd940372c6fb21f7fb113778c7520bbc91db681518"
+    },
+    {
+      "path": "tools/release_051/landmark_visibility.py",
+      "bytes": 21180,
+      "sha256": "15217ea1baf17708ec42168ec4a607e877e2f7b0781fed9b7d53430a722cf3ac"
+    },
+    {
+      "path": "tools/release_051/monastery_allroof_diagnostic.py",
+      "bytes": 1489,
+      "sha256": "82cfea1252212471376121d866b7ebb4df00506db4f95822f62f3e04eab22039"
+    },
+    {
+      "path": "tools/release_051/monastery_blender_health.py",
+      "bytes": 1358,
+      "sha256": "a98071d8732a3ecc8cdb8900bd9299f8bc0bf9c513c28f42edfd5a29bfff59eb"
+    },
+    {
+      "path": "tools/release_051/monastery_decode_control.py",
+      "bytes": 2455,
+      "sha256": "ee5a3fd31d6bfb569e6b6a270a67c2836cfd9c4db4e156035d54e050a0feb383"
+    },
+    {
+      "path": "tools/release_051/monastery_detail_components.py",
+      "bytes": 1776,
+      "sha256": "84897aaf2b8a4727959850bc3de9d4625c4da4868ebc1ef039113ed7f34ee45b"
+    },
+    {
+      "path": "tools/release_051/monastery_editable.py",
+      "bytes": 3294,
+      "sha256": "ba9fa7096c362fb274d8eeb53078582f0c2380390ca20b6faef98d4ab255272d"
+    },
+    {
+      "path": "tools/release_051/monastery_finalize.py",
+      "bytes": 2677,
+      "sha256": "509b6d3cf48f69a25a569201558b069ddeb8a5e7441a2f8402ae671696cd124f"
+    },
+    {
+      "path": "tools/release_051/monastery_measure_contacts.py",
+      "bytes": 5198,
+      "sha256": "5af010c9d92e207b1cab37a32bc2e773ca2ad76445cbce439730ca2651f60e29"
+    },
+    {
+      "path": "tools/release_051/monastery_native_decode.py",
+      "bytes": 6865,
+      "sha256": "9083948de3c54d86d5234676177576362d86130edd3443b025b91ff5ca589f20"
+    },
+    {
+      "path": "tools/release_051/monastery_native_readback.py",
+      "bytes": 3608,
+      "sha256": "cbbe4c7b184164b9aa2d0df130fa8b77c7c2821e61cdbfdbcbe167a6ef7c6111"
+    },
+    {
+      "path": "tools/release_051/monastery_preserve_canopy.py",
+      "bytes": 1337,
+      "sha256": "0c883cb9009a0897fd62f284e923f546e62b17448aa4cc04150751646d6a1577"
+    },
+    {
+      "path": "tools/release_051/monastery_preserve_experiment.py",
+      "bytes": 1384,
+      "sha256": "503d4931ce29a490bab12116e020a1084590b965bf80de599521b1693c336773"
+    },
+    {
+      "path": "tools/release_051/monastery_preview_extract.py",
+      "bytes": 8524,
+      "sha256": "85203c02186e9d5e140b87912c284b6bf843878dc7ea2767b7fe9a84eb542f71"
+    },
+    {
+      "path": "tools/release_051/monastery_probe.py",
+      "bytes": 2661,
+      "sha256": "dc34642118d7e3943b569867fbab6dd86dde6cdb49de5694248349dfe3a372da"
+    },
+    {
+      "path": "tools/release_051/monastery_render.py",
+      "bytes": 4082,
+      "sha256": "f2f9b7adf35c70432696e919bcda308325b3db02108de13d406e288d722c5ca3"
+    },
+    {
+      "path": "tools/release_051/monastery_repair.py",
+      "bytes": 20704,
+      "sha256": "60c39531989228824301e6692e34ec0af3b2701c2fe6605cfa531f660f6b8a6e"
+    },
+    {
+      "path": "tools/release_051/monastery_stage_diagnostic.py",
+      "bytes": 1454,
+      "sha256": "3c10c5542800ac6fc8c7ca92535943dd17350660491f0340cefec35b6c0b9e35"
+    },
+    {
+      "path": "tools/release_051/monastery_stock_prop.py",
+      "bytes": 1985,
+      "sha256": "03b114d1c05bbffd17a7046d4c3436f7e2c371e708462f008b9a54c6504d98bd"
+    },
+    {
+      "path": "tools/release_051/monastery_verify.py",
+      "bytes": 5236,
+      "sha256": "351a676c4dd070bb8af03c44c37464dfe1208ee1d8d55ea43e44711c49808b76"
+    },
+    {
+      "path": "tools/release_051/native.py",
+      "bytes": 6485,
+      "sha256": "eb3dae40de55362c2f20f86e1ed42bff7f08901bc6e16b271d3301d5296d1856"
+    },
+    {
+      "path": "tools/release_051/reference.py",
+      "bytes": 4805,
+      "sha256": "963d68f9a6660a4f3ee3ffcec1ba42008bd2f2822fb1ffd66a9e8d1ca1aacb98"
+    },
+    {
+      "path": "tools/release_051/release.py",
+      "bytes": 7912,
+      "sha256": "2b820c897cf98cd7e9a6fadd9cfad810fe35474eee9f7c3c2d1d76e42b5c1c3b"
+    },
+    {
+      "path": "tools/release_051/report.py",
+      "bytes": 7278,
+      "sha256": "12f53d8572b4286908e2aaef21ebccbfaaadc286d074da9084c1cbd2a68db164"
+    },
+    {
+      "path": "tools/release_051/traps.py",
+      "bytes": 6421,
+      "sha256": "baf5a7c2f65698d45e503efafc30be1704cb4060b39fb489a191f32ec93f8cfc"
+    },
+    {
+      "path": "tools/release_052/common.py",
+      "bytes": 2890,
+      "sha256": "164aff758d847f8565b9b9e7f5e7fe7d7ccffd24ef4c8e5aaaf1f71eccff96b4"
+    },
+    {
+      "path": "tools/release_052/diagnostic_a.py",
+      "bytes": 12088,
+      "sha256": "a2e632756fae3848d74c46fe7acf8252184f9368bb108a05d993f91d9963d646"
+    },
+    {
+      "path": "tools/release_052/diagnostic_b.py",
+      "bytes": 5954,
+      "sha256": "c24b124364eaf422e1e74ab4438b73646806e065a78c300618c31348ab302d54"
+    },
+    {
+      "path": "tools/release_052/freeze.py",
+      "bytes": 1928,
+      "sha256": "62ff4e7b6ad5c74029f8219f9c4571caa4a01e3c9185da634ee18dcd0ed7389d"
+    },
+    {
+      "path": "tools/release_052/landmark_options_probe.py",
+      "bytes": 6173,
+      "sha256": "c541f91b24cb111f58cfda935d5d95082d1ff242335091906102bb74a2c22ac0"
+    },
+    {
+      "path": "tools/release_052/stealth_inventory.py",
+      "bytes": 2670,
+      "sha256": "cd57cf41d3e8ddf978c3ddef00700ea06225008e309802e006699175d4a14d7e"
+    },
+    {
+      "path": "tools/release_052/stealth_native_trace.py",
+      "bytes": 2556,
+      "sha256": "95c107bfa4100bf8f03b67ae65a52a7daf43c49b73a92334d0f136a9cd41acd2"
+    },
+    {
+      "path": "tools/release_060/archer_sample.py",
+      "bytes": 13306,
+      "sha256": "d8f377942ab32a7f8281e184aa05f255115c33613d757a7ce8b1975f46a7dd0a"
+    },
+    {
+      "path": "tools/release_060/baseline.py",
+      "bytes": 3792,
+      "sha256": "2d0a0adfd1c8dc88fcf7c1801e0c4802c6af273698e1c9409fbc551f80b8f81d"
+    },
+    {
+      "path": "tools/release_060/common.py",
+      "bytes": 4120,
+      "sha256": "d493c112b0160548b8ab982f611069c3ee47c5b1ceb8cd1971a258937d7acc3c"
+    },
+    {
+      "path": "tools/release_060/donors.py",
+      "bytes": 7841,
+      "sha256": "d940f8d0af05b5dee33ff6c73fd273622d2c6362022f0300320ba8ed9dce97d7"
+    },
+    {
+      "path": "tools/release_060/freeze_dependencies.py",
+      "bytes": 1770,
+      "sha256": "64b64f119dbb497834a7b6387bd1ffd2608fbc2c2216b5898820985b78c463ce"
+    },
+    {
+      "path": "tools/release_060/inventory.py",
+      "bytes": 60120,
+      "sha256": "61063b7ce3b30d9be15a08436ec7e858014acce95770561779ce554a9974d266"
+    },
+    {
+      "path": "tools/release_060/pilot_author_blender.py",
+      "bytes": 21026,
+      "sha256": "6b6baba5854780c5ccdba8502f236df9063f1a0b7d326d57633cd8dc0503d404"
+    },
+    {
+      "path": "tools/release_060/pilot_decode.py",
+      "bytes": 5789,
+      "sha256": "8c4c8285d53c7db28b4d408bb5b52997dacfd6aaa5c2a2d385ffecd8fca4d874"
+    },
+    {
+      "path": "tools/release_060/pilot_equipment.py",
+      "bytes": 4975,
+      "sha256": "13e085dd75bf4d43531566332976289c83f918b609109f5849c744c84825fcea"
+    },
+    {
+      "path": "tools/release_060/pilot_index.py",
+      "bytes": 4847,
+      "sha256": "bae17c09b4b126df58a05ff244e1a30334d0e035e80719021fb84528fa055c68"
+    },
+    {
+      "path": "tools/release_060/pilot_review_blender.py",
+      "bytes": 5416,
+      "sha256": "4d3d2d87f29d6b144c97181768a7428fc150df3b0423ff24890f68ef0d639d50"
+    },
+    {
+      "path": "tools/release_060/pilot_trace.py",
+      "bytes": 9886,
+      "sha256": "6f96d87b0a53dee4c4db08b418f6a75587a236c70b711d17612d46f65ecb8eca"
+    },
+    {
+      "path": "tools/release_060/prepare.py",
+      "bytes": 1781,
+      "sha256": "09757177eb405ae516e6075b5269263a3c1adc85b647b2692dbfb4d9a4bcdf38"
+    },
+    {
+      "path": "tools/release_060/PROGRESS.md",
+      "bytes": 3351,
+      "sha256": "8219f388d48a96499c929417d930455fcf1728f363d2264a3cc3964a3390d4f7"
+    },
+    {
+      "path": "tools/release_060/qualify_archer.py",
+      "bytes": 5692,
+      "sha256": "1e82b53855b040beec4177ec5880a5ca7f7f9d939cea8282ef245fc54d9d70a4"
+    },
+    {
+      "path": "tools/release_060/rattan_probe.py",
+      "bytes": 2695,
+      "sha256": "2b6cf375a90335d73d8e48098eed11042eafe08792e048749c4c414628b97c27"
+    },
+    {
+      "path": "tools/release_060/README.md",
+      "bytes": 3815,
+      "sha256": "b956b26f93c5528070838cf9058c49e9f8d7c338c74b00a4cc765abab0c83873"
+    },
+    {
+      "path": "tools/release_060/review_gallery.py",
+      "bytes": 4982,
+      "sha256": "97dfbbec94c35c39fa9fdea2f262b62996b7db0bbbba027c0726dc197a18a46f"
+    },
+    {
+      "path": "tools/release_060/test_baseline.py",
+      "bytes": 2178,
+      "sha256": "e96216d577a8201bf9025f7b4bb9aa9910593d6c3c7ae526e1274c9e6df642d0"
+    },
+    {
+      "path": "tools/release_060/test_inventory.py",
+      "bytes": 3110,
+      "sha256": "bc90a79c2055e2ce1ff7d811870adbffa7513d60089ecf04fe38ad7a3355e12d"
+    },
+    {
+      "path": "tools/release_060/test_preparation.py",
+      "bytes": 3744,
+      "sha256": "8a923d9e6f5e1054836738949afa7ebca778f06f80d2e64645b48adf0bc4ff18"
+    },
+    {
+      "path": "tools/release_060/verify_preparation.py",
+      "bytes": 2546,
+      "sha256": "b49dcd8b397cafe963618d77e1bcbbdef619abb640c51378c2bc90ec3e9805ba"
+    },
+    {
+      "path": "tools/verify_runtime_package.py",
+      "bytes": 3725,
+      "sha256": "00d7ee123045e3256dbe675e8a144f3f9d3a1c8b72578e5005d68b19d0bed8b6"
+    },
+    {
+      "path": "tools/verify_workspace.py",
+      "bytes": 1597,
+      "sha256": "4460327e4a9f15b32d56be7fb478ea685d5e9806640775995c8f02e65836bc78"
+    },
+    {
+      "path": "tools/workspace_support.py",
+      "bytes": 10519,
+      "sha256": "f73915bdf3772806ecaa3b2be2e3faab5fb872dfd1d2589d3ee7d5ca7ab6d184"
+    },
+    {
+      "path": "tools/workspace.ps1",
+      "bytes": 1035,
+      "sha256": "a2897f6cd32a2d4cfb507af735f4c5bdd502d33078b0dfac11136ee0eb4a0133"
+    },
+    {
+      "path": "workspace.json",
+      "bytes": 1923,
+      "sha256": "29c9c14aaa66dbf6430e58a2aea17557f7a8c9289750de45091a91afb8519807"
+    }
+  ]
+}

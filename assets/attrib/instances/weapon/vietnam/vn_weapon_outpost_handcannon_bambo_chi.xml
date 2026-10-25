@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="range">
+			<float name="max" value="8" overrideParent="True" />
+		</group>
+		<group name="burst">
+			<bool name="can_burst" value="True" overrideParent="True" />
+			<group name="duration">
+				<float name="min" value="0.5" overrideParent="True" />
+				<float name="max" value="0.5" overrideParent="True" />
+			</group>
+			<group name="rate_of_fire">
+				<float name="min" value="24" overrideParent="True" />
+				<float name="max" value="24" overrideParent="True" />
+			</group>
+		</group>
+		<group name="reload">
+			<group name="duration">
+				<float name="min" value="5" overrideParent="True" />
+				<float name="max" value="5" overrideParent="True" />
+			</group>
+		</group>
+		<group name="damage">
+			<float name="min" value="1" overrideParent="True" />
+			<float name="max" value="1" overrideParent="True" />
+			<list name="on_penetrated_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="2147480814">
+					<string name="state_tree" value="malian_poison_arrows" overrideParent="True" />
+				</group>
+			</list>
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="1073742110" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_outpost_arrows" />
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<group name="range">
+				<float name="max" value="8" overrideParent="True" />
+			</group>
+			<group name="burst">
+				<bool name="can_burst" value="True" overrideParent="True" />
+				<group name="duration">
+					<float name="min" value="0.5" overrideParent="True" />
+					<float name="max" value="0.5" overrideParent="True" />
+				</group>
+				<group name="rate_of_fire">
+					<float name="min" value="24" overrideParent="True" />
+					<float name="max" value="24" overrideParent="True" />
+				</group>
+			</group>
+			<group name="reload">
+				<group name="duration">
+					<float name="min" value="5" overrideParent="True" />
+					<float name="max" value="5" overrideParent="True" />
+				</group>
+			</group>
+			<group name="damage">
+				<float name="min" value="1" overrideParent="True" />
+				<float name="max" value="1" overrideParent="True" />
+				<list name="on_penetrated_state_trees" overrideParent="True">
+					<group name="container" List.ItemID="2147480814">
+						<string name="state_tree" value="malian_poison_arrows" overrideParent="True" />
+					</group>
+				</list>
+			</group>
+		</group>
+		<uniqueid name="pbgid" value="1073742110" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_outpost_arrows" />
+	</variant>
+</instance>

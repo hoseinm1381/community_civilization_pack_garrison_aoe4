@@ -1,0 +1,2820 @@
+{
+  "schema": "0.7.0-vietnam-unit-inventory-v1",
+  "generated_utc": "2026-10-17T21:15:37.571875+00:00",
+  "scope": "Static source inventory only; does not claim runtime availability, voice playback, build/cook/import or native match proof.",
+  "profiles": {
+    "SCOUT": {
+      "stock_spd": "chinese_scout.spd",
+      "speaker": "scout",
+      "records": 673,
+      "media_refs": 1551,
+      "contexts": [
+        "acknowledge",
+        "attack",
+        "attackMove",
+        "attackSameType",
+        "charge",
+        "enemySpotted",
+        "formation",
+        "move",
+        "select",
+        "stop",
+        "resourceHunt",
+        "pickUpCarcass",
+        "dropOffHerd",
+        "dropOffCarcass",
+        "efforts"
+      ],
+      "sha256": "5b09f1e392162cd435696d191a4deddea30ad883a5113730c09a0d0125404dfb",
+      "path": "0.8.0/research_tools/stock_profiles/chinese_scout.spd"
+    },
+    "SCOUT_F": {
+      "stock_spd": "chinese_scoutfemale.spd",
+      "speaker": "scoutFemale",
+      "records": 656,
+      "media_refs": 1593,
+      "contexts": [
+        "acknowledge",
+        "attack",
+        "attackMove",
+        "attackSameType",
+        "charge",
+        "enemySpotted",
+        "formation",
+        "move",
+        "select",
+        "stop",
+        "resourceHunt",
+        "pickUpCarcass",
+        "dropOffHerd",
+        "efforts"
+      ],
+      "sha256": "0cb7079f2db7349a828d53509934f00e0a08be463096f5bd2534d75593d88c9a",
+      "path": "0.8.0/research_tools/stock_profiles/chinese_scoutfemale.spd",
+      "planned_script_bank": false,
+      "status": "stock-only candidate profile examined; no evidence it is reachable from the Vietnamese scout"
+    },
+    "NAVAL_FISH": {
+      "stock_spd": "chinese_tradeship.spd",
+      "speaker": "tradeShip",
+      "records": 391,
+      "media_refs": 752,
+      "contexts": [
+        "acknowledge",
+        "attack",
+        "attackMove",
+        "celebrate",
+        "efforts",
+        "hold",
+        "move",
+        "reactProud",
+        "select",
+        "stop",
+        "targetDestroyed",
+        "underAttack",
+        "weaponAim",
+        "weaponFire"
+      ],
+      "sha256": "4fe140dbfff8baadc3d5892685c5990b152b7fe8578e0801237d24547ef2d0a0",
+      "path": "0.8.0/research_tools/stock_profiles/chinese_tradeship.spd",
+      "notes": "Fishing boat SBPS explicitly selects tradeShip; same stock SPD as trade ship, but action routing remains distinct/unproven."
+    },
+    "NAVAL_TRANSPORT": {
+      "stock_spd": "chinese_scoutship.spd",
+      "speaker": "scoutShip",
+      "records": 323,
+      "media_refs": 584,
+      "contexts": [
+        "acknowledge",
+        "acknowledgeGMR",
+        "celebrate",
+        "effortDeath",
+        "effortFear",
+        "effortIncomingProjectile",
+        "enemySpotted",
+        "hold",
+        "moveGC",
+        "moveSU",
+        "select",
+        "selectGC",
+        "stop",
+        "structureRepair",
+        "underAttack"
+      ],
+      "sha256": "2ecae1656a59baf914ba2ca8e4162d3868df0cadf3bbe5b1675a0b5924b297ef",
+      "path": "0.8.0/research_tools/stock_profiles/chinese_scoutship.spd",
+      "notes": "Transport SBPS explicitly selects scoutShip. SPD offers structureRepair, not warfare weapon contexts."
+    },
+    "NAVAL_MILITARY": {
+      "stock_spd": "chinese_ship.spd",
+      "speaker": "ship",
+      "records": 427,
+      "media_refs": 807,
+      "contexts": [
+        "acknowledge",
+        "attack",
+        "attackMove",
+        "celebrate",
+        "efforts",
+        "hold",
+        "move",
+        "select",
+        "stop",
+        "targetDestroyed",
+        "underAttack",
+        "weaponAim",
+        "weaponFire"
+      ],
+      "sha256": "a84a008808217d007875892a655a3549ca36707e76c74cfd7624a0e8838442b1",
+      "path": "0.8.0/research_tools/stock_profiles/chinese_ship.spd",
+      "notes": "Combat ship and war galley explicitly choose ship; combat warship chooses warShip. Both available stock SPD banks have the same broad contexts but remain separate data.",
+      "underlying_speakers": [
+        "ship",
+        "warShip"
+      ],
+      "speaker_details": {
+        "ship": {
+          "stock_spd": "chinese_ship.spd",
+          "records": 427,
+          "media_refs": 807,
+          "contexts": [
+            "acknowledge",
+            "acknowledgeGMR",
+            "attack",
+            "attackMoveGC",
+            "attackMoveSU",
+            "celebrate",
+            "effortDeath",
+            "effortFear",
+            "effortIncomingProjectile",
+            "effortWarcry",
+            "hold",
+            "moveGC",
+            "moveSU",
+            "reactProud",
+            "select",
+            "selectGC",
+            "stop",
+            "targetDestroyed",
+            "underAttack",
+            "weaponAim",
+            "weaponFire"
+          ],
+          "sha256": "a84a008808217d007875892a655a3549ca36707e76c74cfd7624a0e8838442b1"
+        },
+        "warShip": {
+          "stock_spd": "chinese_warship.spd",
+          "records": 173,
+          "media_refs": 301,
+          "contexts": [
+            "acknowledge",
+            "acknowledgeGMR",
+            "attack",
+            "attackMoveGC",
+            "attackMoveSU",
+            "celebrate",
+            "effortDeath",
+            "effortFear",
+            "effortIncomingProjectile",
+            "effortWarcry",
+            "hold",
+            "moveGC",
+            "moveSU",
+            "reactProud",
+            "select",
+            "selectGC",
+            "stop",
+            "targetDestroyed",
+            "underAttack",
+            "weaponAim",
+            "weaponFire"
+          ],
+          "sha256": "1b240ed55279db0facad1aeec2a16fa8d743692c00644c3986ea8a9ba9eb0209"
+        }
+      }
+    },
+    "NAVAL_TRADE": {
+      "stock_spd": "chinese_tradeship.spd",
+      "speaker": "tradeShip",
+      "records": 391,
+      "media_refs": 752,
+      "contexts": [
+        "acknowledge",
+        "celebrate",
+        "dropoff",
+        "efforts",
+        "garrisonUnits",
+        "unloadUnits",
+        "hold",
+        "move",
+        "select",
+        "stop",
+        "resourceFish",
+        "setUpTradeRoute",
+        "tradeRouteSet",
+        "structureRepair",
+        "underAttack"
+      ],
+      "sha256": "4fe140dbfff8baadc3d5892685c5990b152b7fe8578e0801237d24547ef2d0a0",
+      "path": "0.8.0/research_tools/stock_profiles/chinese_tradeship.spd"
+    },
+    "NAVAL_FIRE": {
+      "stock_spd": "chinese_fireship.spd",
+      "speaker": "fireShip",
+      "records": 230,
+      "media_refs": 408,
+      "contexts": [
+        "acknowledge",
+        "celebrate",
+        "detonate",
+        "efforts",
+        "hold",
+        "move",
+        "select",
+        "stop",
+        "targetDestroyed",
+        "underAttack"
+      ],
+      "sha256": "884b09c4fc9a31133dff504414cadd9c37e18794fe94696bd5f22d645208f357",
+      "path": "0.8.0/research_tools/stock_profiles/chinese_fireship.spd",
+      "notes": "Explicit fireship squad speaker; decoded SPD contains detonate context."
+    },
+    "CIV_M": {
+      "current_metadata": "Vietnam villager SBPS sets race_code=chinese, inherits speaker/gender attachment metadata; direct effective speaker unresolved",
+      "profile_status": "inherited unresolved"
+    },
+    "CIV_F": {
+      "current_metadata": "same as CIV_M; female stock branch is inherited, not confirmed effective Vietnamese runtime selection",
+      "profile_status": "inherited unresolved"
+    },
+    "INFANTRY": {
+      "current_metadata": "No custom speaker metadata found on local line squads; inherits Chinese donor speech metadata; effective per-unit resolution untraced"
+    },
+    "ARCHER": {
+      "current_metadata": "No custom speaker metadata found on local archer squads; inherits Chinese donor speech metadata; effective resolution untraced"
+    },
+    "CROSSBOW": {
+      "current_metadata": "No custom speaker metadata found; inherits donor or local parent; effective resolution untraced"
+    },
+    "GUNNER": {
+      "current_metadata": "No custom speaker metadata found on local gunner squads; inherited effective speaker unresolved"
+    },
+    "CAVALRY": {
+      "current_metadata": "No custom speaker metadata found on local cavalry squads; inherited effective speaker unresolved"
+    },
+    "MONK": {
+      "current_metadata": "local vn_unit_monk_3_chi sets squad_speaker_code=monk, squad_name_code=monk; female branch and SPD not inspected"
+    },
+    "OFFICIAL": {
+      "current_metadata": "vn_unit_official_1_chi sets male speaker villagerMale and female speaker villagerFemale; distinct OFFICIAL voice not serialized"
+    },
+    "TRADER": {
+      "current_metadata": "local trader profile effective fields not confirmed; profile key is role-bank assignment pending source resolution"
+    },
+    "ELEPHANT": {
+      "current_metadata": "private war elephants and elephant handcannon set speaker warelephant, name war_elephant, race no_race; crew dialogue is not evidenced"
+    },
+    "SIEGE": {
+      "current_metadata": "local private siege squads primarily inherit; physical crew presence and crew dialogue inference excluded unless explicit"
+    }
+  },
+  "local_squad_definitions": [
+    {
+      "id": "vn_unit_archer_2_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_2_chi.xml",
+      "sha256": "a64c5df52c7bcb092d0244d5115729f4d2faaf261d7dd335e999f5d96ce06b76",
+      "pbgid": "1073742006",
+      "parent": "sbps\\races\\core\\unit_archer_2",
+      "age_tags": [
+        "scar_age2"
+      ],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 204,
+        "squad_type_age": 29,
+        "female_chance": 17
+      },
+      "voice_role_profile": "ARCHER",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_archer_2_vit",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_2_vit.xml",
+      "sha256": "c81bf07927ef02bdc9c913bd5cb09d9c8e66c81d6aaf3af4a491bfab1feb397c",
+      "pbgid": "1073741979",
+      "parent": "sbps\\races\\core\\unit_archer_2",
+      "age_tags": [
+        "scar_age2"
+      ],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 221,
+        "squad_type_age": 46,
+        "female_chance": 29
+      },
+      "voice_role_profile": "ARCHER",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_archer_3_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_3_chi.xml",
+      "sha256": "60dc9de97e3b71c9faf950b992608427d3a2ce5ec7a74aeb38806d743a37914e",
+      "pbgid": "1073742007",
+      "parent": "sbps\\races\\core\\unit_archer_3",
+      "age_tags": [
+        "scar_age3"
+      ],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 204,
+        "squad_type_age": 29,
+        "female_chance": 17
+      },
+      "voice_role_profile": "ARCHER",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_archer_3_vit",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_3_vit.xml",
+      "sha256": "af99c8b523fa61127d7dd2c1cfe6e30611957db0db79cedd55b36dc53e389475",
+      "pbgid": "1073741981",
+      "parent": "sbps\\races\\core\\unit_archer_3",
+      "age_tags": [
+        "scar_age3"
+      ],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 221,
+        "squad_type_age": 46,
+        "female_chance": 29
+      },
+      "voice_role_profile": "ARCHER",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_archer_4_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_4_chi.xml",
+      "sha256": "c8ab5e4e342e1071ced67ac265fa4617f6536fbdec24e7fc282a0fcbcb5b762a",
+      "pbgid": "1073742008",
+      "parent": "sbps\\races\\core\\unit_archer_4",
+      "age_tags": [
+        "scar_age4"
+      ],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 204,
+        "squad_type_age": 29,
+        "female_chance": 17
+      },
+      "voice_role_profile": "ARCHER",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_archer_4_vit",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_4_vit.xml",
+      "sha256": "558fa5a6ca86a762c0c2e6180c98be253ac0afec2809992cb0c199845c17261f",
+      "pbgid": "1073741983",
+      "parent": "sbps\\races\\core\\unit_archer_4",
+      "age_tags": [
+        "scar_age4"
+      ],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 221,
+        "squad_type_age": 46,
+        "female_chance": 29
+      },
+      "voice_role_profile": "ARCHER",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_bombard_4_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_bombard_4_chi.xml",
+      "sha256": "443c2df982a8b87af6ad561590493d26b25ba20fc281d7c339467fe6e3d5256a",
+      "pbgid": "1073742009",
+      "parent": "sbps\\races\\core\\unit_bombard_4",
+      "age_tags": [],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 35,
+        "female_chance": 18
+      },
+      "voice_role_profile": "SIEGE",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_bombard_4_chi_cheap",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_bombard_4_chi_cheap.xml",
+      "sha256": "d9d98ff419f3e1a9a9019e4a003843ec167c38e5fce03061567a9835de544f58",
+      "pbgid": "1073742010",
+      "parent": "sbps\\races\\core\\unit_bombard_4",
+      "age_tags": [],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 31,
+        "female_chance": 18
+      },
+      "voice_role_profile": "SIEGE",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_crossbowman_3_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_3_chi.xml",
+      "sha256": "2f9a71cf8ffce558248a35bdb01b6828797a1fa234dccbd4e8ff259eab66dc7a",
+      "pbgid": "1073742011",
+      "parent": "sbps\\races\\core\\unit_crossbowman_3",
+      "age_tags": [
+        "scar_age3"
+      ],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 211,
+        "squad_type_age": 33,
+        "female_chance": 17
+      },
+      "voice_role_profile": "CROSSBOW",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_crossbowman_4_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_4_chi.xml",
+      "sha256": "38d943e66bf91a36482b84d06ccf87a4fa57c4a139944284c3ecf1e2d17761db",
+      "pbgid": "1073742013",
+      "parent": "sbps\\races\\core\\unit_crossbowman_4",
+      "age_tags": [
+        "scar_age4"
+      ],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 214,
+        "squad_type_age": 33,
+        "female_chance": 17
+      },
+      "voice_role_profile": "CROSSBOW",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_culverin_4_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_culverin_4_chi.xml",
+      "sha256": "a3a925093cc2c7500de5b53cb64d6e6d05acf8e11fbdc2e677fe45085d7faa56",
+      "pbgid": "1073742015",
+      "parent": "sbps\\races\\core\\unit_culverin_4",
+      "age_tags": [],
+      "female_chance": null,
+      "speaker": null,
+      "squad_name": "culverin",
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 29,
+        "name_code": 43
+      },
+      "voice_role_profile": "SIEGE",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "unresolved_from_local_source",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_culverin_4_chi_cheap",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_culverin_4_chi_cheap.xml",
+      "sha256": "77b7989d643cfcc0818101f4ea476e108fc250f1a2b0d20f828186456b1e173c",
+      "pbgid": "1073742016",
+      "parent": "sbps\\races\\core\\unit_culverin_4",
+      "age_tags": [],
+      "female_chance": null,
+      "speaker": null,
+      "squad_name": "culverin",
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 25,
+        "name_code": 37
+      },
+      "voice_role_profile": "SIEGE",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "unresolved_from_local_source",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_handcannon_4_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_4_chi.xml",
+      "sha256": "4776f85cf530535dbcede8b64ee49575ea36ff42d834c13bdba97a98231e80a3",
+      "pbgid": "1073742017",
+      "parent": "sbps\\races\\core\\unit_handcannon_4",
+      "age_tags": [
+        "scar_age4"
+      ],
+      "female_chance": null,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 41,
+        "squad_type_age": 61
+      },
+      "voice_role_profile": "GUNNER",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "unresolved_from_local_source",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_handcannon_4_chi_cheap",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_4_chi_cheap.xml",
+      "sha256": "aeac67d513d3c2a7f54821a81f197759e3567b06ea6c5b3e56ace3dcd936cd9f",
+      "pbgid": "1073742018",
+      "parent": "sbps\\races\\core\\unit_handcannon_4",
+      "age_tags": [
+        "scar_age4"
+      ],
+      "female_chance": null,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 37,
+        "squad_type_age": 55
+      },
+      "voice_role_profile": "GUNNER",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "unresolved_from_local_source",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_horseman_2_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_horseman_2_chi.xml",
+      "sha256": "1ae6774b58798e1ad16738f67d6b7d24018fc5bb20c9156b09004526809aab67",
+      "pbgid": "1073742021",
+      "parent": "sbps\\races\\core\\unit_horseman_2",
+      "age_tags": [],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 42,
+        "female_chance": 17
+      },
+      "voice_role_profile": "CAVALRY",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_horseman_3_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_horseman_3_chi.xml",
+      "sha256": "73fee5e3de7661b841d5fd3afbdb5486028675150771cf1d80b1ca1609da073c",
+      "pbgid": "1073742022",
+      "parent": "sbps\\races\\core\\unit_horseman_3",
+      "age_tags": [],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 42,
+        "female_chance": 17
+      },
+      "voice_role_profile": "CAVALRY",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_horseman_4_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_horseman_4_chi.xml",
+      "sha256": "99b64bc7a3ad6bbac9396dbfa0a92c0d67fac74cf387e7831927b22c6c873175",
+      "pbgid": "1073742023",
+      "parent": "sbps\\races\\core\\unit_horseman_4",
+      "age_tags": [],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 42,
+        "female_chance": 17
+      },
+      "voice_role_profile": "CAVALRY",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_knight_3_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_knight_3_chi.xml",
+      "sha256": "d40a20091a925d08699c2868b97f76b5abb5778f1634e5bd6f9282d123246db7",
+      "pbgid": "1073742024",
+      "parent": "sbps\\races\\core\\unit_knight_3",
+      "age_tags": [
+        "scar_age3"
+      ],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 50,
+        "squad_type_age": 29,
+        "female_chance": 17
+      },
+      "voice_role_profile": "CAVALRY",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_knight_4_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_knight_4_chi.xml",
+      "sha256": "dfa4d9eb2bf49c35c6601292b2fcfe674e1f2b0b508126bc8bf28c939c559192",
+      "pbgid": "1073742025",
+      "parent": "sbps\\races\\core\\unit_knight_4",
+      "age_tags": [],
+      "female_chance": null,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 35
+      },
+      "voice_role_profile": "CAVALRY",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "unresolved_from_local_source",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_manatarms_3_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_manatarms_3_chi.xml",
+      "sha256": "f1ea225cae1e58f954b24e7f10743ae6d6aca53d2fcc648810186ae7d5e423e0",
+      "pbgid": "1073742026",
+      "parent": "sbps\\races\\core\\unit_manatarms_3",
+      "age_tags": [],
+      "female_chance": null,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 157
+      },
+      "voice_role_profile": "INFANTRY",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "unresolved_from_local_source",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_manatarms_3_mon_for_vit",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_manatarms_3_mon_for_vit.xml",
+      "sha256": "e5c9bed06521551cc03ed11afd2c2943e58013dc7336dafcb95d5a40a53efb5a",
+      "pbgid": "1073742027",
+      "parent": "sbps\\races\\core\\unit_manatarms_3",
+      "age_tags": [],
+      "female_chance": null,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 26
+      },
+      "voice_role_profile": "INFANTRY",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "unresolved_from_local_source",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_manatarms_4_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_manatarms_4_chi.xml",
+      "sha256": "2f360263087a99998a1b49c0de6771ddf73aecae802d3a39b5205348890987a9",
+      "pbgid": "1073742028",
+      "parent": "sbps\\races\\core\\unit_manatarms_4",
+      "age_tags": [
+        "scar_age4"
+      ],
+      "female_chance": null,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 166,
+        "squad_type_age": 41
+      },
+      "voice_role_profile": "INFANTRY",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "unresolved_from_local_source",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_manatarms_4_mon_for_vit",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_manatarms_4_mon_for_vit.xml",
+      "sha256": "8cf7072705e8a7e196e6a0314850859c93b897ec76fae5e103a525b6696cceb9",
+      "pbgid": "1073742029",
+      "parent": "sbps\\races\\core\\unit_manatarms_4",
+      "age_tags": [],
+      "female_chance": null,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 26
+      },
+      "voice_role_profile": "INFANTRY",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "unresolved_from_local_source",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_mangonel_3_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_mangonel_3_chi.xml",
+      "sha256": "19028314647efc0e4cf33b430bebf1fb3fd1614a9f7e5563b005c59a7c65c910",
+      "pbgid": "1073742030",
+      "parent": "sbps\\races\\core\\unit_mangonel_3",
+      "age_tags": [],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 58,
+        "female_chance": 21
+      },
+      "voice_role_profile": "SIEGE",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_monk_3_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_monk_3_chi.xml",
+      "sha256": "e09c47afad1e4e6979fe8e9a461da3e9d40695f5b94512e5c6c666b082502b47",
+      "pbgid": "1073742031",
+      "parent": "sbps\\races\\core\\unit_monk_3",
+      "age_tags": [
+        "scar_age3"
+      ],
+      "female_chance": 0.0,
+      "speaker": "monk",
+      "squad_name": "monk",
+      "race_code": "no_race",
+      "evidence": {
+        "parent_pbg": 334,
+        "squad_type_age": 257,
+        "female_chance": 14,
+        "speaker": 265,
+        "name_code": 268
+      },
+      "voice_role_profile": "MONK",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_official_1_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_official_1_chi.xml",
+      "sha256": "bb1f9016b8fa618109e69f345e8fbb17a10f76c9d3eb51460559d00eec080b1a",
+      "pbgid": "1073742032",
+      "parent": "",
+      "age_tags": [
+        "scar_age1"
+      ],
+      "female_chance": 0.0,
+      "speaker": "villagerMale",
+      "squad_name": "official",
+      "race_code": "no_race",
+      "evidence": {
+        "parent_pbg": 206,
+        "squad_type_age": 278,
+        "female_chance": 14,
+        "speaker": 317,
+        "name_code": 320
+      },
+      "voice_role_profile": "OFFICIAL",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_ribauldequin_4_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_ribauldequin_4_chi.xml",
+      "sha256": "451da0c98634a3a618b3b7cd94a8828daa1f3d621adea60c04aedf382d788feb",
+      "pbgid": "1073742033",
+      "parent": "sbps\\races\\core\\unit_ribauldequin_4",
+      "age_tags": [],
+      "female_chance": null,
+      "speaker": null,
+      "squad_name": "ribauldequin",
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 35,
+        "name_code": 26
+      },
+      "voice_role_profile": "SIEGE",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "unresolved_from_local_source",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_scout_1_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_scout_1_chi.xml",
+      "sha256": "e8261339c9a1de5be5ef6d09cb72642fceedb3c45bffc8657b203e1dcde8438d",
+      "pbgid": "1073742034",
+      "parent": "sbps\\races\\core\\unit_scout_1",
+      "age_tags": [],
+      "female_chance": null,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 32
+      },
+      "voice_role_profile": "SCOUT",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "unresolved_from_local_source",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_spearman_1_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_1_chi.xml",
+      "sha256": "e09ac159d7773101db40e06b87b05d58b9b3007965be33e190dfb7c50d48febb",
+      "pbgid": "1073742035",
+      "parent": "sbps\\races\\core\\unit_spearman_1",
+      "age_tags": [
+        "scar_age1"
+      ],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 31,
+        "squad_type_age": 47,
+        "female_chance": 17
+      },
+      "voice_role_profile": "INFANTRY",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_spearman_2_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_2_chi.xml",
+      "sha256": "d215d3fa026f66302a7ece7f67e90545f29e25c2518a0dcd54b841710168adce",
+      "pbgid": "1073742036",
+      "parent": "sbps\\races\\core\\unit_spearman_2",
+      "age_tags": [
+        "scar_age2"
+      ],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 31,
+        "squad_type_age": 47,
+        "female_chance": 17
+      },
+      "voice_role_profile": "INFANTRY",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_spearman_3_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_3_chi.xml",
+      "sha256": "fbf2bb7ee4f5822a39e356bd0c29038d77ef7ec1e2d51cf6c87969c0a4c5006a",
+      "pbgid": "1073742037",
+      "parent": "sbps\\races\\core\\unit_spearman_3",
+      "age_tags": [
+        "scar_age3"
+      ],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 31,
+        "squad_type_age": 47,
+        "female_chance": 17
+      },
+      "voice_role_profile": "INFANTRY",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_spearman_4_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_4_chi.xml",
+      "sha256": "c6c9700dd446a7d153fbb858c3e04ab962c87e554c64d164755b4b848676668b",
+      "pbgid": "1073742038",
+      "parent": "sbps\\races\\core\\unit_spearman_4",
+      "age_tags": [
+        "scar_age4"
+      ],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 31,
+        "squad_type_age": 47,
+        "female_chance": 17
+      },
+      "voice_role_profile": "INFANTRY",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_spearman_fire_1_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_1_chi.xml",
+      "sha256": "e2d96e4c9b9d81532e8801fcf32a6b6402260d112180b2c566410cbb1260a139",
+      "pbgid": "1073742039",
+      "parent": "sbps\\races\\core\\unit_spearman_1",
+      "age_tags": [
+        "scar_age1"
+      ],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 40,
+        "squad_type_age": 56,
+        "female_chance": 26
+      },
+      "voice_role_profile": "INFANTRY",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_spearman_fire_2_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_2_chi.xml",
+      "sha256": "51e14f4fb2aace34d97e3b6d4dbb0627bbd56890e728281f4c2100ee74f03b23",
+      "pbgid": "1073742040",
+      "parent": "sbps\\races\\core\\unit_spearman_2",
+      "age_tags": [
+        "scar_age2"
+      ],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 40,
+        "squad_type_age": 56,
+        "female_chance": 26
+      },
+      "voice_role_profile": "INFANTRY",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_spearman_fire_3_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_3_chi.xml",
+      "sha256": "6dd920e3ffbeb8a8992187684e6e6c5c1f834ca649d5262a804aa844e100fa79",
+      "pbgid": "1073742041",
+      "parent": "sbps\\races\\core\\unit_spearman_3",
+      "age_tags": [
+        "scar_age3"
+      ],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 40,
+        "squad_type_age": 56,
+        "female_chance": 26
+      },
+      "voice_role_profile": "INFANTRY",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_spearman_fire_4_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_4_chi.xml",
+      "sha256": "e3f63fa1ce9ef4cc29667dd76cfedc33fd245064330b6d44f34cdbbf47a1518e",
+      "pbgid": "1073742042",
+      "parent": "sbps\\races\\core\\unit_spearman_4",
+      "age_tags": [
+        "scar_age4"
+      ],
+      "female_chance": 0.0,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 40,
+        "squad_type_age": 56,
+        "female_chance": 26
+      },
+      "voice_role_profile": "INFANTRY",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_villager_1_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_villager_1_chi.xml",
+      "sha256": "8ac1ea77c19484365da7b5d4f91091bd2e05ff75a3b5713aa4ec04fa577ba9df",
+      "pbgid": "1073742043",
+      "parent": "sbps\\races\\core\\unit_villager_1",
+      "age_tags": [
+        "scar_age1"
+      ],
+      "female_chance": null,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": "chinese",
+      "evidence": {
+        "parent_pbg": 1753,
+        "squad_type_age": 32
+      },
+      "voice_role_profile": "CIV_M",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "unresolved_from_local_source",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_villager_3_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_villager_3_chi.xml",
+      "sha256": "d7184a2848a0098a4e46e8d6b5df41a728855a9727f8983893c9efdf63c2790b",
+      "pbgid": "1073742044",
+      "parent": "sbps\\races\\core\\unit_villager_1",
+      "age_tags": [
+        "scar_age1"
+      ],
+      "female_chance": null,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 42,
+        "squad_type_age": 625
+      },
+      "voice_role_profile": "CIV_M",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "unresolved_from_local_source",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_villager_bambo_chi",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_villager_bambo_chi.xml",
+      "sha256": "55c8cb3f4602ac594dbc3852e38c81cbb0ab3b1dee9055e2b103b18836e926e5",
+      "pbgid": "1073742045",
+      "parent": "sbps\\races\\core\\unit_villager_1",
+      "age_tags": [
+        "scar_age1"
+      ],
+      "female_chance": null,
+      "speaker": null,
+      "squad_name": null,
+      "race_code": null,
+      "evidence": {
+        "parent_pbg": 34,
+        "squad_type_age": 49
+      },
+      "voice_role_profile": "CIV_M",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "unresolved_from_local_source",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_war_elephant_1_vit",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_war_elephant_1_vit.xml",
+      "sha256": "6c6d9db0c14a3a3877f52d4146cee3e8c746ba863642ecac9af9b262b774da42",
+      "pbgid": "1073742046",
+      "parent": "",
+      "age_tags": [],
+      "female_chance": 0.0,
+      "speaker": "warelephant",
+      "squad_name": "war_elephant",
+      "race_code": "no_race",
+      "evidence": {
+        "parent_pbg": 112,
+        "female_chance": 14,
+        "speaker": 315,
+        "name_code": 318
+      },
+      "voice_role_profile": "ELEPHANT",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_war_elephant_2_vit",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_war_elephant_2_vit.xml",
+      "sha256": "cb18fbc919a914e3185e48f2f6b37d31f5f0a9d65cdd030546b63d290650f555",
+      "pbgid": "1073742047",
+      "parent": "",
+      "age_tags": [],
+      "female_chance": 0.0,
+      "speaker": "warelephant",
+      "squad_name": "war_elephant",
+      "race_code": "no_race",
+      "evidence": {
+        "parent_pbg": 112,
+        "female_chance": 14,
+        "speaker": 315,
+        "name_code": 318
+      },
+      "voice_role_profile": "ELEPHANT",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_war_elephant_handcannon_4_vit",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_war_elephant_handcannon_4_vit.xml",
+      "sha256": "247d84776b22af323f7a5c9b2ff343464f5391658c964f41e1d06d1e59265e39",
+      "pbgid": "1073742048",
+      "parent": "",
+      "age_tags": [],
+      "female_chance": 0.0,
+      "speaker": "warelephant",
+      "squad_name": "war_elephant",
+      "race_code": "no_race",
+      "evidence": {
+        "parent_pbg": 115,
+        "female_chance": 18,
+        "speaker": 277,
+        "name_code": 280
+      },
+      "voice_role_profile": "GUNNER",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    },
+    {
+      "id": "vn_unit_war_elephant_handcannon_4_vit_free",
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_war_elephant_handcannon_4_vit_free.xml",
+      "sha256": "636399eb1c26d3e40bece1fa3cd64ea649e9e727584631c812b74b827bd4c0ce",
+      "pbgid": "1073742049",
+      "parent": "",
+      "age_tags": [],
+      "female_chance": 0.0,
+      "speaker": "warelephant",
+      "squad_name": "war_elephant",
+      "race_code": "no_race",
+      "evidence": {
+        "parent_pbg": 342,
+        "female_chance": 18,
+        "speaker": 263,
+        "name_code": 266
+      },
+      "voice_role_profile": "GUNNER",
+      "voice_role_basis": "Creative/unit-family assignment only; direct/effective inherited speaker resolution is separate.",
+      "effective_gender_variant": "female variant excluded by direct local squad_female_chance=0",
+      "effective_age_availability": "unresolved; age_tags records only explicit local scar_ageN tags, not inherited classification or production gate."
+    }
+  ],
+  "ebps_squad_consumers": {
+    "sbps\\vietnam\\vn_unit_archer_2_vit": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 59
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 1220
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 68
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 1244
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 1724
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 4371
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+        "line": 33
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+        "line": 841
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_archer_3_vit": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 115
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 1276
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 128
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 1304
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 1784
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 4431
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+        "line": 100
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+        "line": 908
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_archer_4_vit": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 171
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 1332
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 188
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 1364
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 1844
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 4491
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+        "line": 167
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+        "line": 975
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_crossbowman_3_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 283
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 1444
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 308
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 1484
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 1964
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 4611
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+        "line": 234
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+        "line": 1042
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_crossbowman_4_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 339
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 1500
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 368
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 1544
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 2024
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 4671
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+        "line": 298
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+        "line": 1106
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_handcannon_4_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 395
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 1556
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 428
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 1604
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 2084
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 4731
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+        "line": 429
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+        "line": 1237
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_spearman_1_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 451
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 1612
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 488
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 1664
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 2144
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 4791
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+        "line": 27
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+        "line": 971
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_spearman_2_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 507
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 1668
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 548
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 1724
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 2204
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 4851
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+        "line": 94
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+        "line": 1038
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_spearman_3_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 563
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 1724
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 608
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 1784
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 2264
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 4911
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+        "line": 161
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+        "line": 1105
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_spearman_4_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 619
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 1780
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 668
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 1844
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 2324
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 4971
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+        "line": 228
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+        "line": 1172
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_spearman_fire_1_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 675
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 1836
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 728
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 1904
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 2384
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 5031
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+        "line": 429
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+        "line": 1372
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_spearman_fire_2_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 731
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 1892
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 788
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 1964
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 2444
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 5091
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+        "line": 496
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+        "line": 1439
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_spearman_fire_3_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 787
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 1948
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 848
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 2024
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 2504
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 5151
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+        "line": 563
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+        "line": 1506
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_spearman_fire_4_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 843
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+        "line": 2004
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 908
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 2084
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 2564
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 5211
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+        "line": 630
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+        "line": 1573
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_handcannon_4_chi_cheap": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 968
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+        "line": 2144
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 2624
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+        "line": 5271
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_trung_foundaries_vit.xml",
+        "line": 186
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_trung_foundaries_vit.xml",
+        "line": 626
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+        "line": 493
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+        "line": 1301
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_war_elephant_1_vit": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_econ_food_control_chi.xml",
+        "line": 218
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_econ_food_control_chi.xml",
+        "line": 532
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_headquarters_control_chi.xml",
+        "line": 928
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_headquarters_control_chi.xml",
+        "line": 1939
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_vit_one_pilar_pagoda.xml",
+        "line": 260
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_vit_one_pilar_pagoda.xml",
+        "line": 649
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age2_headquarter_vit.xml",
+        "line": 1619
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age2_headquarter_vit.xml",
+        "line": 2884
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age2_headquarter_vit.xml",
+        "line": 4683
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_2_chi.xml",
+        "line": 191
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_2_chi.xml",
+        "line": 1149
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_2_chi.xml",
+        "line": 185
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_2_chi.xml",
+        "line": 1286
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_chi.xml",
+        "line": 180
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_chi.xml",
+        "line": 1487
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_chi.xml",
+        "line": 191
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_chi.xml",
+        "line": 1193
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_war_elephant_2_vit": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_econ_food_control_chi.xml",
+        "line": 278
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_econ_food_control_chi.xml",
+        "line": 592
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_headquarters_control_chi.xml",
+        "line": 988
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_headquarters_control_chi.xml",
+        "line": 1999
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_vit_one_pilar_pagoda.xml",
+        "line": 320
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_vit_one_pilar_pagoda.xml",
+        "line": 709
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age2_headquarter_vit.xml",
+        "line": 1679
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age2_headquarter_vit.xml",
+        "line": 2944
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age2_headquarter_vit.xml",
+        "line": 4743
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_chi.xml",
+        "line": 244
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_chi.xml",
+        "line": 1554
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_chi.xml",
+        "line": 255
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_chi.xml",
+        "line": 1257
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_villager_1_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age2_headquarter_vit.xml",
+        "line": 1471
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age2_headquarter_vit.xml",
+        "line": 2736
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age2_headquarter_vit.xml",
+        "line": 4535
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age2_minh_pagoda_control_vit.xml",
+        "line": 231
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_2_chi.xml",
+        "line": 53
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_2_chi.xml",
+        "line": 1017
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_2_chi.xml",
+        "line": 47
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_2_chi.xml",
+        "line": 1148
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_chi.xml",
+        "line": 42
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_chi.xml",
+        "line": 1349
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_chi.xml",
+        "line": 53
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_chi.xml",
+        "line": 1061
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_scout_1_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age2_headquarter_vit.xml",
+        "line": 1543
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age2_headquarter_vit.xml",
+        "line": 2808
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age2_headquarter_vit.xml",
+        "line": 4607
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_2_chi.xml",
+        "line": 120
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_2_chi.xml",
+        "line": 1081
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_2_chi.xml",
+        "line": 114
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_2_chi.xml",
+        "line": 1215
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_chi.xml",
+        "line": 109
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_chi.xml",
+        "line": 1416
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_chi.xml",
+        "line": 120
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_chi.xml",
+        "line": 1125
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_cavalry_control_chi.xml",
+        "line": 366
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_war_elephant_handcannon_4_vit": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_imperial_garden_vit.xml",
+        "line": 176
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_new_imperial_garden.xml",
+        "line": 257
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_war_elephant_handcannon_4_vit_free": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_imperial_garden_vit.xml",
+        "line": 248
+      }
+    ],
+    "sbps\\races\\english\\unit_abbey_king_2": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_new_imperial_garden.xml",
+        "line": 193
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_new_imperial_garden.xml",
+        "line": 706
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_bombard_4_chi_cheap": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_trung_foundaries_vit.xml",
+        "line": 246
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_trung_foundaries_vit.xml",
+        "line": 686
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+        "line": 421
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+        "line": 1177
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_culverin_4_chi_cheap": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_trung_foundaries_vit.xml",
+        "line": 306
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_trung_foundaries_vit.xml",
+        "line": 746
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+        "line": 485
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_ribauldequin_4_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_trung_foundaries_vit.xml",
+        "line": 366
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_trung_foundaries_vit.xml",
+        "line": 806
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_horseman_2_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_cavalry_control_chi.xml",
+        "line": 31
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_cavalry_control_chi.xml",
+        "line": 686
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_horseman_3_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_cavalry_control_chi.xml",
+        "line": 98
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_cavalry_control_chi.xml",
+        "line": 753
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_horseman_4_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_cavalry_control_chi.xml",
+        "line": 165
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_cavalry_control_chi.xml",
+        "line": 820
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_knight_3_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_cavalry_control_chi.xml",
+        "line": 232
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_cavalry_control_chi.xml",
+        "line": 887
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_knight_4_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_cavalry_control_chi.xml",
+        "line": 299
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_cavalry_control_chi.xml",
+        "line": 954
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_manatarms_3_mon_for_vit": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+        "line": 295
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+        "line": 1239
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_manatarms_4_mon_for_vit": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+        "line": 362
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+        "line": 1306
+      }
+    ],
+    "sbps\\races\\chinese\\unit_repeater_crossbowman_4_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+        "line": 362
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+        "line": 1170
+      }
+    ],
+    "sbps\\races\\chinese\\unit_springald_3_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+        "line": 28
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+        "line": 784
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+        "line": 1046
+      }
+    ],
+    "sbps\\races\\chinese\\unit_trebuchet_4_cw_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+        "line": 95
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_bombard_4_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+        "line": 159
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+        "line": 915
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+        "line": 1113
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_mangonel_3_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+        "line": 223
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+        "line": 979
+      }
+    ],
+    "sbps\\races\\chinese\\unit_workshop_ram_3_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+        "line": 294
+      }
+    ],
+    "sbps\\vietnam\\vn_unit_culverin_4_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+        "line": 354
+      }
+    ],
+    "sbps\\races\\chinese\\unit_trebuchet_4_tr_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+        "line": 851
+      }
+    ]
+  },
+  "official_inherited_naval_roster": [
+    {
+      "id": "unit_naval_fireship_3_chi",
+      "kind": "fireship",
+      "age_tag": "scar_age3",
+      "profile": "NAVAL_FIRE",
+      "evidence": "research_tools/official_attrib/building_unit_naval_chi.xml (decoded from official Attrib.sga); stock chinese_fireship.spd",
+      "source_xml": "research_tools/official_attrib/unit_naval_fireship_3_chi.xml",
+      "source_sha256": "920451dc39fec12fdd05bd5e5d731dc0ba536a83565fef5b52aa684022bcab3b",
+      "source_rgd_sha256": "5ff8f54ac012fb23d188fec8ca4f5a39d4a5162d7923943daae32347200c4ba7",
+      "age_tag_status": "explicit stock squad classification; actual availability additionally requires dock/tier and other unlocks",
+      "effective_squad_speaker_code": "fireShip",
+      "speaker_evidence": "official serialized SBPS squad_speaker_code; first/default variant line 41 in extracted XML",
+      "speaker_evidence_line": 41,
+      "stock_spd": "chinese_fireship.spd",
+      "speaker_profile_path": "research_tools/stock_profiles/chinese_fireship.spd",
+      "speaker_spd_sha256": "884b09c4fc9a31133dff504414cadd9c37e18794fe94696bd5f22d645208f357",
+      "speaker_profile_decoded": true
+    },
+    {
+      "id": "unit_naval_fishing_boat_2_chi",
+      "kind": "fishing boat",
+      "age_tag": "scar_age2",
+      "profile": "NAVAL_FISH",
+      "evidence": "official Dock production queue; stock SBPS tag; chinese_ship.spd",
+      "source_xml": "research_tools/official_attrib/unit_naval_fishing_boat_2_chi.xml",
+      "source_sha256": "4f927e382d58cff630cbef5429ecca80ff4f4b7377fabec05a2b44499dcd370a",
+      "source_rgd_sha256": "7aebbf4b5ee4e565532e47cd38e3814019d6487c6a401efe5214abff74f6eabf",
+      "age_tag_status": "explicit stock squad classification; actual availability additionally requires dock/tier and other unlocks",
+      "effective_squad_speaker_code": "tradeShip",
+      "speaker_evidence": "official serialized SBPS squad_speaker_code; first/default variant line 41 in extracted XML",
+      "speaker_evidence_line": 41,
+      "stock_spd": "chinese_tradeship.spd",
+      "speaker_profile_path": "research_tools/stock_profiles/chinese_tradeship.spd",
+      "speaker_spd_sha256": "4fe140dbfff8baadc3d5892685c5990b152b7fe8578e0801237d24547ef2d0a0",
+      "speaker_profile_decoded": true
+    },
+    {
+      "id": "unit_naval_transport_ship_2_chi",
+      "kind": "transport ship",
+      "age_tag": "scar_age2",
+      "profile": "NAVAL_TRANSPORT",
+      "evidence": "official Dock production queue; stock SBPS tag; chinese_ship.spd",
+      "source_xml": "research_tools/official_attrib/unit_naval_transport_ship_2_chi.xml",
+      "source_sha256": "493af39935a0e09a01477ba77269cdc6df455de86f5f35472cbeff0788daccf5",
+      "source_rgd_sha256": "ee2997583c68ef6b6bc7e0416caadc6f7c4bb3f792e09fda20cd53b75b756aab",
+      "age_tag_status": "explicit stock squad classification; actual availability additionally requires dock/tier and other unlocks",
+      "effective_squad_speaker_code": "scoutShip",
+      "speaker_evidence": "official serialized SBPS squad_speaker_code; first/default variant line 41 in extracted XML",
+      "speaker_evidence_line": 41,
+      "stock_spd": "chinese_scoutship.spd",
+      "speaker_profile_path": "research_tools/stock_profiles/chinese_scoutship.spd",
+      "speaker_spd_sha256": "2ecae1656a59baf914ba2ca8e4162d3868df0cadf3bbe5b1675a0b5924b297ef",
+      "speaker_profile_decoded": true
+    },
+    {
+      "id": "unit_naval_combat_ship_2_chi",
+      "kind": "combat ship",
+      "age_tag": "scar_age2",
+      "profile": "NAVAL_MILITARY",
+      "evidence": "official Dock production queue; stock SBPS tag; chinese_warship.spd",
+      "source_xml": "research_tools/official_attrib/unit_naval_combat_ship_2_chi.xml",
+      "source_sha256": "9d5aa9655d2f2d3e72122d4974384c7b8bb397c0e4855917c758fe6aa2e54b21",
+      "source_rgd_sha256": "64c9250231ff8ac352ae1336f228c219058a6066358a8519c92eb58275b3be6c",
+      "age_tag_status": "explicit stock squad classification; actual availability additionally requires dock/tier and other unlocks",
+      "effective_squad_speaker_code": "ship",
+      "speaker_evidence": "official serialized SBPS squad_speaker_code; first/default variant line 41 in extracted XML",
+      "speaker_evidence_line": 41,
+      "stock_spd": "chinese_ship.spd",
+      "speaker_profile_path": "research_tools/stock_profiles/chinese_ship.spd",
+      "speaker_spd_sha256": "a84a008808217d007875892a655a3549ca36707e76c74cfd7624a0e8838442b1",
+      "speaker_profile_decoded": true
+    },
+    {
+      "id": "unit_naval_combat_warship_4_chi",
+      "kind": "combat warship",
+      "age_tag": "scar_age4",
+      "profile": "NAVAL_MILITARY",
+      "evidence": "official Dock production queue; stock SBPS tag; chinese_warship.spd",
+      "source_xml": "research_tools/official_attrib/unit_naval_combat_warship_4_chi.xml",
+      "source_sha256": "036c46e04e49bdbb25d24152c39a1cdd528a0c301a2c4ae3d8732c6b4d7fd25a",
+      "source_rgd_sha256": "44fccc759f256cdf90dfab9399727886996a8e68a252ff53489233f700c88783",
+      "age_tag_status": "explicit stock squad classification; actual availability additionally requires dock/tier and other unlocks",
+      "effective_squad_speaker_code": "warShip",
+      "speaker_evidence": "official serialized SBPS squad_speaker_code; first/default variant line 41 in extracted XML",
+      "speaker_evidence_line": 41,
+      "stock_spd": "chinese_warship.spd",
+      "speaker_profile_path": "research_tools/stock_profiles/chinese_warship.spd",
+      "speaker_spd_sha256": "1b240ed55279db0facad1aeec2a16fa8d743692c00644c3986ea8a9ba9eb0209",
+      "speaker_profile_decoded": false
+    },
+    {
+      "id": "unit_naval_war_galley_3_chi",
+      "kind": "war galley",
+      "age_tag": "scar_age3",
+      "profile": "NAVAL_MILITARY",
+      "evidence": "official Dock production queue; stock SBPS tag; chinese_warship.spd",
+      "source_xml": "research_tools/official_attrib/unit_naval_war_galley_3_chi.xml",
+      "source_sha256": "986c8175399ddf6505c62b9650a0a1c8b8ac83b90d3a1798d13219832f94dd56",
+      "source_rgd_sha256": "2b45844d56ccabf662d94c45f16faaff8e0c5a795a8e0ec2b192641fcbd14d5a",
+      "age_tag_status": "explicit stock squad classification; actual availability additionally requires dock/tier and other unlocks",
+      "effective_squad_speaker_code": "ship",
+      "speaker_evidence": "official serialized SBPS squad_speaker_code; first/default variant line 41 in extracted XML",
+      "speaker_evidence_line": 41,
+      "stock_spd": "chinese_ship.spd",
+      "speaker_profile_path": "research_tools/stock_profiles/chinese_ship.spd",
+      "speaker_spd_sha256": "a84a008808217d007875892a655a3549ca36707e76c74cfd7624a0e8838442b1",
+      "speaker_profile_decoded": true
+    },
+    {
+      "id": "unit_naval_trade_ship_3_chi",
+      "kind": "trade ship",
+      "age_tag": "scar_age3",
+      "profile": "NAVAL_TRADE",
+      "evidence": "official Dock production queue; stock SBPS tag; chinese_tradeship.spd",
+      "source_xml": "research_tools/official_attrib/unit_naval_trade_ship_3_chi.xml",
+      "source_sha256": "046de5167ba91985ccdc098cb4dac723600173d42eb13e19bd918908f47918d9",
+      "source_rgd_sha256": "5da3dfdc2af02a4ab926be61158f1b6fb76946e82b707081872e3bda8931c15b",
+      "age_tag_status": "explicit stock squad classification; actual availability additionally requires dock/tier and other unlocks",
+      "effective_squad_speaker_code": "tradeShip",
+      "speaker_evidence": "official serialized SBPS squad_speaker_code; first/default variant line 41 in extracted XML",
+      "speaker_evidence_line": 41,
+      "stock_spd": "chinese_tradeship.spd",
+      "speaker_profile_path": "research_tools/stock_profiles/chinese_tradeship.spd",
+      "speaker_spd_sha256": "4fe140dbfff8baadc3d5892685c5990b152b7fe8578e0801237d24547ef2d0a0",
+      "speaker_profile_decoded": true
+    }
+  ],
+  "naval_dock_parent": "ebps\\races\\chinese\\buildings\\building_unit_naval_chi\\building_unit_naval_chi",
+  "naval_notes": {
+    "availability": "Official Dock queue items require the Vietnamese private dock (which inherits the Chinese dock) and relevant stock unlocks. scar_ageN tag is classification evidence, not a direct proof of a training gate.",
+    "dock_queue": "The seven units above appear in official production queue; Vietnamese dock introduces no local ship queue override. An internal naval scout construction reference is not treated as player-trainable.",
+    "transport_actions": "No crew dialogue inferred. Ship-level transport actions limited to movement/select/acknowledge/under-attack; no combat payload assumed.",
+    "fireship_actions": "Detonate exists in stock fireship SPD; inclusion here records a context, not proof of action routing or runtime playback.",
+    "repair_garrison": "Trade ship SPD includes structureRepair and garrisonUnits/unloadUnits. Applicability depends on engine routing and stock ability availability, not proven for all units. No local Vietnamese-specific override found.",
+    "verified_speakers": "Official extracted ship SBPS establishes explicit speaker codes: fishing boat=tradeShip; transport=scoutShip; combat ship=ship; war galley=ship; combat warship=warShip; trade ship=tradeShip; fireship=fireShip. SPD inventory is the selected profile bank, not proof of behavior/runtime.",
+    "fishing": "Fishing boat resolves to tradeShip SPD; this decoded SPD includes resourceFish. The role bank may remain NAVAL_FISH, but binds to tradeShip stock speaker data.",
+    "transport": "Transport resolves to scoutShip SPD; contexts include movement/select/acknowledge/underAttack, enemySpotted and structureRepair. No warfare weapon contexts found in that SPD.",
+    "military": "NAVAL_MILITARY covers two distinct stock speaker codes, ship and warShip; keep their profile mappings split in the script metadata or explicitly mark a shared creative bank."
+  },
+  "army": {
+    "path": "assets/attrib/instances/army/vietnam/vn_normal_chinese.xml",
+    "sha256": "cf78ac7c83834968d2d5997d805e587c542de2653c4d1ac14985d8c1bc0c5d53",
+    "line_evidence": {
+      "production_buildings_empty": [
+        58,
+        59
+      ],
+      "starting_units_default": [
+        313,
+        320
+      ],
+      "starting_units_campaign": [
+        679,
+        686
+      ],
+      "starting_resources": {
+        "table_line": 209
+      }
+    },
+    "starting_units": [
+      "1 Vietnamese scout vn_unit_scout_1_chi",
+      "6 Vietnamese villagers vn_unit_villager_1_chi",
+      "1 Vietnamese war elephant vn_unit_war_elephant_1_vit"
+    ],
+    "campaign_starting_force": "same composition in campaign variant; compare source around lines 680-688",
+    "notes": "Seven unit entries including six villagers and one scout/one elephant; the list also includes five sheep at lines 321-325 (excluded from speech roster). Production building list is empty in the army definition. Campaign list has same counts."
+  },
+  "scar": {
+    "path": "assets/scar/vietnam/initialization.scar",
+    "sha256": "a987233322636bef7fb42ca0c1322ad48c623c56e43e8dd6a04d600de65a1444",
+    "spawn_evidence": "Squad_CreateAndSpawnToward(elephant, player.id, 0, elephantPos, center) at line 66; spawned squad identifier is a war elephant. No other unit spawn APIs found by targeted search."
+  },
+  "official_speech": {
+    "source": "Installed SoundSpeechChinese.sga; selectively listed/extracted only 8 SPD files into research_tools/stock_profiles; SHA-256 and decoded summaries included under profiles.",
+    "decode_status": "speech helper emitted structural_readback_only; no qualified audio/playback/runtime proof. Chinese villager SPD parse failed Invalid media list; raw files retained with hashes where extracted.",
+    "contexts": "Suffixes cLowest/cLow/cMed/cHigh and iNorm/iHigh/iStealth were observed but their chronology/delivery interpretation was not traced; preserve as unverified.",
+    "selective_profiles": [
+      {
+        "path": "research_tools/stock_profiles/chinese_scoutship.spd",
+        "sha256": "2ecae1656a59baf914ba2ca8e4162d3868df0cadf3bbe5b1675a0b5924b297ef",
+        "bytes": 146512,
+        "decoded_path": "research_tools/profile_json/chinese_scoutship.json",
+        "records": 323,
+        "media_refs": 584,
+        "speaker": "scoutShip",
+        "contexts": [
+          "acknowledge",
+          "acknowledgeGMR",
+          "celebrate",
+          "effortDeath",
+          "effortFear",
+          "effortIncomingProjectile",
+          "enemySpotted",
+          "hold",
+          "moveGC",
+          "moveSU",
+          "select",
+          "selectGC",
+          "stop",
+          "structureRepair",
+          "underAttack"
+        ],
+        "status": "structural_readback_only; native_playback unverified"
+      }
+    ],
+    "decoded_profiles": [
+      {
+        "speaker": "warShip",
+        "spd": "research_tools/stock_profiles/chinese_warship.spd",
+        "json": "research_tools/profile_json/chinese_warship.json",
+        "records": 173,
+        "media_refs": 301,
+        "contexts": [
+          "acknowledge",
+          "acknowledgeGMR",
+          "attack",
+          "attackMoveGC",
+          "attackMoveSU",
+          "celebrate",
+          "effortDeath",
+          "effortFear",
+          "effortIncomingProjectile",
+          "effortWarcry",
+          "hold",
+          "moveGC",
+          "moveSU",
+          "reactProud",
+          "select",
+          "selectGC",
+          "stop",
+          "targetDestroyed",
+          "underAttack",
+          "weaponAim",
+          "weaponFire"
+        ],
+        "status": "structural_readback_only; native_playback unverified"
+      }
+    ],
+    "extraction_note": "Nine SPD members were selectively extracted from the installed SoundSpeechChinese.sga (eight original profiles plus scoutship); no large audio asset extraction. Structural readback only."
+  },
+  "source_files": [
+    {
+      "path": "assets/attrib/instances/army/vietnam/vn_normal_chinese.xml",
+      "sha256": "cf78ac7c83834968d2d5997d805e587c542de2653c4d1ac14985d8c1bc0c5d53",
+      "bytes": 41482
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_naval_chi.xml",
+      "sha256": "c1625c338a642b2aac40d44b5cefcada4dcc2d237723f5a76a2ddcdc402face8",
+      "bytes": 1010
+    },
+    {
+      "path": "assets/scar/vietnam/initialization.scar",
+      "sha256": "a987233322636bef7fb42ca0c1322ad48c623c56e43e8dd6a04d600de65a1444",
+      "bytes": 4574
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_2_chi.xml",
+      "sha256": "a64c5df52c7bcb092d0244d5115729f4d2faaf261d7dd335e999f5d96ce06b76",
+      "bytes": 25260
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_2_vit.xml",
+      "sha256": "c81bf07927ef02bdc9c913bd5cb09d9c8e66c81d6aaf3af4a491bfab1feb397c",
+      "bytes": 27511
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_3_chi.xml",
+      "sha256": "60dc9de97e3b71c9faf950b992608427d3a2ce5ec7a74aeb38806d743a37914e",
+      "bytes": 25304
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_3_vit.xml",
+      "sha256": "af99c8b523fa61127d7dd2c1cfe6e30611957db0db79cedd55b36dc53e389475",
+      "bytes": 27555
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_4_chi.xml",
+      "sha256": "c8ab5e4e342e1071ced67ac265fa4617f6536fbdec24e7fc282a0fcbcb5b762a",
+      "bytes": 25306
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_4_vit.xml",
+      "sha256": "558fa5a6ca86a762c0c2e6180c98be253ac0afec2809992cb0c199845c17261f",
+      "bytes": 27557
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_bombard_4_chi.xml",
+      "sha256": "443c2df982a8b87af6ad561590493d26b25ba20fc281d7c339467fe6e3d5256a",
+      "bytes": 6572
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_bombard_4_chi_cheap.xml",
+      "sha256": "d9d98ff419f3e1a9a9019e4a003843ec167c38e5fce03061567a9835de544f58",
+      "bytes": 5914
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_3_chi.xml",
+      "sha256": "2f9a71cf8ffce558248a35bdb01b6828797a1fa234dccbd4e8ff259eab66dc7a",
+      "bytes": 26146
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_4_chi.xml",
+      "sha256": "38d943e66bf91a36482b84d06ccf87a4fa57c4a139944284c3ecf1e2d17761db",
+      "bytes": 26619
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_culverin_4_chi.xml",
+      "sha256": "a3a925093cc2c7500de5b53cb64d6e6d05acf8e11fbdc2e677fe45085d7faa56",
+      "bytes": 5745
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_culverin_4_chi_cheap.xml",
+      "sha256": "77b7989d643cfcc0818101f4ea476e108fc250f1a2b0d20f828186456b1e173c",
+      "bytes": 5087
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_4_chi.xml",
+      "sha256": "4776f85cf530535dbcede8b64ee49575ea36ff42d834c13bdba97a98231e80a3",
+      "bytes": 29817
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_4_chi_cheap.xml",
+      "sha256": "aeac67d513d3c2a7f54821a81f197759e3567b06ea6c5b3e56ace3dcd936cd9f",
+      "bytes": 29159
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_horseman_2_chi.xml",
+      "sha256": "1ae6774b58798e1ad16738f67d6b7d24018fc5bb20c9156b09004526809aab67",
+      "bytes": 7889
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_horseman_3_chi.xml",
+      "sha256": "73fee5e3de7661b841d5fd3afbdb5486028675150771cf1d80b1ca1609da073c",
+      "bytes": 7889
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_horseman_4_chi.xml",
+      "sha256": "99b64bc7a3ad6bbac9396dbfa0a92c0d67fac74cf387e7831927b22c6c873175",
+      "bytes": 7891
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_knight_3_chi.xml",
+      "sha256": "d40a20091a925d08699c2868b97f76b5abb5778f1634e5bd6f9282d123246db7",
+      "bytes": 8995
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_knight_4_chi.xml",
+      "sha256": "dfa4d9eb2bf49c35c6601292b2fcfe674e1f2b0b508126bc8bf28c939c559192",
+      "bytes": 7330
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_manatarms_3_chi.xml",
+      "sha256": "f1ea225cae1e58f954b24e7f10743ae6d6aca53d2fcc648810186ae7d5e423e0",
+      "bytes": 17375
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_manatarms_3_mon_for_vit.xml",
+      "sha256": "e5c9bed06521551cc03ed11afd2c2943e58013dc7336dafcb95d5a40a53efb5a",
+      "bytes": 32658
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_manatarms_4_chi.xml",
+      "sha256": "2f360263087a99998a1b49c0de6771ddf73aecae802d3a39b5205348890987a9",
+      "bytes": 18571
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_manatarms_4_mon_for_vit.xml",
+      "sha256": "8cf7072705e8a7e196e6a0314850859c93b897ec76fae5e103a525b6696cceb9",
+      "bytes": 30198
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_mangonel_3_chi.xml",
+      "sha256": "19028314647efc0e4cf33b430bebf1fb3fd1614a9f7e5563b005c59a7c65c910",
+      "bytes": 6060
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_monk_3_chi.xml",
+      "sha256": "e09c47afad1e4e6979fe8e9a461da3e9d40695f5b94512e5c6c666b082502b47",
+      "bytes": 35880
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_official_1_chi.xml",
+      "sha256": "bb1f9016b8fa618109e69f345e8fbb17a10f76c9d3eb51460559d00eec080b1a",
+      "bytes": 39782
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_ribauldequin_4_chi.xml",
+      "sha256": "451da0c98634a3a618b3b7cd94a8828daa1f3d621adea60c04aedf382d788feb",
+      "bytes": 6835
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_scout_1_chi.xml",
+      "sha256": "e8261339c9a1de5be5ef6d09cb72642fceedb3c45bffc8657b203e1dcde8438d",
+      "bytes": 4011
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_1_chi.xml",
+      "sha256": "e09ac159d7773101db40e06b87b05d58b9b3007965be33e190dfb7c50d48febb",
+      "bytes": 27915
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_2_chi.xml",
+      "sha256": "d215d3fa026f66302a7ece7f67e90545f29e25c2518a0dcd54b841710168adce",
+      "bytes": 27917
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_3_chi.xml",
+      "sha256": "fbf2bb7ee4f5822a39e356bd0c29038d77ef7ec1e2d51cf6c87969c0a4c5006a",
+      "bytes": 27917
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_4_chi.xml",
+      "sha256": "c6c9700dd446a7d153fbb858c3e04ab962c87e554c64d164755b4b848676668b",
+      "bytes": 27919
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_1_chi.xml",
+      "sha256": "e2d96e4c9b9d81532e8801fcf32a6b6402260d112180b2c566410cbb1260a139",
+      "bytes": 28876
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_2_chi.xml",
+      "sha256": "51e14f4fb2aace34d97e3b6d4dbb0627bbd56890e728281f4c2100ee74f03b23",
+      "bytes": 28878
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_3_chi.xml",
+      "sha256": "6dd920e3ffbeb8a8992187684e6e6c5c1f834ca649d5262a804aa844e100fa79",
+      "bytes": 28878
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_4_chi.xml",
+      "sha256": "e3f63fa1ce9ef4cc29667dd76cfedc33fd245064330b6d44f34cdbbf47a1518e",
+      "bytes": 28880
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_villager_1_chi.xml",
+      "sha256": "8ac1ea77c19484365da7b5d4f91091bd2e05ff75a3b5713aa4ec04fa577ba9df",
+      "bytes": 206420
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_villager_3_chi.xml",
+      "sha256": "d7184a2848a0098a4e46e8d6b5df41a728855a9727f8983893c9efdf63c2790b",
+      "bytes": 276486
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_villager_bambo_chi.xml",
+      "sha256": "55c8cb3f4602ac594dbc3852e38c81cbb0ab3b1dee9055e2b103b18836e926e5",
+      "bytes": 17896
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_war_elephant_1_vit.xml",
+      "sha256": "6c6d9db0c14a3a3877f52d4146cee3e8c746ba863642ecac9af9b262b774da42",
+      "bytes": 39367
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_war_elephant_2_vit.xml",
+      "sha256": "cb18fbc919a914e3185e48f2f6b37d31f5f0a9d65cdd030546b63d290650f555",
+      "bytes": 39365
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_war_elephant_handcannon_4_vit.xml",
+      "sha256": "247d84776b22af323f7a5c9b2ff343464f5391658c964f41e1d06d1e59265e39",
+      "bytes": 18054
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_war_elephant_handcannon_4_vit_free.xml",
+      "sha256": "636399eb1c26d3e40bece1fa3cd64ea649e9e727584631c812b74b827bd4c0ce",
+      "bytes": 17334
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml",
+      "sha256": "1774268310a809c671eebb2574fed5384a6c6a361c08d94a7f89ecf833451e36",
+      "bytes": 115986
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+      "sha256": "86b5ab9e4a70d22ff39123c9aa7984ed4d81e0096ac70031f98c2b9134f11870",
+      "bytes": 123380
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+      "sha256": "532bf7a904688b588217cf5fd761cccdfb0a68611051c404f809658b627262f9",
+      "bytes": 286589
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+      "sha256": "7e82ed3db40ea3512e7f3fd1dd676843339c1805182f252ff41595f57d485cdd",
+      "bytes": 94894
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml",
+      "sha256": "03a23866d42a3879c7a90172ee35779aa95e6d91ae682e0c5784616ffec4ff63",
+      "bytes": 111946
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_trung_foundaries_vit.xml",
+      "sha256": "fea31538957f18ef73db7a793ffaa999932bd93ae2a83c7cf5baa5c1570609ca",
+      "bytes": 51144
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_econ_food_control_chi.xml",
+      "sha256": "1a1324f357c2c38c1e6f56d9099904699cb8a8b81b464335f7acda76d7e58c84",
+      "bytes": 44004
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_headquarters_control_chi.xml",
+      "sha256": "f91a0c3bef995f2ff58bb0c4aac6e3961a198e0b10d20c8c5539259f08c9e9cc",
+      "bytes": 113352
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_vit_one_pilar_pagoda.xml",
+      "sha256": "ecc75320286a2abf807e182d74d30dfc10f30d7555eea245cc70b07878214cf4",
+      "bytes": 51010
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age2_headquarter_vit.xml",
+      "sha256": "1ea8d01ada8cd757bf8caac8db8cd07c1a8b197bf8042cd6407fc4f22f3fbc5f",
+      "bytes": 270149
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_2_chi.xml",
+      "sha256": "2b97a19bc43cff65088c1f4cd05a01347e02e69e5ab0ae1aa5e3587b4ce44fdf",
+      "bytes": 108426
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_2_chi.xml",
+      "sha256": "687e973f56ed0c3bed3dacb1902ef120334cf53d11a3c94732f477fffb5ba7c0",
+      "bytes": 131898
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_chi.xml",
+      "sha256": "96d48cf7eed86071962f3e61ae80f1076867071114b2cb6e4202f824e1ef1c56",
+      "bytes": 150365
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_chi.xml",
+      "sha256": "1651f7c0fd10d819afcc07761a4e338d65a66c35a5ae5811d20fdb45e7fffa16",
+      "bytes": 111843
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age2_minh_pagoda_control_vit.xml",
+      "sha256": "003103c70b1953837b9f34d4042ff11f8cc70445eadf5c13e632377bf91af49d",
+      "bytes": 19337
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_cavalry_control_chi.xml",
+      "sha256": "1b2728eb4826eb331b549321a5c3fb2abecc68fed937e26ccbce955a630f16a7",
+      "bytes": 77085
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_imperial_garden_vit.xml",
+      "sha256": "73f2bd03edc759ed9c25f90663ceaf43726f749eade6c490ca42c9eb362c6e80",
+      "bytes": 20327
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_new_imperial_garden.xml",
+      "sha256": "3027e92c2eb05100e59a34089cc3ddf8d0d5191d37e134ad8ed56a4dd6ba67e6",
+      "bytes": 48487
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+      "sha256": "31afa80a5a8af245d9a5804ef3968eeaa3e3fb18f48a826f5e84f00d8d1c8d71",
+      "bytes": 83665
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_naval_chi.xml",
+      "sha256": "c1625c338a642b2aac40d44b5cefcada4dcc2d237723f5a76a2ddcdc402face8",
+      "bytes": 1010
+    },
+    {
+      "path": "0.8.0/research_tools/official_attrib/building_unit_naval_chi.xml",
+      "sha256": "6ef63fae829d70c24886544ded342e5d13c426b63c6411fd4e307c6f98fc9c46",
+      "bytes": 316679
+    }
+  ],
+  "excluded_or_unresolved": [
+    "No custom Vietnamese naval unit SBPS/EBPS roster found; all seven ship queue entries are stock Chinese units inherited through Vietnamese dock.",
+    "Official Attrib MCP lookup miss is not evidence of invalid data.",
+    "Stock scoutfemale SPD exists; private vn_unit_scout_1_chi female_chance must be read from source and reconciled with attachment inheritance before using SCOUT_F.",
+    "Official siege/shop and trader queue references are stock consumers, but full effective inheritance chain requires further resolution.",
+    "Current ship/siege separate physical crew actors and their potential dialogue are not proven.",
+    "No voice-bank chronology mapping inferred from suffixes."
+  ],
+  "source_resolution_notes": {
+    "private_attachment_speaker_overrides": "No attachment_speaker_code override was found in the surveyed Vietnam SBPS/EBPS XML. Inherited male/female attachment/speaker selection remains unresolved.",
+    "local_direct_metadata": "All 43 SBPS entries expose hash and local line evidence. Only directly serialized squad_speaker_code/name/race/female chance values are reported. Missing values are inherited/unset, not evidence of no voice or gender variant.",
+    "profile_key_semantics": "voice_role_profile names creative bank role only. Parent can key selected bank and donor speaker separately; this file does not assert a validated engine mapping.",
+    "attachment_speaker_overrides": "Surveyed all Vietnam EBPS and SBPS XML for attachment_speaker_code; no explicit private override found. The EBPS speaker_code fields are separately listed under private_ebps_speaker_fields; inherited attachment speaker logic is unresolved."
+  },
+  "private_ebps_speaker_fields": [
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_official_1_chi.xml",
+      "line": 521,
+      "field": "speaker_code",
+      "value": "villagerMale",
+      "sha256": "21b5a9b5d119651e87974964e5e712e2342a6254bd09f506a170e80b2117f23c"
+    }
+  ],
+  "official_inherited_consumers": {
+    "sbps\\races\\english\\unit_abbey_king_2": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_new_imperial_garden.xml",
+        "line": 193
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_new_imperial_garden.xml",
+        "line": 706
+      }
+    ],
+    "sbps\\races\\chinese\\unit_repeater_crossbowman_4_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+        "line": 362
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+        "line": 1170
+      }
+    ],
+    "sbps\\races\\chinese\\unit_springald_3_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+        "line": 28
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+        "line": 784
+      },
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+        "line": 1046
+      }
+    ],
+    "sbps\\races\\chinese\\unit_trebuchet_4_cw_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+        "line": 95
+      }
+    ],
+    "sbps\\races\\chinese\\unit_workshop_ram_3_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+        "line": 294
+      }
+    ],
+    "sbps\\races\\chinese\\unit_trebuchet_4_tr_chi": [
+      {
+        "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml",
+        "line": 851
+      }
+    ]
+  }
+}

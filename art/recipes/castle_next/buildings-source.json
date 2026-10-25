@@ -1,0 +1,1983 @@
+{
+  "schema": "community-civilization-pack/castle-next-ordinary-building-handoff/v1",
+  "status": "passed",
+  "stock_donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\castle_next\\donors\\donor-manifest.json",
+  "stock_donor_manifest_sha256": "10c05835fecb6d2cbce27b9d684c9e0766bc9aa16ad0a208b698a742308fe74d",
+  "source_reference": "https://whc.unesco.org/en/list/1732",
+  "scope": "five ordinary Castle models; keep03 shared by both Vietnamese keep actor variants",
+  "models": [
+    {
+      "key": "monastery03",
+      "private_model_stem": "art/scenario/cccastle/monastery_age03/model",
+      "stock_model_stem": "art/civilizations/chinese/structures/monastery/chi_monastery_control_age03/chi_monastery_control_age03",
+      "donor_decoded_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\castle_next\\donors\\decoded\\monastery03\\a379ab6c82723eae81ac\\decoded-static.json",
+      "donor_model_sha256": "aa699b15ff5948322d7e3f0b5bcf9c19b518d608e68d8e252562514c7f2e68ae",
+      "native_model": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\buildings\\monastery\\age03\\vn_model.rgm",
+      "native_model_sha256": "97d3cbb4dd660a62c8c0a90c7367143bbbded49d7010c5ba7ef30248c2f12428",
+      "native_geometry": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\buildings\\monastery\\age03\\vn_monastery_age03.rrgeom",
+      "native_geometry_sha256": "6268b86fe815919dfc9b6e39f6ee21a4f19be2259caf989d0b05b717bd2e3222",
+      "donor_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\buildings\\monastery\\age03\\Chinese_monastery_age03_donor.blend",
+      "editable_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\buildings\\monastery\\age03\\Vietnam_monastery_Age03.blend",
+      "detail_source_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\buildings\\monastery\\age03\\details\\vn_monastery_details_age03.blend",
+      "detail_export_dir": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\buildings\\monastery\\age03\\details",
+      "detail_fbx_sha256": "82d930ab545bb2e9a009f0f44a0eb7b5079fa763527d72bd165d0ac4b399c3da",
+      "detail_material_textures": {
+        "albedo": "427b5bf4b517e39045a25d2f26d1d3836effce2cd9a8672884b1bde74311d515",
+        "roughness": "b423c3205b957f68b072235b9343520f84b1adde4b216bd44893a20e9398f704",
+        "normal": "abfddfc41c354f558a7ebf171e6ccf9a4d3640d66f5cb20ee6507e42beaecada",
+        "metalness": "1286fb2b35d5a81c739ea4db471a1f5b0685587b415c6663bfe97191732f17b7"
+      },
+      "healthy_stock_triangles": 40014,
+      "healthy_remodel_native_triangles": 18876,
+      "detail_triangles": 1468,
+      "hidden_native_selector_names": [
+        "geo_sel_construct_60__sel_damage_3_debris_003",
+        "geo_sel_construct_60__sel_damage_3_disappear_001_combined",
+        "geo_sel_construct_60__sel_ruins_debris_001",
+        "geo_sel_construct_60__sel_ruins_debris_002",
+        "geo_sel_construct_60__sel_ruins_debris_005",
+        "geo_sel_construct_60__sel_ruins_debris_007",
+        "geo_sel_construct_60__sel_ruins_disappear_001_combined",
+        "geo_sel_construct_80__sel_damage_1_debris_001_combined",
+        "geo_sel_construct_80__sel_damage_1_debris_002_combined",
+        "geo_sel_construct_80__sel_damage_1_disappear_001_combined",
+        "geo_sel_construct_80__sel_damage_2_debris_001",
+        "geo_sel_construct_80__sel_damage_2_debris_003_combined",
+        "geo_sel_construct_80__sel_damage_2_debris_004_combined",
+        "geo_sel_construct_80__sel_damage_2_disappear_001_combined",
+        "geo_sel_construct_80__sel_damage_3_debris_001_combined",
+        "geo_sel_construct_80__sel_damage_3_debris_003",
+        "geo_sel_construct_80__sel_damage_3_debris_004_combined",
+        "geo_sel_construct_80__sel_damage_3_debris_005_combined",
+        "geo_sel_construct_80__sel_damage_3_disappear_001_combined",
+        "geo_sel_construct_80__sel_ruins_debris_002_combined",
+        "geo_sel_construct_80__sel_ruins_debris_003_combined",
+        "geo_sel_construct_80__sel_ruins_debris_004",
+        "geo_sel_construct_80__sel_ruins_debris_004_combined_combined",
+        "geo_sel_construct_80__sel_ruins_debris_005_combined",
+        "geo_sel_construct_80__sel_ruins_debris_006",
+        "geo_sel_construct_80__sel_ruins_debris_007",
+        "geo_sel_construct_80__sel_ruins_debris_008",
+        "geo_sel_construct_80__sel_ruins_debris_009",
+        "geo_sel_construct_80__sel_ruins_debris_010_combined",
+        "geo_sel_construct_80__sel_ruins_debris_011",
+        "geo_sel_construct_80__sel_ruins_debris_012",
+        "geo_sel_construct_80__sel_ruins_debris_012_combined_combined",
+        "geo_sel_construct_80__sel_ruins_debris_013",
+        "geo_sel_construct_80__sel_ruins_debris_014_combined",
+        "geo_sel_construct_80__sel_ruins_debris_015",
+        "geo_sel_construct_80__sel_ruins_debris_016_combined",
+        "geo_sel_construct_80__sel_ruins_debris_017",
+        "geo_sel_construct_80__sel_ruins_disappear_001_combined",
+        "geo_sel_construct_90__sel_damage_2_disappear_001_combined",
+        "geo_sel_construct_90__sel_ruins_disappear_001_combined"
+      ],
+      "intersecting_native_roof_trim_names": [
+        "geo_sel_construct_60__sel_damage_3_debris_003",
+        "geo_sel_construct_60__sel_damage_3_disappear_001_combined",
+        "geo_sel_construct_60__sel_ruins_debris_001",
+        "geo_sel_construct_60__sel_ruins_debris_002",
+        "geo_sel_construct_60__sel_ruins_debris_005",
+        "geo_sel_construct_60__sel_ruins_debris_007",
+        "geo_sel_construct_60__sel_ruins_disappear_001_combined",
+        "geo_sel_construct_80__sel_ruins_debris_003_combined",
+        "geo_sel_construct_80__sel_ruins_debris_010_combined",
+        "geo_sel_construct_80__sel_ruins_debris_012_combined_combined",
+        "geo_sel_construct_80__sel_ruins_debris_014_combined",
+        "geo_sel_construct_90__sel_damage_2_disappear_001_combined",
+        "geo_sel_construct_90__sel_ruins_disappear_001_combined"
+      ],
+      "omitted_roof_debris": [
+        {
+          "selector": "sel_ruins_debris",
+          "omitted_roof_members": [
+            "geo_sel_construct_80__sel_ruins_debris_004_combined_combined",
+            "geo_sel_construct_80__sel_ruins_debris_012_combined_combined",
+            "geo_sel_construct_80__sel_ruins_debris_016_combined",
+            "geo_sel_construct_60__sel_ruins_debris_005",
+            "geo_sel_construct_80__sel_ruins_debris_011",
+            "geo_sel_construct_80__sel_ruins_debris_014_combined",
+            "geo_sel_construct_80__sel_ruins_debris_003_combined",
+            "geo_sel_construct_80__sel_ruins_debris_013",
+            "geo_sel_construct_80__sel_ruins_debris_010_combined",
+            "geo_sel_construct_80__sel_ruins_debris_002_combined",
+            "geo_sel_construct_80__sel_ruins_debris_009",
+            "geo_sel_construct_80__sel_ruins_debris_005_combined",
+            "geo_sel_construct_80__sel_ruins_debris_008",
+            "geo_sel_construct_80__sel_ruins_debris_006"
+          ]
+        }
+      ],
+      "selector_changes": [
+        {
+          "selector": "sel_construct_80",
+          "conditions": [
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "preview"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_80"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_85"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_90"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_95"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "healthy"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "targeting"
+            ]
+          ],
+          "before_members": [
+            "geo_sel_construct_80__sel_damage_2_debris_003_combined",
+            "geo_sel_construct_80__sel_ruins_debris_012",
+            "geo_sel_construct_80__sel_damage_2_debris_001",
+            "geo_sel_construct_80__sel_damage_3_debris_004_combined",
+            "geo_sel_construct_80__sel_ruins_debris_016_combined",
+            "geo_sel_construct_80__sel_ruins_debris_007",
+            "geo_sel_construct_80__sel_ruins_debris_004",
+            "geo_sel_construct_80__sel_ruins_debris_017",
+            "geo_sel_construct_80__sel_ruins_debris_015",
+            "geo_sel_construct_80__sel_damage_2_disappear_001_combined",
+            "geo_sel_construct_80__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_80__sel_damage_1_disappear_001_combined",
+            "geo_sel_construct_80__sel_damage_2_debris_004_combined",
+            "geo_sel_construct_80__sel_ruins_disappear_001_combined",
+            "geo_sel_construct_80__sel_damage_1_debris_001_combined",
+            "geo_sel_construct_80__sel_damage_1_debris_002_combined",
+            "geo_sel_construct_80__sel_ruins_debris_011",
+            "geo_sel_construct_80__sel_ruins_debris_014_combined",
+            "geo_sel_construct_80__sel_ruins_debris_003_combined",
+            "geo_sel_construct_80__sel_ruins_debris_013",
+            "geo_sel_construct_80__sel_ruins_debris_010_combined",
+            "geo_sel_construct_80__sel_ruins_debris_002_combined",
+            "geo_sel_construct_80__sel_ruins_debris_009",
+            "geo_sel_construct_80__sel_ruins_debris_005_combined",
+            "geo_sel_construct_80__sel_ruins_debris_008",
+            "geo_sel_construct_80__sel_ruins_debris_006",
+            "geo_sel_construct_80__sel_damage_3_debris_003",
+            "geo_sel_construct_80__sel_damage_3_debris_001_combined",
+            "geo_sel_construct_80__sel_damage_3_debris_005_combined"
+          ],
+          "after_members": [],
+          "removed": [
+            "geo_sel_construct_80__sel_damage_2_debris_003_combined",
+            "geo_sel_construct_80__sel_ruins_debris_012",
+            "geo_sel_construct_80__sel_damage_2_debris_001",
+            "geo_sel_construct_80__sel_damage_3_debris_004_combined",
+            "geo_sel_construct_80__sel_ruins_debris_016_combined",
+            "geo_sel_construct_80__sel_ruins_debris_007",
+            "geo_sel_construct_80__sel_ruins_debris_004",
+            "geo_sel_construct_80__sel_ruins_debris_017",
+            "geo_sel_construct_80__sel_ruins_debris_015",
+            "geo_sel_construct_80__sel_damage_2_disappear_001_combined",
+            "geo_sel_construct_80__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_80__sel_damage_1_disappear_001_combined",
+            "geo_sel_construct_80__sel_damage_2_debris_004_combined",
+            "geo_sel_construct_80__sel_ruins_disappear_001_combined",
+            "geo_sel_construct_80__sel_damage_1_debris_001_combined",
+            "geo_sel_construct_80__sel_damage_1_debris_002_combined",
+            "geo_sel_construct_80__sel_ruins_debris_011",
+            "geo_sel_construct_80__sel_ruins_debris_014_combined",
+            "geo_sel_construct_80__sel_ruins_debris_003_combined",
+            "geo_sel_construct_80__sel_ruins_debris_013",
+            "geo_sel_construct_80__sel_ruins_debris_010_combined",
+            "geo_sel_construct_80__sel_ruins_debris_002_combined",
+            "geo_sel_construct_80__sel_ruins_debris_009",
+            "geo_sel_construct_80__sel_ruins_debris_005_combined",
+            "geo_sel_construct_80__sel_ruins_debris_008",
+            "geo_sel_construct_80__sel_ruins_debris_006",
+            "geo_sel_construct_80__sel_damage_3_debris_003",
+            "geo_sel_construct_80__sel_damage_3_debris_001_combined",
+            "geo_sel_construct_80__sel_damage_3_debris_005_combined"
+          ],
+          "remaining_count": 0
+        },
+        {
+          "selector": "sel_construct_60",
+          "conditions": [
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "preview"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_60"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_65"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_70"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_75"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_80"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_85"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_90"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_95"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "healthy"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "targeting"
+            ]
+          ],
+          "before_members": [
+            "geo_sel_construct_60__sel_ruins_debris_002",
+            "geo_sel_construct_60__sel_damage_2_disappear_003_combined",
+            "geo_sel_construct_60__sel_damage_3_debris_001",
+            "geo_sel_construct_60__sel_damage_3_debris_002",
+            "geo_sel_construct_60__sel_ruins_debris_003",
+            "geo_sel_construct_60__sel_ruins_debris_001",
+            "geo_sel_construct_60__sel_ruins_debris_008",
+            "geo_sel_construct_60__sel_ruins_debris_007",
+            "geo_sel_construct_60__sel_ruins_debris_004",
+            "geo_sel_construct_60__sel_damage_2_debris_001",
+            "geo_sel_construct_60__sel_ruins_disappear_001_combined",
+            "geo_sel_construct_60__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_60__sel_ruins_debris_005",
+            "geo_sel_construct_30__sel_ruins_debris_002_combined",
+            "geo_sel_construct_60__sel_damage_3_debris_003"
+          ],
+          "after_members": [
+            "geo_sel_construct_60__sel_damage_2_disappear_003_combined",
+            "geo_sel_construct_60__sel_damage_3_debris_001",
+            "geo_sel_construct_60__sel_damage_3_debris_002",
+            "geo_sel_construct_60__sel_ruins_debris_003",
+            "geo_sel_construct_60__sel_ruins_debris_008",
+            "geo_sel_construct_60__sel_ruins_debris_004",
+            "geo_sel_construct_60__sel_damage_2_debris_001",
+            "geo_sel_construct_30__sel_ruins_debris_002_combined"
+          ],
+          "removed": [
+            "geo_sel_construct_60__sel_ruins_debris_002",
+            "geo_sel_construct_60__sel_ruins_debris_001",
+            "geo_sel_construct_60__sel_ruins_debris_007",
+            "geo_sel_construct_60__sel_ruins_disappear_001_combined",
+            "geo_sel_construct_60__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_60__sel_ruins_debris_005",
+            "geo_sel_construct_60__sel_damage_3_debris_003"
+          ],
+          "remaining_count": 8
+        },
+        {
+          "selector": "sel_construct_90",
+          "conditions": [
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "preview"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_90"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_95"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "healthy"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "targeting"
+            ]
+          ],
+          "before_members": [
+            "geo_sel_construct_90__sel_ruins_disappear_001_combined",
+            "geo_sel_construct_80__sel_ruins_debris_004_combined_combined",
+            "geo_sel_construct_80__sel_ruins_debris_012_combined_combined",
+            "geo_sel_construct_90__sel_damage_2_disappear_001_combined"
+          ],
+          "after_members": [],
+          "removed": [
+            "geo_sel_construct_90__sel_ruins_disappear_001_combined",
+            "geo_sel_construct_80__sel_ruins_debris_004_combined_combined",
+            "geo_sel_construct_80__sel_ruins_debris_012_combined_combined",
+            "geo_sel_construct_90__sel_damage_2_disappear_001_combined"
+          ],
+          "remaining_count": 0
+        },
+        {
+          "selector": "sel_damage_1_debris",
+          "conditions": [
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "healthy"
+            ]
+          ],
+          "before_members": [
+            "geo_sel_construct_80__sel_damage_1_debris_001_combined",
+            "geo_sel_construct_80__sel_damage_1_debris_002_combined"
+          ],
+          "after_members": [],
+          "removed": [
+            "geo_sel_construct_80__sel_damage_1_debris_001_combined",
+            "geo_sel_construct_80__sel_damage_1_debris_002_combined"
+          ],
+          "remaining_count": 0
+        },
+        {
+          "selector": "sel_damage_2_debris",
+          "conditions": [
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_1"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "healthy"
+            ]
+          ],
+          "before_members": [
+            "geo_sel_construct_80__sel_damage_2_debris_003_combined",
+            "geo_sel_construct_80__sel_damage_2_debris_001",
+            "geo_sel_construct_80__sel_damage_2_debris_004_combined"
+          ],
+          "after_members": [],
+          "removed": [
+            "geo_sel_construct_80__sel_damage_2_debris_003_combined",
+            "geo_sel_construct_80__sel_damage_2_debris_001",
+            "geo_sel_construct_80__sel_damage_2_debris_004_combined"
+          ],
+          "remaining_count": 0
+        },
+        {
+          "selector": "sel_damage_2_disappear",
+          "conditions": [
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "healthy"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_1"
+            ]
+          ],
+          "before_members": [
+            "geo_sel_construct_60__sel_damage_2_disappear_003_combined",
+            "geo_sel_construct_80__sel_damage_2_disappear_001_combined",
+            "geo_sel_construct_90__sel_damage_2_disappear_001_combined"
+          ],
+          "after_members": [
+            "geo_sel_construct_60__sel_damage_2_disappear_003_combined"
+          ],
+          "removed": [
+            "geo_sel_construct_80__sel_damage_2_disappear_001_combined",
+            "geo_sel_construct_90__sel_damage_2_disappear_001_combined"
+          ],
+          "remaining_count": 1
+        },
+        {
+          "selector": "sel_damage_3_debris",
+          "conditions": [
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_2"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_1"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "healthy"
+            ]
+          ],
+          "before_members": [
+            "geo_sel_construct_80__sel_damage_3_debris_004_combined",
+            "geo_sel_construct_80__sel_damage_3_debris_003",
+            "geo_sel_construct_80__sel_damage_3_debris_001_combined",
+            "geo_sel_construct_80__sel_damage_3_debris_005_combined",
+            "geo_sel_construct_60__sel_damage_3_debris_003",
+            "geo_sel_construct_30__sel_damage_3_debris_001"
+          ],
+          "after_members": [
+            "geo_sel_construct_30__sel_damage_3_debris_001"
+          ],
+          "removed": [
+            "geo_sel_construct_80__sel_damage_3_debris_004_combined",
+            "geo_sel_construct_80__sel_damage_3_debris_003",
+            "geo_sel_construct_80__sel_damage_3_debris_001_combined",
+            "geo_sel_construct_80__sel_damage_3_debris_005_combined",
+            "geo_sel_construct_60__sel_damage_3_debris_003"
+          ],
+          "remaining_count": 1
+        },
+        {
+          "selector": "sel_damage_3_disappear",
+          "conditions": [
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "healthy"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_1"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_2"
+            ]
+          ],
+          "before_members": [
+            "geo_sel_construct_40__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_70__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_80__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_30__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_60__sel_damage_3_disappear_001_combined"
+          ],
+          "after_members": [
+            "geo_sel_construct_40__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_70__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_30__sel_damage_3_disappear_001_combined"
+          ],
+          "removed": [
+            "geo_sel_construct_80__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_60__sel_damage_3_disappear_001_combined"
+          ],
+          "remaining_count": 3
+        },
+        {
+          "selector": "sel_ruins_debris",
+          "conditions": [
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "healthy"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_1"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_2"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_3"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_4"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_5"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "ruins"
+            ]
+          ],
+          "before_members": [
+            "geo_sel_construct_80__sel_ruins_debris_004_combined_combined",
+            "geo_sel_construct_80__sel_ruins_debris_012_combined_combined",
+            "geo_sel_construct_80__sel_ruins_debris_016_combined",
+            "geo_sel_construct_30__sel_ruins_debris_006",
+            "geo_sel_construct_20__sel_ruins_debris_001",
+            "geo_sel_construct_60__sel_ruins_debris_005",
+            "geo_sel_construct_80__sel_ruins_debris_011",
+            "geo_sel_construct_80__sel_ruins_debris_014_combined",
+            "geo_sel_construct_30__sel_ruins_debris_002_combined",
+            "geo_sel_construct_80__sel_ruins_debris_003_combined",
+            "geo_sel_construct_20__sel_ruins_debris_002",
+            "geo_sel_construct_80__sel_ruins_debris_013",
+            "geo_sel_construct_30__sel_ruins_debris_003_combined",
+            "geo_sel_construct_80__sel_ruins_debris_010_combined",
+            "geo_sel_construct_80__sel_ruins_debris_002_combined",
+            "geo_sel_construct_80__sel_ruins_debris_009",
+            "geo_sel_construct_50__sel_ruins_debris_001",
+            "geo_sel_construct_30__sel_ruins_debris_004",
+            "geo_sel_construct_80__sel_ruins_debris_005_combined",
+            "geo_sel_construct_80__sel_ruins_debris_008",
+            "geo_sel_construct_50__sel_ruins_debris_002_combined",
+            "geo_sel_construct_30__sel_ruins_debris_001",
+            "geo_sel_construct_80__sel_ruins_debris_006"
+          ],
+          "after_members": [
+            "geo_sel_construct_30__sel_ruins_debris_006",
+            "geo_sel_construct_20__sel_ruins_debris_001",
+            "geo_sel_construct_30__sel_ruins_debris_002_combined",
+            "geo_sel_construct_20__sel_ruins_debris_002",
+            "geo_sel_construct_30__sel_ruins_debris_003_combined",
+            "geo_sel_construct_50__sel_ruins_debris_001",
+            "geo_sel_construct_30__sel_ruins_debris_004",
+            "geo_sel_construct_50__sel_ruins_debris_002_combined",
+            "geo_sel_construct_30__sel_ruins_debris_001"
+          ],
+          "removed": [
+            "geo_sel_construct_80__sel_ruins_debris_004_combined_combined",
+            "geo_sel_construct_80__sel_ruins_debris_012_combined_combined",
+            "geo_sel_construct_80__sel_ruins_debris_016_combined",
+            "geo_sel_construct_60__sel_ruins_debris_005",
+            "geo_sel_construct_80__sel_ruins_debris_011",
+            "geo_sel_construct_80__sel_ruins_debris_014_combined",
+            "geo_sel_construct_80__sel_ruins_debris_003_combined",
+            "geo_sel_construct_80__sel_ruins_debris_013",
+            "geo_sel_construct_80__sel_ruins_debris_010_combined",
+            "geo_sel_construct_80__sel_ruins_debris_002_combined",
+            "geo_sel_construct_80__sel_ruins_debris_009",
+            "geo_sel_construct_80__sel_ruins_debris_005_combined",
+            "geo_sel_construct_80__sel_ruins_debris_008",
+            "geo_sel_construct_80__sel_ruins_debris_006"
+          ],
+          "remaining_count": 9
+        },
+        {
+          "selector": "sel_ruins_disappear",
+          "conditions": [
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "healthy"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_1"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_2"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_3"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_4"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_5"
+            ],
+            [
+              2,
+              0,
+              0,
+              "has_collapsed_ruins",
+              "false"
+            ]
+          ],
+          "before_members": [
+            "geo_sel_construct_90__sel_ruins_disappear_001_combined",
+            "geo_sel_construct_40__sel_ruins_disappear_001_combined",
+            "geo_sel_construct_50__sel_ruins_disappear_009_combined",
+            "geo_sel_construct_70__sel_ruins_disappear_009_combined",
+            "geo_sel_construct_30__sel_ruins_disappear_001_combined",
+            "geo_sel_construct_20__sel_ruins_disappear_001_combined",
+            "geo_sel_construct_60__sel_ruins_disappear_001_combined",
+            "geo_sel_construct_80__sel_ruins_disappear_001_combined"
+          ],
+          "after_members": [
+            "geo_sel_construct_40__sel_ruins_disappear_001_combined",
+            "geo_sel_construct_50__sel_ruins_disappear_009_combined",
+            "geo_sel_construct_70__sel_ruins_disappear_009_combined",
+            "geo_sel_construct_30__sel_ruins_disappear_001_combined",
+            "geo_sel_construct_20__sel_ruins_disappear_001_combined"
+          ],
+          "removed": [
+            "geo_sel_construct_90__sel_ruins_disappear_001_combined",
+            "geo_sel_construct_60__sel_ruins_disappear_001_combined",
+            "geo_sel_construct_80__sel_ruins_disappear_001_combined"
+          ],
+          "remaining_count": 5
+        }
+      ],
+      "contact_checks": {
+        "interfaces": [
+          {
+            "parent": "three-bay teaching hall lintel",
+            "child": "three-bay teaching hall post 0",
+            "interface": "post top to lintel bottom",
+            "gap_m": -0.16
+          },
+          {
+            "parent": "three-bay teaching hall lintel",
+            "child": "three-bay teaching hall post 1",
+            "interface": "post top to lintel bottom",
+            "gap_m": -0.16
+          },
+          {
+            "parent": "three-bay teaching hall lintel",
+            "child": "three-bay teaching hall post 2",
+            "interface": "post top to lintel bottom",
+            "gap_m": -0.16
+          },
+          {
+            "parent": "three-bay teaching hall lintel",
+            "child": "three-bay teaching hall post 3",
+            "interface": "post top to lintel bottom",
+            "gap_m": -0.16
+          },
+          {
+            "parent": "broad Dai Viet hall tiled hip",
+            "child": "three-bay teaching hall post 0",
+            "interface": "front eave underside to post top",
+            "gap_m": 0.003478,
+            "sample_x_error_m": 0.2045
+          },
+          {
+            "parent": "broad Dai Viet hall tiled hip",
+            "child": "three-bay teaching hall post 1",
+            "interface": "front eave underside to post top",
+            "gap_m": -0.02,
+            "sample_x_error_m": 0.1325
+          },
+          {
+            "parent": "broad Dai Viet hall tiled hip",
+            "child": "three-bay teaching hall post 2",
+            "interface": "front eave underside to post top",
+            "gap_m": -0.02,
+            "sample_x_error_m": 0.1325
+          },
+          {
+            "parent": "broad Dai Viet hall tiled hip",
+            "child": "three-bay teaching hall post 3",
+            "interface": "front eave underside to post top",
+            "gap_m": 0.003478,
+            "sample_x_error_m": 0.2045
+          },
+          {
+            "parent": "open monastery gate lintel",
+            "child": "open monastery gate post 0",
+            "interface": "post top to lintel bottom",
+            "gap_m": -0.16
+          },
+          {
+            "parent": "open monastery gate lintel",
+            "child": "open monastery gate post 1",
+            "interface": "post top to lintel bottom",
+            "gap_m": -0.16
+          },
+          {
+            "parent": "bell shrine brick pad",
+            "child": "bell shrine timber post",
+            "interface": "post bottom to pad top",
+            "gap_m": 0.0
+          },
+          {
+            "parent": "bell shrine brick pad",
+            "child": "bell shrine timber post.001",
+            "interface": "post bottom to pad top",
+            "gap_m": 0.0
+          },
+          {
+            "parent": "lotus basin stone plinth",
+            "child": "lotus basin",
+            "interface": "basin bottom to plinth top",
+            "gap_m": 0.0
+          }
+        ],
+        "entrance_axis": "-Y",
+        "donor_bounds_m": {
+          "minimum": [
+            -5.734375,
+            -5.9375,
+            -1.599609375
+          ],
+          "maximum": [
+            5.734375,
+            5.7734375,
+            6.05859375
+          ]
+        },
+        "native_markers": "untouched; detail export is visual only"
+      },
+      "owner_uv_index_byte_audit": {
+        "name": "vn_monastery_age03",
+        "chunks": 32,
+        "geob_chunks": 6,
+        "vertex_buffers": 3,
+        "vertices": 69940,
+        "changed_vertices": 62695,
+        "fixed_ground_records": 1215,
+        "non_geob_chunks_byte_identical": true,
+        "index_chunks_byte_identical": true,
+        "uv_selector_owner_bytes_preserved": true
+      },
+      "preview_dir": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\castle_next\\buildings\\previews\\monastery03",
+      "preview_proof": "Offline exact healthy-draw geometry; native culling/runtime unverified"
+    },
+    {
+      "key": "monastery04",
+      "private_model_stem": "art/scenario/cccastle/monastery_age04/model",
+      "stock_model_stem": "art/civilizations/chinese/structures/monastery/chi_monastery_control_age04/chi_monastery_control_age04",
+      "donor_decoded_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\castle_next\\donors\\decoded\\monastery04\\d769667783e073b30101\\decoded-static.json",
+      "donor_model_sha256": "85d571f16e3c7986b625e324ea4c1417c97d8624094334b2760be427e3b288b5",
+      "native_model": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\buildings\\monastery\\age04\\vn_model.rgm",
+      "native_model_sha256": "0a2d35f8516fd6eab79524f6260f52d3583806c64a98020a4adf5b2a840f9ad0",
+      "native_geometry": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\buildings\\monastery\\age04\\vn_monastery_age04.rrgeom",
+      "native_geometry_sha256": "de9f1c2cfb107a2c06598822b13d69d2ee1ae1c1456afafb47492a47d6835441",
+      "donor_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\buildings\\monastery\\age04\\Chinese_monastery_age04_donor.blend",
+      "editable_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\buildings\\monastery\\age04\\Vietnam_monastery_Age04.blend",
+      "detail_source_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\buildings\\monastery\\age04\\details\\vn_monastery_details_age04.blend",
+      "detail_export_dir": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\buildings\\monastery\\age04\\details",
+      "detail_fbx_sha256": "eb51d6d83cc51b607c8d63f83eae707c1190f8a3e4771b59744d3791c76ba000",
+      "detail_material_textures": {
+        "albedo": "427b5bf4b517e39045a25d2f26d1d3836effce2cd9a8672884b1bde74311d515",
+        "roughness": "b423c3205b957f68b072235b9343520f84b1adde4b216bd44893a20e9398f704",
+        "normal": "abfddfc41c354f558a7ebf171e6ccf9a4d3640d66f5cb20ee6507e42beaecada",
+        "metalness": "1286fb2b35d5a81c739ea4db471a1f5b0685587b415c6663bfe97191732f17b7"
+      },
+      "healthy_stock_triangles": 46918,
+      "healthy_remodel_native_triangles": 22322,
+      "detail_triangles": 1468,
+      "hidden_native_selector_names": [
+        "geo_sel_construct_70__sel_damage_1_debris_003",
+        "geo_sel_construct_70__sel_damage_1_disappear_005_combined",
+        "geo_sel_construct_70__sel_damage_2_debris_001",
+        "geo_sel_construct_70__sel_damage_2_disappear_001_combined",
+        "geo_sel_construct_70__sel_damage_3_debris_001",
+        "geo_sel_construct_70__sel_damage_3_debris_004",
+        "geo_sel_construct_70__sel_damage_3_disappear_001_combined",
+        "geo_sel_construct_70__sel_ruins_debris_001",
+        "geo_sel_construct_70__sel_ruins_debris_002",
+        "geo_sel_construct_70__sel_ruins_debris_003",
+        "geo_sel_construct_70__sel_ruins_disappear_009_combined",
+        "geo_sel_construct_90__sel_damage_1_debris_001",
+        "geo_sel_construct_90__sel_damage_1_debris_002",
+        "geo_sel_construct_90__sel_damage_1_debris_003",
+        "geo_sel_construct_90__sel_damage_1_debris_004",
+        "geo_sel_construct_90__sel_damage_1_debris_005_combined",
+        "geo_sel_construct_90__sel_damage_1_disappear_001",
+        "geo_sel_construct_90__sel_damage_2_debris_001",
+        "geo_sel_construct_90__sel_damage_2_debris_002",
+        "geo_sel_construct_90__sel_damage_2_debris_003_combined",
+        "geo_sel_construct_90__sel_damage_2_debris_006",
+        "geo_sel_construct_90__sel_damage_2_debris_007_combined_combined",
+        "geo_sel_construct_90__sel_damage_2_disappear_001_combined",
+        "geo_sel_construct_90__sel_damage_3_debris_001",
+        "geo_sel_construct_90__sel_damage_3_debris_002_combined",
+        "geo_sel_construct_90__sel_damage_3_debris_003_combined",
+        "geo_sel_construct_90__sel_damage_3_debris_004",
+        "geo_sel_construct_90__sel_damage_3_disappear_001_combined",
+        "geo_sel_construct_90__sel_ruins_debris_003",
+        "geo_sel_construct_90__sel_ruins_debris_004_combined",
+        "geo_sel_construct_90__sel_ruins_debris_005_combined",
+        "geo_sel_construct_90__sel_ruins_debris_006",
+        "geo_sel_construct_90__sel_ruins_debris_007",
+        "geo_sel_construct_90__sel_ruins_debris_008",
+        "geo_sel_construct_90__sel_ruins_debris_009",
+        "geo_sel_construct_90__sel_ruins_debris_010_combined",
+        "geo_sel_construct_90__sel_ruins_debris_012_combined",
+        "geo_sel_construct_90__sel_ruins_debris_014",
+        "geo_sel_construct_90__sel_ruins_debris_015",
+        "geo_sel_construct_90__sel_ruins_debris_016_combined",
+        "geo_sel_construct_90__sel_ruins_debris_018_combined_combined",
+        "geo_sel_construct_90__sel_ruins_debris_019",
+        "geo_sel_construct_90__sel_ruins_debris_020_combined_combined",
+        "geo_sel_construct_90__sel_ruins_debris_022_combined_combined",
+        "geo_sel_construct_90__sel_ruins_disappear_009_combined_combined"
+      ],
+      "intersecting_native_roof_trim_names": [
+        "geo_sel_construct_70__sel_damage_1_debris_003",
+        "geo_sel_construct_70__sel_damage_1_disappear_005_combined",
+        "geo_sel_construct_70__sel_damage_2_debris_001",
+        "geo_sel_construct_70__sel_damage_2_disappear_001_combined",
+        "geo_sel_construct_70__sel_damage_3_debris_001",
+        "geo_sel_construct_70__sel_damage_3_debris_004",
+        "geo_sel_construct_70__sel_damage_3_disappear_001_combined",
+        "geo_sel_construct_70__sel_ruins_debris_001",
+        "geo_sel_construct_70__sel_ruins_debris_002",
+        "geo_sel_construct_70__sel_ruins_debris_003",
+        "geo_sel_construct_70__sel_ruins_disappear_009_combined",
+        "geo_sel_construct_90__sel_damage_1_debris_005_combined",
+        "geo_sel_construct_90__sel_damage_2_debris_001",
+        "geo_sel_construct_90__sel_damage_2_debris_007_combined_combined",
+        "geo_sel_construct_90__sel_damage_3_debris_003_combined",
+        "geo_sel_construct_90__sel_ruins_debris_018_combined_combined",
+        "geo_sel_construct_90__sel_ruins_debris_020_combined_combined",
+        "geo_sel_construct_90__sel_ruins_debris_022_combined_combined",
+        "geo_sel_construct_90__sel_ruins_disappear_009_combined_combined"
+      ],
+      "omitted_roof_debris": [
+        {
+          "selector": "sel_ruins_debris",
+          "omitted_roof_members": [
+            "geo_sel_construct_90__sel_ruins_debris_006",
+            "geo_sel_construct_90__sel_ruins_debris_014",
+            "geo_sel_construct_90__sel_ruins_debris_009",
+            "geo_sel_construct_90__sel_ruins_debris_008",
+            "geo_sel_construct_90__sel_ruins_debris_018_combined_combined",
+            "geo_sel_construct_90__sel_ruins_debris_019",
+            "geo_sel_construct_90__sel_ruins_debris_007",
+            "geo_sel_construct_90__sel_ruins_debris_015",
+            "geo_sel_construct_90__sel_ruins_debris_012_combined",
+            "geo_sel_construct_90__sel_ruins_debris_003",
+            "geo_sel_construct_90__sel_ruins_debris_020_combined_combined",
+            "geo_sel_construct_90__sel_ruins_debris_004_combined",
+            "geo_sel_construct_90__sel_ruins_debris_016_combined",
+            "geo_sel_construct_90__sel_ruins_debris_010_combined",
+            "geo_sel_construct_90__sel_ruins_debris_022_combined_combined",
+            "geo_sel_construct_90__sel_ruins_debris_005_combined"
+          ]
+        }
+      ],
+      "selector_changes": [
+        {
+          "selector": "sel_construct_70",
+          "conditions": [
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "preview"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_70"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_75"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_80"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_85"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_90"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_95"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "healthy"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "targeting"
+            ]
+          ],
+          "before_members": [
+            "geo_sel_construct_70__sel_ruins_debris_003",
+            "geo_sel_construct_70__sel_damage_3_debris_002",
+            "geo_sel_construct_70__sel_damage_3_debris_003",
+            "geo_sel_construct_70__sel_damage_1_disappear_005_combined",
+            "geo_sel_construct_70__sel_ruins_debris_002",
+            "geo_sel_construct_70__sel_ruins_disappear_009_combined",
+            "geo_sel_construct_70__sel_ruins_debris_001",
+            "geo_sel_construct_70__sel_damage_1_debris_001",
+            "geo_sel_construct_70__sel_damage_1_debris_002",
+            "geo_sel_construct_70__sel_damage_1_debris_003",
+            "geo_sel_construct_70__sel_damage_2_debris_001",
+            "geo_sel_construct_70__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_70__sel_damage_2_disappear_001_combined",
+            "geo_sel_construct_70__sel_damage_3_debris_001",
+            "geo_sel_construct_70__sel_damage_3_debris_005",
+            "geo_sel_construct_70__sel_damage_3_debris_004"
+          ],
+          "after_members": [
+            "geo_sel_construct_70__sel_damage_3_debris_002",
+            "geo_sel_construct_70__sel_damage_3_debris_003",
+            "geo_sel_construct_70__sel_damage_1_debris_001",
+            "geo_sel_construct_70__sel_damage_1_debris_002",
+            "geo_sel_construct_70__sel_damage_3_debris_005"
+          ],
+          "removed": [
+            "geo_sel_construct_70__sel_ruins_debris_003",
+            "geo_sel_construct_70__sel_damage_1_disappear_005_combined",
+            "geo_sel_construct_70__sel_ruins_debris_002",
+            "geo_sel_construct_70__sel_ruins_disappear_009_combined",
+            "geo_sel_construct_70__sel_ruins_debris_001",
+            "geo_sel_construct_70__sel_damage_1_debris_003",
+            "geo_sel_construct_70__sel_damage_2_debris_001",
+            "geo_sel_construct_70__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_70__sel_damage_2_disappear_001_combined",
+            "geo_sel_construct_70__sel_damage_3_debris_001",
+            "geo_sel_construct_70__sel_damage_3_debris_004"
+          ],
+          "remaining_count": 5
+        },
+        {
+          "selector": "sel_construct_90",
+          "conditions": [
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "preview"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_90"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "construct_95"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "healthy"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "targeting"
+            ]
+          ],
+          "before_members": [
+            "geo_sel_construct_90__sel_damage_1_disappear_001",
+            "geo_sel_construct_90__sel_damage_2_debris_006",
+            "geo_sel_construct_90__sel_ruins_debris_006",
+            "geo_sel_construct_90__sel_ruins_debris_014",
+            "geo_sel_construct_90__sel_damage_2_debris_001",
+            "geo_sel_construct_90__sel_damage_2_debris_002",
+            "geo_sel_construct_90__sel_damage_2_debris_007_combined_combined",
+            "geo_sel_construct_90__sel_damage_1_debris_002",
+            "geo_sel_construct_90__sel_damage_2_disappear_001_combined",
+            "geo_sel_construct_90__sel_ruins_disappear_009_combined_combined",
+            "geo_sel_construct_90__sel_damage_1_debris_005_combined",
+            "geo_sel_construct_90__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_90__sel_damage_2_debris_003_combined",
+            "geo_sel_construct_90__sel_damage_1_debris_001",
+            "geo_sel_construct_90__sel_damage_1_debris_003",
+            "geo_sel_construct_90__sel_damage_1_debris_004",
+            "geo_sel_construct_90__sel_ruins_debris_009",
+            "geo_sel_construct_90__sel_ruins_debris_008",
+            "geo_sel_construct_90__sel_ruins_debris_018_combined_combined",
+            "geo_sel_construct_90__sel_ruins_debris_019",
+            "geo_sel_construct_90__sel_ruins_debris_007",
+            "geo_sel_construct_90__sel_ruins_debris_015",
+            "geo_sel_construct_90__sel_ruins_debris_012_combined",
+            "geo_sel_construct_90__sel_ruins_debris_003",
+            "geo_sel_construct_90__sel_ruins_debris_020_combined_combined",
+            "geo_sel_construct_90__sel_ruins_debris_004_combined",
+            "geo_sel_construct_90__sel_ruins_debris_016_combined",
+            "geo_sel_construct_90__sel_ruins_debris_010_combined",
+            "geo_sel_construct_90__sel_ruins_debris_022_combined_combined",
+            "geo_sel_construct_90__sel_ruins_debris_005_combined",
+            "geo_sel_construct_90__sel_damage_3_debris_004",
+            "geo_sel_construct_90__sel_damage_3_debris_001",
+            "geo_sel_construct_90__sel_damage_3_debris_002_combined",
+            "geo_sel_construct_90__sel_damage_3_debris_003_combined"
+          ],
+          "after_members": [],
+          "removed": [
+            "geo_sel_construct_90__sel_damage_1_disappear_001",
+            "geo_sel_construct_90__sel_damage_2_debris_006",
+            "geo_sel_construct_90__sel_ruins_debris_006",
+            "geo_sel_construct_90__sel_ruins_debris_014",
+            "geo_sel_construct_90__sel_damage_2_debris_001",
+            "geo_sel_construct_90__sel_damage_2_debris_002",
+            "geo_sel_construct_90__sel_damage_2_debris_007_combined_combined",
+            "geo_sel_construct_90__sel_damage_1_debris_002",
+            "geo_sel_construct_90__sel_damage_2_disappear_001_combined",
+            "geo_sel_construct_90__sel_ruins_disappear_009_combined_combined",
+            "geo_sel_construct_90__sel_damage_1_debris_005_combined",
+            "geo_sel_construct_90__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_90__sel_damage_2_debris_003_combined",
+            "geo_sel_construct_90__sel_damage_1_debris_001",
+            "geo_sel_construct_90__sel_damage_1_debris_003",
+            "geo_sel_construct_90__sel_damage_1_debris_004",
+            "geo_sel_construct_90__sel_ruins_debris_009",
+            "geo_sel_construct_90__sel_ruins_debris_008",
+            "geo_sel_construct_90__sel_ruins_debris_018_combined_combined",
+            "geo_sel_construct_90__sel_ruins_debris_019",
+            "geo_sel_construct_90__sel_ruins_debris_007",
+            "geo_sel_construct_90__sel_ruins_debris_015",
+            "geo_sel_construct_90__sel_ruins_debris_012_combined",
+            "geo_sel_construct_90__sel_ruins_debris_003",
+            "geo_sel_construct_90__sel_ruins_debris_020_combined_combined",
+            "geo_sel_construct_90__sel_ruins_debris_004_combined",
+            "geo_sel_construct_90__sel_ruins_debris_016_combined",
+            "geo_sel_construct_90__sel_ruins_debris_010_combined",
+            "geo_sel_construct_90__sel_ruins_debris_022_combined_combined",
+            "geo_sel_construct_90__sel_ruins_debris_005_combined",
+            "geo_sel_construct_90__sel_damage_3_debris_004",
+            "geo_sel_construct_90__sel_damage_3_debris_001",
+            "geo_sel_construct_90__sel_damage_3_debris_002_combined",
+            "geo_sel_construct_90__sel_damage_3_debris_003_combined"
+          ],
+          "remaining_count": 0
+        },
+        {
+          "selector": "sel_damage_1_debris",
+          "conditions": [
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "healthy"
+            ]
+          ],
+          "before_members": [
+            "geo_sel_construct_60__sel_damage_1_debris_001_combined",
+            "geo_sel_construct_90__sel_damage_1_debris_002",
+            "geo_sel_construct_90__sel_damage_1_debris_005_combined",
+            "geo_sel_construct_90__sel_damage_1_debris_001",
+            "geo_sel_construct_90__sel_damage_1_debris_003",
+            "geo_sel_construct_90__sel_damage_1_debris_004"
+          ],
+          "after_members": [
+            "geo_sel_construct_60__sel_damage_1_debris_001_combined"
+          ],
+          "removed": [
+            "geo_sel_construct_90__sel_damage_1_debris_002",
+            "geo_sel_construct_90__sel_damage_1_debris_005_combined",
+            "geo_sel_construct_90__sel_damage_1_debris_001",
+            "geo_sel_construct_90__sel_damage_1_debris_003",
+            "geo_sel_construct_90__sel_damage_1_debris_004"
+          ],
+          "remaining_count": 1
+        },
+        {
+          "selector": "sel_damage_2_debris",
+          "conditions": [
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_1"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "healthy"
+            ]
+          ],
+          "before_members": [
+            "geo_sel_construct_90__sel_damage_2_debris_006",
+            "geo_sel_construct_90__sel_damage_2_debris_001",
+            "geo_sel_construct_90__sel_damage_2_debris_002",
+            "geo_sel_construct_90__sel_damage_2_debris_007_combined_combined",
+            "geo_sel_construct_60__sel_damage_2_debris_001_combined_combined",
+            "geo_sel_construct_90__sel_damage_2_debris_003_combined"
+          ],
+          "after_members": [
+            "geo_sel_construct_60__sel_damage_2_debris_001_combined_combined"
+          ],
+          "removed": [
+            "geo_sel_construct_90__sel_damage_2_debris_006",
+            "geo_sel_construct_90__sel_damage_2_debris_001",
+            "geo_sel_construct_90__sel_damage_2_debris_002",
+            "geo_sel_construct_90__sel_damage_2_debris_007_combined_combined",
+            "geo_sel_construct_90__sel_damage_2_debris_003_combined"
+          ],
+          "remaining_count": 1
+        },
+        {
+          "selector": "sel_damage_2_disappear",
+          "conditions": [
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "healthy"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_1"
+            ]
+          ],
+          "before_members": [
+            "geo_sel_construct_50__sel_damage_2_disappear_001",
+            "geo_sel_construct_90__sel_damage_2_disappear_001_combined",
+            "geo_sel_construct_70__sel_damage_2_disappear_001_combined"
+          ],
+          "after_members": [
+            "geo_sel_construct_50__sel_damage_2_disappear_001"
+          ],
+          "removed": [
+            "geo_sel_construct_90__sel_damage_2_disappear_001_combined",
+            "geo_sel_construct_70__sel_damage_2_disappear_001_combined"
+          ],
+          "remaining_count": 1
+        },
+        {
+          "selector": "sel_damage_3_debris",
+          "conditions": [
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_2"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_1"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "healthy"
+            ]
+          ],
+          "before_members": [
+            "geo_sel_construct_70__sel_damage_3_debris_001",
+            "geo_sel_construct_90__sel_damage_3_debris_004",
+            "geo_sel_construct_90__sel_damage_3_debris_001",
+            "geo_sel_construct_30__sel_damage_3_debris_001_combined",
+            "geo_sel_construct_30__sel_damage_3_debris_002",
+            "geo_sel_construct_90__sel_damage_3_debris_002_combined",
+            "geo_sel_construct_60__sel_damage_3_debris_002_combined_combined",
+            "geo_sel_construct_70__sel_damage_3_debris_005",
+            "geo_sel_construct_90__sel_damage_3_debris_003_combined",
+            "geo_sel_construct_70__sel_damage_3_debris_004",
+            "geo_sel_construct_50__sel_damage_3_debris_001"
+          ],
+          "after_members": [
+            "geo_sel_construct_30__sel_damage_3_debris_001_combined",
+            "geo_sel_construct_30__sel_damage_3_debris_002",
+            "geo_sel_construct_60__sel_damage_3_debris_002_combined_combined",
+            "geo_sel_construct_70__sel_damage_3_debris_005",
+            "geo_sel_construct_50__sel_damage_3_debris_001"
+          ],
+          "removed": [
+            "geo_sel_construct_70__sel_damage_3_debris_001",
+            "geo_sel_construct_90__sel_damage_3_debris_004",
+            "geo_sel_construct_90__sel_damage_3_debris_001",
+            "geo_sel_construct_90__sel_damage_3_debris_002_combined",
+            "geo_sel_construct_90__sel_damage_3_debris_003_combined",
+            "geo_sel_construct_70__sel_damage_3_debris_004"
+          ],
+          "remaining_count": 5
+        },
+        {
+          "selector": "sel_damage_3_disappear",
+          "conditions": [
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "healthy"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_1"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_2"
+            ]
+          ],
+          "before_members": [
+            "geo_sel_construct_50__sel_damage_3_disappear_001",
+            "geo_sel_construct_30__sel_damage_3_disappear_001",
+            "geo_sel_construct_60__sel_damage_3_disappear_001_combined_combined",
+            "geo_sel_construct_40__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_80__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_20__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_70__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_90__sel_damage_3_disappear_001_combined"
+          ],
+          "after_members": [
+            "geo_sel_construct_50__sel_damage_3_disappear_001",
+            "geo_sel_construct_30__sel_damage_3_disappear_001",
+            "geo_sel_construct_60__sel_damage_3_disappear_001_combined_combined",
+            "geo_sel_construct_40__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_80__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_20__sel_damage_3_disappear_001_combined"
+          ],
+          "removed": [
+            "geo_sel_construct_70__sel_damage_3_disappear_001_combined",
+            "geo_sel_construct_90__sel_damage_3_disappear_001_combined"
+          ],
+          "remaining_count": 6
+        },
+        {
+          "selector": "sel_ruins_debris",
+          "conditions": [
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "healthy"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_1"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_2"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_3"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_4"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_5"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "ruins"
+            ]
+          ],
+          "before_members": [
+            "geo_sel_construct_40__sel_ruins_debris_002",
+            "geo_sel_construct_90__sel_ruins_debris_006",
+            "geo_sel_construct_30__sel_ruins_debris_004",
+            "geo_sel_construct_90__sel_ruins_debris_014",
+            "geo_sel_construct_40__sel_ruins_debris_003",
+            "geo_sel_construct_90__sel_ruins_debris_009",
+            "geo_sel_construct_30__sel_ruins_debris_005",
+            "geo_sel_construct_60__sel_ruins_debris_012_combined_combined",
+            "geo_sel_construct_50__sel_ruins_debris_003",
+            "geo_sel_construct_90__sel_ruins_debris_008",
+            "geo_sel_construct_60__sel_ruins_debris_001",
+            "geo_sel_construct_60__sel_ruins_debris_005_combined_combined",
+            "geo_sel_construct_40__sel_ruins_debris_005_combined",
+            "geo_sel_construct_30__sel_ruins_debris_001",
+            "geo_sel_construct_90__sel_ruins_debris_018_combined_combined",
+            "geo_sel_construct_90__sel_ruins_debris_019",
+            "geo_sel_construct_90__sel_ruins_debris_007",
+            "geo_sel_construct_90__sel_ruins_debris_015",
+            "geo_sel_construct_30__sel_ruins_debris_003",
+            "geo_sel_construct_90__sel_ruins_debris_012_combined",
+            "geo_sel_construct_40__sel_ruins_debris_004",
+            "geo_sel_construct_90__sel_ruins_debris_003",
+            "geo_sel_construct_60__sel_ruins_debris_011_combined",
+            "geo_sel_construct_90__sel_ruins_debris_020_combined_combined",
+            "geo_sel_construct_60__sel_ruins_debris_016",
+            "geo_sel_construct_90__sel_ruins_debris_004_combined",
+            "geo_sel_construct_90__sel_ruins_debris_016_combined",
+            "geo_sel_construct_60__sel_ruins_debris_014",
+            "geo_sel_construct_30__sel_ruins_debris_002",
+            "geo_sel_construct_90__sel_ruins_debris_010_combined",
+            "geo_sel_construct_90__sel_ruins_debris_022_combined_combined",
+            "geo_sel_construct_90__sel_ruins_debris_005_combined"
+          ],
+          "after_members": [
+            "geo_sel_construct_40__sel_ruins_debris_002",
+            "geo_sel_construct_30__sel_ruins_debris_004",
+            "geo_sel_construct_40__sel_ruins_debris_003",
+            "geo_sel_construct_30__sel_ruins_debris_005",
+            "geo_sel_construct_60__sel_ruins_debris_012_combined_combined",
+            "geo_sel_construct_50__sel_ruins_debris_003",
+            "geo_sel_construct_60__sel_ruins_debris_001",
+            "geo_sel_construct_60__sel_ruins_debris_005_combined_combined",
+            "geo_sel_construct_40__sel_ruins_debris_005_combined",
+            "geo_sel_construct_30__sel_ruins_debris_001",
+            "geo_sel_construct_30__sel_ruins_debris_003",
+            "geo_sel_construct_40__sel_ruins_debris_004",
+            "geo_sel_construct_60__sel_ruins_debris_011_combined",
+            "geo_sel_construct_60__sel_ruins_debris_016",
+            "geo_sel_construct_60__sel_ruins_debris_014",
+            "geo_sel_construct_30__sel_ruins_debris_002"
+          ],
+          "removed": [
+            "geo_sel_construct_90__sel_ruins_debris_006",
+            "geo_sel_construct_90__sel_ruins_debris_014",
+            "geo_sel_construct_90__sel_ruins_debris_009",
+            "geo_sel_construct_90__sel_ruins_debris_008",
+            "geo_sel_construct_90__sel_ruins_debris_018_combined_combined",
+            "geo_sel_construct_90__sel_ruins_debris_019",
+            "geo_sel_construct_90__sel_ruins_debris_007",
+            "geo_sel_construct_90__sel_ruins_debris_015",
+            "geo_sel_construct_90__sel_ruins_debris_012_combined",
+            "geo_sel_construct_90__sel_ruins_debris_003",
+            "geo_sel_construct_90__sel_ruins_debris_020_combined_combined",
+            "geo_sel_construct_90__sel_ruins_debris_004_combined",
+            "geo_sel_construct_90__sel_ruins_debris_016_combined",
+            "geo_sel_construct_90__sel_ruins_debris_010_combined",
+            "geo_sel_construct_90__sel_ruins_debris_022_combined_combined",
+            "geo_sel_construct_90__sel_ruins_debris_005_combined"
+          ],
+          "remaining_count": 16
+        },
+        {
+          "selector": "sel_ruins_disappear",
+          "conditions": [
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "healthy"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_1"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_2"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_3"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_4"
+            ],
+            [
+              2,
+              0,
+              1,
+              "life_cycle_state",
+              "damage_5"
+            ],
+            [
+              2,
+              0,
+              0,
+              "has_collapsed_ruins",
+              "false"
+            ]
+          ],
+          "before_members": [
+            "geo_sel_construct_30__sel_ruins_disappear_009_combined_combined",
+            "geo_sel_construct_70__sel_ruins_disappear_009_combined",
+            "geo_sel_construct_50__sel_ruins_disappear_001_combined",
+            "geo_sel_construct_20__sel_ruins_disappear_001_combined",
+            "geo_sel_construct_10__sel_ruins_disappear_010_combined_combined",
+            "geo_sel_construct_60__sel_ruins_disappear_001_combined_combined",
+            "geo_sel_construct_40__sel_ruins_disappear_001_combined",
+            "geo_sel_construct_90__sel_ruins_disappear_009_combined_combined",
+            "geo_sel_construct_80__sel_ruins_disappear_001_combined"
+          ],
+          "after_members": [
+            "geo_sel_construct_30__sel_ruins_disappear_009_combined_combined",
+            "geo_sel_construct_50__sel_ruins_disappear_001_combined",
+            "geo_sel_construct_20__sel_ruins_disappear_001_combined",
+            "geo_sel_construct_10__sel_ruins_disappear_010_combined_combined",
+            "geo_sel_construct_60__sel_ruins_disappear_001_combined_combined",
+            "geo_sel_construct_40__sel_ruins_disappear_001_combined",
+            "geo_sel_construct_80__sel_ruins_disappear_001_combined"
+          ],
+          "removed": [
+            "geo_sel_construct_70__sel_ruins_disappear_009_combined",
+            "geo_sel_construct_90__sel_ruins_disappear_009_combined_combined"
+          ],
+          "remaining_count": 7
+        }
+      ],
+      "contact_checks": {
+        "interfaces": [
+          {
+            "parent": "three-bay teaching hall lintel",
+            "child": "three-bay teaching hall post 0",
+            "interface": "post top to lintel bottom",
+            "gap_m": -0.16
+          },
+          {
+            "parent": "three-bay teaching hall lintel",
+            "child": "three-bay teaching hall post 1",
+            "interface": "post top to lintel bottom",
+            "gap_m": -0.16
+          },
+          {
+            "parent": "three-bay teaching hall lintel",
+            "child": "three-bay teaching hall post 2",
+            "interface": "post top to lintel bottom",
+            "gap_m": -0.16
+          },
+          {
+            "parent": "three-bay teaching hall lintel",
+            "child": "three-bay teaching hall post 3",
+            "interface": "post top to lintel bottom",
+            "gap_m": -0.16
+          },
+          {
+            "parent": "broad Dai Viet hall tiled hip",
+            "child": "three-bay teaching hall post 0",
+            "interface": "front eave underside to post top",
+            "gap_m": 0.003478,
+            "sample_x_error_m": 0.2045
+          },
+          {
+            "parent": "broad Dai Viet hall tiled hip",
+            "child": "three-bay teaching hall post 1",
+            "interface": "front eave underside to post top",
+            "gap_m": -0.02,
+            "sample_x_error_m": 0.1325
+          },
+          {
+            "parent": "broad Dai Viet hall tiled hip",
+            "child": "three-bay teaching hall post 2",
+            "interface": "front eave underside to post top",
+            "gap_m": -0.02,
+            "sample_x_error_m": 0.1325
+          },
+          {
+            "parent": "broad Dai Viet hall tiled hip",
+            "child": "three-bay teaching hall post 3",
+            "interface": "front eave underside to post top",
+            "gap_m": 0.003478,
+            "sample_x_error_m": 0.2045
+          },
+          {
+            "parent": "open monastery gate lintel",
+            "child": "open monastery gate post 0",
+            "interface": "post top to lintel bottom",
+            "gap_m": -0.16
+          },
+          {
+            "parent": "open monastery gate lintel",
+            "child": "open monastery gate post 1",
+            "interface": "post top to lintel bottom",
+            "gap_m": -0.16
+          },
+          {
+            "parent": "bell shrine brick pad",
+            "child": "bell shrine timber post",
+            "interface": "post bottom to pad top",
+            "gap_m": 0.0
+          },
+          {
+            "parent": "bell shrine brick pad",
+            "child": "bell shrine timber post.001",
+            "interface": "post bottom to pad top",
+            "gap_m": 0.0
+          },
+          {
+            "parent": "lotus basin stone plinth",
+            "child": "lotus basin",
+            "interface": "basin bottom to plinth top",
+            "gap_m": 0.0
+          }
+        ],
+        "entrance_axis": "-Y",
+        "donor_bounds_m": {
+          "minimum": [
+            -5.734375,
+            -5.9375,
+            -1.599609375
+          ],
+          "maximum": [
+            5.734375,
+            5.76953125,
+            7.4453125
+          ]
+        },
+        "native_markers": "untouched; detail export is visual only"
+      },
+      "owner_uv_index_byte_audit": {
+        "name": "vn_monastery_age04",
+        "chunks": 42,
+        "geob_chunks": 8,
+        "vertex_buffers": 4,
+        "vertices": 77902,
+        "changed_vertices": 71229,
+        "fixed_ground_records": 3232,
+        "non_geob_chunks_byte_identical": true,
+        "index_chunks_byte_identical": true,
+        "uv_selector_owner_bytes_preserved": true
+      },
+      "preview_dir": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\castle_next\\buildings\\previews\\monastery04",
+      "preview_proof": "Offline exact healthy-draw geometry; native culling/runtime unverified"
+    },
+    {
+      "key": "siege_workshop03",
+      "private_model_stem": "art/scenario/cccastle/siege_workshop_age03/model",
+      "stock_model_stem": "art/civilizations/chinese/structures/siege_workshop/chi_siege_workshop_control_age03/chi_siege_workshop_control_age03",
+      "donor_decoded_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\castle_next\\donors\\decoded\\siege_workshop03\\211749edbeccb97a9a95\\decoded-static.json",
+      "donor_model_sha256": "cd8f1db664ee8759cbab09ce8b60d8eb0075386a932cc5bd41f8cdfd35d0d305",
+      "native_model": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\buildings\\siege_workshop\\age03\\vn_model.rgm",
+      "native_model_sha256": "cd8f1db664ee8759cbab09ce8b60d8eb0075386a932cc5bd41f8cdfd35d0d305",
+      "native_geometry": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\buildings\\siege_workshop\\age03\\vn_siege_workshop_age03.rrgeom",
+      "native_geometry_sha256": "03882a33003a007064122f107aaa62b790c2ff0d74e23ad89a0d79a85af894c0",
+      "donor_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\buildings\\siege_workshop\\age03\\Chinese_siege_workshop_age03_donor.blend",
+      "editable_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\buildings\\siege_workshop\\age03\\Vietnam_siege_workshop_Age03.blend",
+      "detail_source_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\buildings\\siege_workshop\\age03\\details\\vn_siege_workshop_details_age03.blend",
+      "detail_export_dir": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\buildings\\siege_workshop\\age03\\details",
+      "detail_fbx_sha256": "ec83f3d4b07b8e5e93234dfb742692c26f5d2ddb853f5e0047563cf3965bcc18",
+      "detail_material_textures": {
+        "albedo": "f925c30398835d03d5561e4e4226fdabc8be9478ef0c510dc79dc9dbd2f542ee",
+        "roughness": "b423c3205b957f68b072235b9343520f84b1adde4b216bd44893a20e9398f704",
+        "normal": "abfddfc41c354f558a7ebf171e6ccf9a4d3640d66f5cb20ee6507e42beaecada",
+        "metalness": "1286fb2b35d5a81c739ea4db471a1f5b0685587b415c6663bfe97191732f17b7"
+      },
+      "healthy_stock_triangles": 42188,
+      "healthy_remodel_native_triangles": 42188,
+      "detail_triangles": 584,
+      "hidden_native_selector_names": [],
+      "intersecting_native_roof_trim_names": [],
+      "omitted_roof_debris": [],
+      "selector_changes": [],
+      "contact_checks": {
+        "interfaces": [
+          {
+            "parent": "open siege assembly arcade lintel",
+            "child": "open siege assembly arcade post 0",
+            "interface": "post top to lintel bottom",
+            "gap_m": -0.16
+          },
+          {
+            "parent": "open siege assembly arcade lintel",
+            "child": "open siege assembly arcade post 1",
+            "interface": "post top to lintel bottom",
+            "gap_m": -0.16
+          },
+          {
+            "parent": "open siege assembly arcade lintel",
+            "child": "open siege assembly arcade post 2",
+            "interface": "post top to lintel bottom",
+            "gap_m": -0.16
+          },
+          {
+            "parent": "open siege assembly arcade lintel",
+            "child": "open siege assembly arcade post 3",
+            "interface": "post top to lintel bottom",
+            "gap_m": -0.16
+          }
+        ],
+        "entrance_axis": "-Y",
+        "donor_bounds_m": {
+          "minimum": [
+            -5.8203125,
+            -5.19921875,
+            -1.97265625
+          ],
+          "maximum": [
+            4.80859375,
+            4.84765625,
+            7.10546875
+          ]
+        },
+        "native_markers": "untouched; detail export is visual only"
+      },
+      "owner_uv_index_byte_audit": {
+        "name": "vn_siege_workshop_age03",
+        "chunks": 62,
+        "geob_chunks": 12,
+        "vertex_buffers": 6,
+        "vertices": 69459,
+        "changed_vertices": 64306,
+        "fixed_ground_records": 2144,
+        "non_geob_chunks_byte_identical": true,
+        "index_chunks_byte_identical": true,
+        "uv_selector_owner_bytes_preserved": true
+      },
+      "preview_dir": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\castle_next\\buildings\\previews\\siege_workshop03",
+      "preview_proof": "Offline exact healthy-draw geometry; native culling/runtime unverified"
+    },
+    {
+      "key": "siege_workshop04",
+      "private_model_stem": "art/scenario/cccastle/siege_workshop_age04/model",
+      "stock_model_stem": "art/civilizations/chinese/structures/siege_workshop/chi_siege_workshop_control_age04/chi_siege_workshop_control_age04",
+      "donor_decoded_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\castle_next\\donors\\decoded\\siege_workshop04\\84ff892a34f0ecc8cbca\\decoded-static.json",
+      "donor_model_sha256": "4560a705dd7a7e0985e1be59e9d6950aee524898f30ee6dc72aec3e9ace6e18b",
+      "native_model": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\buildings\\siege_workshop\\age04\\vn_model.rgm",
+      "native_model_sha256": "4560a705dd7a7e0985e1be59e9d6950aee524898f30ee6dc72aec3e9ace6e18b",
+      "native_geometry": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\buildings\\siege_workshop\\age04\\vn_siege_workshop_age04.rrgeom",
+      "native_geometry_sha256": "18990e499d326a8cff4c192d056df4db8623a18c8c6244043e8b4266506449b9",
+      "donor_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\buildings\\siege_workshop\\age04\\Chinese_siege_workshop_age04_donor.blend",
+      "editable_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\buildings\\siege_workshop\\age04\\Vietnam_siege_workshop_Age04.blend",
+      "detail_source_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\buildings\\siege_workshop\\age04\\details\\vn_siege_workshop_details_age04.blend",
+      "detail_export_dir": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\buildings\\siege_workshop\\age04\\details",
+      "detail_fbx_sha256": "4e3b33e0c26c3bf30e376d3b73ca27cab9e21ec20a0811f7ca55f8365f9bfba1",
+      "detail_material_textures": {
+        "albedo": "f925c30398835d03d5561e4e4226fdabc8be9478ef0c510dc79dc9dbd2f542ee",
+        "roughness": "b423c3205b957f68b072235b9343520f84b1adde4b216bd44893a20e9398f704",
+        "normal": "abfddfc41c354f558a7ebf171e6ccf9a4d3640d66f5cb20ee6507e42beaecada",
+        "metalness": "1286fb2b35d5a81c739ea4db471a1f5b0685587b415c6663bfe97191732f17b7"
+      },
+      "healthy_stock_triangles": 53492,
+      "healthy_remodel_native_triangles": 53492,
+      "detail_triangles": 596,
+      "hidden_native_selector_names": [],
+      "intersecting_native_roof_trim_names": [],
+      "omitted_roof_debris": [],
+      "selector_changes": [],
+      "contact_checks": {
+        "interfaces": [
+          {
+            "parent": "open siege assembly arcade lintel",
+            "child": "open siege assembly arcade post 0",
+            "interface": "post top to lintel bottom",
+            "gap_m": -0.16
+          },
+          {
+            "parent": "open siege assembly arcade lintel",
+            "child": "open siege assembly arcade post 1",
+            "interface": "post top to lintel bottom",
+            "gap_m": -0.16
+          },
+          {
+            "parent": "open siege assembly arcade lintel",
+            "child": "open siege assembly arcade post 2",
+            "interface": "post top to lintel bottom",
+            "gap_m": -0.16
+          },
+          {
+            "parent": "open siege assembly arcade lintel",
+            "child": "open siege assembly arcade post 3",
+            "interface": "post top to lintel bottom",
+            "gap_m": -0.16
+          }
+        ],
+        "entrance_axis": "-Y",
+        "donor_bounds_m": {
+          "minimum": [
+            -5.8203125,
+            -5.19921875,
+            -1.97265625
+          ],
+          "maximum": [
+            4.80859375,
+            4.84765625,
+            7.203125
+          ]
+        },
+        "native_markers": "untouched; detail export is visual only"
+      },
+      "owner_uv_index_byte_audit": {
+        "name": "vn_siege_workshop_age04",
+        "chunks": 52,
+        "geob_chunks": 10,
+        "vertex_buffers": 5,
+        "vertices": 105801,
+        "changed_vertices": 99347,
+        "fixed_ground_records": 809,
+        "non_geob_chunks_byte_identical": true,
+        "index_chunks_byte_identical": true,
+        "uv_selector_owner_bytes_preserved": true
+      },
+      "preview_dir": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\castle_next\\buildings\\previews\\siege_workshop04",
+      "preview_proof": "Offline exact healthy-draw geometry; native culling/runtime unverified"
+    },
+    {
+      "key": "keep03",
+      "private_model_stem": "art/scenario/cccastle/keep_age03/model",
+      "stock_model_stem": "art/civilizations/chinese/structures/keep/chi_keep_control_age03/chi_keep_control_age03",
+      "donor_decoded_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\castle_next\\donors\\decoded\\keep03\\f240e15234f1c84cc2d2\\decoded-static.json",
+      "donor_model_sha256": "58cf6d6870ac23657dc0d4f06a3c865db6436c90d5571db703e305a0d2f94395",
+      "native_model": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\buildings\\keep\\age03\\vn_model.rgm",
+      "native_model_sha256": "58cf6d6870ac23657dc0d4f06a3c865db6436c90d5571db703e305a0d2f94395",
+      "native_geometry": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\buildings\\keep\\age03\\vn_keep_age03.rrgeom",
+      "native_geometry_sha256": "db24050bcc6432e7569ef4be0e97a83ba7bb4d40db9e789e9e3fc78bb367c0ad",
+      "donor_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\buildings\\keep\\age03\\Chinese_keep_age03_donor.blend",
+      "editable_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\buildings\\keep\\age03\\Vietnam_keep_Age03.blend",
+      "detail_source_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\buildings\\keep\\age03\\details\\vn_keep_details_age03.blend",
+      "detail_export_dir": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\buildings\\keep\\age03\\details",
+      "detail_fbx_sha256": "8151c35b386f6d7da73f35f81ae542cffdb42ac844dc664454dd30a5838b56ea",
+      "detail_material_textures": {
+        "albedo": "5701304323972886a2c33c1779a65cb6b00a9852339877e4fd0651fdac2133ef",
+        "roughness": "b423c3205b957f68b072235b9343520f84b1adde4b216bd44893a20e9398f704",
+        "normal": "abfddfc41c354f558a7ebf171e6ccf9a4d3640d66f5cb20ee6507e42beaecada",
+        "metalness": "1286fb2b35d5a81c739ea4db471a1f5b0685587b415c6663bfe97191732f17b7"
+      },
+      "healthy_stock_triangles": 117536,
+      "healthy_remodel_native_triangles": 117536,
+      "detail_triangles": 452,
+      "hidden_native_selector_names": [],
+      "intersecting_native_roof_trim_names": [],
+      "omitted_roof_debris": [],
+      "selector_changes": [],
+      "contact_checks": {
+        "interfaces": [
+          {
+            "parent": "gate timber lintel",
+            "child": "gate brick cheek",
+            "interface": "cheek top to lintel bottom",
+            "gap_m": -0.1
+          },
+          {
+            "parent": "gate timber lintel",
+            "child": "gate brick cheek.001",
+            "interface": "cheek top to lintel bottom",
+            "gap_m": -0.1
+          }
+        ],
+        "entrance_axis": "-X",
+        "donor_bounds_m": {
+          "minimum": [
+            -8.4453125,
+            -7.9296875,
+            -3.17578125
+          ],
+          "maximum": [
+            7.9296875,
+            8.4453125,
+            12.5625
+          ]
+        },
+        "native_markers": "untouched; detail export is visual only"
+      },
+      "owner_uv_index_byte_audit": {
+        "name": "vn_keep_age03",
+        "chunks": 92,
+        "geob_chunks": 18,
+        "vertex_buffers": 9,
+        "vertices": 263226,
+        "changed_vertices": 258791,
+        "fixed_ground_records": 1926,
+        "non_geob_chunks_byte_identical": true,
+        "index_chunks_byte_identical": true,
+        "uv_selector_owner_bytes_preserved": true
+      },
+      "preview_dir": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\castle_next\\buildings\\previews\\keep03",
+      "preview_proof": "Offline exact healthy-draw geometry; native culling/runtime unverified"
+    }
+  ],
+  "limits": "Offline export and Garrison preflight only; root handles native cook, archive, import and match gates."
+}

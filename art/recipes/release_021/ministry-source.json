@@ -1,0 +1,1794 @@
+{
+  "schema": "ccp.021-ministry-art/v1",
+  "asset": "ministry",
+  "status": "authored",
+  "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\buildings_021\\ministry\\ministry.blend",
+  "source_sha256": "2ae18fb77c84c70e2f2f358ec1e013a0f3ec4185fc43c688f2a2b3710bdd9b0e",
+  "export": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\buildings_021\\ministry",
+  "export_files": {
+    "albedo.png": "eb20b2c8431b56e3a3d27bf1ee21fc941e0b7b85b5786e66c5b4517e9affb5dd",
+    "building.json": "1adfc8820f2e9ddf815da42ec09912a9b9ea1b6bbd1b553a7cd2b87c8397769c",
+    "metalness.png": "2fb9ddb7eb34bda00d3487a9509bd306dc84fa0cddcc672e3bb98c89467439ee",
+    "model.fbx": "eef109d356a8822161245df7dad2bb3060a53d521607b748fe317ce00f74ab80",
+    "normal.png": "eb8bd5042f4b38ce51e95b54c562908649074fc9f836bbc8f607e848faaa3ceb",
+    "roughness.png": "236e7e8d465aba003a447998cb18b155e7999b30744a49093e0ad76585c7c48d"
+  },
+  "donor_manifest": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_021\\ministry\\stock_elephant\\b6c42829ce79df25004a\\decoded-static.json",
+  "donor_manifest_sha256": "eb45bc2577a0a3052aed0b0535c23160e28267a065ede7fb8563a5bd932ca0da",
+  "generator_dependencies": {
+    "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\tools\\release_020\\model_ministry_farm_hideout.py": "aa6603ea02783b5a05693620d90ee2c88deb5b95a68434a26dd05230fcabbd28",
+    "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\tools\\release_020\\model_ministry_farm_hideout_runner.py": "10f09b47396cc1f7dc3047fe82535861ad4b88c084b4ac1b82773f69a13550b4",
+    "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\tools\\release_021\\ministry_refine.py": "ef56e8a402798d69302308eec303fb3e455931e5413eab8e12019fe6d23182be"
+  },
+  "before_020_preview": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_020\\ministry_farm_hideout\\ministry\\iso.png",
+  "stock_building_surface_sources": [
+    {
+      "stock_texture": "art/material_library/substances/structures/wood/str_wood_chi_generic_02_alb",
+      "retained_source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\buildings_021\\ministry\\donor\\str_wood_chi_generic_02_alb.dds",
+      "sha256": "ac2ff9f996bb67d71e9cb65e914e47662e09a9340a9438dc6c196af5dc936989"
+    },
+    {
+      "stock_texture": "art/material_library/substances/structures/plaster/str_plaster_cob_01_alb",
+      "retained_source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\buildings_021\\ministry\\donor\\str_plaster_cob_01_alb.dds",
+      "sha256": "b521fb8fb1b507df9550325ea794848d62ec0b945fb4b92a830ac6597c205d3f"
+    }
+  ],
+  "donor_resource_hashes": {
+    "geometry": "69f15cb1656cd7c9c3342b64ee65ba3b9e0ac7c492b9936f8a2d70fd3109950d",
+    "material": "d3bf4ea6d82f523469c17c3204a804d4cc6d87992cefee6f1c176a5551b6f41f",
+    "model": "9a9b0c38b497480e716f8699613a37c341957fcc9ecc4595f209a761c87f681c"
+  },
+  "garrison_preflight": {
+    "ok": true,
+    "findings": [
+      {
+        "object": "Ministry_20_superstructure",
+        "code": "open_surface",
+        "severity": "WARNING",
+        "message": "Open or non-manifold surface: check it is meant to be seen from both sides"
+      }
+    ],
+    "objects": 2
+  },
+  "original_closed_building_geometry": [
+    {
+      "name": "Brick_raised_civic_plinth",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 9.354150030684462,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Packed_yard_base",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.5816250630691662,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Storage_brick_threshold",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 1.1024999526515598,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Plinth_course_y_-2.27_0.07",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.017930265347145043,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Plinth_course_y_3.58_0.07",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.017930265347144973,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Plinth_course_x_-3.10_0.07",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.015822046817597787,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Plinth_course_x_3.10_0.07",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.015822046817597787,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Plinth_course_y_-2.27_0.18",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.017930266831488254,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Plinth_course_y_3.58_0.18",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.017930266831488642,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Plinth_course_x_-3.10_0.18",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.01582204812741373,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Plinth_course_x_3.10_0.18",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.01582204812741373,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_back_plaster",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 3.035650597375598,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_side_wall_-1_0",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.32584511793836834,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_side_wall_-1_1",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.6516902134668725,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_side_wall_-1_2",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.5263651678186552,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_lower_-1_0",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.14310004731192974,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_header_-1_0",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.1026000434562583,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_bed_-1_0",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.008008020787331423,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_louver_-1_0_0",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.0015730004303102924,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_louver_-1_0_1",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.0015730004303101536,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_louver_-1_0_2",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.0015730004303101536,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_lower_-1_1",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.14310008107424677,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_header_-1_1",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.10260006766320529,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_bed_-1_1",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.008008018549916127,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_louver_-1_1_0",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.001572999990818967,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_louver_-1_1_1",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.0015729999908189428,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_louver_-1_1_2",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.0015729999908189254,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_timber_pilaster_-1_-0.72",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.0566999610721924,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_timber_pilaster_-1_+1.16",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.05669993854165756,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_timber_pilaster_-1_+3.18",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.056699983602727266,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_side_wall_1_0",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.32584511793836834,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_side_wall_1_1",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.6516902134668725,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_side_wall_1_2",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.5263651678186556,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_lower_1_0",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.14310004731192974,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_header_1_0",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.10260004345625835,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_bed_1_0",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.008008020787331423,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_louver_1_0_0",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.0015730004303102924,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_louver_1_0_1",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.0015730004303101536,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_louver_1_0_2",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.00157300043031015,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_lower_1_1",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.14310008107424677,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_header_1_1",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.10260006766320517,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_bed_1_1",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.008008018549916127,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_louver_1_1_0",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.0015729999908189653,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_louver_1_1_1",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.0015729999908189497,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_vent_louver_1_1_2",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.001572999990818929,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_timber_pilaster_1_-0.72",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.0566999610721924,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_timber_pilaster_1_+1.16",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.05669993854165761,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_timber_pilaster_1_+3.18",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.056699983602727266,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Office_bay_wall_-1",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.30630590530383733,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Office_screen_post_-1.03",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.020800004506111025,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Office_screen_post_-1.67",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.020800004506111053,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Office_screen_post_-2.31",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.020799979710579314,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Office_screen_lath_-1_1.24",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.02187897838783341,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Office_screen_lath_-1_2.12",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.021878978387833092,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Office_screen_lath_-1_2.68",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.021878978387833176,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Office_bay_wall_1",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.3063059053038374,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Office_screen_post_+1.03",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.020800004506111025,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Office_screen_post_+1.67",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.02080000450611104,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Office_screen_post_+2.31",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.020799979710579314,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Office_screen_lath_1_1.24",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.02187897838783341,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Office_screen_lath_1_2.12",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.021878978387833092,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Office_screen_lath_1_2.68",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.021878978387833176,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Office_door_upper_lintel",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.05426401812743889,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Office_recessed_door_leaf",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.19874996885657303,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Office_door_threshold",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.07452900737357115,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Veranda_column_-2.64",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.09746987804236706,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Veranda_column_-0.88",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.097469969773888,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Veranda_column_+0.88",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.09746996977388803,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Veranda_column_+2.64",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.09746987804236712,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_back_column_-2.65",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.09746993919667608,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Hall_back_column_+2.65",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.09746993919667608,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Veranda_front_lintel",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.29040004930496366,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Back_lintel",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.29040004930496366,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Main_broad_tile_roof",
+      "vertices": 162,
+      "faces": 160,
+      "triangles": 320,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 6.804000143508848,
+      "material_slots": 1,
+      "uv_loops": 640
+    },
+    {
+      "name": "Faceted_tile_ridge",
+      "vertices": 16,
+      "faces": 10,
+      "triangles": 28,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.20348825801752618,
+      "material_slots": 1,
+      "uv_loops": 48
+    },
+    {
+      "name": "Roof_fascia_front",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.1366400572013764,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Under_eave_bracket_front_-2.64",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.009839983291630938,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Under_eave_bracket_front_-1.76",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.009839998931878258,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Under_eave_bracket_front_-0.88",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.009839991111754522,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Under_eave_bracket_front_+0.00",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.009839993066785499,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Under_eave_bracket_front_+0.88",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.009839991111754529,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Under_eave_bracket_front_+1.76",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.009839998931878258,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Under_eave_bracket_front_+2.64",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.009839983291630945,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Roof_fascia_rear",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.13664017354970193,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Under_eave_bracket_rear_-2.64",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.009839983291630869,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Under_eave_bracket_rear_-1.76",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.009839998931878188,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Under_eave_bracket_rear_-0.88",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.009839991111754598,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Under_eave_bracket_rear_+0.00",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.009839993066785437,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Under_eave_bracket_rear_+0.88",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.009839991111754591,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Under_eave_bracket_rear_+1.76",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.009839998931878181,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Under_eave_bracket_rear_+2.64",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.009839983291630869,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Wing_back_wall",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.7091402004253944,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Wing_side_wall_-1",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.6841639732034196,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Wing_front_jamb_-1",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.1717101209837134,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Wing_side_wall_1",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.6841633458287719,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Wing_front_jamb_1",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.17171012098371313,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Wing_front_door_header",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.041160025100703435,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Wing_tile_roof",
+      "vertices": 12,
+      "faces": 8,
+      "triangles": 20,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.841500035941601,
+      "material_slots": 1,
+      "uv_loops": 36
+    },
+    {
+      "name": "Wing_recessed_door",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.07378808552526953,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Wing_post_1.72",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.03052797130966143,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Wing_post_3.58",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.03052800163647501,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Wing_vent_lath_1.70",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.0031460007028546073,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Wing_vent_lath_1.90",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.0031460075216339436,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Wing_vent_lath_2.10",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.0031460075216339506,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Yard_post_-3.61_-3.67",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.025480039039418784,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Yard_post_-3.61_-1.57",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.025480017343311113,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Yard_post_-1.72_-3.67",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.025480017343311123,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Yard_post_-1.72_-1.57",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.025479995647221892,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Yard_long_rail_-3.67",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.024199966955194427,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Yard_long_rail_-1.57",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.024199993181227328,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Yard_west_rail",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.026740962504636867,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Stone_water_trough",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.11759995936155233,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Trough_water",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.006229999914169046,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Veranda_ledger_counter",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.06174000035047468,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Counter_leg_-2.23",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.02098802576565774,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Counter_leg_-1.40",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.02098800302052497,
+      "material_slots": 1,
+      "uv_loops": 24
+    },
+    {
+      "name": "Storage_grain_jar_0",
+      "vertices": 50,
+      "faces": 42,
+      "triangles": 96,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.0958344762917885,
+      "material_slots": 1,
+      "uv_loops": 180
+    },
+    {
+      "name": "Storage_grain_jar_1",
+      "vertices": 50,
+      "faces": 42,
+      "triangles": 96,
+      "non_manifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.04547842727930933,
+      "material_slots": 1,
+      "uv_loops": 180
+    }
+  ],
+  "contact_checks": [
+    {
+      "interface": "veranda column to plinth",
+      "column_x": -2.64,
+      "column_bottom": 0.22,
+      "plinth_top": 0.26,
+      "signed_gap": -0.04000000000000001
+    },
+    {
+      "interface": "veranda column to plinth",
+      "column_x": -0.88,
+      "column_bottom": 0.22,
+      "plinth_top": 0.26,
+      "signed_gap": -0.04000000000000001
+    },
+    {
+      "interface": "veranda column to plinth",
+      "column_x": 0.88,
+      "column_bottom": 0.22,
+      "plinth_top": 0.26,
+      "signed_gap": -0.04000000000000001
+    },
+    {
+      "interface": "veranda column to plinth",
+      "column_x": 2.64,
+      "column_bottom": 0.22,
+      "plinth_top": 0.26,
+      "signed_gap": -0.04000000000000001
+    },
+    {
+      "interface": "veranda column/lintel",
+      "signed_gap": 4.440892098500626e-16
+    },
+    {
+      "interface": "hall wall/plinth",
+      "signed_gap": -0.024999999999999994
+    },
+    {
+      "interface": "wing wall/threshold",
+      "signed_gap": -0.03
+    },
+    {
+      "interface": "wing wall/roof",
+      "signed_gap": -0.08999999999999986
+    },
+    {
+      "interface": "West_outer post0/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "West_outer post1/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "West_outer post2/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "West_outer post3/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "West_outer post4/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "West_front post0/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "West_front post1/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "West_front post2/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "West_front post3/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "West_rear post0/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "West_rear post1/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "West_rear post2/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "West_rear post3/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "West_inner_front post0/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "West_inner_front post1/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "West_inner_rear post0/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "West_inner_rear post1/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "East_outer post0/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "East_outer post1/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "East_outer post2/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "East_front post0/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "East_front post1/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "East_front post2/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "East_front post3/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "East_rear post0/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "East_rear post1/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "East_rear post2/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "East_rear post3/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "East_inner_front post0/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "East_inner_front post1/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "East_inner_rear post0/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "East_inner_rear post1/ground",
+      "signed_gap": -0.04
+    },
+    {
+      "interface": "yard trough/earth",
+      "signed_gap": -0.03
+    },
+    {
+      "interface": "elephant 1 hoof/yard",
+      "signed_gap": 0.0
+    },
+    {
+      "interface": "elephant 2 hoof/yard",
+      "signed_gap": 0.0
+    },
+    {
+      "interface": "elephant 3 hoof/yard",
+      "signed_gap": 0.0
+    }
+  ],
+  "native_bench_clearance_checks": [
+    {
+      "bench_translation": [
+        4.022605895996094,
+        -4.095726013183594
+      ],
+      "elephant": 1,
+      "aabb_separation_m": 5.002933282828115
+    },
+    {
+      "bench_translation": [
+        4.022605895996094,
+        -4.095726013183594
+      ],
+      "elephant": 2,
+      "aabb_separation_m": 5.002933282828115
+    },
+    {
+      "bench_translation": [
+        4.022605895996094,
+        -4.095726013183594
+      ],
+      "elephant": 3,
+      "aabb_separation_m": 0.35791731560462203
+    },
+    {
+      "bench_translation": [
+        -4.053871154785156,
+        -4.108872890472412
+      ],
+      "elephant": 1,
+      "aabb_separation_m": 0.3447704383158037
+    },
+    {
+      "bench_translation": [
+        -4.053871154785156,
+        -4.108872890472412
+      ],
+      "elephant": 2,
+      "aabb_separation_m": 0.35112617790930933
+    },
+    {
+      "bench_translation": [
+        -4.053871154785156,
+        -4.108872890472412
+      ],
+      "elephant": 3,
+      "aabb_separation_m": 4.834198541617177
+    },
+    {
+      "bench_translation": [
+        4.1544270515441895,
+        4.831367015838623
+      ],
+      "elephant": 1,
+      "aabb_separation_m": 9.285010344626839
+    },
+    {
+      "bench_translation": [
+        4.1544270515441895,
+        4.831367015838623
+      ],
+      "elephant": 2,
+      "aabb_separation_m": 5.56654053127203
+    },
+    {
+      "bench_translation": [
+        4.1544270515441895,
+        4.831367015838623
+      ],
+      "elephant": 3,
+      "aabb_separation_m": 9.285010344626839
+    },
+    {
+      "bench_translation": [
+        -4.4165568351745605,
+        4.8942341804504395
+      ],
+      "elephant": 1,
+      "aabb_separation_m": 9.347877509238655
+    },
+    {
+      "bench_translation": [
+        -4.4165568351745605,
+        4.8942341804504395
+      ],
+      "elephant": 2,
+      "aabb_separation_m": 5.629407695883846
+    },
+    {
+      "bench_translation": [
+        -4.4165568351745605,
+        4.8942341804504395
+      ],
+      "elephant": 3,
+      "aabb_separation_m": 9.347877509238655
+    }
+  ],
+  "notes": {
+    "design": "Scratch practical civic hall; brick platform, timber veranda, tiled roof, storage wing, small handling yard",
+    "ground_footprint": "16x16 user-approved compound; placement source change owned by integration agent",
+    "historical_evidence": "Timber and brick/tile vocabulary is regional archaeological inspiration; arrangement and Ministry form are invention",
+    "source": "https://hoangthanhthanglong.vn/en/kinh-thien-palace-the-heart-of-the-imperial-citadel-of-thang-long/",
+    "trunk_terminal_pose_lift_native_m": 0.2399444580078125,
+    "stock_elephants": {
+      "donor": {
+        "logical_path": "art/civilizations/sultanate_ha_tug/animals/tug_elephant_worker_age01/tug_elephant_worker_age01.rgm"
+      },
+      "uniform_scale": 1.0,
+      "count": 3,
+      "instances": [
+        {
+          "index": 1,
+          "center": [
+            -4.4,
+            -6.0
+          ],
+          "yaw_degrees": 88,
+          "bounds_before_shift": {
+            "minimum": [
+              -7.03267261316798,
+              -7.281521505242253,
+              0.08
+            ],
+            "maximum": [
+              -1.767327386832021,
+              -4.786948308112557,
+              3.6457196044921876
+            ]
+          },
+          "sole_gap": 0.0,
+          "stock_scale": 1.0
+        },
+        {
+          "index": 2,
+          "center": [
+            -4.4,
+            -2.35
+          ],
+          "yaw_degrees": 92,
+          "bounds_before_shift": {
+            "minimum": [
+              -7.03267261316798,
+              -3.5630516918874435,
+              0.08
+            ],
+            "maximum": [
+              -1.767327386832021,
+              -1.0684784947577475,
+              3.6457196044921876
+            ]
+          },
+          "sole_gap": 0.0,
+          "stock_scale": 1.0
+        },
+        {
+          "index": 3,
+          "center": [
+            4.2,
+            -6.0
+          ],
+          "yaw_degrees": 88,
+          "bounds_before_shift": {
+            "minimum": [
+              1.5673273868320208,
+              -7.281521505242253,
+              0.08
+            ],
+            "maximum": [
+              6.832672613167979,
+              -4.786948308112557,
+              3.6457196044921876
+            ]
+          },
+          "sole_gap": 0.0,
+          "stock_scale": 1.0
+        }
+      ],
+      "pose": "stock decoded standing geometry; terminal trunk gently raised to sole plane, frozen static without skeleton or entity",
+      "access": "two exterior pens;2.2m central path, open side gates, origin clear"
+    },
+    "architectural_shift_source_y_m": 2.0,
+    "surface_refinement": "rain-streaked dirty lime plaster, wood grain, fired-tile channels, roughness and tangent normal variation",
+    "geometry_only_blender_y_shift_m": -1.812,
+    "principal_stamp_transform_unchanged": true,
+    "expected_world_bounds_m": {
+      "minimum": [
+        -7.5,
+        0.0,
+        -7.380695104598999
+      ],
+      "maximum": [
+        7.5,
+        4.565000057220459,
+        5.704305171966553
+      ]
+    }
+  },
+  "construction_stages": [
+    0,
+    20
+  ],
+  "native_cook": "parent-owned pending",
+  "native_match": "not run",
+  "material_validation": {
+    "one_material": true,
+    "atlas_size": [
+      2048,
+      1024
+    ],
+    "roughness_range": [
+      0.74,
+      0.98
+    ],
+    "normal_nonflat": true,
+    "stock_elephant_albedo_resource": "art/civilizations/sultanate_ha_tug/animals/tug_elephant_worker_age01/5711813374317007420_packed.rrtex"
+  },
+  "previews": {
+    "official-surface-reference.png": {
+      "path": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_021\\ministry\\official-surface-reference.png",
+      "sha256": "f8e25e422896b80994efd1a6d4c6a9ed232cb6995884d70fdea9818e6ded6412"
+    },
+    "iso.png": {
+      "path": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_021\\ministry\\iso.png",
+      "sha256": "40d2189ca06781bc325df3d0c208f49d740094e894184f83a43a49f94e0bbded"
+    },
+    "front.png": {
+      "path": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_021\\ministry\\front.png",
+      "sha256": "210f76e5128e243e7a3dcb8f9c28f7b15e2ae309ee63806beccf5713ef98b9e1"
+    },
+    "back.png": {
+      "path": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_021\\ministry\\back.png",
+      "sha256": "6dc2c230cb880f3ac5e16a53eb37bd92f2e63eda061ca814953d1d84e135a50f"
+    },
+    "left.png": {
+      "path": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_021\\ministry\\left.png",
+      "sha256": "d155331a8cea39da00130f12aef6d672367de41248b28c495ed5a6fc1fda7dde"
+    },
+    "right.png": {
+      "path": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_021\\ministry\\right.png",
+      "sha256": "3adbc724108abeb37f6e7b72649daaf7231bb689410215cad4274026b082c8fe"
+    },
+    "top.png": {
+      "path": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_021\\ministry\\top.png",
+      "sha256": "de8a75de810fe79b9a86ca36008797b9e7c17b9b4bb80ba081c411e4378a6014"
+    },
+    "bottom.png": {
+      "path": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_021\\ministry\\bottom.png",
+      "sha256": "b561a51439c85914678f0cf6c051c693df0dc480438f16c366cf1284442cf990"
+    }
+  }
+}

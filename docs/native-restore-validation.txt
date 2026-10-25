@@ -1,0 +1,87 @@
+suite
+VIETNAM_V2_INIT_ENTER players=3
+VIETNAM_V2_SOURCE revision=20261016-native-trap-tunnel-r1 tunneling=native trap_weapons=native trap_lifetime=4
+VIETNAM_V2_PLAYER index=1 human=true race=chinese alive=true
+VIETNAM_V2_PLAYER index=2 human=true race=chinese alive=true
+VIETNAM_V2_PLAYER index=3 human=false race=english alive=true
+VIETNAM_V2_SELECTION_STARTED
+VIETNAM_V2_CLEANUP
+VIETNAM_V2_INIT_ENTER players=3
+VIETNAM_V2_SOURCE revision=20261016-native-trap-tunnel-r1 tunneling=native trap_weapons=native trap_lifetime=4
+VIETNAM_V2_PLAYER index=1 human=true race=chinese alive=true
+VIETNAM_V2_PLAYER index=2 human=true race=english alive=true
+VIETNAM_V2_PLAYER index=3 human=false race=english alive=true
+VIETNAM_V2_SELECTION_STARTED
+VIETNAM_V2_INIT_ENTER players=3
+VIETNAM_V2_SOURCE revision=20261016-native-trap-tunnel-r1 tunneling=native trap_weapons=native trap_lifetime=4
+VIETNAM_V2_PLAYER index=1 human=true race=chinese alive=true
+VIETNAM_V2_PLAYER index=2 human=true race=chinese alive=true
+VIETNAM_V2_PLAYER index=3 human=false race=english alive=true
+VIETNAM_V2_SELECTION_STARTED
+VIETNAM_V2_SELECTION_COMPLETE
+VIETNAM_V2_BLUEPRINTS_UNAVAILABLE
+VIETNAM_V2_INIT_ENTER players=3
+VIETNAM_V2_SOURCE revision=20261016-native-trap-tunnel-r1 tunneling=native trap_weapons=native trap_lifetime=4
+VIETNAM_V2_PLAYER index=1 human=true race=chinese alive=true
+VIETNAM_V2_PLAYER index=2 human=true race=chinese alive=true
+VIETNAM_V2_PLAYER index=3 human=false race=english alive=true
+VIETNAM_V2_QUALIFIED_BLUEPRINTS_MISSING
+VIETNAM_V2_INIT_ENTER players=3
+VIETNAM_V2_SOURCE revision=20261016-native-trap-tunnel-r1 tunneling=native trap_weapons=native trap_lifetime=4
+VIETNAM_V2_PLAYER index=1 human=true race=english alive=true
+VIETNAM_V2_PLAYER index=2 human=true race=english alive=true
+VIETNAM_V2_PLAYER index=3 human=false race=english alive=true
+VIETNAM_V2_NO_ELIGIBLE_HUMANS
+VIETNAM_V2_INIT_REJECT occupied or unfinished capital
+VIETNAM_V2_INIT_ENTER players=3
+VIETNAM_V2_SOURCE revision=20261016-native-trap-tunnel-r1 tunneling=native trap_weapons=native trap_lifetime=4
+VIETNAM_V2_PLAYER index=1 human=true race=chinese alive=true
+VIETNAM_V2_PLAYER index=2 human=true race=chinese alive=true
+VIETNAM_V2_PLAYER index=3 human=false race=english alive=true
+VIETNAM_V2_SELECTION_STARTED
+VIETNAM_V2_CLEANUP
+VIETNAM_V2_INIT_ENTER players=3
+VIETNAM_V2_SOURCE revision=20261016-native-trap-tunnel-r1 tunneling=native trap_weapons=native trap_lifetime=4
+VIETNAM_V2_PLAYER index=1 human=true race=chinese alive=true
+VIETNAM_V2_PLAYER index=2 human=true race=chinese alive=true
+VIETNAM_V2_PLAYER index=3 human=false race=english alive=true
+VIETNAM_V2_SELECTION_STARTED
+VIETNAM_V2_CHOICE player=1 choice=vietnam
+VIETNAM_V2_CHOICE player=2 choice=china
+VIETNAM_V2_INIT_APPLIED player=1
+VIETNAM_V2_SELECTION_COMPLETE
+VIETNAM_V2_CLEANUP
+VIETNAM_V2_INIT_ENTER players=3
+VIETNAM_V2_SOURCE revision=20261016-native-trap-tunnel-r1 tunneling=native trap_weapons=native trap_lifetime=4
+VIETNAM_V2_PLAYER index=1 human=true race=chinese alive=true
+VIETNAM_V2_PLAYER index=2 human=true race=chinese alive=true
+VIETNAM_V2_PLAYER index=3 human=false race=english alive=true
+VIETNAM_V2_SELECTION_STARTED
+VIETNAM_V2_SELECTION_COMPLETE
+...........................................................
+----------------------------------------------------------------------
+Ran 59 tests in 0.533s
+
+OK
+
+tuning
+INFO UNRESOLVED_REFERENCE_SUMMARY E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\assets\attrib\instances: 1042 reference value(s) are not defined inside this pack (instance_reference=721, state_tree_node=161, template_reference=160). Sample: instance_reference:ability=abilities\always_on_abilities\chinese\building_generate_tax_chi; instance_reference:ability=abilities\always_on_abilities\chinese\building_granary_aura_chi; instance_reference:ability=abilities\always_on_abilities\chinese\official_auto_collect_tax_chi; instance_reference:ability=abilities\always_on_abilities\core\military_charge; instance_reference:ability=abilities\always_on_abilities\english\abbey_of_kings_heal_aura_eng. Treat them as unresolved evidence and verify changed values in the current Attribute Editor or official data.
+Validated 1 pack(s), 237 instance(s): 0 error(s), 0 warning(s), 1 info.
+
+assets/scar/vietnam/traps.scar
+E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\assets\scar\vietnam\traps.scar
+  OK: no static diagnostics
+
+assets/scar/vietnam/lifecycle.scar
+E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\assets\scar\vietnam\lifecycle.scar
+  WARNING players-contract: `PLAYERS` is used without a visible `cardinal.scar` import; confirm the loader provides it.
+  Summary: 0 error(s), 1 warning(s)
+
+assets/scar/winconditions/VietnamMode.scar
+E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\assets\scar\winconditions\VietnamMode.scar
+  WARNING unknown-call:121: Call `VietnamSelectionCore.Choose` is absent from official API/source evidence and local definitions.
+  WARNING unknown-call:187: Call `VietnamSelectionCore.Close` is absent from official API/source evidence and local definitions.
+  WARNING unknown-call:205: Call `VietnamSelectionCore.Drop` is absent from official API/source evidence and local definitions.
+  WARNING unknown-call:258: Call `VietnamSelectionCore.New` is absent from official API/source evidence and local definitions.
+  WARNING unknown-call:207: Call `VietnamSelectionCore.Tick` is absent from official API/source evidence and local definitions.
+  Summary: 0 error(s), 5 warning(s)

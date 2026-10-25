@@ -1,0 +1,503 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="4" description="" template="weapon">
+	<uniqueid name="pbgid" value="1073742105" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_naval_warship_cannon" />
+	<group name="weapon_bag">
+		<group name="projectile">
+			<instance_reference name="projectile" value="ebps\projectiles\projectile_rocket_jpn" overrideParent="True" />
+		</group>
+		<group name="tracking">
+			<float name="fire_cone_angle" value="360" overrideParent="True" />
+		</group>
+		<group name="area_effect">
+			<template_reference name="area_info" value="options\area_info_options\point_area_option" overrideParent="True">
+			</template_reference>
+		</group>
+		<group name="damage">
+			<float name="max" value="80" overrideParent="True" />
+			<float name="min" value="80" overrideParent="True" />
+			<enum name="damage_type" value="Ranged" overrideParent="True" />
+		</group>
+		<list name="target_type_table" overrideParent="True">
+			<group name="target_unit_type_multipliers" List.ItemID="1073764082">
+				<enum name="unit_type" value="infantry" overrideParent="True" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="1" />
+					<float name="penetration_multiplier" value="1" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+				<float name="base_damage_modifier" value="110" overrideParent="True" />
+			</group>
+			<group name="target_unit_type_multipliers" List.ItemID="1073764083">
+				<enum name="unit_type" value="cavalry" overrideParent="True" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="1" />
+					<float name="penetration_multiplier" value="1" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+				<float name="base_damage_modifier" value="110" overrideParent="True" />
+			</group>
+		</list>
+		<string name="name" value="Keep Weapon - Rocket" overrideParent="True" />
+		<group name="range">
+			<float name="max" value="28" overrideParent="True" />
+		</group>
+		<group name="aim" overrideParent="True">
+			<group name="fire_aim_time">
+				<float name="max" value="0.5" />
+				<float name="min" value="0.5" />
+			</group>
+			<float name="post_firing_aim_time_seconds" value="0" />
+			<float name="post_firing_cooldown_interval_seconds" value="0" />
+			<group name="aim_time_multiplier">
+				<float name="near" value="1" />
+				<float name="far" value="1" />
+				<float name="mid" value="1" />
+			</group>
+		</group>
+		<group name="fire" overrideParent="True">
+			<float name="wind_down" value="0" />
+			<float name="wind_up" value="0" />
+			<float name="animation_impact_frame_time" value="0.5" />
+		</group>
+		<group name="reload" overrideParent="True">
+			<group name="duration">
+				<float name="max" value="3.5" />
+				<float name="min" value="3.5" />
+			</group>
+			<group name="duration_multiplier">
+				<float name="far" value="1" />
+				<float name="near" value="1" />
+				<float name="mid" value="1" />
+			</group>
+			<group name="frequency">
+				<float name="max" value="0" />
+				<float name="min" value="0" />
+			</group>
+			<bool name="require_reload_after_switch" value="False" />
+			<bool name="persistent_reloadticks" value="False" />
+		</group>
+		<group name="cooldown" overrideParent="True">
+			<group name="duration">
+				<float name="max" value="0" />
+				<float name="min" value="0" />
+			</group>
+			<group name="duration_multiplier">
+				<float name="near" value="1" />
+				<float name="far" value="1" />
+				<float name="mid" value="1" />
+			</group>
+			<bool name="persistent_cooldownticks" value="False" />
+		</group>
+		<group name="burst" overrideParent="True">
+			<bool name="can_burst" value="False" />
+			<group name="duration">
+				<float name="max" value="0" />
+				<float name="min" value="0" />
+			</group>
+			<group name="incremental_target_table">
+				<float name="accuracy_multiplier" value="0" />
+				<group name="search_radius">
+					<float name="far" value="0" />
+					<float name="near" value="0" />
+					<float name="mid" value="0" />
+				</group>
+			</group>
+			<group name="rate_of_fire">
+				<float name="max" value="0" />
+				<float name="min" value="0" />
+			</group>
+			<group name="duration_multiplier">
+				<float name="near" value="1" />
+				<float name="far" value="1" />
+				<float name="mid" value="1" />
+			</group>
+			<group name="rate_of_fire_multiplier">
+				<float name="near" value="1" />
+				<float name="far" value="1" />
+				<float name="mid" value="1" />
+			</group>
+			<bool name="focus_fire" value="False" />
+			<bool name="convert_target_to_position_before_firing" value="False" />
+			<bool name="uninterruptible_burst_fire" value="False" />
+		</group>
+		<enum name="weapon_class" value="cdn_siege_projectile" overrideParent="True" />
+	</group>
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<group name="projectile">
+				<instance_reference name="projectile" value="ebps\projectiles\projectile_rocket_jpn" overrideParent="True" />
+			</group>
+			<group name="tracking">
+				<float name="fire_cone_angle" value="360" overrideParent="True" />
+			</group>
+			<group name="area_effect">
+				<template_reference name="area_info" value="options\area_info_options\point_area_option" overrideParent="True">
+			</template_reference>
+			</group>
+			<group name="damage">
+				<float name="max" value="80" overrideParent="True" />
+				<float name="min" value="80" overrideParent="True" />
+				<enum name="damage_type" value="Ranged" overrideParent="True" />
+			</group>
+			<list name="target_type_table" overrideParent="True">
+				<group name="target_unit_type_multipliers" List.ItemID="2147482352">
+					<enum name="unit_type" value="infantry" overrideParent="True" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="110" overrideParent="True" />
+				</group>
+				<group name="target_unit_type_multipliers" List.ItemID="2147482353">
+					<enum name="unit_type" value="cavalry" overrideParent="True" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="110" overrideParent="True" />
+				</group>
+			</list>
+			<string name="name" value="Keep Weapon - Rocket" overrideParent="True" />
+			<group name="range">
+				<float name="max" value="28" overrideParent="True" />
+			</group>
+			<group name="aim" overrideParent="True">
+				<group name="fire_aim_time">
+					<float name="max" value="0.5" />
+					<float name="min" value="0.5" />
+				</group>
+				<float name="post_firing_aim_time_seconds" value="0" />
+				<float name="post_firing_cooldown_interval_seconds" value="0" />
+				<group name="aim_time_multiplier">
+					<float name="near" value="1" />
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+				</group>
+			</group>
+			<group name="fire" overrideParent="True">
+				<float name="wind_down" value="0" />
+				<float name="wind_up" value="0" />
+				<float name="animation_impact_frame_time" value="0.5" />
+			</group>
+			<group name="reload" overrideParent="True">
+				<group name="duration">
+					<float name="max" value="3.5" />
+					<float name="min" value="3.5" />
+				</group>
+				<group name="duration_multiplier">
+					<float name="far" value="1" />
+					<float name="near" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<group name="frequency">
+					<float name="max" value="0" />
+					<float name="min" value="0" />
+				</group>
+				<bool name="require_reload_after_switch" value="False" />
+				<bool name="persistent_reloadticks" value="False" />
+			</group>
+			<group name="cooldown" overrideParent="True">
+				<group name="duration">
+					<float name="max" value="0" />
+					<float name="min" value="0" />
+				</group>
+				<group name="duration_multiplier">
+					<float name="near" value="1" />
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<bool name="persistent_cooldownticks" value="False" />
+			</group>
+			<group name="burst" overrideParent="True">
+				<bool name="can_burst" value="False" />
+				<group name="duration">
+					<float name="max" value="0" />
+					<float name="min" value="0" />
+				</group>
+				<group name="incremental_target_table">
+					<float name="accuracy_multiplier" value="0" />
+					<group name="search_radius">
+						<float name="far" value="0" />
+						<float name="near" value="0" />
+						<float name="mid" value="0" />
+					</group>
+				</group>
+				<group name="rate_of_fire">
+					<float name="max" value="0" />
+					<float name="min" value="0" />
+				</group>
+				<group name="duration_multiplier">
+					<float name="near" value="1" />
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<group name="rate_of_fire_multiplier">
+					<float name="near" value="1" />
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<bool name="focus_fire" value="False" />
+				<bool name="convert_target_to_position_before_firing" value="False" />
+				<bool name="uninterruptible_burst_fire" value="False" />
+			</group>
+			<enum name="weapon_class" value="cdn_siege_projectile" overrideParent="True" />
+		</group>
+	</variant>
+	<variant name="xp3">
+		<group name="weapon_bag">
+			<group name="projectile">
+				<instance_reference name="projectile" value="ebps\projectiles\projectile_rocket_jpn" overrideParent="True" />
+			</group>
+			<group name="tracking">
+				<float name="fire_cone_angle" value="360" overrideParent="True" />
+			</group>
+			<group name="area_effect">
+				<template_reference name="area_info" value="options\area_info_options\point_area_option" overrideParent="True">
+			</template_reference>
+			</group>
+			<group name="damage">
+				<float name="max" value="80" overrideParent="True" />
+				<float name="min" value="80" overrideParent="True" />
+				<enum name="damage_type" value="Ranged" overrideParent="True" />
+			</group>
+			<list name="target_type_table" overrideParent="True">
+				<group name="target_unit_type_multipliers" List.ItemID="2147482354">
+					<enum name="unit_type" value="infantry" overrideParent="True" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="110" overrideParent="True" />
+				</group>
+				<group name="target_unit_type_multipliers" List.ItemID="2147482355">
+					<enum name="unit_type" value="cavalry" overrideParent="True" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="110" overrideParent="True" />
+				</group>
+			</list>
+			<string name="name" value="Keep Weapon - Rocket" overrideParent="True" />
+			<group name="range">
+				<float name="max" value="28" overrideParent="True" />
+			</group>
+			<group name="aim" overrideParent="True">
+				<group name="fire_aim_time">
+					<float name="max" value="0.5" />
+					<float name="min" value="0.5" />
+				</group>
+				<float name="post_firing_aim_time_seconds" value="0" />
+				<float name="post_firing_cooldown_interval_seconds" value="0" />
+				<group name="aim_time_multiplier">
+					<float name="near" value="1" />
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+				</group>
+			</group>
+			<group name="fire" overrideParent="True">
+				<float name="wind_down" value="0" />
+				<float name="wind_up" value="0" />
+				<float name="animation_impact_frame_time" value="0.5" />
+			</group>
+			<group name="reload" overrideParent="True">
+				<group name="duration">
+					<float name="max" value="3.5" />
+					<float name="min" value="3.5" />
+				</group>
+				<group name="duration_multiplier">
+					<float name="far" value="1" />
+					<float name="near" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<group name="frequency">
+					<float name="max" value="0" />
+					<float name="min" value="0" />
+				</group>
+				<bool name="require_reload_after_switch" value="False" />
+				<bool name="persistent_reloadticks" value="False" />
+			</group>
+			<group name="cooldown" overrideParent="True">
+				<group name="duration">
+					<float name="max" value="0" />
+					<float name="min" value="0" />
+				</group>
+				<group name="duration_multiplier">
+					<float name="near" value="1" />
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<bool name="persistent_cooldownticks" value="False" />
+			</group>
+			<group name="burst" overrideParent="True">
+				<bool name="can_burst" value="False" />
+				<group name="duration">
+					<float name="max" value="0" />
+					<float name="min" value="0" />
+				</group>
+				<group name="incremental_target_table">
+					<float name="accuracy_multiplier" value="0" />
+					<group name="search_radius">
+						<float name="far" value="0" />
+						<float name="near" value="0" />
+						<float name="mid" value="0" />
+					</group>
+				</group>
+				<group name="rate_of_fire">
+					<float name="max" value="0" />
+					<float name="min" value="0" />
+				</group>
+				<group name="duration_multiplier">
+					<float name="near" value="1" />
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<group name="rate_of_fire_multiplier">
+					<float name="near" value="1" />
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<bool name="focus_fire" value="False" />
+				<bool name="convert_target_to_position_before_firing" value="False" />
+				<bool name="uninterruptible_burst_fire" value="False" />
+			</group>
+			<enum name="weapon_class" value="cdn_siege_projectile" overrideParent="True" />
+		</group>
+	</variant>
+	<variant name="cordoba">
+		<group name="weapon_bag">
+			<group name="projectile">
+				<instance_reference name="projectile" value="ebps\projectiles\projectile_rocket_jpn" overrideParent="True" />
+			</group>
+			<group name="tracking">
+				<float name="fire_cone_angle" value="360" overrideParent="True" />
+			</group>
+			<group name="area_effect">
+				<template_reference name="area_info" value="options\area_info_options\point_area_option" overrideParent="True">
+			</template_reference>
+			</group>
+			<group name="damage">
+				<float name="max" value="80" overrideParent="True" />
+				<float name="min" value="80" overrideParent="True" />
+				<enum name="damage_type" value="Ranged" overrideParent="True" />
+			</group>
+			<list name="target_type_table" overrideParent="True">
+				<group name="target_unit_type_multipliers" List.ItemID="2147482356">
+					<enum name="unit_type" value="infantry" overrideParent="True" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="110" overrideParent="True" />
+				</group>
+				<group name="target_unit_type_multipliers" List.ItemID="2147482357">
+					<enum name="unit_type" value="cavalry" overrideParent="True" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="110" overrideParent="True" />
+				</group>
+			</list>
+			<string name="name" value="Keep Weapon - Rocket" overrideParent="True" />
+			<group name="range">
+				<float name="max" value="28" overrideParent="True" />
+			</group>
+			<group name="aim" overrideParent="True">
+				<group name="fire_aim_time">
+					<float name="max" value="0.5" />
+					<float name="min" value="0.5" />
+				</group>
+				<float name="post_firing_aim_time_seconds" value="0" />
+				<float name="post_firing_cooldown_interval_seconds" value="0" />
+				<group name="aim_time_multiplier">
+					<float name="near" value="1" />
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+				</group>
+			</group>
+			<group name="fire" overrideParent="True">
+				<float name="wind_down" value="0" />
+				<float name="wind_up" value="0" />
+				<float name="animation_impact_frame_time" value="0.5" />
+			</group>
+			<group name="reload" overrideParent="True">
+				<group name="duration">
+					<float name="max" value="3.5" />
+					<float name="min" value="3.5" />
+				</group>
+				<group name="duration_multiplier">
+					<float name="far" value="1" />
+					<float name="near" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<group name="frequency">
+					<float name="max" value="0" />
+					<float name="min" value="0" />
+				</group>
+				<bool name="require_reload_after_switch" value="False" />
+				<bool name="persistent_reloadticks" value="False" />
+			</group>
+			<group name="cooldown" overrideParent="True">
+				<group name="duration">
+					<float name="max" value="0" />
+					<float name="min" value="0" />
+				</group>
+				<group name="duration_multiplier">
+					<float name="near" value="1" />
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<bool name="persistent_cooldownticks" value="False" />
+			</group>
+			<group name="burst" overrideParent="True">
+				<bool name="can_burst" value="False" />
+				<group name="duration">
+					<float name="max" value="0" />
+					<float name="min" value="0" />
+				</group>
+				<group name="incremental_target_table">
+					<float name="accuracy_multiplier" value="0" />
+					<group name="search_radius">
+						<float name="far" value="0" />
+						<float name="near" value="0" />
+						<float name="mid" value="0" />
+					</group>
+				</group>
+				<group name="rate_of_fire">
+					<float name="max" value="0" />
+					<float name="min" value="0" />
+				</group>
+				<group name="duration_multiplier">
+					<float name="near" value="1" />
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<group name="rate_of_fire_multiplier">
+					<float name="near" value="1" />
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<bool name="focus_fire" value="False" />
+				<bool name="convert_target_to_position_before_firing" value="False" />
+				<bool name="uninterruptible_burst_fire" value="False" />
+			</group>
+			<enum name="weapon_class" value="cdn_siege_projectile" overrideParent="True" />
+		</group>
+	</variant>
+</instance>

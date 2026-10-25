@@ -1,0 +1,381 @@
+{
+  "schema": "ccp.houses-native-recipe/v1",
+  "generator": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\tools\\release_010\\house_geometry.py",
+  "anatomy": [
+    "long low domestic body",
+    "stock roof and eave mesh remodelling",
+    "original entrance widened as veranda",
+    "donor facade and posts mapped together",
+    "Age IV upper room compressed to ventilated frieze"
+  ],
+  "models": [
+    {
+      "age": 1,
+      "name": "vn_house_age01",
+      "donor": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\stock_cache\\houses_010\\age01\\40f2af3206c90187165b\\decoded-static.json",
+      "native_geometry": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\houses_010\\vn_house_age01.rrgeom",
+      "native_geometry_sha256": "658c75fb239de51a839e31b59e4d52f322edf4c108d6ec8a82f85eedd2245855",
+      "donor_geometry_sha256": "f5212056e57c3bf11a38452147a5fe1645ba0ea10e97a69acf9d751a91251c68",
+      "donor_resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/chinese/structures/house/chi_house_control_a_age01/chi_house_control_a_age01.rrgeom",
+          "archive": "DX12GeoChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12GeoChinese.sga",
+          "archive_id": "GameDX12GeoChinese",
+          "archive_version": "10",
+          "product_version": "0",
+          "verified_archive": false,
+          "size": 533530,
+          "sha256": "f5212056e57c3bf11a38452147a5fe1645ba0ea10e97a69acf9d751a91251c68",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\source\\art\\civilizations\\chinese\\structures\\house\\chi_house_control_a_age01\\chi_house_control_a_age01.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/chinese/structures/house/chi_house_control_a_age01/chi_house_control_a_age01.rrmaterial",
+          "archive": "DX12AssetsChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12AssetsChinese.sga",
+          "archive_id": "GameDX12AssetsChinese",
+          "archive_version": "10",
+          "product_version": "0",
+          "verified_archive": false,
+          "size": 32860,
+          "sha256": "e428f2fe320b740b63f292699d0e9b50fc247dd8f412b1d5d7a6263c1023e4ec",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\source\\art\\civilizations\\chinese\\structures\\house\\chi_house_control_a_age01\\chi_house_control_a_age01.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/chinese/structures/house/chi_house_control_a_age01/chi_house_control_a_age01.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "archive_id": "CardinalArtHigh",
+          "archive_version": "10",
+          "product_version": "0",
+          "verified_archive": false,
+          "size": 103344,
+          "sha256": "562a1801f68fac8087701178ca21468504e2ff22053c89b8cf15d72ad6d88043",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\source\\art\\civilizations\\chinese\\structures\\house\\chi_house_control_a_age01\\chi_house_control_a_age01.rgm"
+        }
+      },
+      "before_bounds": {
+        "minimum": [
+          -2.171875,
+          -2.638671875,
+          -1.6103515625
+        ],
+        "maximum": [
+          2.48828125,
+          2.638671875,
+          3.294921875
+        ],
+        "dimensions": [
+          4.66015625,
+          5.27734375,
+          4.9052734375
+        ]
+      },
+      "after_bounds": {
+        "minimum": [
+          -2.091796875,
+          -2.796875,
+          -1.6103515625
+        ],
+        "maximum": [
+          2.404296875,
+          2.796875,
+          2.423828125
+        ],
+        "dimensions": [
+          4.49609375,
+          5.59375,
+          4.0341796875
+        ]
+      },
+      "editable_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\Vietnam_Kinh_House_Age01.blend",
+      "editable_blend_sha256": "a8855d81afb01f309cdb14b7db1f92e0e2998973007cd62bdad102614f340794",
+      "donor_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\Chinese_A_age01_donor.blend",
+      "lod_policy": "All GEOB vertex buffers patched; original has no separate decoded LOD geometry contract. All index buffers and every non-vertex chunk unchanged.",
+      "contact_checks": {
+        "repeated_interface_coordinates": 15148,
+        "max_gap_metres": 0,
+        "foundation_ground_z_preserved": true
+      },
+      "requires_rgm_render_bound_refresh": true,
+      "material_policy": "Original stock materials and dynamic owner masks preserved; optional private surface variants added separately.",
+      "donor_blend_sha256": "e0d10c10779a7105a83e6bddf150803ddae25f51b5f9cd258c2e180d7d08b045"
+    },
+    {
+      "age": 2,
+      "name": "vn_house_age02",
+      "donor": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\stock_cache\\houses_010\\age02\\04a52a90f32355df5cd2\\decoded-static.json",
+      "native_geometry": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\houses_010\\vn_house_age02.rrgeom",
+      "native_geometry_sha256": "6ea874b154b1f6e6918853da573ce5ac259d5edffc39ad9220039ab86b8837b5",
+      "donor_geometry_sha256": "84c27c20820061647fface842554e004281aca9e1702b4068af10c12db6765f2",
+      "donor_resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/chinese/structures/house/chi_house_control_a_age02/chi_house_control_a_age02.rrgeom",
+          "archive": "DX12GeoChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12GeoChinese.sga",
+          "archive_id": "GameDX12GeoChinese",
+          "archive_version": "10",
+          "product_version": "0",
+          "verified_archive": false,
+          "size": 574636,
+          "sha256": "84c27c20820061647fface842554e004281aca9e1702b4068af10c12db6765f2",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\source\\art\\civilizations\\chinese\\structures\\house\\chi_house_control_a_age02\\chi_house_control_a_age02.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/chinese/structures/house/chi_house_control_a_age02/chi_house_control_a_age02.rrmaterial",
+          "archive": "DX12AssetsChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12AssetsChinese.sga",
+          "archive_id": "GameDX12AssetsChinese",
+          "archive_version": "10",
+          "product_version": "0",
+          "verified_archive": false,
+          "size": 33810,
+          "sha256": "7bd48180862ac0f8fb67f2dabe633932bb5058cd320dba3c9d3da1c6a3e1ab2b",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\source\\art\\civilizations\\chinese\\structures\\house\\chi_house_control_a_age02\\chi_house_control_a_age02.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/chinese/structures/house/chi_house_control_a_age02/chi_house_control_a_age02.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "archive_id": "CardinalArtHigh",
+          "archive_version": "10",
+          "product_version": "0",
+          "verified_archive": false,
+          "size": 113540,
+          "sha256": "9bd38fe3159e70e4bb6768a7739a1fa47737680deacff61a4ec69b9abb5d8881",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\source\\art\\civilizations\\chinese\\structures\\house\\chi_house_control_a_age02\\chi_house_control_a_age02.rgm"
+        }
+      },
+      "before_bounds": {
+        "minimum": [
+          -2.423828125,
+          -2.75390625,
+          -1.6103515625
+        ],
+        "maximum": [
+          2.48828125,
+          2.75390625,
+          3.58203125
+        ],
+        "dimensions": [
+          4.912109375,
+          5.5078125,
+          5.1923828125
+        ]
+      },
+      "after_bounds": {
+        "minimum": [
+          -2.33984375,
+          -2.919921875,
+          -1.6103515625
+        ],
+        "maximum": [
+          2.404296875,
+          2.919921875,
+          2.7421875
+        ],
+        "dimensions": [
+          4.744140625,
+          5.83984375,
+          4.3525390625
+        ]
+      },
+      "editable_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\Vietnam_Kinh_House_Age02.blend",
+      "editable_blend_sha256": "f01d6b9b6b19648273cfb31ebd62c2e262200d4ac59ee281f202a49d41904870",
+      "donor_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\Chinese_A_age02_donor.blend",
+      "lod_policy": "All GEOB vertex buffers patched; original has no separate decoded LOD geometry contract. All index buffers and every non-vertex chunk unchanged.",
+      "contact_checks": {
+        "repeated_interface_coordinates": 15888,
+        "max_gap_metres": 0,
+        "foundation_ground_z_preserved": true
+      },
+      "requires_rgm_render_bound_refresh": true,
+      "material_policy": "Original stock materials and dynamic owner masks preserved; optional private surface variants added separately.",
+      "donor_blend_sha256": "3f0fb96e7f80314526ae946964b0ac2f91a273e2735a6832434def153e7d7395"
+    },
+    {
+      "age": 3,
+      "name": "vn_house_age03",
+      "donor": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\stock_cache\\houses_010\\age03\\d88707bda522d81f95cc\\decoded-static.json",
+      "native_geometry": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\houses_010\\vn_house_age03.rrgeom",
+      "native_geometry_sha256": "e79704067775d98464a67e5b5a90848cecc01cecefea502a488002081f4a57b2",
+      "donor_geometry_sha256": "f390986c8c33d3c46f822b38a6b1b8940f278a57bd9d2c28d40b048c9a6ca295",
+      "donor_resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/chinese/structures/house/chi_house_control_a_age03/chi_house_control_a_age03.rrgeom",
+          "archive": "DX12GeoChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12GeoChinese.sga",
+          "archive_id": "GameDX12GeoChinese",
+          "archive_version": "10",
+          "product_version": "0",
+          "verified_archive": false,
+          "size": 572920,
+          "sha256": "f390986c8c33d3c46f822b38a6b1b8940f278a57bd9d2c28d40b048c9a6ca295",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\source\\art\\civilizations\\chinese\\structures\\house\\chi_house_control_a_age03\\chi_house_control_a_age03.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/chinese/structures/house/chi_house_control_a_age03/chi_house_control_a_age03.rrmaterial",
+          "archive": "DX12AssetsChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12AssetsChinese.sga",
+          "archive_id": "GameDX12AssetsChinese",
+          "archive_version": "10",
+          "product_version": "0",
+          "verified_archive": false,
+          "size": 33720,
+          "sha256": "45bac1fe347c27c69ff0c14b4c37048f96882e343f7c65935acf07e2175e4324",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\source\\art\\civilizations\\chinese\\structures\\house\\chi_house_control_a_age03\\chi_house_control_a_age03.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/chinese/structures/house/chi_house_control_a_age03/chi_house_control_a_age03.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "archive_id": "CardinalArtHigh",
+          "archive_version": "10",
+          "product_version": "0",
+          "verified_archive": false,
+          "size": 113433,
+          "sha256": "4872cf2ef879ac62181d5f3163c27556e4b94aa8a59da698ecb8f5570478ba06",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\source\\art\\civilizations\\chinese\\structures\\house\\chi_house_control_a_age03\\chi_house_control_a_age03.rgm"
+        }
+      },
+      "before_bounds": {
+        "minimum": [
+          -2.423828125,
+          -2.75390625,
+          -1.6103515625
+        ],
+        "maximum": [
+          2.48828125,
+          2.75390625,
+          3.58203125
+        ],
+        "dimensions": [
+          4.912109375,
+          5.5078125,
+          5.1923828125
+        ]
+      },
+      "after_bounds": {
+        "minimum": [
+          -2.33984375,
+          -2.919921875,
+          -1.6103515625
+        ],
+        "maximum": [
+          2.404296875,
+          2.919921875,
+          2.849609375
+        ],
+        "dimensions": [
+          4.744140625,
+          5.83984375,
+          4.4599609375
+        ]
+      },
+      "editable_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\Vietnam_Kinh_House_Age03.blend",
+      "editable_blend_sha256": "d37cf2ecb642625b3c6111cb62a9854f7f45312d1d7d9e4bb9db06f83ac7fb76",
+      "donor_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\Chinese_A_age03_donor.blend",
+      "lod_policy": "All GEOB vertex buffers patched; original has no separate decoded LOD geometry contract. All index buffers and every non-vertex chunk unchanged.",
+      "contact_checks": {
+        "repeated_interface_coordinates": 15808,
+        "max_gap_metres": 0,
+        "foundation_ground_z_preserved": true
+      },
+      "requires_rgm_render_bound_refresh": true,
+      "material_policy": "Original stock materials and dynamic owner masks preserved; optional private surface variants added separately.",
+      "donor_blend_sha256": "7f79513518ab23e302eb277036fe5d0d950f90851a06a0b75102b88943672644"
+    },
+    {
+      "age": 4,
+      "name": "vn_house_age04",
+      "donor": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\stock_cache\\houses_010\\age04\\64913287967a07a273d9\\decoded-static.json",
+      "native_geometry": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\houses_010\\vn_house_age04.rrgeom",
+      "native_geometry_sha256": "c323ca0da8bef4dc8bd30c53d6c496e0377baaaa03c5ccdd7d317c58c2fed629",
+      "donor_geometry_sha256": "6026c2bafa595634e6a571e7f2cb4628b377dde16801053950291036c8b130f1",
+      "donor_resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/chinese/structures/house/chi_house_control_a_age04/chi_house_control_a_age04.rrgeom",
+          "archive": "DX12GeoChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12GeoChinese.sga",
+          "archive_id": "GameDX12GeoChinese",
+          "archive_version": "10",
+          "product_version": "0",
+          "verified_archive": false,
+          "size": 1316162,
+          "sha256": "6026c2bafa595634e6a571e7f2cb4628b377dde16801053950291036c8b130f1",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\source\\art\\civilizations\\chinese\\structures\\house\\chi_house_control_a_age04\\chi_house_control_a_age04.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/chinese/structures/house/chi_house_control_a_age04/chi_house_control_a_age04.rrmaterial",
+          "archive": "DX12AssetsChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12AssetsChinese.sga",
+          "archive_id": "GameDX12AssetsChinese",
+          "archive_version": "10",
+          "product_version": "0",
+          "verified_archive": false,
+          "size": 47854,
+          "sha256": "9797634a816e574c81235993e8447b567fed860babd825432ddebb6308c559cb",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\source\\art\\civilizations\\chinese\\structures\\house\\chi_house_control_a_age04\\chi_house_control_a_age04.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/chinese/structures/house/chi_house_control_a_age04/chi_house_control_a_age04.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "archive_id": "CardinalArtHigh",
+          "archive_version": "10",
+          "product_version": "0",
+          "verified_archive": false,
+          "size": 209382,
+          "sha256": "90a4b462a6a315156727991fab0574c7107fedea317b62a3cd1f1941277d0566",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\source\\art\\civilizations\\chinese\\structures\\house\\chi_house_control_a_age04\\chi_house_control_a_age04.rgm"
+        }
+      },
+      "before_bounds": {
+        "minimum": [
+          -2.3046875,
+          -3.26953125,
+          -1.3271484375
+        ],
+        "maximum": [
+          3.17578125,
+          3.26953125,
+          5.859375
+        ],
+        "dimensions": [
+          5.48046875,
+          6.5390625,
+          7.1865234375
+        ]
+      },
+      "after_bounds": {
+        "minimum": [
+          -2.125,
+          -3.384765625,
+          -1.3271484375
+        ],
+        "maximum": [
+          3.0859375,
+          3.384765625,
+          3.16796875
+        ],
+        "dimensions": [
+          5.2109375,
+          6.76953125,
+          4.4951171875
+        ]
+      },
+      "editable_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\Vietnam_Kinh_House_Age04.blend",
+      "editable_blend_sha256": "b0cadbc7b9eaa72047e5f934809966f116500e770f4d41e0ac43a523d54731f8",
+      "donor_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\Chinese_A_age04_donor.blend",
+      "lod_policy": "All GEOB vertex buffers patched; original has no separate decoded LOD geometry contract. All index buffers and every non-vertex chunk unchanged.",
+      "contact_checks": {
+        "repeated_interface_coordinates": 38449,
+        "max_gap_metres": 0,
+        "foundation_ground_z_preserved": true
+      },
+      "requires_rgm_render_bound_refresh": true,
+      "material_policy": "Original stock materials and dynamic owner masks preserved; optional private surface variants added separately.",
+      "donor_blend_sha256": "60f307e2b243249e0838c3b0fe765781f061b95875baafe50440e15142f40b8b"
+    }
+  ]
+}

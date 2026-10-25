@@ -1,0 +1,27 @@
+{
+  "schema": "ccp-060-archer-representative/v1",
+  "status": "offline_preparation_only",
+  "base_source": "art/authoring/release_060/archer/archer-base-v3h-closure.blend",
+  "base_source_sha256": "b80da3a1a518f804d19698a9fe6e4b5e7e1e76a72deb68a332330d9fccba2370",
+  "next_base": "art/authoring/release_060/archer/archer-base-v3i-clean.blend",
+  "base_change": "Remove only the three v3h front-overlap and waist-tie additions that break into visible wedges; retain the weighted native body, quiver, bow, low collar, split tunic, fitted shoulders and headcloth.",
+  "rattan_representative": {
+    "source": "new clean v3i checkpoint after visual verification",
+    "retain_existing_weighted_objects": [
+      "CCP060 · Continuous torso rattan vest",
+      "CCP060 · Back carried rattan shield",
+      "CCP060 · Shield bound rounded rim",
+      "CCP060 · Shield diagonal carrying strap",
+      "CCP060 · Shield rear shoulder strap"
+    ],
+    "broad_weave": "Retain at most a few existing cross and vertical reed bands if visible at normal game distance; hide fine shield strands and other negligible trim.",
+    "geometry_budget": "Coarsen the vest if the complete body exceeds a comparable stock detail level; preserve its weights and back-shield clearance from the complete quiver.",
+    "switch": "Native Rattan conditional state remains unresolved and deferred."
+  },
+  "render_proof": {
+    "base_and_rattan": "Actual Blender scene renders at 40–45 degree elevation with projected human height 80–110 pixels in a 640–900 pixel image, plus close front/back views.",
+    "owner_colors": "Render red and blue using the source GARRISON Material Controls Team Colour and Team Colour Strength inputs on a disposable presentation scene; do not save a preview color into the authoring blend.",
+    "acceptance": "Inspect close front/back too. Fix any defect even slightly visible at normal game distance; leave minor defects confined to close inspection. Verify clean silhouette, intact quiver and bow, broad readable owner-color area, no floating Rattan equipment, and plausible stock detail budget. This is authoring proof only, not native asset or game proof."
+  },
+  "material_constraint": "One stock RRMaterial per LOD uses a shared original atlas. Blender-only cloth CORNER tint cannot establish native albedo or owner-color qualification; a shared compatible native atlas or private albedo variant remains a separate integration gate."
+}

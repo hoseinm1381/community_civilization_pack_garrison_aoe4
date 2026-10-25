@@ -1,0 +1,549 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="ebps">
+	<list name="extensions" removedIds="323578030">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1524391972" List.ParentItemID="1524391972">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\buildings\building_econ_market" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="356030822" List.ParentItemID="356030822">
+			<float name="hitpoints" value="1500" overrideParent="True" />
+			<bool name="can_repair" value="True" overrideParent="True" />
+			<bool name="remove_from_pathfinding_on_death" value="False" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Fire" value="0" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="-793929748" List.ParentItemID="-793929748">
+			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+			<group name="footprint_scale">
+				<float name="x" value="8" overrideParent="True" />
+				<float name="y" value="8" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1881356559" List.ParentItemID="-1881356559">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\chinese" List.ItemID="1073757648" />
+			</list>
+			<list name="unit_type_list" removedIds="1530762098, 1449385835, -1603379697, -1824429554, 1975143674">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-1091621418" List.ParentItemID="-1091621418">
+			<group name="on_construction_complete_state_tree_refs">
+				<string name="while_construction_complete_entity_state_tree_ref" value="building_construction_complete\buildings\outpost_construction_complete" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-731548771" List.ParentItemID="-731548771">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="100" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="30" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="820923880" List.ParentItemID="820923880">
+			<list name="ui_extra_infos" overrideParent="True">
+			</list>
+			<locstring name="help_text" value="2347" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+			<file name="icon_name" value="economicministry" overrideParent="True" />
+			<locstring name="screen_name" value="2345" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+			<bool name="is_unique_to_race" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" overrideParent="True" List.ItemID="-260919717" List.ParentItemID="-260919717">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="1073757651" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\chinese\building_generate_tax_chi" List.ItemID="1073757652" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="-957997883" List.ParentItemID="-957997883">
+			<list name="type_list" overrideParent="True">
+				<group name="type" List.ItemID="1073757654">
+					<enum name="interaction_type" value="repair" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="1073757655">
+					<enum name="interaction_type" value="construct" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="1073757656">
+					<enum name="interaction_type" value="official_building_reserved_chi" overrideParent="True" />
+					<int name="prefer_number" value="-1" overrideParent="True" />
+					<int name="max_number" value="-1" overrideParent="True" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1663720115" List.ParentItemID="-1663720115">
+			<state_tree_node name="production_item_completed_openingbranch" value="building_production_item_completed_chi" overrideParent="True" />
+			<list name="standard_upgrades" overrideParent="True">
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_scout_forester" List.ItemID="-364632223" List.ParentItemID="-364632223" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_villager_hunting_gear_1" List.ItemID="-1766216376" List.ParentItemID="-1766216376" />
+				<instance_reference name="upgrade" value="upgrade\races\japanese\research\economy\upgrade_econ_resource_gold_harvest_rate_2_jpn" overrideParent="True" List.ItemID="1073757657" />
+				<instance_reference name="upgrade" value="upgrade\races\japanese\research\economy\upgrade_econ_resource_gold_harvest_rate_3_jpn" overrideParent="True" List.ItemID="1073757658" />
+				<instance_reference name="upgrade" value="upgrade\races\japanese\research\economy\upgrade_econ_resource_gold_harvest_rate_4_jpn" overrideParent="True" List.ItemID="1073757659" />
+				<instance_reference name="upgrade" value="upgrade\races\japanese\research\economy\upgrade_econ_resource_wood_fell_rate_1_kura_jpn" List.ItemID="1073757660" />
+				<instance_reference name="upgrade" value="upgrade\races\japanese\research\economy\upgrade_econ_resource_wood_harvest_rate_2_kura_jpn" overrideParent="True" List.ItemID="1073757661" />
+				<instance_reference name="upgrade" value="upgrade\races\japanese\research\economy\upgrade_econ_resource_wood_harvest_rate_3_kura_jpn" overrideParent="True" List.ItemID="1073757662" />
+				<instance_reference name="upgrade" value="upgrade\races\japanese\research\economy\upgrade_econ_resource_wood_harvest_rate_4_kura_jpn" overrideParent="True" List.ItemID="1073757663" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_resource_food_harvest_rate_2" List.ItemID="1073757664" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_resource_food_harvest_rate_3" overrideParent="True" List.ItemID="1073757665" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_resource_food_harvest_rate_4" overrideParent="True" List.ItemID="1073757666" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\unit\upgrade_unit_town_center_wheelbarrow_1" List.ItemID="1073757667" />
+				<instance_reference name="upgrade" value="upgrade\vietnam\vn_upgrade_empty_gardens_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="2147481875" />
+				<instance_reference name="upgrade" value="upgrade\vietnam\vn_upgrade_champa_rice_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="2147482394" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="2032244099" List.ParentItemID="2032244099">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="-627552933" List.ParentItemID="-627552933">
+					<string name="state_tree" value="building_action_apply\buildings\gristmill_action_apply" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-359836090" List.ParentItemID="-359836090">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\chinese\econ_food_chi" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hit_react_tree_ext" List.ItemID="-1715720260" List.ParentItemID="-1715720260">
+			<state_tree_node name="ActionTree_OpeningBranch" value="building_hit_tree" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="1073757671" List.ListAction="Append">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="1073757672">
+					<group name="tier" List.ItemID="1073757673">
+						<instance_reference name="attachments" value="attachments\attachment_lists\vietnam\release_020\vn_020_economy_ministry_visual" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+				<list name="tier_group" overrideParent="True" List.ItemID="1073757674">
+					<group name="tier" List.ItemID="1073757675">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\core\outskirts\resource" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="1073757676" List.ListAction="Append">
+			<bool name="update_on_upgrade_changed" value="False" />
+			<bool name="update_on_construction_complete" value="True" />
+			<list name="district_bonuses" overrideParent="True">
+				<template_reference name="district_bonus" value="district_bonus" comment="population" List.ItemID="1073757677">
+					<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
+						<list name="dynamic_requirements" overrideParent="True">
+						</list>
+						<list name="satisfying_entity_groups" overrideParent="True">
+							<group name="satisfying_entity_group" comment="Landmark Academy" List.ItemID="1073757678">
+								<list name="satisfying_entities">
+									<instance_reference name="entity" value="ebps\races\chinese\buildings\building_landmark_age1_academy_chi\building_landmark_age1_academy_control_chi" overrideParent="True" List.ItemID="1073757679" />
+								</list>
+							</group>
+						</list>
+					</template_reference>
+					<uniqueid name="id" value="1073741831" />
+					<template_reference name="action_tree" value="state_tree_reference_info">
+						<state_tree_node name="ActionTree_OpeningBranch" value="chinese_influence" overrideParent="True" />
+						<bool name="start_suspended" value="False" />
+					</template_reference>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="1073757680" List.ListAction="Append">
+			<float name="range_metres" value="4" overrideParent="True" />
+			<int name="generator_value" value="0" overrideParent="True" />
+			<bool name="disable_generation_on_spawn" value="False" overrideParent="True" />
+			<bool name="is_root_generator" value="False" overrideParent="True" />
+			<int name="district_palette_id" value="0" overrideParent="True" />
+			<list name="requirements">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" overrideParent="True" List.ItemID="1073757681" List.ListAction="Append">
+			<bool name="must_be_in_supply" value="False" />
+			<float name="reinforce_radius" value="0" />
+			<list name="spawn_items">
+				<group name="spawn_item" List.ItemID="1073757682">
+					<group name="ui_position">
+						<int name="ui_position_row" value="2" overrideParent="True" />
+						<int name="ui_position_column" value="3" overrideParent="True" />
+					</group>
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\vietnam\units\economy\experimental_cattle\vn_unit_water_buffalo_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
+					<instance_reference name="ui_menu" value="" />
+					<int name="number_to_spawn" value="1" />
+					<locstring name="ui_screen_name" value="0" />
+					<locstring name="ui_help_text" value="0" />
+					<enum_table name="item_cost_adjustment">
+						<float name="action" value="0" />
+						<float name="command" value="0" />
+						<float name="popcap" value="0" />
+						<float name="food" value="0" overrideParent="True" />
+						<float name="wood" value="0" overrideParent="True" />
+						<float name="stone" value="0" />
+						<float name="gold" value="0" overrideParent="True" />
+						<float name="militia_hre" value="0" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<bool name="can_be_cancelled" value="True" />
+					<int name="number_to_queue_up_to_when_modified" value="5" />
+					<list name="additional_squads">
+					</list>
+					<instance_reference name="hotkey_binding" value="" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="command_card_info" value="">
+						</template_reference>
+						<template_reference name="quick_abilities_info" value="">
+						</template_reference>
+						<template_reference name="quick_commands_info" value="">
+						</template_reference>
+						<template_reference name="quick_formation_info" value="">
+						</template_reference>
+						<template_reference name="ping_menu_info" value="">
+						</template_reference>
+						<enum name="category" value="Economic" />
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+							<enum name="quick_commands_hotkey" value="" />
+							<int name="quick_commands_priority" value="-1" />
+							<int name="quick_commands_slot_index" value="-1" />
+							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+						</template_reference>
+						<template_reference name="relic_radial_menu_info" value="">
+						</template_reference>
+						<enum name="observer_type" value="Disabled" />
+						<group name="issuable_info">
+							<bool name="is_secondary" value="False" />
+							<instance_reference name="secondary_issuable" value="" />
+						</group>
+					</template_reference>
+					<string name="ui_tooltip_data_template" value="" />
+					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
+				</group>
+			</list>
+			<list name="bonus_xp_from_hold_list">
+			</list>
+			<list name="reinforce_requirements">
+			</list>
+			<bool name="spawn_to_hold_try_first" value="False" />
+			<list name="queue_requirements">
+			</list>
+			<bool name="can_rally" value="True" />
+			<template_reference name="animated_spawn_option" value="options\none">
+			</template_reference>
+			<int name="max_queue_size_override" value="-1" />
+			<string name="queue_requirements_openingbranch" value="" />
+			<string name="reinforce_requirements_openingbranch" value="" />
+			<state_tree_node name="production_item_completed_openingbranch" value="" />
+			<bool name="enforce_minimum_clearance_at_spawn_positions" value="True" />
+			<bool name="enforce_minimum_clearance_if_entities_blocking" value="True" />
+			<float name="enforce_minimum_clearance_at_spawn_positions_search_range" value="30" />
+			<instance_reference name="rally_pass_type" value="pass_types\infantry" />
+			<bool name="can_spawn_if_neutral" value="False" />
+			<bool name="reset_production_progress_at_current_pop_cap" value="False" />
+			<bool name="default_rally_points_allowed" value="True" />
+			<bool name="economic_rally_points_allowed" value="False" />
+			<bool name="always_use_economic_rally_points" value="False" />
+			<bool name="use_alternative_rally_point_system" value="False" />
+			<bool name="trade_only_economical_rally" value="False" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741878" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_econ_food" />
+	<variant name="campaign">
+		<list name="extensions" removedIds="749308156">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-430481685" List.ParentItemID="-430481685">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\buildings\building_econ_market" overrideParent="True" />
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1323027512" List.ParentItemID="1323027512">
+				<float name="hitpoints" value="1500" overrideParent="True" />
+				<bool name="can_repair" value="True" overrideParent="True" />
+				<bool name="remove_from_pathfinding_on_death" value="False" overrideParent="True" />
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Melee" value="0" overrideParent="True" />
+					<float name="Fire" value="0" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="600775005" List.ParentItemID="600775005">
+				<group name="footprint_scale">
+					<float name="x" value="8" overrideParent="True" />
+					<float name="y" value="8" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-2038601823" List.ParentItemID="-2038601823">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\chinese" List.ItemID="1073757684" />
+				</list>
+				<list name="unit_type_list" removedIds="1438737749, -2042755575, -565500676, 1289271557, -1598874204">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="604175065" List.ParentItemID="604175065">
+				<group name="on_construction_complete_state_tree_refs">
+					<string name="while_construction_complete_entity_state_tree_ref" value="building_construction_complete\buildings\outpost_construction_complete" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-582522891" List.ParentItemID="-582522891">
+				<group name="time_cost">
+					<enum_table name="cost">
+						<float name="wood" value="100" overrideParent="True" />
+					</enum_table>
+					<float name="time_seconds" value="30" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1714080721" List.ParentItemID="-1714080721">
+				<list name="ui_extra_infos" overrideParent="True">
+				</list>
+				<locstring name="help_text" value="2348" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+				<file name="icon_name" value="economicministry" overrideParent="True" />
+				<locstring name="screen_name" value="2346" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+				<bool name="is_unique_to_race" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" overrideParent="True" List.ItemID="1154466073" List.ParentItemID="1154466073">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="1073757687" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\chinese\building_generate_tax_chi" List.ItemID="1073757688" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1086187384" List.ParentItemID="-1086187384">
+				<state_tree_node name="production_item_completed_openingbranch" value="campaignMod_building_production_item_completed_chi" overrideParent="True" />
+				<list name="standard_upgrades" overrideParent="True">
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_scout_forester" List.ItemID="-364632223" List.ParentItemID="-364632223" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_villager_hunting_gear_1" List.ItemID="-1766216376" List.ParentItemID="-1766216376" />
+					<instance_reference name="upgrade" value="upgrade\races\japanese\research\economy\upgrade_econ_resource_gold_harvest_rate_2_jpn" overrideParent="True" List.ItemID="1073757689" />
+					<instance_reference name="upgrade" value="upgrade\races\japanese\research\economy\upgrade_econ_resource_gold_harvest_rate_3_jpn" overrideParent="True" List.ItemID="1073757690" />
+					<instance_reference name="upgrade" value="upgrade\races\japanese\research\economy\upgrade_econ_resource_gold_harvest_rate_4_jpn" overrideParent="True" List.ItemID="1073757691" />
+					<instance_reference name="upgrade" value="upgrade\races\japanese\research\economy\upgrade_econ_resource_wood_fell_rate_1_kura_jpn" List.ItemID="1073757692" />
+					<instance_reference name="upgrade" value="upgrade\races\japanese\research\economy\upgrade_econ_resource_wood_harvest_rate_2_kura_jpn" overrideParent="True" List.ItemID="1073757693" />
+					<instance_reference name="upgrade" value="upgrade\races\japanese\research\economy\upgrade_econ_resource_wood_harvest_rate_3_kura_jpn" overrideParent="True" List.ItemID="1073757694" />
+					<instance_reference name="upgrade" value="upgrade\races\japanese\research\economy\upgrade_econ_resource_wood_harvest_rate_4_kura_jpn" overrideParent="True" List.ItemID="1073757695" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_resource_food_harvest_rate_2" List.ItemID="1073757696" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_resource_food_harvest_rate_3" overrideParent="True" List.ItemID="1073757697" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_resource_food_harvest_rate_4" overrideParent="True" List.ItemID="1073757698" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\unit\upgrade_unit_town_center_wheelbarrow_1" List.ItemID="1073757699" />
+					<instance_reference name="upgrade" value="upgrade\vietnam\vn_upgrade_empty_gardens_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="2147481876" />
+					<instance_reference name="upgrade" value="upgrade\vietnam\vn_upgrade_champa_rice_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="2147482395" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-368607474" List.ParentItemID="-368607474">
+				<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\chinese\econ_food_chi" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\hit_react_tree_ext" List.ItemID="-1677484574" List.ParentItemID="-1677484574">
+				<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_building_hit_tree" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="1073757703" List.ListAction="Append">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="1073757704">
+						<group name="tier" List.ItemID="1073757705">
+							<instance_reference name="attachments" value="attachments\attachment_lists\vietnam\release_020\vn_020_economy_ministry_visual" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+					<list name="tier_group" overrideParent="True" List.ItemID="1073757706">
+						<group name="tier" List.ItemID="1073757707">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\core\outskirts\resource" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="1073757708" List.ListAction="Append">
+				<bool name="update_on_upgrade_changed" value="False" />
+				<bool name="update_on_construction_complete" value="True" />
+				<list name="district_bonuses" overrideParent="True">
+					<template_reference name="district_bonus" value="district_bonus" comment="population" List.ItemID="1073757709">
+						<template_reference name="requirement" value="options\ebpextensions\districtbonusesext\requirements\district_bonus_entity_requirement">
+							<list name="dynamic_requirements" overrideParent="True">
+							</list>
+							<list name="satisfying_entity_groups" overrideParent="True">
+								<group name="satisfying_entity_group" comment="Landmark Academy" List.ItemID="1073757710">
+									<list name="satisfying_entities">
+										<instance_reference name="entity" value="ebps\races\chinese\buildings\building_landmark_age1_academy_chi\building_landmark_age1_academy_control_chi" overrideParent="True" List.ItemID="1073757711" />
+									</list>
+								</group>
+							</list>
+						</template_reference>
+						<uniqueid name="id" value="1073741832" />
+						<template_reference name="action_tree" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_chinese_influence" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="1073757712" List.ListAction="Append">
+				<float name="range_metres" value="4" overrideParent="True" />
+				<int name="generator_value" value="0" overrideParent="True" />
+				<bool name="disable_generation_on_spawn" value="False" overrideParent="True" />
+				<bool name="is_root_generator" value="False" overrideParent="True" />
+				<int name="district_palette_id" value="0" overrideParent="True" />
+				<list name="requirements">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" overrideParent="True" List.ItemID="1073757713" List.ListAction="Append">
+				<bool name="must_be_in_supply" value="False" />
+				<float name="reinforce_radius" value="0" />
+				<list name="spawn_items">
+					<group name="spawn_item" List.ItemID="1073757714">
+						<group name="ui_position">
+							<int name="ui_position_row" value="2" overrideParent="True" />
+							<int name="ui_position_column" value="3" overrideParent="True" />
+						</group>
+						<instance_reference name="entity" value="" />
+						<instance_reference name="squad" value="sbps\vietnam\units\economy\experimental_cattle\vn_unit_water_buffalo_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<bool name="spawn_at_map_entry_point" value="False" />
+						<instance_reference name="ui_menu" value="" />
+						<int name="number_to_spawn" value="1" />
+						<locstring name="ui_screen_name" value="0" />
+						<locstring name="ui_help_text" value="0" />
+						<enum_table name="item_cost_adjustment">
+							<float name="action" value="0" />
+							<float name="command" value="0" />
+							<float name="popcap" value="0" />
+							<float name="food" value="0" overrideParent="True" />
+							<float name="wood" value="0" overrideParent="True" />
+							<float name="stone" value="0" />
+							<float name="gold" value="0" overrideParent="True" />
+							<float name="militia_hre" value="0" />
+							<float name="merc_byz" value="0" />
+						</enum_table>
+						<bool name="can_be_cancelled" value="True" />
+						<int name="number_to_queue_up_to_when_modified" value="5" />
+						<list name="additional_squads">
+						</list>
+						<instance_reference name="hotkey_binding" value="" />
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+							<template_reference name="command_card_info" value="">
+							</template_reference>
+							<template_reference name="quick_abilities_info" value="">
+							</template_reference>
+							<template_reference name="quick_commands_info" value="">
+							</template_reference>
+							<template_reference name="quick_formation_info" value="">
+							</template_reference>
+							<template_reference name="ping_menu_info" value="">
+							</template_reference>
+							<enum name="category" value="Economic" />
+							<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+								<enum name="quick_commands_hotkey" value="" />
+								<int name="quick_commands_priority" value="-1" />
+								<int name="quick_commands_slot_index" value="-1" />
+								<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+							</template_reference>
+							<template_reference name="relic_radial_menu_info" value="">
+							</template_reference>
+							<enum name="observer_type" value="Disabled" />
+							<group name="issuable_info">
+								<bool name="is_secondary" value="False" />
+								<instance_reference name="secondary_issuable" value="" />
+							</group>
+						</template_reference>
+						<string name="ui_tooltip_data_template" value="" />
+						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
+					</group>
+				</list>
+				<list name="bonus_xp_from_hold_list">
+				</list>
+				<list name="reinforce_requirements">
+				</list>
+				<bool name="spawn_to_hold_try_first" value="False" />
+				<list name="queue_requirements">
+				</list>
+				<bool name="can_rally" value="True" />
+				<template_reference name="animated_spawn_option" value="options\none">
+				</template_reference>
+				<int name="max_queue_size_override" value="-1" />
+				<string name="queue_requirements_openingbranch" value="" />
+				<string name="reinforce_requirements_openingbranch" value="" />
+				<state_tree_node name="production_item_completed_openingbranch" value="" />
+				<bool name="enforce_minimum_clearance_at_spawn_positions" value="True" />
+				<bool name="enforce_minimum_clearance_if_entities_blocking" value="True" />
+				<float name="enforce_minimum_clearance_at_spawn_positions_search_range" value="30" />
+				<instance_reference name="rally_pass_type" value="pass_types\infantry" />
+				<bool name="can_spawn_if_neutral" value="False" />
+				<bool name="reset_production_progress_at_current_pop_cap" value="False" />
+				<bool name="default_rally_points_allowed" value="True" />
+				<bool name="economic_rally_points_allowed" value="False" />
+				<bool name="always_use_economic_rally_points" value="False" />
+				<bool name="use_alternative_rally_point_system" value="False" />
+				<bool name="trade_only_economical_rally" value="False" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="1073741878" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_econ_food" />
+	</variant>
+</instance>

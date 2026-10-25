@@ -1,0 +1,47 @@
+VietnamDynastyState = {restricted = {}}
+local reason = "VietnamV2NoChineseDynasty"
+local upgrades = {
+    "player_dynasty0_chi", "player_dynasty1_chi",
+    "player_dynasty2_chi", "player_dynasty3_chi",
+}
+local buildings = {
+    "building_dynasty_village_control_chi",
+    "building_dynasty_granary_control_chi",
+    "building_dynasty_pagoda_control_chi",
+}
+local squads = {
+    "unit_repeater_crossbowman_2_chi",
+    "unit_firelancer_3_chi",
+    "unit_grenadier_4_chi",
+}
+
+function VietnamDynasty_Update(player)
+    if not VietnamDynastyState.restricted[player.index] then
+        for _, name in ipairs(buildings) do
+            Player_SetEntityProductionAvailability(player.id, BP_GetEntityBlueprint(name), ITEM_REMOVED, reason)
+        end
+        for _, name in ipairs(squads) do
+            Player_SetSquadProductionAvailability(player.id, BP_GetSquadBlueprint(name), ITEM_REMOVED, reason)
+        end
+        VietnamDynastyState.restricted[player.index] = player.id
+    end
+    for _, name in ipairs(upgrades) do
+        local upgrade = BP_GetUpgradeBlueprint(name)
+        if Player_HasUpgrade(player.id, upgrade) then
+            Player_RemoveUpgrade(player.id, upgrade)
+            print("VIETNAM_V2_DYNASTY_REMOVED player=" .. tostring(player.index) .. " upgrade=" .. name)
+        end
+    end
+end
+
+function VietnamDynasty_Cleanup()
+    for _, id in pairs(VietnamDynastyState.restricted) do
+        for _, name in ipairs(buildings) do
+            Player_SetEntityProductionAvailability(id, BP_GetEntityBlueprint(name), ITEM_DEFAULT, reason)
+        end
+        for _, name in ipairs(squads) do
+            Player_SetSquadProductionAvailability(id, BP_GetSquadBlueprint(name), ITEM_DEFAULT, reason)
+        end
+    end
+    VietnamDynastyState.restricted = {}
+end

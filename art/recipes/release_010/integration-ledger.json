@@ -1,0 +1,86 @@
+{
+  "schema": "community.release010.integration-ledger/v1",
+  "status": "initial qualified candidate; root repeatability run pending",
+  "candidate": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_010\\integration\\candidate.json",
+  "archive_sha256": "c82af2201078a352e735204d2bff01069f4e9672c726ff533c2ff710e0f6b6fc",
+  "changed_existing_members": [
+    "attrib/ebps/vietnam/vn_building_bambo_outpost_chi.rgd",
+    "attrib/ebps/vietnam/vn_building_defense_outpost_bambo_chi.rgd",
+    "attrib/ebps/vietnam/vn_building_house_control_chi.rgd",
+    "attrib/ebps/vietnam/vn_building_house_control_faster_chi.rgd"
+  ],
+  "new_member_count": 86,
+  "untouched_members": 265,
+  "source_new_files": [
+    "attrib/instances/attachments/attachment_lists/vietnam/vn_house_age01_visual.xml",
+    "attrib/instances/attachments/attachment_lists/vietnam/vn_house_age02_visual.xml",
+    "attrib/instances/attachments/attachment_lists/vietnam/vn_house_age03_visual.xml",
+    "attrib/instances/attachments/attachment_lists/vietnam/vn_house_age04_visual.xml",
+    "attrib/instances/attachments/attachment_lists/vietnam/vn_trap_thicket_visual.xml",
+    "attrib/instances/attachments/attachment_lists/vietnam/vn_trap_parent_visual.xml",
+    "attrib/instances/attachments/attachment_lists/vietnam/vn_trap_palisade_visual.xml"
+  ],
+  "native_cooks": [
+    {
+      "label": "hq",
+      "receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_010\\integration\\hq-cook.json"
+    },
+    {
+      "label": "hf",
+      "receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_010\\integration\\hf-cook.json"
+    },
+    {
+      "label": "tq",
+      "receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_010\\integration\\tq-cook.json"
+    },
+    {
+      "label": "tf",
+      "receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_010\\integration\\tf-cook.json"
+    }
+  ],
+  "native_reference_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_010\\integration\\reference-cook.json",
+  "native_candidate_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_010\\integration\\candidate-build.json",
+  "closure_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_010\\integration\\closure.json",
+  "diagnostics_retained": [
+    {
+      "stage": "house qualification preparation",
+      "finding": "Copying live .garrison.lock raised WinError33; HQ remained qualification only. Final HF excluded lock and verified exact source/cook parity."
+    },
+    {
+      "stage": "trap source preparation",
+      "finding": "Supported CLI rejected first_stage5; independent worker corrected frozen source/export to0/20 without geometry/material changes."
+    },
+    {
+      "stage": "native candidate attempt1",
+      "finding": "Native .NET rejected utf8 XML encoding alias for7stubs. Corrected explicit utf-8; failed source/logs preserved; own failed editor stopped."
+    },
+    {
+      "stage": "native candidate attempt2 Python gate",
+      "finding": "Native exit0 with244loaded/validated; old running Python gate rejected unchanged officialstock warnings. Exact completed source/archive re-audited with current source-specific gate, no reburn."
+    }
+  ],
+  "native_owner_contract": {
+    "houses": "Known vertex spans; native topology, UV, lifecycle collections, RGO and markers retained; scoped native material masks preserved.",
+    "small_trap": "Fresh compiler RRGeometry/MSCL; exact tentA RGO and44root markers; staged visibility.",
+    "large_trap": "Fresh compiler RRGeometry/MSCL/MSBP; exact tentB RGO and INFO/MRKS/SKLN/2SKMS/CUAT owner chunks; oldcloth names absent from every fresh selector.",
+    "firewood": "Exact native RGO/markers retained; only two visual MSD membership lists cleared.",
+    "outskirts": "Existing native house dressing, terrain and marker-only keep layers retained."
+  },
+  "remaining_gates": [
+    "Native client import/selection is outside milestone.",
+    "Native match construction, repair/cancel/death, age switch, colours, culling and trap skeleton/physics presentation unverified.",
+    "Fresh compiler trap geometry exposes one nativeLOD only; lowerLOD activation unsupported.",
+    "House culling bounds changed; no guessed native BBOX field patch; camera acceptance unverified.",
+    "Multiplayer unproven."
+  ],
+  "independent_code_review": {
+    "status": "code findings resolved; native presentation gate retained",
+    "resolved": [
+      "Final media hashes must match exact native reference-cook inputs.",
+      "Decode all final four actors against baseline, allowing only exact existing visual attachment references.",
+      "Resolve final private attachment, active stamp, model and texture closure from actual archive bytes.",
+      "Rebuild inventories original frozen source, supports existing private bindings and keeps unique attempt logs."
+    ],
+    "native_limit": "TentB exact SKMS skeleton/cloth owner payloads remain as dependencies. Their names are absent from fresh MSBP membership, but default-draw behavior, cloth/physics initialization and culling require a native match; no runtime non-draw claim is made."
+  }
+}

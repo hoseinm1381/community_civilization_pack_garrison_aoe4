@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" template="ebps" description="No Than: seven simultaneous native nonpiercing bolt weapons">
+	<uniqueid name="pbgid" value="2147481937" />
+	<instance_reference name="parent_pbg" value="ebps\races\chinese\units\unit_springald_3_chi" />
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-587241534" List.ParentItemID="-587241534">
+			<list name="hardpoints" overrideParent="True">
+				<group name="hardpoint" List.ItemID="2147481939">
+					<float name="parent_hardpoint" value="-1" overrideParent="True" />
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="2147481940">
+							<group name="heading">
+								<float name="x" value="0" overrideParent="True" />
+								<float name="y" value="0" overrideParent="True" />
+								<float name="z" value="1" overrideParent="True" />
+							</group>
+							<float name="length" value="0" overrideParent="True" />
+							<group name="origin">
+								<float name="x" value="0" overrideParent="True" />
+								<float name="y" value="1.5" overrideParent="True" />
+								<float name="z" value="0" overrideParent="True" />
+							</group>
+							<enum name="type" value="default" overrideParent="True" />
+							<template_reference name="weapon_entity_attachment" value="">
+              </template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\vietnam\vn_weapon_no_than_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="" overrideParent="True" />
+								<string name="marker_name_parent" value="" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="True" overrideParent="True" />
+					<string name="base_marker" value="" overrideParent="True" />
+					<list name="preferred_inventory_item_categories">
+          </list>
+					<list name="firing_offset_markers">
+          </list>
+					<bool name="initialize_weapons_on_creation" value="True" overrideParent="True" />
+					<string name="offhand_marker" value="" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="639154551" List.ParentItemID="639154551">
+			<locstring name="screen_name" value="3023" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+			<locstring name="help_text" value="3024" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+			<locstring name="extra_text" value="3025" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-766205460" List.ParentItemID="-766205460">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="2147481957" List.ListAction="Append">
+					<group name="tier" List.ItemID="2147481958">
+						<instance_reference name="attachments" value="" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" overrideParent="True" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" overrideParent="True" />
+						<string name="tier_attachment_action" value="" overrideParent="True" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" overrideParent="True" />
+							<bool name="continue_state_trees" value="True" overrideParent="True" />
+							<bool name="remove_from_pending_deaths" value="False" overrideParent="True" />
+							<bool name="enable_all_extensions" value="True" overrideParent="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" overrideParent="True" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" overrideParent="True" />
+					</group>
+					<group name="tier" List.ItemID="2147481959">
+						<instance_reference name="attachments" value="" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" overrideParent="True" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\vietnam\vn_upgrade_reinforced_frames_vit" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\vietnam\units\siege\no_than\vn_unit_no_than_vit_reinforced" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\vietnam\units\siege\no_than\vn_unit_no_than_vit_reinforced" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+						<string name="tier_attachment_action" value="" overrideParent="True" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="True" overrideParent="True" />
+							<bool name="continue_state_trees" value="True" overrideParent="True" />
+							<bool name="remove_from_pending_deaths" value="False" overrideParent="True" />
+							<bool name="enable_all_extensions" value="True" overrideParent="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" overrideParent="True" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1730969157" List.ParentItemID="1730969157">
+				<list name="hardpoints" overrideParent="True">
+					<group name="hardpoint" List.ItemID="2147481960">
+						<float name="parent_hardpoint" value="-1" overrideParent="True" />
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="2147481961">
+								<group name="heading">
+									<float name="x" value="0" overrideParent="True" />
+									<float name="y" value="0" overrideParent="True" />
+									<float name="z" value="1" overrideParent="True" />
+								</group>
+								<float name="length" value="0" overrideParent="True" />
+								<group name="origin">
+									<float name="x" value="0" overrideParent="True" />
+									<float name="y" value="1.5" overrideParent="True" />
+									<float name="z" value="0" overrideParent="True" />
+								</group>
+								<enum name="type" value="default" overrideParent="True" />
+								<template_reference name="weapon_entity_attachment" value="">
+                </template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\vietnam\vn_weapon_no_than_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="" overrideParent="True" />
+									<string name="marker_name_parent" value="" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+						<bool name="receives_attack_commands" value="True" overrideParent="True" />
+						<string name="base_marker" value="" overrideParent="True" />
+						<list name="preferred_inventory_item_categories">
+            </list>
+						<list name="firing_offset_markers">
+            </list>
+						<bool name="initialize_weapons_on_creation" value="True" overrideParent="True" />
+						<string name="offhand_marker" value="" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1512369172" List.ParentItemID="-1512369172">
+				<locstring name="screen_name" value="3023" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+				<locstring name="help_text" value="3024" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+				<locstring name="extra_text" value="3025" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1883836004" List.ParentItemID="1883836004">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="2147481978" List.ListAction="Append">
+						<group name="tier" List.ItemID="2147481979">
+							<instance_reference name="attachments" value="" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" overrideParent="True" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" overrideParent="True" />
+							<string name="tier_attachment_action" value="" overrideParent="True" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" overrideParent="True" />
+								<bool name="continue_state_trees" value="True" overrideParent="True" />
+								<bool name="remove_from_pending_deaths" value="False" overrideParent="True" />
+								<bool name="enable_all_extensions" value="True" overrideParent="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" overrideParent="True" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" overrideParent="True" />
+						</group>
+						<group name="tier" List.ItemID="2147481980">
+							<instance_reference name="attachments" value="" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" overrideParent="True" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\vietnam\vn_upgrade_reinforced_frames_vit" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\vietnam\units\siege\no_than\vn_unit_no_than_vit_reinforced" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\vietnam\units\siege\no_than\vn_unit_no_than_vit_reinforced" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+							<string name="tier_attachment_action" value="" overrideParent="True" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="True" overrideParent="True" />
+								<bool name="continue_state_trees" value="True" overrideParent="True" />
+								<bool name="remove_from_pending_deaths" value="False" overrideParent="True" />
+								<bool name="enable_all_extensions" value="True" overrideParent="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" overrideParent="True" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-587241534" List.ParentItemID="-587241534">
+				<list name="hardpoints" overrideParent="True">
+					<group name="hardpoint" List.ItemID="2147481981">
+						<float name="parent_hardpoint" value="-1" overrideParent="True" />
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="2147481982">
+								<group name="heading">
+									<float name="x" value="0" overrideParent="True" />
+									<float name="y" value="0" overrideParent="True" />
+									<float name="z" value="1" overrideParent="True" />
+								</group>
+								<float name="length" value="0" overrideParent="True" />
+								<group name="origin">
+									<float name="x" value="0" overrideParent="True" />
+									<float name="y" value="1.5" overrideParent="True" />
+									<float name="z" value="0" overrideParent="True" />
+								</group>
+								<enum name="type" value="default" overrideParent="True" />
+								<template_reference name="weapon_entity_attachment" value="">
+                </template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\vietnam\vn_weapon_no_than_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="" overrideParent="True" />
+									<string name="marker_name_parent" value="" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+						<bool name="receives_attack_commands" value="True" overrideParent="True" />
+						<string name="base_marker" value="" overrideParent="True" />
+						<list name="preferred_inventory_item_categories">
+            </list>
+						<list name="firing_offset_markers">
+            </list>
+						<bool name="initialize_weapons_on_creation" value="True" overrideParent="True" />
+						<string name="offhand_marker" value="" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="639154551" List.ParentItemID="639154551">
+				<locstring name="screen_name" value="3023" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+				<locstring name="help_text" value="3024" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+				<locstring name="extra_text" value="3025" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-766205460" List.ParentItemID="-766205460">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="2147481999" List.ListAction="Append">
+						<group name="tier" List.ItemID="2147482000">
+							<instance_reference name="attachments" value="" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" overrideParent="True" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" overrideParent="True" />
+							<string name="tier_attachment_action" value="" overrideParent="True" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" overrideParent="True" />
+								<bool name="continue_state_trees" value="True" overrideParent="True" />
+								<bool name="remove_from_pending_deaths" value="False" overrideParent="True" />
+								<bool name="enable_all_extensions" value="True" overrideParent="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" overrideParent="True" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" overrideParent="True" />
+						</group>
+						<group name="tier" List.ItemID="2147482001">
+							<instance_reference name="attachments" value="" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" overrideParent="True" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\vietnam\vn_upgrade_reinforced_frames_vit" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\vietnam\units\siege\no_than\vn_unit_no_than_vit_reinforced" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\vietnam\units\siege\no_than\vn_unit_no_than_vit_reinforced" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+							<string name="tier_attachment_action" value="" overrideParent="True" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="True" overrideParent="True" />
+								<bool name="continue_state_trees" value="True" overrideParent="True" />
+								<bool name="remove_from_pending_deaths" value="False" overrideParent="True" />
+								<bool name="enable_all_extensions" value="True" overrideParent="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" overrideParent="True" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+	</variant>
+	<variant name="cordoba">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-587241534" List.ParentItemID="-587241534">
+				<list name="hardpoints" overrideParent="True">
+					<group name="hardpoint" List.ItemID="2147481939">
+						<float name="parent_hardpoint" value="-1" overrideParent="True" />
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="2147481940">
+								<group name="heading">
+									<float name="x" value="0" overrideParent="True" />
+									<float name="y" value="0" overrideParent="True" />
+									<float name="z" value="1" overrideParent="True" />
+								</group>
+								<float name="length" value="0" overrideParent="True" />
+								<group name="origin">
+									<float name="x" value="0" overrideParent="True" />
+									<float name="y" value="1.5" overrideParent="True" />
+									<float name="z" value="0" overrideParent="True" />
+								</group>
+								<enum name="type" value="default" overrideParent="True" />
+								<template_reference name="weapon_entity_attachment" value="">
+              </template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\vietnam\vn_weapon_no_than_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="" overrideParent="True" />
+									<string name="marker_name_parent" value="" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+						<bool name="receives_attack_commands" value="True" overrideParent="True" />
+						<string name="base_marker" value="" overrideParent="True" />
+						<list name="preferred_inventory_item_categories">
+          </list>
+						<list name="firing_offset_markers">
+          </list>
+						<bool name="initialize_weapons_on_creation" value="True" overrideParent="True" />
+						<string name="offhand_marker" value="" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="639154551" List.ParentItemID="639154551">
+				<locstring name="screen_name" value="3023" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+				<locstring name="help_text" value="3024" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+				<locstring name="extra_text" value="3025" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+			</template_reference>
+		</list>
+	</variant>
+</instance>

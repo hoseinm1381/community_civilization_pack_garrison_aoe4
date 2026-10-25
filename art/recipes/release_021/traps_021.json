@@ -1,0 +1,373 @@
+{
+  "schema": "ccp.traps-art-handoff/v1",
+  "version": "0.2.1",
+  "assets": [
+    {
+      "name": "stake_thicket",
+      "target_ebps": "vn_building_bambo_outpost_chi",
+      "art_origin": "scratch",
+      "source_directory": "art\\authoring\\traps_021\\stake_thicket",
+      "export_directory": "art\\exports\\traps_021\\stake_thicket",
+      "source_width": 6.4,
+      "preserved_animator_scale": 0.75,
+      "expected_world_width": 4.800000000000001,
+      "anatomy": [
+        "closed irregular earthen ring rising modestly above terrain",
+        "dark closed cavity floor above terrain Z=0",
+        "ten short sharp stakes seated in floor",
+        "six broken bamboo fragments"
+      ],
+      "construction_stages": [
+        0,
+        20
+      ],
+      "triangles": 596,
+      "validation_report": "output\\release_021\\traps\\stake_thicket\\validation.json",
+      "source_files": {
+        "art\\authoring\\traps_021\\stake_thicket\\albedo.png": "99f6f23ee933343359a163234fb5665467e1f2d6fc6c57bb28d64fe2f8563f6f",
+        "art\\authoring\\traps_021\\stake_thicket\\metalness.png": "1286fb2b35d5a81c739ea4db471a1f5b0685587b415c6663bfe97191732f17b7",
+        "art\\authoring\\traps_021\\stake_thicket\\normal.png": "abfddfc41c354f558a7ebf171e6ccf9a4d3640d66f5cb20ee6507e42beaecada",
+        "art\\authoring\\traps_021\\stake_thicket\\roughness.png": "b4ad0e044ffd547dd0ef3b268b54ebb8864a937cde0a0fe23531fe9056792c24",
+        "art\\authoring\\traps_021\\stake_thicket\\stake_thicket.blend": "5411413232ac6cb3aae9913989486be20b01f7b7ebf9063b2b8fdb730da2f74f"
+      },
+      "export_files": {
+        "art\\exports\\traps_021\\stake_thicket\\albedo.png": "99f6f23ee933343359a163234fb5665467e1f2d6fc6c57bb28d64fe2f8563f6f",
+        "art\\exports\\traps_021\\stake_thicket\\building.json": "c866b10b24b55229fffb347e4cb3d26384ab93580ea77db84c998b2c19777eaf",
+        "art\\exports\\traps_021\\stake_thicket\\metalness.png": "1286fb2b35d5a81c739ea4db471a1f5b0685587b415c6663bfe97191732f17b7",
+        "art\\exports\\traps_021\\stake_thicket\\model.fbx": "e8a5053d2f927dfb8ab8dcafece4d3158bb30313dfb956682d0fcc0fc8f61bd3",
+        "art\\exports\\traps_021\\stake_thicket\\normal.png": "abfddfc41c354f558a7ebf171e6ccf9a4d3640d66f5cb20ee6507e42beaecada",
+        "art\\exports\\traps_021\\stake_thicket\\roughness.png": "b4ad0e044ffd547dd0ef3b268b54ebb8864a937cde0a0fe23531fe9056792c24"
+      },
+      "preview_files": {
+        "output\\release_021\\traps\\stake_thicket\\back.png": "5277fd7c17f6f9740097a3305055d48c9226263e691c27a5d3566aa07d798f4a",
+        "output\\release_021\\traps\\stake_thicket\\before_010\\back.png": "bf8072bea4f976df4667309a90860b0361360574889cf94e120cf0513a9c7b3a",
+        "output\\release_021\\traps\\stake_thicket\\before_010\\bottom.png": "00d95ff9e4944cbdaee6d409c2ad18dfa3631881d2143c9907cee254b76e8230",
+        "output\\release_021\\traps\\stake_thicket\\before_010\\close.png": "f1eb585364b7a875c4b2c6ab6eddbfd7a77b0c2f0aac4f2fe342bb2bf3d997e6",
+        "output\\release_021\\traps\\stake_thicket\\before_010\\front.png": "95cfe2d768dc97c75112d93730345fcffaeb2904cf8990dcfcda77dc3fe18c03",
+        "output\\release_021\\traps\\stake_thicket\\before_010\\game_angle.png": "32359856823c0603257e95171b8889e2badf37b60110d7edafca1b7978b858ff",
+        "output\\release_021\\traps\\stake_thicket\\before_010\\left.png": "91ada9d2cc9171ea41a73eb9aaa005ea09903c477621cf416383da037e782747",
+        "output\\release_021\\traps\\stake_thicket\\before_010\\right.png": "174595627738543837d291914f99f47c2162fe829f86c92b6a7893db0c876454",
+        "output\\release_021\\traps\\stake_thicket\\before_010\\top.png": "784089a0b4a4885f899370f51ac8ff881dace7d8ba11312bb123bef630a343b3",
+        "output\\release_021\\traps\\stake_thicket\\bottom.png": "5d82bbfd98862b053df41136753b82a0c8e9a1a70c2a0a71ae894d8f4e609a9f",
+        "output\\release_021\\traps\\stake_thicket\\close.png": "bc5b7ebb733e05afb9edd1d106cf6ac1eedb7b973b92e8c6cd2eaac7fb640144",
+        "output\\release_021\\traps\\stake_thicket\\front.png": "7ae9eb95e2a9f0bb8cf8cccb8dded4149caf41ef5c5439de4fef27735a3b9f4b",
+        "output\\release_021\\traps\\stake_thicket\\game_angle.png": "83425442a1a48d37f328bd395a46f4f20b35b7cb1815d985782472dd656f3967",
+        "output\\release_021\\traps\\stake_thicket\\initial-preview\\back.png": "65059c776a0893c87704fe834cdb2bc810e7d19d6cee6ef1eff94842e22a5191",
+        "output\\release_021\\traps\\stake_thicket\\initial-preview\\bottom.png": "b5908f6c2394a2f895938850fc41b9cff43929f4dc681b54160da35438d0b858",
+        "output\\release_021\\traps\\stake_thicket\\initial-preview\\close.png": "f5a154fdbe332f476b2dde09204d67f92314f02e1bd18a96c32e14c0fd36df88",
+        "output\\release_021\\traps\\stake_thicket\\initial-preview\\front.png": "1d36c7c066c3060bc24d6a1a3affe67466194094afbcdbc49b6422556ee801aa",
+        "output\\release_021\\traps\\stake_thicket\\initial-preview\\game_angle.png": "aa9fa733feb3fa810b793b1c03fcb8a599a44f42054347c37aa7451bc0643ea1",
+        "output\\release_021\\traps\\stake_thicket\\initial-preview\\left.png": "f92354600737d63773308103ccbeb11c5d205c0299896f973a884eec5ab0d119",
+        "output\\release_021\\traps\\stake_thicket\\initial-preview\\right.png": "bcd6c65f8cccf61c34da1f1dc4dd44e18c845544d2233b3c67dfaaf524829710",
+        "output\\release_021\\traps\\stake_thicket\\initial-preview\\top.png": "3d91e277bf10389f846a64959d6486ffa8d777bce4b52c9fa02a71f866c8e3b7",
+        "output\\release_021\\traps\\stake_thicket\\left.png": "681350251b0f83ab03796b8d7f27e6775c14ac340033542e12324ab9a3375183",
+        "output\\release_021\\traps\\stake_thicket\\manifest.json": "c3c1d1c0180bbd5d69286136d1ed45588185078a7f7722b3e572157c1c299491",
+        "output\\release_021\\traps\\stake_thicket\\orthographic-sheet.jpg": "8654e316fa7387c36dcc6d6fc78bd45fd94ad1456592fbd50130a086c3a4109b",
+        "output\\release_021\\traps\\stake_thicket\\right.png": "bb1fec42ae7b19d98f61f1169b565eb584c0fe94ae9c97106458ab92884f8ec5",
+        "output\\release_021\\traps\\stake_thicket\\top.png": "e7eb23b640140cd0efdd580072a7fc01b1b68eb49980f4b6dbd3784629ff9d26",
+        "output\\release_021\\traps\\stake_thicket\\validation.json": "827448be91c47787748f9163a74936c668e6ae7a4057bfe9d61bf4748c42cc57"
+      },
+      "owner_colour": "Opaque neutral atlas, no owner colour baked; preserve existing native flags and marker graph.",
+      "world_height": 0.42706918716430664,
+      "contact_proof": [
+        {
+          "part": "short_stake_00",
+          "base_z": 0.046,
+          "floor_top_z": 0.051,
+          "overlap": 0.005,
+          "passes": true
+        },
+        {
+          "part": "short_stake_01",
+          "base_z": 0.046,
+          "floor_top_z": 0.051,
+          "overlap": 0.005,
+          "passes": true
+        },
+        {
+          "part": "short_stake_02",
+          "base_z": 0.046,
+          "floor_top_z": 0.051,
+          "overlap": 0.005,
+          "passes": true
+        },
+        {
+          "part": "short_stake_03",
+          "base_z": 0.046,
+          "floor_top_z": 0.051,
+          "overlap": 0.005,
+          "passes": true
+        },
+        {
+          "part": "short_stake_04",
+          "base_z": 0.046,
+          "floor_top_z": 0.051,
+          "overlap": 0.005,
+          "passes": true
+        },
+        {
+          "part": "short_stake_05",
+          "base_z": 0.046,
+          "floor_top_z": 0.051,
+          "overlap": 0.005,
+          "passes": true
+        },
+        {
+          "part": "short_stake_06",
+          "base_z": 0.046,
+          "floor_top_z": 0.051,
+          "overlap": 0.005,
+          "passes": true
+        },
+        {
+          "part": "short_stake_07",
+          "base_z": 0.046,
+          "floor_top_z": 0.051,
+          "overlap": 0.005,
+          "passes": true
+        },
+        {
+          "part": "short_stake_08",
+          "base_z": 0.046,
+          "floor_top_z": 0.051,
+          "overlap": 0.005,
+          "passes": true
+        },
+        {
+          "part": "short_stake_09",
+          "base_z": 0.046,
+          "floor_top_z": 0.051,
+          "overlap": 0.005,
+          "passes": true
+        }
+      ],
+      "uv_normals_proof": [
+        {
+          "object": "CCP021_00_earth_cavity",
+          "vertices": 136,
+          "polygons": 104,
+          "triangles": 264,
+          "non_manifold_edges": 0,
+          "degenerate_faces": 0,
+          "uv_loops": 472,
+          "material_count": 1,
+          "single_user": true,
+          "volume": 3.30808389375731
+        },
+        {
+          "object": "CCP021_01_stakes_cover",
+          "vertices": 198,
+          "polygons": 186,
+          "triangles": 332,
+          "non_manifold_edges": 0,
+          "degenerate_faces": 0,
+          "uv_loops": 704,
+          "material_count": 1,
+          "single_user": true,
+          "volume": 0.10414854543727228
+        }
+      ]
+    },
+    {
+      "name": "stake_fan",
+      "target_ebps": "vn_building_defense_outpost_bambo_chi",
+      "art_origin": "scratch",
+      "source_directory": "art\\authoring\\traps_021\\stake_fan",
+      "export_directory": "art\\exports\\traps_021\\stake_fan",
+      "source_width": 20.8,
+      "preserved_animator_scale": 0.25,
+      "expected_world_width": 5.2,
+      "anatomy": [
+        "closed irregular earthen ring rising modestly above terrain",
+        "dark closed cavity floor above terrain Z=0",
+        "ten short sharp stakes seated in floor",
+        "six broken bamboo fragments",
+        "woven bamboo mat crossing measured rim support",
+        "pointed solid leaf scatter",
+        "ragged large exposed opening"
+      ],
+      "construction_stages": [
+        0,
+        20
+      ],
+      "triangles": 1032,
+      "validation_report": "output\\release_021\\traps\\stake_fan\\validation.json",
+      "source_files": {
+        "art\\authoring\\traps_021\\stake_fan\\albedo.png": "99f6f23ee933343359a163234fb5665467e1f2d6fc6c57bb28d64fe2f8563f6f",
+        "art\\authoring\\traps_021\\stake_fan\\metalness.png": "1286fb2b35d5a81c739ea4db471a1f5b0685587b415c6663bfe97191732f17b7",
+        "art\\authoring\\traps_021\\stake_fan\\normal.png": "abfddfc41c354f558a7ebf171e6ccf9a4d3640d66f5cb20ee6507e42beaecada",
+        "art\\authoring\\traps_021\\stake_fan\\roughness.png": "b4ad0e044ffd547dd0ef3b268b54ebb8864a937cde0a0fe23531fe9056792c24",
+        "art\\authoring\\traps_021\\stake_fan\\stake_fan.blend": "c2d2dd2dad2f392b0b24421740f3c703d1356104b7512cbcb7407f0ff169f4f1"
+      },
+      "export_files": {
+        "art\\exports\\traps_021\\stake_fan\\albedo.png": "99f6f23ee933343359a163234fb5665467e1f2d6fc6c57bb28d64fe2f8563f6f",
+        "art\\exports\\traps_021\\stake_fan\\building.json": "c866b10b24b55229fffb347e4cb3d26384ab93580ea77db84c998b2c19777eaf",
+        "art\\exports\\traps_021\\stake_fan\\metalness.png": "1286fb2b35d5a81c739ea4db471a1f5b0685587b415c6663bfe97191732f17b7",
+        "art\\exports\\traps_021\\stake_fan\\model.fbx": "e27c56fd8856d20218e9f5d87ecec25c48ed2465ba7ca82381e9e68f91d359e1",
+        "art\\exports\\traps_021\\stake_fan\\normal.png": "abfddfc41c354f558a7ebf171e6ccf9a4d3640d66f5cb20ee6507e42beaecada",
+        "art\\exports\\traps_021\\stake_fan\\roughness.png": "b4ad0e044ffd547dd0ef3b268b54ebb8864a937cde0a0fe23531fe9056792c24"
+      },
+      "preview_files": {
+        "output\\release_021\\traps\\stake_fan\\back.png": "4708b3246bd207e3af826de628b42fe755cd45fbc3c6a29e6c7ec38fe94b67b7",
+        "output\\release_021\\traps\\stake_fan\\before_010\\back.png": "85478d2e28692e667c58a3998bb7f47a187123c2ee5091a77c7d74da0ebe2461",
+        "output\\release_021\\traps\\stake_fan\\before_010\\bottom.png": "8559bb3e2f9c00db9e4ad5fcf0e87aad8c71d359bb105e8a5c99312b93353f76",
+        "output\\release_021\\traps\\stake_fan\\before_010\\close.png": "664731f3e7d1c7b41e3c2c6b48244b5ef2aed7533ab84d43691bad41af09fcf9",
+        "output\\release_021\\traps\\stake_fan\\before_010\\front.png": "86354799748f14aa149d1993dd37d1cd6a32a7591159af1f92a2dc0a9278c8e3",
+        "output\\release_021\\traps\\stake_fan\\before_010\\game_angle.png": "ebc7851abc849120739cc4fd0008a7a25ccfe948c1b62bee6c79f57a3cc31cd3",
+        "output\\release_021\\traps\\stake_fan\\before_010\\left.png": "68e24325368f47796d06170c075b204b4aa3c3e5837e61d9296bf22c5158bb25",
+        "output\\release_021\\traps\\stake_fan\\before_010\\right.png": "fbfb6db51ae03c0e6c1b110d7e43772ea15981c5d105e889e84917ea951f3877",
+        "output\\release_021\\traps\\stake_fan\\before_010\\top.png": "97408483b409ecf7aa8573417babcb5d06c954b390ab4b540ee8d0a489661035",
+        "output\\release_021\\traps\\stake_fan\\bottom.png": "19326baed1584d1e4cc2ea25cd2c7ecdd6ad7e570bb02cf3121e61d97cc71c29",
+        "output\\release_021\\traps\\stake_fan\\close.png": "8d7ed630d291eb70463aba50fc4ef61ce3a4816951ab4675dd3a2fdb2d10c734",
+        "output\\release_021\\traps\\stake_fan\\front.png": "3c93ea2e722c2646c19047c72f58d7a52f2dcc797ddd5bd4aa8d564b841cea31",
+        "output\\release_021\\traps\\stake_fan\\game_angle.png": "683c14db49e95350206b7f5ca08f36fd561c3ac4aaab9472389ee1461cffef48",
+        "output\\release_021\\traps\\stake_fan\\initial-preview\\back.png": "170eabbaf746f3beb0cc75bd1a3d859421ca30077daed1cef674b4d30d7a8146",
+        "output\\release_021\\traps\\stake_fan\\initial-preview\\bottom.png": "08bb975f4ea3de7970b4e35ab5e05825588ee91dda39393b172a4bfdc15c4202",
+        "output\\release_021\\traps\\stake_fan\\initial-preview\\close.png": "7cbe52ffa1966d34baeb82356282d35f0e93d720e673528fab200d696684d1bf",
+        "output\\release_021\\traps\\stake_fan\\initial-preview\\front.png": "e3aae3e70f61671c5b8badd5ea088dae2ebb4292d2cfc1f6e2a54f33ae245737",
+        "output\\release_021\\traps\\stake_fan\\initial-preview\\game_angle.png": "a3075a486a4c7dd634e278aa136c6460257749af6f48c05eab56de14826f826b",
+        "output\\release_021\\traps\\stake_fan\\initial-preview\\left.png": "a8e21cbca2fbaff59c94e91a63b11d9855ae5094a6313dfeda31e355293215b5",
+        "output\\release_021\\traps\\stake_fan\\initial-preview\\right.png": "72a2e8dec752e398736a1fbc572cae6f4f0723e94e71120624141e5ca249e4db",
+        "output\\release_021\\traps\\stake_fan\\initial-preview\\top.png": "f2850491bb4f53e9b482bd6d37731803d18a45987649918226f5155d0f68aeea",
+        "output\\release_021\\traps\\stake_fan\\left.png": "8f022fcd10ef49be412be8f5430a1f4e7bf78d3b3e99c716c97606987af72677",
+        "output\\release_021\\traps\\stake_fan\\manifest.json": "5bd5f8fbea059b88a19bae5ae781d3661e3d1cae9cf1572c07e33d02208596f6",
+        "output\\release_021\\traps\\stake_fan\\orthographic-sheet.jpg": "d6b4fcdf391426345d1c39e77f20ec24fbd6ea2a16b399e841bcd663dfc4bc26",
+        "output\\release_021\\traps\\stake_fan\\right.png": "739beb1a1b97999825af2e2d7306e47882d94dd076f24dbfcff4e3d835fb915f",
+        "output\\release_021\\traps\\stake_fan\\top.png": "42bb7a9d012a2ad3a6856be2a28694ba94176c857c5840da6dcbf3cfa78f4e08",
+        "output\\release_021\\traps\\stake_fan\\validation.json": "2f4b08e9813474bfa81307079761871b6d4b65481b9386eb71c6f2ec49a3d434"
+      },
+      "owner_colour": "Opaque neutral atlas, no owner colour baked; preserve existing native flags and marker graph.",
+      "world_height": 0.45881086587905884,
+      "contact_proof": [
+        {
+          "part": "short_stake_00",
+          "base_z": 0.046,
+          "floor_top_z": 0.051,
+          "overlap": 0.005,
+          "passes": true
+        },
+        {
+          "part": "short_stake_01",
+          "base_z": 0.046,
+          "floor_top_z": 0.051,
+          "overlap": 0.005,
+          "passes": true
+        },
+        {
+          "part": "short_stake_02",
+          "base_z": 0.046,
+          "floor_top_z": 0.051,
+          "overlap": 0.005,
+          "passes": true
+        },
+        {
+          "part": "short_stake_03",
+          "base_z": 0.046,
+          "floor_top_z": 0.051,
+          "overlap": 0.005,
+          "passes": true
+        },
+        {
+          "part": "short_stake_04",
+          "base_z": 0.046,
+          "floor_top_z": 0.051,
+          "overlap": 0.005,
+          "passes": true
+        },
+        {
+          "part": "short_stake_05",
+          "base_z": 0.046,
+          "floor_top_z": 0.051,
+          "overlap": 0.005,
+          "passes": true
+        },
+        {
+          "part": "short_stake_06",
+          "base_z": 0.046,
+          "floor_top_z": 0.051,
+          "overlap": 0.005,
+          "passes": true
+        },
+        {
+          "part": "short_stake_07",
+          "base_z": 0.046,
+          "floor_top_z": 0.051,
+          "overlap": 0.005,
+          "passes": true
+        },
+        {
+          "part": "short_stake_08",
+          "base_z": 0.046,
+          "floor_top_z": 0.051,
+          "overlap": 0.005,
+          "passes": true
+        },
+        {
+          "part": "short_stake_09",
+          "base_z": 0.046,
+          "floor_top_z": 0.051,
+          "overlap": 0.005,
+          "passes": true
+        },
+        {
+          "part": "woven_mat",
+          "support": "actual rim ray-cast on center weft",
+          "rim_top_measured_z": 0.22452694177627563,
+          "mat_bottom_z": 0.215,
+          "overlap": 0.009526941776275638,
+          "passes": true
+        }
+      ],
+      "uv_normals_proof": [
+        {
+          "object": "CCP021_00_earth_cavity",
+          "vertices": 136,
+          "polygons": 104,
+          "triangles": 264,
+          "non_manifold_edges": 0,
+          "degenerate_faces": 0,
+          "uv_loops": 472,
+          "material_count": 1,
+          "single_user": true,
+          "volume": 113.56031783784367
+        },
+        {
+          "object": "CCP021_01_stakes_cover",
+          "vertices": 496,
+          "polygons": 448,
+          "triangles": 768,
+          "non_manifold_edges": 0,
+          "degenerate_faces": 0,
+          "uv_loops": 1664,
+          "material_count": 1,
+          "single_user": true,
+          "volume": 13.939152833489812
+        }
+      ]
+    }
+  ],
+  "gameplay_edits": false,
+  "native_cook": "not run; parent owns integration",
+  "source_axis": "Z up, XY centered; minimum Z=0; shallow cavity floor remains above terrain",
+  "recipe_sha256": {
+    "tools\\release_021\\trap_art_runner.py": "3f73bfa6b266609449de2938fb617d6e77e628092d7ba60518c49490082ec943",
+    "tools\\release_021\\trap_build.py": "79b36e25b6e18a46dd4ab19a22b26364e7426f94b980278519fc00343dc74fb4",
+    "tools\\release_021\\trap_freeze.py": "59f06fd846e269069f5241b7e3633702aefb01090876d6b469be08aafde7d21f"
+  },
+  "rebuild": {
+    "blender": "E:/Blender5.2/blender.exe",
+    "script": "tools/release_021/trap_build.py",
+    "commands": [
+      "Run tools/verify_workspace.py --storage-only first",
+      "blender -b --factory-startup --python tools/release_021/trap_build.py -- stake_thicket",
+      "blender -b --factory-startup --python tools/release_021/trap_build.py -- stake_fan"
+    ],
+    "note": "Serialize Blender; machine WMI workaround remains needed via child PYTHONPATH from output/release_020/integration/wmi-probe. Geometry/texture generation deterministic; FBX/blend hashes can vary by metadata."
+  },
+  "limits": [
+    "Source/export/preflight only, no native cook, integration, import or match proof",
+    "Preserve normal/campaign/upgrade bindings and existing game mechanics",
+    "Both widths already compensate for existing .75 and .25 native animator scales"
+  ],
+  "before_after": "before_010 copied unchanged accepted previews; initial-preview retains correction comparison; final root PNGs are current."
+}

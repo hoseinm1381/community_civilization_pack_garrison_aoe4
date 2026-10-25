@@ -1,0 +1,3456 @@
+{
+  "version": "0.8.3",
+  "owning_baseline": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_082_animation\\delivery-v1\\idle-walk\\community_civilization_pack.sga",
+  "baseline_sha256": "9dc759f9a34d6500a771c436a7a48e0fe1cf362b01b2e5084b68c347a310cca4",
+  "selection": {
+    "skirmisher2": "r12",
+    "skirmisher3": "r12",
+    "skirmisher4": "r12",
+    "javelin2": "r12",
+    "javelin3": "r12",
+    "javelin4": "r12",
+    "projectile2": "r12",
+    "projectile3": "r12",
+    "projectile4": "r12"
+  },
+  "sources": {
+    "skirmisher2": {
+      "family": "skirmisher2",
+      "revision": "r12",
+      "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_083\\skirmisher2\\r12\\model.blend",
+      "source_sha256": "e1e8f2b825a7a6b45ffc9883f463efe0ba067e83e15299ed585445bca47c8950",
+      "export": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_083\\skirmisher2\\r12",
+      "files": {
+        "albedo.png": "a725802818c146ce4880d65cd743175039dc57b48e9f5c17fbf14b5cac4a211c",
+        "metalness.png": "14296c404e6f9b5a9865b324f22977f54faa39839266bc4a3725d4d37ab11136",
+        "model.fbx": "c741996b4166a24730e12f405d804d19e6f86fa0dcd6d0c09076e7be1f24cc78",
+        "model.rig": "29bf453f477aaea7b38c7802653bb93ccbe0d627a3114a56730f371c3a906723",
+        "normal.png": "7bc3a348d2ebd3483d3a1a15969294324c5c73cd116824a04be894a55eab21a4",
+        "pattern.png": "b0eae3fd00be3933217328842f381c59eb336d475a75f255eb337d52a4276064",
+        "roughness.png": "27605bf8369fa24ecb9c4d1c2dadf0d0e771bc449f54e51a399172912350a42c"
+      },
+      "lod_triangles": [
+        7116,
+        3700,
+        1921
+      ],
+      "donor_contract": {
+        "bones": [
+          {
+            "name": "metarig_root",
+            "parent": -1
+          },
+          {
+            "name": "metarig_pelvis",
+            "parent": 0
+          },
+          {
+            "name": "metarig_lleg1",
+            "parent": 1
+          },
+          {
+            "name": "metarig_lleg2",
+            "parent": 2
+          },
+          {
+            "name": "metarig_rleg1",
+            "parent": 1
+          },
+          {
+            "name": "metarig_rleg2",
+            "parent": 4
+          },
+          {
+            "name": "metarig_spine1",
+            "parent": 1
+          },
+          {
+            "name": "metarig_spine2",
+            "parent": 6
+          },
+          {
+            "name": "metarig_ribcage",
+            "parent": 7
+          },
+          {
+            "name": "metarig_neck1",
+            "parent": 8
+          },
+          {
+            "name": "metarig_neck2",
+            "parent": 9
+          },
+          {
+            "name": "metarig_head",
+            "parent": 10
+          },
+          {
+            "name": "metarig_larmcollarbone",
+            "parent": 8
+          },
+          {
+            "name": "metarig_larmupper1",
+            "parent": 12
+          },
+          {
+            "name": "metarig_larmupper2",
+            "parent": 13
+          },
+          {
+            "name": "metarig_larmlower1",
+            "parent": 14
+          },
+          {
+            "name": "metarig_larmlower2",
+            "parent": 15
+          },
+          {
+            "name": "metarig_larmpalm",
+            "parent": 16
+          },
+          {
+            "name": "metarig_larmpalmsocket",
+            "parent": 17
+          },
+          {
+            "name": "metarig_rarmcollarbone",
+            "parent": 8
+          },
+          {
+            "name": "metarig_rarmupper1",
+            "parent": 19
+          },
+          {
+            "name": "metarig_rarmupper2",
+            "parent": 20
+          },
+          {
+            "name": "metarig_rarmlower1",
+            "parent": 21
+          },
+          {
+            "name": "metarig_rarmlower2",
+            "parent": 22
+          },
+          {
+            "name": "metarig_rarmpalm",
+            "parent": 23
+          },
+          {
+            "name": "metarig_rarmpalmsocket",
+            "parent": 24
+          },
+          {
+            "name": "metarig_llegankle",
+            "parent": 3
+          },
+          {
+            "name": "metarig_rlegankle",
+            "parent": 5
+          },
+          {
+            "name": "metarig_larmmiddle1",
+            "parent": 17
+          },
+          {
+            "name": "metarig_larmthumb1",
+            "parent": 17
+          },
+          {
+            "name": "metarig_rarmmiddle1",
+            "parent": 24
+          },
+          {
+            "name": "metarig_rarmthumb1",
+            "parent": 24
+          },
+          {
+            "name": "metarig_llegtoe1",
+            "parent": 26
+          },
+          {
+            "name": "metarig_rlegtoe1",
+            "parent": 27
+          },
+          {
+            "name": "metarig_larmmiddle2",
+            "parent": 28
+          },
+          {
+            "name": "metarig_larmmiddle3",
+            "parent": 34
+          },
+          {
+            "name": "metarig_larmthumb2",
+            "parent": 29
+          },
+          {
+            "name": "metarig_larmthumb3",
+            "parent": 36
+          },
+          {
+            "name": "metarig_larmindex1",
+            "parent": 17
+          },
+          {
+            "name": "metarig_larmindex2",
+            "parent": 38
+          },
+          {
+            "name": "metarig_larmindex3",
+            "parent": 39
+          },
+          {
+            "name": "metarig_rarmmiddle2",
+            "parent": 30
+          },
+          {
+            "name": "metarig_rarmmiddle3",
+            "parent": 41
+          },
+          {
+            "name": "metarig_rarmthumb2",
+            "parent": 31
+          },
+          {
+            "name": "metarig_rarmthumb3",
+            "parent": 43
+          },
+          {
+            "name": "metarig_rarmindex1",
+            "parent": 24
+          },
+          {
+            "name": "metarig_rarmindex2",
+            "parent": 45
+          },
+          {
+            "name": "metarig_rarmindex3",
+            "parent": 46
+          }
+        ],
+        "partitions": [
+          {
+            "name": "lowerbody_lod3",
+            "start": 0,
+            "count": 6
+          },
+          {
+            "name": "upperbody_lod3",
+            "start": 6,
+            "count": 20
+          },
+          {
+            "name": "lowerbody_lod2",
+            "start": 26,
+            "count": 2
+          },
+          {
+            "name": "upperbody_lod2",
+            "start": 28,
+            "count": 4
+          },
+          {
+            "name": "lowerbody_lod1",
+            "start": 32,
+            "count": 2
+          },
+          {
+            "name": "upperbody_lod1",
+            "start": 34,
+            "count": 14
+          }
+        ],
+        "groups": [
+          {
+            "name": "lowerbody",
+            "slots": [
+              4,
+              2,
+              0
+            ]
+          },
+          {
+            "name": "upperbody",
+            "slots": [
+              5,
+              3,
+              1
+            ]
+          }
+        ],
+        "lod_counts": [
+          48,
+          32,
+          26
+        ],
+        "bind_offset": 1357
+      },
+      "owner_mask_surface_fraction_by_lod": [
+        0.38034652629134585,
+        0.38129298981738435,
+        0.3848735040742917
+      ],
+      "components": [
+        {
+          "name": "Reworked official Chinese head and hands",
+          "vertices": 759,
+          "triangles": 1302,
+          "surface": "skin"
+        },
+        {
+          "name": "Tailored cross-collar tunic",
+          "vertices": 574,
+          "triangles": 1040,
+          "surface": "cloth"
+        },
+        {
+          "name": "Collar seated inner neck",
+          "vertices": 100,
+          "triangles": 188,
+          "surface": "skin"
+        },
+        {
+          "name": "Integrated jaw and rear cranium",
+          "vertices": 174,
+          "triangles": 332,
+          "surface": "skin"
+        },
+        {
+          "name": "Layered outer sleeve l",
+          "vertices": 150,
+          "triangles": 284,
+          "surface": "cloth"
+        },
+        {
+          "name": "Bound forearm cuff l",
+          "vertices": 84,
+          "triangles": 156,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cuff overlap l0.33",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cuff overlap l0.52",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cuff overlap l0.72",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gathered trousers l",
+          "vertices": 150,
+          "triangles": 284,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cloth gaiter l",
+          "vertices": 63,
+          "triangles": 116,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn l0",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn l1",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn l2",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn l3",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn l4",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn l5",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Soft leather shoe l",
+          "vertices": 24,
+          "triangles": 44,
+          "surface": "sole"
+        },
+        {
+          "name": "Layered outer sleeve r",
+          "vertices": 150,
+          "triangles": 284,
+          "surface": "cloth"
+        },
+        {
+          "name": "Bound forearm cuff r",
+          "vertices": 84,
+          "triangles": 156,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cuff overlap r0.33",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cuff overlap r0.52",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cuff overlap r0.72",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gathered trousers r",
+          "vertices": 150,
+          "triangles": 284,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cloth gaiter r",
+          "vertices": 63,
+          "triangles": 116,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn r0",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn r1",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn r2",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn r3",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn r4",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn r5",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Soft leather shoe r",
+          "vertices": 24,
+          "triangles": 44,
+          "surface": "sole"
+        },
+        {
+          "name": "Cross-collar upper",
+          "vertices": 10,
+          "triangles": 16,
+          "surface": "trim"
+        },
+        {
+          "name": "Under collar",
+          "vertices": 8,
+          "triangles": 12,
+          "surface": "trim"
+        },
+        {
+          "name": "Wide waist belt",
+          "vertices": 123,
+          "triangles": 236,
+          "surface": "cloth"
+        },
+        {
+          "name": "Layered cloth sash tail",
+          "vertices": 8,
+          "triangles": 12,
+          "surface": "trim"
+        },
+        {
+          "name": "Wrapped headcloth",
+          "vertices": 198,
+          "triangles": 380,
+          "surface": "cloth"
+        },
+        {
+          "name": "Headwrap folded seam 1.876",
+          "vertices": 66,
+          "triangles": 124,
+          "surface": "cloth"
+        },
+        {
+          "name": "Headwrap folded seam 1.901",
+          "vertices": 66,
+          "triangles": 124,
+          "surface": "cloth"
+        },
+        {
+          "name": "Headwrap knot tail",
+          "vertices": 6,
+          "triangles": 8,
+          "surface": "trim"
+        },
+        {
+          "name": "Carrier contact pad",
+          "vertices": 51,
+          "triangles": 92,
+          "surface": "cloth"
+        },
+        {
+          "name": "Leather javelin carrier",
+          "vertices": 84,
+          "triangles": 156,
+          "surface": "cloth"
+        },
+        {
+          "name": "Carrier retaining band 1.1",
+          "vertices": 42,
+          "triangles": 76,
+          "surface": "cloth"
+        },
+        {
+          "name": "Carrier retaining band 1.315",
+          "vertices": 42,
+          "triangles": 76,
+          "surface": "cloth"
+        },
+        {
+          "name": "Carrier shoulder sling",
+          "vertices": 8,
+          "triangles": 12,
+          "surface": "trim"
+        },
+        {
+          "name": "Spare bamboo javelin 0",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Spare forged point 0",
+          "vertices": 15,
+          "triangles": 20,
+          "surface": "blade"
+        },
+        {
+          "name": "Spare bamboo javelin 1",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Spare forged point 1",
+          "vertices": 15,
+          "triangles": 20,
+          "surface": "blade"
+        }
+      ],
+      "contacts": [
+        {
+          "interface": "sleeve/tunic l",
+          "intentional_overlap": 0.018,
+          "cuff_to_palm_distance": 0.016455727126307926,
+          "shoe_min_z": 0.025
+        },
+        {
+          "interface": "sleeve/tunic r",
+          "intentional_overlap": 0.018,
+          "cuff_to_palm_distance": 0.016455758298101312,
+          "shoe_min_z": 0.025
+        },
+        {
+          "interface": "carrier/padded back contact",
+          "pad_front_y": 0.138,
+          "pad_back_y": 0.188,
+          "carrier_front_y": 0.16,
+          "pad_carrier_overlap": 0.028
+        }
+      ],
+      "anatomy_provenance": {
+        "donor_skin_faces": 221,
+        "refined_vertices": 759,
+        "source": "official Chinese archer II",
+        "rest_transfer": "named-bone bind-space weighted transfer"
+      },
+      "rest_binds_exact": true,
+      "native_acceptance": false,
+      "texture_size": 2048,
+      "geometry_from_revision": "r10",
+      "repair": "canonical material names matching native model.material"
+    },
+    "skirmisher3": {
+      "family": "skirmisher3",
+      "revision": "r12",
+      "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_083\\skirmisher3\\r12\\model.blend",
+      "source_sha256": "c46f7944087904fd540b32755c0e74b3273c0412bd7660300c3cacebb43a5a2a",
+      "export": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_083\\skirmisher3\\r12",
+      "files": {
+        "albedo.png": "36b09085ef67a9b975ce1d525b562862f9e612f2131d2b5a1fc3bbf9a8da3aac",
+        "metalness.png": "14296c404e6f9b5a9865b324f22977f54faa39839266bc4a3725d4d37ab11136",
+        "model.fbx": "01557dbe78bda4305102a9bdef63d9231d7d095e7c38abc5a476c816fba00771",
+        "model.rig": "29bf453f477aaea7b38c7802653bb93ccbe0d627a3114a56730f371c3a906723",
+        "normal.png": "f2853ac8dbbc67f90b3b27def6fc6a8a75d115a4b32f90589d3d13e42829803e",
+        "pattern.png": "b0eae3fd00be3933217328842f381c59eb336d475a75f255eb337d52a4276064",
+        "roughness.png": "27605bf8369fa24ecb9c4d1c2dadf0d0e771bc449f54e51a399172912350a42c"
+      },
+      "lod_triangles": [
+        7460,
+        3878,
+        2013
+      ],
+      "donor_contract": {
+        "bones": [
+          {
+            "name": "metarig_root",
+            "parent": -1
+          },
+          {
+            "name": "metarig_pelvis",
+            "parent": 0
+          },
+          {
+            "name": "metarig_lleg1",
+            "parent": 1
+          },
+          {
+            "name": "metarig_lleg2",
+            "parent": 2
+          },
+          {
+            "name": "metarig_rleg1",
+            "parent": 1
+          },
+          {
+            "name": "metarig_rleg2",
+            "parent": 4
+          },
+          {
+            "name": "metarig_spine1",
+            "parent": 1
+          },
+          {
+            "name": "metarig_spine2",
+            "parent": 6
+          },
+          {
+            "name": "metarig_ribcage",
+            "parent": 7
+          },
+          {
+            "name": "metarig_neck1",
+            "parent": 8
+          },
+          {
+            "name": "metarig_neck2",
+            "parent": 9
+          },
+          {
+            "name": "metarig_head",
+            "parent": 10
+          },
+          {
+            "name": "metarig_larmcollarbone",
+            "parent": 8
+          },
+          {
+            "name": "metarig_larmupper1",
+            "parent": 12
+          },
+          {
+            "name": "metarig_larmupper2",
+            "parent": 13
+          },
+          {
+            "name": "metarig_larmlower1",
+            "parent": 14
+          },
+          {
+            "name": "metarig_larmlower2",
+            "parent": 15
+          },
+          {
+            "name": "metarig_larmpalm",
+            "parent": 16
+          },
+          {
+            "name": "metarig_larmpalmsocket",
+            "parent": 17
+          },
+          {
+            "name": "metarig_rarmcollarbone",
+            "parent": 8
+          },
+          {
+            "name": "metarig_rarmupper1",
+            "parent": 19
+          },
+          {
+            "name": "metarig_rarmupper2",
+            "parent": 20
+          },
+          {
+            "name": "metarig_rarmlower1",
+            "parent": 21
+          },
+          {
+            "name": "metarig_rarmlower2",
+            "parent": 22
+          },
+          {
+            "name": "metarig_rarmpalm",
+            "parent": 23
+          },
+          {
+            "name": "metarig_rarmpalmsocket",
+            "parent": 24
+          },
+          {
+            "name": "metarig_llegankle",
+            "parent": 3
+          },
+          {
+            "name": "metarig_rlegankle",
+            "parent": 5
+          },
+          {
+            "name": "metarig_larmmiddle1",
+            "parent": 17
+          },
+          {
+            "name": "metarig_larmthumb1",
+            "parent": 17
+          },
+          {
+            "name": "metarig_rarmmiddle1",
+            "parent": 24
+          },
+          {
+            "name": "metarig_rarmthumb1",
+            "parent": 24
+          },
+          {
+            "name": "metarig_llegtoe1",
+            "parent": 26
+          },
+          {
+            "name": "metarig_rlegtoe1",
+            "parent": 27
+          },
+          {
+            "name": "metarig_larmmiddle2",
+            "parent": 28
+          },
+          {
+            "name": "metarig_larmmiddle3",
+            "parent": 34
+          },
+          {
+            "name": "metarig_larmthumb2",
+            "parent": 29
+          },
+          {
+            "name": "metarig_larmthumb3",
+            "parent": 36
+          },
+          {
+            "name": "metarig_larmindex1",
+            "parent": 17
+          },
+          {
+            "name": "metarig_larmindex2",
+            "parent": 38
+          },
+          {
+            "name": "metarig_larmindex3",
+            "parent": 39
+          },
+          {
+            "name": "metarig_rarmmiddle2",
+            "parent": 30
+          },
+          {
+            "name": "metarig_rarmmiddle3",
+            "parent": 41
+          },
+          {
+            "name": "metarig_rarmthumb2",
+            "parent": 31
+          },
+          {
+            "name": "metarig_rarmthumb3",
+            "parent": 43
+          },
+          {
+            "name": "metarig_rarmindex1",
+            "parent": 24
+          },
+          {
+            "name": "metarig_rarmindex2",
+            "parent": 45
+          },
+          {
+            "name": "metarig_rarmindex3",
+            "parent": 46
+          }
+        ],
+        "partitions": [
+          {
+            "name": "lowerbody_lod3",
+            "start": 0,
+            "count": 6
+          },
+          {
+            "name": "upperbody_lod3",
+            "start": 6,
+            "count": 20
+          },
+          {
+            "name": "lowerbody_lod2",
+            "start": 26,
+            "count": 2
+          },
+          {
+            "name": "upperbody_lod2",
+            "start": 28,
+            "count": 4
+          },
+          {
+            "name": "lowerbody_lod1",
+            "start": 32,
+            "count": 2
+          },
+          {
+            "name": "upperbody_lod1",
+            "start": 34,
+            "count": 14
+          }
+        ],
+        "groups": [
+          {
+            "name": "lowerbody",
+            "slots": [
+              4,
+              2,
+              0
+            ]
+          },
+          {
+            "name": "upperbody",
+            "slots": [
+              5,
+              3,
+              1
+            ]
+          }
+        ],
+        "lod_counts": [
+          48,
+          32,
+          26
+        ],
+        "bind_offset": 1357
+      },
+      "owner_mask_surface_fraction_by_lod": [
+        0.34525106166409836,
+        0.34634684372352686,
+        0.34897510946778004
+      ],
+      "components": [
+        {
+          "name": "Reworked official Chinese head and hands",
+          "vertices": 759,
+          "triangles": 1302,
+          "surface": "skin"
+        },
+        {
+          "name": "Tailored cross-collar tunic",
+          "vertices": 574,
+          "triangles": 1040,
+          "surface": "cloth"
+        },
+        {
+          "name": "Collar seated inner neck",
+          "vertices": 100,
+          "triangles": 188,
+          "surface": "skin"
+        },
+        {
+          "name": "Integrated jaw and rear cranium",
+          "vertices": 174,
+          "triangles": 332,
+          "surface": "skin"
+        },
+        {
+          "name": "Layered outer sleeve l",
+          "vertices": 150,
+          "triangles": 284,
+          "surface": "cloth"
+        },
+        {
+          "name": "Bound forearm cuff l",
+          "vertices": 84,
+          "triangles": 156,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cuff overlap l0.33",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cuff overlap l0.52",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cuff overlap l0.72",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gathered trousers l",
+          "vertices": 150,
+          "triangles": 284,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cloth gaiter l",
+          "vertices": 63,
+          "triangles": 116,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn l0",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn l1",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn l2",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn l3",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn l4",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn l5",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Soft leather shoe l",
+          "vertices": 24,
+          "triangles": 44,
+          "surface": "sole"
+        },
+        {
+          "name": "Layered outer sleeve r",
+          "vertices": 150,
+          "triangles": 284,
+          "surface": "cloth"
+        },
+        {
+          "name": "Bound forearm cuff r",
+          "vertices": 84,
+          "triangles": 156,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cuff overlap r0.33",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cuff overlap r0.52",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cuff overlap r0.72",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gathered trousers r",
+          "vertices": 150,
+          "triangles": 284,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cloth gaiter r",
+          "vertices": 63,
+          "triangles": 116,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn r0",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn r1",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn r2",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn r3",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn r4",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn r5",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Soft leather shoe r",
+          "vertices": 24,
+          "triangles": 44,
+          "surface": "sole"
+        },
+        {
+          "name": "Cross-collar upper",
+          "vertices": 10,
+          "triangles": 16,
+          "surface": "trim"
+        },
+        {
+          "name": "Under collar",
+          "vertices": 8,
+          "triangles": 12,
+          "surface": "trim"
+        },
+        {
+          "name": "Wide waist belt",
+          "vertices": 123,
+          "triangles": 236,
+          "surface": "cloth"
+        },
+        {
+          "name": "Layered cloth sash tail",
+          "vertices": 8,
+          "triangles": 12,
+          "surface": "trim"
+        },
+        {
+          "name": "Wrapped headcloth",
+          "vertices": 198,
+          "triangles": 380,
+          "surface": "cloth"
+        },
+        {
+          "name": "Headwrap folded seam 1.876",
+          "vertices": 66,
+          "triangles": 124,
+          "surface": "cloth"
+        },
+        {
+          "name": "Headwrap folded seam 1.901",
+          "vertices": 66,
+          "triangles": 124,
+          "surface": "cloth"
+        },
+        {
+          "name": "Headwrap knot tail",
+          "vertices": 6,
+          "triangles": 8,
+          "surface": "trim"
+        },
+        {
+          "name": "Carrier contact pad",
+          "vertices": 51,
+          "triangles": 92,
+          "surface": "cloth"
+        },
+        {
+          "name": "Leather javelin carrier",
+          "vertices": 84,
+          "triangles": 156,
+          "surface": "cloth"
+        },
+        {
+          "name": "Carrier retaining band 1.1",
+          "vertices": 42,
+          "triangles": 76,
+          "surface": "cloth"
+        },
+        {
+          "name": "Carrier retaining band 1.315",
+          "vertices": 42,
+          "triangles": 76,
+          "surface": "cloth"
+        },
+        {
+          "name": "Carrier shoulder sling",
+          "vertices": 8,
+          "triangles": 12,
+          "surface": "trim"
+        },
+        {
+          "name": "Spare bamboo javelin 0",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Spare forged point 0",
+          "vertices": 15,
+          "triangles": 20,
+          "surface": "blade"
+        },
+        {
+          "name": "Spare bamboo javelin 1",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Spare forged point 1",
+          "vertices": 15,
+          "triangles": 20,
+          "surface": "blade"
+        },
+        {
+          "name": "Padded sleeveless brigandine",
+          "vertices": 205,
+          "triangles": 320,
+          "surface": "cloth"
+        },
+        {
+          "name": "Padded vest edge -1",
+          "vertices": 8,
+          "triangles": 12,
+          "surface": "trim"
+        },
+        {
+          "name": "Padded vest edge 1",
+          "vertices": 8,
+          "triangles": 12,
+          "surface": "trim"
+        },
+        {
+          "name": "Vest closure 1.12",
+          "vertices": 4,
+          "triangles": 4,
+          "surface": "trim"
+        },
+        {
+          "name": "Vest closure 1.225",
+          "vertices": 4,
+          "triangles": 4,
+          "surface": "trim"
+        },
+        {
+          "name": "Vest closure 1.335",
+          "vertices": 4,
+          "triangles": 4,
+          "surface": "trim"
+        }
+      ],
+      "contacts": [
+        {
+          "interface": "sleeve/tunic l",
+          "intentional_overlap": 0.018,
+          "cuff_to_palm_distance": 0.016455791680594706,
+          "shoe_min_z": 0.025
+        },
+        {
+          "interface": "sleeve/tunic r",
+          "intentional_overlap": 0.018,
+          "cuff_to_palm_distance": 0.016455707450464683,
+          "shoe_min_z": 0.025
+        },
+        {
+          "interface": "carrier/padded back contact",
+          "pad_front_y": 0.138,
+          "pad_back_y": 0.188,
+          "carrier_front_y": 0.16,
+          "pad_carrier_overlap": 0.028
+        }
+      ],
+      "anatomy_provenance": {
+        "donor_skin_faces": 221,
+        "refined_vertices": 759,
+        "source": "official Chinese archer II",
+        "rest_transfer": "named-bone bind-space weighted transfer"
+      },
+      "rest_binds_exact": true,
+      "native_acceptance": false,
+      "texture_size": 2048,
+      "geometry_from_revision": "r10",
+      "repair": "canonical material names matching native model.material"
+    },
+    "skirmisher4": {
+      "family": "skirmisher4",
+      "revision": "r12",
+      "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_083\\skirmisher4\\r12\\model.blend",
+      "source_sha256": "7bbf20093ef519f9fdf2ad203620d1d46d2a00eace4772ef53530bd8e6dee201",
+      "export": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_083\\skirmisher4\\r12",
+      "files": {
+        "albedo.png": "36b09085ef67a9b975ce1d525b562862f9e612f2131d2b5a1fc3bbf9a8da3aac",
+        "metalness.png": "14296c404e6f9b5a9865b324f22977f54faa39839266bc4a3725d4d37ab11136",
+        "model.fbx": "cc4205d9bc7679c050d39290db1265acfbae09f309cdc99cd16133592fde0d80",
+        "model.rig": "29bf453f477aaea7b38c7802653bb93ccbe0d627a3114a56730f371c3a906723",
+        "normal.png": "f2853ac8dbbc67f90b3b27def6fc6a8a75d115a4b32f90589d3d13e42829803e",
+        "pattern.png": "b0eae3fd00be3933217328842f381c59eb336d475a75f255eb337d52a4276064",
+        "roughness.png": "27605bf8369fa24ecb9c4d1c2dadf0d0e771bc449f54e51a399172912350a42c"
+      },
+      "lod_triangles": [
+        10200,
+        5304,
+        2753
+      ],
+      "donor_contract": {
+        "bones": [
+          {
+            "name": "metarig_root",
+            "parent": -1
+          },
+          {
+            "name": "metarig_pelvis",
+            "parent": 0
+          },
+          {
+            "name": "metarig_lleg1",
+            "parent": 1
+          },
+          {
+            "name": "metarig_lleg2",
+            "parent": 2
+          },
+          {
+            "name": "metarig_rleg1",
+            "parent": 1
+          },
+          {
+            "name": "metarig_rleg2",
+            "parent": 4
+          },
+          {
+            "name": "metarig_spine1",
+            "parent": 1
+          },
+          {
+            "name": "metarig_spine2",
+            "parent": 6
+          },
+          {
+            "name": "metarig_ribcage",
+            "parent": 7
+          },
+          {
+            "name": "metarig_neck1",
+            "parent": 8
+          },
+          {
+            "name": "metarig_neck2",
+            "parent": 9
+          },
+          {
+            "name": "metarig_head",
+            "parent": 10
+          },
+          {
+            "name": "metarig_larmcollarbone",
+            "parent": 8
+          },
+          {
+            "name": "metarig_larmupper1",
+            "parent": 12
+          },
+          {
+            "name": "metarig_larmupper2",
+            "parent": 13
+          },
+          {
+            "name": "metarig_larmlower1",
+            "parent": 14
+          },
+          {
+            "name": "metarig_larmlower2",
+            "parent": 15
+          },
+          {
+            "name": "metarig_larmpalm",
+            "parent": 16
+          },
+          {
+            "name": "metarig_larmpalmsocket",
+            "parent": 17
+          },
+          {
+            "name": "metarig_rarmcollarbone",
+            "parent": 8
+          },
+          {
+            "name": "metarig_rarmupper1",
+            "parent": 19
+          },
+          {
+            "name": "metarig_rarmupper2",
+            "parent": 20
+          },
+          {
+            "name": "metarig_rarmlower1",
+            "parent": 21
+          },
+          {
+            "name": "metarig_rarmlower2",
+            "parent": 22
+          },
+          {
+            "name": "metarig_rarmpalm",
+            "parent": 23
+          },
+          {
+            "name": "metarig_rarmpalmsocket",
+            "parent": 24
+          },
+          {
+            "name": "metarig_llegankle",
+            "parent": 3
+          },
+          {
+            "name": "metarig_rlegankle",
+            "parent": 5
+          },
+          {
+            "name": "metarig_larmmiddle1",
+            "parent": 17
+          },
+          {
+            "name": "metarig_larmthumb1",
+            "parent": 17
+          },
+          {
+            "name": "metarig_rarmmiddle1",
+            "parent": 24
+          },
+          {
+            "name": "metarig_rarmthumb1",
+            "parent": 24
+          },
+          {
+            "name": "metarig_llegtoe1",
+            "parent": 26
+          },
+          {
+            "name": "metarig_rlegtoe1",
+            "parent": 27
+          },
+          {
+            "name": "metarig_larmmiddle2",
+            "parent": 28
+          },
+          {
+            "name": "metarig_larmmiddle3",
+            "parent": 34
+          },
+          {
+            "name": "metarig_larmthumb2",
+            "parent": 29
+          },
+          {
+            "name": "metarig_larmthumb3",
+            "parent": 36
+          },
+          {
+            "name": "metarig_larmindex1",
+            "parent": 17
+          },
+          {
+            "name": "metarig_larmindex2",
+            "parent": 38
+          },
+          {
+            "name": "metarig_larmindex3",
+            "parent": 39
+          },
+          {
+            "name": "metarig_rarmmiddle2",
+            "parent": 30
+          },
+          {
+            "name": "metarig_rarmmiddle3",
+            "parent": 41
+          },
+          {
+            "name": "metarig_rarmthumb2",
+            "parent": 31
+          },
+          {
+            "name": "metarig_rarmthumb3",
+            "parent": 43
+          },
+          {
+            "name": "metarig_rarmindex1",
+            "parent": 24
+          },
+          {
+            "name": "metarig_rarmindex2",
+            "parent": 45
+          },
+          {
+            "name": "metarig_rarmindex3",
+            "parent": 46
+          }
+        ],
+        "partitions": [
+          {
+            "name": "lowerbody_lod3",
+            "start": 0,
+            "count": 6
+          },
+          {
+            "name": "upperbody_lod3",
+            "start": 6,
+            "count": 20
+          },
+          {
+            "name": "lowerbody_lod2",
+            "start": 26,
+            "count": 2
+          },
+          {
+            "name": "upperbody_lod2",
+            "start": 28,
+            "count": 4
+          },
+          {
+            "name": "lowerbody_lod1",
+            "start": 32,
+            "count": 2
+          },
+          {
+            "name": "upperbody_lod1",
+            "start": 34,
+            "count": 14
+          }
+        ],
+        "groups": [
+          {
+            "name": "lowerbody",
+            "slots": [
+              4,
+              2,
+              0
+            ]
+          },
+          {
+            "name": "upperbody",
+            "slots": [
+              5,
+              3,
+              1
+            ]
+          }
+        ],
+        "lod_counts": [
+          48,
+          32,
+          26
+        ],
+        "bind_offset": 1357
+      },
+      "owner_mask_surface_fraction_by_lod": [
+        0.2768319331964272,
+        0.28086928309423104,
+        0.28562108713585355
+      ],
+      "components": [
+        {
+          "name": "Reworked official Chinese head and hands",
+          "vertices": 759,
+          "triangles": 1302,
+          "surface": "skin"
+        },
+        {
+          "name": "Tailored cross-collar tunic",
+          "vertices": 574,
+          "triangles": 1040,
+          "surface": "cloth"
+        },
+        {
+          "name": "Collar seated inner neck",
+          "vertices": 100,
+          "triangles": 188,
+          "surface": "skin"
+        },
+        {
+          "name": "Integrated jaw and rear cranium",
+          "vertices": 174,
+          "triangles": 332,
+          "surface": "skin"
+        },
+        {
+          "name": "Layered outer sleeve l",
+          "vertices": 150,
+          "triangles": 284,
+          "surface": "cloth"
+        },
+        {
+          "name": "Bound forearm cuff l",
+          "vertices": 84,
+          "triangles": 156,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cuff overlap l0.33",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cuff overlap l0.52",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cuff overlap l0.72",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gathered trousers l",
+          "vertices": 150,
+          "triangles": 284,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cloth gaiter l",
+          "vertices": 63,
+          "triangles": 116,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn l0",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn l1",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn l2",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn l3",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn l4",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn l5",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Soft leather shoe l",
+          "vertices": 24,
+          "triangles": 44,
+          "surface": "sole"
+        },
+        {
+          "name": "Layered outer sleeve r",
+          "vertices": 150,
+          "triangles": 284,
+          "surface": "cloth"
+        },
+        {
+          "name": "Bound forearm cuff r",
+          "vertices": 84,
+          "triangles": 156,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cuff overlap r0.33",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cuff overlap r0.52",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cuff overlap r0.72",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gathered trousers r",
+          "vertices": 150,
+          "triangles": 284,
+          "surface": "cloth"
+        },
+        {
+          "name": "Cloth gaiter r",
+          "vertices": 63,
+          "triangles": 116,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn r0",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn r1",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn r2",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn r3",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn r4",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Gaiter turn r5",
+          "vertices": 34,
+          "triangles": 60,
+          "surface": "cloth"
+        },
+        {
+          "name": "Soft leather shoe r",
+          "vertices": 24,
+          "triangles": 44,
+          "surface": "sole"
+        },
+        {
+          "name": "Cross-collar upper",
+          "vertices": 10,
+          "triangles": 16,
+          "surface": "trim"
+        },
+        {
+          "name": "Under collar",
+          "vertices": 8,
+          "triangles": 12,
+          "surface": "trim"
+        },
+        {
+          "name": "Wide waist belt",
+          "vertices": 123,
+          "triangles": 236,
+          "surface": "cloth"
+        },
+        {
+          "name": "Layered cloth sash tail",
+          "vertices": 8,
+          "triangles": 12,
+          "surface": "trim"
+        },
+        {
+          "name": "Wrapped headcloth",
+          "vertices": 198,
+          "triangles": 380,
+          "surface": "cloth"
+        },
+        {
+          "name": "Headwrap folded seam 1.876",
+          "vertices": 66,
+          "triangles": 124,
+          "surface": "cloth"
+        },
+        {
+          "name": "Headwrap folded seam 1.901",
+          "vertices": 66,
+          "triangles": 124,
+          "surface": "cloth"
+        },
+        {
+          "name": "Headwrap knot tail",
+          "vertices": 6,
+          "triangles": 8,
+          "surface": "trim"
+        },
+        {
+          "name": "Carrier contact pad",
+          "vertices": 51,
+          "triangles": 92,
+          "surface": "cloth"
+        },
+        {
+          "name": "Leather javelin carrier",
+          "vertices": 84,
+          "triangles": 156,
+          "surface": "cloth"
+        },
+        {
+          "name": "Carrier retaining band 1.1",
+          "vertices": 42,
+          "triangles": 76,
+          "surface": "cloth"
+        },
+        {
+          "name": "Carrier retaining band 1.315",
+          "vertices": 42,
+          "triangles": 76,
+          "surface": "cloth"
+        },
+        {
+          "name": "Carrier shoulder sling",
+          "vertices": 8,
+          "triangles": 12,
+          "surface": "trim"
+        },
+        {
+          "name": "Spare bamboo javelin 0",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Spare forged point 0",
+          "vertices": 15,
+          "triangles": 20,
+          "surface": "blade"
+        },
+        {
+          "name": "Spare bamboo javelin 1",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Spare forged point 1",
+          "vertices": 15,
+          "triangles": 20,
+          "surface": "blade"
+        },
+        {
+          "name": "Spare bamboo javelin 2",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Spare forged point 2",
+          "vertices": 15,
+          "triangles": 20,
+          "surface": "blade"
+        },
+        {
+          "name": "Padded sleeveless brigandine",
+          "vertices": 205,
+          "triangles": 320,
+          "surface": "cloth"
+        },
+        {
+          "name": "Padded vest edge -1",
+          "vertices": 8,
+          "triangles": 12,
+          "surface": "trim"
+        },
+        {
+          "name": "Padded vest edge 1",
+          "vertices": 8,
+          "triangles": 12,
+          "surface": "trim"
+        },
+        {
+          "name": "Vest closure 1.12",
+          "vertices": 4,
+          "triangles": 4,
+          "surface": "trim"
+        },
+        {
+          "name": "Vest closure 1.225",
+          "vertices": 4,
+          "triangles": 4,
+          "surface": "trim"
+        },
+        {
+          "name": "Vest closure 1.335",
+          "vertices": 4,
+          "triangles": 4,
+          "surface": "trim"
+        },
+        {
+          "name": "Flat lamella 00 00",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 01",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 02",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 03",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 04",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 05",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 06",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 07",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 08",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 09",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 10",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 11",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 12",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 13",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 14",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 15",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 16",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 17",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 18",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 19",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 20",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 21",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 22",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 00 23",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 00",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 01",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 02",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 03",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 04",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 05",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 06",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 07",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 08",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 09",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 10",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 11",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 12",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 13",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 14",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 15",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 16",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 17",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 18",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 19",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 20",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 21",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 22",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 01 23",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 00",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 01",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 02",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 03",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 04",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 05",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 06",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 07",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 08",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 09",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 10",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 11",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 12",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 13",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 14",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 15",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 16",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 17",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 18",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 19",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 20",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 21",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 22",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 02 23",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 00",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 01",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 02",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 03",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 04",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 05",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 06",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 07",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 08",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 09",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 10",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 11",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 12",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 13",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 14",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 15",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 16",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 17",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 18",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 19",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 20",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 21",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 22",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 03 23",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 00",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 01",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 02",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 03",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 04",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 05",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 06",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 07",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 08",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 09",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 10",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 11",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 12",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 13",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 14",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 15",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 16",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 17",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 18",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 19",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 20",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 21",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 22",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Flat lamella 04 23",
+          "vertices": 12,
+          "triangles": 20,
+          "surface": "plate"
+        },
+        {
+          "name": "Seated shoulder lame l0",
+          "vertices": 34,
+          "triangles": 32,
+          "surface": "cloth"
+        },
+        {
+          "name": "Seated shoulder lame l1",
+          "vertices": 34,
+          "triangles": 32,
+          "surface": "cloth"
+        },
+        {
+          "name": "Seated shoulder lame r0",
+          "vertices": 34,
+          "triangles": 32,
+          "surface": "cloth"
+        },
+        {
+          "name": "Seated shoulder lame r1",
+          "vertices": 34,
+          "triangles": 32,
+          "surface": "cloth"
+        },
+        {
+          "name": "Elite iron cap",
+          "vertices": 85,
+          "triangles": 156,
+          "surface": "cloth"
+        }
+      ],
+      "contacts": [
+        {
+          "interface": "sleeve/tunic l",
+          "intentional_overlap": 0.018,
+          "cuff_to_palm_distance": 0.016455791680594706,
+          "shoe_min_z": 0.025
+        },
+        {
+          "interface": "sleeve/tunic r",
+          "intentional_overlap": 0.018,
+          "cuff_to_palm_distance": 0.016455707450464683,
+          "shoe_min_z": 0.025
+        },
+        {
+          "interface": "carrier/padded back contact",
+          "pad_front_y": 0.138,
+          "pad_back_y": 0.188,
+          "carrier_front_y": 0.16,
+          "pad_carrier_overlap": 0.028
+        },
+        {
+          "interface": "lamella/backing",
+          "minimum_radial_clearance": 0.006,
+          "plate_thickness": 0.003,
+          "row_overlap": 0.008
+        }
+      ],
+      "anatomy_provenance": {
+        "donor_skin_faces": 221,
+        "refined_vertices": 759,
+        "source": "official Chinese archer II",
+        "rest_transfer": "named-bone bind-space weighted transfer"
+      },
+      "rest_binds_exact": true,
+      "native_acceptance": false,
+      "texture_size": 2048,
+      "geometry_from_revision": "r11",
+      "repair": "canonical material names matching native model.material"
+    },
+    "javelin2": {
+      "family": "javelin2",
+      "revision": "r12",
+      "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_083\\javelin2\\r12\\model.blend",
+      "source_sha256": "b6958f3abad5fcc58e3eebbeef3f42b4f03010efb6f13be19bd21efbc254685e",
+      "export": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_083\\javelin2\\r12",
+      "files": {
+        "albedo.png": "a725802818c146ce4880d65cd743175039dc57b48e9f5c17fbf14b5cac4a211c",
+        "metalness.png": "14296c404e6f9b5a9865b324f22977f54faa39839266bc4a3725d4d37ab11136",
+        "model.fbx": "9f9eabee62efa4856070af3cb62baa642e00eb58920229351ddd86ff8096f9d1",
+        "normal.png": "7bc3a348d2ebd3483d3a1a15969294324c5c73cd116824a04be894a55eab21a4",
+        "pattern.png": "b0eae3fd00be3933217328842f381c59eb336d475a75f255eb337d52a4276064",
+        "roughness.png": "27605bf8369fa24ecb9c4d1c2dadf0d0e771bc449f54e51a399172912350a42c"
+      },
+      "lod_triangles": [
+        704,
+        366,
+        190
+      ],
+      "donor_contract": null,
+      "owner_mask_surface_fraction_by_lod": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "components": [
+        {
+          "name": "Tapered bamboo throwing shaft",
+          "vertices": 104,
+          "triangles": 188,
+          "surface": "cloth"
+        },
+        {
+          "name": "Forged ridged leaf blade",
+          "vertices": 24,
+          "triangles": 44,
+          "surface": "blade"
+        },
+        {
+          "name": "Seated iron ferrule",
+          "vertices": 52,
+          "triangles": 92,
+          "surface": "cloth"
+        },
+        {
+          "name": "Compact bound grip",
+          "vertices": 52,
+          "triangles": 92,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 0",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 1",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 2",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 3",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 4",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 5",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 6",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 7",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        }
+      ],
+      "contacts": [
+        {
+          "interface": "blade/socket/shaft",
+          "shaft_start": 0.19,
+          "blade_socket_end": 0.2,
+          "overlap": 0.01,
+          "grip_z": [
+            0.52,
+            0.69
+          ],
+          "tip_axis": "-Z"
+        }
+      ],
+      "anatomy_provenance": {},
+      "rest_binds_exact": false,
+      "native_acceptance": false,
+      "texture_size": 2048,
+      "geometry_from_revision": "r10",
+      "repair": "canonical material names matching native model.material"
+    },
+    "javelin3": {
+      "family": "javelin3",
+      "revision": "r12",
+      "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_083\\javelin3\\r12\\model.blend",
+      "source_sha256": "21fa6ee443d00fa300d0e7bc0c0ddafccca9845ef0ac2c6ca54f8d5670405219",
+      "export": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_083\\javelin3\\r12",
+      "files": {
+        "albedo.png": "36b09085ef67a9b975ce1d525b562862f9e612f2131d2b5a1fc3bbf9a8da3aac",
+        "metalness.png": "14296c404e6f9b5a9865b324f22977f54faa39839266bc4a3725d4d37ab11136",
+        "model.fbx": "ce27a39e6e6fbaa11047f283d2cbb3f88f74073b40235c4780002718cb5ed152",
+        "normal.png": "f2853ac8dbbc67f90b3b27def6fc6a8a75d115a4b32f90589d3d13e42829803e",
+        "pattern.png": "b0eae3fd00be3933217328842f381c59eb336d475a75f255eb337d52a4276064",
+        "roughness.png": "27605bf8369fa24ecb9c4d1c2dadf0d0e771bc449f54e51a399172912350a42c"
+      },
+      "lod_triangles": [
+        748,
+        388,
+        201
+      ],
+      "donor_contract": null,
+      "owner_mask_surface_fraction_by_lod": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "components": [
+        {
+          "name": "Tapered bamboo throwing shaft",
+          "vertices": 104,
+          "triangles": 188,
+          "surface": "cloth"
+        },
+        {
+          "name": "Forged ridged leaf blade",
+          "vertices": 24,
+          "triangles": 44,
+          "surface": "blade"
+        },
+        {
+          "name": "Seated iron ferrule",
+          "vertices": 52,
+          "triangles": 92,
+          "surface": "cloth"
+        },
+        {
+          "name": "Compact bound grip",
+          "vertices": 52,
+          "triangles": 92,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 0",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 1",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 2",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 3",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 4",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 5",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 6",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 7",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Reinforced blade collar",
+          "vertices": 26,
+          "triangles": 44,
+          "surface": "cloth"
+        }
+      ],
+      "contacts": [
+        {
+          "interface": "blade/socket/shaft",
+          "shaft_start": 0.19,
+          "blade_socket_end": 0.2,
+          "overlap": 0.01,
+          "grip_z": [
+            0.52,
+            0.69
+          ],
+          "tip_axis": "-Z"
+        }
+      ],
+      "anatomy_provenance": {},
+      "rest_binds_exact": false,
+      "native_acceptance": false,
+      "texture_size": 2048,
+      "geometry_from_revision": "r10",
+      "repair": "canonical material names matching native model.material"
+    },
+    "javelin4": {
+      "family": "javelin4",
+      "revision": "r12",
+      "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_083\\javelin4\\r12\\model.blend",
+      "source_sha256": "ff0346f406a5871d5d4372b2c129816655d13d63dab32d1403047fa983e8aca7",
+      "export": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_083\\javelin4\\r12",
+      "files": {
+        "albedo.png": "36b09085ef67a9b975ce1d525b562862f9e612f2131d2b5a1fc3bbf9a8da3aac",
+        "metalness.png": "14296c404e6f9b5a9865b324f22977f54faa39839266bc4a3725d4d37ab11136",
+        "model.fbx": "4317f4c6fb060ad73bd25866fd2a83854a6c791b887390ddd70c98778f72e133",
+        "normal.png": "f2853ac8dbbc67f90b3b27def6fc6a8a75d115a4b32f90589d3d13e42829803e",
+        "pattern.png": "b0eae3fd00be3933217328842f381c59eb336d475a75f255eb337d52a4276064",
+        "roughness.png": "27605bf8369fa24ecb9c4d1c2dadf0d0e771bc449f54e51a399172912350a42c"
+      },
+      "lod_triangles": [
+        792,
+        411,
+        213
+      ],
+      "donor_contract": null,
+      "owner_mask_surface_fraction_by_lod": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "components": [
+        {
+          "name": "Tapered bamboo throwing shaft",
+          "vertices": 104,
+          "triangles": 188,
+          "surface": "cloth"
+        },
+        {
+          "name": "Forged ridged leaf blade",
+          "vertices": 24,
+          "triangles": 44,
+          "surface": "blade"
+        },
+        {
+          "name": "Seated iron ferrule",
+          "vertices": 52,
+          "triangles": 92,
+          "surface": "cloth"
+        },
+        {
+          "name": "Compact bound grip",
+          "vertices": 52,
+          "triangles": 92,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 0",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 1",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 2",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 3",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 4",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 5",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 6",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 7",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Reinforced blade collar",
+          "vertices": 26,
+          "triangles": 44,
+          "surface": "cloth"
+        },
+        {
+          "name": "Butt reinforcement",
+          "vertices": 26,
+          "triangles": 44,
+          "surface": "cloth"
+        }
+      ],
+      "contacts": [
+        {
+          "interface": "blade/socket/shaft",
+          "shaft_start": 0.19,
+          "blade_socket_end": 0.2,
+          "overlap": 0.01,
+          "grip_z": [
+            0.52,
+            0.69
+          ],
+          "tip_axis": "-Z"
+        }
+      ],
+      "anatomy_provenance": {},
+      "rest_binds_exact": false,
+      "native_acceptance": false,
+      "texture_size": 2048,
+      "geometry_from_revision": "r10",
+      "repair": "canonical material names matching native model.material"
+    },
+    "projectile2": {
+      "family": "projectile2",
+      "revision": "r12",
+      "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_083\\projectile2\\r12\\model.blend",
+      "source_sha256": "65d0fb1e4bd0394e241a5820396aae1068b7da326bb672e6b297c2ded2c0dad2",
+      "export": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_083\\projectile2\\r12",
+      "files": {
+        "albedo.png": "a725802818c146ce4880d65cd743175039dc57b48e9f5c17fbf14b5cac4a211c",
+        "metalness.png": "14296c404e6f9b5a9865b324f22977f54faa39839266bc4a3725d4d37ab11136",
+        "model.fbx": "2693915dfda47958a481243b1e5d23997e7f94c88bcd47e1642d0cf89da3eeee",
+        "normal.png": "7bc3a348d2ebd3483d3a1a15969294324c5c73cd116824a04be894a55eab21a4",
+        "pattern.png": "b0eae3fd00be3933217328842f381c59eb336d475a75f255eb337d52a4276064",
+        "roughness.png": "27605bf8369fa24ecb9c4d1c2dadf0d0e771bc449f54e51a399172912350a42c"
+      },
+      "lod_triangles": [
+        704,
+        365,
+        190
+      ],
+      "donor_contract": null,
+      "owner_mask_surface_fraction_by_lod": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "components": [
+        {
+          "name": "Tapered bamboo throwing shaft",
+          "vertices": 104,
+          "triangles": 188,
+          "surface": "cloth"
+        },
+        {
+          "name": "Forged ridged leaf blade",
+          "vertices": 24,
+          "triangles": 44,
+          "surface": "blade"
+        },
+        {
+          "name": "Seated iron ferrule",
+          "vertices": 52,
+          "triangles": 92,
+          "surface": "cloth"
+        },
+        {
+          "name": "Compact bound grip",
+          "vertices": 52,
+          "triangles": 92,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 0",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 1",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 2",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 3",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 4",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 5",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 6",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 7",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        }
+      ],
+      "contacts": [
+        {
+          "interface": "blade/socket/shaft",
+          "shaft_start": 0.19,
+          "blade_socket_end": 0.2,
+          "overlap": 0.01,
+          "grip_z": [
+            0.52,
+            0.69
+          ],
+          "tip_axis": "-Y"
+        }
+      ],
+      "anatomy_provenance": {},
+      "rest_binds_exact": false,
+      "native_acceptance": false,
+      "texture_size": 2048,
+      "geometry_from_revision": "r10",
+      "repair": "canonical material names matching native model.material"
+    },
+    "projectile3": {
+      "family": "projectile3",
+      "revision": "r12",
+      "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_083\\projectile3\\r12\\model.blend",
+      "source_sha256": "d9b1c6685c114554597e3c9363a9c1ebf108198351af44a1a718c74e8031db83",
+      "export": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_083\\projectile3\\r12",
+      "files": {
+        "albedo.png": "36b09085ef67a9b975ce1d525b562862f9e612f2131d2b5a1fc3bbf9a8da3aac",
+        "metalness.png": "14296c404e6f9b5a9865b324f22977f54faa39839266bc4a3725d4d37ab11136",
+        "model.fbx": "a21828936ec530e5f8f29deda6cdf3e4044db580b2fb121ea0e7013e7e9b60b7",
+        "normal.png": "f2853ac8dbbc67f90b3b27def6fc6a8a75d115a4b32f90589d3d13e42829803e",
+        "pattern.png": "b0eae3fd00be3933217328842f381c59eb336d475a75f255eb337d52a4276064",
+        "roughness.png": "27605bf8369fa24ecb9c4d1c2dadf0d0e771bc449f54e51a399172912350a42c"
+      },
+      "lod_triangles": [
+        748,
+        387,
+        200
+      ],
+      "donor_contract": null,
+      "owner_mask_surface_fraction_by_lod": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "components": [
+        {
+          "name": "Tapered bamboo throwing shaft",
+          "vertices": 104,
+          "triangles": 188,
+          "surface": "cloth"
+        },
+        {
+          "name": "Forged ridged leaf blade",
+          "vertices": 24,
+          "triangles": 44,
+          "surface": "blade"
+        },
+        {
+          "name": "Seated iron ferrule",
+          "vertices": 52,
+          "triangles": 92,
+          "surface": "cloth"
+        },
+        {
+          "name": "Compact bound grip",
+          "vertices": 52,
+          "triangles": 92,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 0",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 1",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 2",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 3",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 4",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 5",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 6",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 7",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Reinforced blade collar",
+          "vertices": 26,
+          "triangles": 44,
+          "surface": "cloth"
+        }
+      ],
+      "contacts": [
+        {
+          "interface": "blade/socket/shaft",
+          "shaft_start": 0.19,
+          "blade_socket_end": 0.2,
+          "overlap": 0.01,
+          "grip_z": [
+            0.52,
+            0.69
+          ],
+          "tip_axis": "-Y"
+        }
+      ],
+      "anatomy_provenance": {},
+      "rest_binds_exact": false,
+      "native_acceptance": false,
+      "texture_size": 2048,
+      "geometry_from_revision": "r10",
+      "repair": "canonical material names matching native model.material"
+    },
+    "projectile4": {
+      "family": "projectile4",
+      "revision": "r12",
+      "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_083\\projectile4\\r12\\model.blend",
+      "source_sha256": "26a6187f07f38422e31cca9974c7e1f630b3f3f0b689eb1570ed1d3a4a08710c",
+      "export": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_083\\projectile4\\r12",
+      "files": {
+        "albedo.png": "36b09085ef67a9b975ce1d525b562862f9e612f2131d2b5a1fc3bbf9a8da3aac",
+        "metalness.png": "14296c404e6f9b5a9865b324f22977f54faa39839266bc4a3725d4d37ab11136",
+        "model.fbx": "1b9f8e1427c8ca1a5f402178f8e803f3357d356bd0e0b310bd06141c4d46d399",
+        "normal.png": "f2853ac8dbbc67f90b3b27def6fc6a8a75d115a4b32f90589d3d13e42829803e",
+        "pattern.png": "b0eae3fd00be3933217328842f381c59eb336d475a75f255eb337d52a4276064",
+        "roughness.png": "27605bf8369fa24ecb9c4d1c2dadf0d0e771bc449f54e51a399172912350a42c"
+      },
+      "lod_triangles": [
+        792,
+        410,
+        212
+      ],
+      "donor_contract": null,
+      "owner_mask_surface_fraction_by_lod": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "components": [
+        {
+          "name": "Tapered bamboo throwing shaft",
+          "vertices": 104,
+          "triangles": 188,
+          "surface": "cloth"
+        },
+        {
+          "name": "Forged ridged leaf blade",
+          "vertices": 24,
+          "triangles": 44,
+          "surface": "blade"
+        },
+        {
+          "name": "Seated iron ferrule",
+          "vertices": 52,
+          "triangles": 92,
+          "surface": "cloth"
+        },
+        {
+          "name": "Compact bound grip",
+          "vertices": 52,
+          "triangles": 92,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 0",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 1",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 2",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 3",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 4",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 5",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 6",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Grip wrapping turn 7",
+          "vertices": 22,
+          "triangles": 36,
+          "surface": "cloth"
+        },
+        {
+          "name": "Reinforced blade collar",
+          "vertices": 26,
+          "triangles": 44,
+          "surface": "cloth"
+        },
+        {
+          "name": "Butt reinforcement",
+          "vertices": 26,
+          "triangles": 44,
+          "surface": "cloth"
+        }
+      ],
+      "contacts": [
+        {
+          "interface": "blade/socket/shaft",
+          "shaft_start": 0.19,
+          "blade_socket_end": 0.2,
+          "overlap": 0.01,
+          "grip_z": [
+            0.52,
+            0.69
+          ],
+          "tip_axis": "-Y"
+        }
+      ],
+      "anatomy_provenance": {},
+      "rest_binds_exact": false,
+      "native_acceptance": false,
+      "texture_size": 2048,
+      "geometry_from_revision": "r10",
+      "repair": "canonical material names matching native model.material"
+    }
+  },
+  "cook": "output/release_083/cooks/v3/receipt.json",
+  "source_qa": "output/release_083/source-qa.json",
+  "selected_previews": "output/release_083/qa-v6",
+  "final_decode": "output/release_083/delivery/final-v2/native-decode/decoded-proof.json",
+  "delivery": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_083\\delivery\\final-v2",
+  "zip_sha256": "08f7129c7f200b47f83b48a8a33bc1a46a4923c70c01b9237d4fa91da8cccd2c",
+  "sga_sha256": "85abef75f6c0ea5ccb1236140e97895232b061fbf1e50db81d7edc90252ac034",
+  "scripts_sha256": {
+    "tools/release_083/author.py": "14233392a12f69b743d17895aa1266822ab3221abecdf5ab5460bc93ac3be0bc",
+    "tools/release_083/common.py": "7ddb23db7541f42e20aed67051227c82a0f5199d6b94378b0c1f1e9eaf4e0e85",
+    "tools/release_083/cook.py": "efa6a6b0cf8f024f48965c001521423d79efcfe07d8593a75bd236e89a171edd",
+    "tools/release_083/decode.py": "c55ee387172b7d39a69ca4583aa3e17cc2c6c483e11678eb3026fb28dbabfc81",
+    "tools/release_083/export_repair.py": "108ef00eab261d76db03d7883e1bb02df37f4a1a72aa0355dd070091db21a857",
+    "tools/release_083/freeze.py": "07fa3a290cd185eb5f0c75a8c04aa876a00c727952f0f9d39cdb0af18e90cb9e",
+    "tools/release_083/materials.py": "1ae8e00682770e1b3a13af3aa419ddd97f5b5bc904532d1a9891d81f50e5d228",
+    "tools/release_083/mesh.py": "3ffc5eddab04fee99eb2c4a4afa929c27f5e6d44c7462eb6ebcfb08b657920f3",
+    "tools/release_083/package.py": "9ed200150153b44967a837d33cf40e518ceab962134a3696f3f2dd1bb3f3e660",
+    "tools/release_083/policy.py": "a1851f40d2b542a1c6793e2e97fca380e12081946d450cc8d1eedbe267a9c08f",
+    "tools/release_083/qa.py": "29c10c5d8a8cbfaeed9d270a418c3e5332938796e5cdaf283b90cd87f723f32b",
+    "tools/release_083/recipe.py": "08f1efd55cd34c2b684114e1ddf6f36a3eb011251850189a84015dd0945ff33e",
+    "tools/release_083/reference.py": "d81c3cc29ca5d013df93957c9ec7ef9b77e4e9cef890f6e24e76eb7bd94ce3ab",
+    "tools/release_083/test_policy.py": "67a489c50ba6f034e98344556daa7e553bfff547add387ba5c1c3dc84e622890",
+    "tools/release_083/verify.py": "14344724dd27fd286575852d392bcfaa2df5533bb831971b66674b5a3f73a9e8"
+  },
+  "python": "E:\\Blender5.2\\5.2\\python\\bin\\python.exe",
+  "blender": "E:\\Blender5.2\\blender.exe",
+  "garrison_core": "C:\\Users\\RS\\AppData\\Roaming\\Blender Foundation\\Blender\\5.2\\extensions\\raw_githubusercontent_com\\garrison\\bin\\core\\garrison-core.exe",
+  "archive_tool": "C:\\Users\\RS\\AppData\\Roaming\\Blender Foundation\\Blender\\5.2\\extensions\\raw_githubusercontent_com\\garrison\\bin\\sga-archiver.exe",
+  "no_install_or_publication": true,
+  "native_skirmisher_acceptance": false
+}

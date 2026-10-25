@@ -1,0 +1,25 @@
+{
+  "status": "baseline-equivalent-with-known-failures",
+  "normal": {
+    "tests": 59,
+    "failures": [
+      "test_legacy_trap_tunnel.OriginalTuningParityTests.test_native_tunneling_and_weapon_data_match_original (name='vn_weapon_outpost_handcannon_bambo_alarm_chi')",
+      "test_legacy_trap_tunnel.OriginalTuningParityTests.test_native_tunneling_and_weapon_data_match_original (name='vn_weapon_outpost_handcannon_bambo_chi')"
+    ],
+    "errors": [],
+    "skipped": [],
+    "exit_code": 1
+  },
+  "garrison": {
+    "tests": 64,
+    "failures": [
+      "test_legacy_trap_tunnel.OriginalTuningParityTests.test_native_tunneling_and_weapon_data_match_original (name='vn_weapon_outpost_handcannon_bambo_alarm_chi')",
+      "test_legacy_trap_tunnel.OriginalTuningParityTests.test_native_tunneling_and_weapon_data_match_original (name='vn_weapon_outpost_handcannon_bambo_chi')"
+    ],
+    "errors": [],
+    "skipped": [],
+    "exit_code": 1
+  },
+  "normal_override": "donor path replaced in memory only; no source files modified",
+  "policy": "Raw suites retain exit 1 and failing assertions; no expected-failure decorators or skips."
+}

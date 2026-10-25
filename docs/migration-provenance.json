@@ -1,0 +1,42 @@
+{
+  "schema": "community-civilization-pack.migration/v1",
+  "prepared_at_utc": "2026-10-16T08:37:12.101551+00:00",
+  "source_root": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_normal",
+  "destination_root": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison",
+  "source_project_guid": "a743d7d1-d753-4cf7-8817-e29d8ded7366",
+  "project_guid": "b7fcea91-257b-408f-b9e8-ae4d8bc402e1",
+  "identity_allocator": "installed Garrison 0.1.4 mod-project create",
+  "package_key": "community_civilization_pack",
+  "renames": {
+    "Vietnam_v2.aoe4mod": "community_civilization_pack.aoe4mod",
+    "assets/attrib/Vietnam_v2.xml": "assets/attrib/community_civilization_pack.xml",
+    "assets/locdb/Vietnam_v2.locdb": "assets/locdb/community_civilization_pack.locdb",
+    "assets/locdb/Vietnam_v2_en.csv": "assets/locdb/community_civilization_pack_en.csv"
+  },
+  "source_snapshot": "docs/preparation/normal-before.json",
+  "preserved_historical_docs": "all copied docs except editor-identity.json; they describe the old identity and historical evidence",
+  "copied_directories": [
+    "assets",
+    "docs",
+    "tests",
+    "tools"
+  ],
+  "excluded": [
+    "cache",
+    ".codegraph",
+    "archives",
+    "output",
+    ".tools except python/lupa test dependency",
+    "__pycache__",
+    "*.pyc"
+  ],
+  "known_baseline": {
+    "raw_suite": "59 tests; 6 donor-path errors",
+    "actual_donor_path": "59 tests; 2 failing subcases in test_native_tunneling_and_weapon_data_match_original",
+    "weapon_subcases": [
+      "vn_weapon_outpost_handcannon_bambo_alarm_chi",
+      "vn_weapon_outpost_handcannon_bambo_chi"
+    ],
+    "policy": "retain assertions and gameplay; baseline mismatch is not an accepted new regression"
+  }
+}

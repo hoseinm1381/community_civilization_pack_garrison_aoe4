@@ -1,0 +1,56 @@
+-- Pure deterministic selection policy. No local-player or engine mutations.
+VietnamSelectionCore = {}
+local Core = VietnamSelectionCore
+
+function Core.New(indices, startedAt, timeout)
+    local state = {players = {}, order = {}, deadline = startedAt + timeout, closed = false}
+    for _, index in ipairs(indices) do
+        if state.players[index] == nil then
+            state.players[index] = {choice = nil, dropped = false}
+            table.insert(state.order, index)
+        end
+    end
+    table.sort(state.order)
+    return state
+end
+
+function Core.Choose(state, senderIndex, choice, now)
+    local player = state.players[senderIndex]
+    if state.closed or now >= state.deadline or player == nil or player.dropped
+        or player.choice ~= nil or (choice ~= "china" and choice ~= "vietnam") then
+        return false
+    end
+    player.choice = choice
+    return true
+end
+
+function Core.Tick(state, now)
+    if state.closed then return false end
+    if now >= state.deadline then
+        for _, index in ipairs(state.order) do
+            local player = state.players[index]
+            if player.choice == nil then player.choice = "china" end
+        end
+    end
+    return Core.IsReady(state)
+end
+
+function Core.Drop(state, index)
+    if state.closed then return end
+    local player = state.players[index]
+    if player ~= nil then
+        player.dropped = true
+        if player.choice == nil then player.choice = "china" end
+    end
+end
+
+function Core.IsReady(state)
+    for _, index in ipairs(state.order) do
+        if state.players[index].choice == nil then return false end
+    end
+    return true
+end
+
+function Core.Close(state)
+    state.closed = true
+end

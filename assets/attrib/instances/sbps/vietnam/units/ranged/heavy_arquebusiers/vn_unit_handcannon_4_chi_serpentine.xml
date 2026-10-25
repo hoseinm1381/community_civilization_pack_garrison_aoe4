@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" template="sbps" description="Native Serpentine Arquebusier squad variant">
+	<uniqueid name="pbgid" value="2147481818" />
+	<instance_reference name="parent_pbg" value="sbps\vietnam\units\ranged\heavy_arquebusiers\vn_unit_handcannon_4_chi" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-945597977" List.ParentItemID="-945597977">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="1127064584" List.ParentItemID="1127064584">
+					<instance_reference name="type" value="ebps\vietnam\units\ranged\heavy_arquebusiers\vn_unit_handcannon_4_chi_serpentine" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-345736663" List.ParentItemID="-345736663">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="415710663" List.ParentItemID="415710663">
+						<instance_reference name="type" value="ebps\vietnam\units\ranged\heavy_arquebusiers\vn_unit_handcannon_4_chi_serpentine" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+		</list>
+	</variant>
+</instance>

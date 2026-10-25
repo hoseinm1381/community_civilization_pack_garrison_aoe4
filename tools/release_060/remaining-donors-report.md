@@ -1,0 +1,59 @@
+# 0.6.0 remaining actual render-body donor inventory
+
+This inventory decodes concrete rendered bodies selected from the source-bound donor inventory. It is static decode evidence only. No Blender, cook, source activation, import, or native-match test was run for these donors.
+
+The completed batch contains **19/19 clean model decodes**, **217 exact referenced RRtex paths**, **293 exact provider asset rows across 16 provider archives**, and no missing texture or decode-blocker entries. The empty private game `cardinal/archives` directory confirms that Garrison did not fall back to game archive loading. The earlier run-001 failed-route evidence remains unchanged.
+
+The v2 batch receipt initially included 24 extra Age-IV folder texture candidates in its private SQLite index. I preserved that receipt and added a strict index built from all 19 completed manifests: [exact-index receipt](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\batch-report-exact-index-v2.json), [private exact SQLite index](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\private-index-exact.sqlite3). The strict index has exactly 217 RRtex paths and 293 provider rows. The original v2 batch receipt is [here](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\batch-report-v2.json).
+
+| Actual model path | Materials | Bones | LOD triangles / geometry | Manifest | Decode |
+|---|---:|---:|---|---|---|
+| `art/civilizations/chinese/animals/chi_horse_combined_armor_age03/chi_horse_combined_armor_age03.rgm` | 6 | 127 | L1:3619, L2:1204, L3:488 | [decoded-static.json](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\decoded\001_chi_horse_combined_armor_age03\ac545765c0dd15eeaa90\decoded-static.json) | decoded_complete |
+| `art/civilizations/chinese/animals/chi_horse_combined_armor_age04/chi_horse_combined_armor_age04.rgm` | 6 | 127 | L1:4471, L2:1138, L3:500 | [decoded-static.json](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\decoded\002_chi_horse_combined_armor_age04\197e200b9b679a3bb16b\decoded-static.json) | decoded_complete |
+| `art/civilizations/chinese/animals/chi_horse_combined_light_age03/chi_horse_combined_light_age03.rgm` | 6 | 127 | L1:3146, L2:1149, L3:368 | [decoded-static.json](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\decoded\003_chi_horse_combined_light_age03\23d3be826d9c45360898\decoded-static.json) | decoded_complete |
+| `art/civilizations/chinese/animals/chi_horse_combined_light_age04/chi_horse_combined_light_age04.rgm` | 6 | 127 | L1:3600, L2:1130, L3:410 | [decoded-static.json](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\decoded\004_chi_horse_combined_light_age04\a28c8fb1d6137634d225\decoded-static.json) | decoded_complete |
+| `art/civilizations/chinese/animals/chi_horse_combined_scout_age01/chi_horse_combined_scout_age01.rgm` | 6 | 127 | L1:2920, L2:1010, L3:344 | [decoded-static.json](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\decoded\005_chi_horse_combined_scout_age01\f28904f30e29caaaa878\decoded-static.json) | decoded_complete |
+| `art/civilizations/chinese/animals/chi_horse_combined_scout_age02/chi_horse_combined_scout_age02.rgm` | 6 | 127 | L1:3104, L2:1132, L3:362 | [decoded-static.json](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\decoded\006_chi_horse_combined_scout_age02\be245a74221ee2e0ead0\decoded-static.json) | decoded_complete |
+| `art/civilizations/chinese/animals/chi_horse_combined_scout_age03/chi_horse_combined_scout_age03.rgm` | 6 | 127 | L1:3198, L2:1120, L3:388 | [decoded-static.json](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\decoded\007_chi_horse_combined_scout_age03\577093d7558951cfbfe2\decoded-static.json) | decoded_complete |
+| `art/civilizations/chinese/animals/chi_horse_combined_scout_age04/chi_horse_combined_scout_age04.rgm` | 6 | 127 | L1:3226, L2:1120, L3:388 | [decoded-static.json](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\decoded\008_chi_horse_combined_scout_age04\8acd049b11f01a051215\decoded-static.json) | decoded_complete |
+| `art/civilizations/chinese/animals/chi_horse_combined_scout_female_age01/chi_horse_combined_scout_female_age01.rgm` | 6 | 127 | L1:3033, L2:1058, L3:370 | [decoded-static.json](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\decoded\009_chi_horse_combined_scout_female_age01\580db8ef897a53ebfdb6\decoded-static.json) | decoded_complete |
+| `art/civilizations/chinese/animals/chi_horse_combined_scout_female_age02/chi_horse_combined_scout_female_age02.rgm` | 6 | 127 | L1:3148, L2:1148, L3:377 | [decoded-static.json](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\decoded\010_chi_horse_combined_scout_female_age02\b1ee51b20a543330a547\decoded-static.json) | decoded_complete |
+| `art/civilizations/chinese/animals/chi_horse_combined_scout_female_age03/chi_horse_combined_scout_female_age03.rgm` | 6 | 127 | L1:3246, L2:1148, L3:405 | [decoded-static.json](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\decoded\011_chi_horse_combined_scout_female_age03\6fab11e07741ecede385\decoded-static.json) | decoded_complete |
+| `art/civilizations/chinese/animals/chi_horse_combined_scout_female_age04/chi_horse_combined_scout_female_age04.rgm` | 6 | 127 | L1:3246, L2:1148, L3:405 | [decoded-static.json](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\decoded\012_chi_horse_combined_scout_female_age04\d4c605fdc2993779bd8c\decoded-static.json) | decoded_complete |
+| `art/civilizations/english/team_weapons/eng_siege_tower/eng_siege_tower.rgm` | 2 | 31 | LOD unavailable; construction groups build_01:972, build_02:3500, build_03:1592, build_04:3636, build_05:2762, geo_wheels:576 | [decoded-static.json](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\decoded\013_eng_siege_tower\424e058acf167e2ca486\decoded-static.json) | decoded_complete |
+| `art/civilizations/mongols/humans/mon_infantry_armor_age03/mon_infantry_armor_age03.rgm` | 3 | 48 | L1:1740, L2:564, L3:220 | [decoded-static.json](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\decoded\014_mon_infantry_armor_age03\507fe368664a579364f5\decoded-static.json) | decoded_complete |
+| `art/civilizations/mongols/humans/mon_infantry_armor_female_age03/mon_infantry_armor_female_age03.rgm` | 3 | 48 | L1:1736, L2:610, L3:230 | [decoded-static.json](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\decoded\015_mon_infantry_armor_female_age03\3038d2e494778b394c52\decoded-static.json) | decoded_complete |
+| `art/civilizations/sultanate/animals/sul_elephant_combined_armor_age04/sul_elephant_combined_armor_age04.rgm` | 6 | 140 | L1:6934, L2:4259, L3:2470 | [decoded-static.json](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\decoded\016_sul_elephant_combined_armor_age04\97e51d5d7548500f883e\decoded-static.json) | decoded_complete |
+| `art/civilizations/sultanate/animals/sul_elephant_combined_armor_age04_upgrade/sul_elephant_combined_armor_age04_upgrade.rgm` | 6 | 140 | L1:7304, L2:4564, L3:2646 | [decoded-static.json](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\decoded\017_sul_elephant_combined_armor_age04_upgrade\2ba5b1aa1bde3ad39e1c\decoded-static.json) | decoded_complete |
+| `art/civilizations/chinese/humans/chi_villager_male_age04/chi_villager_male_age04.rgm` | 3 | 73 | L1:1270, L2:526, L3:192 | [decoded-static.json](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\decoded\018_chi_villager_male_age04\6fdeecb8b5aa7b258f1b\decoded-static.json) | decoded_complete |
+| `art/civilizations/chinese/humans/chi_villager_female_age04/chi_villager_female_age04.rgm` | 3 | 73 | L1:1540, L2:550, L3:184 | [decoded-static.json](F:\aoe_4_temp\Community_civilization_pack_garrison_temp\output\release_060\inventory\remaining-donors\run-004\decoded\019_chi_villager_female_age04\95cef01c8b1513ab37b8\decoded-static.json) | decoded_complete |
+
+The English siege tower decoder exposes build-stage groups (`build_01` through `build_05`) and `geo_wheels`, not conventional LOD labels. Its 13,038 triangles are therefore reported as construction geometry, not assigned an invented LOD. It has two materials and a 31-bone rig.
+
+The 19 models cover 12 Chinese combined horse render bodies (scout male/female and armor/light variants), one concrete English siege tower, two Mongol Age III man-at-arms bodies, two Sultanate combined war-elephant bodies, and the active Vietnamese villager Age IV male/female bodies. The elephant files are combined elephant-and-rider models; they are not riderless worker-elephant donors.
+
+## Villager Age IV reachability
+
+Both Age IV villager bodies are active: the Vietnamese villager actor explicitly selects the Chinese Tier 4 attachment list with `overrideParent=True`, and that list's `animator0` slots reference the male and female Age IV bodies across its native variants. The original family matrix had eight bodies and six prior decodes; this batch supplies the two active Age IV models. Each decoded with 3 materials, 73 bones, and no missing textures.
+
+## Unsupported or reference-only routes
+
+These 12 paths lack their own same-stem render geometry/material and remain classified as generic archetype, animator, or effect references. They must not be treated as rigid bodies. The concrete English siege tower donor above is a separate body route.
+
+- `art/civilizations/common/animals/archetypes/base_horse_combined/base_horse_combined.rgm`
+- `art/civilizations/common/humans/archetypes/base_monk/base_monk.rgm`
+- `art/civilizations/common/team_weapons/archetypes/battering_ram/battering_ram.rgm`
+- `art/civilizations/common/team_weapons/archetypes/cannon/cannon.rgm`
+- `art/civilizations/common/team_weapons/archetypes/cannon_single_axle/cannon_single_axle.rgm`
+- `art/civilizations/common/team_weapons/archetypes/mangonel/mangonel.rgm`
+- `art/civilizations/common/team_weapons/archetypes/siege_cart/siege_cart.rgm`
+- `art/civilizations/common/team_weapons/archetypes/siege_tower/siege_tower.rgm`
+- `art/civilizations/common/team_weapons/archetypes/springald/springald.rgm`
+- `art/civilizations/common/team_weapons/archetypes/trebuchet_counterweight/trebuchet_counterweight.rgm`
+- `art/civilizations/common/team_weapons/archetypes/trebuchet_traction/trebuchet_traction.rgm`
+- `art/fx/fx_objects/fx_ribauldequin_markers/fx_ribauldequin_markers.rgm`
+
+
+## Evidence boundaries
+
+The per-model manifests contain the source decode, skeleton, material, geometry, and exact texture references. Provider archive names and resource paths are in the JSON receipts. Age IV reachability is included in the v2 batch receipt. This inventory establishes donor availability and static decode completeness; artist recipe acceptance, Blender inspection, native cook, imported package behavior, and in-game appearance remain separate gates.

@@ -1,0 +1,269 @@
+{
+  "age": 3,
+  "baseline_050_sga_sha256": "78b90561306f6874872b5f88a5f82c3354e14fceebdf52cf0f0ffba28cbf1e80",
+  "source_blends": {
+    "body": {
+      "file": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_051\\monastery\\age03\\body-050-reference.blend",
+      "sha256": "22420c4d0b07d2ee435ed721553d99278189a974d853c889dc2291e0be29fc4a",
+      "bytes": 11697911,
+      "provenance": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\buildings\\monastery\\age03\\Vietnam_monastery_Age03.blend",
+      "role": "unmodified geometry reference; 051 native edits recorded in recipe"
+    },
+    "detail": {
+      "file": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_051\\monastery\\age03\\detail-050-reference.blend",
+      "sha256": "b87bacf9569dca00ddcfa6ef5e8941d13dd1dd5f5a3d374153062f771cc9510d",
+      "bytes": 1778756,
+      "provenance": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\buildings\\monastery\\age03\\details\\vn_monastery_details_age03.blend",
+      "role": "unmodified geometry reference; 051 native edits recorded in recipe"
+    },
+    "detail_exports": {
+      "albedo.png": {
+        "sha256": "427b5bf4b517e39045a25d2f26d1d3836effce2cd9a8672884b1bde74311d515",
+        "bytes": 1665925
+      },
+      "building.json": {
+        "sha256": "722654c06eb0cee68c5c8a0e5de55cf49abcb0b73b4025197236df65f9242430",
+        "bytes": 529
+      },
+      "metalness.png": {
+        "sha256": "1286fb2b35d5a81c739ea4db471a1f5b0685587b415c6663bfe97191732f17b7",
+        "bytes": 257
+      },
+      "model.fbx": {
+        "sha256": "82d930ab545bb2e9a009f0f44a0eb7b5079fa763527d72bd165d0ac4b399c3da",
+        "bytes": 50412
+      },
+      "normal.png": {
+        "sha256": "abfddfc41c354f558a7ebf171e6ccf9a4d3640d66f5cb20ee6507e42beaecada",
+        "bytes": 269
+      },
+      "roughness.png": {
+        "sha256": "b423c3205b957f68b072235b9343520f84b1adde4b216bd44893a20e9398f704",
+        "bytes": 20726
+      }
+    }
+  },
+  "selector_proof": {
+    "restored_selector_sets": 10,
+    "all_mscl_names_qualified": true,
+    "selector_name_count": 92,
+    "native_conditions_byte_identical_to_050": true,
+    "all_other_050_chunks_byte_identical": true,
+    "original_sha256": "8041ec043ceb531843d7b62c0cb9bce7203c34665d99101611cc48a11caf7ea1",
+    "repaired_sha256": "59da8373743a0fb25fbf730bde8c23441d8c9216236cb6c25b2a60db102fd371",
+    "export": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_051\\monastery\\age03\\model.rgm"
+  },
+  "geometry_proof": {
+    "components": [
+      {
+        "name": "courtyard_pavement",
+        "source_triangle_range": [
+          0,
+          12
+        ],
+        "retained": true
+      },
+      {
+        "name": "courtyard_edging",
+        "source_triangle_range": [
+          12,
+          36
+        ],
+        "retained": true
+      },
+      {
+        "name": "hall_tall_posts",
+        "source_triangle_range": [
+          36,
+          84
+        ],
+        "retained": false
+      },
+      {
+        "name": "gate_tall_posts",
+        "source_triangle_range": [
+          84,
+          108
+        ],
+        "retained": false
+      },
+      {
+        "name": "bell_shrine_pad",
+        "source_triangle_range": [
+          108,
+          120
+        ],
+        "retained": true
+      },
+      {
+        "name": "lotus_plinth",
+        "source_triangle_range": [
+          120,
+          132
+        ],
+        "retained": true
+      },
+      {
+        "name": "hall_lintel",
+        "source_triangle_range": [
+          132,
+          144
+        ],
+        "retained": false
+      },
+      {
+        "name": "oversized_hall_roof",
+        "source_triangle_range": [
+          144,
+          464
+        ],
+        "retained": false
+      },
+      {
+        "name": "gate_lintel",
+        "source_triangle_range": [
+          464,
+          476
+        ],
+        "retained": false
+      },
+      {
+        "name": "entry_gate_canopy",
+        "source_triangle_range": [
+          476,
+          796
+        ],
+        "retained": false
+      },
+      {
+        "name": "bell_shrine_posts",
+        "source_triangle_range": [
+          796,
+          820
+        ],
+        "retained": true
+      },
+      {
+        "name": "bell_shrine_tile_roof",
+        "source_triangle_range": [
+          820,
+          1140
+        ],
+        "retained": true
+      },
+      {
+        "name": "hall_ridge",
+        "source_triangle_range": [
+          1140,
+          1152
+        ],
+        "retained": false
+      },
+      {
+        "name": "hall_screens",
+        "source_triangle_range": [
+          1152,
+          1188
+        ],
+        "retained": false
+      },
+      {
+        "name": "hanging_bell",
+        "source_triangle_range": [
+          1188,
+          1280
+        ],
+        "retained": true
+      },
+      {
+        "name": "lotus_basin",
+        "source_triangle_range": [
+          1280,
+          1372
+        ],
+        "retained": true
+      },
+      {
+        "name": "lotus_petals",
+        "source_triangle_range": [
+          1372,
+          1468
+        ],
+        "retained": true
+      }
+    ],
+    "removed_canopy_and_frame_triangles": 784,
+    "retained_shrine_courtyard_lotus_triangles": 684,
+    "native_vertex_uv_and_collection_buffers_byte_identical": true,
+    "native_index_buffer_compacted": true,
+    "new_degenerate_triangles": 0,
+    "retained_ordinals_file": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\recipes\\release_051\\monastery\\age03-detail-retained-ordinals.json",
+    "retained_ordinals_sha256": "1bbcd57df710f4b39fa3ae15ac38211fc1eb63ffd33cd60e0723aaf34e9d2313",
+    "original_sha256": "22f7e2d1f5d9c9ecfd82b158dc7bc5e2b1682995218a0531460d440e929b58e8",
+    "repaired_sha256": "5793b833460803acbced613af790760a3fd82b7f80188bcf45031aae7637961a",
+    "export": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_051\\monastery\\age03\\detail-model.rrgeom"
+  },
+  "stamp_proof": {
+    "base_stamp": "art/stamps/cc050/monastery03_base_default.bin",
+    "detail_stamp": "art/stamps/cc050/monastery03_detail.bin",
+    "base_transform": [
+      0.0,
+      1.0,
+      0.0,
+      -0.0,
+      0.0,
+      0.0,
+      -0.75,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "detail_transform_before": [
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "detail_transform_after": [
+      0.0,
+      1.0,
+      0.0,
+      -0.0,
+      0.0,
+      0.0,
+      -0.75,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "same_transform_all_consumers": {
+      "default": true,
+      "cordoba": true,
+      "campaign": true
+    },
+    "consumer_list": "attrib/attachments/attachment_lists/vietnam/release_050/vn_050_monastery03_visual.rgd",
+    "changed_memory_bytes": 6,
+    "only_visual_transform_changed": true,
+    "object_count_unchanged": true
+  },
+  "original_050_detail_contact_checks_superseded": true,
+  "retained_native_roof": {
+    "member": "art/scenario/cccastle/monastery_age03/model.rrgeom",
+    "sha256": "6268b86fe815919dfc9b6e39f6ee21a4f19be2259caf989d0b05b717bd2e3222",
+    "bytes": 1940102
+  },
+  "preserved_native_marker_rgo": {
+    "member": "art/scenario/cccastle/monastery_age03/model.rgo",
+    "sha256": "0682b2140acadea23448fa168852d17fb7bb89302cbc203fe2b39734df122fa2",
+    "bytes": 48935
+  },
+  "preserved_native_uv_and_material": "native body RRGeom is exact 050; detail vertex buffers and RRMaterial are byte-identical to 050, only detail index triangles and count changed",
+  "roof_design": "restore complete original native donor-shaped roof and structural supports; remove oversized new hall and gate canopies/frame; retain bell shrine and lotus details",
+  "native_rgo_markers": "untouched 0.5.0 payload"
+}

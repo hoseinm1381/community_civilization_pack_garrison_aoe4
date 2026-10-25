@@ -1,0 +1,36 @@
+-- Diagnostic fixture only. Never ship this in the production SCAR without
+-- native comparison against the existing timed stealth and enemy reveal.
+-- Invoke on one Vietnamese villager in open terrain whose static auto ability
+-- has been removed in a diagnostic package. This avoids two simultaneous
+-- stealth sources and keeps the accepted archer as a separate control.
+VietnamStealthModifierProbe = { applied = {} }
+
+function VietnamStealthModifierProbe_Apply(entity)
+    local id = Entity_GetID(entity)
+    if not Entity_IsValid(id) or not Entity_IsAlive(entity) then return false end
+    local key = tostring(id)
+    if VietnamStealthModifierProbe.applied[key] ~= nil then return true end
+    local modifier = Modifier_Create(MAT_Entity, "camouflage_enable", MUT_Enable, false, 1, nil)
+    local handle = Modifier_ApplyToEntity(modifier, entity, 0)
+    VietnamStealthModifierProbe.applied[key] = handle
+    print("VN052_STEALTH_PROBE apply id=" .. key .. " camouflaged=" .. tostring(Entity_IsCamouflaged(entity)))
+    return true
+end
+
+function VietnamStealthModifierProbe_Remove(entity)
+    local key = tostring(Entity_GetID(entity))
+    local handle = VietnamStealthModifierProbe.applied[key]
+    if handle == nil then return false end
+    Modifier_Remove(handle)
+    VietnamStealthModifierProbe.applied[key] = nil
+    print("VN052_STEALTH_PROBE remove id=" .. key .. " camouflaged=" .. tostring(Entity_IsCamouflaged(entity)))
+    return true
+end
+
+function VietnamStealthModifierProbe_Cleanup()
+    for key, handle in pairs(VietnamStealthModifierProbe.applied) do
+        Modifier_Remove(handle)
+        print("VN052_STEALTH_PROBE cleanup id=" .. key)
+    end
+    VietnamStealthModifierProbe.applied = {}
+end

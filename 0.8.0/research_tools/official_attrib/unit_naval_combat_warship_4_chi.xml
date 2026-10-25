@@ -1,0 +1,1281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <RGDNode Key="default" Type="List">
+    <RGDNode Key="squad_attention_ext" Type="List">
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_attention_ext"/>
+      <RGDNode Key="last_seen_reset_delay_secs" Type="Float" Value="20"/>
+      <RGDNode Key="spot_enemy_activity" Type="Boolean" Value="false"/>
+      <RGDNode Key="search_radius" Type="Float" Value="35"/>
+    </RGDNode>
+    <RGDNode Key="squad_loadout_ext" Type="List">
+      <RGDNode Key="unit_list" Type="List">
+        <RGDNode Key="loadout_data" Type="List">
+          <RGDNode Key="num" Type="Float" Value="1"/>
+          <RGDNode Key="is_default_unit" Type="Boolean" Value="true"/>
+          <RGDNode Key="type" Type="List">
+            <RGDNode Key="$PBGNAME" Type="CString" Value="unit_naval_combat_warship_4_chi"/>
+            <RGDNode Key="$PBGMAP" Type="CString" Value="ebps"/>
+          </RGDNode>
+          <RGDNode Key="unit_attachments" Type="List">
+          </RGDNode>
+        </RGDNode>
+      </RGDNode>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_loadout_ext"/>
+      <RGDNode Key="squad_female_chance" Type="Float" Value="0"/>
+    </RGDNode>
+    <RGDNode Key="squad_speech_ext" Type="List">
+      <RGDNode Key="is_idle_battle_chatter_enabled" Type="Boolean" Value="false"/>
+      <RGDNode Key="squad_speech_parameters" Type="List">
+        <RGDNode Key="squad_unit_code" Type="CString" Value=""/>
+        <RGDNode Key="squad_class_code" Type="CString" Value="ship"/>
+        <RGDNode Key="squad_name_code" Type="CString" Value=""/>
+        <RGDNode Key="squad_race_code" Type="CString" Value="no_race"/>
+      </RGDNode>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_speech_ext"/>
+      <RGDNode Key="age_mapping" Type="List">
+        <RGDNode Key="age_number" Type="Int" Value="4"/>
+        <RGDNode Key="age_number" Type="Int" Value="4"/>
+        <RGDNode Key="age_number" Type="Int" Value="4"/>
+        <RGDNode Key="age_number" Type="Int" Value="4"/>
+      </RGDNode>
+      <RGDNode Key="squad_speaker_code" Type="CString" Value="warShip"/>
+      <RGDNode Key="importance" Type="Int" Value="14"/>
+    </RGDNode>
+    <RGDNode Key="squad_formation_group_ext" Type="List">
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_formation_group_ext"/>
+      <RGDNode Key="default_formation_group_spot_generator" Type="List">
+        <RGDNode Key="$PBGNAME" Type="CString" Value="water_box_fill_spot_generator"/>
+        <RGDNode Key="$PBGMAP" Type="CString" Value="formation_group_spot_generator"/>
+      </RGDNode>
+      <RGDNode Key="desired_protection_level_in_formation" Type="Float" Value="2"/>
+    </RGDNode>
+    <RGDNode Key="squad_ability_ext" Type="List">
+      <RGDNode Key="abilities" Type="List">
+        <RGDNode Key="ability" Type="List">
+          <RGDNode Key="$PBGNAME" Type="CString" Value="core_unit_death"/>
+          <RGDNode Key="$PBGMAP" Type="CString" Value="abilities"/>
+        </RGDNode>
+        <RGDNode Key="ability" Type="List">
+          <RGDNode Key="$PBGNAME" Type="CString" Value="naval_chain_shot"/>
+          <RGDNode Key="$PBGMAP" Type="CString" Value="abilities"/>
+        </RGDNode>
+        <RGDNode Key="ability" Type="List">
+          <RGDNode Key="$PBGNAME" Type="CString" Value="naval_formation_line"/>
+          <RGDNode Key="$PBGMAP" Type="CString" Value="abilities"/>
+        </RGDNode>
+        <RGDNode Key="ability" Type="List">
+          <RGDNode Key="$PBGNAME" Type="CString" Value="naval_formation_column"/>
+          <RGDNode Key="$PBGMAP" Type="CString" Value="abilities"/>
+        </RGDNode>
+        <RGDNode Key="ability" Type="List">
+          <RGDNode Key="$PBGNAME" Type="CString" Value="naval_formation_spread"/>
+          <RGDNode Key="$PBGMAP" Type="CString" Value="abilities"/>
+        </RGDNode>
+      </RGDNode>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_ability_ext"/>
+      <RGDNode Key="squad_orders" Type="List">
+        <RGDNode Key="unload_here" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="attack_move" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="pickup_item" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="reverse_move" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="stop" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="retire" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="trade" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="attack_ground" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="prefer_ranged" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="load" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="unload" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="vault" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="hold_fire_on" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="hold_position" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="add_patrol_point" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="retreat" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="plant_demolitions" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="cancel_construction" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="hold_fire_off" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="move" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="prefer_melee" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="abandon_team_weapon" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+      </RGDNode>
+      <RGDNode Key="ui_combine_priority" Type="Int" Value="0"/>
+    </RGDNode>
+    <RGDNode Key="squad_audio_ext" Type="List">
+      <RGDNode Key="potential_damage" Type="Float" Value="0"/>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_audio_ext"/>
+      <RGDNode Key="in_fow_distance_to_enemy_rtpc_enabled" Type="Boolean" Value="false"/>
+      <RGDNode Key="kill_streak_option" Type="List">
+        <RGDNode Key="$REF" Type="CString" Value="options\none"/>
+      </RGDNode>
+      <RGDNode Key="sound_banks" Type="List">
+      </RGDNode>
+      <RGDNode Key="unit_type" Type="CString" Value=""/>
+      <RGDNode Key="rtpc_events" Type="List">
+      </RGDNode>
+      <RGDNode Key="death_event_type" Type="CString" Value=""/>
+      <RGDNode Key="music_importance" Type="Int" Value="50"/>
+      <RGDNode Key="initial_spawn_event_type" Type="CString" Value=""/>
+      <RGDNode Key="importance" Type="Int" Value="50"/>
+      <RGDNode Key="is_dynamic_audio_object" Type="Boolean" Value="true"/>
+    </RGDNode>
+    <RGDNode Key="squad_blueprint_ext" Type="List">
+      <RGDNode Key="browsable_in_editor" Type="Boolean" Value="true"/>
+      <RGDNode Key="QueryTree_States" Type="List">
+        <RGDNode Key="squad_state_move" Type="CString" Value="unit_squad_query\Move"/>
+        <RGDNode Key="squad_state_gather_stone" Type="CString" Value="unit_squad_query\GatherStone"/>
+        <RGDNode Key="squad_state_retreat" Type="CString" Value=""/>
+        <RGDNode Key="squad_state_gather_gold" Type="CString" Value="unit_squad_query\GatherGold"/>
+        <RGDNode Key="squad_state_evacuate" Type="CString" Value="unit_squad_query\Evacuating"/>
+        <RGDNode Key="squad_state_gather_wood" Type="CString" Value="unit_squad_query\GatherWood"/>
+        <RGDNode Key="squad_state_truly_idle" Type="CString" Value="unit_squad_query\TrulyIdle"/>
+        <RGDNode Key="squad_state_ability" Type="CString" Value=""/>
+        <RGDNode Key="squad_state_gather_food" Type="CString" Value="unit_squad_query\GatherFood"/>
+        <RGDNode Key="squad_state_attack_move" Type="CString" Value="unit_squad_query\AttackMove"/>
+        <RGDNode Key="squad_state_idle_villager" Type="CString" Value="unit_squad_query\IdleVillager"/>
+        <RGDNode Key="squad_state_gather" Type="CString" Value="unit_squad_query\Gather"/>
+        <RGDNode Key="squad_state_idle" Type="CString" Value="unit_squad_query\Idle"/>
+        <RGDNode Key="squad_state_attack" Type="CString" Value="unit_squad_query\Attack"/>
+      </RGDNode>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_blueprint_ext"/>
+      <RGDNode Key="can_be_controlled" Type="Boolean" Value="true"/>
+    </RGDNode>
+    <RGDNode Key="pbgid" Type="Int" Value="193110"/>
+    <RGDNode Key="squad_combat_behaviour_ext" Type="List">
+      <RGDNode Key="reveal_defender_time" Type="Float" Value="0"/>
+      <RGDNode Key="heavy_weapon_setup_delay" Type="Float" Value="999"/>
+      <RGDNode Key="can_be_tied_up" Type="Boolean" Value="false"/>
+      <RGDNode Key="accept_move_commands_while_combat" Type="Boolean" Value="false"/>
+      <RGDNode Key="reveal_defender_time_use" Type="Boolean" Value="false"/>
+      <RGDNode Key="reveal_self_attacker_time" Type="Float" Value="0"/>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_combat_behaviour_ext"/>
+      <RGDNode Key="suppression" Type="List">
+        <RGDNode Key="pin_down_activate_threshold" Type="Float" Value="0.6"/>
+        <RGDNode Key="noncombat_recover_multiplier" Type="Float" Value="50"/>
+        <RGDNode Key="recover_rate" Type="Float" Value="0.008"/>
+        <RGDNode Key="suppressed_activate_action_tree" Type="List">
+          <RGDNode Key="start_suspended" Type="Boolean" Value="false"/>
+          <RGDNode Key="ActionTree_OpeningBranch" Type="CString" Value=""/>
+          <RGDNode Key="$REF" Type="CString" Value="state_tree_reference_info"/>
+        </RGDNode>
+        <RGDNode Key="noncombat_delay" Type="Float" Value="7"/>
+        <RGDNode Key="cover_info" Type="List">
+          <RGDNode Key="plain" Type="List">
+            <RGDNode Key="$REF" Type="CString" Value="suppression_cover_info"/>
+            <RGDNode Key="recover_multiplier" Type="Float" Value="1"/>
+          </RGDNode>
+          <RGDNode Key="forest" Type="List">
+            <RGDNode Key="$REF" Type="CString" Value="suppression_cover_info"/>
+            <RGDNode Key="recover_multiplier" Type="Float" Value="1"/>
+          </RGDNode>
+          <RGDNode Key="hill" Type="List">
+            <RGDNode Key="$REF" Type="CString" Value="suppression_cover_info"/>
+            <RGDNode Key="recover_multiplier" Type="Float" Value="1"/>
+          </RGDNode>
+          <RGDNode Key="mountain" Type="List">
+            <RGDNode Key="$REF" Type="CString" Value="suppression_cover_info"/>
+            <RGDNode Key="recover_multiplier" Type="Float" Value="1"/>
+          </RGDNode>
+          <RGDNode Key="tp_defcover" Type="List">
+            <RGDNode Key="$REF" Type="CString" Value="suppression_cover_info"/>
+            <RGDNode Key="recover_multiplier" Type="Float" Value="1"/>
+          </RGDNode>
+          <RGDNode Key="water" Type="List">
+            <RGDNode Key="$REF" Type="CString" Value="suppression_cover_info"/>
+            <RGDNode Key="recover_multiplier" Type="Float" Value="1"/>
+          </RGDNode>
+        </RGDNode>
+        <RGDNode Key="suppressed_recover_threshold" Type="Float" Value="0.15"/>
+        <RGDNode Key="suppressed_activate_threshold" Type="Float" Value="0.2"/>
+        <RGDNode Key="pin_down_recover_threshold" Type="Float" Value="0.5"/>
+        <RGDNode Key="pin_down_activate_action_tree" Type="List">
+          <RGDNode Key="start_suspended" Type="Boolean" Value="false"/>
+          <RGDNode Key="ActionTree_OpeningBranch" Type="CString" Value=""/>
+          <RGDNode Key="$REF" Type="CString" Value="state_tree_reference_info"/>
+        </RGDNode>
+        <RGDNode Key="can_be_suppressed" Type="Boolean" Value="false"/>
+      </RGDNode>
+      <RGDNode Key="charge_option" Type="List">
+        <RGDNode Key="$REF" Type="CString" Value="options\none"/>
+      </RGDNode>
+      <RGDNode Key="attack_move_command_requires_valid_range" Type="Boolean" Value="true"/>
+      <RGDNode Key="reaction_combat_delay_seconds" Type="Float" Value="30"/>
+      <RGDNode Key="reveal_self_attacker_time_use" Type="Boolean" Value="false"/>
+      <RGDNode Key="range_reticule" Type="List">
+        <RGDNode Key="$PBGNAME" Type="CString" Value=""/>
+        <RGDNode Key="$PBGMAP" Type="CString" Value=""/>
+      </RGDNode>
+      <RGDNode Key="reaction_delay_seconds" Type="Float" Value="25"/>
+      <RGDNode Key="can_recrew_abandoned_option" Type="List">
+        <RGDNode Key="$REF" Type="CString" Value="options\sbpextensions\squad_combat_behaviour_ext\can_recrew_abandoned"/>
+        <RGDNode Key="is_mobile_driver_option" Type="List">
+          <RGDNode Key="$REF" Type="CString" Value="options\none"/>
+        </RGDNode>
+      </RGDNode>
+      <RGDNode Key="ranged_weapons_prefer_single_squad_target" Type="Boolean" Value="true"/>
+    </RGDNode>
+    <RGDNode Key="squad_modifier_ext" Type="List">
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_modifier_ext"/>
+    </RGDNode>
+    <RGDNode Key="parent_pbg" Type="List">
+      <RGDNode Key="$PBGNAME" Type="CString" Value="unit_naval_combat_warship_4"/>
+      <RGDNode Key="$PBGMAP" Type="CString" Value="sbps"/>
+    </RGDNode>
+    <RGDNode Key="squad_command_forwarding_ext" Type="List">
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_command_forwarding_ext"/>
+      <RGDNode Key="default_command_weight" Type="List">
+        <RGDNode Key="$PBGNAME" Type="CString" Value="default"/>
+        <RGDNode Key="$PBGMAP" Type="CString" Value="default_command_weight"/>
+      </RGDNode>
+    </RGDNode>
+    <RGDNode Key="squad_statemodel_ext" Type="List">
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_statemodel_ext"/>
+      <RGDNode Key="schema" Type="List">
+        <RGDNode Key="$PBGNAME" Type="CString" Value="siege_weapon"/>
+        <RGDNode Key="$PBGMAP" Type="CString" Value="statemodel_schema"/>
+      </RGDNode>
+    </RGDNode>
+    <RGDNode Key="squad_type_ext" Type="List">
+      <RGDNode Key="squad_race_type_list" Type="List">
+        <RGDNode Key="squad_race_type" Type="List">
+          <RGDNode Key="$PBGNAME" Type="CString" Value="chinese"/>
+          <RGDNode Key="$PBGMAP" Type="CString" Value="racebps"/>
+        </RGDNode>
+      </RGDNode>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_type_ext"/>
+      <RGDNode Key="squad_type_list" Type="List">
+        <RGDNode Key="squad_type" Type="CString" Value="military"/>
+        <RGDNode Key="squad_type" Type="CString" Value="scar_age4"/>
+        <RGDNode Key="squad_type" Type="CString" Value="scar_military"/>
+        <RGDNode Key="squad_type" Type="CString" Value="ship"/>
+        <RGDNode Key="squad_type" Type="CString" Value="naval_warship"/>
+        <RGDNode Key="squad_type" Type="CString" Value="naval_unit"/>
+        <RGDNode Key="squad_type" Type="CString" Value="scar_warship"/>
+      </RGDNode>
+    </RGDNode>
+    <RGDNode Key="squad_requirement_ext" Type="List">
+      <RGDNode Key="requirement_table" Type="List">
+        <RGDNode Key="required_player_upgrade" Type="List">
+          <RGDNode Key="include_pbg_parenting" Type="List">
+            <RGDNode Key="include_child_pbgs" Type="Boolean" Value="false"/>
+            <RGDNode Key="include_parent_pbgs" Type="Boolean" Value="false"/>
+          </RGDNode>
+          <RGDNode Key="include_queued" Type="Boolean" Value="false"/>
+          <RGDNode Key="include_completed" Type="Boolean" Value="true"/>
+          <RGDNode Key="$REF" Type="CString" Value="requirements\required_player_upgrade"/>
+          <RGDNode Key="max_completed" Type="Int" Value="100"/>
+          <RGDNode Key="min_completed" Type="Int" Value="1"/>
+          <RGDNode Key="upgrade_name" Type="List">
+            <RGDNode Key="$PBGNAME" Type="CString" Value="imperial_age"/>
+            <RGDNode Key="$PBGMAP" Type="CString" Value="upgrade"/>
+          </RGDNode>
+          <RGDNode Key="reason" Type="CString" Value="usage"/>
+          <RGDNode Key="is_present" Type="Boolean" Value="true"/>
+        </RGDNode>
+      </RGDNode>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_requirement_ext"/>
+      <RGDNode Key="requirement_statetree" Type="CString" Value=""/>
+    </RGDNode>
+    <RGDNode Key="squad_ui_ext" Type="List">
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_ui_ext"/>
+      <RGDNode Key="race_list" Type="List">
+        <RGDNode Key="race_data" Type="List">
+          <RGDNode Key="info" Type="List">
+            <RGDNode Key="debug_text" Type="CString" Value=""/>
+            <RGDNode Key="minimap_texture_scale" Type="Float" Value="0.65"/>
+            <RGDNode Key="screen_name_formatter" Type="List">
+              <RGDNode Key="$REF" Type="CString" Value=""/>
+            </RGDNode>
+            <RGDNode Key="decorator_visibility" Type="Int" Value="3"/>
+            <RGDNode Key="show_production_queue" Type="Boolean" Value="false"/>
+            <RGDNode Key="screen_name_short_formatter" Type="List">
+              <RGDNode Key="$REF" Type="CString" Value=""/>
+            </RGDNode>
+            <RGDNode Key="ui_decorator" Type="List">
+              <RGDNode Key="$PBGNAME" Type="CString" Value=""/>
+              <RGDNode Key="$PBGMAP" Type="CString" Value=""/>
+            </RGDNode>
+            <RGDNode Key="reveal_for_decryption" Type="Boolean" Value="true"/>
+            <RGDNode Key="selection_datatemplate" Type="CString" Value="MilitaryUnitSelectionDataTemplate"/>
+            <RGDNode Key="selection_group" Type="CString" Value="warship"/>
+            <RGDNode Key="use_random_entity_speaker" Type="Boolean" Value="false"/>
+            <RGDNode Key="respawn_progress" Type="CString" Value=""/>
+            <RGDNode Key="hide_ucs" Type="Boolean" Value="false"/>
+            <RGDNode Key="ui_codex_info" Type="List">
+              <RGDNode Key="ui_position" Type="List">
+                <RGDNode Key="ui_position_column" Type="Int" Value="-1"/>
+                <RGDNode Key="ui_position_row" Type="Int" Value="-1"/>
+              </RGDNode>
+              <RGDNode Key="exclusive" Type="Boolean" Value="false"/>
+              <RGDNode Key="priority" Type="Int" Value="3000"/>
+            </RGDNode>
+            <RGDNode Key="show_production" Type="Boolean" Value="true"/>
+            <RGDNode Key="portrait_name" Type="CString" Value=""/>
+            <RGDNode Key="respawn_unit_class" Type="CString" Value=""/>
+            <RGDNode Key="brief_text_formatter" Type="List">
+              <RGDNode Key="$REF" Type="CString" Value=""/>
+            </RGDNode>
+            <RGDNode Key="extra_text" Type="Int" Value="11171902"/>
+            <RGDNode Key="sound" Type="CString" Value="sfx_ui_produce_unit_click"/>
+            <RGDNode Key="symbol_icon_name" Type="CString" Value=""/>
+            <RGDNode Key="minimap_texture" Type="CString" Value=""/>
+            <RGDNode Key="icon_name" Type="CString" Value="races\common\units\warship"/>
+            <RGDNode Key="minimap_team_only" Type="Boolean" Value="false"/>
+            <RGDNode Key="map_layer" Type="Int" Value="-1"/>
+            <RGDNode Key="is_unique_to_race" Type="Boolean" Value="false"/>
+            <RGDNode Key="ui_combine_type" Type="CString" Value="intersection"/>
+            <RGDNode Key="help_text" Type="Int" Value="11171903"/>
+            <RGDNode Key="extra_icon" Type="CString" Value=""/>
+            <RGDNode Key="hotkey_name" Type="CString" Value="E"/>
+            <RGDNode Key="minimap_texture_zoom_scale" Type="Float" Value="0"/>
+            <RGDNode Key="show_in_build_log" Type="Boolean" Value="true"/>
+            <RGDNode Key="is_unique_to_race_icon_override" Type="CString" Value=""/>
+            <RGDNode Key="sound_alternative" Type="CString" Value=""/>
+            <RGDNode Key="tooltip_data_template" Type="CString" Value="BuildingMilitaryDataTemplate"/>
+            <RGDNode Key="respawn_time" Type="CString" Value=""/>
+            <RGDNode Key="help_text_formatter" Type="List">
+              <RGDNode Key="$REF" Type="CString" Value=""/>
+            </RGDNode>
+            <RGDNode Key="is_respawnable" Type="Boolean" Value="false"/>
+            <RGDNode Key="map_rotation_type_override" Type="CString" Value="no_override"/>
+            <RGDNode Key="extra_text_formatter" Type="List">
+              <RGDNode Key="$REF" Type="CString" Value=""/>
+            </RGDNode>
+            <RGDNode Key="stats_info" Type="List">
+              <RGDNode Key="include_in_lifespan_stat" Type="Boolean" Value="true"/>
+            </RGDNode>
+            <RGDNode Key="decorator_data_template" Type="CString" Value=""/>
+            <RGDNode Key="is_unique" Type="Boolean" Value="false"/>
+            <RGDNode Key="flag_icon_override" Type="CString" Value=""/>
+            <RGDNode Key="respawn_location" Type="CString" Value=""/>
+            <RGDNode Key="screen_name" Type="Int" Value="11203547"/>
+            <RGDNode Key="decorator_show_reload_progress" Type="Boolean" Value="true"/>
+            <RGDNode Key="global_unit_control_row" Type="Int" Value="1"/>
+            <RGDNode Key="respawn_datatemplate" Type="CString" Value=""/>
+            <RGDNode Key="modal_ability" Type="List">
+              <RGDNode Key="$PBGNAME" Type="CString" Value=""/>
+              <RGDNode Key="$PBGMAP" Type="CString" Value=""/>
+            </RGDNode>
+            <RGDNode Key="allow_spawner_production" Type="Boolean" Value="false"/>
+            <RGDNode Key="decorator" Type="CString" Value="CardinalSquad"/>
+            <RGDNode Key="map_mark" Type="CString" Value=""/>
+            <RGDNode Key="ui_priority" Type="Int" Value="0"/>
+            <RGDNode Key="cover_level_icon_postfix" Type="CString" Value=""/>
+          </RGDNode>
+          <RGDNode Key="ext_key" Type="List">
+            <RGDNode Key="$PBGNAME" Type="CString" Value=""/>
+            <RGDNode Key="$PBGMAP" Type="CString" Value=""/>
+          </RGDNode>
+        </RGDNode>
+      </RGDNode>
+    </RGDNode>
+    <RGDNode Key="squad_population_ext" Type="List">
+      <RGDNode Key="upkeep_per_pop_per_minute_override" Type="List">
+        <RGDNode Key="food" Type="Float" Value="0"/>
+        <RGDNode Key="action" Type="Float" Value="0"/>
+        <RGDNode Key="gold" Type="Float" Value="0"/>
+        <RGDNode Key="militia_hre" Type="Float" Value="0"/>
+        <RGDNode Key="popcap" Type="Float" Value="0"/>
+        <RGDNode Key="stone" Type="Float" Value="0"/>
+        <RGDNode Key="merc_byz" Type="Float" Value="0"/>
+        <RGDNode Key="command" Type="Float" Value="0"/>
+        <RGDNode Key="wood" Type="Float" Value="0"/>
+      </RGDNode>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_population_ext"/>
+      <RGDNode Key="personnel_pop" Type="Float" Value="0"/>
+    </RGDNode>
+  </RGDNode>
+  <RGDNode Key="cordoba" Type="List">
+    <RGDNode Key="squad_attention_ext" Type="List">
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_attention_ext"/>
+      <RGDNode Key="last_seen_reset_delay_secs" Type="Float" Value="20"/>
+      <RGDNode Key="spot_enemy_activity" Type="Boolean" Value="false"/>
+      <RGDNode Key="search_radius" Type="Float" Value="35"/>
+    </RGDNode>
+    <RGDNode Key="squad_loadout_ext" Type="List">
+      <RGDNode Key="unit_list" Type="List">
+        <RGDNode Key="loadout_data" Type="List">
+          <RGDNode Key="num" Type="Float" Value="1"/>
+          <RGDNode Key="is_default_unit" Type="Boolean" Value="true"/>
+          <RGDNode Key="type" Type="List">
+            <RGDNode Key="$PBGNAME" Type="CString" Value="unit_naval_combat_warship_4_chi"/>
+            <RGDNode Key="$PBGMAP" Type="CString" Value="ebps"/>
+          </RGDNode>
+          <RGDNode Key="unit_attachments" Type="List">
+          </RGDNode>
+        </RGDNode>
+      </RGDNode>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_loadout_ext"/>
+      <RGDNode Key="squad_female_chance" Type="Float" Value="0"/>
+    </RGDNode>
+    <RGDNode Key="squad_speech_ext" Type="List">
+      <RGDNode Key="is_idle_battle_chatter_enabled" Type="Boolean" Value="false"/>
+      <RGDNode Key="squad_speech_parameters" Type="List">
+        <RGDNode Key="squad_unit_code" Type="CString" Value=""/>
+        <RGDNode Key="squad_class_code" Type="CString" Value="ship"/>
+        <RGDNode Key="squad_name_code" Type="CString" Value=""/>
+        <RGDNode Key="squad_race_code" Type="CString" Value="no_race"/>
+      </RGDNode>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_speech_ext"/>
+      <RGDNode Key="age_mapping" Type="List">
+        <RGDNode Key="age_number" Type="Int" Value="4"/>
+        <RGDNode Key="age_number" Type="Int" Value="4"/>
+        <RGDNode Key="age_number" Type="Int" Value="4"/>
+        <RGDNode Key="age_number" Type="Int" Value="4"/>
+      </RGDNode>
+      <RGDNode Key="squad_speaker_code" Type="CString" Value="warShip"/>
+      <RGDNode Key="importance" Type="Int" Value="14"/>
+    </RGDNode>
+    <RGDNode Key="squad_formation_group_ext" Type="List">
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_formation_group_ext"/>
+      <RGDNode Key="default_formation_group_spot_generator" Type="List">
+        <RGDNode Key="$PBGNAME" Type="CString" Value="water_box_fill_spot_generator"/>
+        <RGDNode Key="$PBGMAP" Type="CString" Value="formation_group_spot_generator"/>
+      </RGDNode>
+      <RGDNode Key="desired_protection_level_in_formation" Type="Float" Value="2"/>
+    </RGDNode>
+    <RGDNode Key="squad_ability_ext" Type="List">
+      <RGDNode Key="abilities" Type="List">
+        <RGDNode Key="ability" Type="List">
+          <RGDNode Key="$PBGNAME" Type="CString" Value="core_unit_death"/>
+          <RGDNode Key="$PBGMAP" Type="CString" Value="abilities"/>
+        </RGDNode>
+        <RGDNode Key="ability" Type="List">
+          <RGDNode Key="$PBGNAME" Type="CString" Value="naval_chain_shot"/>
+          <RGDNode Key="$PBGMAP" Type="CString" Value="abilities"/>
+        </RGDNode>
+        <RGDNode Key="ability" Type="List">
+          <RGDNode Key="$PBGNAME" Type="CString" Value="naval_formation_line"/>
+          <RGDNode Key="$PBGMAP" Type="CString" Value="abilities"/>
+        </RGDNode>
+        <RGDNode Key="ability" Type="List">
+          <RGDNode Key="$PBGNAME" Type="CString" Value="naval_formation_column"/>
+          <RGDNode Key="$PBGMAP" Type="CString" Value="abilities"/>
+        </RGDNode>
+        <RGDNode Key="ability" Type="List">
+          <RGDNode Key="$PBGNAME" Type="CString" Value="naval_formation_spread"/>
+          <RGDNode Key="$PBGMAP" Type="CString" Value="abilities"/>
+        </RGDNode>
+      </RGDNode>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_ability_ext"/>
+      <RGDNode Key="squad_orders" Type="List">
+        <RGDNode Key="unload_here" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="attack_move" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="pickup_item" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="reverse_move" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="stop" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="retire" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="trade" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="attack_ground" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="prefer_ranged" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="load" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="unload" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="vault" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="hold_fire_on" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="hold_position" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="add_patrol_point" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="retreat" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="plant_demolitions" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="cancel_construction" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="hold_fire_off" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="move" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="prefer_melee" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="abandon_team_weapon" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+      </RGDNode>
+      <RGDNode Key="ui_combine_priority" Type="Int" Value="0"/>
+    </RGDNode>
+    <RGDNode Key="squad_audio_ext" Type="List">
+      <RGDNode Key="potential_damage" Type="Float" Value="0"/>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_audio_ext"/>
+      <RGDNode Key="in_fow_distance_to_enemy_rtpc_enabled" Type="Boolean" Value="false"/>
+      <RGDNode Key="kill_streak_option" Type="List">
+        <RGDNode Key="$REF" Type="CString" Value="options\none"/>
+      </RGDNode>
+      <RGDNode Key="sound_banks" Type="List">
+      </RGDNode>
+      <RGDNode Key="unit_type" Type="CString" Value=""/>
+      <RGDNode Key="rtpc_events" Type="List">
+      </RGDNode>
+      <RGDNode Key="death_event_type" Type="CString" Value=""/>
+      <RGDNode Key="music_importance" Type="Int" Value="50"/>
+      <RGDNode Key="initial_spawn_event_type" Type="CString" Value=""/>
+      <RGDNode Key="importance" Type="Int" Value="50"/>
+      <RGDNode Key="is_dynamic_audio_object" Type="Boolean" Value="true"/>
+    </RGDNode>
+    <RGDNode Key="squad_blueprint_ext" Type="List">
+      <RGDNode Key="browsable_in_editor" Type="Boolean" Value="true"/>
+      <RGDNode Key="QueryTree_States" Type="List">
+        <RGDNode Key="squad_state_move" Type="CString" Value="cordoba_unit_squad_query\Move"/>
+        <RGDNode Key="squad_state_gather_stone" Type="CString" Value="cordoba_unit_squad_query\GatherStone"/>
+        <RGDNode Key="squad_state_retreat" Type="CString" Value=""/>
+        <RGDNode Key="squad_state_gather_gold" Type="CString" Value="cordoba_unit_squad_query\GatherGold"/>
+        <RGDNode Key="squad_state_evacuate" Type="CString" Value="cordoba_unit_squad_query\Evacuating"/>
+        <RGDNode Key="squad_state_gather_wood" Type="CString" Value="cordoba_unit_squad_query\GatherWood"/>
+        <RGDNode Key="squad_state_truly_idle" Type="CString" Value="cordoba_unit_squad_query\TrulyIdle"/>
+        <RGDNode Key="squad_state_ability" Type="CString" Value=""/>
+        <RGDNode Key="squad_state_gather_food" Type="CString" Value="cordoba_unit_squad_query\GatherFood"/>
+        <RGDNode Key="squad_state_attack_move" Type="CString" Value="cordoba_unit_squad_query\AttackMove"/>
+        <RGDNode Key="squad_state_idle_villager" Type="CString" Value="cordoba_unit_squad_query\IdleVillager"/>
+        <RGDNode Key="squad_state_gather" Type="CString" Value="cordoba_unit_squad_query\Gather"/>
+        <RGDNode Key="squad_state_idle" Type="CString" Value="cordoba_unit_squad_query\Idle"/>
+        <RGDNode Key="squad_state_attack" Type="CString" Value="cordoba_unit_squad_query\Attack"/>
+      </RGDNode>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_blueprint_ext"/>
+      <RGDNode Key="can_be_controlled" Type="Boolean" Value="true"/>
+    </RGDNode>
+    <RGDNode Key="pbgid" Type="Int" Value="193110"/>
+    <RGDNode Key="squad_combat_behaviour_ext" Type="List">
+      <RGDNode Key="reveal_defender_time" Type="Float" Value="0"/>
+      <RGDNode Key="heavy_weapon_setup_delay" Type="Float" Value="999"/>
+      <RGDNode Key="can_be_tied_up" Type="Boolean" Value="false"/>
+      <RGDNode Key="accept_move_commands_while_combat" Type="Boolean" Value="false"/>
+      <RGDNode Key="reveal_defender_time_use" Type="Boolean" Value="false"/>
+      <RGDNode Key="reveal_self_attacker_time" Type="Float" Value="0"/>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_combat_behaviour_ext"/>
+      <RGDNode Key="suppression" Type="List">
+        <RGDNode Key="pin_down_activate_threshold" Type="Float" Value="0.6"/>
+        <RGDNode Key="noncombat_recover_multiplier" Type="Float" Value="50"/>
+        <RGDNode Key="recover_rate" Type="Float" Value="0.008"/>
+        <RGDNode Key="suppressed_activate_action_tree" Type="List">
+          <RGDNode Key="start_suspended" Type="Boolean" Value="false"/>
+          <RGDNode Key="ActionTree_OpeningBranch" Type="CString" Value=""/>
+          <RGDNode Key="$REF" Type="CString" Value="state_tree_reference_info"/>
+        </RGDNode>
+        <RGDNode Key="noncombat_delay" Type="Float" Value="7"/>
+        <RGDNode Key="cover_info" Type="List">
+          <RGDNode Key="plain" Type="List">
+            <RGDNode Key="$REF" Type="CString" Value="suppression_cover_info"/>
+            <RGDNode Key="recover_multiplier" Type="Float" Value="1"/>
+          </RGDNode>
+          <RGDNode Key="forest" Type="List">
+            <RGDNode Key="$REF" Type="CString" Value="suppression_cover_info"/>
+            <RGDNode Key="recover_multiplier" Type="Float" Value="1"/>
+          </RGDNode>
+          <RGDNode Key="hill" Type="List">
+            <RGDNode Key="$REF" Type="CString" Value="suppression_cover_info"/>
+            <RGDNode Key="recover_multiplier" Type="Float" Value="1"/>
+          </RGDNode>
+          <RGDNode Key="mountain" Type="List">
+            <RGDNode Key="$REF" Type="CString" Value="suppression_cover_info"/>
+            <RGDNode Key="recover_multiplier" Type="Float" Value="1"/>
+          </RGDNode>
+          <RGDNode Key="tp_defcover" Type="List">
+            <RGDNode Key="$REF" Type="CString" Value="suppression_cover_info"/>
+            <RGDNode Key="recover_multiplier" Type="Float" Value="1"/>
+          </RGDNode>
+          <RGDNode Key="water" Type="List">
+            <RGDNode Key="$REF" Type="CString" Value="suppression_cover_info"/>
+            <RGDNode Key="recover_multiplier" Type="Float" Value="1"/>
+          </RGDNode>
+        </RGDNode>
+        <RGDNode Key="suppressed_recover_threshold" Type="Float" Value="0.15"/>
+        <RGDNode Key="suppressed_activate_threshold" Type="Float" Value="0.2"/>
+        <RGDNode Key="pin_down_recover_threshold" Type="Float" Value="0.5"/>
+        <RGDNode Key="pin_down_activate_action_tree" Type="List">
+          <RGDNode Key="start_suspended" Type="Boolean" Value="false"/>
+          <RGDNode Key="ActionTree_OpeningBranch" Type="CString" Value=""/>
+          <RGDNode Key="$REF" Type="CString" Value="state_tree_reference_info"/>
+        </RGDNode>
+        <RGDNode Key="can_be_suppressed" Type="Boolean" Value="false"/>
+      </RGDNode>
+      <RGDNode Key="charge_option" Type="List">
+        <RGDNode Key="$REF" Type="CString" Value="options\none"/>
+      </RGDNode>
+      <RGDNode Key="attack_move_command_requires_valid_range" Type="Boolean" Value="true"/>
+      <RGDNode Key="reaction_combat_delay_seconds" Type="Float" Value="30"/>
+      <RGDNode Key="reveal_self_attacker_time_use" Type="Boolean" Value="false"/>
+      <RGDNode Key="range_reticule" Type="List">
+        <RGDNode Key="$PBGNAME" Type="CString" Value=""/>
+        <RGDNode Key="$PBGMAP" Type="CString" Value=""/>
+      </RGDNode>
+      <RGDNode Key="reaction_delay_seconds" Type="Float" Value="25"/>
+      <RGDNode Key="can_recrew_abandoned_option" Type="List">
+        <RGDNode Key="$REF" Type="CString" Value="options\sbpextensions\squad_combat_behaviour_ext\can_recrew_abandoned"/>
+        <RGDNode Key="is_mobile_driver_option" Type="List">
+          <RGDNode Key="$REF" Type="CString" Value="options\none"/>
+        </RGDNode>
+      </RGDNode>
+      <RGDNode Key="ranged_weapons_prefer_single_squad_target" Type="Boolean" Value="true"/>
+    </RGDNode>
+    <RGDNode Key="squad_modifier_ext" Type="List">
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_modifier_ext"/>
+    </RGDNode>
+    <RGDNode Key="parent_pbg" Type="List">
+      <RGDNode Key="$PBGNAME" Type="CString" Value="unit_naval_combat_warship_4"/>
+      <RGDNode Key="$PBGMAP" Type="CString" Value="sbps"/>
+    </RGDNode>
+    <RGDNode Key="squad_command_forwarding_ext" Type="List">
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_command_forwarding_ext"/>
+      <RGDNode Key="default_command_weight" Type="List">
+        <RGDNode Key="$PBGNAME" Type="CString" Value="default"/>
+        <RGDNode Key="$PBGMAP" Type="CString" Value="default_command_weight"/>
+      </RGDNode>
+    </RGDNode>
+    <RGDNode Key="squad_statemodel_ext" Type="List">
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_statemodel_ext"/>
+      <RGDNode Key="schema" Type="List">
+        <RGDNode Key="$PBGNAME" Type="CString" Value="siege_weapon"/>
+        <RGDNode Key="$PBGMAP" Type="CString" Value="statemodel_schema"/>
+      </RGDNode>
+    </RGDNode>
+    <RGDNode Key="squad_type_ext" Type="List">
+      <RGDNode Key="squad_race_type_list" Type="List">
+        <RGDNode Key="squad_race_type" Type="List">
+          <RGDNode Key="$PBGNAME" Type="CString" Value="chinese"/>
+          <RGDNode Key="$PBGMAP" Type="CString" Value="racebps"/>
+        </RGDNode>
+      </RGDNode>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_type_ext"/>
+      <RGDNode Key="squad_type_list" Type="List">
+        <RGDNode Key="squad_type" Type="CString" Value="military"/>
+        <RGDNode Key="squad_type" Type="CString" Value="scar_age4"/>
+        <RGDNode Key="squad_type" Type="CString" Value="scar_military"/>
+        <RGDNode Key="squad_type" Type="CString" Value="ship"/>
+        <RGDNode Key="squad_type" Type="CString" Value="naval_warship"/>
+        <RGDNode Key="squad_type" Type="CString" Value="naval_unit"/>
+        <RGDNode Key="squad_type" Type="CString" Value="scar_warship"/>
+      </RGDNode>
+    </RGDNode>
+    <RGDNode Key="squad_requirement_ext" Type="List">
+      <RGDNode Key="requirement_table" Type="List">
+        <RGDNode Key="required_player_upgrade" Type="List">
+          <RGDNode Key="include_pbg_parenting" Type="List">
+            <RGDNode Key="include_child_pbgs" Type="Boolean" Value="false"/>
+            <RGDNode Key="include_parent_pbgs" Type="Boolean" Value="false"/>
+          </RGDNode>
+          <RGDNode Key="include_queued" Type="Boolean" Value="false"/>
+          <RGDNode Key="include_completed" Type="Boolean" Value="true"/>
+          <RGDNode Key="$REF" Type="CString" Value="requirements\required_player_upgrade"/>
+          <RGDNode Key="max_completed" Type="Int" Value="100"/>
+          <RGDNode Key="min_completed" Type="Int" Value="1"/>
+          <RGDNode Key="upgrade_name" Type="List">
+            <RGDNode Key="$PBGNAME" Type="CString" Value="imperial_age"/>
+            <RGDNode Key="$PBGMAP" Type="CString" Value="upgrade"/>
+          </RGDNode>
+          <RGDNode Key="reason" Type="CString" Value="usage"/>
+          <RGDNode Key="is_present" Type="Boolean" Value="true"/>
+        </RGDNode>
+      </RGDNode>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_requirement_ext"/>
+      <RGDNode Key="requirement_statetree" Type="CString" Value=""/>
+    </RGDNode>
+    <RGDNode Key="squad_ui_ext" Type="List">
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_ui_ext"/>
+      <RGDNode Key="race_list" Type="List">
+        <RGDNode Key="race_data" Type="List">
+          <RGDNode Key="info" Type="List">
+            <RGDNode Key="debug_text" Type="CString" Value=""/>
+            <RGDNode Key="minimap_texture_scale" Type="Float" Value="0.65"/>
+            <RGDNode Key="screen_name_formatter" Type="List">
+              <RGDNode Key="$REF" Type="CString" Value=""/>
+            </RGDNode>
+            <RGDNode Key="decorator_visibility" Type="Int" Value="3"/>
+            <RGDNode Key="show_production_queue" Type="Boolean" Value="false"/>
+            <RGDNode Key="screen_name_short_formatter" Type="List">
+              <RGDNode Key="$REF" Type="CString" Value=""/>
+            </RGDNode>
+            <RGDNode Key="ui_decorator" Type="List">
+              <RGDNode Key="$PBGNAME" Type="CString" Value=""/>
+              <RGDNode Key="$PBGMAP" Type="CString" Value=""/>
+            </RGDNode>
+            <RGDNode Key="reveal_for_decryption" Type="Boolean" Value="true"/>
+            <RGDNode Key="selection_datatemplate" Type="CString" Value="MilitaryUnitSelectionDataTemplate"/>
+            <RGDNode Key="selection_group" Type="CString" Value="warship"/>
+            <RGDNode Key="use_random_entity_speaker" Type="Boolean" Value="false"/>
+            <RGDNode Key="respawn_progress" Type="CString" Value=""/>
+            <RGDNode Key="hide_ucs" Type="Boolean" Value="false"/>
+            <RGDNode Key="ui_codex_info" Type="List">
+              <RGDNode Key="ui_position" Type="List">
+                <RGDNode Key="ui_position_column" Type="Int" Value="-1"/>
+                <RGDNode Key="ui_position_row" Type="Int" Value="-1"/>
+              </RGDNode>
+              <RGDNode Key="exclusive" Type="Boolean" Value="false"/>
+              <RGDNode Key="priority" Type="Int" Value="3000"/>
+            </RGDNode>
+            <RGDNode Key="show_production" Type="Boolean" Value="true"/>
+            <RGDNode Key="portrait_name" Type="CString" Value=""/>
+            <RGDNode Key="respawn_unit_class" Type="CString" Value=""/>
+            <RGDNode Key="brief_text_formatter" Type="List">
+              <RGDNode Key="$REF" Type="CString" Value=""/>
+            </RGDNode>
+            <RGDNode Key="extra_text" Type="Int" Value="11171902"/>
+            <RGDNode Key="sound" Type="CString" Value="sfx_ui_produce_unit_click"/>
+            <RGDNode Key="symbol_icon_name" Type="CString" Value=""/>
+            <RGDNode Key="minimap_texture" Type="CString" Value=""/>
+            <RGDNode Key="icon_name" Type="CString" Value="races\common\units\warship"/>
+            <RGDNode Key="minimap_team_only" Type="Boolean" Value="false"/>
+            <RGDNode Key="map_layer" Type="Int" Value="-1"/>
+            <RGDNode Key="is_unique_to_race" Type="Boolean" Value="false"/>
+            <RGDNode Key="ui_combine_type" Type="CString" Value="intersection"/>
+            <RGDNode Key="help_text" Type="Int" Value="11171903"/>
+            <RGDNode Key="extra_icon" Type="CString" Value=""/>
+            <RGDNode Key="hotkey_name" Type="CString" Value="E"/>
+            <RGDNode Key="minimap_texture_zoom_scale" Type="Float" Value="0"/>
+            <RGDNode Key="show_in_build_log" Type="Boolean" Value="true"/>
+            <RGDNode Key="is_unique_to_race_icon_override" Type="CString" Value=""/>
+            <RGDNode Key="sound_alternative" Type="CString" Value=""/>
+            <RGDNode Key="tooltip_data_template" Type="CString" Value="BuildingMilitaryDataTemplate"/>
+            <RGDNode Key="respawn_time" Type="CString" Value=""/>
+            <RGDNode Key="help_text_formatter" Type="List">
+              <RGDNode Key="$REF" Type="CString" Value=""/>
+            </RGDNode>
+            <RGDNode Key="is_respawnable" Type="Boolean" Value="false"/>
+            <RGDNode Key="map_rotation_type_override" Type="CString" Value="no_override"/>
+            <RGDNode Key="extra_text_formatter" Type="List">
+              <RGDNode Key="$REF" Type="CString" Value=""/>
+            </RGDNode>
+            <RGDNode Key="stats_info" Type="List">
+              <RGDNode Key="include_in_lifespan_stat" Type="Boolean" Value="true"/>
+            </RGDNode>
+            <RGDNode Key="decorator_data_template" Type="CString" Value=""/>
+            <RGDNode Key="is_unique" Type="Boolean" Value="false"/>
+            <RGDNode Key="flag_icon_override" Type="CString" Value=""/>
+            <RGDNode Key="respawn_location" Type="CString" Value=""/>
+            <RGDNode Key="screen_name" Type="Int" Value="11203547"/>
+            <RGDNode Key="decorator_show_reload_progress" Type="Boolean" Value="true"/>
+            <RGDNode Key="global_unit_control_row" Type="Int" Value="1"/>
+            <RGDNode Key="respawn_datatemplate" Type="CString" Value=""/>
+            <RGDNode Key="modal_ability" Type="List">
+              <RGDNode Key="$PBGNAME" Type="CString" Value=""/>
+              <RGDNode Key="$PBGMAP" Type="CString" Value=""/>
+            </RGDNode>
+            <RGDNode Key="allow_spawner_production" Type="Boolean" Value="false"/>
+            <RGDNode Key="decorator" Type="CString" Value="CardinalSquad"/>
+            <RGDNode Key="map_mark" Type="CString" Value=""/>
+            <RGDNode Key="ui_priority" Type="Int" Value="0"/>
+            <RGDNode Key="cover_level_icon_postfix" Type="CString" Value=""/>
+          </RGDNode>
+          <RGDNode Key="ext_key" Type="List">
+            <RGDNode Key="$PBGNAME" Type="CString" Value=""/>
+            <RGDNode Key="$PBGMAP" Type="CString" Value=""/>
+          </RGDNode>
+        </RGDNode>
+      </RGDNode>
+    </RGDNode>
+    <RGDNode Key="squad_population_ext" Type="List">
+      <RGDNode Key="upkeep_per_pop_per_minute_override" Type="List">
+        <RGDNode Key="food" Type="Float" Value="0"/>
+        <RGDNode Key="action" Type="Float" Value="0"/>
+        <RGDNode Key="gold" Type="Float" Value="0"/>
+        <RGDNode Key="militia_hre" Type="Float" Value="0"/>
+        <RGDNode Key="popcap" Type="Float" Value="0"/>
+        <RGDNode Key="stone" Type="Float" Value="0"/>
+        <RGDNode Key="merc_byz" Type="Float" Value="0"/>
+        <RGDNode Key="command" Type="Float" Value="0"/>
+        <RGDNode Key="wood" Type="Float" Value="0"/>
+      </RGDNode>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_population_ext"/>
+      <RGDNode Key="personnel_pop" Type="Float" Value="0"/>
+    </RGDNode>
+  </RGDNode>
+  <RGDNode Key="instance_version" Type="Int" Value="2"/>
+  <RGDNode Key="campaign" Type="List">
+    <RGDNode Key="squad_attention_ext" Type="List">
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_attention_ext"/>
+      <RGDNode Key="last_seen_reset_delay_secs" Type="Float" Value="20"/>
+      <RGDNode Key="spot_enemy_activity" Type="Boolean" Value="false"/>
+      <RGDNode Key="search_radius" Type="Float" Value="35"/>
+    </RGDNode>
+    <RGDNode Key="squad_loadout_ext" Type="List">
+      <RGDNode Key="unit_list" Type="List">
+        <RGDNode Key="loadout_data" Type="List">
+          <RGDNode Key="num" Type="Float" Value="1"/>
+          <RGDNode Key="is_default_unit" Type="Boolean" Value="true"/>
+          <RGDNode Key="type" Type="List">
+            <RGDNode Key="$PBGNAME" Type="CString" Value="unit_naval_combat_warship_4_chi"/>
+            <RGDNode Key="$PBGMAP" Type="CString" Value="ebps"/>
+          </RGDNode>
+          <RGDNode Key="unit_attachments" Type="List">
+          </RGDNode>
+        </RGDNode>
+      </RGDNode>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_loadout_ext"/>
+      <RGDNode Key="squad_female_chance" Type="Float" Value="0"/>
+    </RGDNode>
+    <RGDNode Key="squad_speech_ext" Type="List">
+      <RGDNode Key="is_idle_battle_chatter_enabled" Type="Boolean" Value="false"/>
+      <RGDNode Key="squad_speech_parameters" Type="List">
+        <RGDNode Key="squad_unit_code" Type="CString" Value=""/>
+        <RGDNode Key="squad_class_code" Type="CString" Value="ship"/>
+        <RGDNode Key="squad_name_code" Type="CString" Value=""/>
+        <RGDNode Key="squad_race_code" Type="CString" Value="no_race"/>
+      </RGDNode>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_speech_ext"/>
+      <RGDNode Key="age_mapping" Type="List">
+        <RGDNode Key="age_number" Type="Int" Value="4"/>
+        <RGDNode Key="age_number" Type="Int" Value="4"/>
+        <RGDNode Key="age_number" Type="Int" Value="4"/>
+        <RGDNode Key="age_number" Type="Int" Value="4"/>
+      </RGDNode>
+      <RGDNode Key="squad_speaker_code" Type="CString" Value="warShip"/>
+      <RGDNode Key="importance" Type="Int" Value="14"/>
+    </RGDNode>
+    <RGDNode Key="squad_formation_group_ext" Type="List">
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_formation_group_ext"/>
+      <RGDNode Key="default_formation_group_spot_generator" Type="List">
+        <RGDNode Key="$PBGNAME" Type="CString" Value="water_box_fill_spot_generator"/>
+        <RGDNode Key="$PBGMAP" Type="CString" Value="formation_group_spot_generator"/>
+      </RGDNode>
+      <RGDNode Key="desired_protection_level_in_formation" Type="Float" Value="2"/>
+    </RGDNode>
+    <RGDNode Key="squad_ability_ext" Type="List">
+      <RGDNode Key="abilities" Type="List">
+        <RGDNode Key="ability" Type="List">
+          <RGDNode Key="$PBGNAME" Type="CString" Value="core_unit_death"/>
+          <RGDNode Key="$PBGMAP" Type="CString" Value="abilities"/>
+        </RGDNode>
+      </RGDNode>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_ability_ext"/>
+      <RGDNode Key="squad_orders" Type="List">
+        <RGDNode Key="unload_here" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="attack_move" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="pickup_item" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="reverse_move" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="stop" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="retire" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="trade" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="attack_ground" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="prefer_ranged" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="load" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="unload" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="vault" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="hold_fire_on" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="hold_position" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="add_patrol_point" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="retreat" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="plant_demolitions" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="cancel_construction" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="hold_fire_off" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="move" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="prefer_melee" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+        <RGDNode Key="abandon_team_weapon" Type="List">
+          <RGDNode Key="available" Type="Boolean" Value="false"/>
+        </RGDNode>
+      </RGDNode>
+      <RGDNode Key="ui_combine_priority" Type="Int" Value="0"/>
+    </RGDNode>
+    <RGDNode Key="squad_audio_ext" Type="List">
+      <RGDNode Key="potential_damage" Type="Float" Value="0"/>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_audio_ext"/>
+      <RGDNode Key="in_fow_distance_to_enemy_rtpc_enabled" Type="Boolean" Value="false"/>
+      <RGDNode Key="kill_streak_option" Type="List">
+        <RGDNode Key="$REF" Type="CString" Value="options\none"/>
+      </RGDNode>
+      <RGDNode Key="sound_banks" Type="List">
+      </RGDNode>
+      <RGDNode Key="unit_type" Type="CString" Value=""/>
+      <RGDNode Key="rtpc_events" Type="List">
+      </RGDNode>
+      <RGDNode Key="death_event_type" Type="CString" Value=""/>
+      <RGDNode Key="music_importance" Type="Int" Value="50"/>
+      <RGDNode Key="initial_spawn_event_type" Type="CString" Value=""/>
+      <RGDNode Key="importance" Type="Int" Value="50"/>
+      <RGDNode Key="is_dynamic_audio_object" Type="Boolean" Value="true"/>
+    </RGDNode>
+    <RGDNode Key="squad_blueprint_ext" Type="List">
+      <RGDNode Key="browsable_in_editor" Type="Boolean" Value="true"/>
+      <RGDNode Key="QueryTree_States" Type="List">
+        <RGDNode Key="squad_state_move" Type="CString" Value="campaignMod_unit_squad_query\Move"/>
+        <RGDNode Key="squad_state_gather_stone" Type="CString" Value="campaignMod_unit_squad_query\GatherStone"/>
+        <RGDNode Key="squad_state_retreat" Type="CString" Value=""/>
+        <RGDNode Key="squad_state_gather_gold" Type="CString" Value="campaignMod_unit_squad_query\GatherGold"/>
+        <RGDNode Key="squad_state_evacuate" Type="CString" Value="campaignMod_unit_squad_query\Evacuating"/>
+        <RGDNode Key="squad_state_gather_wood" Type="CString" Value="campaignMod_unit_squad_query\GatherWood"/>
+        <RGDNode Key="squad_state_truly_idle" Type="CString" Value="campaignMod_unit_squad_query\TrulyIdle"/>
+        <RGDNode Key="squad_state_ability" Type="CString" Value=""/>
+        <RGDNode Key="squad_state_gather_food" Type="CString" Value="campaignMod_unit_squad_query\GatherFood"/>
+        <RGDNode Key="squad_state_attack_move" Type="CString" Value="campaignMod_unit_squad_query\AttackMove"/>
+        <RGDNode Key="squad_state_idle_villager" Type="CString" Value="campaignMod_unit_squad_query\IdleVillager"/>
+        <RGDNode Key="squad_state_gather" Type="CString" Value="campaignMod_unit_squad_query\Gather"/>
+        <RGDNode Key="squad_state_idle" Type="CString" Value="campaignMod_unit_squad_query\Idle"/>
+        <RGDNode Key="squad_state_attack" Type="CString" Value="campaignMod_unit_squad_query\Attack"/>
+      </RGDNode>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_blueprint_ext"/>
+      <RGDNode Key="can_be_controlled" Type="Boolean" Value="true"/>
+    </RGDNode>
+    <RGDNode Key="pbgid" Type="Int" Value="193110"/>
+    <RGDNode Key="squad_combat_behaviour_ext" Type="List">
+      <RGDNode Key="reveal_defender_time" Type="Float" Value="0"/>
+      <RGDNode Key="heavy_weapon_setup_delay" Type="Float" Value="999"/>
+      <RGDNode Key="can_be_tied_up" Type="Boolean" Value="false"/>
+      <RGDNode Key="accept_move_commands_while_combat" Type="Boolean" Value="false"/>
+      <RGDNode Key="reveal_defender_time_use" Type="Boolean" Value="false"/>
+      <RGDNode Key="reveal_self_attacker_time" Type="Float" Value="0"/>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_combat_behaviour_ext"/>
+      <RGDNode Key="suppression" Type="List">
+        <RGDNode Key="pin_down_activate_threshold" Type="Float" Value="0.6"/>
+        <RGDNode Key="noncombat_recover_multiplier" Type="Float" Value="50"/>
+        <RGDNode Key="recover_rate" Type="Float" Value="0.008"/>
+        <RGDNode Key="suppressed_activate_action_tree" Type="List">
+          <RGDNode Key="start_suspended" Type="Boolean" Value="false"/>
+          <RGDNode Key="ActionTree_OpeningBranch" Type="CString" Value=""/>
+          <RGDNode Key="$REF" Type="CString" Value="state_tree_reference_info"/>
+        </RGDNode>
+        <RGDNode Key="noncombat_delay" Type="Float" Value="7"/>
+        <RGDNode Key="cover_info" Type="List">
+          <RGDNode Key="plain" Type="List">
+            <RGDNode Key="$REF" Type="CString" Value="suppression_cover_info"/>
+            <RGDNode Key="recover_multiplier" Type="Float" Value="1"/>
+          </RGDNode>
+          <RGDNode Key="forest" Type="List">
+            <RGDNode Key="$REF" Type="CString" Value="suppression_cover_info"/>
+            <RGDNode Key="recover_multiplier" Type="Float" Value="1"/>
+          </RGDNode>
+          <RGDNode Key="hill" Type="List">
+            <RGDNode Key="$REF" Type="CString" Value="suppression_cover_info"/>
+            <RGDNode Key="recover_multiplier" Type="Float" Value="1"/>
+          </RGDNode>
+          <RGDNode Key="mountain" Type="List">
+            <RGDNode Key="$REF" Type="CString" Value="suppression_cover_info"/>
+            <RGDNode Key="recover_multiplier" Type="Float" Value="1"/>
+          </RGDNode>
+          <RGDNode Key="tp_defcover" Type="List">
+            <RGDNode Key="$REF" Type="CString" Value="suppression_cover_info"/>
+            <RGDNode Key="recover_multiplier" Type="Float" Value="1"/>
+          </RGDNode>
+          <RGDNode Key="water" Type="List">
+            <RGDNode Key="$REF" Type="CString" Value="suppression_cover_info"/>
+            <RGDNode Key="recover_multiplier" Type="Float" Value="1"/>
+          </RGDNode>
+        </RGDNode>
+        <RGDNode Key="suppressed_recover_threshold" Type="Float" Value="0.15"/>
+        <RGDNode Key="suppressed_activate_threshold" Type="Float" Value="0.2"/>
+        <RGDNode Key="pin_down_recover_threshold" Type="Float" Value="0.5"/>
+        <RGDNode Key="pin_down_activate_action_tree" Type="List">
+          <RGDNode Key="start_suspended" Type="Boolean" Value="false"/>
+          <RGDNode Key="ActionTree_OpeningBranch" Type="CString" Value=""/>
+          <RGDNode Key="$REF" Type="CString" Value="state_tree_reference_info"/>
+        </RGDNode>
+        <RGDNode Key="can_be_suppressed" Type="Boolean" Value="false"/>
+      </RGDNode>
+      <RGDNode Key="charge_option" Type="List">
+        <RGDNode Key="$REF" Type="CString" Value="options\none"/>
+      </RGDNode>
+      <RGDNode Key="attack_move_command_requires_valid_range" Type="Boolean" Value="true"/>
+      <RGDNode Key="reaction_combat_delay_seconds" Type="Float" Value="30"/>
+      <RGDNode Key="reveal_self_attacker_time_use" Type="Boolean" Value="false"/>
+      <RGDNode Key="range_reticule" Type="List">
+        <RGDNode Key="$PBGNAME" Type="CString" Value=""/>
+        <RGDNode Key="$PBGMAP" Type="CString" Value=""/>
+      </RGDNode>
+      <RGDNode Key="reaction_delay_seconds" Type="Float" Value="25"/>
+      <RGDNode Key="can_recrew_abandoned_option" Type="List">
+        <RGDNode Key="$REF" Type="CString" Value="options\sbpextensions\squad_combat_behaviour_ext\can_recrew_abandoned"/>
+        <RGDNode Key="is_mobile_driver_option" Type="List">
+          <RGDNode Key="$REF" Type="CString" Value="options\none"/>
+        </RGDNode>
+      </RGDNode>
+      <RGDNode Key="ranged_weapons_prefer_single_squad_target" Type="Boolean" Value="true"/>
+    </RGDNode>
+    <RGDNode Key="squad_modifier_ext" Type="List">
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_modifier_ext"/>
+    </RGDNode>
+    <RGDNode Key="parent_pbg" Type="List">
+      <RGDNode Key="$PBGNAME" Type="CString" Value="unit_naval_combat_warship_4"/>
+      <RGDNode Key="$PBGMAP" Type="CString" Value="sbps"/>
+    </RGDNode>
+    <RGDNode Key="squad_command_forwarding_ext" Type="List">
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_command_forwarding_ext"/>
+      <RGDNode Key="default_command_weight" Type="List">
+        <RGDNode Key="$PBGNAME" Type="CString" Value="default"/>
+        <RGDNode Key="$PBGMAP" Type="CString" Value="default_command_weight"/>
+      </RGDNode>
+    </RGDNode>
+    <RGDNode Key="squad_statemodel_ext" Type="List">
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_statemodel_ext"/>
+      <RGDNode Key="schema" Type="List">
+        <RGDNode Key="$PBGNAME" Type="CString" Value="siege_weapon"/>
+        <RGDNode Key="$PBGMAP" Type="CString" Value="statemodel_schema"/>
+      </RGDNode>
+    </RGDNode>
+    <RGDNode Key="squad_type_ext" Type="List">
+      <RGDNode Key="squad_race_type_list" Type="List">
+      </RGDNode>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_type_ext"/>
+      <RGDNode Key="squad_type_list" Type="List">
+        <RGDNode Key="squad_type" Type="CString" Value="military"/>
+        <RGDNode Key="squad_type" Type="CString" Value="scar_age4"/>
+        <RGDNode Key="squad_type" Type="CString" Value="scar_military"/>
+        <RGDNode Key="squad_type" Type="CString" Value="ship"/>
+        <RGDNode Key="squad_type" Type="CString" Value="naval_warship"/>
+        <RGDNode Key="squad_type" Type="CString" Value="naval_unit"/>
+      </RGDNode>
+    </RGDNode>
+    <RGDNode Key="squad_requirement_ext" Type="List">
+      <RGDNode Key="requirement_table" Type="List">
+        <RGDNode Key="required_player_upgrade" Type="List">
+          <RGDNode Key="include_pbg_parenting" Type="List">
+            <RGDNode Key="include_child_pbgs" Type="Boolean" Value="false"/>
+            <RGDNode Key="include_parent_pbgs" Type="Boolean" Value="false"/>
+          </RGDNode>
+          <RGDNode Key="include_queued" Type="Boolean" Value="false"/>
+          <RGDNode Key="include_completed" Type="Boolean" Value="true"/>
+          <RGDNode Key="$REF" Type="CString" Value="requirements\required_player_upgrade"/>
+          <RGDNode Key="max_completed" Type="Int" Value="100"/>
+          <RGDNode Key="min_completed" Type="Int" Value="1"/>
+          <RGDNode Key="upgrade_name" Type="List">
+            <RGDNode Key="$PBGNAME" Type="CString" Value="imperial_age"/>
+            <RGDNode Key="$PBGMAP" Type="CString" Value="upgrade"/>
+          </RGDNode>
+          <RGDNode Key="reason" Type="CString" Value="usage"/>
+          <RGDNode Key="is_present" Type="Boolean" Value="true"/>
+        </RGDNode>
+        <RGDNode Key="required_player_upgrade" Type="List">
+          <RGDNode Key="include_pbg_parenting" Type="List">
+            <RGDNode Key="include_child_pbgs" Type="Boolean" Value="false"/>
+            <RGDNode Key="include_parent_pbgs" Type="Boolean" Value="false"/>
+          </RGDNode>
+          <RGDNode Key="include_queued" Type="Boolean" Value="false"/>
+          <RGDNode Key="include_completed" Type="Boolean" Value="true"/>
+          <RGDNode Key="$REF" Type="CString" Value="requirements\required_player_upgrade"/>
+          <RGDNode Key="max_completed" Type="Int" Value="100"/>
+          <RGDNode Key="min_completed" Type="Int" Value="1"/>
+          <RGDNode Key="upgrade_name" Type="List">
+            <RGDNode Key="$PBGNAME" Type="CString" Value="upgrade_siege_chemistry"/>
+            <RGDNode Key="$PBGMAP" Type="CString" Value="upgrade"/>
+          </RGDNode>
+          <RGDNode Key="reason" Type="CString" Value="usage"/>
+          <RGDNode Key="is_present" Type="Boolean" Value="true"/>
+        </RGDNode>
+      </RGDNode>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_requirement_ext"/>
+      <RGDNode Key="requirement_statetree" Type="CString" Value=""/>
+    </RGDNode>
+    <RGDNode Key="squad_ui_ext" Type="List">
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_ui_ext"/>
+      <RGDNode Key="race_list" Type="List">
+        <RGDNode Key="race_data" Type="List">
+          <RGDNode Key="info" Type="List">
+            <RGDNode Key="debug_text" Type="CString" Value=""/>
+            <RGDNode Key="minimap_texture_scale" Type="Float" Value="1"/>
+            <RGDNode Key="screen_name_formatter" Type="List">
+              <RGDNode Key="$REF" Type="CString" Value=""/>
+            </RGDNode>
+            <RGDNode Key="decorator_visibility" Type="Int" Value="3"/>
+            <RGDNode Key="show_production_queue" Type="Boolean" Value="false"/>
+            <RGDNode Key="screen_name_short_formatter" Type="List">
+              <RGDNode Key="$REF" Type="CString" Value=""/>
+            </RGDNode>
+            <RGDNode Key="ui_decorator" Type="List">
+              <RGDNode Key="$PBGNAME" Type="CString" Value=""/>
+              <RGDNode Key="$PBGMAP" Type="CString" Value=""/>
+            </RGDNode>
+            <RGDNode Key="reveal_for_decryption" Type="Boolean" Value="true"/>
+            <RGDNode Key="selection_datatemplate" Type="CString" Value="MilitaryUnitSelectionDataTemplate"/>
+            <RGDNode Key="selection_group" Type="CString" Value="warship"/>
+            <RGDNode Key="use_random_entity_speaker" Type="Boolean" Value="false"/>
+            <RGDNode Key="respawn_progress" Type="CString" Value=""/>
+            <RGDNode Key="hide_ucs" Type="Boolean" Value="false"/>
+            <RGDNode Key="ui_codex_info" Type="List">
+              <RGDNode Key="ui_position" Type="List">
+                <RGDNode Key="ui_position_column" Type="Int" Value="-1"/>
+                <RGDNode Key="ui_position_row" Type="Int" Value="-1"/>
+              </RGDNode>
+              <RGDNode Key="exclusive" Type="Boolean" Value="false"/>
+              <RGDNode Key="priority" Type="Int" Value="0"/>
+            </RGDNode>
+            <RGDNode Key="show_production" Type="Boolean" Value="true"/>
+            <RGDNode Key="portrait_name" Type="CString" Value=""/>
+            <RGDNode Key="respawn_unit_class" Type="CString" Value=""/>
+            <RGDNode Key="brief_text_formatter" Type="List">
+              <RGDNode Key="$REF" Type="CString" Value=""/>
+            </RGDNode>
+            <RGDNode Key="extra_text" Type="Int" Value="11171934"/>
+            <RGDNode Key="sound" Type="CString" Value="sfx_ui_produce_unit_click"/>
+            <RGDNode Key="symbol_icon_name" Type="CString" Value=""/>
+            <RGDNode Key="minimap_texture" Type="CString" Value=""/>
+            <RGDNode Key="icon_name" Type="CString" Value="races\common\units\warship"/>
+            <RGDNode Key="minimap_team_only" Type="Boolean" Value="false"/>
+            <RGDNode Key="map_layer" Type="Int" Value="-1"/>
+            <RGDNode Key="is_unique_to_race" Type="Boolean" Value="false"/>
+            <RGDNode Key="ui_combine_type" Type="CString" Value="intersection"/>
+            <RGDNode Key="help_text" Type="Int" Value="11171903"/>
+            <RGDNode Key="extra_icon" Type="CString" Value=""/>
+            <RGDNode Key="hotkey_name" Type="CString" Value="E"/>
+            <RGDNode Key="minimap_texture_zoom_scale" Type="Float" Value="0"/>
+            <RGDNode Key="show_in_build_log" Type="Boolean" Value="true"/>
+            <RGDNode Key="is_unique_to_race_icon_override" Type="CString" Value=""/>
+            <RGDNode Key="sound_alternative" Type="CString" Value=""/>
+            <RGDNode Key="tooltip_data_template" Type="CString" Value="BuildingMilitaryDataTemplate"/>
+            <RGDNode Key="respawn_time" Type="CString" Value=""/>
+            <RGDNode Key="help_text_formatter" Type="List">
+              <RGDNode Key="$REF" Type="CString" Value=""/>
+            </RGDNode>
+            <RGDNode Key="is_respawnable" Type="Boolean" Value="false"/>
+            <RGDNode Key="map_rotation_type_override" Type="CString" Value="no_override"/>
+            <RGDNode Key="extra_text_formatter" Type="List">
+              <RGDNode Key="$REF" Type="CString" Value=""/>
+            </RGDNode>
+            <RGDNode Key="stats_info" Type="List">
+              <RGDNode Key="include_in_lifespan_stat" Type="Boolean" Value="true"/>
+            </RGDNode>
+            <RGDNode Key="decorator_data_template" Type="CString" Value=""/>
+            <RGDNode Key="is_unique" Type="Boolean" Value="false"/>
+            <RGDNode Key="flag_icon_override" Type="CString" Value=""/>
+            <RGDNode Key="respawn_location" Type="CString" Value=""/>
+            <RGDNode Key="screen_name" Type="Int" Value="11171902"/>
+            <RGDNode Key="decorator_show_reload_progress" Type="Boolean" Value="true"/>
+            <RGDNode Key="global_unit_control_row" Type="Int" Value="1"/>
+            <RGDNode Key="respawn_datatemplate" Type="CString" Value=""/>
+            <RGDNode Key="modal_ability" Type="List">
+              <RGDNode Key="$PBGNAME" Type="CString" Value=""/>
+              <RGDNode Key="$PBGMAP" Type="CString" Value=""/>
+            </RGDNode>
+            <RGDNode Key="allow_spawner_production" Type="Boolean" Value="false"/>
+            <RGDNode Key="decorator" Type="CString" Value="CardinalSquad"/>
+            <RGDNode Key="map_mark" Type="CString" Value=""/>
+            <RGDNode Key="ui_priority" Type="Int" Value="0"/>
+            <RGDNode Key="cover_level_icon_postfix" Type="CString" Value=""/>
+          </RGDNode>
+          <RGDNode Key="ext_key" Type="List">
+            <RGDNode Key="$PBGNAME" Type="CString" Value=""/>
+            <RGDNode Key="$PBGMAP" Type="CString" Value=""/>
+          </RGDNode>
+        </RGDNode>
+      </RGDNode>
+    </RGDNode>
+    <RGDNode Key="squad_population_ext" Type="List">
+      <RGDNode Key="upkeep_per_pop_per_minute_override" Type="List">
+        <RGDNode Key="food" Type="Float" Value="0"/>
+        <RGDNode Key="action" Type="Float" Value="0"/>
+        <RGDNode Key="gold" Type="Float" Value="0"/>
+        <RGDNode Key="militia_hre" Type="Float" Value="0"/>
+        <RGDNode Key="popcap" Type="Float" Value="0"/>
+        <RGDNode Key="stone" Type="Float" Value="0"/>
+        <RGDNode Key="merc_byz" Type="Float" Value="0"/>
+        <RGDNode Key="command" Type="Float" Value="0"/>
+        <RGDNode Key="wood" Type="Float" Value="0"/>
+      </RGDNode>
+      <RGDNode Key="$REF" Type="CString" Value="sbpextensions\squad_population_ext"/>
+      <RGDNode Key="personnel_pop" Type="Float" Value="0"/>
+    </RGDNode>
+  </RGDNode>
+</Root>

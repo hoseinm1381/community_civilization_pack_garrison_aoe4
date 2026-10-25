@@ -1,0 +1,52 @@
+{
+  "schema": "voice-preparation.validation/v1",
+  "status": "failed",
+  "content_status": "passed",
+  "source_preservation_status": "drift_observed",
+  "checks": [
+    "Required deliverable files",
+    "Stable IDs, actor/age/context coverage, six unique phrases and three distinct take directions",
+    "Pronunciation, source references, creative status and disclosed text reuse",
+    "JSON/readable companion complete parity and recording accounting",
+    "Every inventoried squad/producer/naval row maps to profiles or explicit exclusions/unresolved status",
+    "All decoded stock context strings retained; raw SPD hashes match structural decoder receipts",
+    "Preservation baseline SHA-256 comparison for 643 protected files; excludes art and external/output caches as recorded",
+    "Zero audio files; stock SPD metadata is not audio media"
+  ],
+  "errors": [
+    "protected editable source changed: ['tools/release_052/stealth_native_trace.py', 'tools/release_060/inventory.py', 'tools/release_060/pilot_author_blender.py']"
+  ],
+  "counts": {
+    "voice_profiles": 18,
+    "age_banks": 4,
+    "dialogue_rows": 7344,
+    "effort_rows": 4752,
+    "total_rows": 12096,
+    "dialogue_directed_takes": 22032,
+    "effort_directed_takes": 14256,
+    "total_directed_takes": 36288,
+    "distinct_dialogue_texts": 832,
+    "distinct_effort_directions": 66,
+    "recorded_audio_files": 0,
+    "includes_conditional_and_dormant_banks": true,
+    "playable_required_recording_total": "not_established_until_consumer_age_and_context_routing_is_qualified"
+  },
+  "protected_files_checked": 643,
+  "protected_changes": [
+    "tools/release_052/stealth_native_trace.py",
+    "tools/release_060/inventory.py",
+    "tools/release_060/pilot_author_blender.py"
+  ],
+  "native_profiles": 7,
+  "native_contexts": 743,
+  "consumer_mapping_rows": 139,
+  "gates_not_run": [
+    "native Vietnamese editorial review",
+    "historical linguistic approval",
+    "recording/auditions",
+    "encoding/cook/build",
+    "package/import/lobby",
+    "audible native match",
+    "multiplayer"
+  ]
+}

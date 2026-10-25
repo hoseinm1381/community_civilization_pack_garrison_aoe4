@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1161111606" List.ParentItemID="1161111606">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\weapon_ext" List.ItemID="-137176455" List.ParentItemID="-137176455">
+			<instance_reference name="weapon" value="weapon\vietnam\vn_weapon_new_handcannonslit_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741974" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\weapons\wpn_ebps_template_ai" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="2008830431" List.ParentItemID="2008830431">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\weapon_ext" List.ItemID="1420822876" List.ParentItemID="1420822876">
+				<instance_reference name="weapon" value="weapon\vietnam\vn_weapon_new_handcannonslit_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="1073741974" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\weapons\wpn_ebps_template_ai" />
+	</variant>
+</instance>

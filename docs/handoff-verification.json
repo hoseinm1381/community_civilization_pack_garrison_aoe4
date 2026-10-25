@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "version": "0.8.4",
+  "store_all_files_verified": true,
+  "store_files": 151548,
+  "unique_chunks": 103896,
+  "packs": 397,
+  "index_sha256": "70d57496fbdd34e4a2a657cfbd712bcf58312174a0e1489dd4feeb909a2051da",
+  "stored_payload_bytes": 12397229653,
+  "largest_pack_bytes": 41690507,
+  "portable_exact_084_rebuild": true,
+  "portable_rebuild": {
+    "passed": true,
+    "sga_sha256": "6e6a96a78fc71867b833db1f8bb5c1175a65ae798cb806755aa2710702a4fc76",
+    "members": 11973,
+    "namespace": "b7fcea91257b408fb9e8ae4d8bc402e1",
+    "native_compile": false,
+    "native_game_test": false
+  },
+  "isolated_restore": {
+    "passed": true,
+    "restored_keys": [
+      "source/art/authoring/release_081/buffalo/r4/model.blend",
+      "source/art/exports/release_083/skirmisher4/r9/albedo.png",
+      "external/resources_082_animation/manifest.json"
+    ],
+    "all_restored_hashes_exact": true,
+    "edited_destination_refused": true,
+    "original_workspace_modified": false
+  },
+  "archived_text_scan": {
+    "passed": true,
+    "containers": 183,
+    "text_members": 6010,
+    "scope": "Recognized text and gzip payloads in ZIP/GZIP inputs; credential-like patterns and encoded Basic credentials"
+  },
+  "contributor_tests": 15,
+  "existing_voice_tests_in_original_workspace": 112,
+  "native_compile_performed_for_handoff": false,
+  "native_game_tested": false,
+  "github_pushed": false,
+  "normal_edition_modified": false,
+  "cleanup_completed": true,
+  "external_cleanup": {
+    "passed": true,
+    "removed_files": 55517,
+    "reclaimed_logical_bytes": 9063240119,
+    "reclaimed_allocated_file_bytes": 22532325376,
+    "links_verified": 7,
+    "retained_archive_hashes_exact": true
+  },
+  "native_windows_junction_configuration": {
+    "passed": true,
+    "ntfs_source_exfat_external_junctions": 7,
+    "no_original_links_changed": true,
+    "no_editor_started": true
+  },
+  "post_cleanup_runtime": {
+    "passed": true,
+    "torch": "2.8.0+cu128",
+    "torchaudio": "2.8.0+cu128",
+    "transformers": "4.57.6",
+    "vieneu": "3.8.3",
+    "cuda_available": true,
+    "no_models_downloaded": true
+  },
+  "post_cleanup_preservation": {
+    "passed": true,
+    "unchanged_files": 7846,
+    "approved_authoring_changes": [
+      {
+        "path": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_081\\buffalo\\r4\\model.blend",
+        "baseline_sha256": "350dee317323391c5a8779331b9e335b0a3a70add6e7516cc68d7a2955604b3c",
+        "current_sha256": "cac324e7780a3623ebbcf2844dd2deac0697433380e71b2b0645566c608d8ca4",
+        "action": "Preserve this editable file; package exact 0.8.3 compiled buffalo"
+      }
+    ],
+    "errors": [],
+    "baseline_freeze_rewritten": false,
+    "active_assets_changed": false
+  },
+  "post_cleanup_release": {
+    "passed": true,
+    "zip_bytes": 284922388,
+    "zip_sha256": "90212cc88f85e238133b59ab744e933624d9caac1288c7f5f88ab8757b4e1061",
+    "sga_sha256": "6e6a96a78fc71867b833db1f8bb5c1175a65ae798cb806755aa2710702a4fc76",
+    "crc_verified": true,
+    "exact_members": true
+  },
+  "generated_verification_cache_retired": {
+    "passed": true,
+    "files": 22661,
+    "logical_bytes": 1797301223,
+    "allocated_file_bytes": 7412645888,
+    "diagnostic_logs_preserved": true,
+    "original_release_untouched": true
+  }
+}

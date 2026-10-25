@@ -1,0 +1,13 @@
+{
+  "author": "tools/release_0710/buffalo_author.py",
+  "ministry": "tools/release_0710/buffalo_ministry.py",
+  "runner": "tools/release_0710/buffalo_runner.py",
+  "native_cook_label": "fur1",
+  "ministry_cook": "tools/release_0710/buffalo_cook_ministry.py ministry --label fur1 --revision r1",
+  "assembly": "tools/release_0710/buffalo_assemble_ministry.py ministry --label fur1",
+  "required_python_for_garrison_modules": "E:\\Blender5.2\\5.2\\python\\bin\\python.exe",
+  "retained_baselines": [
+    "art/authoring/release_079/buffalo/r3",
+    "art/authoring/release_079/ministry/r1"
+  ]
+}

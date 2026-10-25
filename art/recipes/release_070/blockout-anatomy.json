@@ -1,0 +1,52 @@
+{
+  "schema": "ccp-release-070-blockout-anatomy/v1",
+  "status": "proposal-for-four-blockout-review",
+  "coordinates": "Local design units. +Y rear, -Y front entry, Z=0 grade. Each asset fits a 24 by 24 horizontal envelope before runner offsets.",
+  "recipe": "tools/release_070/art/blockout_recipe.py",
+  "source_evidence": "tools/release_070/inventory/architecture_and_historical_findings.md",
+  "runner_contract": {
+    "collection": "Creates one named collection and sets local offset; runner must clear only its owned collection on rerun.",
+    "box": "Location is mesh center; size is total width, depth, height.",
+    "hip_roof": "Four curved-profile hips, real thickness and deliberate eave upturn. center_xy is horizontal center; eave_z is roof lower edge.",
+    "hall": "Named root/body and hip roof at xy, with body base at plinth_z; body_h and roof_h are vertical heights.",
+    "basin": "Produces an actual recessed pond cut, not a flat dark overlay.",
+    "post": "Post base seats at loc Z and extends upward by height.",
+    "stock_university": "Runner imports exact chi_university_control_age04 mesh separately, retains it in the blockout and checks its actual origin before additions are judged."
+  },
+  "assets": {
+    "garden": {
+      "collection": "CCP070_Imperial_Garden_Blockout",
+      "anatomy": ["enclosing garden walls with southern entry", "elongated cut lotus pond", "narrow bridge physically connecting pond edge and pavilion", "raised ceremonial waterside pavilion", "rear open elephant service yard", "modest stable and wide east exit"],
+      "major_proportions": {"pond_width_depth": [10.0, 6.0], "pavilion_width_depth": [7.0, 4.2], "yard_exit_opening_approx": 5.5},
+      "anchors": {"pond_north_edge_y": 0.2, "pavilion_south_edge_y": 2.7, "bridge_north_edge_y": 2.7, "south_entry_center_x": -3.0, "yard_east_exit_y": [4.0, 10.0]},
+      "historical_limit": "Lotus gardens have historical and archaeological support; exact elephant service-yard form is interpretive. No static animals in this blockout."
+    },
+    "foundry": {
+      "collection": "CCP070_Trung_Foundaries_Blockout",
+      "anatomy": ["high western forge hall", "smaller north-east store hall", "open central casting court", "low open weighing shed", "two hearth/furnace masses", "two short masonry chimneys", "casting bed and mould store"],
+      "major_proportions": {"forge_hall_width_depth": [10.0, 5.7], "store_hall_width_depth": [5.0, 6.0], "court_width_depth": [16.2, 14.2], "chimney_total_height_approx": 4.15},
+      "anchors": {"forge_front_y": 2.25, "court_center_xy": [1.7, -2.5], "south_approach_y": -9.6},
+      "historical_limit": "Cannon evidence supports a period royal foundry concept, not a documented excavated foundry plan. Chimneys should read as short masonry vents rather than modern industrial stacks."
+    },
+    "wonder": {
+      "collection": "CCP070_Kinh_Thien_Wonder_Blockout",
+      "anatomy": ["raised rectangular podium", "three ten-step frontal stair aisles", "axial south gate", "dominant central audience hall", "second tier with four-hip roof", "two lower flanking galleries"],
+      "major_proportions": {"documented_podium_meters": [57.0, 41.5, 2.3], "design_podium_width_depth_height": [21.0, 15.3, 1.2], "design_podium_width_depth_ratio": 1.3725, "documented_width_depth_ratio": 1.3735},
+      "anchors": {"podium_front_y": -7.65, "podium_top_z": 1.2, "top_stair_north_edge_y": -7.65, "main_hall_center_xy": [0.0, 2.2]},
+      "historical_limit": "The surviving podium and three-aisle stairs are evidenced; lost timber palace and two-tier roof silhouette are interpretive. Dragon sculpture is deferred until reviewed detail work."
+    },
+    "university_additions": {
+      "collection": "CCP070_University_Additions_Blockout",
+      "anatomy": ["retained exact stock tier4 Chinese University body", "small south forecourt", "scholarly gateway", "four restrained stele masses"],
+      "stock_selector": "tier4_tech_university_control_chi",
+      "stock_model": "art/civilizations/chinese/structures/university/chi_university_control_age04/chi_university_control_age04.rgm",
+      "decoded_stock_body_extents_approx": [14.09, 12.41, 8.38],
+      "stock_triangles": 42829,
+      "major_proportions": {"forecourt_width_depth": [15.8, 3.7], "gateway_width_depth": [5.7, 2.0]},
+      "anchors": {"assumed_stock_center_xy": [0.0, 0.0], "assumed_stock_front_y": -6.205, "forecourt_north_edge_y": -6.35, "gate_center_y": -10.15},
+      "historical_limit": "Courtyard and stelae refer to Văn Miếu-Quốc Tử Giám. The Khuê Văn pavilion is excluded because its 1805 date is outside the requested period. The 20-35 percent modification target is a visual review criterion, not measured geometry."
+    }
+  },
+  "inspection": ["Review each compound separately in solid shading, front and three-quarter views, then six orthographic sides.", "Check bridge-to-pavilion and stair-to-podium contacts numerically.", "Check no part crosses the 24 by 24 local envelope and inspect the real pond cut.", "Confirm the exact imported University mesh remains recognizable and additions do not obscure its entry.", "Obtain user approval of all four blockouts before detailed production art, export, cook or integration."],
+  "deferred": ["dragon sculptures", "individual roof tiles", "ornamental carvings", "animal models", "final doors/windows", "materials/textures beyond simple blockout keys"]
+}

@@ -1,0 +1,68 @@
+{
+  "version": "0.3.0",
+  "assets": [
+    {
+      "name": "stake_thicket",
+      "actor": "vn_building_bambo_outpost_chi",
+      "native_scale": 0.75,
+      "world_width": 4.800000000000001,
+      "world_height": 0.12151504307985306,
+      "triangles": 1474,
+      "source_export_sha256": {
+        "art/authoring/traps_030/stake_thicket/albedo.png": "33af9ca4df687e2b4ec7f5e1003e929ca68d1e404382afa215da1463902df76b",
+        "art/authoring/traps_030/stake_thicket/metalness.png": "1a5e57350822bcd0cdb03f4dc88a26b4a281ba170756106cf0e2df2b298a2cd2",
+        "art/authoring/traps_030/stake_thicket/normal.png": "babc79205c6a5832b47a05ec80eb5b9c3f3dd6d30a27f483a7ce2883befb1cd5",
+        "art/authoring/traps_030/stake_thicket/roughness.png": "75fc7f66870a20ba494921dadcd1a25fd2bfc13a8c5d262927cf50785c1307c7",
+        "art/authoring/traps_030/stake_thicket/stake_thicket.blend": "699ee453b027f48a20291d4c1a6aa87d0d422cab658cba2e82bc2da08e402257",
+        "art/exports/traps_030/stake_thicket/albedo.png": "33af9ca4df687e2b4ec7f5e1003e929ca68d1e404382afa215da1463902df76b",
+        "art/exports/traps_030/stake_thicket/building.json": "582be4dcf86d4c539dff116717daf2cb37c0a539178c37fa7b91be74b5f2bb57",
+        "art/exports/traps_030/stake_thicket/metalness.png": "1a5e57350822bcd0cdb03f4dc88a26b4a281ba170756106cf0e2df2b298a2cd2",
+        "art/exports/traps_030/stake_thicket/model.fbx": "13fdb9445f91260ffb9071cf2d46603f8e880d94b686845a882ec47d6c275d84",
+        "art/exports/traps_030/stake_thicket/normal.png": "babc79205c6a5832b47a05ec80eb5b9c3f3dd6d30a27f483a7ce2883befb1cd5",
+        "art/exports/traps_030/stake_thicket/roughness.png": "75fc7f66870a20ba494921dadcd1a25fd2bfc13a8c5d262927cf50785c1307c7"
+      },
+      "validation": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_030\\traps\\stake_thicket\\validation.json",
+      "construction_stages": [
+        0,
+        20
+      ],
+      "design": "shallow mottled earth, woven bamboo and leaf cover; small interrupted openings; no black surrounding or broad black cavity"
+    },
+    {
+      "name": "stake_fan",
+      "actor": "vn_building_defense_outpost_bambo_chi",
+      "native_scale": 0.25,
+      "world_width": 5.2,
+      "world_height": 0.13102306425571442,
+      "triangles": 1474,
+      "source_export_sha256": {
+        "art/authoring/traps_030/stake_fan/albedo.png": "33af9ca4df687e2b4ec7f5e1003e929ca68d1e404382afa215da1463902df76b",
+        "art/authoring/traps_030/stake_fan/metalness.png": "1a5e57350822bcd0cdb03f4dc88a26b4a281ba170756106cf0e2df2b298a2cd2",
+        "art/authoring/traps_030/stake_fan/normal.png": "babc79205c6a5832b47a05ec80eb5b9c3f3dd6d30a27f483a7ce2883befb1cd5",
+        "art/authoring/traps_030/stake_fan/roughness.png": "75fc7f66870a20ba494921dadcd1a25fd2bfc13a8c5d262927cf50785c1307c7",
+        "art/authoring/traps_030/stake_fan/stake_fan.blend": "e742ca0ab946c0462a014962dc4608c326d837f63504617de6a1467f0e63b06e",
+        "art/exports/traps_030/stake_fan/albedo.png": "33af9ca4df687e2b4ec7f5e1003e929ca68d1e404382afa215da1463902df76b",
+        "art/exports/traps_030/stake_fan/building.json": "582be4dcf86d4c539dff116717daf2cb37c0a539178c37fa7b91be74b5f2bb57",
+        "art/exports/traps_030/stake_fan/metalness.png": "1a5e57350822bcd0cdb03f4dc88a26b4a281ba170756106cf0e2df2b298a2cd2",
+        "art/exports/traps_030/stake_fan/model.fbx": "3a9dc1c2c86bea1c8437ddcbb5aee335decd785bf35975752b2904c2664899ef",
+        "art/exports/traps_030/stake_fan/normal.png": "babc79205c6a5832b47a05ec80eb5b9c3f3dd6d30a27f483a7ce2883befb1cd5",
+        "art/exports/traps_030/stake_fan/roughness.png": "75fc7f66870a20ba494921dadcd1a25fd2bfc13a8c5d262927cf50785c1307c7"
+      },
+      "validation": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_030\\traps\\stake_fan\\validation.json",
+      "construction_stages": [
+        0,
+        20
+      ],
+      "design": "shallow mottled earth, woven bamboo and leaf cover; small interrupted openings; no black surrounding or broad black cavity"
+    }
+  ],
+  "limits": [
+    "Static authoring/export checks; native appearance needs user match review",
+    "Opaque earth/leaf cover, no terrain sampling or invisibility mechanic"
+  ],
+  "recipe_sha256": {
+    "tools/release_030/trap_art_runner.py": "c4f64f61239e356fb0743fd43a52d2baf6be6b766046e0e5a5a9f3efcc9db3cc",
+    "tools/release_030/trap_build.py": "d3bc91bdb33180d72bc06847ce1632336111916ef9f151acb3f91e40f396f3d8",
+    "tools/release_030/trap_freeze.py": "ae5e90da6ac5db4a191a8692b731323af27eca5954f7860ef5607c38c1717291"
+  }
+}

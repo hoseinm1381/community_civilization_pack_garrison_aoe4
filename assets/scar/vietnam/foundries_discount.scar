@@ -1,0 +1,84 @@
+import("modifiers.scar")
+
+VietnamFoundriesState = {players = {}}
+local prefix = "b7fcea91257b408fb9e8ae4d8bc402e1:"
+local unitModifiers = {
+    "resource_entity_cost_food", "resource_entity_cost_wood",
+    "resource_entity_cost_gold", "resource_entity_cost_stone",
+}
+local researchModifiers = {
+    "upgrade_cost_food_modifier", "upgrade_cost_wood_modifier",
+    "upgrade_cost_gold_modifier", "upgrade_cost_stone_modifier",
+}
+
+local function operational(entity)
+    return Entity_IsValid(Entity_GetID(entity)) and Entity_IsAlive(entity)
+        and Entity_GetHealth(entity) > 0 and not Entity_IsUnderConstruction(entity)
+        and Entity_GetBuildingProgress(entity) >= 1
+end
+
+local function removeDiscount(state)
+    for _, handle in ipairs(state.handles) do Modifier_Remove(handle) end
+    state.handles = {}
+end
+
+local function addDiscount(state, player)
+    -- Trainable squads (including Phổ Minh aliases) load these base actors.
+    -- Serpentine conversion happens afterward; do not also discount its child.
+    local units = {
+        BP_GetEntityBlueprint(prefix .. "vn_unit_handcannon_4_chi"),
+        BP_GetEntityBlueprint("ebps\\races\\chinese\\units\\unit_culverin_4_chi"),
+    }
+    local upgrades = {
+        BP_GetUpgradeBlueprint(prefix .. "vn_upgrade_siege_chemistry_vit"),
+        BP_GetUpgradeBlueprint(prefix .. "vn_upgrade_serpentine_powder_vit"),
+    }
+    for _, blueprint in ipairs(units) do
+        for _, name in ipairs(unitModifiers) do
+            local modifier = Modifier_Create(MAT_EntityType, name, MUT_Multiplication, false, 0.8, blueprint)
+            table.insert(state.handles, Modifier_ApplyToPlayer(modifier, player.id, 0))
+        end
+    end
+    for _, blueprint in ipairs(upgrades) do
+        for _, name in ipairs(researchModifiers) do
+            local modifier = Modifier_Create(MAT_Upgrade, name, MUT_Multiplication, false, 0.8, blueprint)
+            table.insert(state.handles, Modifier_ApplyToPlayer(modifier, player.id, 0))
+        end
+    end
+end
+
+function VietnamFoundries_Update(player, entities)
+    local state = VietnamFoundriesState.players[player.index]
+    if state == nil then
+        state = {active = false, recovering = false, handles = {}}
+        VietnamFoundriesState.players[player.index] = state
+    end
+    local active = false
+    if Player_IsAlive(player.id) then
+        for i = 1, EGroup_CountSpawned(entities) do
+            local entity = EGroup_GetSpawnedEntityAt(entities, i)
+            if operational(entity)
+                and VietnamBlueprints_Matches(entity, "vn_building_landmark_age3_trung_foundaries_vit")
+                and (not state.recovering or Entity_GetHealth(entity) >= Entity_GetHealthMax(entity)) then
+                active = true
+                break
+            end
+        end
+    end
+    if state.active and not active then
+        removeDiscount(state)
+        state.recovering = true
+    elseif active and not state.active then
+        addDiscount(state, player)
+        state.recovering = false
+    end
+    if state.active ~= active then
+        print("VIETNAM_V2_FOUNDRIES player=" .. tostring(player.index) .. " discount=" .. tostring(active))
+    end
+    state.active = active
+end
+
+function VietnamFoundries_Cleanup()
+    for _, state in pairs(VietnamFoundriesState.players) do removeDiscount(state) end
+    VietnamFoundriesState.players = {}
+end

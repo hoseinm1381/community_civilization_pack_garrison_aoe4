@@ -1,0 +1,54 @@
+{
+  "schema": "community.release010.tool-provenance/v1",
+  "release_version": "0.1.0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "files": {
+    "tools/release_010/cleanup_release.py": "61fa8e83790f00506ba10004031c122dc9994eaf1cdd22cbc06d3774077be365",
+    "tools/release_010/common.py": "a1d1c0606dbd9cbef8b833b18a84cde60b6edef2c0c68f015711f4b618c85f2c",
+    "tools/release_010/freeze_baseline.py": "e7559a67220807efce76083787d94ada74fd7b856c9a11899bf7e3d77fe6de73",
+    "tools/release_010/house_bounds.py": "5113d3ed14ebd341892d26d57b14a37c9d3bfe988a1a198be5c8cf353ae1abad",
+    "tools/release_010/house_geometry.py": "fc670b2de328c12fd65ac0549cc1e3f920c6a0c46ee8f7899b3fe065d83f9131",
+    "tools/release_010/house_inspect.py": "e9cdecff87220e938ea5a2a5292edda8a85db66003078f6023f7d9b1e5445f9a",
+    "tools/release_010/house_inspect4.py": "a6e7555ed585df6b04ea42b5f20c615100260303660d3e64da0ac437042f1366",
+    "tools/release_010/house_manifest.py": "6112b90d6eb6b27f6e50ccc29536a6cefb6c533f7f375dced0ae4e6ec56d57ef",
+    "tools/release_010/house_materials.py": "81d591ed9ded6a2b61cd9241c78b6e16a5d9243dec4229f92fbd4314f1e6d5c1",
+    "tools/release_010/house_previews.py": "fc2e64e14828e7dfe1d0af2bbadc719123f1cae4ca292cafcf60c0749dbd3652",
+    "tools/release_010/integration.py": "b54808ee5628d3bfbd494ce2716dba49b896cd23af40da0166d2d63dcb82f856",
+    "tools/release_010/integration_closure.py": "1083e751fe25af15f2a22d1ae5a34723c054ce1bee14d1c4951215c4aefbed64",
+    "tools/release_010/integration_codec.py": "9226119aa001c2c5fba75e4d8a74316cc3303d58d9721da45dc5a09d72ad5b52",
+    "tools/release_010/integration_native.py": "3bd0129ea27df7b79f7a587cdf309712cd0884c8eb6dd7bb8da841f49a5b303f",
+    "tools/release_010/package_release.py": "1672d39fdf1f3817f37f8fccf585d1f44d5772db81c889ad0a43c62b5ff1ea11",
+    "tools/release_010/release_checks.py": "d4e947c1f6bf7f00db58f1859ef9c322249cb9bbca4b0b3fb0aeae4f52c31b8a",
+    "tools/release_010/report_release.py": "93c9869fc2e2c9d3a791751d250e1a1be4e8f885476a0e90997f33e2ab79f82e",
+    "tools/release_010/source_policy.py": "95f48347dd25b56f4879c92eb0290e38d6708d6bd9d0ca52ac2452c8befa2293",
+    "tools/release_010/trap_art_runner.py": "50118231bcf329c582f753115f518ac7083191facb050c8c0b283eae1ebc1053",
+    "tools/release_010/trap_build.py": "b2b75822974a66688e815ef2fa53c11990232463c9fd3d4c169ba84912492500",
+    "tools/release_010/trap_freeze.py": "c78aac2a95d7034513dd41b9aca6b9f744882a8b79f82b5b4873a6a5613b2b02",
+    "tools/release_010/trap_garrison_probe.py": "400ed5ea47c7f4dc6aed2dc999c51d70e4273aa2d5d70dcdf4a434a08461a852",
+    "tools/release_010/trap_stage_fix.py": "c4b5609fe6e838b9e3f9d90edf5e4f8a120ae55c2728a90a91c5737e180552c1",
+    "tools/release_010/verify_archive.py": "950486e8fa8a8cd54eafc673fc69ebdef6c027206e40caaaf37d625167c083dc",
+    "tools/build_release.ps1": "6ba7a4ddadf6b87d53d2cbc31a989e4a5a1050ee9137c09a3eaad7859bca1458",
+    "tests/test_release_010.py": "2ad36951e3468f3005d5b5a6dda50af41729bf906b7d2fb675a91a0d26521252",
+    "tests/test_workspace.py": "a29bcbb58f67fbcf6197c32d5d4d0bfb60413dfc6a91c8cc1ba84cd37b6a47fd",
+    "workspace.json": "29c9c14aaa66dbf6430e58a2aea17557f7a8c9289750de45091a91afb8519807",
+    "art/GARRISON_PROJECTS.json": "14639a1cb32065d5c324ee32f631a99504f34c99ee676630127541a89f15fdf1"
+  },
+  "native_tools": {
+    "garrison_core": {
+      "path": "C:\\Users\\RS\\AppData\\Roaming\\Blender Foundation\\Blender\\5.2\\extensions\\raw_githubusercontent_com\\garrison\\bin\\core\\garrison-core.exe",
+      "sha256": "15120772b5bd1232ed437736135322b7814f82a07b0843c3e00b8b9defe01b7a"
+    },
+    "archive_tool": {
+      "path": "C:\\Users\\RS\\AppData\\Roaming\\Blender Foundation\\Blender\\5.2\\extensions\\raw_githubusercontent_com\\garrison\\bin\\sga-archiver.exe",
+      "sha256": "c31ff4db115b7f3c10976b62ad9f742f318e40d3a403fcc20ba3ce3519b658b9"
+    },
+    "content_editor": {
+      "path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\EssenceEditor.exe",
+      "sha256": "2ff1278eed5b1a6e163e6d78e04ad768dc38e4c198f6354069c99bed9e8f84e8"
+    },
+    "art_editor": {
+      "path": "C:\\Users\\RS\\AppData\\Local\\Garrison\\Kit\\tools\\essence-object-editor\\EssenceEditor.exe",
+      "sha256": "2ff1278eed5b1a6e163e6d78e04ad768dc38e4c198f6354069c99bed9e8f84e8"
+    }
+  }
+}

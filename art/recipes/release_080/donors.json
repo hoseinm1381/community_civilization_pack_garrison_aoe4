@@ -1,0 +1,3013 @@
+{
+  "schema": "ccp.release080.donors/v1",
+  "status": "decoded_source_inventory",
+  "index": "C:\\Users\\RS\\AppData\\Local\\Garrison\\Kit\\game-assets.sqlite3",
+  "index_sha256": "bc5a8fcee4f2eff513e92dca74cf4a49fd20e2a294601e4c4a745d5efe8cb223",
+  "config": "C:\\Users\\RS\\AppData\\Local\\Garrison\\Kit\\game-assets.local.json",
+  "config_sha256": "be4b4eb1af08644d6b62299f9a9566365775e3032c17cfd8813844ea0c9a29e5",
+  "models": [
+    {
+      "key": "dock_age02",
+      "family": "dock",
+      "age": 2,
+      "kind": "building",
+      "logical_path": "art/civilizations/chinese/structures/dock/chi_dock_control_age02/chi_dock_control_age02.rgm",
+      "animation_owner": null,
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\dock_age02\\38463fc8d89d6c59add5\\decoded-static.json",
+      "manifest_sha256": "e43ef8cbae4c0befff2a64256665afdbb06c3e64c02114046c85ac01a1de15be",
+      "geometry": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\dock_age02\\38463fc8d89d6c59add5\\source\\art\\civilizations\\chinese\\structures\\dock\\chi_dock_control_age02\\chi_dock_control_age02.rrgeom",
+      "geometry_sha256": "7b5a613facb93da5efd1e851d30927e408a2354ccc0e7bd0e6f52170b4cde8a0",
+      "resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/chinese/structures/dock/chi_dock_control_age02/chi_dock_control_age02.rrgeom",
+          "archive": "DX12GeoChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12GeoChinese.sga",
+          "sha256": "7b5a613facb93da5efd1e851d30927e408a2354ccc0e7bd0e6f52170b4cde8a0",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\dock_age02\\38463fc8d89d6c59add5\\source\\art\\civilizations\\chinese\\structures\\dock\\chi_dock_control_age02\\chi_dock_control_age02.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/chinese/structures/dock/chi_dock_control_age02/chi_dock_control_age02.rrmaterial",
+          "archive": "DX12AssetsChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12AssetsChinese.sga",
+          "sha256": "585de505ce0038a7b3f67eaacf7ca45e0cfb338e0554524152118d4a2693a561",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\dock_age02\\38463fc8d89d6c59add5\\source\\art\\civilizations\\chinese\\structures\\dock\\chi_dock_control_age02\\chi_dock_control_age02.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/chinese/structures/dock/chi_dock_control_age02/chi_dock_control_age02.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "sha256": "dc605d1c83e9f5808f54689ff1ba4ad134f95d0d4e3633937195ff40cc981fb6",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\dock_age02\\38463fc8d89d6c59add5\\source\\art\\civilizations\\chinese\\structures\\dock\\chi_dock_control_age02\\chi_dock_control_age02.rgm"
+        }
+      },
+      "group_count": 5,
+      "triangle_count_all_fragments": 69348,
+      "bounds_all_fragments": {
+        "minimum": [
+          -3.65625,
+          -3.45703125,
+          -1.6025390625
+        ],
+        "maximum": [
+          3.740234375,
+          3.3671875,
+          6.8125
+        ],
+        "dimensions": [
+          7.396484375,
+          6.82421875,
+          8.4150390625
+        ],
+        "vertices": 121930
+      },
+      "groups": [
+        {
+          "name": "mesh_00_group_00",
+          "material": "",
+          "preview_material": "main",
+          "effect": "structure_collection",
+          "vertices": 17875,
+          "triangles": 9614,
+          "bounds": {
+            "minimum": [
+              -3.130859375,
+              -3.111328125,
+              0.79833984375
+            ],
+            "maximum": [
+              3.12890625,
+              2.787109375,
+              5.76171875
+            ],
+            "dimensions": [
+              6.259765625,
+              5.8984375,
+              4.96337890625
+            ],
+            "vertices": 17875
+          }
+        },
+        {
+          "name": "mesh_01_group_00",
+          "material": "",
+          "preview_material": "main",
+          "effect": "structure_collection",
+          "vertices": 29120,
+          "triangles": 15870,
+          "bounds": {
+            "minimum": [
+              -3.123046875,
+              -3.111328125,
+              0.7998046875
+            ],
+            "maximum": [
+              3.12109375,
+              3.044921875,
+              5.76171875
+            ],
+            "dimensions": [
+              6.244140625,
+              6.15625,
+              4.9619140625
+            ],
+            "vertices": 29120
+          }
+        },
+        {
+          "name": "mesh_02_group_00",
+          "material": "",
+          "preview_material": "extra",
+          "effect": "structure_collection",
+          "vertices": 21070,
+          "triangles": 11485,
+          "bounds": {
+            "minimum": [
+              -3.19921875,
+              -3.19921875,
+              -1.6025390625
+            ],
+            "maximum": [
+              3.201171875,
+              3.19921875,
+              5.80859375
+            ],
+            "dimensions": [
+              6.400390625,
+              6.3984375,
+              7.4111328125
+            ],
+            "vertices": 21070
+          }
+        },
+        {
+          "name": "mesh_03_group_00",
+          "material": "",
+          "preview_material": "roof",
+          "effect": "structure_collection",
+          "vertices": 27431,
+          "triangles": 18072,
+          "bounds": {
+            "minimum": [
+              -3.65625,
+              -3.45703125,
+              0.7900390625
+            ],
+            "maximum": [
+              3.740234375,
+              3.3671875,
+              6.8125
+            ],
+            "dimensions": [
+              7.396484375,
+              6.82421875,
+              6.0224609375
+            ],
+            "vertices": 27431
+          }
+        },
+        {
+          "name": "mesh_04_group_00",
+          "material": "",
+          "preview_material": "misc",
+          "effect": "structure_collection",
+          "vertices": 26434,
+          "triangles": 14307,
+          "bounds": {
+            "minimum": [
+              -2.943359375,
+              0.9521484375,
+              4.00390625
+            ],
+            "maximum": [
+              -0.9794921875,
+              2.955078125,
+              5.2578125
+            ],
+            "dimensions": [
+              1.9638671875,
+              2.0029296875,
+              1.25390625
+            ],
+            "vertices": 26434
+          }
+        }
+      ],
+      "skeleton_bones": 0,
+      "palette_bones": [],
+      "has_collection_contract": true
+    },
+    {
+      "key": "dock_age03",
+      "family": "dock",
+      "age": 3,
+      "kind": "building",
+      "logical_path": "art/civilizations/chinese/structures/dock/chi_dock_control_age03/chi_dock_control_age03.rgm",
+      "animation_owner": null,
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\dock_age03\\e34260b5faba7981fd83\\decoded-static.json",
+      "manifest_sha256": "c7133e27628cc5be2d4b7b02aa654fbdd85a9e92621cd9d176626c8d5f77c53a",
+      "geometry": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\dock_age03\\e34260b5faba7981fd83\\source\\art\\civilizations\\chinese\\structures\\dock\\chi_dock_control_age03\\chi_dock_control_age03.rrgeom",
+      "geometry_sha256": "9c66d7c9e21b8bc8668c47d95bcfa6318157a419034fb54c6a899b6fe9704dbb",
+      "resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/chinese/structures/dock/chi_dock_control_age03/chi_dock_control_age03.rrgeom",
+          "archive": "DX12GeoChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12GeoChinese.sga",
+          "sha256": "9c66d7c9e21b8bc8668c47d95bcfa6318157a419034fb54c6a899b6fe9704dbb",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\dock_age03\\e34260b5faba7981fd83\\source\\art\\civilizations\\chinese\\structures\\dock\\chi_dock_control_age03\\chi_dock_control_age03.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/chinese/structures/dock/chi_dock_control_age03/chi_dock_control_age03.rrmaterial",
+          "archive": "DX12AssetsChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12AssetsChinese.sga",
+          "sha256": "7d4eda7da81f9a16ea241beb09342f862e7d2658efcf4a33ca3c79181bda76b5",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\dock_age03\\e34260b5faba7981fd83\\source\\art\\civilizations\\chinese\\structures\\dock\\chi_dock_control_age03\\chi_dock_control_age03.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/chinese/structures/dock/chi_dock_control_age03/chi_dock_control_age03.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "sha256": "2d48c4beee9ae3e3d342e81aec5143dc153d34c6d34fa2dea74c40174b5e8447",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\dock_age03\\e34260b5faba7981fd83\\source\\art\\civilizations\\chinese\\structures\\dock\\chi_dock_control_age03\\chi_dock_control_age03.rgm"
+        }
+      },
+      "group_count": 5,
+      "triangle_count_all_fragments": 68100,
+      "bounds_all_fragments": {
+        "minimum": [
+          -3.65625,
+          -3.45703125,
+          -1.6025390625
+        ],
+        "maximum": [
+          3.740234375,
+          3.3671875,
+          6.8125
+        ],
+        "dimensions": [
+          7.396484375,
+          6.82421875,
+          8.4150390625
+        ],
+        "vertices": 120505
+      },
+      "groups": [
+        {
+          "name": "mesh_00_group_00",
+          "material": "",
+          "preview_material": "extra",
+          "effect": "structure_collection",
+          "vertices": 22719,
+          "triangles": 12141,
+          "bounds": {
+            "minimum": [
+              -3.19921875,
+              -3.19921875,
+              -1.6025390625
+            ],
+            "maximum": [
+              3.201171875,
+              3.19921875,
+              5.80859375
+            ],
+            "dimensions": [
+              6.400390625,
+              6.3984375,
+              7.4111328125
+            ],
+            "vertices": 22719
+          }
+        },
+        {
+          "name": "mesh_01_group_00",
+          "material": "",
+          "preview_material": "roof",
+          "effect": "structure_collection",
+          "vertices": 27901,
+          "triangles": 18210,
+          "bounds": {
+            "minimum": [
+              -3.65625,
+              -3.45703125,
+              0.7900390625
+            ],
+            "maximum": [
+              3.740234375,
+              3.3671875,
+              6.8125
+            ],
+            "dimensions": [
+              7.396484375,
+              6.82421875,
+              6.0224609375
+            ],
+            "vertices": 27901
+          }
+        },
+        {
+          "name": "mesh_02_group_00",
+          "material": "",
+          "preview_material": "main",
+          "effect": "structure_collection",
+          "vertices": 17857,
+          "triangles": 9628,
+          "bounds": {
+            "minimum": [
+              -3.130859375,
+              -3.111328125,
+              0.79833984375
+            ],
+            "maximum": [
+              3.12890625,
+              2.787109375,
+              5.76171875
+            ],
+            "dimensions": [
+              6.259765625,
+              5.8984375,
+              4.96337890625
+            ],
+            "vertices": 17857
+          }
+        },
+        {
+          "name": "mesh_03_group_00",
+          "material": "",
+          "preview_material": "main",
+          "effect": "structure_collection",
+          "vertices": 25964,
+          "triangles": 14081,
+          "bounds": {
+            "minimum": [
+              -3.123046875,
+              -3.111328125,
+              0.7998046875
+            ],
+            "maximum": [
+              3.115234375,
+              3.044921875,
+              5.76171875
+            ],
+            "dimensions": [
+              6.23828125,
+              6.15625,
+              4.9619140625
+            ],
+            "vertices": 25964
+          }
+        },
+        {
+          "name": "mesh_04_group_00",
+          "material": "",
+          "preview_material": "misc",
+          "effect": "structure_collection",
+          "vertices": 26064,
+          "triangles": 14040,
+          "bounds": {
+            "minimum": [
+              -2.943359375,
+              0.9521484375,
+              4.00390625
+            ],
+            "maximum": [
+              -0.9794921875,
+              2.955078125,
+              5.2578125
+            ],
+            "dimensions": [
+              1.9638671875,
+              2.0029296875,
+              1.25390625
+            ],
+            "vertices": 26064
+          }
+        }
+      ],
+      "skeleton_bones": 0,
+      "palette_bones": [],
+      "has_collection_contract": true
+    },
+    {
+      "key": "dock_age04",
+      "family": "dock",
+      "age": 4,
+      "kind": "building",
+      "logical_path": "art/civilizations/chinese/structures/dock/chi_dock_control_age04/chi_dock_control_age04.rgm",
+      "animation_owner": null,
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\dock_age04\\a4e340f05a9f13db28d7\\decoded-static.json",
+      "manifest_sha256": "7d58f70330a533d5e8de9a2e64c7cfb6a25d1a8416ce43a93b0ce3c81eb1cbe7",
+      "geometry": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\dock_age04\\a4e340f05a9f13db28d7\\source\\art\\civilizations\\chinese\\structures\\dock\\chi_dock_control_age04\\chi_dock_control_age04.rrgeom",
+      "geometry_sha256": "31bb338dd3254b4fb03d404c3d203a2fc2693b2195ad658f04836d1dbc032f57",
+      "resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/chinese/structures/dock/chi_dock_control_age04/chi_dock_control_age04.rrgeom",
+          "archive": "DX12GeoChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12GeoChinese.sga",
+          "sha256": "31bb338dd3254b4fb03d404c3d203a2fc2693b2195ad658f04836d1dbc032f57",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\dock_age04\\a4e340f05a9f13db28d7\\source\\art\\civilizations\\chinese\\structures\\dock\\chi_dock_control_age04\\chi_dock_control_age04.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/chinese/structures/dock/chi_dock_control_age04/chi_dock_control_age04.rrmaterial",
+          "archive": "DX12AssetsChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12AssetsChinese.sga",
+          "sha256": "1a3cbcd55c97286cdcdce54ea800802b9a5ffaee5bb86f0fe3284ec4638fab1b",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\dock_age04\\a4e340f05a9f13db28d7\\source\\art\\civilizations\\chinese\\structures\\dock\\chi_dock_control_age04\\chi_dock_control_age04.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/chinese/structures/dock/chi_dock_control_age04/chi_dock_control_age04.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "sha256": "5e104a4c941098d18a16fc6152f05a6d31dab01f357612ca971052f53b2b44d5",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\dock_age04\\a4e340f05a9f13db28d7\\source\\art\\civilizations\\chinese\\structures\\dock\\chi_dock_control_age04\\chi_dock_control_age04.rgm"
+        }
+      },
+      "group_count": 6,
+      "triangle_count_all_fragments": 69355,
+      "bounds_all_fragments": {
+        "minimum": [
+          -3.728515625,
+          -3.453125,
+          -1.6025390625
+        ],
+        "maximum": [
+          3.265625,
+          3.73046875,
+          6.9140625
+        ],
+        "dimensions": [
+          6.994140625,
+          7.18359375,
+          8.5166015625
+        ],
+        "vertices": 122224
+      },
+      "groups": [
+        {
+          "name": "mesh_00_group_00",
+          "material": "",
+          "preview_material": "roof",
+          "effect": "structure_collection",
+          "vertices": 31755,
+          "triangles": 20594,
+          "bounds": {
+            "minimum": [
+              -3.728515625,
+              -3.453125,
+              0.7900390625
+            ],
+            "maximum": [
+              3.265625,
+              3.73046875,
+              6.9140625
+            ],
+            "dimensions": [
+              6.994140625,
+              7.18359375,
+              6.1240234375
+            ],
+            "vertices": 31755
+          }
+        },
+        {
+          "name": "mesh_01_group_00",
+          "material": "",
+          "preview_material": "extra",
+          "effect": "structure_collection",
+          "vertices": 18938,
+          "triangles": 9269,
+          "bounds": {
+            "minimum": [
+              -3.216796875,
+              -3.177734375,
+              -1.6025390625
+            ],
+            "maximum": [
+              3.201171875,
+              3.25390625,
+              6.40625
+            ],
+            "dimensions": [
+              6.41796875,
+              6.431640625,
+              8.0087890625
+            ],
+            "vertices": 18938
+          }
+        },
+        {
+          "name": "mesh_02_group_00",
+          "material": "",
+          "preview_material": "extra",
+          "effect": "structure_collection",
+          "vertices": 16787,
+          "triangles": 9326,
+          "bounds": {
+            "minimum": [
+              -3.123046875,
+              -3.08984375,
+              1.2841796875
+            ],
+            "maximum": [
+              3.12109375,
+              3.029296875,
+              6.0859375
+            ],
+            "dimensions": [
+              6.244140625,
+              6.119140625,
+              4.8017578125
+            ],
+            "vertices": 16787
+          }
+        },
+        {
+          "name": "mesh_03_group_00",
+          "material": "",
+          "preview_material": "main",
+          "effect": "structure_collection",
+          "vertices": 24584,
+          "triangles": 13700,
+          "bounds": {
+            "minimum": [
+              -3.134765625,
+              -3.0625,
+              0.7998046875
+            ],
+            "maximum": [
+              3.029296875,
+              3.158203125,
+              6.359375
+            ],
+            "dimensions": [
+              6.1640625,
+              6.220703125,
+              5.5595703125
+            ],
+            "vertices": 24584
+          }
+        },
+        {
+          "name": "mesh_04_group_00",
+          "material": "",
+          "preview_material": "main",
+          "effect": "structure_collection",
+          "vertices": 9348,
+          "triangles": 5588,
+          "bounds": {
+            "minimum": [
+              -3.021484375,
+              -2.896484375,
+              1.2958984375
+            ],
+            "maximum": [
+              3.029296875,
+              -0.233642578125,
+              5.26953125
+            ],
+            "dimensions": [
+              6.05078125,
+              2.662841796875,
+              3.9736328125
+            ],
+            "vertices": 9348
+          }
+        },
+        {
+          "name": "mesh_05_group_00",
+          "material": "",
+          "preview_material": "misc",
+          "effect": "structure_collection",
+          "vertices": 20812,
+          "triangles": 10878,
+          "bounds": {
+            "minimum": [
+              -2.92578125,
+              0.9208984375,
+              3.966796875
+            ],
+            "maximum": [
+              -0.9248046875,
+              2.94921875,
+              5.21875
+            ],
+            "dimensions": [
+              2.0009765625,
+              2.0283203125,
+              1.251953125
+            ],
+            "vertices": 20812
+          }
+        }
+      ],
+      "skeleton_bones": 154,
+      "palette_bones": [],
+      "has_collection_contract": true
+    },
+    {
+      "key": "barracks_age01",
+      "family": "barracks",
+      "age": 1,
+      "kind": "building",
+      "logical_path": "art/civilizations/chinese/structures/barracks/chi_barracks_control_age01/chi_barracks_control_age01.rgm",
+      "animation_owner": null,
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\barracks_age01\\5a10fd99450532d68690\\decoded-static.json",
+      "manifest_sha256": "8c3a428748bb23e5f79962309590eae08a8d7a0d744965f627e7446297f9619c",
+      "geometry": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\barracks_age01\\5a10fd99450532d68690\\source\\art\\civilizations\\chinese\\structures\\barracks\\chi_barracks_control_age01\\chi_barracks_control_age01.rrgeom",
+      "geometry_sha256": "12cbbf68b580d0adf511a0359f0bb33dbee878cc1093cac69c233dc91b66b904",
+      "resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/chinese/structures/barracks/chi_barracks_control_age01/chi_barracks_control_age01.rrgeom",
+          "archive": "DX12GeoChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12GeoChinese.sga",
+          "sha256": "12cbbf68b580d0adf511a0359f0bb33dbee878cc1093cac69c233dc91b66b904",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\barracks_age01\\5a10fd99450532d68690\\source\\art\\civilizations\\chinese\\structures\\barracks\\chi_barracks_control_age01\\chi_barracks_control_age01.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/chinese/structures/barracks/chi_barracks_control_age01/chi_barracks_control_age01.rrmaterial",
+          "archive": "DX12AssetsChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12AssetsChinese.sga",
+          "sha256": "72b3783159cc1a1c9baa7577a0f8f9221caf6b6686c42a1a10f589b6cea873a1",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\barracks_age01\\5a10fd99450532d68690\\source\\art\\civilizations\\chinese\\structures\\barracks\\chi_barracks_control_age01\\chi_barracks_control_age01.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/chinese/structures/barracks/chi_barracks_control_age01/chi_barracks_control_age01.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "sha256": "9887b13c03ca58c8d73177c3c718e6985f5283caad6451564bbb29c60f5371f0",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\barracks_age01\\5a10fd99450532d68690\\source\\art\\civilizations\\chinese\\structures\\barracks\\chi_barracks_control_age01\\chi_barracks_control_age01.rgm"
+        }
+      },
+      "group_count": 3,
+      "triangle_count_all_fragments": 11372,
+      "bounds_all_fragments": {
+        "minimum": [
+          -5.90625,
+          -5.01171875,
+          -1.6044921875
+        ],
+        "maximum": [
+          5.93359375,
+          2.201171875,
+          4.828125
+        ],
+        "dimensions": [
+          11.83984375,
+          7.212890625,
+          6.4326171875
+        ],
+        "vertices": 18258
+      },
+      "groups": [
+        {
+          "name": "mesh_00_group_00",
+          "material": "",
+          "preview_material": "main",
+          "effect": "structure_collection",
+          "vertices": 8365,
+          "triangles": 5254,
+          "bounds": {
+            "minimum": [
+              -5.90625,
+              -5.01171875,
+              -1.6044921875
+            ],
+            "maximum": [
+              5.93359375,
+              2.201171875,
+              4.828125
+            ],
+            "dimensions": [
+              11.83984375,
+              7.212890625,
+              6.4326171875
+            ],
+            "vertices": 8365
+          }
+        },
+        {
+          "name": "mesh_01_group_00",
+          "material": "",
+          "preview_material": "main",
+          "effect": "structure_collection",
+          "vertices": 5175,
+          "triangles": 3270,
+          "bounds": {
+            "minimum": [
+              -5.61328125,
+              -5.01171875,
+              -0.012847900390625
+            ],
+            "maximum": [
+              5.56640625,
+              1.7275390625,
+              4.359375
+            ],
+            "dimensions": [
+              11.1796875,
+              6.7392578125,
+              4.372222900390625
+            ],
+            "vertices": 5175
+          }
+        },
+        {
+          "name": "mesh_02_group_00",
+          "material": "",
+          "preview_material": "main",
+          "effect": "structure_collection",
+          "vertices": 4718,
+          "triangles": 2848,
+          "bounds": {
+            "minimum": [
+              -5.5625,
+              -4.578125,
+              -1.1920928955078125e-07
+            ],
+            "maximum": [
+              5.47265625,
+              1.5634765625,
+              4.41015625
+            ],
+            "dimensions": [
+              11.03515625,
+              6.1416015625,
+              4.4101563692092896
+            ],
+            "vertices": 4718
+          }
+        }
+      ],
+      "skeleton_bones": 99,
+      "palette_bones": [],
+      "has_collection_contract": true
+    },
+    {
+      "key": "barracks_age02",
+      "family": "barracks",
+      "age": 2,
+      "kind": "building",
+      "logical_path": "art/civilizations/chinese/structures/barracks/chi_barracks_control_age02/chi_barracks_control_age02.rgm",
+      "animation_owner": null,
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\barracks_age02\\76f3475dbd4037d80f89\\decoded-static.json",
+      "manifest_sha256": "a2fd23e78ef0b774ed71ebba957a9ff19e517e986945bb64dce70dad5d100d6e",
+      "geometry": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\barracks_age02\\76f3475dbd4037d80f89\\source\\art\\civilizations\\chinese\\structures\\barracks\\chi_barracks_control_age02\\chi_barracks_control_age02.rrgeom",
+      "geometry_sha256": "6dadfe2a05367921e68f900e38ab7ac932bb56fa7eb19fc77e7936360dafef97",
+      "resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/chinese/structures/barracks/chi_barracks_control_age02/chi_barracks_control_age02.rrgeom",
+          "archive": "DX12GeoChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12GeoChinese.sga",
+          "sha256": "6dadfe2a05367921e68f900e38ab7ac932bb56fa7eb19fc77e7936360dafef97",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\barracks_age02\\76f3475dbd4037d80f89\\source\\art\\civilizations\\chinese\\structures\\barracks\\chi_barracks_control_age02\\chi_barracks_control_age02.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/chinese/structures/barracks/chi_barracks_control_age02/chi_barracks_control_age02.rrmaterial",
+          "archive": "DX12AssetsChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12AssetsChinese.sga",
+          "sha256": "2dccf34223e2f83d00b049defa8c517b11e025510b10fc684539b6f5f9601822",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\barracks_age02\\76f3475dbd4037d80f89\\source\\art\\civilizations\\chinese\\structures\\barracks\\chi_barracks_control_age02\\chi_barracks_control_age02.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/chinese/structures/barracks/chi_barracks_control_age02/chi_barracks_control_age02.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "sha256": "d8825f9087825e7f6bd6016b3ece71b8ab04fe92fd131dc9acf7e337cdc76167",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\barracks_age02\\76f3475dbd4037d80f89\\source\\art\\civilizations\\chinese\\structures\\barracks\\chi_barracks_control_age02\\chi_barracks_control_age02.rgm"
+        }
+      },
+      "group_count": 7,
+      "triangle_count_all_fragments": 17539,
+      "bounds_all_fragments": {
+        "minimum": [
+          -6.1171875,
+          -5.1328125,
+          -1.5947265625
+        ],
+        "maximum": [
+          6.01171875,
+          1.8486328125,
+          5.11328125
+        ],
+        "dimensions": [
+          12.12890625,
+          6.9814453125,
+          6.7080078125
+        ],
+        "vertices": 24865
+      },
+      "groups": [
+        {
+          "name": "mesh_00_group_00",
+          "material": "",
+          "preview_material": "main",
+          "effect": "structure_collection",
+          "vertices": 7645,
+          "triangles": 5970,
+          "bounds": {
+            "minimum": [
+              -6.1171875,
+              -5.1328125,
+              -1.5947265625
+            ],
+            "maximum": [
+              6.01171875,
+              1.8486328125,
+              5.11328125
+            ],
+            "dimensions": [
+              12.12890625,
+              6.9814453125,
+              6.7080078125
+            ],
+            "vertices": 7645
+          }
+        },
+        {
+          "name": "mesh_01_group_00",
+          "material": "",
+          "preview_material": "main",
+          "effect": "structure_collection",
+          "vertices": 1014,
+          "triangles": 755,
+          "bounds": {
+            "minimum": [
+              -5.734375,
+              -4.79296875,
+              0.00921630859375
+            ],
+            "maximum": [
+              5.67578125,
+              1.6083984375,
+              4.2890625
+            ],
+            "dimensions": [
+              11.41015625,
+              6.4013671875,
+              4.27984619140625
+            ],
+            "vertices": 1014
+          }
+        },
+        {
+          "name": "mesh_02_group_00",
+          "material": "",
+          "preview_material": "extra",
+          "effect": "structure_collection",
+          "vertices": 2576,
+          "triangles": 1952,
+          "bounds": {
+            "minimum": [
+              -4.984375,
+              -4.375,
+              2.091796875
+            ],
+            "maximum": [
+              4.9921875,
+              1.15234375,
+              3.490234375
+            ],
+            "dimensions": [
+              9.9765625,
+              5.52734375,
+              1.3984375
+            ],
+            "vertices": 2576
+          }
+        },
+        {
+          "name": "mesh_03_group_00",
+          "material": "",
+          "preview_material": "extra",
+          "effect": "structure_collection",
+          "vertices": 1728,
+          "triangles": 920,
+          "bounds": {
+            "minimum": [
+              -5.234375,
+              -4.56640625,
+              -0.04193115234375
+            ],
+            "maximum": [
+              5.125,
+              1.1630859375,
+              3.76171875
+            ],
+            "dimensions": [
+              10.359375,
+              5.7294921875,
+              3.80364990234375
+            ],
+            "vertices": 1728
+          }
+        },
+        {
+          "name": "mesh_04_group_00",
+          "material": "",
+          "preview_material": "extra",
+          "effect": "structure_collection",
+          "vertices": 1908,
+          "triangles": 1040,
+          "bounds": {
+            "minimum": [
+              -5.46484375,
+              -4.8125,
+              0.0697021484375
+            ],
+            "maximum": [
+              5.33984375,
+              1.43359375,
+              3.986328125
+            ],
+            "dimensions": [
+              10.8046875,
+              6.24609375,
+              3.9166259765625
+            ],
+            "vertices": 1908
+          }
+        },
+        {
+          "name": "mesh_05_group_00",
+          "material": "",
+          "preview_material": "extra",
+          "effect": "structure_collection",
+          "vertices": 3354,
+          "triangles": 1948,
+          "bounds": {
+            "minimum": [
+              -5.44921875,
+              -4.16796875,
+              0.0697021484375
+            ],
+            "maximum": [
+              5.33984375,
+              1.3515625,
+              3.177734375
+            ],
+            "dimensions": [
+              10.7890625,
+              5.51953125,
+              3.1080322265625
+            ],
+            "vertices": 3354
+          }
+        },
+        {
+          "name": "mesh_06_group_00",
+          "material": "",
+          "preview_material": "extra",
+          "effect": "structure_collection",
+          "vertices": 6640,
+          "triangles": 4954,
+          "bounds": {
+            "minimum": [
+              -5.609375,
+              -4.96484375,
+              0.127685546875
+            ],
+            "maximum": [
+              5.49609375,
+              1.5634765625,
+              4.07421875
+            ],
+            "dimensions": [
+              11.10546875,
+              6.5283203125,
+              3.946533203125
+            ],
+            "vertices": 6640
+          }
+        }
+      ],
+      "skeleton_bones": 102,
+      "palette_bones": [],
+      "has_collection_contract": true
+    },
+    {
+      "key": "barracks_age03",
+      "family": "barracks",
+      "age": 3,
+      "kind": "building",
+      "logical_path": "art/civilizations/chinese/structures/barracks/chi_barracks_control_age03/chi_barracks_control_age03.rgm",
+      "animation_owner": null,
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\barracks_age03\\87e5738ce5867258191d\\decoded-static.json",
+      "manifest_sha256": "e796fdf7e8172482bc7bfbeef4c4b812c240420612dc3d5b73ae6c13db5c45fb",
+      "geometry": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\barracks_age03\\87e5738ce5867258191d\\source\\art\\civilizations\\chinese\\structures\\barracks\\chi_barracks_control_age03\\chi_barracks_control_age03.rrgeom",
+      "geometry_sha256": "12115f9c8b2ece9289fc4e2e1a83fa66bf4754205fd870252322312824319691",
+      "resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/chinese/structures/barracks/chi_barracks_control_age03/chi_barracks_control_age03.rrgeom",
+          "archive": "DX12GeoChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12GeoChinese.sga",
+          "sha256": "12115f9c8b2ece9289fc4e2e1a83fa66bf4754205fd870252322312824319691",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\barracks_age03\\87e5738ce5867258191d\\source\\art\\civilizations\\chinese\\structures\\barracks\\chi_barracks_control_age03\\chi_barracks_control_age03.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/chinese/structures/barracks/chi_barracks_control_age03/chi_barracks_control_age03.rrmaterial",
+          "archive": "DX12AssetsChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12AssetsChinese.sga",
+          "sha256": "70929b0019f0f2330ee03cdd25c1242b396f61947a7b35b3153bb9dbeb8a0e7d",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\barracks_age03\\87e5738ce5867258191d\\source\\art\\civilizations\\chinese\\structures\\barracks\\chi_barracks_control_age03\\chi_barracks_control_age03.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/chinese/structures/barracks/chi_barracks_control_age03/chi_barracks_control_age03.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "sha256": "526a23e3373fa1de9c6d04d20aba38246009d31baa5beb14a162726ba3ec1415",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\barracks_age03\\87e5738ce5867258191d\\source\\art\\civilizations\\chinese\\structures\\barracks\\chi_barracks_control_age03\\chi_barracks_control_age03.rgm"
+        }
+      },
+      "group_count": 7,
+      "triangle_count_all_fragments": 17539,
+      "bounds_all_fragments": {
+        "minimum": [
+          -6.1171875,
+          -5.1328125,
+          -1.5947265625
+        ],
+        "maximum": [
+          6.01171875,
+          1.8486328125,
+          5.11328125
+        ],
+        "dimensions": [
+          12.12890625,
+          6.9814453125,
+          6.7080078125
+        ],
+        "vertices": 24865
+      },
+      "groups": [
+        {
+          "name": "mesh_00_group_00",
+          "material": "",
+          "preview_material": "main",
+          "effect": "structure_collection",
+          "vertices": 7645,
+          "triangles": 5970,
+          "bounds": {
+            "minimum": [
+              -6.1171875,
+              -5.1328125,
+              -1.5947265625
+            ],
+            "maximum": [
+              6.01171875,
+              1.8486328125,
+              5.11328125
+            ],
+            "dimensions": [
+              12.12890625,
+              6.9814453125,
+              6.7080078125
+            ],
+            "vertices": 7645
+          }
+        },
+        {
+          "name": "mesh_01_group_00",
+          "material": "",
+          "preview_material": "main",
+          "effect": "structure_collection",
+          "vertices": 1014,
+          "triangles": 755,
+          "bounds": {
+            "minimum": [
+              -5.734375,
+              -4.79296875,
+              0.00921630859375
+            ],
+            "maximum": [
+              5.67578125,
+              1.6083984375,
+              4.2890625
+            ],
+            "dimensions": [
+              11.41015625,
+              6.4013671875,
+              4.27984619140625
+            ],
+            "vertices": 1014
+          }
+        },
+        {
+          "name": "mesh_02_group_00",
+          "material": "",
+          "preview_material": "extra",
+          "effect": "structure_collection",
+          "vertices": 2576,
+          "triangles": 1952,
+          "bounds": {
+            "minimum": [
+              -4.984375,
+              -4.375,
+              2.091796875
+            ],
+            "maximum": [
+              4.9921875,
+              1.15234375,
+              3.490234375
+            ],
+            "dimensions": [
+              9.9765625,
+              5.52734375,
+              1.3984375
+            ],
+            "vertices": 2576
+          }
+        },
+        {
+          "name": "mesh_03_group_00",
+          "material": "",
+          "preview_material": "extra",
+          "effect": "structure_collection",
+          "vertices": 1728,
+          "triangles": 920,
+          "bounds": {
+            "minimum": [
+              -5.234375,
+              -4.56640625,
+              -0.04193115234375
+            ],
+            "maximum": [
+              5.125,
+              1.1630859375,
+              3.76171875
+            ],
+            "dimensions": [
+              10.359375,
+              5.7294921875,
+              3.80364990234375
+            ],
+            "vertices": 1728
+          }
+        },
+        {
+          "name": "mesh_04_group_00",
+          "material": "",
+          "preview_material": "extra",
+          "effect": "structure_collection",
+          "vertices": 1908,
+          "triangles": 1040,
+          "bounds": {
+            "minimum": [
+              -5.46484375,
+              -4.8125,
+              0.0697021484375
+            ],
+            "maximum": [
+              5.33984375,
+              1.43359375,
+              3.986328125
+            ],
+            "dimensions": [
+              10.8046875,
+              6.24609375,
+              3.9166259765625
+            ],
+            "vertices": 1908
+          }
+        },
+        {
+          "name": "mesh_05_group_00",
+          "material": "",
+          "preview_material": "extra",
+          "effect": "structure_collection",
+          "vertices": 3354,
+          "triangles": 1948,
+          "bounds": {
+            "minimum": [
+              -5.44921875,
+              -4.16796875,
+              0.0697021484375
+            ],
+            "maximum": [
+              5.33984375,
+              1.3515625,
+              3.177734375
+            ],
+            "dimensions": [
+              10.7890625,
+              5.51953125,
+              3.1080322265625
+            ],
+            "vertices": 3354
+          }
+        },
+        {
+          "name": "mesh_06_group_00",
+          "material": "",
+          "preview_material": "extra",
+          "effect": "structure_collection",
+          "vertices": 6640,
+          "triangles": 4954,
+          "bounds": {
+            "minimum": [
+              -5.609375,
+              -4.96484375,
+              0.127685546875
+            ],
+            "maximum": [
+              5.49609375,
+              1.5634765625,
+              4.07421875
+            ],
+            "dimensions": [
+              11.10546875,
+              6.5283203125,
+              3.946533203125
+            ],
+            "vertices": 6640
+          }
+        }
+      ],
+      "skeleton_bones": 102,
+      "palette_bones": [],
+      "has_collection_contract": true
+    },
+    {
+      "key": "barracks_age04",
+      "family": "barracks",
+      "age": 4,
+      "kind": "building",
+      "logical_path": "art/civilizations/chinese/structures/barracks/chi_barracks_control_age04/chi_barracks_control_age04.rgm",
+      "animation_owner": null,
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\barracks_age04\\3c681b2dce90fc27f40d\\decoded-static.json",
+      "manifest_sha256": "a20dc661704a12be221c85fea63074a5d572b8272c5cf3e740c52868c64ed5f7",
+      "geometry": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\barracks_age04\\3c681b2dce90fc27f40d\\source\\art\\civilizations\\chinese\\structures\\barracks\\chi_barracks_control_age04\\chi_barracks_control_age04.rrgeom",
+      "geometry_sha256": "ac0fd5086b8e7c639cd322f7ce3efb7e7cf717d2b152ae3093f818833065edc9",
+      "resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/chinese/structures/barracks/chi_barracks_control_age04/chi_barracks_control_age04.rrgeom",
+          "archive": "DX12GeoChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12GeoChinese.sga",
+          "sha256": "ac0fd5086b8e7c639cd322f7ce3efb7e7cf717d2b152ae3093f818833065edc9",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\barracks_age04\\3c681b2dce90fc27f40d\\source\\art\\civilizations\\chinese\\structures\\barracks\\chi_barracks_control_age04\\chi_barracks_control_age04.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/chinese/structures/barracks/chi_barracks_control_age04/chi_barracks_control_age04.rrmaterial",
+          "archive": "DX12AssetsChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12AssetsChinese.sga",
+          "sha256": "9a7ab9bbe5bea4ecc68fe98cba5caddcc14fdecd058a51b19fcc49cfb4da89ea",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\barracks_age04\\3c681b2dce90fc27f40d\\source\\art\\civilizations\\chinese\\structures\\barracks\\chi_barracks_control_age04\\chi_barracks_control_age04.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/chinese/structures/barracks/chi_barracks_control_age04/chi_barracks_control_age04.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "sha256": "e5c823241d50128e45b74e6bd84ad33935c9a9138efa97b38f373bdb90ad3470",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\barracks_age04\\3c681b2dce90fc27f40d\\source\\art\\civilizations\\chinese\\structures\\barracks\\chi_barracks_control_age04\\chi_barracks_control_age04.rgm"
+        }
+      },
+      "group_count": 2,
+      "triangle_count_all_fragments": 24503,
+      "bounds_all_fragments": {
+        "minimum": [
+          -6.2890625,
+          -5.25,
+          -1.5947265625
+        ],
+        "maximum": [
+          6.21875,
+          2.060546875,
+          5.3671875
+        ],
+        "dimensions": [
+          12.5078125,
+          7.310546875,
+          6.9619140625
+        ],
+        "vertices": 32701
+      },
+      "groups": [
+        {
+          "name": "mesh_00_group_00",
+          "material": "",
+          "preview_material": "main",
+          "effect": "structure_collection",
+          "vertices": 19163,
+          "triangles": 15883,
+          "bounds": {
+            "minimum": [
+              -6.2890625,
+              -5.25,
+              -1.5947265625
+            ],
+            "maximum": [
+              6.21875,
+              2.060546875,
+              5.3671875
+            ],
+            "dimensions": [
+              12.5078125,
+              7.310546875,
+              6.9619140625
+            ],
+            "vertices": 19163
+          }
+        },
+        {
+          "name": "mesh_01_group_00",
+          "material": "",
+          "preview_material": "extra",
+          "effect": "structure_collection",
+          "vertices": 13538,
+          "triangles": 8620,
+          "bounds": {
+            "minimum": [
+              -5.62109375,
+              -4.8359375,
+              0.00921630859375
+            ],
+            "maximum": [
+              5.62109375,
+              1.43359375,
+              4.54296875
+            ],
+            "dimensions": [
+              11.2421875,
+              6.26953125,
+              4.53375244140625
+            ],
+            "vertices": 13538
+          }
+        }
+      ],
+      "skeleton_bones": 106,
+      "palette_bones": [],
+      "has_collection_contract": true
+    },
+    {
+      "key": "water_buffalo",
+      "family": "water_buffalo",
+      "age": 1,
+      "kind": "nonhumanoid",
+      "logical_path": "art/civilizations/gaia/animals/cow/cow.rgm",
+      "animation_owner": "attachments/attachment_lists/gaia/animals/gaia_herdable_cattle_mal",
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\water_buffalo\\6ce254134542cfdc28cb\\decoded-static.json",
+      "manifest_sha256": "a53364e8b0a433e7336917f885c0b6bf5544096fb9783798cae01bc87d96dd97",
+      "geometry": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\water_buffalo\\6ce254134542cfdc28cb\\source\\art\\civilizations\\gaia\\animals\\cow\\cow.rrgeom",
+      "geometry_sha256": "7bc679aa58b44d8ff93a866a0a9781c7bba49069952280d915969ccd682b5b99",
+      "resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/gaia/animals/cow/cow.rrgeom",
+          "archive": "DX12Assets.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12Assets.sga",
+          "sha256": "7bc679aa58b44d8ff93a866a0a9781c7bba49069952280d915969ccd682b5b99",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\water_buffalo\\6ce254134542cfdc28cb\\source\\art\\civilizations\\gaia\\animals\\cow\\cow.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/gaia/animals/cow/cow.rrmaterial",
+          "archive": "DX12Assets.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12Assets.sga",
+          "sha256": "8323786f1116e184160ab55e873b0c09ab5e06bcaae8744d89b0e802661e4655",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\water_buffalo\\6ce254134542cfdc28cb\\source\\art\\civilizations\\gaia\\animals\\cow\\cow.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/gaia/animals/cow/cow.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "sha256": "a6d17e203e183b70bccb6946ab377e4299e0d87a2877063e886737eaed7916ff",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\water_buffalo\\6ce254134542cfdc28cb\\source\\art\\civilizations\\gaia\\animals\\cow\\cow.rgm"
+        }
+      },
+      "group_count": 4,
+      "triangle_count_all_fragments": 4620,
+      "bounds_all_fragments": {
+        "minimum": [
+          -0.51806640625,
+          -1.8291015625,
+          -0.01436614990234375
+        ],
+        "maximum": [
+          0.51806640625,
+          1.9228515625,
+          2.064453125
+        ],
+        "dimensions": [
+          1.0361328125,
+          3.751953125,
+          2.0788192749023438
+        ],
+        "vertices": 3224
+      },
+      "groups": [
+        {
+          "name": "cow_resource",
+          "material": "resource",
+          "preview_material": "resource",
+          "effect": "object",
+          "vertices": 816,
+          "triangles": 1278,
+          "bounds": {
+            "minimum": [
+              -0.51806640625,
+              -1.8193359375,
+              0.0865478515625
+            ],
+            "maximum": [
+              0.51806640625,
+              1.1357421875,
+              2.0546875
+            ],
+            "dimensions": [
+              1.0361328125,
+              2.955078125,
+              1.9681396484375
+            ],
+            "vertices": 816
+          }
+        },
+        {
+          "name": "cow",
+          "material": "lod1",
+          "preview_material": "lod1",
+          "effect": "unit",
+          "vertices": 1233,
+          "triangles": 1772,
+          "bounds": {
+            "minimum": [
+              -0.490234375,
+              -1.8193359375,
+              -0.0107269287109375
+            ],
+            "maximum": [
+              0.490234375,
+              1.9208984375,
+              2.0546875
+            ],
+            "dimensions": [
+              0.98046875,
+              3.740234375,
+              2.0654144287109375
+            ],
+            "vertices": 1233
+          }
+        },
+        {
+          "name": "cow",
+          "material": "lod2",
+          "preview_material": "lod2",
+          "effect": "unit",
+          "vertices": 778,
+          "triangles": 1088,
+          "bounds": {
+            "minimum": [
+              -0.490234375,
+              -1.8193359375,
+              -0.0088043212890625
+            ],
+            "maximum": [
+              0.490234375,
+              1.9140625,
+              2.056640625
+            ],
+            "dimensions": [
+              0.98046875,
+              3.7333984375,
+              2.0654449462890625
+            ],
+            "vertices": 778
+          }
+        },
+        {
+          "name": "cow",
+          "material": "lod03",
+          "preview_material": "lod03",
+          "effect": "unit",
+          "vertices": 397,
+          "triangles": 482,
+          "bounds": {
+            "minimum": [
+              -0.46484375,
+              -1.8291015625,
+              -0.01436614990234375
+            ],
+            "maximum": [
+              0.451904296875,
+              1.9228515625,
+              2.064453125
+            ],
+            "dimensions": [
+              0.916748046875,
+              3.751953125,
+              2.0788192749023438
+            ],
+            "vertices": 397
+          }
+        }
+      ],
+      "skeleton_bones": 45,
+      "palette_bones": [
+        29,
+        33
+      ],
+      "has_collection_contract": false
+    },
+    {
+      "key": "no_than",
+      "family": "no_than",
+      "age": 3,
+      "kind": "nonhumanoid",
+      "logical_path": "art/civilizations/english/team_weapons/eng_springald/eng_springald.rgm",
+      "animation_owner": "attachments/attachment_lists/races/english/weapons/tier3_scorpion_eng",
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\no_than\\9cc2acf539eb4bee08f8\\decoded-static.json",
+      "manifest_sha256": "2ac7eddeac426de911b47cc1e555b4e7ea6bb52424df4002a6b342799d05afda",
+      "geometry": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\no_than\\9cc2acf539eb4bee08f8\\source\\art\\civilizations\\english\\team_weapons\\eng_springald\\eng_springald.rrgeom",
+      "geometry_sha256": "a597061594a719509151d30da914944ac7125b3e5b342dc6d312d686b9443fa4",
+      "resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/english/team_weapons/eng_springald/eng_springald.rrgeom",
+          "archive": "DX12GeoEnglish.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12GeoEnglish.sga",
+          "sha256": "a597061594a719509151d30da914944ac7125b3e5b342dc6d312d686b9443fa4",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\no_than\\9cc2acf539eb4bee08f8\\source\\art\\civilizations\\english\\team_weapons\\eng_springald\\eng_springald.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/english/team_weapons/eng_springald/eng_springald.rrmaterial",
+          "archive": "DX12AssetsEnglish.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12AssetsEnglish.sga",
+          "sha256": "c453ecbc2d9a8381095dc0fa17efad41d1b0605c3c5562fdcfbdd6dea27911bb",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\no_than\\9cc2acf539eb4bee08f8\\source\\art\\civilizations\\english\\team_weapons\\eng_springald\\eng_springald.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/english/team_weapons/eng_springald/eng_springald.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "sha256": "d87268001fc13ded11c48fe6af048b2baceb4ff5ddff47946f22b4b9b084ab9b",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\no_than\\9cc2acf539eb4bee08f8\\source\\art\\civilizations\\english\\team_weapons\\eng_springald\\eng_springald.rgm"
+        }
+      },
+      "group_count": 7,
+      "triangle_count_all_fragments": 6102,
+      "bounds_all_fragments": {
+        "minimum": [
+          -1.0810546875,
+          -1.81640625,
+          -0.024566650390625
+        ],
+        "maximum": [
+          1.986328125,
+          1.734375,
+          3.083984375
+        ],
+        "dimensions": [
+          3.0673828125,
+          3.55078125,
+          3.108551025390625
+        ],
+        "vertices": 8050
+      },
+      "groups": [
+        {
+          "name": "geo_pole",
+          "material": "page",
+          "preview_material": "page",
+          "effect": "Structure",
+          "vertices": 58,
+          "triangles": 60,
+          "bounds": {
+            "minimum": [
+              0.6572265625,
+              -0.040252685546875,
+              0.32275390625
+            ],
+            "maximum": [
+              0.77099609375,
+              0.108642578125,
+              3.083984375
+            ],
+            "dimensions": [
+              0.11376953125,
+              0.148895263671875,
+              2.76123046875
+            ],
+            "vertices": 58
+          }
+        },
+        {
+          "name": "geo_pole",
+          "material": "flags",
+          "preview_material": "flags",
+          "effect": "Sails",
+          "vertices": 238,
+          "triangles": 234,
+          "bounds": {
+            "minimum": [
+              0.673828125,
+              -1.2373046875,
+              2.376953125
+            ],
+            "maximum": [
+              1.986328125,
+              0.07464599609375,
+              3.021484375
+            ],
+            "dimensions": [
+              1.3125,
+              1.31195068359375,
+              0.64453125
+            ],
+            "vertices": 238
+          }
+        },
+        {
+          "name": "geo_healthy",
+          "material": "page",
+          "preview_material": "page",
+          "effect": "Structure",
+          "vertices": 4177,
+          "triangles": 3270,
+          "bounds": {
+            "minimum": [
+              -1.0810546875,
+              -1.416015625,
+              -0.024566650390625
+            ],
+            "maximum": [
+              1.0810546875,
+              1.734375,
+              1.9794921875
+            ],
+            "dimensions": [
+              2.162109375,
+              3.150390625,
+              2.004058837890625
+            ],
+            "vertices": 4177
+          }
+        },
+        {
+          "name": "geo_healthy",
+          "material": "page",
+          "preview_material": "page",
+          "effect": "Structure",
+          "vertices": 2087,
+          "triangles": 1462,
+          "bounds": {
+            "minimum": [
+              -1.0810546875,
+              -1.416015625,
+              -0.024566650390625
+            ],
+            "maximum": [
+              1.0810546875,
+              1.734375,
+              1.9794921875
+            ],
+            "dimensions": [
+              2.162109375,
+              3.150390625,
+              2.004058837890625
+            ],
+            "vertices": 2087
+          }
+        },
+        {
+          "name": "geo_healthy",
+          "material": "page",
+          "preview_material": "page",
+          "effect": "Structure",
+          "vertices": 1372,
+          "triangles": 992,
+          "bounds": {
+            "minimum": [
+              -1.0810546875,
+              -1.416015625,
+              -0.0240020751953125
+            ],
+            "maximum": [
+              1.0810546875,
+              1.6181640625,
+              1.9794921875
+            ],
+            "dimensions": [
+              2.162109375,
+              3.0341796875,
+              2.0034942626953125
+            ],
+            "vertices": 1372
+          }
+        },
+        {
+          "name": "geo_spear_loaded",
+          "material": "page",
+          "preview_material": "page",
+          "effect": "Structure",
+          "vertices": 78,
+          "triangles": 58,
+          "bounds": {
+            "minimum": [
+              -0.08642578125,
+              -1.81640625,
+              1.41796875
+            ],
+            "maximum": [
+              0.08642578125,
+              -0.1954345703125,
+              1.87890625
+            ],
+            "dimensions": [
+              0.1728515625,
+              1.6209716796875,
+              0.4609375
+            ],
+            "vertices": 78
+          }
+        },
+        {
+          "name": "geo_spear_loaded",
+          "material": "page",
+          "preview_material": "page",
+          "effect": "Structure",
+          "vertices": 40,
+          "triangles": 26,
+          "bounds": {
+            "minimum": [
+              -0.08642578125,
+              -1.81640625,
+              1.41796875
+            ],
+            "maximum": [
+              0.08642578125,
+              -0.1954345703125,
+              1.87890625
+            ],
+            "dimensions": [
+              0.1728515625,
+              1.6209716796875,
+              0.4609375
+            ],
+            "vertices": 40
+          }
+        }
+      ],
+      "skeleton_bones": 10,
+      "palette_bones": [
+        2,
+        8,
+        2
+      ],
+      "has_collection_contract": false
+    },
+    {
+      "key": "skirmisher2",
+      "family": "skirmisher",
+      "age": 2,
+      "kind": "humanoid",
+      "logical_path": "art/civilizations/malian/humans/mal_ranged_crossbow_age02/mal_ranged_crossbow_age02.rgm",
+      "animation_owner": "attachments/attachment_lists/races/malians/units/tier2_javelin_mal",
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\skirmisher2\\d12d5935ee3662c16f99\\decoded-static.json",
+      "manifest_sha256": "a3cdddbdb88b438a9e3c4286f793cc5dc660bd154eab3e3d6839ffa3377d0752",
+      "geometry": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\skirmisher2\\d12d5935ee3662c16f99\\source\\art\\civilizations\\malian\\humans\\mal_ranged_crossbow_age02\\mal_ranged_crossbow_age02.rrgeom",
+      "geometry_sha256": "a038f39b00d6b575b4e44486ccbf6ac8e112ebbd8d1a56141853d13c4d03a815",
+      "resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/malian/humans/mal_ranged_crossbow_age02/mal_ranged_crossbow_age02.rrgeom",
+          "archive": "DX12GeoMalian.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12GeoMalian.sga",
+          "sha256": "a038f39b00d6b575b4e44486ccbf6ac8e112ebbd8d1a56141853d13c4d03a815",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\skirmisher2\\d12d5935ee3662c16f99\\source\\art\\civilizations\\malian\\humans\\mal_ranged_crossbow_age02\\mal_ranged_crossbow_age02.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/malian/humans/mal_ranged_crossbow_age02/mal_ranged_crossbow_age02.rrmaterial",
+          "archive": "DX12AssetsMalian.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12AssetsMalian.sga",
+          "sha256": "0ea42cbead6538ea1981fbee468dc4743d60829249411c45d08f6ce8c5de9e4a",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\skirmisher2\\d12d5935ee3662c16f99\\source\\art\\civilizations\\malian\\humans\\mal_ranged_crossbow_age02\\mal_ranged_crossbow_age02.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/malian/humans/mal_ranged_crossbow_age02/mal_ranged_crossbow_age02.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "sha256": "91c17e3c6720829654cf171b30be0697cf659716d79cb59f1b9796c226de2621",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\skirmisher2\\d12d5935ee3662c16f99\\source\\art\\civilizations\\malian\\humans\\mal_ranged_crossbow_age02\\mal_ranged_crossbow_age02.rgm"
+        }
+      },
+      "group_count": 3,
+      "triangle_count_all_fragments": 2526,
+      "bounds_all_fragments": {
+        "minimum": [
+          -0.6279296875,
+          -0.274658203125,
+          -0.01113128662109375
+        ],
+        "maximum": [
+          0.60205078125,
+          0.28125,
+          2.279296875
+        ],
+        "dimensions": [
+          1.22998046875,
+          0.555908203125,
+          2.2904281616210938
+        ],
+        "vertices": 2231
+      },
+      "groups": [
+        {
+          "name": "mal_ranged_crossbow_age2",
+          "material": "lod1",
+          "preview_material": "lod1",
+          "effect": "unit",
+          "vertices": 1352,
+          "triangles": 1675,
+          "bounds": {
+            "minimum": [
+              -0.62255859375,
+              -0.274658203125,
+              -0.00024700164794921875
+            ],
+            "maximum": [
+              0.5859375,
+              0.28125,
+              2.26953125
+            ],
+            "dimensions": [
+              1.20849609375,
+              0.555908203125,
+              2.269778251647949
+            ],
+            "vertices": 1352
+          }
+        },
+        {
+          "name": "mal_ranged_crossbow_age2",
+          "material": "lod0",
+          "preview_material": "lod0",
+          "effect": "unit",
+          "vertices": 539,
+          "triangles": 574,
+          "bounds": {
+            "minimum": [
+              -0.6279296875,
+              -0.2481689453125,
+              -0.00693511962890625
+            ],
+            "maximum": [
+              0.5947265625,
+              0.279296875,
+              2.279296875
+            ],
+            "dimensions": [
+              1.22265625,
+              0.5274658203125,
+              2.2862319946289062
+            ],
+            "vertices": 539
+          }
+        },
+        {
+          "name": "mal_ranged_crossbow_age2",
+          "material": "lod3",
+          "preview_material": "lod3",
+          "effect": "unit",
+          "vertices": 340,
+          "triangles": 277,
+          "bounds": {
+            "minimum": [
+              -0.6259765625,
+              -0.25537109375,
+              -0.01113128662109375
+            ],
+            "maximum": [
+              0.60205078125,
+              0.2802734375,
+              2.26953125
+            ],
+            "dimensions": [
+              1.22802734375,
+              0.53564453125,
+              2.2806625366210938
+            ],
+            "vertices": 340
+          }
+        }
+      ],
+      "skeleton_bones": 48,
+      "palette_bones": [
+        45
+      ],
+      "has_collection_contract": false
+    },
+    {
+      "key": "skirmisher3",
+      "family": "skirmisher",
+      "age": 3,
+      "kind": "humanoid",
+      "logical_path": "art/civilizations/malian/humans/mal_ranged_crossbow_age03/mal_ranged_crossbow_age03.rgm",
+      "animation_owner": "attachments/attachment_lists/races/malians/units/tier3_javelin_mal",
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\skirmisher3\\d5ddeae5ea711d0b6e12\\decoded-static.json",
+      "manifest_sha256": "a216edde04a2fe7a1809d4d4cc06d0cb7cb376563abb1450751d9302ab633f7a",
+      "geometry": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\skirmisher3\\d5ddeae5ea711d0b6e12\\source\\art\\civilizations\\malian\\humans\\mal_ranged_crossbow_age03\\mal_ranged_crossbow_age03.rrgeom",
+      "geometry_sha256": "9ef7557ee5185ba1a8164918dc54a4577b7725a7b0dbeae1dba8894e550ce0f0",
+      "resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/malian/humans/mal_ranged_crossbow_age03/mal_ranged_crossbow_age03.rrgeom",
+          "archive": "DX12GeoMalian.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12GeoMalian.sga",
+          "sha256": "9ef7557ee5185ba1a8164918dc54a4577b7725a7b0dbeae1dba8894e550ce0f0",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\skirmisher3\\d5ddeae5ea711d0b6e12\\source\\art\\civilizations\\malian\\humans\\mal_ranged_crossbow_age03\\mal_ranged_crossbow_age03.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/malian/humans/mal_ranged_crossbow_age03/mal_ranged_crossbow_age03.rrmaterial",
+          "archive": "DX12AssetsMalian.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12AssetsMalian.sga",
+          "sha256": "cecada890584c40e3dfed43319909adece212286b5a110714d510dddc414732e",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\skirmisher3\\d5ddeae5ea711d0b6e12\\source\\art\\civilizations\\malian\\humans\\mal_ranged_crossbow_age03\\mal_ranged_crossbow_age03.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/malian/humans/mal_ranged_crossbow_age03/mal_ranged_crossbow_age03.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "sha256": "ffd41561a55d502ac13f889f2789f235cd14a86ebed409d7fff252a872ba9dd1",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\skirmisher3\\d5ddeae5ea711d0b6e12\\source\\art\\civilizations\\malian\\humans\\mal_ranged_crossbow_age03\\mal_ranged_crossbow_age03.rgm"
+        }
+      },
+      "group_count": 3,
+      "triangle_count_all_fragments": 2782,
+      "bounds_all_fragments": {
+        "minimum": [
+          -0.634765625,
+          -0.306396484375,
+          -0.0146942138671875
+        ],
+        "maximum": [
+          0.59765625,
+          0.315185546875,
+          2.216796875
+        ],
+        "dimensions": [
+          1.232421875,
+          0.62158203125,
+          2.2314910888671875
+        ],
+        "vertices": 2673
+      },
+      "groups": [
+        {
+          "name": "mal_ranged_crossbow_a3",
+          "material": "lod1",
+          "preview_material": "lod1",
+          "effect": "unit",
+          "vertices": 1614,
+          "triangles": 1882,
+          "bounds": {
+            "minimum": [
+              -0.62255859375,
+              -0.306396484375,
+              -0.0002467632293701172
+            ],
+            "maximum": [
+              0.5859375,
+              0.28125,
+              2.197265625
+            ],
+            "dimensions": [
+              1.20849609375,
+              0.587646484375,
+              2.19751238822937
+            ],
+            "vertices": 1614
+          }
+        },
+        {
+          "name": "mal_ranged_crossbow_a3",
+          "material": "lod2",
+          "preview_material": "lod2",
+          "effect": "unit",
+          "vertices": 679,
+          "triangles": 620,
+          "bounds": {
+            "minimum": [
+              -0.62548828125,
+              -0.304931640625,
+              -0.0031108856201171875
+            ],
+            "maximum": [
+              0.583984375,
+              0.272216796875,
+              2.201171875
+            ],
+            "dimensions": [
+              1.20947265625,
+              0.5771484375,
+              2.204282760620117
+            ],
+            "vertices": 679
+          }
+        },
+        {
+          "name": "mal_ranged_crossbow_a3",
+          "material": "lod3",
+          "preview_material": "lod3",
+          "effect": "unit",
+          "vertices": 380,
+          "triangles": 280,
+          "bounds": {
+            "minimum": [
+              -0.634765625,
+              -0.29345703125,
+              -0.0146942138671875
+            ],
+            "maximum": [
+              0.59765625,
+              0.315185546875,
+              2.216796875
+            ],
+            "dimensions": [
+              1.232421875,
+              0.608642578125,
+              2.2314910888671875
+            ],
+            "vertices": 380
+          }
+        }
+      ],
+      "skeleton_bones": 48,
+      "palette_bones": [
+        46
+      ],
+      "has_collection_contract": false
+    },
+    {
+      "key": "skirmisher4",
+      "family": "skirmisher",
+      "age": 4,
+      "kind": "humanoid",
+      "logical_path": "art/civilizations/malian/humans/mal_ranged_crossbow_age04/mal_ranged_crossbow_age04.rgm",
+      "animation_owner": "attachments/attachment_lists/races/malians/units/tier4_javelin_mal",
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\skirmisher4\\4e9e90af6672eb4075dd\\decoded-static.json",
+      "manifest_sha256": "92cda6a2046e16c2e2a0a72d3d6f4cfd534924432844292323ef5d8c8b39bcd7",
+      "geometry": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\skirmisher4\\4e9e90af6672eb4075dd\\source\\art\\civilizations\\malian\\humans\\mal_ranged_crossbow_age04\\mal_ranged_crossbow_age04.rrgeom",
+      "geometry_sha256": "1a13bc3c53490d7438d6e9f0c877b575be1683d2622e4885b33f72062c25eb0c",
+      "resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/malian/humans/mal_ranged_crossbow_age04/mal_ranged_crossbow_age04.rrgeom",
+          "archive": "DX12GeoMalian.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12GeoMalian.sga",
+          "sha256": "1a13bc3c53490d7438d6e9f0c877b575be1683d2622e4885b33f72062c25eb0c",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\skirmisher4\\4e9e90af6672eb4075dd\\source\\art\\civilizations\\malian\\humans\\mal_ranged_crossbow_age04\\mal_ranged_crossbow_age04.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/malian/humans/mal_ranged_crossbow_age04/mal_ranged_crossbow_age04.rrmaterial",
+          "archive": "DX12AssetsMalian.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12AssetsMalian.sga",
+          "sha256": "4a6c6d7475b995f5a7588432397d126acb220dca1a8cdb9b9af859fc5a65d16f",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\skirmisher4\\4e9e90af6672eb4075dd\\source\\art\\civilizations\\malian\\humans\\mal_ranged_crossbow_age04\\mal_ranged_crossbow_age04.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/malian/humans/mal_ranged_crossbow_age04/mal_ranged_crossbow_age04.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "sha256": "98c87a48fc2962653499fef7d5c0e0e9f12b7cbc5979e32a98cd344a317cd0e0",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\skirmisher4\\4e9e90af6672eb4075dd\\source\\art\\civilizations\\malian\\humans\\mal_ranged_crossbow_age04\\mal_ranged_crossbow_age04.rgm"
+        }
+      },
+      "group_count": 3,
+      "triangle_count_all_fragments": 3104,
+      "bounds_all_fragments": {
+        "minimum": [
+          -0.6123046875,
+          -0.344970703125,
+          -0.0012693405151367188
+        ],
+        "maximum": [
+          0.57763671875,
+          0.297607421875,
+          2.2265625
+        ],
+        "dimensions": [
+          1.18994140625,
+          0.642578125,
+          2.2278318405151367
+        ],
+        "vertices": 3226
+      },
+      "groups": [
+        {
+          "name": "mal_ranged_crossbow_age04",
+          "material": "lod1",
+          "preview_material": "lod1",
+          "effect": "unit",
+          "vertices": 1912,
+          "triangles": 2132,
+          "bounds": {
+            "minimum": [
+              -0.6044921875,
+              -0.306396484375,
+              -0.0012693405151367188
+            ],
+            "maximum": [
+              0.57763671875,
+              0.297607421875,
+              2.166015625
+            ],
+            "dimensions": [
+              1.18212890625,
+              0.60400390625,
+              2.1672849655151367
+            ],
+            "vertices": 1912
+          }
+        },
+        {
+          "name": "mal_ranged_crossbow_age04",
+          "material": "lod2",
+          "preview_material": "lod2",
+          "effect": "unit",
+          "vertices": 818,
+          "triangles": 648,
+          "bounds": {
+            "minimum": [
+              -0.6044921875,
+              -0.326171875,
+              1.6391277313232422e-05
+            ],
+            "maximum": [
+              0.57763671875,
+              0.297607421875,
+              2.19140625
+            ],
+            "dimensions": [
+              1.18212890625,
+              0.623779296875,
+              2.1913898587226868
+            ],
+            "vertices": 818
+          }
+        },
+        {
+          "name": "mal_ranged_crossbow_age04",
+          "material": "lod3",
+          "preview_material": "lod3",
+          "effect": "unit",
+          "vertices": 496,
+          "triangles": 324,
+          "bounds": {
+            "minimum": [
+              -0.6123046875,
+              -0.344970703125,
+              6.455183029174805e-05
+            ],
+            "maximum": [
+              0.57373046875,
+              0.290283203125,
+              2.2265625
+            ],
+            "dimensions": [
+              1.18603515625,
+              0.63525390625,
+              2.2264979481697083
+            ],
+            "vertices": 496
+          }
+        }
+      ],
+      "skeleton_bones": 48,
+      "palette_bones": [
+        46
+      ],
+      "has_collection_contract": false
+    },
+    {
+      "key": "archer2",
+      "family": "ranged",
+      "age": 2,
+      "kind": "humanoid",
+      "logical_path": "art/civilizations/chinese/humans/chi_ranged_bow_age02/chi_ranged_bow_age02.rgm",
+      "animation_owner": "attachments/attachment_lists/races/chinese/units/tier2_archer_chi",
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\archer2\\ca97c1053ec6f80bab28\\decoded-static.json",
+      "manifest_sha256": "10c23a11cf22efca3489b2d740c95593e9f6c77d6cdd5b22dccc3a797f70dbcb",
+      "geometry": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\archer2\\ca97c1053ec6f80bab28\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_bow_age02\\chi_ranged_bow_age02.rrgeom",
+      "geometry_sha256": "f7298603c7154b849d7b473a3d292c92056872d8615ec43a4eddc3438d8374c8",
+      "resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/chinese/humans/chi_ranged_bow_age02/chi_ranged_bow_age02.rrgeom",
+          "archive": "DX12GeoChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12GeoChinese.sga",
+          "sha256": "f7298603c7154b849d7b473a3d292c92056872d8615ec43a4eddc3438d8374c8",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\archer2\\ca97c1053ec6f80bab28\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_bow_age02\\chi_ranged_bow_age02.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/chinese/humans/chi_ranged_bow_age02/chi_ranged_bow_age02.rrmaterial",
+          "archive": "DX12AssetsChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12AssetsChinese.sga",
+          "sha256": "31c985a04bdac0c722917cddb2fab67843af60ae4a78f109c047da4dec2ca927",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\archer2\\ca97c1053ec6f80bab28\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_bow_age02\\chi_ranged_bow_age02.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/chinese/humans/chi_ranged_bow_age02/chi_ranged_bow_age02.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "sha256": "8dee02bd2cc80f32d1eef6ca151cb3ad75211844a554d87792189b7988950187",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\archer2\\ca97c1053ec6f80bab28\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_bow_age02\\chi_ranged_bow_age02.rgm"
+        }
+      },
+      "group_count": 3,
+      "triangle_count_all_fragments": 1913,
+      "bounds_all_fragments": {
+        "minimum": [
+          -0.5791015625,
+          -0.24755859375,
+          -0.0006380081176757812
+        ],
+        "maximum": [
+          0.5791015625,
+          0.4638671875,
+          1.9482421875
+        ],
+        "dimensions": [
+          1.158203125,
+          0.71142578125,
+          1.9488801956176758
+        ],
+        "vertices": 1665
+      },
+      "groups": [
+        {
+          "name": "chi_ranged_bow_age02",
+          "material": "lod1",
+          "preview_material": "lod1",
+          "effect": "unit",
+          "vertices": 988,
+          "triangles": 1236,
+          "bounds": {
+            "minimum": [
+              -0.5791015625,
+              -0.2412109375,
+              -0.0006380081176757812
+            ],
+            "maximum": [
+              0.5791015625,
+              0.4462890625,
+              1.9482421875
+            ],
+            "dimensions": [
+              1.158203125,
+              0.6875,
+              1.9488801956176758
+            ],
+            "vertices": 988
+          }
+        },
+        {
+          "name": "chi_ranged_bow_age02",
+          "material": "lod2",
+          "preview_material": "lod2",
+          "effect": "unit",
+          "vertices": 490,
+          "triangles": 522,
+          "bounds": {
+            "minimum": [
+              -0.56982421875,
+              -0.2412109375,
+              -0.0006375312805175781
+            ],
+            "maximum": [
+              0.56982421875,
+              0.4638671875,
+              1.939453125
+            ],
+            "dimensions": [
+              1.1396484375,
+              0.705078125,
+              1.9400906562805176
+            ],
+            "vertices": 490
+          }
+        },
+        {
+          "name": "chi_ranged_bow_age02",
+          "material": "lod3",
+          "preview_material": "lod3",
+          "effect": "unit",
+          "vertices": 187,
+          "triangles": 155,
+          "bounds": {
+            "minimum": [
+              -0.57421875,
+              -0.24755859375,
+              -0.0006375312805175781
+            ],
+            "maximum": [
+              0.57421875,
+              0.454345703125,
+              1.9423828125
+            ],
+            "dimensions": [
+              1.1484375,
+              0.701904296875,
+              1.9430203437805176
+            ],
+            "vertices": 187
+          }
+        }
+      ],
+      "skeleton_bones": 48,
+      "palette_bones": [
+        46
+      ],
+      "has_collection_contract": false
+    },
+    {
+      "key": "archer3",
+      "family": "ranged",
+      "age": 3,
+      "kind": "humanoid",
+      "logical_path": "art/civilizations/chinese/humans/chi_ranged_bow_age03/chi_ranged_bow_age03.rgm",
+      "animation_owner": "attachments/attachment_lists/races/chinese/units/tier3_archer_chi",
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\archer3\\331b8d9f80e61fa83e93\\decoded-static.json",
+      "manifest_sha256": "ec922b101c011b2c0fa64610eb09d80500fb689cd505f037af9191490f494f9b",
+      "geometry": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\archer3\\331b8d9f80e61fa83e93\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_bow_age03\\chi_ranged_bow_age03.rrgeom",
+      "geometry_sha256": "6f54299947f63643b720e79f28358bb4182c4f7fa42fa4dad3d3e8dac5f8dc4d",
+      "resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/chinese/humans/chi_ranged_bow_age03/chi_ranged_bow_age03.rrgeom",
+          "archive": "DX12GeoChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12GeoChinese.sga",
+          "sha256": "6f54299947f63643b720e79f28358bb4182c4f7fa42fa4dad3d3e8dac5f8dc4d",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\archer3\\331b8d9f80e61fa83e93\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_bow_age03\\chi_ranged_bow_age03.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/chinese/humans/chi_ranged_bow_age03/chi_ranged_bow_age03.rrmaterial",
+          "archive": "DX12AssetsChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12AssetsChinese.sga",
+          "sha256": "ac0c3aaa61a86a281df6773cec1221cf0de7d7475c89c41b4cffc3aee14396da",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\archer3\\331b8d9f80e61fa83e93\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_bow_age03\\chi_ranged_bow_age03.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/chinese/humans/chi_ranged_bow_age03/chi_ranged_bow_age03.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "sha256": "935f9823daa3ea171fe6ccc216a8f7d745f494a3106bc0404c82e280069bd250",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\archer3\\331b8d9f80e61fa83e93\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_bow_age03\\chi_ranged_bow_age03.rgm"
+        }
+      },
+      "group_count": 3,
+      "triangle_count_all_fragments": 1874,
+      "bounds_all_fragments": {
+        "minimum": [
+          -0.5791015625,
+          -0.2685546875,
+          -0.0010223388671875
+        ],
+        "maximum": [
+          0.5791015625,
+          0.470458984375,
+          1.9453125
+        ],
+        "dimensions": [
+          1.158203125,
+          0.739013671875,
+          1.9463348388671875
+        ],
+        "vertices": 1644
+      },
+      "groups": [
+        {
+          "name": "chi_ranged_bow_age03",
+          "material": "lod1",
+          "preview_material": "lod1",
+          "effect": "unit",
+          "vertices": 956,
+          "triangles": 1192,
+          "bounds": {
+            "minimum": [
+              -0.5791015625,
+              -0.2685546875,
+              -0.0010223388671875
+            ],
+            "maximum": [
+              0.5791015625,
+              0.443359375,
+              1.9453125
+            ],
+            "dimensions": [
+              1.158203125,
+              0.7119140625,
+              1.9463348388671875
+            ],
+            "vertices": 956
+          }
+        },
+        {
+          "name": "chi_ranged_bow_age03",
+          "material": "lod2",
+          "preview_material": "lod2",
+          "effect": "unit",
+          "vertices": 495,
+          "triangles": 525,
+          "bounds": {
+            "minimum": [
+              -0.576171875,
+              -0.2685546875,
+              -0.0007920265197753906
+            ],
+            "maximum": [
+              0.576171875,
+              0.470458984375,
+              1.9453125
+            ],
+            "dimensions": [
+              1.15234375,
+              0.739013671875,
+              1.9461045265197754
+            ],
+            "vertices": 495
+          }
+        },
+        {
+          "name": "chi_ranged_bow_age03",
+          "material": "lod3",
+          "preview_material": "lod3",
+          "effect": "unit",
+          "vertices": 193,
+          "triangles": 157,
+          "bounds": {
+            "minimum": [
+              -0.56298828125,
+              -0.266845703125,
+              -0.0007319450378417969
+            ],
+            "maximum": [
+              0.56298828125,
+              0.451171875,
+              1.9453125
+            ],
+            "dimensions": [
+              1.1259765625,
+              0.718017578125,
+              1.9460444450378418
+            ],
+            "vertices": 193
+          }
+        }
+      ],
+      "skeleton_bones": 48,
+      "palette_bones": [
+        46
+      ],
+      "has_collection_contract": false
+    },
+    {
+      "key": "archer4",
+      "family": "ranged",
+      "age": 4,
+      "kind": "humanoid",
+      "logical_path": "art/civilizations/chinese/humans/chi_ranged_bow_age04/chi_ranged_bow_age04.rgm",
+      "animation_owner": "attachments/attachment_lists/races/chinese/units/tier4_archer_chi",
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\archer4\\e78abe6dcf6986936678\\decoded-static.json",
+      "manifest_sha256": "499b63e1a454512056d2bcd0040daa90f6f4594009bea3254df5a539d05000f1",
+      "geometry": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\archer4\\e78abe6dcf6986936678\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_bow_age04\\chi_ranged_bow_age04.rrgeom",
+      "geometry_sha256": "b0da9d06e0c6a9e95f1393e6fece2f9f4688fce4520ae72244798079e10c7987",
+      "resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/chinese/humans/chi_ranged_bow_age04/chi_ranged_bow_age04.rrgeom",
+          "archive": "DX12GeoChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12GeoChinese.sga",
+          "sha256": "b0da9d06e0c6a9e95f1393e6fece2f9f4688fce4520ae72244798079e10c7987",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\archer4\\e78abe6dcf6986936678\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_bow_age04\\chi_ranged_bow_age04.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/chinese/humans/chi_ranged_bow_age04/chi_ranged_bow_age04.rrmaterial",
+          "archive": "DX12AssetsChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12AssetsChinese.sga",
+          "sha256": "cec3c12dfe5a60848fd7ead1112e314ced3555c758cf523ec5c5cb41bc659644",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\archer4\\e78abe6dcf6986936678\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_bow_age04\\chi_ranged_bow_age04.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/chinese/humans/chi_ranged_bow_age04/chi_ranged_bow_age04.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "sha256": "e9cde00a5f0b10c1399861841f83a5b094e5edc1d458bbd457d262922744dc40",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\archer4\\e78abe6dcf6986936678\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_bow_age04\\chi_ranged_bow_age04.rgm"
+        }
+      },
+      "group_count": 3,
+      "triangle_count_all_fragments": 1825,
+      "bounds_all_fragments": {
+        "minimum": [
+          -0.5791015625,
+          -0.2978515625,
+          -0.0010223388671875
+        ],
+        "maximum": [
+          0.5791015625,
+          0.464599609375,
+          2.044921875
+        ],
+        "dimensions": [
+          1.158203125,
+          0.762451171875,
+          2.0459442138671875
+        ],
+        "vertices": 1593
+      },
+      "groups": [
+        {
+          "name": "chi_ranged_bow_age04",
+          "material": "lod1",
+          "preview_material": "lod1",
+          "effect": "unit",
+          "vertices": 921,
+          "triangles": 1146,
+          "bounds": {
+            "minimum": [
+              -0.5791015625,
+              -0.2685546875,
+              -0.0010223388671875
+            ],
+            "maximum": [
+              0.5791015625,
+              0.447265625,
+              2.009765625
+            ],
+            "dimensions": [
+              1.158203125,
+              0.7158203125,
+              2.0107879638671875
+            ],
+            "vertices": 921
+          }
+        },
+        {
+          "name": "chi_ranged_bow_age04",
+          "material": "lod2",
+          "preview_material": "lod2",
+          "effect": "unit",
+          "vertices": 470,
+          "triangles": 514,
+          "bounds": {
+            "minimum": [
+              -0.5712890625,
+              -0.2685546875,
+              -0.0007748603820800781
+            ],
+            "maximum": [
+              0.5712890625,
+              0.450439453125,
+              2.025390625
+            ],
+            "dimensions": [
+              1.142578125,
+              0.718994140625,
+              2.02616548538208
+            ],
+            "vertices": 470
+          }
+        },
+        {
+          "name": "chi_ranged_bow_age04",
+          "material": "lod3",
+          "preview_material": "lod3",
+          "effect": "unit",
+          "vertices": 202,
+          "triangles": 165,
+          "bounds": {
+            "minimum": [
+              -0.55908203125,
+              -0.2978515625,
+              -0.0007748603820800781
+            ],
+            "maximum": [
+              0.55908203125,
+              0.464599609375,
+              2.044921875
+            ],
+            "dimensions": [
+              1.1181640625,
+              0.762451171875,
+              2.04569673538208
+            ],
+            "vertices": 202
+          }
+        }
+      ],
+      "skeleton_bones": 48,
+      "palette_bones": [
+        46
+      ],
+      "has_collection_contract": false
+    },
+    {
+      "key": "crossbow3",
+      "family": "ranged",
+      "age": 3,
+      "kind": "humanoid",
+      "logical_path": "art/civilizations/chinese/humans/chi_ranged_crossbow_age03/chi_ranged_crossbow_age03.rgm",
+      "animation_owner": "attachments/attachment_lists/races/chinese/units/tier3_crossbow_chi",
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\crossbow3\\c786118689464079b2aa\\decoded-static.json",
+      "manifest_sha256": "e546a86977563dc85455883ec0f388f86d3d209d81b1922f5db7b1f520720b62",
+      "geometry": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\crossbow3\\c786118689464079b2aa\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_crossbow_age03\\chi_ranged_crossbow_age03.rrgeom",
+      "geometry_sha256": "45ca5ca6afb003e6c3b8e6af41df43afd0ded5fde2348dd8465d05eb62d05e74",
+      "resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/chinese/humans/chi_ranged_crossbow_age03/chi_ranged_crossbow_age03.rrgeom",
+          "archive": "DX12GeoChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12GeoChinese.sga",
+          "sha256": "45ca5ca6afb003e6c3b8e6af41df43afd0ded5fde2348dd8465d05eb62d05e74",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\crossbow3\\c786118689464079b2aa\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_crossbow_age03\\chi_ranged_crossbow_age03.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/chinese/humans/chi_ranged_crossbow_age03/chi_ranged_crossbow_age03.rrmaterial",
+          "archive": "DX12AssetsChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12AssetsChinese.sga",
+          "sha256": "e9774d599a116243eacce34f631a945b35b5944d42b9c95ddbbc6abe1248cd9c",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\crossbow3\\c786118689464079b2aa\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_crossbow_age03\\chi_ranged_crossbow_age03.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/chinese/humans/chi_ranged_crossbow_age03/chi_ranged_crossbow_age03.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "sha256": "7c15e5c505206d3fa26b539980c6a5c25c2adc747c41ae9828603925ccf217d7",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\crossbow3\\c786118689464079b2aa\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_crossbow_age03\\chi_ranged_crossbow_age03.rgm"
+        }
+      },
+      "group_count": 3,
+      "triangle_count_all_fragments": 2221,
+      "bounds_all_fragments": {
+        "minimum": [
+          -0.58056640625,
+          -0.267578125,
+          -0.0018711090087890625
+        ],
+        "maximum": [
+          0.58056640625,
+          0.37158203125,
+          1.9404296875
+        ],
+        "dimensions": [
+          1.1611328125,
+          0.63916015625,
+          1.942300796508789
+        ],
+        "vertices": 1914
+      },
+      "groups": [
+        {
+          "name": "chi_ranged_crossbow_age03",
+          "material": "lod1",
+          "preview_material": "lod1",
+          "effect": "unit",
+          "vertices": 1164,
+          "triangles": 1475,
+          "bounds": {
+            "minimum": [
+              -0.58056640625,
+              -0.26171875,
+              -0.0018711090087890625
+            ],
+            "maximum": [
+              0.58056640625,
+              0.37158203125,
+              1.9404296875
+            ],
+            "dimensions": [
+              1.1611328125,
+              0.63330078125,
+              1.942300796508789
+            ],
+            "vertices": 1164
+          }
+        },
+        {
+          "name": "chi_ranged_crossbow_age03",
+          "material": "lod2",
+          "preview_material": "lod2",
+          "effect": "unit",
+          "vertices": 543,
+          "triangles": 567,
+          "bounds": {
+            "minimum": [
+              -0.57275390625,
+              -0.267578125,
+              -0.0016145706176757812
+            ],
+            "maximum": [
+              0.57275390625,
+              0.37158203125,
+              1.93359375
+            ],
+            "dimensions": [
+              1.1455078125,
+              0.63916015625,
+              1.9352083206176758
+            ],
+            "vertices": 543
+          }
+        },
+        {
+          "name": "chi_ranged_crossbow_age03",
+          "material": "lod3",
+          "preview_material": "lod3",
+          "effect": "unit",
+          "vertices": 207,
+          "triangles": 179,
+          "bounds": {
+            "minimum": [
+              -0.5732421875,
+              -0.267578125,
+              0.0
+            ],
+            "maximum": [
+              0.5732421875,
+              0.300048828125,
+              1.9384765625
+            ],
+            "dimensions": [
+              1.146484375,
+              0.567626953125,
+              1.9384765625
+            ],
+            "vertices": 207
+          }
+        }
+      ],
+      "skeleton_bones": 48,
+      "palette_bones": [
+        46
+      ],
+      "has_collection_contract": false
+    },
+    {
+      "key": "crossbow4",
+      "family": "ranged",
+      "age": 4,
+      "kind": "humanoid",
+      "logical_path": "art/civilizations/chinese/humans/chi_ranged_crossbow_age04/chi_ranged_crossbow_age04.rgm",
+      "animation_owner": "attachments/attachment_lists/races/chinese/units/tier4_crossbow_chi",
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\crossbow4\\fe4bc62c3f00bb217266\\decoded-static.json",
+      "manifest_sha256": "fb2550ca7f39e51943e11d594423987b40a03fad51a75cf2a93d603ab77be7ea",
+      "geometry": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\crossbow4\\fe4bc62c3f00bb217266\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_crossbow_age04\\chi_ranged_crossbow_age04.rrgeom",
+      "geometry_sha256": "c1dffd5a1459d74de040b71c83c638013504530e36a770ab44b88015da149cbe",
+      "resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/chinese/humans/chi_ranged_crossbow_age04/chi_ranged_crossbow_age04.rrgeom",
+          "archive": "DX12GeoChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12GeoChinese.sga",
+          "sha256": "c1dffd5a1459d74de040b71c83c638013504530e36a770ab44b88015da149cbe",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\crossbow4\\fe4bc62c3f00bb217266\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_crossbow_age04\\chi_ranged_crossbow_age04.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/chinese/humans/chi_ranged_crossbow_age04/chi_ranged_crossbow_age04.rrmaterial",
+          "archive": "DX12AssetsChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12AssetsChinese.sga",
+          "sha256": "fe05e2756af1093dfcfd4bec496558cdc1a7a5cb32452b903f889df0616012d1",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\crossbow4\\fe4bc62c3f00bb217266\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_crossbow_age04\\chi_ranged_crossbow_age04.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/chinese/humans/chi_ranged_crossbow_age04/chi_ranged_crossbow_age04.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "sha256": "beafbf4da1be67b2da84dd0cc6d29f6db83d812e02963afec4ccc9f1a027125e",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\crossbow4\\fe4bc62c3f00bb217266\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_crossbow_age04\\chi_ranged_crossbow_age04.rgm"
+        }
+      },
+      "group_count": 3,
+      "triangle_count_all_fragments": 2291,
+      "bounds_all_fragments": {
+        "minimum": [
+          -0.587890625,
+          -0.278564453125,
+          -0.0018711090087890625
+        ],
+        "maximum": [
+          0.587890625,
+          0.363037109375,
+          2.01953125
+        ],
+        "dimensions": [
+          1.17578125,
+          0.6416015625,
+          2.021402359008789
+        ],
+        "vertices": 2099
+      },
+      "groups": [
+        {
+          "name": "chi_ranged_crossbow_age04",
+          "material": "lod1",
+          "preview_material": "lod1",
+          "effect": "unit",
+          "vertices": 1253,
+          "triangles": 1499,
+          "bounds": {
+            "minimum": [
+              -0.587890625,
+              -0.255615234375,
+              -0.0018711090087890625
+            ],
+            "maximum": [
+              0.587890625,
+              0.363037109375,
+              2.015625
+            ],
+            "dimensions": [
+              1.17578125,
+              0.61865234375,
+              2.017496109008789
+            ],
+            "vertices": 1253
+          }
+        },
+        {
+          "name": "chi_ranged_crossbow_age04",
+          "material": "lod2",
+          "preview_material": "lod2",
+          "effect": "unit",
+          "vertices": 582,
+          "triangles": 575,
+          "bounds": {
+            "minimum": [
+              -0.57275390625,
+              -0.278564453125,
+              -0.0016145706176757812
+            ],
+            "maximum": [
+              0.57275390625,
+              0.363037109375,
+              2.01953125
+            ],
+            "dimensions": [
+              1.1455078125,
+              0.6416015625,
+              2.021145820617676
+            ],
+            "vertices": 582
+          }
+        },
+        {
+          "name": "chi_ranged_crossbow_age04",
+          "material": "lod3",
+          "preview_material": "lod3",
+          "effect": "unit",
+          "vertices": 264,
+          "triangles": 217,
+          "bounds": {
+            "minimum": [
+              -0.5732421875,
+              -0.2685546875,
+              0.0
+            ],
+            "maximum": [
+              0.5732421875,
+              0.336181640625,
+              2.001953125
+            ],
+            "dimensions": [
+              1.146484375,
+              0.604736328125,
+              2.001953125
+            ],
+            "vertices": 264
+          }
+        }
+      ],
+      "skeleton_bones": 48,
+      "palette_bones": [
+        46
+      ],
+      "has_collection_contract": false
+    },
+    {
+      "key": "handcannon4",
+      "family": "ranged",
+      "age": 4,
+      "kind": "humanoid",
+      "logical_path": "art/civilizations/chinese/humans/chi_ranged_cannoneer_age04/chi_ranged_cannoneer_age04.rgm",
+      "animation_owner": "attachments/attachment_lists/races/chinese/units/tier4_handcannon_chi",
+      "manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\handcannon4\\52001f51564456be0e4c\\decoded-static.json",
+      "manifest_sha256": "b159bf5154b56897b3ccce3ca0c22545cecc7a8915b08a8bee5daf2413e9b8d3",
+      "geometry": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\handcannon4\\52001f51564456be0e4c\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_cannoneer_age04\\chi_ranged_cannoneer_age04.rrgeom",
+      "geometry_sha256": "a2511720fa339fe0c460db5e9343a300e42d7ad7241ea91606e4321d94d63909",
+      "resources": {
+        "geometry": {
+          "logical_path": "art/civilizations/chinese/humans/chi_ranged_cannoneer_age04/chi_ranged_cannoneer_age04.rrgeom",
+          "archive": "DX12GeoChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12GeoChinese.sga",
+          "sha256": "a2511720fa339fe0c460db5e9343a300e42d7ad7241ea91606e4321d94d63909",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\handcannon4\\52001f51564456be0e4c\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_cannoneer_age04\\chi_ranged_cannoneer_age04.rrgeom"
+        },
+        "material": {
+          "logical_path": "art/civilizations/chinese/humans/chi_ranged_cannoneer_age04/chi_ranged_cannoneer_age04.rrmaterial",
+          "archive": "DX12AssetsChinese.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\DX12AssetsChinese.sga",
+          "sha256": "0066c8839d23f4bc637ffc49b82b87d84e837ad9021faf032ea4a5c2bd0a9af3",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\handcannon4\\52001f51564456be0e4c\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_cannoneer_age04\\chi_ranged_cannoneer_age04.rrmaterial"
+        },
+        "model": {
+          "logical_path": "art/civilizations/chinese/humans/chi_ranged_cannoneer_age04/chi_ranged_cannoneer_age04.rgm",
+          "archive": "ArtHigh.sga",
+          "archive_path": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ArtHigh.sga",
+          "sha256": "5a7b2c19620844bae87954ec11b445535150a5cf3e91b928c8e355796a5e142c",
+          "cache_path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\staging\\r80\\donors\\handcannon4\\52001f51564456be0e4c\\source\\art\\civilizations\\chinese\\humans\\chi_ranged_cannoneer_age04\\chi_ranged_cannoneer_age04.rgm"
+        }
+      },
+      "group_count": 3,
+      "triangle_count_all_fragments": 1884,
+      "bounds_all_fragments": {
+        "minimum": [
+          -0.58935546875,
+          -0.29345703125,
+          -0.0007920265197753906
+        ],
+        "maximum": [
+          0.58251953125,
+          0.206787109375,
+          1.939453125
+        ],
+        "dimensions": [
+          1.171875,
+          0.500244140625,
+          1.9402451515197754
+        ],
+        "vertices": 1399
+      },
+      "groups": [
+        {
+          "name": "chi_ranged_cannoneer_age04",
+          "material": "lod1",
+          "preview_material": "lod1",
+          "effect": "unit",
+          "vertices": 819,
+          "triangles": 1198,
+          "bounds": {
+            "minimum": [
+              -0.578125,
+              -0.271484375,
+              -0.0007920265197753906
+            ],
+            "maximum": [
+              0.578125,
+              0.18603515625,
+              1.9375
+            ],
+            "dimensions": [
+              1.15625,
+              0.45751953125,
+              1.9382920265197754
+            ],
+            "vertices": 819
+          }
+        },
+        {
+          "name": "chi_ranged_cannoneer_age04",
+          "material": "lod2",
+          "preview_material": "lod2",
+          "effect": "unit",
+          "vertices": 395,
+          "triangles": 506,
+          "bounds": {
+            "minimum": [
+              -0.57470703125,
+              -0.271484375,
+              0.0008916854858398438
+            ],
+            "maximum": [
+              0.57470703125,
+              0.18603515625,
+              1.935546875
+            ],
+            "dimensions": [
+              1.1494140625,
+              0.45751953125,
+              1.9346551895141602
+            ],
+            "vertices": 395
+          }
+        },
+        {
+          "name": "chi_ranged_cannoneer_age04",
+          "material": "lod3",
+          "preview_material": "lod3",
+          "effect": "unit",
+          "vertices": 185,
+          "triangles": 180,
+          "bounds": {
+            "minimum": [
+              -0.58935546875,
+              -0.29345703125,
+              0.0008916854858398438
+            ],
+            "maximum": [
+              0.58251953125,
+              0.206787109375,
+              1.939453125
+            ],
+            "dimensions": [
+              1.171875,
+              0.500244140625,
+              1.9385614395141602
+            ],
+            "vertices": 185
+          }
+        }
+      ],
+      "skeleton_bones": 48,
+      "palette_bones": [
+        46
+      ],
+      "has_collection_contract": false
+    }
+  ]
+}

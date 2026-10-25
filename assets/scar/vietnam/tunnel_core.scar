@@ -1,0 +1,68 @@
+-- Pure deterministic geometry. Native metres: four per game tile.
+VietnamTunnelCore={}
+local function axes(n)
+    if n.cx~=nil then return n.cx,n.sx end
+    return math.cos(n.heading or 0),math.sin(n.heading or 0)
+end
+function VietnamTunnelCore.PointDistance(n,x,z)
+    local c,s=axes(n)
+    local dx,dz=x-n.x,z-n.z
+    local lx,lz=dx*c+dz*s,-dx*s+dz*c
+    local px,pz=math.max(-n.hx,math.min(n.hx,lx)),math.max(-n.hz,math.min(n.hz,lz))
+    return math.sqrt((lx-px)^2+(lz-pz)^2),{x=n.x+px*c-pz*s,z=n.z+px*s+pz*c}
+end
+local function corners(n)
+    local c,s=axes(n);local r={}
+    for _,p in ipairs({{-1,-1},{1,-1},{1,1},{-1,1}}) do
+        r[#r+1]={x=n.x+p[1]*n.hx*c-p[2]*n.hz*s,z=n.z+p[1]*n.hx*s+p[2]*n.hz*c}
+    end
+    return r
+end
+function VietnamTunnelCore.Gap(a,b)
+    local ac,bc=corners(a),corners(b);local separated=false
+    for _,n in ipairs({a,b}) do
+        local c,s=axes(n)
+        for _,axis in ipairs({{c,s},{-s,c}}) do
+            local amin,amax,bmin,bmax=math.huge,-math.huge,math.huge,-math.huge
+            for _,p in ipairs(ac) do local d=p.x*axis[1]+p.z*axis[2];amin=math.min(amin,d);amax=math.max(amax,d) end
+            for _,p in ipairs(bc) do local d=p.x*axis[1]+p.z*axis[2];bmin=math.min(bmin,d);bmax=math.max(bmax,d) end
+            if amax<bmin or bmax<amin then separated=true end
+        end
+    end
+    if not separated then return 0 end
+    local d=math.huge
+    for _,p in ipairs(ac) do d=math.min(d,(VietnamTunnelCore.PointDistance(b,p.x,p.z))) end
+    for _,p in ipairs(bc) do d=math.min(d,(VietnamTunnelCore.PointDistance(a,p.x,p.z))) end
+    return d
+end
+function VietnamTunnelCore.Build(nodes)
+    table.sort(nodes,function(a,b) return a.id<b.id end)
+    local g={nodes=nodes,byID={}}
+    for _,n in ipairs(nodes) do n.component=nil;n.links={};g.byID[n.id]=n end
+    for i=1,#nodes do for j=i+1,#nodes do
+        if VietnamTunnelCore.Gap(nodes[i],nodes[j])<=math.max(nodes[i].reach or 4,nodes[j].reach or 4)+0.000001 then
+            nodes[i].links[#nodes[i].links+1]=nodes[j];nodes[j].links[#nodes[j].links+1]=nodes[i]
+        end
+    end end
+    local visited={}
+    for _,start in ipairs(nodes) do if not visited[start.id] then
+        local q={start};visited[start.id]=true;local root=nil;local index=1
+        while index<=#q do
+            local n=q[index];index=index+1
+            if n.root then root=root and math.min(root,n.id) or n.id end
+            for _,v in ipairs(n.links) do if not visited[v.id] then visited[v.id]=true;q[#q+1]=v end end
+        end
+        for _,n in ipairs(q) do n.component=root end
+    end end
+    return g
+end
+function VietnamTunnelCore.Nearest(g,destinationID,x,z)
+    local dest=g.byID[destinationID]
+    if dest==nil or dest.component==nil then return nil end
+    local best,distance=nil,math.huge
+    for _,n in ipairs(g.nodes) do if n.component==dest.component then
+        local d=VietnamTunnelCore.PointDistance(n,x,z)
+        if d<distance-0.000001 or (math.abs(d-distance)<0.000001 and (best==nil or n.id<best.id)) then best,distance=n,d end
+    end end
+    return best
+end

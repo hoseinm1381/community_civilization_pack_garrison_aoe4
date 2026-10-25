@@ -1,0 +1,673 @@
+{
+  "schema": "ccp-060-bulk-material-selection/v1",
+  "inputs": "art\\recipes\\release_060\\remaining-material-inputs-ready4.json",
+  "inputs_sha256": "3cee1e8e3d2e9aff407618a3ed06a47b4715405a00bf0e76f80b5b4d700a62ac",
+  "models": [
+    {
+      "key": "monk3",
+      "geometry_scope": "humanoid exact three-LOD body",
+      "required_geometry_replacement": true,
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\additional-official-models\\monk3\\3d026eebe8d003b4f8dd\\decoded-static.json",
+      "donor_manifest_sha256": "c765e09dd6843aa923ea280212ee0bdc2b1de48ce12af5846861bbaf8a715e5f",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\monk3\\v2\\export.json",
+      "source_receipt_sha256": "f8b348a4c53f83e566186a2eb5be0e3e6e1328fb5e839bb76c927d7b848c5cd5",
+      "material_map": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\monk3\\v2\\material-map.json",
+      "material_map_sha256": "47cb2df5ffb1d6e774a5eafd0a0081ad6fd0eb5580da919eef6e488d45db6728",
+      "retained_native_materials": [],
+      "materials": {
+        "lod1": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\monk3\\v2\\albedo.png",
+          "sha256": "f255fe553d86649bc4f32b985095b571ce7ec9a1ee003fd6ec440b26115b2bd4",
+          "slot": "albedoTexture",
+          "job": "m001"
+        },
+        "lod2": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\monk3\\v2\\albedo.png",
+          "sha256": "f255fe553d86649bc4f32b985095b571ce7ec9a1ee003fd6ec440b26115b2bd4",
+          "slot": "albedoTexture",
+          "job": "m001"
+        },
+        "lod3": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\monk3\\v2\\albedo.png",
+          "sha256": "f255fe553d86649bc4f32b985095b571ce7ec9a1ee003fd6ec440b26115b2bd4",
+          "slot": "albedoTexture",
+          "job": "m001"
+        }
+      }
+    },
+    {
+      "key": "horseman2",
+      "geometry_scope": "compatible stock mounted geometry; added source details excluded",
+      "required_geometry_replacement": false,
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\pilots\\horseman2\\decoded\\verified-a53c7a0875a4dc6c3952\\58c6687935705ec7a5f6\\decoded-static.json",
+      "donor_manifest_sha256": "c0fb7b997ddfa89b5459d27e9ed764e441cf2f19d50028eb562d17b76e7eb775",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\horseman2\\v4\\authoring.json",
+      "source_receipt_sha256": "303eb0c1fa8b5f958cba62246b4b48a80f8e4d9a095bdbe6c70525076f8b0736",
+      "material_map": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\representatives\\horseman2\\v4\\material-map.json",
+      "material_map_sha256": "2a167e9c17ba57e0d981122d7a1abd44e41dfb2e8b92e028b946c63dbea4bed2",
+      "retained_native_materials": [],
+      "materials": {
+        "rider_lod1": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\representatives\\horseman2\\v4\\single_atlas_0.png",
+          "sha256": "0cb570adaeaec5c7b33ed32dac2674de64be6b8b493b9e697a9df89b1f23debe",
+          "slot": "albedoTexture",
+          "job": "m002"
+        },
+        "horse_lod1": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\representatives\\horseman2\\v4\\single_atlas_1.png",
+          "sha256": "1922d24742b4218a67afa34a9582a0a342407275987b134f1724f3431479fded",
+          "slot": "albedoTexture",
+          "job": "m003"
+        },
+        "horse_lod2": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\representatives\\horseman2\\v4\\single_atlas_1.png",
+          "sha256": "1922d24742b4218a67afa34a9582a0a342407275987b134f1724f3431479fded",
+          "slot": "albedoTexture",
+          "job": "m003"
+        },
+        "rider_lod2": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\representatives\\horseman2\\v4\\single_atlas_0.png",
+          "sha256": "0cb570adaeaec5c7b33ed32dac2674de64be6b8b493b9e697a9df89b1f23debe",
+          "slot": "albedoTexture",
+          "job": "m002"
+        },
+        "horse_lod3": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\representatives\\horseman2\\v4\\single_atlas_1.png",
+          "sha256": "1922d24742b4218a67afa34a9582a0a342407275987b134f1724f3431479fded",
+          "slot": "albedoTexture",
+          "job": "m003"
+        },
+        "rider_lod3": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\representatives\\horseman2\\v4\\single_atlas_0.png",
+          "sha256": "0cb570adaeaec5c7b33ed32dac2674de64be6b8b493b9e697a9df89b1f23debe",
+          "slot": "albedoTexture",
+          "job": "m002"
+        }
+      }
+    },
+    {
+      "key": "trade2",
+      "geometry_scope": "compatible stock mounted/trade geometry; native goods retained",
+      "required_geometry_replacement": false,
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\additional-official-models\\trade2\\fc01cdbeb6d6c2af5cad\\decoded-static.json",
+      "donor_manifest_sha256": "62423940affe24eb9af5914e8e48b51c3f11e8d89682f5094b817068a3f6a383",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\mounted\\trade2\\v1\\authoring.json",
+      "source_receipt_sha256": "67ab09ad86f6cd305ea344274765270697336e60312c119074e7e011eb6bdcf9",
+      "material_map": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\mounted\\trade2\\v1\\material-map.json",
+      "material_map_sha256": "14cf220547d9c495403fb149d5dc21cc240a2ead8020a45f146f1d096e189d84",
+      "retained_native_materials": [
+        "cart_lod1",
+        "cart_lod2",
+        "cart_lod3",
+        "gold"
+      ],
+      "materials": {
+        "horse_lod1": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\mounted\\trade2\\v1\\single_atlas_0.png",
+          "sha256": "d6aa6a90823b7984a723660f8743822182cfb5f524c18c9c6e14a2cba67be912",
+          "slot": "albedoTexture",
+          "job": "m004"
+        },
+        "horse_lod2": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\mounted\\trade2\\v1\\single_atlas_1.png",
+          "sha256": "d6aa6a90823b7984a723660f8743822182cfb5f524c18c9c6e14a2cba67be912",
+          "slot": "albedoTexture",
+          "job": "m004"
+        },
+        "horse_lod3": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\mounted\\trade2\\v1\\single_atlas_2.png",
+          "sha256": "d6aa6a90823b7984a723660f8743822182cfb5f524c18c9c6e14a2cba67be912",
+          "slot": "albedoTexture",
+          "job": "m004"
+        },
+        "rider_chi_villager_male_age02_lod3": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\mounted\\trade2\\v1\\single_atlas_3.png",
+          "sha256": "22ccef8693573edddf75cf5241bb43812c830ba849319919b7bb7b9eafc49347",
+          "slot": "albedoTexture",
+          "job": "m005"
+        },
+        "rider_lod1": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\mounted\\trade2\\v1\\single_atlas_4.png",
+          "sha256": "22ccef8693573edddf75cf5241bb43812c830ba849319919b7bb7b9eafc49347",
+          "slot": "albedoTexture",
+          "job": "m005"
+        },
+        "rider_lod2": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\mounted\\trade2\\v1\\single_atlas_5.png",
+          "sha256": "22ccef8693573edddf75cf5241bb43812c830ba849319919b7bb7b9eafc49347",
+          "slot": "albedoTexture",
+          "job": "m005"
+        }
+      }
+    },
+    {
+      "key": "trade3",
+      "geometry_scope": "compatible stock mounted/trade geometry; native goods retained",
+      "required_geometry_replacement": false,
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\additional-official-models\\trade3\\2da135cf5a4e64905e58\\decoded-static.json",
+      "donor_manifest_sha256": "a36bbde3ccf7493bbae38ddce8582cdcb3b3addd9d785f92f552303b4d281ac7",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\mounted\\trade3\\v1\\authoring.json",
+      "source_receipt_sha256": "7b487a1de8ed66e942060e6a2b2eff8a6b4ad12dac409fca996b9ff9487b6eb7",
+      "material_map": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\mounted\\trade3\\v1\\material-map.json",
+      "material_map_sha256": "5cd609d849c091d8119a7761a728c02ec11d2786d2ec1c66dc8b0f8ab21130f3",
+      "retained_native_materials": [
+        "lod1",
+        "lod2",
+        "lod3",
+        "obj"
+      ],
+      "materials": {
+        "horse_lod1": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\mounted\\trade3\\v1\\single_atlas_0.png",
+          "sha256": "ba1ee406b878394017e8250e99d00fd05c25c7ab75ffdfecdca4c9037848dc6d",
+          "slot": "albedoTexture",
+          "job": "m006"
+        },
+        "horse_lod2": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\mounted\\trade3\\v1\\single_atlas_1.png",
+          "sha256": "ba1ee406b878394017e8250e99d00fd05c25c7ab75ffdfecdca4c9037848dc6d",
+          "slot": "albedoTexture",
+          "job": "m006"
+        },
+        "horse_lod3": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\mounted\\trade3\\v1\\single_atlas_2.png",
+          "sha256": "ba1ee406b878394017e8250e99d00fd05c25c7ab75ffdfecdca4c9037848dc6d",
+          "slot": "albedoTexture",
+          "job": "m006"
+        },
+        "rider_lod1": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\mounted\\trade3\\v1\\single_atlas_3.png",
+          "sha256": "ef9d6c51eb5727e070c0129f5cfca09b17038a691ba6ce570d2c509872cb1dd8",
+          "slot": "albedoTexture",
+          "job": "m007"
+        },
+        "rider_lod2": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\mounted\\trade3\\v1\\single_atlas_4.png",
+          "sha256": "ef9d6c51eb5727e070c0129f5cfca09b17038a691ba6ce570d2c509872cb1dd8",
+          "slot": "albedoTexture",
+          "job": "m007"
+        },
+        "rider_lod3": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\mounted\\trade3\\v1\\single_atlas_5.png",
+          "sha256": "ef9d6c51eb5727e070c0129f5cfca09b17038a691ba6ce570d2c509872cb1dd8",
+          "slot": "albedoTexture",
+          "job": "m007"
+        }
+      }
+    },
+    {
+      "key": "trade4",
+      "geometry_scope": "compatible stock mounted/trade geometry; native goods retained",
+      "required_geometry_replacement": false,
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\inherited-render-bodies-v2\\run-003\\decodes\\chinese-trade-cart-tier4-exact\\adb4430b21c79e57b2e3\\decoded-static.json",
+      "donor_manifest_sha256": "72a04941a3267a99e5f2d909e3450110c4dc6eddf8dfeb8286c915b3d654faed",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\mounted\\trade4\\v2\\authoring.json",
+      "source_receipt_sha256": "18747a996e923970c63f59d3c0d86359016c9f263a94822eab642f7d7d77366f",
+      "material_map": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\mounted\\trade4\\v2\\material-map.json",
+      "material_map_sha256": "ab93d50cd99df48835aece4e441fbb183b7e7b26c507d2e5a66a24ff3e0fd274",
+      "retained_native_materials": [
+        "lod1",
+        "lod2",
+        "lod3",
+        "obj"
+      ],
+      "materials": {
+        "horse_lod1": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\mounted\\trade4\\v2\\single_atlas_0.png",
+          "sha256": "719980243e5f857c2347f1ce2e109135075361db7aa62657335423ad743004ed",
+          "slot": "albedoTexture",
+          "job": "m008"
+        },
+        "horse_lod2": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\mounted\\trade4\\v2\\single_atlas_1.png",
+          "sha256": "719980243e5f857c2347f1ce2e109135075361db7aa62657335423ad743004ed",
+          "slot": "albedoTexture",
+          "job": "m008"
+        },
+        "horse_lod3": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\mounted\\trade4\\v2\\single_atlas_2.png",
+          "sha256": "719980243e5f857c2347f1ce2e109135075361db7aa62657335423ad743004ed",
+          "slot": "albedoTexture",
+          "job": "m008"
+        },
+        "rider_lod1": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\mounted\\trade4\\v2\\single_atlas_3.png",
+          "sha256": "0231e77681f98722a044856f2aa56257fd463057a808e3a34bf5b30cde5f231d",
+          "slot": "albedoTexture",
+          "job": "m009"
+        },
+        "rider_lod2": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\mounted\\trade4\\v2\\single_atlas_4.png",
+          "sha256": "0231e77681f98722a044856f2aa56257fd463057a808e3a34bf5b30cde5f231d",
+          "slot": "albedoTexture",
+          "job": "m009"
+        },
+        "rider_lod3": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\mounted\\trade4\\v2\\single_atlas_5.png",
+          "sha256": "0231e77681f98722a044856f2aa56257fd463057a808e3a34bf5b30cde5f231d",
+          "slot": "albedoTexture",
+          "job": "m009"
+        }
+      }
+    },
+    {
+      "key": "combat_elephant4",
+      "geometry_scope": "compatible stock combat-elephant geometry and motion",
+      "required_geometry_replacement": false,
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\remaining-donors\\run-004\\decoded\\016_sul_elephant_combined_armor_age04\\97e51d5d7548500f883e\\decoded-static.json",
+      "donor_manifest_sha256": "a75e3bb466a346897887635ea0e810714b908742304baefb66cc5d6558bf13f4",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\nonhumanoid\\combat_elephant4\\v1\\authoring.json",
+      "source_receipt_sha256": "f80699f4697bc07a76d04784537a188300b54473fd6f552e4ec4d275cf235880",
+      "material_map": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\combat_elephant4\\v1\\material-map.json",
+      "material_map_sha256": "ea9089c512b34af5ef3920718ffd2c0133fd217d356e2a1a7f1b8802d0b2f23c",
+      "retained_native_materials": [],
+      "materials": {
+        "elephant_lod1": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\combat_elephant4\\v1\\elephant_lod1_albedo.png",
+          "sha256": "a2e341514e7bfee488104ce55f340aa807243e5102f6ac1cadb7a96fa534948c",
+          "slot": "albedoTexture",
+          "job": "m010"
+        },
+        "elephant_lod2": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\combat_elephant4\\v1\\elephant_lod2_albedo.png",
+          "sha256": "a2e341514e7bfee488104ce55f340aa807243e5102f6ac1cadb7a96fa534948c",
+          "slot": "albedoTexture",
+          "job": "m010"
+        },
+        "elephant_lod3": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\combat_elephant4\\v1\\elephant_lod3_albedo.png",
+          "sha256": "a2e341514e7bfee488104ce55f340aa807243e5102f6ac1cadb7a96fa534948c",
+          "slot": "albedoTexture",
+          "job": "m010"
+        },
+        "rider_lod1": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\combat_elephant4\\v1\\rider_lod1_albedo.png",
+          "sha256": "66d7a6dd350c8dfdb9af4b0bbea3bc511c13953ba730cba2e31d868425cf1055",
+          "slot": "albedoTexture",
+          "job": "m011"
+        },
+        "rider_lod2": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\combat_elephant4\\v1\\rider_lod2_albedo.png",
+          "sha256": "66d7a6dd350c8dfdb9af4b0bbea3bc511c13953ba730cba2e31d868425cf1055",
+          "slot": "albedoTexture",
+          "job": "m011"
+        },
+        "rider_lod3": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\combat_elephant4\\v1\\rider_lod3_albedo.png",
+          "sha256": "66d7a6dd350c8dfdb9af4b0bbea3bc511c13953ba730cba2e31d868425cf1055",
+          "slot": "albedoTexture",
+          "job": "m011"
+        }
+      }
+    },
+    {
+      "key": "combat_elephant4_upgrade",
+      "geometry_scope": "compatible stock combat-elephant geometry and motion",
+      "required_geometry_replacement": false,
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\remaining-donors\\run-004\\decoded\\017_sul_elephant_combined_armor_age04_upgrade\\2ba5b1aa1bde3ad39e1c\\decoded-static.json",
+      "donor_manifest_sha256": "acf87381ba0b28e58cb65639ab0751cfcf7f2e321007299921f7be5319cf6685",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\nonhumanoid\\combat_elephant4_upgrade\\v1\\authoring.json",
+      "source_receipt_sha256": "ac4c0172f58cacd4471d134d79418611274c2f6dd8661e6a1a3f2b46b94e233b",
+      "material_map": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\combat_elephant4_upgrade\\v1\\material-map.json",
+      "material_map_sha256": "ce8f80ce32ee2f3631dc7d87a4e150411763d79200be3bc3142ad11d75e77184",
+      "retained_native_materials": [],
+      "materials": {
+        "elephant_elephant_elephant_elephant_elephant_lod1": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\combat_elephant4_upgrade\\v1\\elephant_elephant_elephant_elephant_elephant_lod1_albedo.png",
+          "sha256": "078ca5f9afe03314a4b8150c8fe6a7900465f104beb9f3f9f7d747b0320ed275",
+          "slot": "albedoTexture",
+          "job": "m012"
+        },
+        "rider_lod1": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\combat_elephant4_upgrade\\v1\\rider_lod1_albedo.png",
+          "sha256": "ae85e7673b3764fff295a81ef243e5a97fbe6b34a641a4a26d930042c78db1b2",
+          "slot": "albedoTexture",
+          "job": "m013"
+        },
+        "elephant_elephant_elephant_elephant_elephant_lod2": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\combat_elephant4_upgrade\\v1\\elephant_elephant_elephant_elephant_elephant_lod2_albedo.png",
+          "sha256": "078ca5f9afe03314a4b8150c8fe6a7900465f104beb9f3f9f7d747b0320ed275",
+          "slot": "albedoTexture",
+          "job": "m012"
+        },
+        "rider_lod2": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\combat_elephant4_upgrade\\v1\\rider_lod2_albedo.png",
+          "sha256": "ae85e7673b3764fff295a81ef243e5a97fbe6b34a641a4a26d930042c78db1b2",
+          "slot": "albedoTexture",
+          "job": "m013"
+        },
+        "elephant_elephant_elephant_elephant_elephant_lod3": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\combat_elephant4_upgrade\\v1\\elephant_elephant_elephant_elephant_elephant_lod3_albedo.png",
+          "sha256": "078ca5f9afe03314a4b8150c8fe6a7900465f104beb9f3f9f7d747b0320ed275",
+          "slot": "albedoTexture",
+          "job": "m012"
+        },
+        "rider_lod3": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\combat_elephant4_upgrade\\v1\\rider_lod3_albedo.png",
+          "sha256": "ae85e7673b3764fff295a81ef243e5a97fbe6b34a641a4a26d930042c78db1b2",
+          "slot": "albedoTexture",
+          "job": "m013"
+        }
+      }
+    },
+    {
+      "key": "siege_tower3",
+      "geometry_scope": "exact attached English siege-tower body; native build/deploy state unchanged",
+      "required_geometry_replacement": false,
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\remaining-donors\\run-004\\decoded\\013_eng_siege_tower\\424e058acf167e2ca486\\decoded-static.json",
+      "donor_manifest_sha256": "0d2c6d73b3a285a0c4afa21e9341896045f3df4db1dd771ba4ffea94d705e1cf",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\nonhumanoid\\siege_tower3\\v1\\authoring.json",
+      "source_receipt_sha256": "0a421db6363554e6e5e05c3c7ff423e9d2ec39caeae5911f8de6e8ec2dfded59",
+      "material_map": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\siege_tower3\\v1\\material-map-v3.json",
+      "material_map_sha256": "46486a1336177efb251d05dce5bf660ea55e45e84562e9808f182f72fbcaa8b2",
+      "retained_native_materials": [],
+      "materials": {
+        "page": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\siege_tower3\\v1\\page_albedo.png",
+          "sha256": "8a5857ddf6d224318150ea8870f3277bed009590c18bbd93260475e25e623ba8",
+          "slot": "albedoTex",
+          "job": "m014"
+        },
+        "roof": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\siege_tower3\\v1\\roof_albedo.png",
+          "sha256": "b40aaebb7cec2919ded342e2d7f00fd29228c4ac56ed55cbf0b36f17db070133",
+          "slot": "albedoTex",
+          "job": "m015"
+        }
+      },
+      "material_map_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\nonhumanoid\\siege_tower3\\v1\\material-map-v3-receipt.json",
+      "material_map_receipt_sha256": "0a1b58191b992ad5057d7d63c6ac57bc71a3c3947aabd21517c36667858ad4a8"
+    },
+    {
+      "key": "ram3_candidate",
+      "geometry_scope": "compatible stock siege geometry; exact native consumer resolved; mechanisms retained",
+      "required_geometry_replacement": false,
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\inherited-render-bodies-v2\\run-003\\decodes\\english-battering-ram-exact\\466a366308af305dfc7e\\decoded-static.json",
+      "donor_manifest_sha256": "2015d10ffb7692329db71a2f627e0274c0edbd2f72ea4f46451a5921a01ff3c1",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\nonhumanoid\\ram3_candidate\\v1\\authoring.json",
+      "source_receipt_sha256": "5a870a089b1ce2337b87055fd3a5f04b58e8c674cb572318d0a3b09fcd412691",
+      "material_map": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\ram3_candidate\\v1\\material-map-v3.json",
+      "material_map_sha256": "6e5fe53cbb482437549b2d8e57d67d8206cc4b3ed16b8fdd4a2b89fb2e801ef5",
+      "retained_native_materials": [],
+      "materials": {
+        "page": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\ram3_candidate\\v1\\page_albedo.png",
+          "sha256": "8a5857ddf6d224318150ea8870f3277bed009590c18bbd93260475e25e623ba8",
+          "slot": "albedoTex",
+          "job": "m016"
+        }
+      },
+      "material_map_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\nonhumanoid\\ram3_candidate\\v1\\material-map-v3-receipt.json",
+      "material_map_receipt_sha256": "c63b91aab29dc9ef748076572947e55ff7a4d18654eb610348f1ff6cb6cf9f9e",
+      "native_consumer_proof": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\siege-exact-consumers-r1\\report.json",
+      "native_consumer_proof_sha256": "e2424564376c43aa0825675565dfca4e00edf2f9cc7de9bb68bae8da3145392a"
+    },
+    {
+      "key": "springald3_candidate",
+      "geometry_scope": "compatible stock siege geometry; exact native consumer resolved; mechanisms retained",
+      "required_geometry_replacement": false,
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\inherited-render-bodies-v2\\run-003\\decodes\\english-springald-exact\\ac26fec331c1e148a11a\\decoded-static.json",
+      "donor_manifest_sha256": "78baf03519393a2a0ea116796a4913a0c42c7ad313ce01e67c90bf4e079db08f",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\nonhumanoid\\springald3_candidate\\v1\\authoring.json",
+      "source_receipt_sha256": "a188dd60e70cf32c091d7f2779b39ab378cb7e3121b5cfb8fcfee49db2a2dae2",
+      "material_map": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\springald3_candidate\\v1\\material-map-v3.json",
+      "material_map_sha256": "a444c8583e7bc08277b0b6859956ef7cfb628a44292c81e36892e6ecc08268ff",
+      "retained_native_materials": [
+        "flags"
+      ],
+      "materials": {
+        "page": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\springald3_candidate\\v1\\page_albedo.png",
+          "sha256": "8a5857ddf6d224318150ea8870f3277bed009590c18bbd93260475e25e623ba8",
+          "slot": "albedoTex",
+          "job": "m017"
+        }
+      },
+      "material_map_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\nonhumanoid\\springald3_candidate\\v1\\material-map-v3-receipt.json",
+      "material_map_receipt_sha256": "44ea152e551dfa39a5b5ab7aa186b308ff4f3197835319b27a988bfd33f5996a",
+      "native_consumer_proof": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\siege-exact-consumers-r1\\report.json",
+      "native_consumer_proof_sha256": "e2424564376c43aa0825675565dfca4e00edf2f9cc7de9bb68bae8da3145392a"
+    },
+    {
+      "key": "trebuchet4_counterweight_candidate",
+      "geometry_scope": "compatible stock siege geometry; exact native consumer resolved; mechanisms retained",
+      "required_geometry_replacement": false,
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\inherited-render-bodies-v2\\run-003\\decodes\\english-counterweight-trebuchet-exact\\504545468095db5e406b\\decoded-static.json",
+      "donor_manifest_sha256": "8f27e3b8da1bce25bc7e2051716213fd0e77ed4e9057ded2fe2786a98137b867",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\nonhumanoid\\trebuchet4_counterweight_candidate\\v1\\authoring.json",
+      "source_receipt_sha256": "11b7ebe5e980578f1c1755a2c1f1c70000176f22acdb46254c1fba280e2943e0",
+      "material_map": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\trebuchet4_counterweight_candidate\\v1\\material-map-v3.json",
+      "material_map_sha256": "cf22f99644f0c2ee12fed31b16454ef8f31c7440dfdd79015ddaa24d0cbf11ab",
+      "retained_native_materials": [],
+      "materials": {
+        "page": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\trebuchet4_counterweight_candidate\\v1\\page_albedo.png",
+          "sha256": "8a5857ddf6d224318150ea8870f3277bed009590c18bbd93260475e25e623ba8",
+          "slot": "albedoTex",
+          "job": "m018"
+        }
+      },
+      "material_map_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\nonhumanoid\\trebuchet4_counterweight_candidate\\v1\\material-map-v3-receipt.json",
+      "material_map_receipt_sha256": "40b556faa34302a9a3fb080c89d7785a023995938bd0a56a6d278f33dd45df4c",
+      "native_consumer_proof": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\siege-exact-consumers-r1\\report.json",
+      "native_consumer_proof_sha256": "e2424564376c43aa0825675565dfca4e00edf2f9cc7de9bb68bae8da3145392a"
+    },
+    {
+      "key": "trebuchet4_traction_candidate",
+      "geometry_scope": "compatible stock siege geometry; exact native consumer resolved; mechanisms retained",
+      "required_geometry_replacement": false,
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\inherited-render-bodies-v2\\run-003\\decodes\\english-traction-trebuchet-exact\\a6ceb4042c0034dfe45a\\decoded-static.json",
+      "donor_manifest_sha256": "985a6fe9647a4ce3620fa8446777d1d173dda4893b9f23822bf57528dbb940d2",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\nonhumanoid\\trebuchet4_traction_candidate\\v1\\authoring.json",
+      "source_receipt_sha256": "1401c899be4ad3cc5f14585201a40ae2f12562924770c43015b80401da96096f",
+      "material_map": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\trebuchet4_traction_candidate\\v1\\material-map-v3.json",
+      "material_map_sha256": "55418d6307a9dc71dfb6b7c7296d6fd545d4823594eed2e41c3bf1800e1550be",
+      "retained_native_materials": [],
+      "materials": {
+        "page": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\trebuchet4_traction_candidate\\v1\\page_albedo.png",
+          "sha256": "8a5857ddf6d224318150ea8870f3277bed009590c18bbd93260475e25e623ba8",
+          "slot": "albedoTex",
+          "job": "m019"
+        }
+      },
+      "material_map_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\nonhumanoid\\trebuchet4_traction_candidate\\v1\\material-map-v3-receipt.json",
+      "material_map_receipt_sha256": "a4e34ff19d96ff2254a5604286984b69dcb12da983e19dd0cb32b72edf9430b3",
+      "native_consumer_proof": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\siege-exact-consumers-r1\\report.json",
+      "native_consumer_proof_sha256": "e2424564376c43aa0825675565dfca4e00edf2f9cc7de9bb68bae8da3145392a"
+    },
+    {
+      "key": "bow_recurve",
+      "geometry_scope": "reached separate archer II-IV weapon; stock bow rig/actions retained",
+      "required_geometry_replacement": false,
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\weapon-rig-supplement\\decodes\\bow_recurve\\be9c0249527fc827959f\\decoded-static.json",
+      "donor_manifest_sha256": "757330b306bab8b7b536ec7dacde7e67b65a18409accd37e0bf119f46661fc30",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\nonhumanoid\\bow_recurve\\v3\\authoring.json",
+      "source_receipt_sha256": "2ec899cf8a442d4f4b86e421aaf11d2fee6220da8ace0744c823f1672d3ec390",
+      "material_map": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\bow_recurve\\v3\\material-map.json",
+      "material_map_sha256": "1955832a96191cd088c42e43d1249eabbe0344439e8f1cdb8a3de6d8360ca1fb",
+      "retained_native_materials": [],
+      "materials": {
+        "obj": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\bow_recurve\\v3\\obj_albedo.png",
+          "sha256": "f93750b6bfde8b5f38521b3afbb960ef9fe4e79173a3c3bb3c0302db0ea0e29c",
+          "slot": "albedoTexture",
+          "job": "m020"
+        }
+      }
+    },
+    {
+      "key": "monk_staff3",
+      "geometry_scope": "reached separate monk III staff; stock grip/animation retained",
+      "required_geometry_replacement": false,
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\equipment-and-crew-models\\monk_staff3\\3e2347b20d5280141397\\decoded-static.json",
+      "donor_manifest_sha256": "e10d7a8af23858f99b926af3824fdcef502534e0702be1a981904fb8066cc88b",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\nonhumanoid\\monk_staff3\\v1\\authoring.json",
+      "source_receipt_sha256": "6425e97818948452d0d51a34ce1d32c6b4dc3123f9d70b3679de48cd69f962f7",
+      "material_map": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\monk_staff3\\v1\\material-map.json",
+      "material_map_sha256": "511d657d3189837161eed12d4b0cd19c8ea614d14523d3ed742a3343368abb79",
+      "retained_native_materials": [],
+      "materials": {
+        "obj": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\monk_staff3\\v1\\obj_albedo.png",
+          "sha256": "edd7061aba0c78064b8832b2d85900650f27ae3d2c5973e9f01d681311423e88",
+          "slot": "albedoTexture",
+          "job": "m021"
+        }
+      }
+    },
+    {
+      "key": "spear_basic",
+      "geometry_scope": "reached separate spear I-II melee/charge/brace weapon; stock mechanics retained",
+      "required_geometry_replacement": false,
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\equipment-and-crew-models\\spear_basic\\7e82c5bf5934b74f88a1\\decoded-static.json",
+      "donor_manifest_sha256": "226986437cec1af30fca7087a0e8e912d4f0916391a33fdd4464a74c3799ed07",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\nonhumanoid\\spear_basic\\v1\\authoring.json",
+      "source_receipt_sha256": "9ec38070470d6be032e3c3113670435ff0314be8e814bdfaafd707e45aba3590",
+      "material_map": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\spear_basic\\v1\\material-map.json",
+      "material_map_sha256": "1fbc31aef7e990a2494d3f60197a2f2bd18e708a27af6c1d2a7f9242aa4ff6a2",
+      "retained_native_materials": [],
+      "materials": {
+        "obj": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\spear_basic\\v1\\obj_albedo.png",
+          "sha256": "b2c6edf2c351822116a64607fdf9c469b60892b4ea4bd54c56d628b08c40a751",
+          "slot": "albedoTexture",
+          "job": "m022"
+        }
+      }
+    },
+    {
+      "key": "spear_ji",
+      "geometry_scope": "reached separate spear III-IV charge/brace weapon; normal inherited melee owner pending",
+      "required_geometry_replacement": false,
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\equipment-and-crew-models\\spear_ji\\585c997c7ca68ead74bc\\decoded-static.json",
+      "donor_manifest_sha256": "2d33f1c717480b2780d11fdae88e5e54eaebc38aab7907ccbf838239fb309507",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\nonhumanoid\\spear_ji\\v1\\authoring.json",
+      "source_receipt_sha256": "6bad0cdad2336368b3bcb759b088b4ab1d7da371aa3b9ddd68a1e47b60654823",
+      "material_map": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\spear_ji\\v1\\material-map.json",
+      "material_map_sha256": "cfcde129818183126f19f1832f29b39ce04dc2bc5e9f2135646ae87e3ee38eea",
+      "retained_native_materials": [],
+      "materials": {
+        "lod1": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\spear_ji\\v1\\lod1_albedo.png",
+          "sha256": "efe5ff898ff6c8b7503314492c962ccffa10b42d662531137d7fce5e09f2dd95",
+          "slot": "albedoTexture",
+          "job": "m023"
+        }
+      }
+    },
+    {
+      "key": "combat_elephant3",
+      "geometry_scope": "reached Sultanate elephant III body/rider; stock animation retained",
+      "required_geometry_replacement": false,
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\equipment-and-crew-models\\combat_elephant3\\443099c19d911e36261b\\decoded-static.json",
+      "donor_manifest_sha256": "2bde3ec204baa411710a4a01517e1d7d6bbefd726c127027e5183634c93fb98f",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\nonhumanoid\\combat_elephant3\\v1\\authoring.json",
+      "source_receipt_sha256": "756c922ec91ab36c459cee46740689541ac0c8db85f8d692857b5ac901cf7a5a",
+      "material_map": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\combat_elephant3\\v1\\material-map.json",
+      "material_map_sha256": "da8a049c38174ab932beca8713e87b69435c9acc0ca7cbe9096ff5d17cc29729",
+      "retained_native_materials": [],
+      "materials": {
+        "elephant_elephant_elephant_lod1": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\combat_elephant3\\v1\\elephant_elephant_elephant_lod1_albedo.png",
+          "sha256": "66440183c0af2e3523e78dc55d29682e7aea0c359b04953de4d738dce731fa72",
+          "slot": "albedoTexture",
+          "job": "m024"
+        },
+        "rider_lod1": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\combat_elephant3\\v1\\rider_lod1_albedo.png",
+          "sha256": "ca597f7e197daf766a5c111b564f4982735d7b681bcf3b7c0fbfd0464c527d3f",
+          "slot": "albedoTexture",
+          "job": "m025"
+        },
+        "elephant_elephant_elephant_lod2": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\combat_elephant3\\v1\\elephant_elephant_elephant_lod2_albedo.png",
+          "sha256": "66440183c0af2e3523e78dc55d29682e7aea0c359b04953de4d738dce731fa72",
+          "slot": "albedoTexture",
+          "job": "m024"
+        },
+        "rider_lod2": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\combat_elephant3\\v1\\rider_lod2_albedo.png",
+          "sha256": "ca597f7e197daf766a5c111b564f4982735d7b681bcf3b7c0fbfd0464c527d3f",
+          "slot": "albedoTexture",
+          "job": "m025"
+        },
+        "elephant_elephant_elephant_lod3": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\combat_elephant3\\v1\\elephant_elephant_elephant_lod3_albedo.png",
+          "sha256": "66440183c0af2e3523e78dc55d29682e7aea0c359b04953de4d738dce731fa72",
+          "slot": "albedoTexture",
+          "job": "m024"
+        },
+        "rider_lod3": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\combat_elephant3\\v1\\rider_lod3_albedo.png",
+          "sha256": "ca597f7e197daf766a5c111b564f4982735d7b681bcf3b7c0fbfd0464c527d3f",
+          "slot": "albedoTexture",
+          "job": "m025"
+        }
+      }
+    },
+    {
+      "key": "siege_cart3",
+      "geometry_scope": "reached English trebuchet cart skin; stock construction and cart mechanics retained",
+      "required_geometry_replacement": false,
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\equipment-and-crew-models\\siege_cart3\\c44749b1323734585427\\decoded-static.json",
+      "donor_manifest_sha256": "a9b23fe9ab30b58632dbe84b19137cdc6f0ffe649d6a6adfdfbf96ef67113f73",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\nonhumanoid\\siege_cart3\\v1\\authoring.json",
+      "source_receipt_sha256": "5c1b47a56e5560d7512f88d25f0270fec624af8d8cd3583eeaa9dbab0ba82e54",
+      "material_map": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\siege_cart3\\v1\\material-map-v3.json",
+      "material_map_sha256": "eaa0d8c934c18e2a0804e1373b8ed36e4010717b5b6f3ce052029c9909fc0df1",
+      "retained_native_materials": [],
+      "materials": {
+        "page": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\siege_cart3\\v1\\page_albedo.png",
+          "sha256": "8a5857ddf6d224318150ea8870f3277bed009590c18bbd93260475e25e623ba8",
+          "slot": "albedoTex",
+          "job": "m026"
+        }
+      },
+      "material_map_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\nonhumanoid\\siege_cart3\\v1\\material-map-v3-receipt.json",
+      "material_map_receipt_sha256": "ea944ca9400104bfd53487721d5112c760c214e8a69ae24fe137b9be72668627"
+    },
+    {
+      "key": "bow_cross",
+      "geometry_scope": "exact reachable compatible stock crossbow equipment remix; weapon rig/animation retained",
+      "required_geometry_replacement": false,
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\weapon-rig-supplement\\decodes\\bow_cross\\e336a84a816a4438e4de\\decoded-static.json",
+      "donor_manifest_sha256": "cd5dc4e094207c18520759d5a3d582a66e3adba4841b4629fb98a200a7da4e91",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\nonhumanoid\\bow_cross\\v3\\authoring.json",
+      "source_receipt_sha256": "bd1aa6a23c1d8db40135ac334bce0ccbb8982776c8c79b4d7172e8085004b0a1",
+      "material_map": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\bow_cross\\v3\\material-map.json",
+      "material_map_sha256": "8c6cc65dd4e8714139cead4933be29ea5ce033696b680c2a5828c681a183f9c6",
+      "retained_native_materials": [],
+      "materials": {
+        "obj": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\bow_cross\\v3\\obj_albedo.png",
+          "sha256": "bd4dabc83960e4d87d27d87cefaf5a8dc74866e0be44de2cb406fd2814813c4f",
+          "slot": "albedoTexture",
+          "job": "m027"
+        }
+      }
+    },
+    {
+      "key": "bow_arbalest",
+      "geometry_scope": "exact reachable compatible stock crossbow equipment remix; weapon rig/animation retained",
+      "required_geometry_replacement": false,
+      "donor_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\inventory\\weapon-rig-supplement\\decodes\\bow_arbalest\\ed15445a6da7c4ea82ca\\decoded-static.json",
+      "donor_manifest_sha256": "6dbf644cf8cb9c8e9246155249f247bf09091dba476a825b09a790718e0d7cf9",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\remaining_roster\\nonhumanoid\\bow_arbalest\\v3\\authoring.json",
+      "source_receipt_sha256": "7d58f4bac38b728fe28483a3a023bae4e28679dd8074bb51fce2b3fd9361f139",
+      "material_map": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\bow_arbalest\\v3\\material-map.json",
+      "material_map_sha256": "f15ecde157712850197582e449c69e3c84ad83e33a91fd2920a66a0fb436988c",
+      "retained_native_materials": [],
+      "materials": {
+        "obj": {
+          "albedo": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_060\\remaining_roster\\nonhumanoid\\bow_arbalest\\v3\\obj_albedo.png",
+          "sha256": "79faaad0a15fcd0132ebe581a9f1dd7248911647a186ee3370ab832280d50b5f",
+          "slot": "albedoTexture",
+          "job": "m028"
+        }
+      }
+    }
+  ],
+  "geometry_and_actor_qualification": "separate mandatory gate"
+}

@@ -1,0 +1,272 @@
+{
+  "schema": "ccp-060-representative-selection/v1",
+  "status": "authoring_review_ready",
+  "samples": [
+    {
+      "id": "archer2",
+      "title": "Age II archer and Rattan upgrade",
+      "blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_060\\archer\\archer-base-v3l-owner-tunic.blend",
+      "blend_sha256": "0092ebe4a428f12f3a0770d21cdde1a1758876ad16ecf3944ee2f432e5a6125c",
+      "rattan_blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_060\\archer\\archer-rattan-v3m-owner-tunic.blend",
+      "rattan_blend_sha256": "421f3865427b76451ed005e1c4d71edda3b944b17d787fb6c4a3e06631656213",
+      "donor": "art/civilizations/chinese/humans/chi_ranged_bow_age02/chi_ranged_bow_age02.rgm",
+      "notes": "Teal fitted tunic with broad native-pattern owner-color split panel; stock anatomy, full quiver, bow and rig remain. Rattan authoring state adds a weighted coarse vest and carried back shield. Native Rattan switch and material integration remain separate gates.",
+      "images": {
+        "stock_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\archer-v3i-representative-base\\stock-donor-game.png",
+          "sha256": "a8449177d47923c81638f562e44965df7195fabc972d10892376437a73a2e9fc"
+        },
+        "finish_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\archer-v3l-final-base\\game-stock.png",
+          "sha256": "869ec8719a858e8f177cf7a1ec560fec74e741f124365e7380eb2df80c66f253"
+        },
+        "finish_close": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\archer-v3l-final-base\\close-front.png",
+          "sha256": "7ab43494799d037c2bd1e020f88a177f78f1aa141f14bd5e60f68b09c33774ca"
+        },
+        "finish_back_close": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\archer-v3l-final-base\\close-back.png",
+          "sha256": "fe57f58cab9000dc842b4ad8dff4337e89f212d25f79473f4ef16687af6998e8"
+        },
+        "red_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\archer-v3l-final-base\\game-red.png",
+          "sha256": "23fabf2834428cae3208da2bcef97849c44f7a5edb2a4e569a45e69d1ba89265"
+        },
+        "blue_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\archer-v3l-final-base\\game-blue.png",
+          "sha256": "7145b454f0225ef651ddb53e2d15ab301bedc12100ba0184909d6b647768b7ce"
+        },
+        "rattan_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\archer-v3m-final-rattan\\game-stock.png",
+          "sha256": "f8e0afad15e3394047c9684fb6255ffcde793426c52a4d9c913afea4f3edc7eb"
+        },
+        "rattan_close": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\archer-v3m-final-rattan\\close-front.png",
+          "sha256": "e5c7fa134ed18a5491b5498bf730caf575ace5d209f12726c094cd033d7c4b5e"
+        },
+        "rattan_back_close": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\archer-v3m-final-rattan\\close-back.png",
+          "sha256": "d6c7de719fe18503f3499af6ab856fd860f83f58094ec921250b9da96e9bd5e2"
+        },
+        "rattan_red_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\archer-v3m-final-rattan\\game-red.png",
+          "sha256": "89e5db146b25f8ed8011f7485ef63e7d66e32219aad695283215ca4bb7f50360"
+        },
+        "rattan_blue_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\archer-v3m-final-rattan\\game-blue.png",
+          "sha256": "fb9e78bfd12c727656dfd3f1eb47605d4bcd09ecb5e54f9d701adb0efa5117b0"
+        }
+      },
+      "revision": "v3l base / v3m Rattan",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\archer-base-owner-tunic.json",
+      "rattan_source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\archer-rattan-owner-tunic.json",
+      "review_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\archer-v3l-final-base\\presentation.json",
+      "rattan_review_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\qualification\\archer-v3m-final-rattan\\presentation.json"
+    },
+    {
+      "id": "spear2",
+      "title": "Age II spearman",
+      "blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_060\\representatives\\spear2\\spear2_finish_v7.blend",
+      "blend_sha256": "c4e2044b17ed56edb5d0f2d64134ac5f317ce995ede75d02d85aa1151d69c0c0",
+      "donor": "art/civilizations/chinese/humans/chi_infantry_light_age02/chi_infantry_light_age02.rgm",
+      "notes": "Teal split tunic and broad chest armor; stock head, spear and rig remain.",
+      "images": {
+        "stock_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\spear2\\v7\\review\\stock_game.png",
+          "sha256": "7f9f4ea850dcc585dc7221ea72112b4a8eb7794efb00b61fbc10a45b54ba6c29"
+        },
+        "finish_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\spear2\\v7\\review\\finish_game.png",
+          "sha256": "ff833d46ab5a5f66ee6b53bf88e5acb7336a867917d320966d43061faf6b2fd4"
+        },
+        "finish_close": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\spear2\\v7\\review\\finish_close.png",
+          "sha256": "b4a7a9403c6ebe2c774e701492480c964ac49ef6e640bbe23d8851f19f1aee73"
+        },
+        "red_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\spear2\\v7\\review\\finish_red_game.png",
+          "sha256": "7f7517386739d1987a85eb11c6d69e3b871411635c403b962a20c9404db843e2"
+        },
+        "blue_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\spear2\\v7\\review\\finish_blue_game.png",
+          "sha256": "589508ed674c753a86542b5ef00f5d21e301f761dc7e628dc4c429e83cc23de3"
+        }
+      },
+      "revision": "v7",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\spear2\\v7\\authoring.json",
+      "review_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\spear2\\v7\\close-and-owner-review.json"
+    },
+    {
+      "id": "male_villager1",
+      "title": "Age I male villager",
+      "blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_060\\representatives\\male_villager1\\male_villager1_finish_v7.blend",
+      "blend_sha256": "0af450fab02be812f05dc274305ae317efd2d1418d64f76696755137d0c53dd9",
+      "donor": "art/civilizations/chinese/humans/chi_villager_male_age01/chi_villager_male_age01.rgm",
+      "notes": "Ochre long work tunic; stock head, hammer and rig remain.",
+      "images": {
+        "stock_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\male_villager1\\v7\\review\\stock_game.png",
+          "sha256": "d217397348299665e08e7af70265d6336ef28567dbea8888d0ad3d04ae8b8193"
+        },
+        "finish_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\male_villager1\\v7\\review\\finish_game.png",
+          "sha256": "5b1c0e5064c86ce7f7e194d3561a99aa396a879dc594ac909a9380fc7dcdc664"
+        },
+        "finish_close": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\male_villager1\\v7\\review\\finish_close.png",
+          "sha256": "940c050c81078a17e67193fb7e8573cfe66eb9596ce97efc75e77bb56cab42f4"
+        },
+        "red_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\male_villager1\\v7\\review\\finish_red_game.png",
+          "sha256": "31dc86e938af499cb7950ce2d51150ae876ff2a74693e8fb97acbe8d7d928174"
+        },
+        "blue_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\male_villager1\\v7\\review\\finish_blue_game.png",
+          "sha256": "7772a4a82c267c1a968a1e4cb00e3e8e1ad1d706777b48a2f253b43924bd4bcb"
+        }
+      },
+      "revision": "v7",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\male_villager1\\v7\\authoring.json",
+      "review_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\male_villager1\\v7\\close-and-owner-review.json"
+    },
+    {
+      "id": "female_villager1",
+      "title": "Age I female villager",
+      "blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_060\\representatives\\female_villager1\\female_villager1_finish_v5.blend",
+      "blend_sha256": "a41f8d9e3210207689fbd8906a2dbf436701248cc7c6593d826870e30a514ae3",
+      "donor": "art/civilizations/chinese/humans/chi_villager_female_age01/chi_villager_female_age01.rgm",
+      "notes": "Indigo work cloth and calf wrap; stock head, sickle and rig remain.",
+      "images": {
+        "stock_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\female_villager1\\v5\\review\\stock_game.png",
+          "sha256": "e3c48ac50763b7a48d355699e16d80a21ec38afb025185868ee62a79e8bd75e7"
+        },
+        "finish_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\female_villager1\\v5\\review\\finish_game.png",
+          "sha256": "b947856ca0f574dba029a6411505132fd3836bd4f39c3b78de8610cc1ee95412"
+        },
+        "finish_close": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\female_villager1\\v5\\review\\finish_close.png",
+          "sha256": "9372d8ce32f968f8767a56396b8c4f6f87158a66eb856337857ddec9afed6a2e"
+        },
+        "red_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\female_villager1\\v5\\review\\finish_red_game.png",
+          "sha256": "79c08ee7f1174fed33e8334242259aed5e893abb73542fef64876d0099848893"
+        },
+        "blue_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\female_villager1\\v5\\review\\finish_blue_game.png",
+          "sha256": "8552658c71ef97435a1e6eb7e8bbfe5d64fe8817738f520fd8aed890099d6fff"
+        }
+      },
+      "revision": "v5",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\female_villager1\\v5\\authoring.json",
+      "review_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\female_villager1\\v5\\close-and-owner-review.json"
+    },
+    {
+      "id": "horseman2",
+      "title": "Age II horseman",
+      "blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_060\\representatives\\horseman2\\horseman2_finish_v4.blend",
+      "blend_sha256": "266d6754c96fcf4821197641020ee79ca307df380dd0cfba4c9a5353ffe90d1b",
+      "donor": "art/civilizations/chinese/animals/chi_horse_combined_light_age02/chi_horse_combined_light_age02.rgm",
+      "notes": "Teal rider cloth and indigo saddle blanket; exact stock idle pose, reins, spear and rig remain.",
+      "images": {
+        "stock_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\horseman2\\v4\\review\\stock_game.png",
+          "sha256": "37c9ab29b2a36677189169541b5d1e29d3d38ecf747e84cf7467234c77ff9f9b"
+        },
+        "finish_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\horseman2\\v4\\review\\finish_game.png",
+          "sha256": "f801d876886e8c0668c3f2f668c62f626c51ecdb8f9233156b4e2811bb5ced3f"
+        },
+        "finish_close": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\horseman2\\v4\\review\\finish_close.png",
+          "sha256": "31c7c67e719a83a4f45e9d180cdbc52fcf6f09a65e6b99405f1550e11d79dabb"
+        },
+        "red_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\horseman2\\v4\\review\\finish_red_game.png",
+          "sha256": "c1ef71577eba890ff77bc7c46b8ea929cb20d32d21b63097eaa942125b642bcf"
+        },
+        "blue_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\horseman2\\v4\\review\\finish_blue_game.png",
+          "sha256": "17082e5355b958b7e3be3c7ec727c78f9108e83e9df9b5c249cd24f5a14535ba"
+        }
+      },
+      "revision": "v4",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\horseman2\\v4\\authoring.json",
+      "review_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\horseman2\\v4\\close-and-owner-review.json"
+    },
+    {
+      "id": "elephant",
+      "title": "Worker elephant",
+      "blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_060\\representatives\\elephant\\elephant_finish_v2.blend",
+      "blend_sha256": "0dad1fb26b29b4648525f6e1c990ab6d5f1223b2fa51fef90d0475081bf3544d",
+      "donor": "art/civilizations/sultanate/animals/sul_elephant_combined_armor_age03/sul_elephant_combined_armor_age03.rgm",
+      "notes": "Riderless worker representative with indigo work drape; the combat donor rider and goad are hidden in this authoring result. Native worker source/body route still needs qualification.",
+      "images": {
+        "stock_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\elephant\\v2\\review\\stock_game.png",
+          "sha256": "2ff26e0386ff04e80fadc9867535e477a51932e49862a498c6293c53754f8f9e"
+        },
+        "finish_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\elephant\\v2\\review\\finish_game.png",
+          "sha256": "8c897ce1994138e9bbd4d67b0dc535eaa81994de70e86ba952fbb4308f398965"
+        },
+        "finish_close": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\elephant\\v2\\review\\finish_close.png",
+          "sha256": "417086130b88e640018d909a42f70306be433069ffe2c37081c60b1c13d6a673"
+        },
+        "red_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\elephant\\v2\\review\\finish_red_game.png",
+          "sha256": "6c2a894db0f769871031470443802b5d5c19f8289fe82963036806061a96468e"
+        },
+        "blue_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\elephant\\v2\\review\\finish_blue_game.png",
+          "sha256": "51988562bceb4e041d68ea840bab2b12930426596bf90709d9104cc071d65c8c"
+        }
+      },
+      "revision": "v2",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\elephant\\v2\\authoring.json",
+      "review_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\elephant\\v2\\close-and-owner-review.json"
+    },
+    {
+      "id": "siege_mangonel3",
+      "title": "Age III mangonel",
+      "blend": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_060\\representatives\\siege_mangonel3\\siege_mangonel3_finish_v2.blend",
+      "blend_sha256": "3a4e5f1ac9bf1cc869461d719ed3708f291aa48743d6734efc8eb169fc4d0f3f",
+      "donor": "art/civilizations/english/team_weapons/eng_mangonel/eng_mangonel.rgm",
+      "notes": "Broader stock-textured timber braces and beam covering; native machine rig and projectile remain.",
+      "images": {
+        "stock_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\siege_mangonel3\\v2\\review\\stock_game.png",
+          "sha256": "9865a1c5f6885544b58050d2b48ee04853d9612d81e51209848f0cb23e38d8cd"
+        },
+        "finish_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\siege_mangonel3\\v2\\review\\finish_game.png",
+          "sha256": "493fb543e62a02a3f4c50ec36021aaf784a54242e110097b3a183f4129f2bc4f"
+        },
+        "finish_close": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\siege_mangonel3\\v2\\review\\finish_close.png",
+          "sha256": "43ab121a842149cce42bf23110dcebf22f46d1cdf49e4eca6d89c57afd89fb2a"
+        },
+        "red_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\siege_mangonel3\\v2\\review\\finish_red_game.png",
+          "sha256": "3caec489401b66beee4038f90a03b03c41aa9698fdf8ce1e8cf0435218273b0f"
+        },
+        "blue_game": {
+          "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\siege_mangonel3\\v2\\review\\finish_blue_game.png",
+          "sha256": "1ee3a0090c2bbbcb0655364038e298dcef92f3f4b0c5c239f645446b279a942c"
+        }
+      },
+      "revision": "v2",
+      "source_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\siege_mangonel3\\v2\\authoring.json",
+      "review_receipt": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\siege_mangonel3\\v2\\close-and-owner-review.json"
+    }
+  ],
+  "boundary": "Blender source and previews only; unit geometry export, native cook/readback, archive integration, in-game appearance and animation still require separate qualification.",
+  "source_selection": {
+    "path": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_060\\representatives\\selection-six.json",
+    "sha256": "070780bc0fb9ad1b678ada92d8ad807dd06c3b5256f83ad79ff065a0b3c843ba"
+  },
+  "style_approved": false,
+  "selection_source_sha256": "73bc1a4513a77cbb7f1608c8bb20854491ae5e886b57441df688952cd5de7fa4"
+}

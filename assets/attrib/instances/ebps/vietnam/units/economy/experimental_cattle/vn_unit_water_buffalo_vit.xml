@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="Economic Water Buffalo identity; restored Tughlaq Worker Elephant presentation" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-867415763" List.ParentItemID="-867415763">
+			<enum_table name="speed_scaling_table">
+				<float name="default_speed" value="3.5" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+	</list>
+	<instance_reference name="parent_pbg" value="ebps\vietnam\units\economy\water_buffalo\vn_unit_war_elephant_1_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-867415763" List.ParentItemID="-867415763">
+				<enum_table name="speed_scaling_table">
+					<float name="default_speed" value="3.5" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+		</list>
+		<instance_reference name="parent_pbg" value="ebps\vietnam\units\economy\water_buffalo\vn_unit_war_elephant_1_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+	</variant>
+	<uniqueid name="pbgid" value="2147481899" />
+</instance>

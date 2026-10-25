@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="4" description="" template="map_gen\distribution\distribution">
+	<uniqueid name="pbgid" value="1073741976" />
+	<group name="distribution">
+		<template_reference name="score_map" value="map_gen\score_map\option\reference">
+			<instance_reference name="score_map" value="map_gen\score_map\score_map\basic_land_resource_placement_alternative" />
+		</template_reference>
+		<enum name="biome_asset_mapping" value="holy_site" />
+		<bool name="ignores_global_blocking_regions" value="False" />
+		<group name="balanced_distribution">
+			<enum name="balance_type" value="none" />
+			<float name="relative_weight" value="0" />
+		</group>
+		<enum name="spawn_position" value="centre_of_cell" />
+		<enum name="spawn_rotation" value="random_rotation_90_degrees" />
+		<enum name="spawn_orientation" value="no_orientation" />
+	</group>
+</instance>

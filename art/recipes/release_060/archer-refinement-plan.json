@@ -1,0 +1,47 @@
+{
+  "schema": "ccp-060-archer-refinement-plan/v1",
+  "status": "draft_for_next_exclusive_blender_slot_not_export_qualified",
+  "input_blend": "art/authoring/release_060/archer/archer-base-rattan-prototype.blend",
+  "donor_manifest": "output/release_060/donors/decoded/archer02/dd37508a5894fb1dbf73/decoded-static.json",
+  "source_reference": "art/recipes/release_060/historical-reference.json",
+  "unchanged_native_parts": [
+    "48-bone archer armature, bone hierarchy and bind pose",
+    "head, face, hand and limb lengths",
+    "native bow and quiver attachment contracts",
+    "LOD1 donor weight/index records as retained reference"
+  ],
+  "base_next_pass": [
+    {
+      "step": "Identify robe faces locally by height, UV island and skin weights before clipping",
+      "evidence": "The largest position-welded stock LOD1 component has 441 vertices and spans x=±0.5542 m, z=0.4446..1.9482 m; it includes head and upper body and cannot be treated as clothing. Boots are separate 92-vertex components each near z=0..0.529 m; hands are separate 62/60-vertex components around z=0.977..1.186 m; shoulder pieces are 28 vertices each around z=1.306..1.532 m. Classify individual garment faces with height, UV and weighted-bone locality, then manually inspect the seam boundary before modifying any face.",
+      "constraint": "Never remove an entire connected component to shorten the robe. Preserve head, face, arms, hands, leg anatomy, boots, quiver and all untouched donor LODs in the reference collection."
+    },
+    {
+      "step": "Replace the lower long-robe silhouette with a knee-length split over-tunic",
+      "method": "On a duplicate LOD1 clothing surface, clip only robe faces below the measured hip-to-knee seam after identifying the component. Reconstruct left/right hem edges from the existing weighted garment boundary; make front/back overlap and side slits at both thighs. Add fitted, skin-weighted trouser cloth across any newly exposed upper-leg gap using measured native hip/knee contours and nearest-source bone weights.",
+      "acceptance": "A front, side and back material view at game distance must show two leg motions as possible without a floating apron or open body gap."
+    },
+    {
+      "step": "Make the upper garment Dai Viet in cut and cloth",
+      "method": "Add an asymmetric side closure and overlapping front facing along the donor torso, a low stand collar in woven cloth, a tapered waist tie with visible knot/tails, and small seam piping. Use donor-derived fabric albedo/normal variation instead of uniform material strips. Cover or remodel the metal shoulder profile with fitted padded cloth while preserving the native shoulders, arm swing clearance and skin weighting.",
+      "acceptance": "Shoulder and forearm material reads as practical Age II cloth protection rather than the stock Chinese metal silhouette."
+    },
+    {
+      "step": "Replace the pale forehead bar with a fitted dark headcloth",
+      "method": "Measure radial donor hair/head contours at z=1.70..1.79 m. Wrap several narrow folded cloth courses around them with a rear knot; keep the face and hairline visible and avoid a flat rectangular front strip.",
+      "acceptance": "No isolated brim, floating band or skin intersection in front and three-quarter views."
+    }
+  ],
+  "rattan_next_pass": [
+    "Trim vest x radius to the torso at z=1.14..1.445 m so side projections do not follow arms; maintain a closed garment and existing native bow/quiver clearance.",
+    "Taper woven surface at rib and shoulder borders with a real cloth binding; preserve fine low-contrast reed bands and 5-8 percent torso depth offset.",
+    "Re-anchor visible rear carrying strap from top shield rim over the opposite shoulder with endpoint contact and clearance from quiver arrow shafts.",
+    "Recheck shield versus quiver mesh surfaces. Existing 0.06911 m is vertex-sample clearance only."
+  ],
+  "materials": {
+    "preserve": "Source albedo, normal, metal, pattern, skin LUT, and team-colour mechanism; do not bake the preview teal owner colour into albedo.",
+    "replace_uniform_strips": "Use dark dyed cotton with 2-3 percent luminance weave variation and a narrow seam/edge highlight for headwrap and tie; inspect in material preview at game distance.",
+    "rattan": "Low-contrast long reed/twill courses with shallow overlap, bound edges and no checkerboard."
+  },
+  "rig_and_release_gate": "This is an authoring design recipe. Generic Asset Workshop export is static mesh-only, and Archer II is not a directly admitted Build Unit prototype. Exact stock Archer/Spearman 48-bone and 46-palette records permit a bounded genuine Spearman II prototype control. That stock-weighted LOD1 control passed normal unit validation, isolated unit-add/cook, archive readback and native private decode; LOD1 triangle topology and byte-quantized corner weights match stock, with sub-millimetre position drift. The installed Build Unit route clones LOD1 into all three LODs, so far-LOD geometry and skin partitions are not donor-compliant. A separate installed generic three-mesh export experiment is prepared but untested. The private stock-material variant separately passed with byte-identical donor rrgeom/rrmaterial as a fallback, but cannot add clothing geometry. No redesigned weighted geometry or original Archer animator consumption is qualified yet; never integrate the generated Spearman actor/squad/animator."
+}

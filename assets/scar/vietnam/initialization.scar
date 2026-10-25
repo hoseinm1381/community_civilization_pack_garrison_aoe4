@@ -1,0 +1,98 @@
+-- Private Vietnamese starting army. Never change a player's native race.
+VietnamInitializationState = {restricted = {}}
+local rangeReason = "VietnamV2PrivateRange"
+
+function VietnamInitialization_Apply(player)
+    if type(Squad_ConvertBlueprint) ~= "function" then
+        print("VIETNAM_V2_INIT_REJECT missing squad conversion contract")
+        return false
+    end
+    if not EBP_Exists("building_unit_ranged_control_chi") then
+        print("VIETNAM_V2_INIT_REJECT missing native range")
+        return false
+    end
+    local buildings = EGroup_CreateUnique()
+    Player_GetEntitiesEGroup(player.id, buildings)
+    local capitals = {}
+    for i = 1, EGroup_Count(buildings) do
+        local entity = EGroup_GetEntityAt(buildings, i)
+        if Entity_IsValid(Entity_GetID(entity)) and BP_GetName(Entity_GetBlueprint(entity)) == "building_town_center_capital_chi" then
+            if Entity_IsUnderConstruction(entity) or Entity_GetFilledHoldSquadSlots(entity) ~= 0 then
+                EGroup_Destroy(buildings)
+                print("VIETNAM_V2_INIT_REJECT occupied or unfinished capital")
+                return false
+            end
+            table.insert(capitals, entity)
+        end
+    end
+    EGroup_Destroy(buildings)
+    -- Player_GetSquads returns an engine-owned SquadGroupObs. We do not create
+    -- or destroy that observer; only the temporary entity group above is ours.
+    local squads = Player_GetSquads(player.id)
+    local villagers = {}
+    local scouts = {}
+    for i = 1, SGroup_Count(squads) do
+        local squad = SGroup_GetSquadAt(squads, i)
+        local name = BP_GetName(Squad_GetBlueprint(squad))
+        if name == "unit_villager_1_chi" or name == "unit_scout_1_chi" then
+            local entity = Squad_GetFirstEntity(squad)
+            if entity == nil or not Entity_IsValid(Entity_GetID(entity)) then return false end
+            local record = {squad = squad, entity = entity}
+            if name == "unit_villager_1_chi" then table.insert(villagers, record)
+            else table.insert(scouts, record) end
+        end
+    end
+    if #capitals ~= 1 or #villagers ~= 6 or #scouts ~= 1 then
+        print("VIETNAM_V2_INIT_REJECT unsupported starting army")
+        return false
+    end
+    -- All handles and blueprint names are checked before the first mutation.
+    local tc = BP_GetEntityBlueprint("b7fcea91257b408fb9e8ae4d8bc402e1:vn_building_town_center_capital_chi")
+    local vil = BP_GetEntityBlueprint("b7fcea91257b408fb9e8ae4d8bc402e1:vn_unit_villager_1_chi")
+    local vilSquad = BP_GetSquadBlueprint("b7fcea91257b408fb9e8ae4d8bc402e1:vn_unit_villager_1_chi")
+    local villagerStealth = BP_GetAbilityBlueprint("b7fcea91257b408fb9e8ae4d8bc402e1:vn_activate_stealth_forvills_vit")
+    local scout = BP_GetEntityBlueprint("b7fcea91257b408fb9e8ae4d8bc402e1:vn_unit_scout_1_chi")
+    local scoutSquad = BP_GetSquadBlueprint("b7fcea91257b408fb9e8ae4d8bc402e1:vn_unit_scout_1_chi")
+    local elephant = BP_GetSquadBlueprint("b7fcea91257b408fb9e8ae4d8bc402e1:vn_unit_water_buffalo_vit")
+    local center = Entity_GetPosition(capitals[1])
+    Entity_ConvertBlueprint(capitals[1], tc)
+    for _, item in ipairs(villagers) do
+        -- Matches official gameplay/chatcheats.scar's entity-then-squad order.
+        Entity_ConvertBlueprint(item.entity, vil)
+        Squad_ConvertBlueprint(item.squad, vilSquad)
+        -- Conversion does not promise to rebuild ability_ext on the existing
+        -- six entities. Preserve a native binding when present; repair only a
+        -- missing one, after BOTH blueprint conversions have finished.
+        Entity_SetStateModelBool(item.entity, "is_in_stealth_aura_mal", false)
+        local retained = Entity_HasAbility(item.entity, villagerStealth)
+        if not retained then Entity_AddAbility(item.entity, villagerStealth) end
+        print("VIETNAM_V5_INIT_STEALTH player=" .. tostring(player.index)
+            .. " entity=" .. tostring(Entity_GetID(item.entity)) .. " retained=" .. tostring(retained)
+            .. " ability=" .. tostring(Entity_HasAbility(item.entity, villagerStealth)))
+    end
+    Entity_ConvertBlueprint(scouts[1].entity, scout)
+    Squad_ConvertBlueprint(scouts[1].squad, scoutSquad)
+    local elephantPos = World_Pos(center.x - 1, center.y, center.z - 12)
+    print("VIETNAM_V5_INIT_BUFFALO_SPAWN_BEGIN blueprint=vn_unit_water_buffalo_vit player=" .. tostring(player.index))
+    Squad_CreateAndSpawnToward(elephant, player.id, 0, elephantPos, center)
+    print("VIETNAM_V5_INIT_BUFFALO_SPAWN_DONE player=" .. tostring(player.index))
+    Player_SetResource(player.id, RT_Food, math.max(0, Player_GetResource(player.id, RT_Food) - 50))
+    -- Keep the native range hidden for this player; the full private builder
+    -- now carries Vietnam's complete construction menus.
+    local nativeRange = BP_GetEntityBlueprint("building_unit_ranged_control_chi")
+    Player_SetEntityProductionAvailability(player.id, nativeRange, ITEM_REMOVED, rangeReason)
+    VietnamInitializationState.restricted[player.index] = {id = player.id, blueprint = nativeRange}
+    print("VIETNAM_V2_INIT_APPLIED player=" .. tostring(player.index))
+    return true
+end
+
+function VietnamInitialization_Cleanup()
+    -- Deterministic player order; never reset another module's availability.
+    for _, player in ipairs(PLAYERS) do
+        local record = VietnamInitializationState.restricted[player.index]
+        if record ~= nil then
+            Player_SetEntityProductionAvailability(record.id, record.blueprint, ITEM_DEFAULT, rangeReason)
+            VietnamInitializationState.restricted[player.index] = nil
+        end
+    end
+end

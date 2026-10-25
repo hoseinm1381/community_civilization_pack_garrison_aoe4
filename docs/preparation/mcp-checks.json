@@ -1,0 +1,193 @@
+{
+  "layout": {
+    "status": "ok",
+    "project_root": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison",
+    "layout": {
+      "rdo_files": [
+        "art/garrison_library/Mods/community_civilization_pack/project/source/mod.rdo",
+        "assets/mod.rdo",
+        "assets/scar/winconditions/VietnamMode.rdo"
+      ],
+      "scar_files": [
+        "assets/scar/vietnam/blueprints.scar",
+        "assets/scar/vietnam/dynasty.scar",
+        "assets/scar/vietnam/initialization.scar",
+        "assets/scar/vietnam/landmarks.scar",
+        "assets/scar/vietnam/lifecycle.scar",
+        "assets/scar/vietnam/prematch_precache.scar",
+        "assets/scar/vietnam/rattan_armor.scar",
+        "assets/scar/vietnam/selection_core.scar",
+        "assets/scar/vietnam/tower_training.scar",
+        "assets/scar/vietnam/traps.scar",
+        "assets/scar/winconditions/VietnamMode.scar"
+      ],
+      "xaml_files": [],
+      "locdb_metadata_files": [
+        "art/garrison_library/Mods/community_civilization_pack/project/source/locdb/community_civilization_pack.locdb",
+        "assets/locdb/community_civilization_pack.locdb"
+      ],
+      "locdb_csv_files": [
+        "art/garrison_library/Mods/community_civilization_pack/project/source/locdb/community_civilization_pack_en.csv",
+        "assets/locdb/community_civilization_pack_en.csv"
+      ],
+      "locales": [
+        {
+          "locale": "en",
+          "display_name": "English",
+          "declared": true,
+          "csv_files": [
+            "art/garrison_library/Mods/community_civilization_pack/project/source/locdb/community_civilization_pack_en.csv",
+            "assets/locdb/community_civilization_pack_en.csv"
+          ]
+        }
+      ],
+      "missing_locale_csv": [],
+      "rdo_entry_files": [
+        {
+          "value": "winconditions\\VietnamMode",
+          "file": "assets/scar/winconditions/VietnamMode.rdo",
+          "line_no": 12
+        }
+      ],
+      "rdo_option_keys": [
+        {
+          "key": "section_starting_conditions",
+          "file": "assets/scar/winconditions/VietnamMode.rdo",
+          "line_no": 49
+        },
+        {
+          "key": "option_score",
+          "file": "assets/scar/winconditions/VietnamMode.rdo",
+          "line_no": 49
+        },
+        {
+          "key": "option_fow",
+          "file": "assets/scar/winconditions/VietnamMode.rdo",
+          "line_no": 49
+        },
+        {
+          "key": "option_fow_concealed",
+          "file": "assets/scar/winconditions/VietnamMode.rdo",
+          "line_no": 49
+        },
+        {
+          "key": "option_fow_explore",
+          "file": "assets/scar/winconditions/VietnamMode.rdo",
+          "line_no": 49
+        },
+        {
+          "key": "option_fow_reveal",
+          "file": "assets/scar/winconditions/VietnamMode.rdo",
+          "line_no": 49
+        },
+        {
+          "key": "option_start_age",
+          "file": "assets/scar/winconditions/VietnamMode.rdo",
+          "line_no": 49
+        },
+        {
+          "key": "option_start_age_1",
+          "file": "assets/scar/winconditions/VietnamMode.rdo",
+          "line_no": 49
+        },
+        {
+          "key": "option_resources",
+          "file": "assets/scar/winconditions/VietnamMode.rdo",
+          "line_no": 49
+        },
+        {
+          "key": "resources_max",
+          "file": "assets/scar/winconditions/VietnamMode.rdo",
+          "line_no": 49
+        },
+        {
+          "key": "resources_standard",
+          "file": "assets/scar/winconditions/VietnamMode.rdo",
+          "line_no": 49
+        },
+        {
+          "key": "resources_very_high",
+          "file": "assets/scar/winconditions/VietnamMode.rdo",
+          "line_no": 49
+        },
+        {
+          "key": "resources_high",
+          "file": "assets/scar/winconditions/VietnamMode.rdo",
+          "line_no": 49
+        },
+        {
+          "key": "section_inner_win_conditions",
+          "file": "assets/scar/winconditions/VietnamMode.rdo",
+          "line_no": 49
+        },
+        {
+          "key": "option_win_condition_wonder",
+          "file": "assets/scar/winconditions/VietnamMode.rdo",
+          "line_no": 49
+        },
+        {
+          "key": "option_win_condition_regicide",
+          "file": "assets/scar/winconditions/VietnamMode.rdo",
+          "line_no": 49
+        },
+        {
+          "key": "option_win_condition_religious",
+          "file": "assets/scar/winconditions/VietnamMode.rdo",
+          "line_no": 49
+        },
+        {
+          "key": "option_win_condition_conquest",
+          "file": "assets/scar/winconditions/VietnamMode.rdo",
+          "line_no": 49
+        }
+      ],
+      "mod_guid": "b7fcea91257b408fb9e8ae4d8bc402e1",
+      "notes": [
+        "游戏模式入口和配置通常在 scar 目录下的 .rdo 文件中，重点查看 rdo_entry_files 和 rdo_option_keys。",
+        "English locdb CSV 使用 Text 列；中文和多数其他语言 CSV 使用 SourceText/TranslatedText 列。"
+      ]
+    }
+  },
+  "checks": [
+    {
+      "file": "vietnam\\blueprints.scar",
+      "summary": {
+        "call_count": 5,
+        "loc_ref_count": 0,
+        "unknown_call_count": 0,
+        "missing_locdb_count": 0
+      },
+      "unknown_calls": [],
+      "low_confidence_apis": [],
+      "missing_locdb_ids": []
+    },
+    {
+      "file": "vietnam\\prematch_precache.scar",
+      "summary": {
+        "call_count": 8,
+        "loc_ref_count": 0,
+        "unknown_call_count": 0,
+        "missing_locdb_count": 0
+      },
+      "unknown_calls": [],
+      "low_confidence_apis": [],
+      "missing_locdb_ids": []
+    },
+    {
+      "file": "winconditions\\VietnamMode.scar",
+      "summary": {
+        "call_count": 68,
+        "loc_ref_count": 0,
+        "unknown_call_count": 0,
+        "missing_locdb_count": 0
+      },
+      "unknown_calls": [],
+      "low_confidence_apis": [
+        "Player_GetEntitiesEGroup",
+        "UI_MessageBoxHide",
+        "UI_MessageBoxReset"
+      ],
+      "missing_locdb_ids": []
+    }
+  ]
+}

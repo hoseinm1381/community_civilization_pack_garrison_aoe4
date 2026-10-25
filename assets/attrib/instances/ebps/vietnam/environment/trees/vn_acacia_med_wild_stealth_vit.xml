@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1216464913" List.ParentItemID="-1216464913">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\gameplay\resources\wood\trees\stealth\acacia_med_wild_stealth" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="2113018434" List.ParentItemID="2113018434">
+			<file name="icon_name" value="gaia\acacia_med_wild" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="776156627" List.ParentItemID="776156627">
+			<group name="on_depletion">
+				<file name="depleted_resource_animator_blueprint" value="art\environment\biome_tropical_dry\trees\acacia_med_wild\acacia_med_wild_depleted" overrideParent="True" />
+			</group>
+			<file name="enabled_resource_animator_blueprint" value="art\environment\biome_tropical_dry\trees\acacia_med_wild\acacia_med_wild" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\mesh_area_tag_ext" List.ItemID="1073756204" List.ListAction="Append">
+			<enum name="mesh_area_type" value="stealth_woods" />
+			<bool name="prevent_stomping_while_attached" value="False" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1073756205" List.ListAction="Append">
+			<bool name="automatic_fit_on_placement" value="False" />
+			<float name="cancel_refund_percentage" value="100" />
+			<string name="construction_state_name" value="construction_state" />
+			<float name="construction_transition_time" value="0" />
+			<bool name="force_construction" value="False" />
+			<float name="max_engineers" value="0" />
+			<instance_reference name="on_construction_squad" value="" />
+			<float name="orientation" value="0" />
+			<enum name="placement_type" value="tp_structure" />
+			<bool name="prefer_spots_on_side_with_leader" value="False" />
+			<bool name="query_abilities_for_range_ui" value="False" />
+			<bool name="random_rotation" value="False" />
+			<float name="replace_ghost_distance" value="5" />
+			<bool name="self_construct" value="False" />
+			<group name="field_placement_info">
+				<instance_reference name="border_entity" value="" />
+				<instance_reference name="replace_entity" value="" />
+				<int name="replace_count" value="0" />
+				<float name="replace_retry_distance" value="0" />
+			</group>
+			<instance_reference name="placement_valid" value="ui_rectangle\construction_placement_valid" />
+			<instance_reference name="placement_invalid" value="ui_rectangle\construction_placement_invalid" />
+			<instance_reference name="ui_range" value="" />
+			<float name="ui_range_radius" value="0" />
+			<instance_reference name="ui_setfacing" value="" />
+			<bool name="query_weapon_for_range_ui" value="False" />
+			<group name="placement_requirements">
+				<bool name="must_be_in_line_of_sight" value="False" />
+				<bool name="must_not_be_in_walkable_surfaces" value="False" />
+				<bool name="must_be_on_strategic_point" value="False" />
+				<list name="requirements">
+				</list>
+				<float name="spacing_distance" value="0" />
+				<bool name="skip_impass_checks_and_ignore_immovable_entities" value="False" />
+				<string name="state_tree_conditions" value="" />
+				<bool name="must_be_in_explored_area" value="True" />
+				<bool name="must_be_on_movement_node" value="False" />
+				<list name="placement_requirement_options">
+					<template_reference name="placement_requirement_option" value="options\placement\requirements\placement_requirement_pass_types_option" List.ItemID="-170672427" List.ParentItemID="-170672427">
+						<list name="required_pass_types">
+							<group name="pass_type_data" List.ItemID="-1751911832" List.ParentItemID="-1751911832">
+								<instance_reference name="pass_type" value="pass_types\infantry" />
+								<int name="minimum_contiguous_cell_count" value="1" />
+							</group>
+						</list>
+						<list name="forbidden_pass_types">
+						</list>
+						<bool name="use_simbox_scale_as_footprint" value="False" />
+					</template_reference>
+				</list>
+				<locstring name="ui_usage_txt" value="0" />
+			</group>
+			<bool name="squad_ignore_pathfinding" value="False" />
+			<bool name="can_be_cancelled" value="True" />
+			<template_reference name="construction_health_option" value="options\ebpextensions\constructionext\construction_health_option">
+				<float name="initial_health" value="75" />
+			</template_reference>
+			<float name="min_music_intensity" value="0" />
+			<string name="tooltip_data_template" value="ConstructionItemTooltipDataTemplate" />
+			<enum name="placement_set_facing_style" value="disabled" />
+			<group name="facing_quadrants">
+				<int name="search_radius_metres" value="0" />
+				<int name="radius_metres" value="0" />
+				<group name="quadrants">
+					<enum name="front" value="None" />
+					<enum name="rear" value="None" />
+					<enum name="left" value="None" />
+					<enum name="right" value="None" />
+				</group>
+			</group>
+			<bool name="facing_surface_normal" value="False" />
+			<group name="fixed_rotation_impass_avoidance">
+				<int name="minimum_search_radius_cells" value="4" />
+				<bool name="use_impass_avoidance" value="True" />
+			</group>
+			<group name="on_construction_complete_state_tree_refs">
+				<string name="on_construction_complete_entity_state_tree_ref" value="" />
+				<string name="on_construction_complete_physical_state_tree_ref" value="" />
+				<string name="on_construction_complete_squad_state_tree_ref" value="" />
+				<string name="on_construction_plan_complete_global_state_tree_ref" value="" />
+				<string name="while_construction_complete_entity_state_tree_ref" value="building_construction_complete\buildings\gristmill_construction_complete" />
+				<string name="while_construction_complete_physical_state_tree_ref" value="" />
+			</group>
+			<state_tree_node name="can_be_cancelled_state_tree_conditions" value="" />
+			<bool name="query_movement_node_modifier_for_range_ui" value="True" />
+			<enum name="entity_placement_class" value="" />
+			<bool name="show_ability_range_in_construction_item_preview" value="False" />
+			<bool name="construction_site_erase_inactive" value="False" />
+			<group name="preview_upgrade_effects">
+				<template_reference name="area_info" value="">
+				</template_reference>
+				<list name="preview_upgrade_effects_list">
+				</list>
+				<bool name="ignore_depleted_resources" value="False" />
+			</group>
+			<bool name="placement_position_ignores_walkable_surfaces" value="False" />
+			<int name="aqueduct_network_increment_amount" value="0" />
+			<list name="ignorable_entity_types">
+			</list>
+			<float name="aqueduct_cistern_proximity_test_square_scale" value="0" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741859" />
+	<instance_reference name="parent_pbg" value="ebps\gameplay\resources\wood\trees\core_tree" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1216464913" List.ParentItemID="-1216464913">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\gameplay\resources\wood\trees\stealth\acacia_med_wild_stealth" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="2113018434" List.ParentItemID="2113018434">
+				<file name="icon_name" value="gaia\acacia_med_wild" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="776156627" List.ParentItemID="776156627">
+				<group name="on_depletion">
+					<file name="depleted_resource_animator_blueprint" value="art\environment\biome_tropical_dry\trees\acacia_med_wild\acacia_med_wild_depleted" overrideParent="True" />
+				</group>
+				<file name="enabled_resource_animator_blueprint" value="art\environment\biome_tropical_dry\trees\acacia_med_wild\acacia_med_wild" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\mesh_area_tag_ext" List.ItemID="1073756206" List.ListAction="Append">
+				<enum name="mesh_area_type" value="stealth_woods" />
+				<bool name="prevent_stomping_while_attached" value="False" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1073756207" List.ListAction="Append">
+				<bool name="automatic_fit_on_placement" value="False" />
+				<float name="cancel_refund_percentage" value="100" />
+				<string name="construction_state_name" value="construction_state" />
+				<float name="construction_transition_time" value="0" />
+				<bool name="force_construction" value="False" />
+				<float name="max_engineers" value="0" />
+				<instance_reference name="on_construction_squad" value="" />
+				<float name="orientation" value="0" />
+				<enum name="placement_type" value="tp_structure" />
+				<bool name="prefer_spots_on_side_with_leader" value="False" />
+				<bool name="query_abilities_for_range_ui" value="False" />
+				<bool name="random_rotation" value="False" />
+				<float name="replace_ghost_distance" value="5" />
+				<bool name="self_construct" value="False" />
+				<group name="field_placement_info">
+					<instance_reference name="border_entity" value="" />
+					<instance_reference name="replace_entity" value="" />
+					<int name="replace_count" value="0" />
+					<float name="replace_retry_distance" value="0" />
+				</group>
+				<instance_reference name="placement_valid" value="ui_rectangle\construction_placement_valid" />
+				<instance_reference name="placement_invalid" value="ui_rectangle\construction_placement_invalid" />
+				<instance_reference name="ui_range" value="" />
+				<float name="ui_range_radius" value="0" />
+				<instance_reference name="ui_setfacing" value="" />
+				<bool name="query_weapon_for_range_ui" value="False" />
+				<group name="placement_requirements">
+					<bool name="must_be_in_line_of_sight" value="False" />
+					<bool name="must_not_be_in_walkable_surfaces" value="False" />
+					<bool name="must_be_on_strategic_point" value="False" />
+					<list name="requirements">
+					</list>
+					<float name="spacing_distance" value="0" />
+					<bool name="skip_impass_checks_and_ignore_immovable_entities" value="False" />
+					<string name="state_tree_conditions" value="" />
+					<bool name="must_be_in_explored_area" value="True" />
+					<bool name="must_be_on_movement_node" value="False" />
+					<list name="placement_requirement_options">
+						<template_reference name="placement_requirement_option" value="options\placement\requirements\placement_requirement_pass_types_option" List.ItemID="-170672427" List.ParentItemID="-170672427">
+							<list name="required_pass_types">
+								<group name="pass_type_data" List.ItemID="-1751911832" List.ParentItemID="-1751911832">
+									<instance_reference name="pass_type" value="pass_types\infantry" />
+									<int name="minimum_contiguous_cell_count" value="1" />
+								</group>
+							</list>
+							<list name="forbidden_pass_types">
+							</list>
+							<bool name="use_simbox_scale_as_footprint" value="False" />
+						</template_reference>
+					</list>
+					<locstring name="ui_usage_txt" value="0" />
+				</group>
+				<bool name="squad_ignore_pathfinding" value="False" />
+				<bool name="can_be_cancelled" value="True" />
+				<template_reference name="construction_health_option" value="options\ebpextensions\constructionext\construction_health_option">
+					<float name="initial_health" value="75" />
+				</template_reference>
+				<float name="min_music_intensity" value="0" />
+				<string name="tooltip_data_template" value="ConstructionItemTooltipDataTemplate" />
+				<enum name="placement_set_facing_style" value="disabled" />
+				<group name="facing_quadrants">
+					<int name="search_radius_metres" value="0" />
+					<int name="radius_metres" value="0" />
+					<group name="quadrants">
+						<enum name="front" value="None" />
+						<enum name="rear" value="None" />
+						<enum name="left" value="None" />
+						<enum name="right" value="None" />
+					</group>
+				</group>
+				<bool name="facing_surface_normal" value="False" />
+				<group name="fixed_rotation_impass_avoidance">
+					<int name="minimum_search_radius_cells" value="4" />
+					<bool name="use_impass_avoidance" value="True" />
+				</group>
+				<group name="on_construction_complete_state_tree_refs">
+					<string name="on_construction_complete_entity_state_tree_ref" value="" />
+					<string name="on_construction_complete_physical_state_tree_ref" value="" />
+					<string name="on_construction_complete_squad_state_tree_ref" value="" />
+					<string name="on_construction_plan_complete_global_state_tree_ref" value="" />
+					<string name="while_construction_complete_entity_state_tree_ref" value="building_construction_complete\buildings\gristmill_construction_complete" />
+					<string name="while_construction_complete_physical_state_tree_ref" value="" />
+				</group>
+				<state_tree_node name="can_be_cancelled_state_tree_conditions" value="" />
+				<bool name="query_movement_node_modifier_for_range_ui" value="True" />
+				<enum name="entity_placement_class" value="" />
+				<bool name="show_ability_range_in_construction_item_preview" value="False" />
+				<bool name="construction_site_erase_inactive" value="False" />
+				<group name="preview_upgrade_effects">
+					<template_reference name="area_info" value="">
+					</template_reference>
+					<list name="preview_upgrade_effects_list">
+					</list>
+					<bool name="ignore_depleted_resources" value="False" />
+				</group>
+				<bool name="placement_position_ignores_walkable_surfaces" value="False" />
+				<int name="aqueduct_network_increment_amount" value="0" />
+				<list name="ignorable_entity_types">
+				</list>
+				<float name="aqueduct_cistern_proximity_test_square_scale" value="0" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="1073741859" />
+		<instance_reference name="parent_pbg" value="ebps\gameplay\resources\wood\trees\core_tree" />
+	</variant>
+</instance>

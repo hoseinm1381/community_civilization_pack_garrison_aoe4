@@ -1,0 +1,487 @@
+{
+  "schema": "ccp.release051.landmark-selector-repair/v1",
+  "status": "source_art_byte_identical",
+  "description": "The existing editable compound supplies all seven geometry parts. Only model selector and life-cycle predicate tables change.",
+  "script": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\tools\\release_051\\landmark_visibility.py",
+  "baseline_sga": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_051\\baseline\\community_civilization_pack.sga",
+  "baseline_sha256": "78b90561306f6874872b5f88a5f82c3354e14fceebdf52cf0f0ffba28cbf1e80",
+  "payloads": [
+    {
+      "member": "art/scenario/cccastle/imperial_citadel/model.rgm",
+      "file": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_051\\landmarks\\payload\\art\\scenario\\cccastle\\imperial_citadel\\model.rgm",
+      "sha256": "e59a8be01ba8797eaae641b9f75794bb9a53c31174d0d05c352a86626533a447",
+      "bytes": 710170
+    },
+    {
+      "member": "art/scenario/cccastle/resistance_hq/model.rgm",
+      "file": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_051\\landmarks\\payload\\art\\scenario\\cccastle\\resistance_hq\\model.rgm",
+      "sha256": "a9496063870c9658a4eab46cc99877b12f6d104d8ac77835baa64e7492a4f1a8",
+      "bytes": 720973
+    },
+    {
+      "member": "art/scenario/cc050/imperial_citadel_campaign/model.rgm",
+      "file": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_051\\landmarks\\payload\\art\\scenario\\cc050\\imperial_citadel_campaign\\model.rgm",
+      "sha256": "16bfd7a4462196fad327c8dbe5ed3b5979c1ad1d1418e88c785cffa80085e2a7",
+      "bytes": 710654
+    }
+  ],
+  "states": {
+    "construct_00": [
+      "garrison_part_0000"
+    ],
+    "construct_05": [
+      "garrison_part_0000"
+    ],
+    "construct_10": [
+      "garrison_part_0000"
+    ],
+    "construct_15": [
+      "garrison_part_0000"
+    ],
+    "construct_20": [
+      "garrison_part_0000",
+      "garrison_part_0001",
+      "garrison_part_0004",
+      "garrison_part_0005",
+      "garrison_part_0006"
+    ],
+    "construct_25": [
+      "garrison_part_0000",
+      "garrison_part_0001",
+      "garrison_part_0004",
+      "garrison_part_0005",
+      "garrison_part_0006"
+    ],
+    "construct_30": [
+      "garrison_part_0000",
+      "garrison_part_0001",
+      "garrison_part_0004",
+      "garrison_part_0005",
+      "garrison_part_0006"
+    ],
+    "construct_35": [
+      "garrison_part_0000",
+      "garrison_part_0001",
+      "garrison_part_0004",
+      "garrison_part_0005",
+      "garrison_part_0006"
+    ],
+    "construct_40": [
+      "garrison_part_0000",
+      "garrison_part_0001",
+      "garrison_part_0004",
+      "garrison_part_0005",
+      "garrison_part_0006"
+    ],
+    "construct_45": [
+      "garrison_part_0000",
+      "garrison_part_0001",
+      "garrison_part_0004",
+      "garrison_part_0005",
+      "garrison_part_0006"
+    ],
+    "construct_50": [
+      "garrison_part_0000",
+      "garrison_part_0001",
+      "garrison_part_0004",
+      "garrison_part_0005",
+      "garrison_part_0006"
+    ],
+    "construct_55": [
+      "garrison_part_0000",
+      "garrison_part_0001",
+      "garrison_part_0004",
+      "garrison_part_0005",
+      "garrison_part_0006"
+    ],
+    "construct_60": [
+      "garrison_part_0000",
+      "garrison_part_0001",
+      "garrison_part_0004",
+      "garrison_part_0005",
+      "garrison_part_0006"
+    ],
+    "construct_65": [
+      "garrison_part_0000",
+      "garrison_part_0001",
+      "garrison_part_0004",
+      "garrison_part_0005",
+      "garrison_part_0006"
+    ],
+    "construct_70": [
+      "garrison_part_0000",
+      "garrison_part_0001",
+      "garrison_part_0004",
+      "garrison_part_0005",
+      "garrison_part_0006"
+    ],
+    "construct_75": [
+      "garrison_part_0000",
+      "garrison_part_0001",
+      "garrison_part_0004",
+      "garrison_part_0005",
+      "garrison_part_0006"
+    ],
+    "construct_80": [
+      "garrison_part_0000",
+      "garrison_part_0001",
+      "garrison_part_0004",
+      "garrison_part_0005",
+      "garrison_part_0006"
+    ],
+    "construct_85": [
+      "garrison_part_0000",
+      "garrison_part_0001",
+      "garrison_part_0004",
+      "garrison_part_0005",
+      "garrison_part_0006"
+    ],
+    "construct_90": [
+      "garrison_part_0000",
+      "garrison_part_0001",
+      "garrison_part_0004",
+      "garrison_part_0005",
+      "garrison_part_0006"
+    ],
+    "construct_95": [
+      "garrison_part_0000",
+      "garrison_part_0001",
+      "garrison_part_0004",
+      "garrison_part_0005",
+      "garrison_part_0006"
+    ],
+    "preview": [
+      "garrison_part_0000",
+      "garrison_part_0001",
+      "garrison_part_0004",
+      "garrison_part_0005",
+      "garrison_part_0006"
+    ],
+    "targeting": [
+      "garrison_part_0000",
+      "garrison_part_0001",
+      "garrison_part_0004",
+      "garrison_part_0005",
+      "garrison_part_0006"
+    ],
+    "healthy": [
+      "garrison_part_0000",
+      "garrison_part_0001",
+      "garrison_part_0004",
+      "garrison_part_0005",
+      "garrison_part_0006"
+    ],
+    "damage_1": [
+      "garrison_part_0000",
+      "garrison_part_0001",
+      "garrison_part_0004",
+      "garrison_part_0005",
+      "garrison_part_0006"
+    ],
+    "damage_2": [
+      "garrison_part_0000",
+      "garrison_part_0001",
+      "garrison_part_0004",
+      "garrison_part_0005",
+      "garrison_part_0006"
+    ],
+    "damage_3": [
+      "garrison_part_0000",
+      "garrison_part_0003"
+    ],
+    "damage_4": [
+      "garrison_part_0000",
+      "garrison_part_0003"
+    ],
+    "damage_5": [
+      "garrison_part_0000",
+      "garrison_part_0003"
+    ],
+    "ruins": [
+      "garrison_part_0002"
+    ]
+  },
+  "artifacts": {
+    "imperial_citadel": {
+      "editable_sources": [
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\landmarks\\imperial_citadel\\imperial_citadel.blend",
+          "source_sha256": "32bd0d82db96b1a40a904f0afddb334add818cbdae5917483d969399658d9abd",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_051\\landmarks\\imperial_citadel\\imperial_citadel.blend",
+          "copy_sha256": "32bd0d82db96b1a40a904f0afddb334add818cbdae5917483d969399658d9abd",
+          "bytes": 5117881
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\landmarks\\imperial_citadel\\albedo.png",
+          "source_sha256": "88a2ace98033673ae85e7c2eab0e3b10c4ae76d11c26f98922b2dd8852bed075",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_051\\landmarks\\imperial_citadel\\albedo.png",
+          "copy_sha256": "88a2ace98033673ae85e7c2eab0e3b10c4ae76d11c26f98922b2dd8852bed075",
+          "bytes": 1591542
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\landmarks\\imperial_citadel\\normal.png",
+          "source_sha256": "b74f9be36bec1f414bf13507459e412d4388c3877d1d4f78b2a5f8f8469216e1",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_051\\landmarks\\imperial_citadel\\normal.png",
+          "copy_sha256": "b74f9be36bec1f414bf13507459e412d4388c3877d1d4f78b2a5f8f8469216e1",
+          "bytes": 1709040
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\landmarks\\imperial_citadel\\roughness.png",
+          "source_sha256": "2071498aad7dc065a8a2e0f385a64b20593fcc4dafce0f3ff7fe520dd71b1a45",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_051\\landmarks\\imperial_citadel\\roughness.png",
+          "copy_sha256": "2071498aad7dc065a8a2e0f385a64b20593fcc4dafce0f3ff7fe520dd71b1a45",
+          "bytes": 679431
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\landmarks\\imperial_citadel\\metalness.png",
+          "source_sha256": "74578d0395ba12806906462eca119feb867feec9ec627ab630deb7737701a78a",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_051\\landmarks\\imperial_citadel\\metalness.png",
+          "copy_sha256": "74578d0395ba12806906462eca119feb867feec9ec627ab630deb7737701a78a",
+          "bytes": 6630
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\landmarks\\imperial_citadel\\pattern.png",
+          "source_sha256": "469cf0c7ed9fe12f6ed54bdf9bb2a3b2ed1a2ea35f95ca19eac2fa011d9196a8",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_051\\landmarks\\imperial_citadel\\pattern.png",
+          "copy_sha256": "469cf0c7ed9fe12f6ed54bdf9bb2a3b2ed1a2ea35f95ca19eac2fa011d9196a8",
+          "bytes": 9116
+        }
+      ],
+      "exports": [
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\landmarks\\imperial_citadel\\albedo.png",
+          "source_sha256": "88a2ace98033673ae85e7c2eab0e3b10c4ae76d11c26f98922b2dd8852bed075",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_051\\landmarks\\imperial_citadel\\albedo.png",
+          "copy_sha256": "88a2ace98033673ae85e7c2eab0e3b10c4ae76d11c26f98922b2dd8852bed075",
+          "bytes": 1591542
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\landmarks\\imperial_citadel\\building.json",
+          "source_sha256": "156e914b1f07e768b61a471570874290fc0b14ba72ba04a8aa0aee412365c86f",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_051\\landmarks\\imperial_citadel\\building.json",
+          "copy_sha256": "156e914b1f07e768b61a471570874290fc0b14ba72ba04a8aa0aee412365c86f",
+          "bytes": 843
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\landmarks\\imperial_citadel\\metalness.png",
+          "source_sha256": "74578d0395ba12806906462eca119feb867feec9ec627ab630deb7737701a78a",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_051\\landmarks\\imperial_citadel\\metalness.png",
+          "copy_sha256": "74578d0395ba12806906462eca119feb867feec9ec627ab630deb7737701a78a",
+          "bytes": 6630
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\landmarks\\imperial_citadel\\model.fbx",
+          "source_sha256": "1ab8f0652ba6727141ddec28ff6fe74249544a0f82cb282c7dddee83da800e42",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_051\\landmarks\\imperial_citadel\\model.fbx",
+          "copy_sha256": "1ab8f0652ba6727141ddec28ff6fe74249544a0f82cb282c7dddee83da800e42",
+          "bytes": 1530326
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\landmarks\\imperial_citadel\\normal.png",
+          "source_sha256": "b74f9be36bec1f414bf13507459e412d4388c3877d1d4f78b2a5f8f8469216e1",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_051\\landmarks\\imperial_citadel\\normal.png",
+          "copy_sha256": "b74f9be36bec1f414bf13507459e412d4388c3877d1d4f78b2a5f8f8469216e1",
+          "bytes": 1709040
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\landmarks\\imperial_citadel\\pattern.png",
+          "source_sha256": "469cf0c7ed9fe12f6ed54bdf9bb2a3b2ed1a2ea35f95ca19eac2fa011d9196a8",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_051\\landmarks\\imperial_citadel\\pattern.png",
+          "copy_sha256": "469cf0c7ed9fe12f6ed54bdf9bb2a3b2ed1a2ea35f95ca19eac2fa011d9196a8",
+          "bytes": 9116
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\landmarks\\imperial_citadel\\roughness.png",
+          "source_sha256": "2071498aad7dc065a8a2e0f385a64b20593fcc4dafce0f3ff7fe520dd71b1a45",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_051\\landmarks\\imperial_citadel\\roughness.png",
+          "copy_sha256": "2071498aad7dc065a8a2e0f385a64b20593fcc4dafce0f3ff7fe520dd71b1a45",
+          "bytes": 679431
+        }
+      ],
+      "previews": [
+        {
+          "source": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\castle_next\\landmarks\\imperial_citadel\\healthy\\game-textured.png",
+          "source_sha256": "56b0bf533df4353b5c14373babb0d5e52862f44f92642fe93edd740ba2dfbaae",
+          "copy": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_051\\landmarks\\previews\\imperial_citadel\\healthy.png",
+          "copy_sha256": "56b0bf533df4353b5c14373babb0d5e52862f44f92642fe93edd740ba2dfbaae",
+          "bytes": 702344,
+          "state": "healthy",
+          "selector_members": [
+            "garrison_part_0000",
+            "garrison_part_0001",
+            "garrison_part_0004",
+            "garrison_part_0005",
+            "garrison_part_0006"
+          ],
+          "visual_gate": "source preview only; native match pending"
+        },
+        {
+          "source": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\castle_next\\landmarks\\imperial_citadel\\heavy_damage\\game-textured.png",
+          "source_sha256": "67c68ce283658d05e58a7550987ac44b94aec4bb6f8eed603d78e0afdeb90b2c",
+          "copy": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_051\\landmarks\\previews\\imperial_citadel\\damage_3.png",
+          "copy_sha256": "67c68ce283658d05e58a7550987ac44b94aec4bb6f8eed603d78e0afdeb90b2c",
+          "bytes": 676612,
+          "state": "damage_3",
+          "selector_members": [
+            "garrison_part_0000",
+            "garrison_part_0003"
+          ],
+          "visual_gate": "source preview only; native match pending"
+        },
+        {
+          "source": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\castle_next\\landmarks\\imperial_citadel\\ruins\\game-textured.png",
+          "source_sha256": "e2926c05fa46b3c1cd6154e88cbe752fdacdbd698d36fe52ebaf2d51b27fb4bb",
+          "copy": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_051\\landmarks\\previews\\imperial_citadel\\ruins.png",
+          "copy_sha256": "e2926c05fa46b3c1cd6154e88cbe752fdacdbd698d36fe52ebaf2d51b27fb4bb",
+          "bytes": 655439,
+          "state": "ruins",
+          "selector_members": [
+            "garrison_part_0002"
+          ],
+          "visual_gate": "source preview only; native match pending"
+        }
+      ]
+    },
+    "resistance_hq": {
+      "editable_sources": [
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\landmarks\\resistance_hq\\resistance_hq.blend",
+          "source_sha256": "2909bbb5f7e6ce869c99e47fd608c76ca5c70bedf405023f51dfe2574bb21824",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_051\\landmarks\\resistance_hq\\resistance_hq.blend",
+          "copy_sha256": "2909bbb5f7e6ce869c99e47fd608c76ca5c70bedf405023f51dfe2574bb21824",
+          "bytes": 5101574
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\landmarks\\resistance_hq\\albedo.png",
+          "source_sha256": "da4eec6ab38b59db13f5a2973d090ea526a592d8afb0593e9449299d757cbbfe",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_051\\landmarks\\resistance_hq\\albedo.png",
+          "copy_sha256": "da4eec6ab38b59db13f5a2973d090ea526a592d8afb0593e9449299d757cbbfe",
+          "bytes": 1552058
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\landmarks\\resistance_hq\\normal.png",
+          "source_sha256": "13eead66480f755fbae31455636c4b455332ef4da757d4971e4d3d5b7b0066f1",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_051\\landmarks\\resistance_hq\\normal.png",
+          "copy_sha256": "13eead66480f755fbae31455636c4b455332ef4da757d4971e4d3d5b7b0066f1",
+          "bytes": 1708776
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\landmarks\\resistance_hq\\roughness.png",
+          "source_sha256": "c38b698d6b503859aace825146686390f0874393c749348b4892d2dd11cb01b1",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_051\\landmarks\\resistance_hq\\roughness.png",
+          "copy_sha256": "c38b698d6b503859aace825146686390f0874393c749348b4892d2dd11cb01b1",
+          "bytes": 679014
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\landmarks\\resistance_hq\\metalness.png",
+          "source_sha256": "74578d0395ba12806906462eca119feb867feec9ec627ab630deb7737701a78a",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_051\\landmarks\\resistance_hq\\metalness.png",
+          "copy_sha256": "74578d0395ba12806906462eca119feb867feec9ec627ab630deb7737701a78a",
+          "bytes": 6630
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\castle_next\\landmarks\\resistance_hq\\pattern.png",
+          "source_sha256": "469cf0c7ed9fe12f6ed54bdf9bb2a3b2ed1a2ea35f95ca19eac2fa011d9196a8",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_051\\landmarks\\resistance_hq\\pattern.png",
+          "copy_sha256": "469cf0c7ed9fe12f6ed54bdf9bb2a3b2ed1a2ea35f95ca19eac2fa011d9196a8",
+          "bytes": 9116
+        }
+      ],
+      "exports": [
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\landmarks\\resistance_hq\\albedo.png",
+          "source_sha256": "da4eec6ab38b59db13f5a2973d090ea526a592d8afb0593e9449299d757cbbfe",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_051\\landmarks\\resistance_hq\\albedo.png",
+          "copy_sha256": "da4eec6ab38b59db13f5a2973d090ea526a592d8afb0593e9449299d757cbbfe",
+          "bytes": 1552058
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\landmarks\\resistance_hq\\building.json",
+          "source_sha256": "ee775391c724c0e9e4bdd3fd5dc534cdb87c26975206aed9b9fbe117bb11be20",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_051\\landmarks\\resistance_hq\\building.json",
+          "copy_sha256": "ee775391c724c0e9e4bdd3fd5dc534cdb87c26975206aed9b9fbe117bb11be20",
+          "bytes": 840
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\landmarks\\resistance_hq\\metalness.png",
+          "source_sha256": "74578d0395ba12806906462eca119feb867feec9ec627ab630deb7737701a78a",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_051\\landmarks\\resistance_hq\\metalness.png",
+          "copy_sha256": "74578d0395ba12806906462eca119feb867feec9ec627ab630deb7737701a78a",
+          "bytes": 6630
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\landmarks\\resistance_hq\\model.fbx",
+          "source_sha256": "5d8308e82966fa08d211467affa6b76eb856de133175fdfec1ee17bfdb0d77a3",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_051\\landmarks\\resistance_hq\\model.fbx",
+          "copy_sha256": "5d8308e82966fa08d211467affa6b76eb856de133175fdfec1ee17bfdb0d77a3",
+          "bytes": 1585163
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\landmarks\\resistance_hq\\normal.png",
+          "source_sha256": "13eead66480f755fbae31455636c4b455332ef4da757d4971e4d3d5b7b0066f1",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_051\\landmarks\\resistance_hq\\normal.png",
+          "copy_sha256": "13eead66480f755fbae31455636c4b455332ef4da757d4971e4d3d5b7b0066f1",
+          "bytes": 1708776
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\landmarks\\resistance_hq\\pattern.png",
+          "source_sha256": "469cf0c7ed9fe12f6ed54bdf9bb2a3b2ed1a2ea35f95ca19eac2fa011d9196a8",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_051\\landmarks\\resistance_hq\\pattern.png",
+          "copy_sha256": "469cf0c7ed9fe12f6ed54bdf9bb2a3b2ed1a2ea35f95ca19eac2fa011d9196a8",
+          "bytes": 9116
+        },
+        {
+          "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\castle_next\\landmarks\\resistance_hq\\roughness.png",
+          "source_sha256": "c38b698d6b503859aace825146686390f0874393c749348b4892d2dd11cb01b1",
+          "copy": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\exports\\release_051\\landmarks\\resistance_hq\\roughness.png",
+          "copy_sha256": "c38b698d6b503859aace825146686390f0874393c749348b4892d2dd11cb01b1",
+          "bytes": 679014
+        }
+      ],
+      "previews": [
+        {
+          "source": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\castle_next\\landmarks\\resistance_hq\\healthy\\game-textured.png",
+          "source_sha256": "29a2201a586e96413faf1b838a06313f1374787a74a3c17d00050e53f1df43af",
+          "copy": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_051\\landmarks\\previews\\resistance_hq\\healthy.png",
+          "copy_sha256": "29a2201a586e96413faf1b838a06313f1374787a74a3c17d00050e53f1df43af",
+          "bytes": 708560,
+          "state": "healthy",
+          "selector_members": [
+            "garrison_part_0000",
+            "garrison_part_0001",
+            "garrison_part_0004",
+            "garrison_part_0005",
+            "garrison_part_0006"
+          ],
+          "visual_gate": "source preview only; native match pending"
+        },
+        {
+          "source": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\castle_next\\landmarks\\resistance_hq\\heavy_damage\\game-textured.png",
+          "source_sha256": "8fd1eaa4f0a0e751a4b3bead1ae634eb2b1098a69aedc45f897b1203598090d5",
+          "copy": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_051\\landmarks\\previews\\resistance_hq\\damage_3.png",
+          "copy_sha256": "8fd1eaa4f0a0e751a4b3bead1ae634eb2b1098a69aedc45f897b1203598090d5",
+          "bytes": 670561,
+          "state": "damage_3",
+          "selector_members": [
+            "garrison_part_0000",
+            "garrison_part_0003"
+          ],
+          "visual_gate": "source preview only; native match pending"
+        },
+        {
+          "source": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\castle_next\\landmarks\\resistance_hq\\ruins\\game-textured.png",
+          "source_sha256": "a9d010219fafc80c697edea582c00a470d35c7b898959f16ccda818cb00f28f6",
+          "copy": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\output\\release_051\\landmarks\\previews\\resistance_hq\\ruins.png",
+          "copy_sha256": "a9d010219fafc80c697edea582c00a470d35c7b898959f16ccda818cb00f28f6",
+          "bytes": 654388,
+          "state": "ruins",
+          "selector_members": [
+            "garrison_part_0002"
+          ],
+          "visual_gate": "source preview only; native match pending"
+        }
+      ]
+    }
+  },
+  "native_runtime": "pending fresh imported match"
+}

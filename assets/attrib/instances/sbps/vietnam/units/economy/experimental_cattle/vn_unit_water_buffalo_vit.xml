@@ -1,0 +1,500 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="Playable Water Buffalo; native worker behavior and stock cattle visual" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="974918044" List.ParentItemID="974918044">
+			<list name="unit_list" overrideParent="True">
+				<group name="loadout_data" List.ItemID="1073762620">
+					<float name="num" value="1" />
+					<instance_reference name="type" value="ebps\vietnam\units\economy\experimental_cattle\vn_unit_water_buffalo_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<list name="unit_attachments">
+					</list>
+					<bool name="is_default_unit" value="True" />
+				</group>
+			</list>
+			<float name="squad_female_chance" value="0" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="-729039427" List.ParentItemID="-729039427">
+			<list name="race_list" overrideParent="True">
+				<group name="race_data" List.ItemID="1073762622">
+					<group name="info">
+						<bool name="allow_spawner_production" value="False" />
+						<locstring name="extra_text" value="3022" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+						<locstring name="help_text" value="3021" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<string name="hotkey_name" value="W" />
+						<file name="icon_name" value="races\malian\units\cattle" />
+						<bool name="minimap_team_only" value="False" />
+						<file name="minimap_texture" value="" />
+						<instance_reference name="modal_ability" value="" />
+						<bool name="reveal_for_decryption" value="True" />
+						<locstring name="screen_name" value="3020" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<string name="selection_group" value="elephants" />
+						<int name="ui_priority" value="0" />
+						<bool name="use_random_entity_speaker" value="False" />
+						<file name="portrait_name" value="" />
+						<float name="minimap_texture_scale" value="0.65" />
+						<locstring name="brief_text" value="0" />
+						<locstring name="screen_name_short" value="0" />
+						<enum name="map_rotation_type_override" value="no_override" />
+						<bool name="show_in_build_log" value="True" />
+						<file name="symbol_icon_name" value="" />
+						<string name="cover_level_icon_postfix" value="" />
+						<bool name="hide_ucs" value="False" />
+						<enum name="decorator_visibility" value="visible" />
+						<string name="debug_text" value="" />
+						<string name="selection_datatemplate" value="UniqueDatatemplate" />
+						<string name="tooltip_data_template" value="BuildingMilitaryDataTemplate" />
+						<bool name="is_unique" value="False" />
+						<string name="decorator_data_template" value="" />
+						<enum name="ui_combine_type" value="intersection" />
+						<int name="global_unit_control_row" value="1" />
+						<bool name="decorator_show_reload_progress" value="False" />
+						<instance_reference name="ui_decorator" value="" />
+						<bool name="is_respawnable" value="False" />
+						<enum name="respawn_location" value="" />
+						<enum name="respawn_progress" value="" />
+						<enum name="respawn_time" value="" />
+						<locstring name="respawn_help" value="0" />
+						<enum name="respawn_unit_class" value="" />
+						<bool name="is_unique_to_race" value="True" />
+						<bool name="show_production" value="True" />
+						<string name="respawn_datatemplate" value="" />
+						<enum name="decorator" value="CardinalSquad" />
+						<int name="map_layer" value="-1" />
+						<enum name="map_mark" value="Squad" />
+						<group name="ui_codex_info">
+							<bool name="exclusive" value="False" />
+							<int name="priority" value="0" />
+							<group name="ui_position">
+								<int name="ui_position_column" value="-1" />
+								<int name="ui_position_row" value="-1" />
+							</group>
+						</group>
+						<file name="flag_icon_override" value="" />
+						<file name="extra_icon" value="" />
+						<template_reference name="extra_text_formatter" value="">
+						</template_reference>
+						<template_reference name="help_text_formatter" value="">
+						</template_reference>
+						<template_reference name="screen_name_formatter" value="">
+						</template_reference>
+						<template_reference name="screen_name_short_formatter" value="">
+						</template_reference>
+						<template_reference name="brief_text_formatter" value="">
+						</template_reference>
+						<string name="sound" value="sfx_ui_produce_unit_click" />
+						<string name="sound_alternative" value="" />
+						<group name="stats_info">
+							<bool name="include_in_lifespan_stat" value="True" />
+						</group>
+						<float name="minimap_texture_zoom_scale" value="0" />
+						<locstring name="help_text_controller" value="0" />
+						<locstring name="extra_text_controller" value="0" />
+					</group>
+					<instance_reference name="ext_key" value="" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="1251464502" List.ParentItemID="1251464502">
+			<list name="requirement_table" overrideParent="True">
+				<template_reference name="required" value="requirements\required_squad" List.ItemID="2147482384">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="3032" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<float name="max_squad_cap" value="15" overrideParent="True" />
+					<instance_reference name="squad_name" value="sbps\vietnam\units\economy\experimental_cattle\vn_unit_water_buffalo_vit" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+				</template_reference>
+			</list>
+			<state_tree_node name="requirement_statetree" value="" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext" List.ItemID="-15185357" List.ParentItemID="-15185357">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_unit_death" List.ItemID="1073762632" />
+				<instance_reference name="ability" value="abilities\toggle_abilities\civ_core\core_formation_line" List.ItemID="1073762633" />
+				<instance_reference name="ability" value="abilities\toggle_abilities\civ_core\core_formation_spread" List.ItemID="1073762634" />
+				<instance_reference name="ability" value="abilities\toggle_abilities\civ_core\core_formation_wedge" List.ItemID="1073762635" />
+				<instance_reference name="ability" value="abilities\vietnam\vn_buffalo_work_paddy_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="2147482515" />
+			</list>
+			<int name="ui_combine_priority" value="0" />
+			<group name="squad_orders">
+				<group name="abandon_team_weapon">
+					<bool name="available" value="False" />
+				</group>
+				<group name="attack_ground">
+					<bool name="available" value="False" overrideParent="True" />
+				</group>
+				<group name="attack_move">
+					<bool name="available" value="False" overrideParent="True" />
+				</group>
+				<group name="cancel_construction">
+					<bool name="available" value="True" />
+				</group>
+				<group name="hold_fire_off">
+					<bool name="available" value="False" />
+				</group>
+				<group name="hold_fire_on">
+					<bool name="available" value="False" />
+				</group>
+				<group name="hold_position">
+					<bool name="available" value="True" />
+				</group>
+				<group name="load">
+					<bool name="available" value="True" />
+				</group>
+				<group name="move">
+					<bool name="available" value="True" />
+				</group>
+				<group name="pickup_item">
+					<bool name="available" value="True" />
+				</group>
+				<group name="plant_demolitions">
+					<bool name="available" value="False" />
+				</group>
+				<group name="prefer_melee">
+					<bool name="available" value="False" overrideParent="True" />
+				</group>
+				<group name="prefer_ranged">
+					<bool name="available" value="False" overrideParent="True" />
+				</group>
+				<group name="retire">
+					<bool name="available" value="True" />
+				</group>
+				<group name="retreat">
+					<bool name="available" value="False" />
+				</group>
+				<group name="reverse_move">
+					<bool name="available" value="False" />
+				</group>
+				<group name="stop">
+					<bool name="available" value="True" />
+				</group>
+				<group name="trade">
+					<bool name="available" value="True" />
+				</group>
+				<group name="unload">
+					<bool name="available" value="True" />
+				</group>
+				<group name="unload_here">
+					<bool name="available" value="True" />
+				</group>
+				<group name="vault">
+					<bool name="available" value="False" />
+				</group>
+				<group name="add_patrol_point">
+					<bool name="available" value="True" />
+				</group>
+			</group>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_engineer_ext" List.ItemID="2147482424" List.ListAction="Append" overrideParent="True">
+			<float name="construction_rate_multiplier" value="1" />
+			<list name="construction_groups" overrideParent="True">
+				<group name="construction_group" List.ItemID="2147482425">
+					<instance_reference name="construction_menu" value="" overrideParent="True" />
+					<list name="construction_items" overrideParent="True">
+						<group name="construction_item" comment="Rice Paddy - Buffalo only" List.ItemID="2147482426">
+							<instance_reference name="ebp" value="ebps\vietnam\buildings\economy\rice_paddies\vn_building_resource_farm2_chi" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+							<group name="ui_position">
+								<int name="ui_position_row" value="1" overrideParent="True" />
+								<int name="ui_position_column" value="5" overrideParent="True" />
+							</group>
+							<list name="associated_ebps">
+							</list>
+							<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\villager_build_menu\age_1\build_farm" overrideParent="True" />
+							<list name="alternate_ebps">
+							</list>
+							<list name="additional_requirements">
+							</list>
+							<state_tree_node name="additional_requirement_statetree" value="" />
+							<template_reference name="ui_info_extended" value="tables\ui_info_ext" overrideParent="True">
+								<template_reference name="command_card_info" value="ui_command_card_info" overrideParent="True">
+									<group name="ui_position">
+										<int name="ui_position_row" value="1" overrideParent="True" />
+										<int name="ui_position_column" value="5" overrideParent="True" />
+									</group>
+									<int name="command_card_priority" value="1" overrideParent="True" />
+								</template_reference>
+								<template_reference name="quick_abilities_info" value="">
+								</template_reference>
+								<template_reference name="quick_commands_info" value="">
+								</template_reference>
+								<template_reference name="quick_formation_info" value="">
+								</template_reference>
+								<template_reference name="ping_menu_info" value="">
+								</template_reference>
+								<enum name="category" value="Economic" />
+								<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+									<enum name="quick_commands_hotkey" value="" />
+									<int name="quick_commands_priority" value="-1" />
+									<int name="quick_commands_slot_index" value="-1" />
+									<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+								</template_reference>
+								<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+									<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\villager_economy" />
+									<int name="nominal_index" value="8" />
+									<int name="priority" value="0" />
+									<instance_reference name="linked" value="" />
+								</template_reference>
+								<enum name="observer_type" value="Disabled" />
+							</template_reference>
+							<bool name="do_requirement_check_for_construction_on_existing_item" value="False" />
+						</group>
+					</list>
+					<enum name="construction_type" value="tp_construction_base" />
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<instance_reference name="parent_pbg" value="sbps\vietnam\units\economy\water_buffalo\vn_unit_war_elephant_1_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="974918044" List.ParentItemID="974918044">
+				<list name="unit_list" overrideParent="True">
+					<group name="loadout_data" List.ItemID="1073762658">
+						<float name="num" value="1" />
+						<instance_reference name="type" value="ebps\vietnam\units\economy\experimental_cattle\vn_unit_water_buffalo_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+						<list name="unit_attachments">
+						</list>
+						<bool name="is_default_unit" value="True" />
+					</group>
+				</list>
+				<float name="squad_female_chance" value="0" />
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="-729039427" List.ParentItemID="-729039427">
+				<list name="race_list" overrideParent="True">
+					<group name="race_data" List.ItemID="1073762660">
+						<group name="info">
+							<bool name="allow_spawner_production" value="False" />
+							<locstring name="extra_text" value="3022" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+							<locstring name="help_text" value="3021" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+							<string name="hotkey_name" value="W" />
+							<file name="icon_name" value="races\malian\units\cattle" />
+							<bool name="minimap_team_only" value="False" />
+							<file name="minimap_texture" value="" />
+							<instance_reference name="modal_ability" value="" />
+							<bool name="reveal_for_decryption" value="True" />
+							<locstring name="screen_name" value="3020" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+							<string name="selection_group" value="elephants" />
+							<int name="ui_priority" value="0" />
+							<bool name="use_random_entity_speaker" value="False" />
+							<file name="portrait_name" value="" />
+							<float name="minimap_texture_scale" value="0.65" />
+							<locstring name="brief_text" value="0" />
+							<locstring name="screen_name_short" value="0" />
+							<enum name="map_rotation_type_override" value="no_override" />
+							<bool name="show_in_build_log" value="True" />
+							<file name="symbol_icon_name" value="" />
+							<string name="cover_level_icon_postfix" value="" />
+							<bool name="hide_ucs" value="False" />
+							<enum name="decorator_visibility" value="visible" />
+							<string name="debug_text" value="" />
+							<string name="selection_datatemplate" value="UniqueDatatemplate" />
+							<string name="tooltip_data_template" value="BuildingMilitaryDataTemplate" />
+							<bool name="is_unique" value="False" />
+							<string name="decorator_data_template" value="" />
+							<enum name="ui_combine_type" value="intersection" />
+							<int name="global_unit_control_row" value="1" />
+							<bool name="decorator_show_reload_progress" value="False" />
+							<instance_reference name="ui_decorator" value="" />
+							<bool name="is_respawnable" value="False" />
+							<enum name="respawn_location" value="" />
+							<enum name="respawn_progress" value="" />
+							<enum name="respawn_time" value="" />
+							<locstring name="respawn_help" value="0" />
+							<enum name="respawn_unit_class" value="" />
+							<bool name="is_unique_to_race" value="True" />
+							<bool name="show_production" value="True" />
+							<string name="respawn_datatemplate" value="" />
+							<enum name="decorator" value="CardinalSquad" />
+							<int name="map_layer" value="-1" />
+							<enum name="map_mark" value="Squad" />
+							<group name="ui_codex_info">
+								<bool name="exclusive" value="False" />
+								<int name="priority" value="0" />
+								<group name="ui_position">
+									<int name="ui_position_column" value="-1" />
+									<int name="ui_position_row" value="-1" />
+								</group>
+							</group>
+							<file name="flag_icon_override" value="" />
+							<file name="extra_icon" value="" />
+							<template_reference name="extra_text_formatter" value="">
+							</template_reference>
+							<template_reference name="help_text_formatter" value="">
+							</template_reference>
+							<template_reference name="screen_name_formatter" value="">
+							</template_reference>
+							<template_reference name="screen_name_short_formatter" value="">
+							</template_reference>
+							<template_reference name="brief_text_formatter" value="">
+							</template_reference>
+							<string name="sound" value="sfx_ui_produce_unit_click" />
+							<string name="sound_alternative" value="" />
+							<group name="stats_info">
+								<bool name="include_in_lifespan_stat" value="True" />
+							</group>
+							<float name="minimap_texture_zoom_scale" value="0" />
+							<locstring name="help_text_controller" value="0" />
+							<locstring name="extra_text_controller" value="0" />
+						</group>
+						<instance_reference name="ext_key" value="" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="1251464502" List.ParentItemID="1251464502">
+				<list name="requirement_table" overrideParent="True">
+					<template_reference name="required" value="requirements\required_squad" List.ItemID="2147482385">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="3032" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+						<float name="max_squad_cap" value="15" overrideParent="True" />
+						<instance_reference name="squad_name" value="sbps\vietnam\units\economy\experimental_cattle\vn_unit_water_buffalo_vit" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+						<group name="include_pbg_parenting">
+							<bool name="include_child_pbgs" value="False" />
+							<bool name="include_parent_pbgs" value="False" />
+						</group>
+					</template_reference>
+				</list>
+				<state_tree_node name="requirement_statetree" value="" />
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_ability_ext" List.ItemID="-15185357" List.ParentItemID="-15185357">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_unit_death" List.ItemID="1073762670" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\civ_core\core_formation_line" List.ItemID="1073762671" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\civ_core\core_formation_spread" List.ItemID="1073762672" />
+					<instance_reference name="ability" value="abilities\toggle_abilities\civ_core\core_formation_wedge" List.ItemID="1073762673" />
+					<instance_reference name="ability" value="abilities\vietnam\vn_buffalo_work_paddy_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="2147482516" />
+				</list>
+				<int name="ui_combine_priority" value="0" />
+				<group name="squad_orders">
+					<group name="abandon_team_weapon">
+						<bool name="available" value="False" />
+					</group>
+					<group name="attack_ground">
+						<bool name="available" value="False" overrideParent="True" />
+					</group>
+					<group name="attack_move">
+						<bool name="available" value="False" overrideParent="True" />
+					</group>
+					<group name="cancel_construction">
+						<bool name="available" value="True" />
+					</group>
+					<group name="hold_fire_off">
+						<bool name="available" value="False" />
+					</group>
+					<group name="hold_fire_on">
+						<bool name="available" value="False" />
+					</group>
+					<group name="hold_position">
+						<bool name="available" value="True" />
+					</group>
+					<group name="load">
+						<bool name="available" value="True" />
+					</group>
+					<group name="move">
+						<bool name="available" value="True" />
+					</group>
+					<group name="pickup_item">
+						<bool name="available" value="True" />
+					</group>
+					<group name="plant_demolitions">
+						<bool name="available" value="False" />
+					</group>
+					<group name="prefer_melee">
+						<bool name="available" value="False" overrideParent="True" />
+					</group>
+					<group name="prefer_ranged">
+						<bool name="available" value="False" overrideParent="True" />
+					</group>
+					<group name="retire">
+						<bool name="available" value="True" />
+					</group>
+					<group name="retreat">
+						<bool name="available" value="False" />
+					</group>
+					<group name="reverse_move">
+						<bool name="available" value="False" />
+					</group>
+					<group name="stop">
+						<bool name="available" value="True" />
+					</group>
+					<group name="trade">
+						<bool name="available" value="True" />
+					</group>
+					<group name="unload">
+						<bool name="available" value="True" />
+					</group>
+					<group name="unload_here">
+						<bool name="available" value="True" />
+					</group>
+					<group name="vault">
+						<bool name="available" value="False" />
+					</group>
+					<group name="add_patrol_point">
+						<bool name="available" value="False" />
+					</group>
+				</group>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_engineer_ext" List.ItemID="2147482427" List.ListAction="Append" overrideParent="True">
+				<float name="construction_rate_multiplier" value="1" />
+				<list name="construction_groups" overrideParent="True">
+					<group name="construction_group" List.ItemID="2147482428">
+						<instance_reference name="construction_menu" value="" overrideParent="True" />
+						<list name="construction_items" overrideParent="True">
+							<group name="construction_item" comment="Rice Paddy - Buffalo only" List.ItemID="2147482429">
+								<instance_reference name="ebp" value="ebps\vietnam\buildings\economy\rice_paddies\vn_building_resource_farm2_chi" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+								<group name="ui_position">
+									<int name="ui_position_row" value="1" overrideParent="True" />
+									<int name="ui_position_column" value="5" overrideParent="True" />
+								</group>
+								<list name="associated_ebps">
+							</list>
+								<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\villager_build_menu\age_1\build_farm" overrideParent="True" />
+								<list name="alternate_ebps">
+							</list>
+								<list name="additional_requirements">
+							</list>
+								<state_tree_node name="additional_requirement_statetree" value="" />
+								<template_reference name="ui_info_extended" value="tables\ui_info_ext" overrideParent="True">
+									<template_reference name="command_card_info" value="ui_command_card_info" overrideParent="True">
+										<group name="ui_position">
+											<int name="ui_position_row" value="1" overrideParent="True" />
+											<int name="ui_position_column" value="5" overrideParent="True" />
+										</group>
+										<int name="command_card_priority" value="1" overrideParent="True" />
+									</template_reference>
+									<template_reference name="quick_abilities_info" value="">
+								</template_reference>
+									<template_reference name="quick_commands_info" value="">
+								</template_reference>
+									<template_reference name="quick_formation_info" value="">
+								</template_reference>
+									<template_reference name="ping_menu_info" value="">
+								</template_reference>
+									<enum name="category" value="Economic" />
+									<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+										<enum name="quick_commands_hotkey" value="" />
+										<int name="quick_commands_priority" value="-1" />
+										<int name="quick_commands_slot_index" value="-1" />
+										<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+									</template_reference>
+									<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+										<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\villager_economy" />
+										<int name="nominal_index" value="8" />
+										<int name="priority" value="0" />
+										<instance_reference name="linked" value="" />
+									</template_reference>
+									<enum name="observer_type" value="Disabled" />
+								</template_reference>
+								<bool name="do_requirement_check_for_construction_on_existing_item" value="False" />
+							</group>
+						</list>
+						<enum name="construction_type" value="tp_construction_base" />
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<instance_reference name="parent_pbg" value="sbps\vietnam\units\economy\water_buffalo\vn_unit_war_elephant_1_vit" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+	</variant>
+	<uniqueid name="pbgid" value="2147481925" />
+</instance>

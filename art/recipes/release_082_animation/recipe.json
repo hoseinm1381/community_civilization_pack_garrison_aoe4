@@ -1,0 +1,232 @@
+{
+  "source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\release_082_animation\\v2\\buffalo-idle-walk.blend",
+  "source_sha256": "efa0de527194f8ae94ea7f04b0ec236f47daad28646237b5ef9693d3e86a33d9",
+  "native_source": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_081\\animation\\source\\art\\civilizations\\common\\animals\\archetypes\\base_cattle\\base_cattle.rhka",
+  "source_samples_sha256": "05499f00fbd6041b58459402765642a3314cdc8837a245556df6b9b103e40c7c",
+  "selected_encoding": {
+    "idle": {
+      "path": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_082_animation\\encoded-v3\\idle.rhka",
+      "sha256": "0e0c8b296a582c518eb99d4fd19cfef4a702410f9d84a9cba5cd4806c44d9324",
+      "clips": [
+        {
+          "frames": 297,
+          "dynamic_components": 55,
+          "blocks": 20,
+          "compressed_bytes": 42240,
+          "maximum_quantization_step": 2.712948068992456e-05,
+          "index": 10,
+          "name": "navigation\\idle_01",
+          "duration": 9.866666793823242,
+          "cycles": 2,
+          "maximum_translation_error": 6.041011293977938e-08,
+          "maximum_rotation_error_radians": 3.673841931481335e-05,
+          "maximum_quaternion_component_error": 1.8021765990861027e-05,
+          "maximum_quaternion_norm_error": 1.1434450397640461e-07,
+          "independent_sample_readback": true
+        }
+      ],
+      "untouched_clips_exact": 10,
+      "skeletons_exact": true,
+      "root_motion_exact": true,
+      "annotations_exact": true,
+      "gameplay_tested": false
+    },
+    "idle-walk": {
+      "path": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_082_animation\\encoded-v3\\idle-walk.rhka",
+      "sha256": "8ace8feb7f5a76b45e7aff44bf7a8800ac968476a076bc5fe2fa5b674b2bc55e",
+      "clips": [
+        {
+          "frames": 297,
+          "dynamic_components": 55,
+          "blocks": 20,
+          "compressed_bytes": 42240,
+          "maximum_quantization_step": 2.712948068992456e-05,
+          "index": 10,
+          "name": "navigation\\idle_01",
+          "duration": 9.866666793823242,
+          "cycles": 2,
+          "maximum_translation_error": 6.041011293977938e-08,
+          "maximum_rotation_error_radians": 3.673841931481335e-05,
+          "maximum_quaternion_component_error": 1.8021765990861027e-05,
+          "maximum_quaternion_norm_error": 1.1434450397640461e-07,
+          "independent_sample_readback": true
+        },
+        {
+          "frames": 129,
+          "dynamic_components": 126,
+          "blocks": 9,
+          "compressed_bytes": 38016,
+          "maximum_quantization_step": 0.0003247086268246504,
+          "index": 3,
+          "name": "navigation\\walk_01",
+          "duration": 4.266666889190674,
+          "cycles": 4,
+          "maximum_translation_error": 1.3113021850585938e-06,
+          "maximum_rotation_error_radians": 0.0008373834151534233,
+          "maximum_quaternion_component_error": 0.00041743891785464614,
+          "maximum_quaternion_norm_error": 1.014429058532329e-07,
+          "independent_sample_readback": true
+        }
+      ],
+      "untouched_clips_exact": 9,
+      "skeletons_exact": true,
+      "root_motion_exact": true,
+      "annotations_exact": true,
+      "gameplay_tested": false
+    }
+  },
+  "owned_runtime_manifest": "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\resources_082_animation\\manifest.json",
+  "byte_identical_rebuild": true,
+  "rebuild_receipt": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_082_animation\\encoded-rebuild-v1\\receipt.json",
+  "scripts_sha256": {
+    "author.py": "568eaf88c4101be43d112de0f5f464532165c6d029402c2c745f2af40f82d41d",
+    "encode.py": "41f73dc6f615ea63ecf80eaea382d0ef548420de4c8819cc58c6befbf8a42024",
+    "finalize.py": "c0b03f125118bf27e6f0f440c06c9872c03920e01d94c68b0e0d48c3fddf729f",
+    "inspect_source.py": "fe94c0d1e3702aa59b3758053fb8c10e0a535c58d4c831781f03795730c305ea",
+    "native_codec.py": "09efab5686419c092adcfa9ef507320b55d613810b90a513c3fde7d257aa1df0",
+    "package.py": "d88520ac9ccb4fdcb9f3a6448656c3b9e90bf3e462524a632fe052442cdcac7a",
+    "predictive.py": "3ba59bdacae599a23661525782fdf3011f7fe6e2d775a38f9eaf02981debfbc6",
+    "prepare_integration.py": "d426d04353a12e47e73410189b5ef5b739c7daa5c98750ff17278a3c7fabe2eb",
+    "preview.py": "00bd234a0616767d15f299395dd74b351b10e01dd4ad9868f8b0f4ad4d87ca16",
+    "probe_fields.py": "33e31a0f01884741e4e2b9c15ffe5613254e46861fc61fb7d91873bede46056a",
+    "probe_packets.py": "8516e90e06715e39fb8ac69ffa6d81ca16d878fa70bcd7e02c09c07a14b15c17",
+    "qa.py": "e294bea3f06b76dabe4a8015efae76c3ea21678c386f3dcc672d22a3f8b8badb",
+    "test_packets.py": "9a0d54f83e9c32458ef3c718b86be758d9b0bcdc32506a2e85d93f56607532e1"
+  },
+  "integration_recipe": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_082_animation\\integration-v2\\recipe.json",
+  "qa": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_082_animation\\qa-v2\\proof.json",
+  "packages": [
+    {
+      "version": "0.8.2-pilot.1",
+      "zip": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_082_animation\\delivery-v1\\idle\\community_civilization_pack-0.8.2-pilot.1.zip",
+      "zip_sha256": "5faeabf213fa138fd499b9bc9a0df0120da1291d7819ed2e6cece1db945bf024",
+      "sga_sha256": "7b5f7dc89d937af0f5639354c0484b8bb504765d2b55e0dfe28e7460d33e55e5",
+      "baseline_sga_sha256": "a295752f63ad8bcf62b1ca323d0a60c1084d6f6c3c4f380ab52421324ca17a10",
+      "changed": [
+        "attrib/attachments/attachment_lists/vietnam/release_076/vn076_water_buffalo.rgd"
+      ],
+      "added": [
+        "art/scenario/garrison/cc082/buffalo_animator/animator.rgm",
+        "art/scenario/garrison/cc082/buffalo_animator/animator.rgo",
+        "art/scenario/garrison/cc082/buffalo_animator/animator.rhka",
+        "art/scenario/garrison/cc082/buffalo_animator/animator.rootmotion"
+      ],
+      "deleted": [],
+      "untouched_original_members_exact": 1416,
+      "all_original_mounts_exact": true,
+      "archive_identity": "b7fcea91257b408fb9e8ae4d8bc402e1",
+      "encoder": {
+        "path": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_082_animation\\encoded-v3\\idle.rhka",
+        "sha256": "0e0c8b296a582c518eb99d4fd19cfef4a702410f9d84a9cba5cd4806c44d9324",
+        "clips": [
+          {
+            "frames": 297,
+            "dynamic_components": 55,
+            "blocks": 20,
+            "compressed_bytes": 42240,
+            "maximum_quantization_step": 2.712948068992456e-05,
+            "index": 10,
+            "name": "navigation\\idle_01",
+            "duration": 9.866666793823242,
+            "cycles": 2,
+            "maximum_translation_error": 6.041011293977938e-08,
+            "maximum_rotation_error_radians": 3.673841931481335e-05,
+            "maximum_quaternion_component_error": 1.8021765990861027e-05,
+            "maximum_quaternion_norm_error": 1.1434450397640461e-07,
+            "independent_sample_readback": true
+          }
+        ],
+        "untouched_clips_exact": 10,
+        "skeletons_exact": true,
+        "root_motion_exact": true,
+        "annotations_exact": true,
+        "gameplay_tested": false
+      },
+      "root_motion_rgo_events_skeletons_preserved": true,
+      "normal_and_protected_081_inputs_unchanged": true,
+      "native_model_cook": "existing 0.8.1 geometry unchanged; new motions written directly as native RHKA, no FBX or XML burn",
+      "native_runtime": false,
+      "client_import": false,
+      "save_load": false,
+      "multiplayer": false,
+      "installed": false,
+      "published": false
+    },
+    {
+      "version": "0.8.2-pilot.2",
+      "zip": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_082_animation\\delivery-v1\\idle-walk\\community_civilization_pack-0.8.2-pilot.2.zip",
+      "zip_sha256": "aac388ee772a52fa089b1dd866998faaef80033b545ddc2b422b83f21b69fc12",
+      "sga_sha256": "9dc759f9a34d6500a771c436a7a48e0fe1cf362b01b2e5084b68c347a310cca4",
+      "baseline_sga_sha256": "a295752f63ad8bcf62b1ca323d0a60c1084d6f6c3c4f380ab52421324ca17a10",
+      "changed": [
+        "attrib/attachments/attachment_lists/vietnam/release_076/vn076_water_buffalo.rgd"
+      ],
+      "added": [
+        "art/scenario/garrison/cc082/buffalo_animator/animator.rgm",
+        "art/scenario/garrison/cc082/buffalo_animator/animator.rgo",
+        "art/scenario/garrison/cc082/buffalo_animator/animator.rhka",
+        "art/scenario/garrison/cc082/buffalo_animator/animator.rootmotion"
+      ],
+      "deleted": [],
+      "untouched_original_members_exact": 1416,
+      "all_original_mounts_exact": true,
+      "archive_identity": "b7fcea91257b408fb9e8ae4d8bc402e1",
+      "encoder": {
+        "path": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_082_animation\\encoded-v3\\idle-walk.rhka",
+        "sha256": "8ace8feb7f5a76b45e7aff44bf7a8800ac968476a076bc5fe2fa5b674b2bc55e",
+        "clips": [
+          {
+            "frames": 297,
+            "dynamic_components": 55,
+            "blocks": 20,
+            "compressed_bytes": 42240,
+            "maximum_quantization_step": 2.712948068992456e-05,
+            "index": 10,
+            "name": "navigation\\idle_01",
+            "duration": 9.866666793823242,
+            "cycles": 2,
+            "maximum_translation_error": 6.041011293977938e-08,
+            "maximum_rotation_error_radians": 3.673841931481335e-05,
+            "maximum_quaternion_component_error": 1.8021765990861027e-05,
+            "maximum_quaternion_norm_error": 1.1434450397640461e-07,
+            "independent_sample_readback": true
+          },
+          {
+            "frames": 129,
+            "dynamic_components": 126,
+            "blocks": 9,
+            "compressed_bytes": 38016,
+            "maximum_quantization_step": 0.0003247086268246504,
+            "index": 3,
+            "name": "navigation\\walk_01",
+            "duration": 4.266666889190674,
+            "cycles": 4,
+            "maximum_translation_error": 1.3113021850585938e-06,
+            "maximum_rotation_error_radians": 0.0008373834151534233,
+            "maximum_quaternion_component_error": 0.00041743891785464614,
+            "maximum_quaternion_norm_error": 1.014429058532329e-07,
+            "independent_sample_readback": true
+          }
+        ],
+        "untouched_clips_exact": 9,
+        "skeletons_exact": true,
+        "root_motion_exact": true,
+        "annotations_exact": true,
+        "gameplay_tested": false
+      },
+      "root_motion_rgo_events_skeletons_preserved": true,
+      "normal_and_protected_081_inputs_unchanged": true,
+      "native_model_cook": "existing 0.8.1 geometry unchanged; new motions written directly as native RHKA, no FBX or XML burn",
+      "native_runtime": false,
+      "client_import": false,
+      "save_load": false,
+      "multiplayer": false,
+      "installed": false,
+      "published": false
+    }
+  ],
+  "native_game_tested": false,
+  "import_tested": false,
+  "save_load_tested": false,
+  "multiplayer_tested": false
+}

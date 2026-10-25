@@ -1,0 +1,18 @@
+-- Private blueprint identity is resolved in the owning archive. Do not compare
+-- its display/short name with an unqualified string to decide gameplay.
+VietnamBlueprints = {entities = {}}
+local prefix = "b7fcea91257b408fb9e8ae4d8bc402e1:"
+
+function VietnamBlueprints_Entity(name)
+    local blueprint = VietnamBlueprints.entities[name]
+    if blueprint == nil then
+        blueprint = BP_GetEntityBlueprint(prefix .. name)
+        VietnamBlueprints.entities[name] = blueprint
+        print("VIETNAM_V2_BP key=" .. name .. " resolved=" .. BP_GetName(blueprint))
+    end
+    return blueprint
+end
+
+function VietnamBlueprints_Matches(entity, name)
+    return Entity_GetBlueprint(entity) == VietnamBlueprints_Entity(name)
+end

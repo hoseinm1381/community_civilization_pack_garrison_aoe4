@@ -1,0 +1,36 @@
+{
+  "schema": "ccp.release052.stealth-diagnostic/v1",
+  "status": "no_qualified_drop_in_graph",
+  "problem": "The current always-on villager ability executes a 10-second timed Malian stealth tree with 6-second recharge; its native villager appearance flickers near a living Resistance HQ.",
+  "stock_evidence": {
+    "fort_actor": "attrib/ebps/races/malian/buildings/building_landmark_age3_landmarkf_mal.rgd",
+    "fort_while_complete_tree": "building_construction_complete\\buildings\\landmark_stealth_castle_construction_complete_mal",
+    "fort_aura_ability": "stealth_landmark_aura_mal has an empty effect tree",
+    "compiled_state_tree": "Data.sga:statetrees/simulation/statetree.bin decoded against official reflect.db. Exactly three native roots use EntityTrack_SetStealthAllowed(true/false): timed activate_stealth_mal, Fort stealth_castle_spawn_forest_mal, and Spy passive_stealth_ayy. The Fort aura is 2D radius 32 via ConstFloatProvider, filters military plus infantry via Condition_UnitClass, and lingers 30 seconds. Its range is hardcoded in the graph rather than sourced from the dummy aura ability. Spy is a DeferredEntity root, is started from its EBPS deferred_action_state_trees, and has no proximity guard.",
+    "ability_patterns": "All 819 official ability XMLs cataloged; 245 always_on abilities with a tree, zero always_on abilities with a nonempty ability_activate_deferred_tree.",
+    "entity_modifier_enum": "attrib/entity_modifier_type.rgd contains camouflage_enable",
+    "entity_extension": "Vietnamese villager and working archer, and official Musofadi, have stealth_ext",
+    "scar_api": ["Modifier_Create", "Modifier_ApplyToEntity(durationSeconds=0)", "Modifier_Remove", "Entity_IsCamouflaged"],
+    "scar_api_static_check": "mcp__aoe4__check_code: four calls, zero unknown calls, zero low-confidence APIs"
+  },
+  "unproven": [
+    "Whether an indefinite camouflage_enable modifier matches the active Malian SetStealthAllowed state tree for enemy visibility, attack reveal, and recloaking; official graphs do not use that modifier as their stealth action.",
+    "Whether MUT_Enable with value 1 yields a live camouflage state on a Vietnamese villager.",
+    "Whether an applied modifier survives conversion and removes cleanly on death."
+  ],
+  "diagnostic_setup": [
+    "Use a separate 0.5.2 diagnostic build, never the accepted baseline package.",
+    "In open terrain, select one test Vietnamese villager with the static auto-stealth ability removed only in the diagnostic source; leave a nearby second villager with the original ability as a baseline control.",
+    "Build a living Resistance HQ. Keep both villagers stationary 15 m from it; keep an accepted Vietnamese archer available as an activated-stealth control.",
+    "Call the included SCAR probe apply/remove functions on the one test villager; do not apply a second stealth source to it."
+  ],
+  "native_observations": [
+    "Record Entity_IsCamouflaged and enemy-player visibility for baseline and modifier villager every 0.25 seconds for at least 45 seconds at a fixed 15 m distance; baseline should demonstrate the reported flicker, while the modifier candidate must have no periodic clear/reapply transitions.",
+    "Have each stealthed unit perform an attack, record reveal and recloak timing, and compare the modifier villager to the activated archer's accepted behavior.",
+    "Move the modifier villager across the 33 m 2D boundary, remove the modifier on exit, and verify camouflage clears without a delayed reactivation; reenter and apply once.",
+    "Destroy the last HQ and remove the modifier; with two HQs in range, destroying one must retain the effect until the last eligible HQ is gone.",
+    "Check an allied unit and an enemy unit near the HQ; only the owning Vietnamese eligible unit should be affected.",
+    "Check new villager spawn, death, cleanup, and archer activation; archer ability bytes and behavior must remain unchanged."
+  ],
+  "production_gate": "No stock graph is a qualified drop-in. The SCAR modifier fixture is exploratory and not the preferred production path because stock stealth uses EntityTrack_SetStealthAllowed. A native diagnostic must first establish a supported persistent ability/deferred-tree lifecycle with 33 m villager eligibility before source patching. A true Entity_IsCamouflaged readback alone is insufficient."
+}

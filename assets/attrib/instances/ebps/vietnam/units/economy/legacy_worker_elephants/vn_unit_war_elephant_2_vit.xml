@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="War Elephant" template="ebps">
+	<list name="extensions" removedIds="-1189022316">
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="2015716676" List.ParentItemID="2015716676">
+			<list name="tier_group_list" overrideParent="True">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-2009320517" List.ParentItemID="-2009320517">
+			<float name="animator_scale" value="130" overrideParent="True" />
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\vietnam\release_060\v6i8b15902" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-638902394" List.ParentItemID="-638902394">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="food" value="50" overrideParent="True" />
+					<float name="gold" value="0" overrideParent="True" />
+					<float name="wood" value="50" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="20" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1860277336" List.ParentItemID="-1860277336">
+			<float name="hitpoints" value="175" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Melee" value="0" overrideParent="True" />
+				<float name="Ranged" value="0" overrideParent="True" />
+				<float name="Fire" value="0" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="-2140039910" List.ParentItemID="-2140039910">
+			<float name="personnel_pop" value="1" overrideParent="True" />
+			<float name="vehicle_pop" value="0" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="1621966410" List.ParentItemID="1621966410">
+			<group name="sight_package">
+				<float name="inner_radius" value="12" overrideParent="True" />
+				<float name="outer_radius" value="36" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1316572367" List.ParentItemID="-1316572367">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="armored" List.ItemID="1073760548" />
+				<enum name="unit_type" value="war_elephant" List.ItemID="1073760549" />
+				<enum name="unit_type" value="cavalry_war_elephant" List.ItemID="1073760550" />
+				<enum name="unit_type" value="melee" List.ItemID="1073760551" />
+				<enum name="unit_type" value="formational" List.ItemID="1073760552" />
+				<enum name="unit_type" value="dynamic_root_war_elephant" List.ItemID="1073760553" />
+				<enum name="unit_type" value="cavalry" List.ItemID="1073760554" />
+				<enum name="unit_type" value="heavy" List.ItemID="1073760555" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="1073760556" />
+				<enum name="unit_type" value="land_military" List.ItemID="1073760557" />
+			</list>
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\chinese" overrideParent="True" List.ItemID="1403924999" List.ParentItemID="1403924999" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-2019497169" List.ParentItemID="-2019497169">
+			<float name="decorator_height" value="8.5" overrideParent="True" />
+			<enum name="selection_method" value="bone_obb" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-867415763" List.ParentItemID="-867415763">
+			<enum_table name="speed_scaling_table">
+				<float name="default_speed" value="5.16" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="1887272483" List.ParentItemID="1887272483">
+			<state_tree_node name="ActionTree_OpeningBranch" value="unit_entity" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\stimulus_perception_ext" List.ItemID="1729822087" List.ParentItemID="1729822087">
+			<enum_table name="stimulus_perception_info">
+				<group name="dropoff_resource">
+					<bool name="enable_perception" value="False" overrideParent="True" />
+				</group>
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\resource_drop_off_ext" List.ItemID="1073760558" List.ListAction="Append">
+			<enum_table name="accepted_resources">
+				<bool name="action" value="False" />
+				<bool name="command" value="False" />
+				<bool name="popcap" value="False" />
+				<bool name="food" value="True" />
+				<bool name="wood" value="True" />
+				<bool name="stone" value="True" />
+				<bool name="gold" value="True" />
+				<bool name="militia_hre" value="False" />
+				<bool name="merc_byz" value="False" />
+			</enum_table>
+			<enum_table name="drop_off_time_seconds">
+				<float name="action" value="1" />
+				<float name="command" value="1" />
+				<float name="popcap" value="1" />
+				<float name="food" value="0" />
+				<float name="wood" value="0" />
+				<float name="stone" value="0" />
+				<float name="gold" value="0" />
+				<float name="militia_hre" value="1" />
+				<float name="merc_byz" value="1" />
+			</enum_table>
+			<bool name="allow_any_resource_after_construct" value="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="1073760559" List.ListAction="Append">
+			<bool name="must_be_in_supply" value="False" />
+			<float name="number_of_standard_slots" value="0" />
+			<list name="standard_upgrades" overrideParent="True">
+			</list>
+			<int name="max_queue_size_override" value="-1" />
+			<state_tree_node name="production_item_completed_openingbranch" value="" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\stealth_ext" List.ItemID="1073760560" List.ListAction="Append">
+			<float name="revealed_time" value="4" overrideParent="True" />
+			<float name="reveal_radius" value="0" />
+			<bool name="revealed_by_unit" value="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741958" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_war_elephant" />
+	<variant name="campaign">
+		<list name="extensions" removedIds="356917568">
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-1668209998" List.ParentItemID="-1668209998">
+				<list name="tier_group_list" overrideParent="True">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1037320696" List.ParentItemID="1037320696">
+				<float name="animator_scale" value="130" overrideParent="True" />
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\vietnam\release_060\v6i8b15902" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="100414235" List.ParentItemID="100414235">
+				<group name="time_cost">
+					<enum_table name="cost">
+						<float name="food" value="50" overrideParent="True" />
+						<float name="gold" value="0" overrideParent="True" />
+						<float name="wood" value="50" overrideParent="True" />
+					</enum_table>
+					<float name="time_seconds" value="20" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-153028879" List.ParentItemID="-153028879">
+				<float name="hitpoints" value="175" overrideParent="True" />
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Melee" value="0" overrideParent="True" />
+					<float name="Ranged" value="0" overrideParent="True" />
+					<float name="Fire" value="0" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="1629306092" List.ParentItemID="1629306092">
+				<float name="personnel_pop" value="1" overrideParent="True" />
+				<float name="vehicle_pop" value="0" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-2047010920" List.ParentItemID="-2047010920">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="armored" List.ItemID="1073760561" />
+					<enum name="unit_type" value="war_elephant" List.ItemID="1073760562" />
+					<enum name="unit_type" value="cavalry_war_elephant" List.ItemID="1073760563" />
+					<enum name="unit_type" value="melee" List.ItemID="1073760564" />
+					<enum name="unit_type" value="formational" List.ItemID="1073760565" />
+					<enum name="unit_type" value="dynamic_root_war_elephant" List.ItemID="1073760566" />
+					<enum name="unit_type" value="cavalry" List.ItemID="1073760567" />
+					<enum name="unit_type" value="heavy" List.ItemID="1073760568" />
+					<enum name="unit_type" value="annihilation_condition" List.ItemID="1073760569" />
+					<enum name="unit_type" value="land_military" List.ItemID="1073760570" />
+				</list>
+				<list name="race_type_list">
+					<instance_reference name="race_type" value="racebps\chinese" overrideParent="True" List.ItemID="-2130787923" List.ParentItemID="-2130787923" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-269178263" List.ParentItemID="-269178263">
+				<enum_table name="speed_scaling_table">
+					<float name="default_speed" value="5.16" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="366066593" List.ParentItemID="366066593">
+				<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_unit_entity" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\stimulus_perception_ext" List.ItemID="-1106664941" List.ParentItemID="-1106664941">
+				<enum_table name="stimulus_perception_info">
+					<group name="dropoff_resource">
+						<bool name="enable_perception" value="False" overrideParent="True" />
+					</group>
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\resource_drop_off_ext" List.ItemID="1073760571" List.ListAction="Append">
+				<enum_table name="accepted_resources">
+					<bool name="action" value="False" />
+					<bool name="command" value="False" />
+					<bool name="popcap" value="False" />
+					<bool name="food" value="True" />
+					<bool name="wood" value="True" />
+					<bool name="stone" value="True" />
+					<bool name="gold" value="True" />
+					<bool name="militia_hre" value="False" />
+					<bool name="merc_byz" value="False" />
+				</enum_table>
+				<enum_table name="drop_off_time_seconds">
+					<float name="action" value="1" />
+					<float name="command" value="1" />
+					<float name="popcap" value="1" />
+					<float name="food" value="0" />
+					<float name="wood" value="0" />
+					<float name="stone" value="0" />
+					<float name="gold" value="0" />
+					<float name="militia_hre" value="1" />
+					<float name="merc_byz" value="1" />
+				</enum_table>
+				<bool name="allow_any_resource_after_construct" value="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="1073760572" List.ListAction="Append">
+				<bool name="must_be_in_supply" value="False" />
+				<float name="number_of_standard_slots" value="0" />
+				<list name="standard_upgrades" overrideParent="True">
+				</list>
+				<int name="max_queue_size_override" value="-1" />
+				<state_tree_node name="production_item_completed_openingbranch" value="" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\stealth_ext" List.ItemID="1073760573" List.ListAction="Append">
+				<float name="revealed_time" value="4" overrideParent="True" />
+				<float name="reveal_radius" value="0" />
+				<bool name="revealed_by_unit" value="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="1073741958" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_war_elephant" />
+	</variant>
+</instance>

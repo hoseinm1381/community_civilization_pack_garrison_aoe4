@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" template="ebps" description="No Than colliding nonpiercing bolt; native scatter-compatible flight">
+	<uniqueid name="pbgid" value="2147482010" />
+	<instance_reference name="parent_pbg" value="ebps\projectiles\projectile_bolt_springald" />
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\projectile_ext" comment="Includes controls for flight characteristics, delayed detonation time and collision details." List.ItemID="-1549401395" List.ParentItemID="-1549401395" overrideParent="True">
+			<float name="acceleration" value="0" />
+			<group name="artillery">
+				<bool name="can_counter_barrage" value="False" />
+				<bool name="is_artillery" value="False" />
+				<bool name="is_target_only" value="False" comment="Again, I'm not sure if this actually matters or not - or rather I don't know in what situations it matters within.  I turned it off and it tracked the target just fine..." />
+				<float name="speed_distance_multiplier" value="0.2" />
+				<float name="speed_increment" value="0.5" />
+				<enum name="firing_angle_type" value="low_angle" />
+				<bool name="use_homing_when_no_blocker" value="False" />
+				<float name="non_collide_start_angle" value="5" />
+				<float name="non_collide_end_angle" value="20" />
+			</group>
+			<bool name="collision_building_wall_panel_ignore" value="False" />
+			<group name="collision_type">
+				<enum name="enum_projectile_collision" value="tp_collide" />
+			</group>
+			<float name="deathtimer" value="0" />
+			<float name="delay_detonate_time" value="0" />
+			<bool name="delay_detonate_ui_enabled" value="False" />
+			<string name="launcher_marker" value="" />
+			<float name="life_time_while_alive" value="1.5" comment="The value must be high enough that the projectile has time to reach it's destination. If it is too low, the projectiles will stop before reaching and deal 0 damage." />
+			<float name="rotation_speed" value="10000" />
+			<bool name="spawn_collision_fx" value="False" />
+			<float name="speed" value="65" />
+			<bool name="collision_land_ignore" value="False" />
+			<bool name="snap_above_terrain" value="False" />
+			<bool name="collision_cover_shoot_through_ignore" value="False" />
+			<bool name="can_be_disjointed" value="True" />
+			<bool name="set_player_owner" value="False" />
+			<template_reference name="trajectory_option" value="options\none">
+				</template_reference>
+			<bool name="collide_using_bounding_box" value="False" />
+			<bool name="force_3d_collision" value="True" />
+			<bool name="target_squad_if_homing" value="False" />
+			<group name="prediction">
+				<bool name="use_predictive_aiming" value="False" />
+				<float name="max_prediction_speed" value="6" />
+			</group>
+			<bool name="use_target_entity_position" value="False" />
+			<template_reference name="projectile_piercing_damage_option" value="options\none">
+			</template_reference>
+			<bool name="check_collision_against_target_entity_only" value="False" />
+			<instance_reference name="trajectory_preview_line_bag" value="" />
+			<bool name="force_max_range" value="False" />
+		</template_reference>
+	</list>
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\projectile_ext" comment="Includes controls for flight characteristics, delayed detonation time and collision details." List.ItemID="-386894083" List.ParentItemID="-386894083" overrideParent="True">
+				<float name="acceleration" value="0" />
+				<group name="artillery">
+					<bool name="can_counter_barrage" value="False" />
+					<bool name="is_artillery" value="False" />
+					<bool name="is_target_only" value="False" comment="Again, I'm not sure if this actually matters or not - or rather I don't know in what situations it matters within.  I turned it off and it tracked the target just fine..." />
+					<float name="speed_distance_multiplier" value="0.2" />
+					<float name="speed_increment" value="0.5" />
+					<enum name="firing_angle_type" value="low_angle" />
+					<bool name="use_homing_when_no_blocker" value="False" />
+					<float name="non_collide_start_angle" value="5" />
+					<float name="non_collide_end_angle" value="20" />
+				</group>
+				<bool name="collision_building_wall_panel_ignore" value="False" />
+				<group name="collision_type">
+					<enum name="enum_projectile_collision" value="tp_collide" />
+				</group>
+				<float name="deathtimer" value="0" />
+				<float name="delay_detonate_time" value="0" />
+				<bool name="delay_detonate_ui_enabled" value="False" />
+				<string name="launcher_marker" value="" />
+				<float name="life_time_while_alive" value="1.5" comment="The value must be high enough that the projectile has time to reach it's destination. If it is too low, the projectiles will stop before reaching and deal 0 damage." />
+				<float name="rotation_speed" value="10000" />
+				<bool name="spawn_collision_fx" value="False" />
+				<float name="speed" value="65" />
+				<bool name="collision_land_ignore" value="False" />
+				<bool name="snap_above_terrain" value="False" />
+				<bool name="collision_cover_shoot_through_ignore" value="False" />
+				<bool name="can_be_disjointed" value="True" />
+				<bool name="set_player_owner" value="False" />
+				<template_reference name="trajectory_option" value="options\none">
+					</template_reference>
+				<bool name="collide_using_bounding_box" value="False" />
+				<bool name="force_3d_collision" value="True" />
+				<bool name="target_squad_if_homing" value="False" />
+				<group name="prediction">
+					<bool name="use_predictive_aiming" value="False" />
+					<float name="max_prediction_speed" value="6" />
+				</group>
+				<bool name="use_target_entity_position" value="False" />
+				<template_reference name="projectile_piercing_damage_option" value="options\none">
+			</template_reference>
+				<bool name="check_collision_against_target_entity_only" value="False" />
+				<instance_reference name="trajectory_preview_line_bag" value="" />
+				<bool name="force_max_range" value="False" />
+			</template_reference>
+		</list>
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\projectile_ext" comment="Includes controls for flight characteristics, delayed detonation time and collision details." List.ItemID="-1549401395" List.ParentItemID="-1549401395" overrideParent="True">
+				<float name="acceleration" value="0" />
+				<group name="artillery">
+					<bool name="can_counter_barrage" value="False" />
+					<bool name="is_artillery" value="False" />
+					<bool name="is_target_only" value="False" comment="Again, I'm not sure if this actually matters or not - or rather I don't know in what situations it matters within.  I turned it off and it tracked the target just fine..." />
+					<float name="speed_distance_multiplier" value="0.2" />
+					<float name="speed_increment" value="0.5" />
+					<enum name="firing_angle_type" value="low_angle" />
+					<bool name="use_homing_when_no_blocker" value="False" />
+					<float name="non_collide_start_angle" value="5" />
+					<float name="non_collide_end_angle" value="20" />
+				</group>
+				<bool name="collision_building_wall_panel_ignore" value="False" />
+				<group name="collision_type">
+					<enum name="enum_projectile_collision" value="tp_collide" />
+				</group>
+				<float name="deathtimer" value="0" />
+				<float name="delay_detonate_time" value="0" />
+				<bool name="delay_detonate_ui_enabled" value="False" />
+				<string name="launcher_marker" value="" />
+				<float name="life_time_while_alive" value="1.5" comment="The value must be high enough that the projectile has time to reach it's destination. If it is too low, the projectiles will stop before reaching and deal 0 damage." />
+				<float name="rotation_speed" value="10000" />
+				<bool name="spawn_collision_fx" value="False" />
+				<float name="speed" value="65" />
+				<bool name="collision_land_ignore" value="False" />
+				<bool name="snap_above_terrain" value="False" />
+				<bool name="collision_cover_shoot_through_ignore" value="False" />
+				<bool name="can_be_disjointed" value="True" />
+				<bool name="set_player_owner" value="False" />
+				<template_reference name="trajectory_option" value="options\none">
+					</template_reference>
+				<bool name="collide_using_bounding_box" value="False" />
+				<bool name="force_3d_collision" value="True" />
+				<bool name="target_squad_if_homing" value="False" />
+				<group name="prediction">
+					<bool name="use_predictive_aiming" value="False" />
+					<float name="max_prediction_speed" value="6" />
+				</group>
+				<bool name="use_target_entity_position" value="False" />
+				<template_reference name="projectile_piercing_damage_option" value="options\none">
+			</template_reference>
+				<bool name="check_collision_against_target_entity_only" value="False" />
+				<instance_reference name="trajectory_preview_line_bag" value="" />
+				<bool name="force_max_range" value="False" />
+			</template_reference>
+		</list>
+	</variant>
+</instance>

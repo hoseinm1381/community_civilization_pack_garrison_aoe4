@@ -1,0 +1,776 @@
+{
+  "schema": "ccp.houses-material-variants/v1",
+  "status": "ready_for_serial_native_cook",
+  "project": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\output\\release_010\\houses\\library\\Mods\\community_civilization_pack",
+  "models": [
+    {
+      "age": 1,
+      "name": "vn_house_age01",
+      "source": "art/civilizations/chinese/structures/house/chi_house_control_a_age01/chi_house_control_a_age01.rgo",
+      "materials": [
+        {
+          "name": "roof",
+          "carrier": "vn_house_age01",
+          "textures": [
+            {
+              "slot": "albedoTex",
+              "source_logical_path": "art/material_library/substances/structures/trim/2645151546205869145_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age01_roof_albedoTex_timber.png",
+              "sha256": "3caa775809344facc6d013001e200447b732b8baab13f1fe38ccdf41e77345dc",
+              "kind": "timber",
+              "source_png_sha256": "3a4d0f8199f954c31641dfefe0bcd7f878a6a19e73e8355a1ffcd4822d5a2e07",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex2",
+              "source_logical_path": "art/material_library/substances/structures/wood/10527405107968455992_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age01_roof_albedoTex2_bamboo.png",
+              "sha256": "5e7e5e06af2fefcb65694699de9ad917a522ae7e13f27ebce4636026ed0280dc",
+              "kind": "bamboo",
+              "source_png_sha256": "8e062603df614cc99911f425350e0c3525e9c8d0aa6f1849281079c9f2d9bc3f",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex3",
+              "source_logical_path": "art/material_library/substances/structures/shingle/13583213630642570422_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age01_roof_albedoTex3_straw.png",
+              "sha256": "46e1a8493114d1fa187cf863a5a9b036031c7b7e91c3e072354c1ec008414caa",
+              "kind": "straw",
+              "source_png_sha256": "5f5419571b995f5c569c00808d570322ffd7999c01ec5c91cabc96642608b418",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "normalMap3",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age01_roof_albedoTex3_straw_packed_normal.png",
+              "sha256": "25027e6fc2cae70461371652fab222c47bca993acb723bc92153ffae39d3f2c4",
+              "kind": "straw packed normal",
+              "source_logical_path": "generated flat normal with donor AO semantics"
+            },
+            {
+              "slot": "albedoTex4",
+              "source_logical_path": "art/material_library/substances/structures/plaster/12041615973339707457_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age01_roof_albedoTex4_bamboo.png",
+              "sha256": "2fb6db2ae9b5ae4026c30a780e059199f36eaaa5dcd1821986c12e613b93dbba",
+              "kind": "bamboo",
+              "source_png_sha256": "47cbbc8b06b1882ec057d3909bb9b88e4039187bf4cb8af7612801f392657ed9",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex6",
+              "source_logical_path": "art/material_library/substances/structures/plaster/17199498810477758055_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age01_roof_albedoTex6_bamboo.png",
+              "sha256": "1b7915549eee343c7ae03c3cc2b41cd077ee1a2d837212817268c0e271c5bfc4",
+              "kind": "bamboo",
+              "source_png_sha256": "5f5f4e7061f8ff40907dc69e6f3603627a5ef6b7721e9cae547e5283631a46a7",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex7",
+              "source_logical_path": "art/material_library/substances/structures/wood/15677117367306586403_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age01_roof_albedoTex7_bamboo.png",
+              "sha256": "47d57ca95f9ace60b3c0b0418efb485eb9684686b9fada1182b53980fedd12fb",
+              "kind": "bamboo",
+              "source_png_sha256": "c78df6632e626e5da994341aed41d069cd2a02b9a48e61acaf1ad0b6cbce0e4a",
+              "dimensions": [
+                512,
+                512
+              ]
+            }
+          ],
+          "native_collection_material": "roof_collection"
+        },
+        {
+          "name": "main",
+          "carrier": "vn_house_age01_main",
+          "textures": [
+            {
+              "slot": "albedoTex",
+              "source_logical_path": "art/material_library/substances/structures/stone/1851766695653794545_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age01_main_albedoTex_earth.png",
+              "sha256": "7f365a93ab3cd100a537c916d3355c962c8672199fe859073fd570d68a263616",
+              "kind": "earth",
+              "source_png_sha256": "7c959a4d508ce7f84bca406521611f513e0ca54715f3af004b2015e6f2fabc2c",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex2",
+              "source_logical_path": "art/material_library/substances/structures/trim/2645151546205869145_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age01_main_albedoTex2_timber.png",
+              "sha256": "3caa775809344facc6d013001e200447b732b8baab13f1fe38ccdf41e77345dc",
+              "kind": "timber",
+              "source_png_sha256": "3a4d0f8199f954c31641dfefe0bcd7f878a6a19e73e8355a1ffcd4822d5a2e07",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex3",
+              "source_logical_path": "art/material_library/substances/structures/stone/13629605043408125052_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age01_main_albedoTex3_earth.png",
+              "sha256": "76781a7df2d98743d1dd880d8b2117f7b248ac8fa0799099c64661dab0175a2a",
+              "kind": "earth",
+              "source_png_sha256": "42b12c4668eb3d1f0277c7d412410792a8e72bea315e20b67e4a652cf6dacc96",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex4",
+              "source_logical_path": "art/material_library/substances/structures/plaster/12041615973339707457_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age01_main_albedoTex4_bamboo.png",
+              "sha256": "2fb6db2ae9b5ae4026c30a780e059199f36eaaa5dcd1821986c12e613b93dbba",
+              "kind": "bamboo",
+              "source_png_sha256": "47cbbc8b06b1882ec057d3909bb9b88e4039187bf4cb8af7612801f392657ed9",
+              "dimensions": [
+                512,
+                512
+              ]
+            }
+          ],
+          "native_collection_material": "main_collection"
+        }
+      ]
+    },
+    {
+      "age": 2,
+      "name": "vn_house_age02",
+      "source": "art/civilizations/chinese/structures/house/chi_house_control_a_age02/chi_house_control_a_age02.rgo",
+      "materials": [
+        {
+          "name": "main",
+          "carrier": "vn_house_age02_main",
+          "textures": [
+            {
+              "slot": "albedoTex",
+              "source_logical_path": "art/material_library/substances/structures/stone/17944450081023976027_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age02_main_albedoTex_brick.png",
+              "sha256": "bc6f980a32a65e3ce74577ee45a6a2c2c38f90511f01dd9605854f5175e55888",
+              "kind": "brick",
+              "source_png_sha256": "96ef53915b99d659c879e9e7a21d67f96cbe8598e7fb798ddf5558a85b250006",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex2",
+              "source_logical_path": "art/material_library/substances/structures/stone/7702168862315108242_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age02_main_albedoTex2_brick.png",
+              "sha256": "ca31b5dcb57949fbbaf60f38b65afdfb49121fdd5bf59dd028bf5553ac2ba81f",
+              "kind": "brick",
+              "source_png_sha256": "95a292782ba6a582642c1f7be29ac8f769d130ab3f48c0ab28a27632d21c0746",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex3",
+              "source_logical_path": "art/material_library/substances/structures/plaster/1010901216075870242_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age02_main_albedoTex3_plaster.png",
+              "sha256": "30c46a101bde67422d2b0938ee86ff48cf1953ab492dcd2ce8b2c48602e665f0",
+              "kind": "plaster",
+              "source_png_sha256": "3369409bf762d571f22f93bf35a433c325915439a5bd570108250aac273e4d3d",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex4",
+              "source_logical_path": "art/material_library/substances/structures/plaster/1010901216075870242_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age02_main_albedoTex4_plaster.png",
+              "sha256": "30c46a101bde67422d2b0938ee86ff48cf1953ab492dcd2ce8b2c48602e665f0",
+              "kind": "plaster",
+              "source_png_sha256": "3369409bf762d571f22f93bf35a433c325915439a5bd570108250aac273e4d3d",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex6",
+              "source_logical_path": "art/material_library/substances/structures/plaster/12041615973339707457_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age02_main_albedoTex6_plaster.png",
+              "sha256": "5045d7e9076e7c5cdef2bcaed69d958f54a35cb962928d882672b34e494ec526",
+              "kind": "plaster",
+              "source_png_sha256": "47cbbc8b06b1882ec057d3909bb9b88e4039187bf4cb8af7612801f392657ed9",
+              "dimensions": [
+                512,
+                512
+              ]
+            }
+          ],
+          "native_collection_material": "main_collection"
+        },
+        {
+          "name": "roof",
+          "carrier": "vn_house_age02",
+          "textures": [
+            {
+              "slot": "albedoTex",
+              "source_logical_path": "art/material_library/substances/structures/wood/10527405107968455992_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age02_roof_albedoTex_timber.png",
+              "sha256": "ca00c8fc8581d99b6c1f8d13092b0245ce67da5ad535153924218d1ec992e5fa",
+              "kind": "timber",
+              "source_png_sha256": "8e062603df614cc99911f425350e0c3525e9c8d0aa6f1849281079c9f2d9bc3f",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex3",
+              "source_logical_path": "art/material_library/substances/structures/shingle/18079430704462912677_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age02_roof_albedoTex3_tile.png",
+              "sha256": "046f023a600723fd6549a41c32b6b8941cbac7d0b547eaee4d570dfec8cab1d0",
+              "kind": "tile",
+              "source_png_sha256": "b872d9f9221f6c2a66a9ceca774ceb3e18977e0e6e4e336bc6a4edb1320d908f",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex6",
+              "source_logical_path": "art/material_library/substances/structures/wood/10527405107968455992_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age02_roof_albedoTex6_timber.png",
+              "sha256": "ca00c8fc8581d99b6c1f8d13092b0245ce67da5ad535153924218d1ec992e5fa",
+              "kind": "timber",
+              "source_png_sha256": "8e062603df614cc99911f425350e0c3525e9c8d0aa6f1849281079c9f2d9bc3f",
+              "dimensions": [
+                512,
+                512
+              ]
+            }
+          ],
+          "native_collection_material": "roof_collection"
+        }
+      ]
+    },
+    {
+      "age": 3,
+      "name": "vn_house_age03",
+      "source": "art/civilizations/chinese/structures/house/chi_house_control_a_age03/chi_house_control_a_age03.rgo",
+      "materials": [
+        {
+          "name": "roof",
+          "carrier": "vn_house_age03",
+          "textures": [
+            {
+              "slot": "albedoTex",
+              "source_logical_path": "art/material_library/substances/structures/wood/10527405107968455992_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age03_roof_albedoTex_timber.png",
+              "sha256": "ca00c8fc8581d99b6c1f8d13092b0245ce67da5ad535153924218d1ec992e5fa",
+              "kind": "timber",
+              "source_png_sha256": "8e062603df614cc99911f425350e0c3525e9c8d0aa6f1849281079c9f2d9bc3f",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex3",
+              "source_logical_path": "art/material_library/substances/structures/shingle/11041352244865695695_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age03_roof_albedoTex3_tile.png",
+              "sha256": "775fc5ecc7dbf0bc1412830ba693d5c99f4878adecd9383d3ce11e4f4ff43658",
+              "kind": "tile",
+              "source_png_sha256": "4a47925af2ae57bc63d40b591c9a712b3db3a39e62181a215e79260f72a6d384",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex6",
+              "source_logical_path": "art/material_library/substances/structures/wood/10527405107968455992_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age03_roof_albedoTex6_timber.png",
+              "sha256": "ca00c8fc8581d99b6c1f8d13092b0245ce67da5ad535153924218d1ec992e5fa",
+              "kind": "timber",
+              "source_png_sha256": "8e062603df614cc99911f425350e0c3525e9c8d0aa6f1849281079c9f2d9bc3f",
+              "dimensions": [
+                512,
+                512
+              ]
+            }
+          ],
+          "native_collection_material": "roof_collection"
+        },
+        {
+          "name": "main",
+          "carrier": "vn_house_age03_main",
+          "textures": [
+            {
+              "slot": "albedoTex",
+              "source_logical_path": "art/material_library/substances/structures/stone/17944450081023976027_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age03_main_albedoTex_brick.png",
+              "sha256": "bc6f980a32a65e3ce74577ee45a6a2c2c38f90511f01dd9605854f5175e55888",
+              "kind": "brick",
+              "source_png_sha256": "96ef53915b99d659c879e9e7a21d67f96cbe8598e7fb798ddf5558a85b250006",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex2",
+              "source_logical_path": "art/material_library/substances/structures/stone/7702168862315108242_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age03_main_albedoTex2_brick.png",
+              "sha256": "ca31b5dcb57949fbbaf60f38b65afdfb49121fdd5bf59dd028bf5553ac2ba81f",
+              "kind": "brick",
+              "source_png_sha256": "95a292782ba6a582642c1f7be29ac8f769d130ab3f48c0ab28a27632d21c0746",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex3",
+              "source_logical_path": "art/material_library/substances/structures/plaster/1010901216075870242_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age03_main_albedoTex3_plaster.png",
+              "sha256": "30c46a101bde67422d2b0938ee86ff48cf1953ab492dcd2ce8b2c48602e665f0",
+              "kind": "plaster",
+              "source_png_sha256": "3369409bf762d571f22f93bf35a433c325915439a5bd570108250aac273e4d3d",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex4",
+              "source_logical_path": "art/material_library/substances/structures/plaster/1010901216075870242_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age03_main_albedoTex4_plaster.png",
+              "sha256": "30c46a101bde67422d2b0938ee86ff48cf1953ab492dcd2ce8b2c48602e665f0",
+              "kind": "plaster",
+              "source_png_sha256": "3369409bf762d571f22f93bf35a433c325915439a5bd570108250aac273e4d3d",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex6",
+              "source_logical_path": "art/material_library/substances/structures/plaster/12041615973339707457_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age03_main_albedoTex6_plaster.png",
+              "sha256": "5045d7e9076e7c5cdef2bcaed69d958f54a35cb962928d882672b34e494ec526",
+              "kind": "plaster",
+              "source_png_sha256": "47cbbc8b06b1882ec057d3909bb9b88e4039187bf4cb8af7612801f392657ed9",
+              "dimensions": [
+                512,
+                512
+              ]
+            }
+          ],
+          "native_collection_material": "main_collection"
+        }
+      ]
+    },
+    {
+      "age": 4,
+      "name": "vn_house_age04",
+      "source": "art/civilizations/chinese/structures/house/chi_house_control_a_age04/chi_house_control_a_age04.rgo",
+      "materials": [
+        {
+          "name": "roof",
+          "carrier": "vn_house_age04",
+          "textures": [
+            {
+              "slot": "albedoTex",
+              "source_logical_path": "art/material_library/substances/structures/wood/3002022426451096306_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age04_roof_albedoTex_timber.png",
+              "sha256": "e79f2afd3ce239d2b48df4620c1e6015d4f956b2914c1026a43d91d2a2eb234f",
+              "kind": "timber",
+              "source_png_sha256": "f2dee1996830e8443ed8acb134d38c7acde864d20e995d6cc3e5f581c47d513b",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex2",
+              "source_logical_path": "art/material_library/substances/structures/shingle/9453151483157040532_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age04_roof_albedoTex2_tile.png",
+              "sha256": "b7ad6ac950c466e619f055d98e020cf9b8942f1984228806188312440778a3c7",
+              "kind": "tile",
+              "source_png_sha256": "1763139d9d2d4b61c222bb2d701fcbd035bd08b26f5a1dfdde89e9756324e9c3",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex4",
+              "source_logical_path": "art/material_library/substances/structures/wood/483035969372513265_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age04_roof_albedoTex4_timber.png",
+              "sha256": "b012ea6422e703084045e8a62d9938c2af45e0bfd60d913eea8e7dad37a861a3",
+              "kind": "timber",
+              "source_png_sha256": "9ab762bf070bcdc65fba05e55c070fe6ee068389f5d8a328881bf56169638201",
+              "dimensions": [
+                512,
+                512
+              ]
+            }
+          ],
+          "native_collection_material": "roof_collection"
+        },
+        {
+          "name": "extra",
+          "carrier": "vn_house_age04_extra",
+          "textures": [
+            {
+              "slot": "albedoTex3",
+              "source_logical_path": "art/material_library/substances/structures/wood/4240303804329410511_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age04_extra_albedoTex3_timber.png",
+              "sha256": "27f6122d368915a2930d52b2f8d9f9265f515a737e8d1c7aa4dc13d685b0eec1",
+              "kind": "timber",
+              "source_png_sha256": "60cea1a69c2c9396a5065c85178fa7a19c4404a66a6c69bf5bc7383151e99ea1",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex4",
+              "source_logical_path": "art/material_library/substances/structures/wood/10527405107968455992_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age04_extra_albedoTex4_timber.png",
+              "sha256": "ca00c8fc8581d99b6c1f8d13092b0245ce67da5ad535153924218d1ec992e5fa",
+              "kind": "timber",
+              "source_png_sha256": "8e062603df614cc99911f425350e0c3525e9c8d0aa6f1849281079c9f2d9bc3f",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex5",
+              "source_logical_path": "art/material_library/substances/structures/plaster/12041615973339707457_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age04_extra_albedoTex5_plaster.png",
+              "sha256": "5045d7e9076e7c5cdef2bcaed69d958f54a35cb962928d882672b34e494ec526",
+              "kind": "plaster",
+              "source_png_sha256": "47cbbc8b06b1882ec057d3909bb9b88e4039187bf4cb8af7612801f392657ed9",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex6",
+              "source_logical_path": "art/material_library/substances/structures/wood/3002022426451096306_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age04_extra_albedoTex6_timber.png",
+              "sha256": "e79f2afd3ce239d2b48df4620c1e6015d4f956b2914c1026a43d91d2a2eb234f",
+              "kind": "timber",
+              "source_png_sha256": "f2dee1996830e8443ed8acb134d38c7acde864d20e995d6cc3e5f581c47d513b",
+              "dimensions": [
+                512,
+                512
+              ]
+            }
+          ],
+          "native_collection_material": "extra_collection"
+        },
+        {
+          "name": "main",
+          "carrier": "vn_house_age04_main",
+          "textures": [
+            {
+              "slot": "albedoTex",
+              "source_logical_path": "art/material_library/substances/structures/stone/2260336532023409543_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age04_main_albedoTex_brick.png",
+              "sha256": "80ca8dd6093d66faab62c7107086e1820fdd593e9efecb084279f674eddc1e71",
+              "kind": "brick",
+              "source_png_sha256": "998610b20f00f8b4e625a93d68541fe785b8668e9610db64cebabe7f0e88fe49",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex2",
+              "source_logical_path": "art/material_library/substances/structures/stone/7702168862315108242_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age04_main_albedoTex2_brick.png",
+              "sha256": "ca31b5dcb57949fbbaf60f38b65afdfb49121fdd5bf59dd028bf5553ac2ba81f",
+              "kind": "brick",
+              "source_png_sha256": "95a292782ba6a582642c1f7be29ac8f769d130ab3f48c0ab28a27632d21c0746",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex3",
+              "source_logical_path": "art/material_library/substances/structures/plaster/12041615973339707457_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age04_main_albedoTex3_plaster.png",
+              "sha256": "5045d7e9076e7c5cdef2bcaed69d958f54a35cb962928d882672b34e494ec526",
+              "kind": "plaster",
+              "source_png_sha256": "47cbbc8b06b1882ec057d3909bb9b88e4039187bf4cb8af7612801f392657ed9",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex4",
+              "source_logical_path": "art/material_library/substances/structures/plaster/1010901216075870242_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age04_main_albedoTex4_plaster.png",
+              "sha256": "30c46a101bde67422d2b0938ee86ff48cf1953ab492dcd2ce8b2c48602e665f0",
+              "kind": "plaster",
+              "source_png_sha256": "3369409bf762d571f22f93bf35a433c325915439a5bd570108250aac273e4d3d",
+              "dimensions": [
+                512,
+                512
+              ]
+            },
+            {
+              "slot": "albedoTex5",
+              "source_logical_path": "art/material_library/substances/structures/plaster/4611286749468971337_packed.rrtex",
+              "image": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\textures\\age04_main_albedoTex5_plaster.png",
+              "sha256": "a13aa551470193fdd755eaa850bfbe8bca0a406691e5f406e418c38057ee317a",
+              "kind": "plaster",
+              "source_png_sha256": "5b2c5fe079626dc440ee772969a2d93f4d893f77bf9a525c9fb4052c7335a330",
+              "dimensions": [
+                512,
+                512
+              ]
+            }
+          ],
+          "native_collection_material": "main_collection"
+        }
+      ]
+    }
+  ],
+  "preview_projections": {
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\a78f6a004826_13784538724279433817_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\ac2fcd8317a79f928dc71a9f0224946449cc40ce7102e14ea8018501468149a0.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\e3b3361f4f7f_14060428279908441106_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\d611da3258433bdb7946a9206c4344a027423f85c7c592fde03d26e30f53b8a3.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\43f194e91aec_14965936230166290942_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\2c8f3cfeb3e19517911c5a63940afcd5d187671b3859217c8c15e7c7773242be.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\7917de7bf18b_1725677744587673369_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\e1e6e67507d3a3b7d182b03108d7358addba0100db0a68fe430f44358c5db740.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\25ca84006fc6_17851036116226915900_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\f9e5d1f770a8ebace6181ed1ba2baa4298ecee170042a952b8acd44b987c1434.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\c873d18d61fa_18083543606340297110_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\4888a53f7ab958312a76c4b1ac2485de3f8fe4b31594cf35a22e837a91a7b78d.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\fa611a1995a9_18238128090229762033_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\8b9596a1ac65295ee51f8c92e5818e1d2eeab8522b40ab14480a4be5cedc220e.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\b4fe8cba759c_4995100207057565401_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\9c0f301be63a979a0bbce243dc201ffdcd05183ed90481f1412033d41a5ae7d5.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\b777536717da_7055038039076759766_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\976e1bc8d75e98bf1297ef196ffde71c03c2d21380e32fdfa6eb38f3173578e4.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\1001cc49f1b1_8291359286172825693_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\5e8c51be78b23f6cebcfbc9b7d87f251bb6251cb22b69dbd3defbd3b222a2c31.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\9d121af4223f_11870108732234244334_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\5d63226666f63d1b4f2920c680ef65c63d44c89629e53748bc774ae4c50aa9b7.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\0eb8439c962e_black_msk.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\096c5e587a416ebc8c2512f6d7c14fcdc87edc3defebd821e914c116b382091a.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\d7a9ba284bbf_leaks_04_msk.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\94657a8124c6545c19ef8cc0b3741b0e0b27302c2fa4da9ae75a05ce4b86a943.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\d5ba288445e3_middle_gray_msk.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\2db38510c905e5272bf218e30b15ec3dff62989af93ea4755c63f139db5961b2.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\1754d19f2037_noise_02_msk.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\3f480a09f06e22ee4da43fca3d71a77f2ac12424b1ef319c0c8a5bab701d356c.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\79d116ead710_noise_03_msk.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\6f47966797bec8594695c9c5d75b63715ba06e6fc93caf7044f6734d173d83c4.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\570e02d83fae_patches_01_msk.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\7182053237b5d78839c2e65abd68781d078ce3f45ae153a111b297d4002c158a.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\85c59cbb9679_11755559493558267954_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\29740abd0c1e91e722723dcc0e0358d20e04be8fdf324b0eafc588770dc275ab.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\2b5e473bc500_11844705194956636559_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\9b79685fd68ed737d7f43193e84316833734fabd29a215a64b7970b47d8b5f62.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\6f3011ce41e3_str_damage_charred_01_alb.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\efc5cc7e033216668405710abfcaacb0575632d6aab125b7b4ae2c9ff9da2104.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\ef0164b43256_17716732775687444425_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\7dca7531756bfd4eea31aba9fa9d3784d1a9424e2df120079884d3e61a2c7918.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\00a2880bf731_6708399669590286008_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\e633a284a51782f2a71664f6a63268ad964481a77d3f5d25c00bbfd9934ea539.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\5381da0089b5_940685202008631679_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\693426c2fb4e86611a41f8ce0d6e16f824b1e467aea13b4f4a2926ce019d61df.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\794382be660a_10481810468234262313_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\e9e2729ca0d6cf87d5851509a7e899737599acce0ea1ab3e2a71dc541f80f4e3.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\5db26348116b_12041615973339707457_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\26077b02a89b21b1cabc0be6d7cfa0e93ea6e927e88e4ff81b3edb00d88c74f3.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\b78461476e50_17199498810477758055_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\143a7ba5354a447ec9637aa8b5d38098e9528691b26a5e4db1e0fa39aae4ebe7.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\7b494a2f28b9_18231663582228185424_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\6d32f841400427a53d8b67a6a806aacdca750220b5f90e82b4abf6ae1fd0cc95.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\4d6257180253_6514526388042114822_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\7cc61c99ff96813cd4942d8fd751c3d352fa2fd19308febae7c42ec04540d024.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\b0ecf9d926c9_7679578444145441453_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\00620749c48fc7a8a2b5d5708e3e3f51678f32a9200692654413015c0a319021.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\bd027b1e60e1_13583213630642570422_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\a11e4771601dd84fa10840264e80e7a8837855609eba383429a7c919c2cfedbb.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\49e704e7947e_15821580285662629373_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\72a40b627fa3f856edd619d0a829b54797d39ced95ddb774d9d6f055e0ddcc4e.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\4dbf85d994aa_5124917659634708196_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\f96a69f5204bf0becb00230c24073af34c726b794b3c891e9063c24ecd0a6d3f.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\7aeab5c3e3f9_11084874571157810803_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\015690ae2783299522360a1a9b99ba4c4f13cf204f0c2ca0de86c9809c973f9c.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\4f82d9b14d7b_13242145999271840315_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\19943ea1130cb305eb159bb88b2ae62b8be31690b2ff55d0c5c22b7de927a1dd.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\8a3d4cc884cd_13629605043408125052_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\bef679d38a20cd68664424c04c0864a429e9938f0250f69d8a458d2755232c0e.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\3cb780c39687_1593384043222372501_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\83df42a9581a47309c105db919dac7ce6ced14e05e5aac1cb6e11aeacb27115b.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\0ce956d34a70_1851766695653794545_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\236fd71c7c6c031c70ad37ff9fd41f73745927b9bb8cbb23bbb98b0ee6e135d9.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\b671643f3b59_5188708183078959456_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\90fc3d4485dcc5da59fa408a6b0abdcbe724f1fd8910cde9509752bae4871c13.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\c510889e34b5_2645151546205869145_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\3f83d0846ce792edcf3870d78433f3cc34d05ea620a5ea1031d7477534d5f762.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\bc28339fe36b_3312449786661181044_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\ed7c3f502b9dc407bd174e6a4107060104330f888a411c4cf960c314f2a6690b.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\70d89960d679_9246724600858030448_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\db5c3dd98fe01d6e591653b4d00c5ee74f3107d9272514370cc51f2dff80030f.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\7a398fe77221_10527405107968455992_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\2aec35fc113b75dd2a6c7ba3b46dd7d23cd0cd6b768ba693b00457f01ca08c58.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\e6335f47d997_13721846104367142029_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\6e7874a2cee29abdf25e1133d59c0228c645bbd97fa33d3376be8be3b5e4b526.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\7438ed033a0c_15677117367306586403_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\f7cc156e28ca642dc10fd312a259218a1e9bfd526e808fe39aba02432f90cfde.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\49c07d1e9af0_17918020542829511918_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\59682929ff965978b1df20f39eeab3ee6b42f807a9e09e4a2b0f4e4dd45e3336.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\0ae256ec5454_2280758460279166614_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\f5a5f4af3cc7ce59d1bca117fb506fada68da2184fba28d62b13d599d1013e92.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age01\\40f2af3206c90187165b\\textures\\52cbeba2ade3_4188623932284049833_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\087489a69587b980a83e1dbdddd0a50a7f4d83501985481cd72e2c793cce0793.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\42964a423086_10591332318041893289_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\812638448b5e71cf780102a7cfb3588943902f715a8d6513cdbbe58436b5d6ef.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\5436a7f163e7_13928284127881139234_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\f3cff1e32a9b16b555cc2f32c2e5bd10493621f665d9bab7fdb0147b61560393.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\6ccec86b5989_14366811920621618401_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\1d3e2dc7966baee176a9629f448eb36d02a414a824d2c9b0fa907336663abf5c.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\12d21732167b_15302181167593110837_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\b1f0835bcea2da53e8e7fa50258e14443378cca950bb6ba52516abc717951554.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\808c0b5ebd9b_1690595151608090915_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\e347adcdd90846b3f902d5487c33dc0aeb15c4a5580a9ee5afbfa843633571e7.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\24600af0076a_18282026590329003547_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\5a41a29e87ce42d9b5b2e0d54c1c10a199dabfffd3bb4aafaa14235326a2b28c.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\afaa3fe0f908_2808309054371713451_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\d7d3c6461c7b4614c0cb005e9fbf32b78bde7d5dccbd021b3f6984ca129651ac.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\243cedc315b1_5676052454178079146_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\4e5e8ffd47e109fa33af230df19991aac4b129eccd3949b42d2483e387eca95a.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\85a2aece577f_8853208753945282321_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\e4a7d8e86bd5033f8e449d5c5bbdf25000b5e3773afde3b8aedac9cd9615e5f7.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\8a0fa576b7da_9680701984621650677_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\8811d42823116b338c8a0c091ef64b85d179d976c30c307802133670e48eede0.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\9d121af4223f_11870108732234244334_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\5d63226666f63d1b4f2920c680ef65c63d44c89629e53748bc774ae4c50aa9b7.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\e9257e834e3a_leaks_03_msk.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\2f9dd2ffaa907860ea504fd09c9cb25868ac35f361363b1bdf0a6fbc89b1b593.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\d5ba288445e3_middle_gray_msk.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\2db38510c905e5272bf218e30b15ec3dff62989af93ea4755c63f139db5961b2.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\1754d19f2037_noise_02_msk.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\3f480a09f06e22ee4da43fca3d71a77f2ac12424b1ef319c0c8a5bab701d356c.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\570e02d83fae_patches_01_msk.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\7182053237b5d78839c2e65abd68781d078ce3f45ae153a111b297d4002c158a.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\85c59cbb9679_11755559493558267954_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\29740abd0c1e91e722723dcc0e0358d20e04be8fdf324b0eafc588770dc275ab.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\2b5e473bc500_11844705194956636559_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\9b79685fd68ed737d7f43193e84316833734fabd29a215a64b7970b47d8b5f62.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\6f3011ce41e3_str_damage_charred_01_alb.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\efc5cc7e033216668405710abfcaacb0575632d6aab125b7b4ae2c9ff9da2104.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\ef0164b43256_17716732775687444425_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\7dca7531756bfd4eea31aba9fa9d3784d1a9424e2df120079884d3e61a2c7918.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\00a2880bf731_6708399669590286008_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\e633a284a51782f2a71664f6a63268ad964481a77d3f5d25c00bbfd9934ea539.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\5381da0089b5_940685202008631679_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\693426c2fb4e86611a41f8ce0d6e16f824b1e467aea13b4f4a2926ce019d61df.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\35e374f00eb2_10740321618852791956_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\d355947c825ed4e475801ba5d7dc0f8ed9710a0168296a8bde5f8ee66a9b4c96.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\fc68f83c9dee_4373456093999725211_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\d8e79d3be4b3f6570f7a414b16ba7b16d14ac1d80684462c3f97fd00268495a0.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\4aa7961d96b0_934894132820687482_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\add8c06887e8192818965f21ae7090c33bf2cfce647480e14fc26c37225afd5f.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\4bc850359290_1010901216075870242_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\de7a3ead994053d7b2036103d07ef548443b5907432bd1a594468781199358b0.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\794382be660a_10481810468234262313_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\e9e2729ca0d6cf87d5851509a7e899737599acce0ea1ab3e2a71dc541f80f4e3.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\5db26348116b_12041615973339707457_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\26077b02a89b21b1cabc0be6d7cfa0e93ea6e927e88e4ff81b3edb00d88c74f3.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\7b494a2f28b9_18231663582228185424_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\6d32f841400427a53d8b67a6a806aacdca750220b5f90e82b4abf6ae1fd0cc95.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\a7aa038b46f7_835411899618610844_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\ed099c8ea716c4993ed9d6fd126e46db59f936ca1ac5e59ae92118eae99c82c7.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\aca4f35081a0_9004928141568086830_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\d272dc0e999fac36a2cfe5459e79ce71b817a967589c67dc0bf448251f39c2c6.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\fdb75082320c_16787031775809373064_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\41e12cfac320b0a0634a84caa3ab4c53b991177c72ed32948b88866fa8eecb34.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\0625bf5bb949_18079430704462912677_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\112b223403c777b54a47495ebae674fb883c180413e60cb93e1f421a3f25580b.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\2822b1c06020_7540430714282178858_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\8285dc719acf0798f54d5e8d52e2362c1c947e5bc0700d18bf4035ed23c0c58f.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\6aedbc05f618_17671413433691492669_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\50da032c1e2fc78722ae97c70b13ccfcea275be11d2208275bb7d4cd0cbe7b2b.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\1ec1edfa814c_17944450081023976027_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\cef163f30a251a59ecf2f393c69d01e2de9029ce3824b0cb3d108f86b37589a6.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\1673f1d7d611_4416603023815089441_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\a1e713deb8c2ed136d42b175d1c1579074c817e613d21133821fedafc71c2f80.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\f1cadbea5d53_7165778222744187720_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\fa97b8f8a89f14a01ccdcd790c4fa57d9a27ae61a7fdaa08462707451f880479.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\2d357fb48583_7702168862315108242_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\efb258185a10fcd3022568837e5afc11e79eebae03b6116be4922c5a12b08625.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\cd21b1ffd594_7989499456669497363_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\5ac07cf26e713aaa7e19db91b77e194472eb5ce09a7fdfe324211b1829315a1c.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\c97c1446222e_10730356818432002846_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\02cc44b53e2c4a1ebf44d77749d82b0a919a6d5a5987bd21c912661338a6a4b3.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\e8e3de5040d8_12516246349812043661_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\018626bdc06978749f91046ad484f4d9eb2338256b85e69afb1cde9afe2dc03a.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\ce4abadfde80_14975694260060117464_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\ca65d4429c8d34abf7533595e133e9a2147c30f7179ba9ba76b06b1be168d8b3.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\0c2f055c740c_2983813541875244501_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\162b2c29c96393db2fa4cb26eebdce197af62571f1fa9cf42c6a53cf1dd82a85.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\f9401066c7be_5578469427930555355_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\5925d19b266207a0b5502f5eebb60e69488a7ae335ef24556badcaf0791dcd31.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\1249bced83ee_7272966407407615927_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\045f6bbe1dff8ec8e9dfbf7c1af797a59c50ff4c3a14a5d0688917365071258c.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\7a398fe77221_10527405107968455992_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\2aec35fc113b75dd2a6c7ba3b46dd7d23cd0cd6b768ba693b00457f01ca08c58.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\49c07d1e9af0_17918020542829511918_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\59682929ff965978b1df20f39eeab3ee6b42f807a9e09e4a2b0f4e4dd45e3336.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age02\\04a52a90f32355df5cd2\\textures\\52cbeba2ade3_4188623932284049833_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\087489a69587b980a83e1dbdddd0a50a7f4d83501985481cd72e2c793cce0793.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\22df85d8dcb4_10202890465298521834_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\4e13274556e6c6ab015ca50ff04fbf623d5acc80ffff09fd23f212ee7b0feebb.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\94a5026f7907_10429351830135879688_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\116b497345ec2c73da065a4507095287620a8091ee969b6f8958ceb323ff64dc.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\0591051cd2db_11609010374893889734_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\16b41fb54a40d07f45025299261b11c8c0a2be6988dc341eaab9170c6692747e.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\0487767f38b3_12632072818026228477_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\b4bcd89176ee5b436373a4d9259d053f2065352eb4eb2bd6bdd6833bdc5ba8a5.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\345c4e47aad9_13230725791563463165_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\d77a10dd669a4230e6f58c7f5d8d1d74e2af2d648cd04f82df6618c242b215f2.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\c41062cf6f6a_17087605404974785014_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\cd70946256795ff3d036eb27ea767f4f4b42cfefbf52786d422fb31900e30128.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\2d6fc3270de9_17939309854044097809_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\55b8634ad74c5fd73722773a98387b89ab49b71a8cfd535c9a98959c6a891cfa.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\c8aa8e1b1709_3451807699738968437_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\9fe6f067e03622c4c3f208de6db3654fa675fe58433fb623eddc8ff72185fa53.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\d9508015e15a_5477926625643094767_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\d242448dd606ace2c37f25a39676edf5ea78439df86c650c26e7d88e03c17ec0.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\a55417b723e7_598520554003198564_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\fa1e459b1ca0067eed9c3fdc4e4a97c11e4d6b798e4948d96a76760d3cd89a37.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\9d121af4223f_11870108732234244334_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\5d63226666f63d1b4f2920c680ef65c63d44c89629e53748bc774ae4c50aa9b7.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\e9257e834e3a_leaks_03_msk.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\2f9dd2ffaa907860ea504fd09c9cb25868ac35f361363b1bdf0a6fbc89b1b593.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\d5ba288445e3_middle_gray_msk.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\2db38510c905e5272bf218e30b15ec3dff62989af93ea4755c63f139db5961b2.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\1754d19f2037_noise_02_msk.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\3f480a09f06e22ee4da43fca3d71a77f2ac12424b1ef319c0c8a5bab701d356c.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\570e02d83fae_patches_01_msk.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\7182053237b5d78839c2e65abd68781d078ce3f45ae153a111b297d4002c158a.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\85c59cbb9679_11755559493558267954_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\29740abd0c1e91e722723dcc0e0358d20e04be8fdf324b0eafc588770dc275ab.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\2b5e473bc500_11844705194956636559_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\9b79685fd68ed737d7f43193e84316833734fabd29a215a64b7970b47d8b5f62.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\6f3011ce41e3_str_damage_charred_01_alb.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\efc5cc7e033216668405710abfcaacb0575632d6aab125b7b4ae2c9ff9da2104.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\ef0164b43256_17716732775687444425_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\7dca7531756bfd4eea31aba9fa9d3784d1a9424e2df120079884d3e61a2c7918.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\00a2880bf731_6708399669590286008_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\e633a284a51782f2a71664f6a63268ad964481a77d3f5d25c00bbfd9934ea539.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\5381da0089b5_940685202008631679_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\693426c2fb4e86611a41f8ce0d6e16f824b1e467aea13b4f4a2926ce019d61df.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\35e374f00eb2_10740321618852791956_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\d355947c825ed4e475801ba5d7dc0f8ed9710a0168296a8bde5f8ee66a9b4c96.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\fc68f83c9dee_4373456093999725211_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\d8e79d3be4b3f6570f7a414b16ba7b16d14ac1d80684462c3f97fd00268495a0.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\4aa7961d96b0_934894132820687482_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\add8c06887e8192818965f21ae7090c33bf2cfce647480e14fc26c37225afd5f.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\4bc850359290_1010901216075870242_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\de7a3ead994053d7b2036103d07ef548443b5907432bd1a594468781199358b0.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\794382be660a_10481810468234262313_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\e9e2729ca0d6cf87d5851509a7e899737599acce0ea1ab3e2a71dc541f80f4e3.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\5db26348116b_12041615973339707457_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\26077b02a89b21b1cabc0be6d7cfa0e93ea6e927e88e4ff81b3edb00d88c74f3.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\7b494a2f28b9_18231663582228185424_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\6d32f841400427a53d8b67a6a806aacdca750220b5f90e82b4abf6ae1fd0cc95.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\a7aa038b46f7_835411899618610844_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\ed099c8ea716c4993ed9d6fd126e46db59f936ca1ac5e59ae92118eae99c82c7.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\aca4f35081a0_9004928141568086830_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\d272dc0e999fac36a2cfe5459e79ce71b817a967589c67dc0bf448251f39c2c6.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\6a901ea285af_11041352244865695695_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\42ee6d231e04f574218ac0680364fad7ccc3bf22fb8ff2f677d812a7fdb53bdc.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\087b816a0eb2_16453884669616987513_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\b4dfc74c860d02e71edeef05734f7dd80565fd45b6f2ca54d977af07af98c416.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\d058d5fbd808_7796768905417823590_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\3af02eb851d719cc7dac8b70ba53e4c03fef9fabdf62cbe4b5a88f67aaa53e86.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\6aedbc05f618_17671413433691492669_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\50da032c1e2fc78722ae97c70b13ccfcea275be11d2208275bb7d4cd0cbe7b2b.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\1ec1edfa814c_17944450081023976027_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\cef163f30a251a59ecf2f393c69d01e2de9029ce3824b0cb3d108f86b37589a6.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\1673f1d7d611_4416603023815089441_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\a1e713deb8c2ed136d42b175d1c1579074c817e613d21133821fedafc71c2f80.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\f1cadbea5d53_7165778222744187720_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\fa97b8f8a89f14a01ccdcd790c4fa57d9a27ae61a7fdaa08462707451f880479.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\2d357fb48583_7702168862315108242_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\efb258185a10fcd3022568837e5afc11e79eebae03b6116be4922c5a12b08625.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\cd21b1ffd594_7989499456669497363_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\5ac07cf26e713aaa7e19db91b77e194472eb5ce09a7fdfe324211b1829315a1c.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\e8e3de5040d8_12516246349812043661_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\018626bdc06978749f91046ad484f4d9eb2338256b85e69afb1cde9afe2dc03a.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\090ac3b03154_17383555440005786105_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\f319991a61bd396814bdd4fbb0491d5fe0acb28aa827ecd701bfc37459ea2611.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\9bd01fa69c2c_2441165312724034203_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\d44784166c11573a4ce5e28a15956c5161f68e251ed5475529ef4735ffc07a19.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\0c2f055c740c_2983813541875244501_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\162b2c29c96393db2fa4cb26eebdce197af62571f1fa9cf42c6a53cf1dd82a85.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\d5ed709a9beb_5126239697303066032_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\0580cbb95475e57a983489b6d953b10390c257ae0ae502f3edb1dfd46a9d9907.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\1249bced83ee_7272966407407615927_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\045f6bbe1dff8ec8e9dfbf7c1af797a59c50ff4c3a14a5d0688917365071258c.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\7a398fe77221_10527405107968455992_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\2aec35fc113b75dd2a6c7ba3b46dd7d23cd0cd6b768ba693b00457f01ca08c58.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\49c07d1e9af0_17918020542829511918_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\59682929ff965978b1df20f39eeab3ee6b42f807a9e09e4a2b0f4e4dd45e3336.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age03\\d88707bda522d81f95cc\\textures\\52cbeba2ade3_4188623932284049833_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\087489a69587b980a83e1dbdddd0a50a7f4d83501985481cd72e2c793cce0793.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\41130ded2754_10657784550241329163_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\83476709a0c0281d4789da0fd2129784238234ad23b419fcec10c79f989ac65b.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\ba8b9744d1e6_11572132020011220640_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\93bc3a8801144ef28e02f1d9dbdb5e6ce16094c67d495b48185692146694c243.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\492fa9cee3d4_11839033819449326239_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\1cb927b7cbd3820102c4b87694982ac1c3095a17cabb2020c27efbbefdcf2d79.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\6d04f944fe32_13982776986743696519_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\c7de44393bde5ec4aebe60be529d0a2fd18d051aabd64c2be595d1a5bd23bb82.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\639229086df8_14549453020715179085_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\42011273f1da1785f769f1f332cbc734f204d3fdc75d08cd125918bb003394e1.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\55f163d48afb_14802344628681162592_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\cd94c1749e49c3e8bc327baa9d7b67045c717e43b85f063277fa0b9e1343baa7.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\b51f65ec0ea6_15482842444845834837_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\9ff67839f4fd3904a2aec662e4a5107251208a5132306c6dbae28614ce0c2b26.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\aaa0ab55fbf2_16821392981131052011_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\9b37b2217559bb683b975b0067249fd7eb112a2c5ad9e84b41fef4f5fd63e637.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\54313cd7854f_2148917282943695490_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\3b59fe8d548c7e6fc37041f9b33b5117112b71254d7bf162294a90f61bd54037.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\3bdfe43d95c7_306406240967290258_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\b71f807978677c84e0f4ced6da5d81a5e16fec6565332d79996f705c40cffa76.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\f86b09c313c7_4045411808595889097_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\fe08d26e5e8114ee6968a21b4d4b4030b4325f79a6ab0a77babf4bcddf5cbfc1.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\8ffc884a4ba2_4871821874364759391_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\9bb5bc8c6da931cdcc1d6ae90f5531f431542e97c73e943e65ab996041c40205.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\437fe5d7d225_6767743337049619733_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\fd4c0010379fc5808c5e84ce0767180db6ceaca5428781fd5df6c5c12c8b9ef6.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\4a914b54c7b0_6820529104248251641_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\131618c8988a100a1912fce896dd27fc0818b7c04ab7cf26b9717ad74a7eb32a.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\9a7c612f1ed4_774678141204297117_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\70d0b798034691f57a60ad4f7a6a55b6d63f25a8482f1680d089afbf78813348.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\9d121af4223f_11870108732234244334_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\5d63226666f63d1b4f2920c680ef65c63d44c89629e53748bc774ae4c50aa9b7.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\d5ba288445e3_middle_gray_msk.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\2db38510c905e5272bf218e30b15ec3dff62989af93ea4755c63f139db5961b2.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\79d116ead710_noise_03_msk.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\6f47966797bec8594695c9c5d75b63715ba06e6fc93caf7044f6734d173d83c4.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\85c59cbb9679_11755559493558267954_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\29740abd0c1e91e722723dcc0e0358d20e04be8fdf324b0eafc588770dc275ab.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\2b5e473bc500_11844705194956636559_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\9b79685fd68ed737d7f43193e84316833734fabd29a215a64b7970b47d8b5f62.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\6f3011ce41e3_str_damage_charred_01_alb.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\efc5cc7e033216668405710abfcaacb0575632d6aab125b7b4ae2c9ff9da2104.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\ef0164b43256_17716732775687444425_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\7dca7531756bfd4eea31aba9fa9d3784d1a9424e2df120079884d3e61a2c7918.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\00a2880bf731_6708399669590286008_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\e633a284a51782f2a71664f6a63268ad964481a77d3f5d25c00bbfd9934ea539.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\5381da0089b5_940685202008631679_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\693426c2fb4e86611a41f8ce0d6e16f824b1e467aea13b4f4a2926ce019d61df.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\35e374f00eb2_10740321618852791956_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\d355947c825ed4e475801ba5d7dc0f8ed9710a0168296a8bde5f8ee66a9b4c96.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\fc68f83c9dee_4373456093999725211_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\d8e79d3be4b3f6570f7a414b16ba7b16d14ac1d80684462c3f97fd00268495a0.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\4aa7961d96b0_934894132820687482_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\add8c06887e8192818965f21ae7090c33bf2cfce647480e14fc26c37225afd5f.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\4bc850359290_1010901216075870242_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\de7a3ead994053d7b2036103d07ef548443b5907432bd1a594468781199358b0.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\794382be660a_10481810468234262313_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\e9e2729ca0d6cf87d5851509a7e899737599acce0ea1ab3e2a71dc541f80f4e3.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\5db26348116b_12041615973339707457_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\26077b02a89b21b1cabc0be6d7cfa0e93ea6e927e88e4ff81b3edb00d88c74f3.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\7b494a2f28b9_18231663582228185424_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\6d32f841400427a53d8b67a6a806aacdca750220b5f90e82b4abf6ae1fd0cc95.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\96d2a29ae81a_4611286749468971337_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\65474eb049dbefc9bd22a2d912cbde1e6dba9af82df417f04d9268119b5161d8.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\378d26459566_4659622844865272861_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\fe7d96ceccf406b9f6c5f6c4c0bde25c5dba856c648f29f84d9cc8d852379ee4.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\7422a3e094fe_6696842199604069968_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\9688865be0369010d711d55f28b3e21bcdf822ca8ede0cf4e68afe2bb8424737.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\a7aa038b46f7_835411899618610844_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\ed099c8ea716c4993ed9d6fd126e46db59f936ca1ac5e59ae92118eae99c82c7.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\aca4f35081a0_9004928141568086830_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\d272dc0e999fac36a2cfe5459e79ce71b817a967589c67dc0bf448251f39c2c6.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\001c6ede6dd7_17760771908815256978_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\526362bab0b46143547acc1f8999803383b35ecaf017eea7a172ebc19b57a486.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\cf8116a5918e_8945221555439851453_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\6e969c2a72da3a299da9b01460d53ab8cba8591906056be0a5d0214964c54d6c.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\a6494163e99e_9453151483157040532_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\c44751dd9ae4b43c24e4c22eb21043210800442121576efd4510a8af169bcd90.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\02d61bc09a83_17036299654076490780_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\1b41562bd00fb4dc8291293c68d90a7394d9c0e00e1d3156a4292d4cd642ae4d.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\6aedbc05f618_17671413433691492669_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\50da032c1e2fc78722ae97c70b13ccfcea275be11d2208275bb7d4cd0cbe7b2b.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\07e835161f8f_2260336532023409543_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\b85cfc250a47552c62293a7776921812e4ef0dcda5191845a5207f579d9dd364.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\26848fbf127f_4770008000069352000_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\8912908123ea4360cb6b7f88877ccd8559cfee2aae87e3099e6635d0a221e054.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\2d357fb48583_7702168862315108242_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\efb258185a10fcd3022568837e5afc11e79eebae03b6116be4922c5a12b08625.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\cd21b1ffd594_7989499456669497363_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\5ac07cf26e713aaa7e19db91b77e194472eb5ce09a7fdfe324211b1829315a1c.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\c97c1446222e_10730356818432002846_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\02cc44b53e2c4a1ebf44d77749d82b0a919a6d5a5987bd21c912661338a6a4b3.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\e8e3de5040d8_12516246349812043661_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\018626bdc06978749f91046ad484f4d9eb2338256b85e69afb1cde9afe2dc03a.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\ce4abadfde80_14975694260060117464_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\ca65d4429c8d34abf7533595e133e9a2147c30f7179ba9ba76b06b1be168d8b3.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\090ac3b03154_17383555440005786105_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\f319991a61bd396814bdd4fbb0491d5fe0acb28aa827ecd701bfc37459ea2611.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\9bd01fa69c2c_2441165312724034203_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\d44784166c11573a4ce5e28a15956c5161f68e251ed5475529ef4735ffc07a19.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\c510889e34b5_2645151546205869145_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\3f83d0846ce792edcf3870d78433f3cc34d05ea620a5ea1031d7477534d5f762.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\0c2f055c740c_2983813541875244501_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\162b2c29c96393db2fa4cb26eebdce197af62571f1fa9cf42c6a53cf1dd82a85.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\bc28339fe36b_3312449786661181044_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\ed7c3f502b9dc407bd174e6a4107060104330f888a411c4cf960c314f2a6690b.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\d5ed709a9beb_5126239697303066032_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\0580cbb95475e57a983489b6d953b10390c257ae0ae502f3edb1dfd46a9d9907.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\f9401066c7be_5578469427930555355_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\5925d19b266207a0b5502f5eebb60e69488a7ae335ef24556badcaf0791dcd31.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\1249bced83ee_7272966407407615927_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\045f6bbe1dff8ec8e9dfbf7c1af797a59c50ff4c3a14a5d0688917365071258c.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\70d89960d679_9246724600858030448_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\db5c3dd98fe01d6e591653b4d00c5ee74f3107d9272514370cc51f2dff80030f.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\7a398fe77221_10527405107968455992_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\2aec35fc113b75dd2a6c7ba3b46dd7d23cd0cd6b768ba693b00457f01ca08c58.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\1615052613e9_12038213607294951617_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\1be8ed89965f5285702a6a7dadef3e442ce19136d5f3f2a9728dc7b1a67168d6.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\06d78895dd28_14302697369861826596_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\c1766950607e70b2e88b60f9963517c986a7027bf8df4ed73b4bfb235d7cdcc5.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\d13fac608962_16719058979467564904_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\12b7bbedbfe3425ef06a9bf4cfa25c08105741eb663fcaaf4b260c254ae0496c.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\49c07d1e9af0_17918020542829511918_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\59682929ff965978b1df20f39eeab3ee6b42f807a9e09e4a2b0f4e4dd45e3336.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\d0f3e3bc7ea2_3002022426451096306_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\6566d86d372db0d2975555a0d6b9a696fd4f7f66a2b68b5966a249347ecac38e.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\52cbeba2ade3_4188623932284049833_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\087489a69587b980a83e1dbdddd0a50a7f4d83501985481cd72e2c793cce0793.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\b4ee9a603852_4240303804329410511_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\f0b05ea4a7df0b09c7cc783cbe01e1e122eaa05c75d41613cd3583e5c0618cff.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\be87e5af018e_483035969372513265_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\8995dd0b7151274e4bc9cb2b1f1d0c236cb770fa55b76f0d11d4f37aeba7a13b.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\42e22064a7ec_7313872086830609367_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\9f6af4cbb0a22ac449c8d812d0ecac507d9cd614be56eaab326530294313b70e.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\3a077330eeb0_8535563276565132317_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\85631b38b0108c9933153abe19801f71003a02827fa822d9f81e4bab15693768.png",
+    "F:\\aoe_4_temp\\Community_civilization_pack_garrison_temp\\stock-cache\\houses_010\\age04\\64913287967a07a273d9\\textures\\4c6e7b367574_9633957760440855481_packed.dds": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\art\\authoring\\houses_010\\preview-projections\\28b3af012e976ef828af8fbd3f2c33943e6bbe39ab0b4d39bc574fcad70d22d2.png"
+  },
+  "owner_mask_policy": "Do not alter maskTex*, debug/owner albedo, team sources, or options/owner parameters. Texture and neutral surface colour only."
+}

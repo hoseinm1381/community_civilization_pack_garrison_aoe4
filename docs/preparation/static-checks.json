@@ -1,0 +1,208 @@
+[
+  {
+    "check": "tuning",
+    "exit_code": 0,
+    "command": [
+      "C:\\Users\\RS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "C:\\Users\\RS\\.codex\\skills\\modify-aoe4-tuning-packs\\scripts\\validate_tuning_pack.py",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison"
+    ],
+    "log": "tuning-static.log",
+    "summary": [
+      "Validated 1 pack(s), 237 instance(s): 0 error(s), 0 warning(s), 1 info."
+    ]
+  },
+  {
+    "check": "assets/scar/vietnam/blueprints.scar",
+    "exit_code": 0,
+    "command": [
+      "C:\\Users\\RS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "C:\\Users\\RS\\.codex\\skills\\aoe4-game-mode-skill\\scripts\\validate_scar.py",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\assets\\scar\\vietnam\\blueprints.scar",
+      "--project-root",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison"
+    ],
+    "log": "assets_scar_vietnam_blueprints.scar-static.log",
+    "summary": [
+      "  OK: no static diagnostics"
+    ]
+  },
+  {
+    "check": "assets/scar/vietnam/dynasty.scar",
+    "exit_code": 0,
+    "command": [
+      "C:\\Users\\RS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "C:\\Users\\RS\\.codex\\skills\\aoe4-game-mode-skill\\scripts\\validate_scar.py",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\assets\\scar\\vietnam\\dynasty.scar",
+      "--project-root",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison"
+    ],
+    "log": "assets_scar_vietnam_dynasty.scar-static.log",
+    "summary": [
+      "  OK: no static diagnostics"
+    ]
+  },
+  {
+    "check": "assets/scar/vietnam/initialization.scar",
+    "exit_code": 0,
+    "command": [
+      "C:\\Users\\RS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "C:\\Users\\RS\\.codex\\skills\\aoe4-game-mode-skill\\scripts\\validate_scar.py",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\assets\\scar\\vietnam\\initialization.scar",
+      "--project-root",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison"
+    ],
+    "log": "assets_scar_vietnam_initialization.scar-static.log",
+    "summary": [
+      "  Summary: 0 error(s), 3 warning(s)"
+    ]
+  },
+  {
+    "check": "assets/scar/vietnam/landmarks.scar",
+    "exit_code": 0,
+    "command": [
+      "C:\\Users\\RS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "C:\\Users\\RS\\.codex\\skills\\aoe4-game-mode-skill\\scripts\\validate_scar.py",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\assets\\scar\\vietnam\\landmarks.scar",
+      "--project-root",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison"
+    ],
+    "log": "assets_scar_vietnam_landmarks.scar-static.log",
+    "summary": [
+      "  Summary: 0 error(s), 3 warning(s)"
+    ]
+  },
+  {
+    "check": "assets/scar/vietnam/lifecycle.scar",
+    "exit_code": 0,
+    "command": [
+      "C:\\Users\\RS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "C:\\Users\\RS\\.codex\\skills\\aoe4-game-mode-skill\\scripts\\validate_scar.py",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\assets\\scar\\vietnam\\lifecycle.scar",
+      "--project-root",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison"
+    ],
+    "log": "assets_scar_vietnam_lifecycle.scar-static.log",
+    "summary": [
+      "  Summary: 0 error(s), 1 warning(s)"
+    ]
+  },
+  {
+    "check": "assets/scar/vietnam/prematch_precache.scar",
+    "exit_code": 0,
+    "command": [
+      "C:\\Users\\RS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "C:\\Users\\RS\\.codex\\skills\\aoe4-game-mode-skill\\scripts\\validate_scar.py",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\assets\\scar\\vietnam\\prematch_precache.scar",
+      "--project-root",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison"
+    ],
+    "log": "assets_scar_vietnam_prematch_precache.scar-static.log",
+    "summary": [
+      "  OK: no static diagnostics"
+    ]
+  },
+  {
+    "check": "assets/scar/vietnam/rattan_armor.scar",
+    "exit_code": 0,
+    "command": [
+      "C:\\Users\\RS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "C:\\Users\\RS\\.codex\\skills\\aoe4-game-mode-skill\\scripts\\validate_scar.py",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\assets\\scar\\vietnam\\rattan_armor.scar",
+      "--project-root",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison"
+    ],
+    "log": "assets_scar_vietnam_rattan_armor.scar-static.log",
+    "summary": [
+      "  OK: no static diagnostics"
+    ]
+  },
+  {
+    "check": "assets/scar/vietnam/selection_core.scar",
+    "exit_code": 0,
+    "command": [
+      "C:\\Users\\RS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "C:\\Users\\RS\\.codex\\skills\\aoe4-game-mode-skill\\scripts\\validate_scar.py",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\assets\\scar\\vietnam\\selection_core.scar",
+      "--project-root",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison"
+    ],
+    "log": "assets_scar_vietnam_selection_core.scar-static.log",
+    "summary": [
+      "  OK: no static diagnostics"
+    ]
+  },
+  {
+    "check": "assets/scar/vietnam/tower_training.scar",
+    "exit_code": 0,
+    "command": [
+      "C:\\Users\\RS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "C:\\Users\\RS\\.codex\\skills\\aoe4-game-mode-skill\\scripts\\validate_scar.py",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\assets\\scar\\vietnam\\tower_training.scar",
+      "--project-root",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison"
+    ],
+    "log": "assets_scar_vietnam_tower_training.scar-static.log",
+    "summary": [
+      "  OK: no static diagnostics"
+    ]
+  },
+  {
+    "check": "assets/scar/vietnam/traps.scar",
+    "exit_code": 0,
+    "command": [
+      "C:\\Users\\RS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "C:\\Users\\RS\\.codex\\skills\\aoe4-game-mode-skill\\scripts\\validate_scar.py",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\assets\\scar\\vietnam\\traps.scar",
+      "--project-root",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison"
+    ],
+    "log": "assets_scar_vietnam_traps.scar-static.log",
+    "summary": [
+      "  OK: no static diagnostics"
+    ]
+  },
+  {
+    "check": "assets/scar/winconditions/VietnamMode.rdo",
+    "exit_code": 0,
+    "command": [
+      "C:\\Users\\RS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "C:\\Users\\RS\\.codex\\skills\\aoe4-game-mode-skill\\scripts\\validate_scar.py",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\assets\\scar\\winconditions\\VietnamMode.rdo",
+      "--project-root",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison"
+    ],
+    "log": "assets_scar_winconditions_VietnamMode.rdo-static.log",
+    "summary": [
+      "  OK: no static diagnostics"
+    ]
+  },
+  {
+    "check": "assets/scar/winconditions/VietnamMode.scar",
+    "exit_code": 0,
+    "command": [
+      "C:\\Users\\RS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-B",
+      "C:\\Users\\RS\\.codex\\skills\\aoe4-game-mode-skill\\scripts\\validate_scar.py",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison\\assets\\scar\\winconditions\\VietnamMode.scar",
+      "--project-root",
+      "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Community_Civilization_pack\\Community_civilization_pack_garrison"
+    ],
+    "log": "assets_scar_winconditions_VietnamMode.scar-static.log",
+    "summary": [
+      "  Summary: 0 error(s), 6 warning(s)"
+    ]
+  }
+]
