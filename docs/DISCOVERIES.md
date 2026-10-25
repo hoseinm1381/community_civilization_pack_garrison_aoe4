@@ -74,3 +74,10 @@ Keep teardown, ownership, death, mixed-selection and save/load checks separate.
 Old absolute paths and outdated readmes are deliberately retained. Use this guide
 and `RELEASE_084_DELIVERY.md` for current status. Never refresh a baseline to accept
 an unintended edit or claim that a restored historical fixture was freshly compiled.
+
+
+## 0.8.8 — movement extension assertions and drop-off interaction
+
+BP_GetEntityBPDefaultSpeed asserts on blueprints without moving_ext; Player_GetAllEntities also returns visual and emplacement actors. Infantry/cavalry/worker type tags are insufficient guards. Use the generated current-data admission set and normalize comma-space removedIds before resolving inheritance. Unknown blueprints fail closed until regenerated.
+
+resource_drop_off_ext flags alone do not supply a complete explicit native return interaction. Phổ Minh now also has interactive_object_ext/type_list/resource_drop_off, corroborated against current Town Center and resource camp donors; existing shelter/repair/construct entries stay intact. Runtime acceptance remains separate. See compact/UPDATE_088.md.

@@ -1,10 +1,26 @@
 """Exact current-package reconstruction using a retained baseline and small deltas."""
 import io
+import copy
 import json
 from pathlib import Path
 import shutil
 import tempfile
 import zipfile
+
+
+def apply_verification_delta(original, delta):
+    """Small releases reuse the immutable full member map from the prior index."""
+    if not delta:
+        return copy.deepcopy(original)
+    metadata=delta.get('metadata', {})
+    if (set(delta)-{'metadata','member_sha256'} or
+        {'mounts','member_sha256'} & set(metadata) or
+        set(delta.get('member_sha256', {}))-set(original['member_sha256'])):
+        raise ValueError('Sparse verification may only replace existing members')
+    result=copy.deepcopy({k:original[k] for k in ('mounts','member_sha256')})
+    result.update(metadata)
+    result['member_sha256'].update(delta.get('member_sha256', {}))
+    return result
 
 
 def write_package(target, entries, sources):
@@ -41,6 +57,7 @@ def rebuild(args, reader):
         raise FileExistsError('Use a new destination; previous work is preserved')
     dest.mkdir(parents=True)
     expected = json.loads(reader.read(policy['verification']))
+    expected = apply_verification_delta(expected, policy.get('verification_delta', {}))
     baseline = dest/'baseline-084.sga'
     with zipfile.ZipFile(io.BytesIO(reader.read(policy['baseline_zip_key']))) as z:
         with z.open('community_civilization_pack.sga') as src, baseline.open('xb') as dst:
@@ -92,7 +109,7 @@ def rebuild(args, reader):
     with zipfile.ZipFile(package) as z:
         if z.testzip() is not None:
             raise ValueError('ZIP integrity failure')
-    (dest/'verification.json').write_bytes(reader.read(policy['verification']))
+    write_json(dest/'verification.json', expected)
     write_json(dest/'compact-rebuild-proof.json', dict(version=policy['version'],
         sga_sha256=file_sha(final),zip_sha256=file_sha(package),members=len(actual),
         changed_members=sorted(replacements),native_compile_run=False,native_game_test=False))

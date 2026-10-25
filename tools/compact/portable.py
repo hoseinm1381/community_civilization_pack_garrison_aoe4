@@ -271,7 +271,7 @@ def main():
     a = sub.add_parser('release')
     a.add_argument('--destination',type=Path,required=True)
     a.add_argument('--archive-tool',type=Path)
-    a = sub.add_parser('rebuild-087')
+    a = sub.add_parser('rebuild-088', aliases=['rebuild-087'])
     a.add_argument('--destination',type=Path,required=True)
     a.add_argument('--archive-tool',type=Path,required=True)
     a = sub.add_parser('rebuild-084')
@@ -303,7 +303,7 @@ def main():
                 rebuild_current(args,r)
             else:
                 legacy.release(args,r)
-        elif args.command == 'rebuild-087':
+        elif args.command in ('rebuild-087','rebuild-088'):
             from current_package import rebuild as rebuild_current
             rebuild_current(args,r)
         elif args.command == 'rebuild-084':

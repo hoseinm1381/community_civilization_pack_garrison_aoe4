@@ -1,6 +1,6 @@
 # Working with the compact repository
 
-Current release is **0.8.7**. See [the compact update proof](compact/UPDATE_087.md).
+Current release is **0.8.8**. See [the compact update proof](compact/UPDATE_088.md).
 
 ## Supported entry points
 
@@ -51,10 +51,10 @@ Run the bundled tuning validator as well after attribute edits. Read the actual 
 ## Reproduce the exact current package
 
 ```powershell
-python tools/compact/portable.py rebuild-087 --archive-tool "C:/path/to/sga-archiver.exe" --destination C:/ccp-rebuild-087
+python tools/compact/portable.py rebuild-088 --archive-tool "C:/path/to/sga-archiver.exe" --destination C:/ccp-rebuild-088
 ```
 
-`release` with the same arguments is an alias for current-package reconstruction. The command reuses the retained 0.8.4 ZIP, applies the dispatcher and seven compiled gameplay deltas, preserves the original ZIP entry metadata, then verifies the exact 0.8.7 SGA and ZIP hashes plus every member and mount. No new audio/art payloads or full ZIP are stored. `development.json` selects the 0.8.7 delta index; its baseline index and packs remain immutable.
+`release` with the same arguments is an alias for current-package reconstruction. The command reuses the retained 0.8.4 ZIP, applies the dispatcher, seven current compiled gameplay replacements and the Flooded Citadel script, preserves the original ZIP entry metadata, then verifies the exact 0.8.8 SGA and ZIP hashes plus every member and mount. No new audio/art payloads or full ZIP are stored. `development.json` selects the 0.8.8 delta index; its baseline index and packs remain immutable.
 
 ## Reproduce the historical 0.8.4 package
 
@@ -78,7 +78,7 @@ Use real paths from `sga-archiver list`; that example is a placeholder, not a re
 python tools/compact/portable.py integrate --base .local/delivery/community_civilization_pack.sga --manifest changes.json --archive-tool "C:/path/to/sga-archiver.exe" --destination .local/change-085
 ```
 
-The command checks namespace, applies only the map, then freshly verifies every changed and untouched member and mount. It refuses an existing output directory. This produces a verified SGA and change receipt; make a new Garrison package with a new semantic version using the installed supported packaging route. Do not label edited content with the existing 0.8.7 version or overwrite frozen receipts. Native appearance, audible routing, behavior and multiplayer still need acceptance.
+The command checks namespace, applies only the map, then freshly verifies every changed and untouched member and mount. It refuses an existing output directory. This produces a verified SGA and change receipt; make a new Garrison package with a new semantic version using the installed supported packaging route. Do not label edited content with the existing 0.8.8 version or overwrite frozen receipts. Native appearance, audible routing, behavior and multiplayer still need acceptance.
 
 ## Add new local speech, optionally
 
@@ -97,7 +97,7 @@ C:/tts/venv/Scripts/python.exe tools/compact/new_voice.py --models C:/tts/models
 
 ## Update after a new main-workspace build
 
-The main authoring folder remains authoritative. For a milestone update, export reviewed changed source/art/recipes, the final Ogg bank, current owning resources and required inputs. Apply the compact policy in `compact_export.py`; do not run the old full-history handoff exporter into this repository. Historical 0.8.4 reconstruction is intentionally fixed to its retained evidence; current 0.8.7 uses an additional small index layer. A later milestone gets its own index, package hash, changed-resource policy, dependency closure and reproduction command. Reuse unchanged content-addressed chunks and add only changed payloads.
+The main authoring folder remains authoritative. For a milestone update, export reviewed changed source/art/recipes, the final Ogg bank, current owning resources and required inputs. Apply the compact policy in `compact_export.py`; do not run the old full-history handoff exporter into this repository. Historical 0.8.4 reconstruction is intentionally fixed to its retained evidence; current 0.8.8 uses an additional small index layer. A later milestone gets its own index, package hash, changed-resource policy, dependency closure and reproduction command. Reuse unchanged content-addressed chunks and add only changed payloads.
 
 Before committing: run the compact tests, full store/audio verification, isolated restore, relevant source/art builds, and the new milestone's package reconstruction. Review deletions and contributor edits. Never copy a broad output/cache tree or WAV bank into Git. Future binary revisions increase Git history; the initial approximately 6 GB figure is not a permanent lifetime cap.
 

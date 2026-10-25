@@ -12,6 +12,6 @@ Read README.md, docs/COMPACT_DEVELOPMENT.md, docs/DISCOVERIES.md and docs/compac
 - Art uses the installed Blender/Garrison guide. Repair texture/library paths in a new copy with prepare_blend.py; preserve live Blender work. A viewport or export does not prove a native cook or appearance.
 - Existing 9,702 spoken takes are complete, with 128 disclosed approved imperfections. No synthesis/downloads resume automatically. Optional new local speech is a separate audition workflow. Preserve age/gender suppression and stock effort fallback disclosures.
 - Keep source/static, Content Editor, Garrison cook/readback, package, import, audible/native behavior, save/load and multiplayer gates separate.
-- Current release: 0.8.7. Read docs/compact/UPDATE_087.md. development.json selects a small delta index layered on the immutable 0.8.4 index; keep both and all referenced packs. Use release or rebuild-087 with --archive-tool to reconstruct the exact current ZIP.
+- Current release: 0.8.8. Read docs/compact/UPDATE_088.md. development.json selects a small delta index layered on the immutable 0.8.4 index; keep both and all referenced packs. Use release or rebuild-088 with --archive-tool to reconstruct the exact current ZIP.
 - Future milestone updates must retain the compact policy and check current dependency closure. Do not use the old broad full-history exporter. No scheduled sync.
 - Prepare local changes and report publication readiness; do not push or publish without an explicit instruction.

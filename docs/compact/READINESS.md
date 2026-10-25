@@ -1,6 +1,6 @@
 # Compact publishing readiness â€” 2026-10-25
 
-Current release: self-contained Garrison **0.8.7**. See [0.8.7 update verification](UPDATE_087.md). The 0.8.4 measurements and acceptance evidence below describe the retained immutable baseline. No push/publication performed.
+Current release: self-contained Garrison **0.8.8**. See [0.8.8 update verification](UPDATE_088.md). The 0.8.4 measurements and acceptance evidence below describe the retained immutable baseline. No push/publication performed.
 
 ## Measured contents
 

@@ -6,6 +6,22 @@ from current_package import write_package
 
 
 class MilestoneTests(unittest.TestCase):
+    def test_sparse_verification_retains_unchanged_members_and_original_index(self):
+        from current_package import apply_verification_delta
+        original={'version':'0.8.7','member_sha256':{'a':'1','b':'2'},'mounts':{'a':'data','b':'data'},'old_flag':True}
+        current=apply_verification_delta(original,{'metadata':{'version':'0.8.8'},'member_sha256':{'b':'3'}})
+        self.assertEqual(current['member_sha256'],{'a':'1','b':'3'})
+        self.assertNotIn('old_flag',current)
+        self.assertEqual(current['version'],'0.8.8')
+        self.assertEqual(current['mounts'],original['mounts'])
+        self.assertEqual(original['member_sha256']['b'],'2')
+
+    def test_sparse_verification_rejects_unexpected_members_or_mounts(self):
+        from current_package import apply_verification_delta
+        for delta in ({'member_sha256':{'new':'3'}},{'mounts':{}}):
+            with self.assertRaises(ValueError):
+                apply_verification_delta({'member_sha256':{'a':'1'},'mounts':{'a':'data'}},delta)
+
     def test_package_preserves_original_zip_metadata_and_bytes(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

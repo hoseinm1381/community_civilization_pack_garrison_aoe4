@@ -594,6 +594,15 @@
 					</template_reference>
 					<bool name="block_pathing_when_interacted" value="False" />
 				</group>
+				<group name="type" List.ItemID="2147469794" List.ListAction="Append">
+					<enum name="interaction_type" value="resource_drop_off" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\sim_entity_ext" List.ItemID="1073757877">
@@ -3162,6 +3171,15 @@
 						<enum name="interaction_target_type" value="entity" />
 						<template_reference name="node_list_option" value="options\none">
 						</template_reference>
+						<bool name="block_pathing_when_interacted" value="False" />
+					</group>
+					<group name="type" List.ItemID="2147469793" List.ListAction="Append">
+						<enum name="interaction_type" value="resource_drop_off" />
+						<int name="prefer_number" value="-1" />
+						<int name="max_number" value="-1" />
+						<enum name="interaction_target_type" value="entity" />
+						<template_reference name="node_list_option" value="options\none">
+					</template_reference>
 						<bool name="block_pathing_when_interacted" value="False" />
 					</group>
 				</list>
