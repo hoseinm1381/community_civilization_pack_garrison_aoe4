@@ -5,10 +5,27 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'collaboration'))
 from store import Writer, Reader
-from portable import AliasReader, rebase_text, check_member, overlay_map
+from portable import AliasReader, rebase_text, check_member, overlay_map, load_index
 
 
 class PortableTests(unittest.TestCase):
+    def test_small_update_layer_keeps_base_and_overrides_current_source(self):
+        from store import write_json, load
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = dict(files={'source/a':{'old':True}},chunks={'old':{}},packs={'base.zip':{}})
+            write_json(root/'base.json', base)
+            update = dict(base_index='base.json',files={'source/a':{'new':True}},
+                          chunks={'new':{}},packs={'delta.zip':{}},milestone={'version':'0.8.7'})
+            write_json(root/'update.json', update)
+            merged = load_index(root/'update.json')
+            self.assertEqual(merged['files']['source/a'], {'new':True})
+            self.assertEqual(set(merged['packs']), {'base.zip','delta.zip'})
+            self.assertEqual(load(root/'base.json'), base)
+            update['base_index'] = '../escape.json'
+            write_json(root/'update.json', update)
+            with self.assertRaises(ValueError): load_index(root/'update.json')
+
     def test_evidence_alias_reads_exact_retained_bytes(self):
         with tempfile.TemporaryDirectory() as tmp:
             w = Writer(Path(tmp)/'store')

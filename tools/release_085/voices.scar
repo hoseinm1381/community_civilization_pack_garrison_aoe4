@@ -1,0 +1,297 @@
+-- 0.8.5 reduced-chatter Vietnamese cosmetic speech. All random variation is local, deterministic state.
+import("garrison/garrison.scar")
+import("vietnam/voice_bank_084.scar")
+
+VietnamVoiceState = {running=false, actors={}, selected={}, variants={}, busyUntil=0, nextScan=0}
+local S=VietnamVoiceState
+local bank=VietnamVoiceBank
+local audio=Garrison.audio.forMod("community_civilization_pack")
+
+local function localEntry()
+    local player=Game_GetLocalPlayer()
+    if player==nil then return nil end
+    local id=Player_GetID(player)
+    for _,entry in ipairs(PLAYERS) do
+        if Player_GetID(entry.id)==id then return entry end
+    end
+    return nil
+end
+
+local function playerAge(player)
+    if Player_HasUpgrade(player,BP_GetUpgradeBlueprint("imperial_age")) then return 4 end
+    if Player_HasUpgrade(player,BP_GetUpgradeBlueprint("castle_age")) then return 3 end
+    if Player_HasUpgrade(player,BP_GetUpgradeBlueprint("feudal_age")) then return 2 end
+    return 1
+end
+
+local function valid(r)
+    if not r or not Squad_IsValid(r.id) or Squad_FromID(r.id)~=r.squad then return false end
+    if not Squad_IsAlive(r.squad) or World_OwnsSquad(r.squad) then return false end
+    local player=Game_GetLocalPlayer()
+    return player~=nil and Player_GetID(Squad_GetPlayerOwner(r.squad))==Player_GetID(player)
+        and Squad_GetBlueprint(r.squad)==r.blueprint
+end
+
+local function speak(r,event,world)
+    if not S.running or not r then return false end
+    local now=World_GetGameTime()
+    local stockEffort=bank.stock_efforts and (event=="death" or event=="pain_light" or event=="pain_heavy")
+    if stockEffort then
+        if event=="death" then
+            if now<(S.deathBusyUntil or 0) then return false end
+        elseif now<(S.effortBusyUntil or 0) or now<(r.effortUntil or 0) then return false end
+    else
+        if now<S.busyUntil then return false end
+        if event=="under_attack" then
+            if now<(S.attackUntil or 0) then return false end
+        else
+            if now<(S.replyUntil or 0) then return false end
+            -- DefaultAction does not expose a verified target classification.
+            -- Give generic acknowledgements the conservative movement limit too.
+            if (event=="move" or event=="sail" or event=="acknowledge") and now<(S.moveUntil or 0) then return false end
+        end
+    end
+    local ages=bank.clips[r.role]
+    local choices=ages and ages["A"..tostring(r.age)] and ages["A"..tostring(r.age)][event]
+    if stockEffort then
+        local efforts=bank.stock_efforts[r.stock_speaker]
+        choices=efforts and efforts[event]
+    end
+    if not choices or #choices==0 then return false end
+    local x,z,gain=0,0,1
+    if world then
+        if not r.position then return false end
+        local camera=Camera_GetCurrentTargetPos()
+        x=r.position.x-camera.x;z=r.position.z-camera.z
+        local distance=math.sqrt(x*x+z*z)
+        if distance>=60 then return false end
+        gain=1-distance/60
+    end
+    local key=r.role..":"..tostring(r.age)..":"..event
+    local ordinal=(S.variants[key] or 0)+1
+    local clip=choices[(ordinal-1)%#choices+1]
+    if not audio.play(clip[1],x,z,gain) then return false end
+    S.variants[key]=ordinal
+    if stockEffort then
+        if event=="death" then S.deathBusyUntil=now+.15
+        else S.effortBusyUntil=now+.15;r.effortUntil=now+.8 end
+    else
+        S.busyUntil=now+clip[2]+.15
+        if event=="under_attack" then S.attackUntil=now+15
+        else
+            S.replyUntil=now+5
+            if event=="move" or event=="sail" or event=="acknowledge" then S.moveUntil=now+8 end
+        end
+    end
+    return true
+end
+
+local function untrack(r)
+    if Squad_IsValid(r.id) and Squad_FromID(r.id)==r.squad then
+        Rule_RemoveSquadEvent(VietnamVoice_OnCommand,r.squad)
+        Rule_RemoveSquadEvent(VietnamVoice_OnKilled,r.squad)
+    end
+end
+
+local function track(squad)
+    if not squad then return nil end
+    local id=Squad_GetID(squad)
+    if not Squad_IsValid(id) or not Squad_IsAlive(squad) or World_OwnsSquad(squad) then return nil end
+    local entry=localEntry()
+    if not entry or Player_GetID(Squad_GetPlayerOwner(squad))~=Player_GetID(entry.id) then return nil end
+    local bp=Squad_GetBlueprint(squad)
+    local config=bp and bank.units[string.lower(BP_GetName(bp))]
+    if not config then return nil end
+    -- Shared stock entries are admitted only for the selected Vietnamese player.
+    -- Private Vietnamese actors keep their voice after legitimate capture.
+    if not config.private and S.civilizations[entry.index]~="vietnam" then return nil end
+    local role=config.role
+    local stockSpeaker=config.stock_speaker
+    if Squad_IsFemale(squad) and (config.female_role or role=="CIV_M") then
+        local femaleRole=config.female_role or "CIV_F"
+        if not bank.clips[femaleRole] then return nil end
+        role=femaleRole
+        stockSpeaker=config.stock_female_speaker or stockSpeaker
+    end
+    local age=config.age or playerAge(entry.id)
+    local old=S.actors[id]
+    if old and old.squad==squad and old.blueprint==bp then
+        old.role=role;old.age=age;old.stock_speaker=stockSpeaker
+        return old
+    end
+    if old then untrack(old) end
+    local r={id=id,squad=squad,blueprint=bp,role=role,age=age,stock_speaker=stockSpeaker,position=Squad_GetPosition(squad),hp=Squad_GetHealth(squad)}
+    S.actors[id]=r
+    Rule_AddSquadEvent(VietnamVoice_OnCommand,squad,GE_SquadCommandIssued,r)
+    Rule_AddSquadEvent(VietnamVoice_OnKilled,squad,GE_SquadKilled,r)
+    return r
+end
+
+local function eventFor(r,event)
+    if string.sub(r.role,1,6)=="NAVAL_" then
+        if event=="move" or event=="retreat" then return "sail" end
+        if event=="stop" then return "naval_stop" end
+        if event=="attack" or event=="attack_move" then return "naval_attack" end
+        if event=="trade" then return "naval_trade" end
+        if event=="garrison" then return "transport_load" end
+        if event=="unload" then return "transport_unload" end
+        if event=="food" then return "fish" end
+    end
+    if event=="food" then return "acknowledge" end
+    if event=="gather" then return "acknowledge" end
+    return event
+end
+
+function VietnamVoice_OnCommand(context,r)
+    if not S.running or not r or S.actors[r.id]~=r or not valid(r) then return end
+    if r.id~=S.leader then return end
+    if context.squad~=nil and context.squad~=r.squad then return end
+    if context.player~=nil and Player_GetID(context.player)~=Player_GetID(Game_GetLocalPlayer()) then return end
+    local c=context.command
+    local event=nil
+    if c==SCMD_Move or c==SCMD_Patrol then event="move"
+    elseif c==SCMD_Attack or c==SCMD_StationaryAttack then event="attack"
+    elseif c==SCMD_AttackMove then event="attack_move"
+    elseif c==SCMD_Stop then event="stop"
+    elseif c==SCMD_HoldPosition then event="hold"
+    elseif c==SCMD_BuildStructure then event="build"
+    elseif c==SCMD_Gather then event="gather"
+    elseif c==SCMD_Trade then event="trade"
+    elseif c==SCMD_Load then event="garrison"
+    elseif c==SCMD_Unload then event="unload"
+    elseif c==SCMD_Retreat then event="retreat"
+    elseif c==SCMD_DefaultAction then event="acknowledge"
+    elseif c==SCMD_Ability then event="ability_ack" end
+    if event then
+        -- Consume the matching activity transition even when this order's reply
+        -- was throttled. Otherwise polling can echo a command after its clip ends.
+        r.commandActivity=event
+        speak(r,eventFor(r,event),false)
+    end
+end
+
+function VietnamVoice_OnKilled(context,r)
+    if not S.running or not r or S.actors[r.id]~=r then return end
+    -- The callback may arrive after destruction and native ID reuse. Inspect
+    -- only the numeric ID/current handle; never dereference the dead actor.
+    local recycled=Squad_IsValid(r.id) and Squad_FromID(r.id)~=r.squad
+    if not recycled then speak(r,"death",true) end
+    S.actors[r.id]=nil;S.selected[r.id]=nil
+    if S.leader==r.id then S.leader=nil end
+end
+
+local function activity(squad)
+    if Squad_IsConstructing(squad) then return "build" end
+    if Squad_IsGatheringResourceType(squad,RT_Wood) then return "wood" end
+    if Squad_IsGatheringResourceType(squad,RT_Gold) then return "gold" end
+    if Squad_IsGatheringResourceType(squad,RT_Stone) then return "stone" end
+    if Squad_IsGatheringResourceType(squad,RT_Food) then return "food" end
+    if Squad_IsAttacking(squad,.5) then return "attack" end
+    if Squad_IsMoving(squad) then return "move" end
+    return "idle"
+end
+
+local function commandEcho(r,current)
+    if not r.commandActivity then return false end
+    local command=r.commandActivity
+    local matches=current==command
+        or ((command=="move" or command=="retreat") and current=="move")
+        or (command=="attack_move" and (current=="move" or current=="attack"))
+        or (command=="gather" and (current=="wood" or current=="gold" or current=="stone" or current=="food"))
+        or command=="acknowledge"
+    if matches then
+        -- Correlation survives travel/queues until the target activity occurs
+        -- or a new command supersedes it. Default actions can travel before
+        -- reaching their unknown target; consume only after movement finishes.
+        if command~="attack_move" and not (command=="acknowledge" and current=="move") then r.commandActivity=nil end
+        return true
+    end
+    if current=="move" and (command=="build" or command=="gather" or command=="attack") then return true end
+    return false
+end
+
+function VietnamVoice_Tick()
+    if not S.running then return end
+    local now=World_GetGameTime()
+    audio.pulse(now)
+    if now>=S.nextScan then
+        S.nextScan=now+1
+        local entry=localEntry()
+        local present={}
+        if entry then
+            local group=Player_GetSquads(entry.id)
+            for i=1,SGroup_CountSpawned(group) do
+                local r=track(SGroup_GetSpawnedSquadAt(group,i))
+                if r then present[r.id]=true end
+            end
+        end
+        for id,r in pairs(S.actors) do
+            if not present[id] or not valid(r) then untrack(r);S.actors[id]=nil end
+        end
+    end
+    Misc_GetSelectedSquads(S.group,false)
+    local selected,first,changed={},nil,false
+    for i=1,SGroup_CountSpawned(S.group) do
+        local r=track(SGroup_GetSpawnedSquadAt(S.group,i))
+        if r then
+            selected[r.id]=true
+            if not first or r.id<first.id then first=r end
+            if not S.selected[r.id] then changed=true end
+        end
+    end
+    for id in pairs(S.selected) do if not selected[id] then changed=true end end
+    S.selected=selected;S.leader=first and first.id or nil
+    if changed and first then speak(first,"select",false) end
+    for id,r in pairs(S.actors) do
+        if valid(r) then
+            r.position=Squad_GetPosition(r.squad)
+            local hp=Squad_GetHealth(r.squad)
+            if hp<r.hp then
+                r.hits=(r.hits or 0)+1
+                if bank.stock_efforts then
+                    -- Observed HP changes approximate native effort timing.
+                    speak(r,(r.hp-hp)>=r.hp*.15 and "pain_heavy" or "pain_light",true)
+                    if r.hits%2==1 then speak(r,"under_attack",true) end
+                else speak(r,r.hits%2==0 and "pain_light" or "under_attack",true) end
+            end
+            r.hp=hp
+            if id==S.leader then
+                local current=activity(r.squad)
+                if r.activity and current~=r.activity and current~="idle" then
+                    if not commandEcho(r,current) then speak(r,eventFor(r,current),false) end
+                end
+                r.activity=current
+            else r.activity=nil end
+        else
+            untrack(r);S.actors[id]=nil
+        end
+    end
+end
+
+function VietnamVoice_OnLocalPlayerChanged()
+    if not S.running then return end
+    local civilizations=S.civilizations
+    VietnamVoice_Stop()
+    VietnamVoice_Start(civilizations)
+end
+
+function VietnamVoice_Start(civilizations)
+    if S.running or not bank.complete then return end
+    S.running=true;S.civilizations=civilizations or {};S.actors={};S.selected={};S.variants={}
+    S.replyUntil=0;S.moveUntil=0;S.attackUntil=0;S.busyUntil=0;S.effortBusyUntil=0;S.deathBusyUntil=0;S.nextScan=0;S.leader=nil
+    S.group=SGroup_CreateUnique("vietnam_voice_085")
+    audio.session()
+    Rule_AddInterval(VietnamVoice_Tick,.25)
+    Rule_AddGlobalEvent(VietnamVoice_OnLocalPlayerChanged,GE_LocalPlayerChanged)
+end
+
+function VietnamVoice_Stop()
+    if not S.running then return end
+    S.running=false
+    Rule_Remove(VietnamVoice_Tick)
+    Rule_RemoveGlobalEvent(VietnamVoice_OnLocalPlayerChanged)
+    for _,r in pairs(S.actors) do untrack(r) end
+    S.actors={};S.selected={};S.variants={};S.leader=nil
+    if S.group then SGroup_Destroy(S.group);S.group=nil end
+    audio.stop()
+end

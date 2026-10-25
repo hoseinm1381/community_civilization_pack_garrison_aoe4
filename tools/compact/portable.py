@@ -31,8 +31,28 @@ class AliasReader(Reader):
         return data
 
 
+def load_index(index):
+    doc = load(index)
+    if 'base_index' in doc:
+        name = doc['base_index']
+        if Path(name).name != name or name in ('', '.', '..') or ':' in name or '\\' in name:
+            raise ValueError('Unsafe base index')
+        base = load(index.parent/name)
+        if 'base_index' in base:
+            raise ValueError('Only one immutable baseline layer is supported')
+        for field in ('files', 'chunks', 'packs'):
+            base[field].update(doc[field])
+        base['milestone'] = doc['milestone']
+        doc = base
+    return doc
+
+
 def reader():
-    return AliasReader(FOLDER, load(FOLDER/'index.json.gz'))
+    config = load(ROOT/'development.json')
+    index = (ROOT/config['data_index']).resolve()
+    if index.parent != FOLDER.resolve():
+        raise ValueError('Unexpected compact input index location')
+    return AliasReader(FOLDER, load_index(index))
 
 
 def rebase_text(text, origins):
@@ -79,7 +99,8 @@ def restore(args, r):
         elif args.profile == 'all':
             wanted = True
         else:
-            wanted = key.startswith(('source/','external/resources_','external/garrison-library/','external/stock-cache/'))
+            wanted = key.startswith(('source/','external/resources_','external/garrison-library/','external/stock-cache/',
+                                     'external/output/release_085/'))
         if args.prefix:
             wanted = key.startswith(args.prefix)
         if wanted:
@@ -249,6 +270,10 @@ def main():
             a.add_argument('--tools',type=Path)
     a = sub.add_parser('release')
     a.add_argument('--destination',type=Path,required=True)
+    a.add_argument('--archive-tool',type=Path)
+    a = sub.add_parser('rebuild-087')
+    a.add_argument('--destination',type=Path,required=True)
+    a.add_argument('--archive-tool',type=Path,required=True)
     a = sub.add_parser('rebuild-084')
     a.add_argument('--destination',type=Path,required=True)
     a.add_argument('--archive-tool',type=Path,required=True)
@@ -273,7 +298,14 @@ def main():
         elif args.command == 'configure':
             configure(args,r)
         elif args.command == 'release':
-            legacy.release(args,r)
+            if 'milestone' in r.doc:
+                from current_package import rebuild as rebuild_current
+                rebuild_current(args,r)
+            else:
+                legacy.release(args,r)
+        elif args.command == 'rebuild-087':
+            from current_package import rebuild as rebuild_current
+            rebuild_current(args,r)
         elif args.command == 'rebuild-084':
             rebuild(args,r)
     finally:

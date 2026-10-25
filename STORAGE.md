@@ -5,3 +5,5 @@
 This checkout owns no links to the original authoring workspace. Configuration creates links only inside an explicitly restored workspace. `.local` holds regenerable verification outputs and is not tracked. The old historical repository copy was deleted on 2026-10-25 at the owner's explicit request after verifying all 171 retained input packs and independent active-workspace links. This checkout does not depend on that archive. Omitted WAV originals, old deliveries and diagnostics are not part of the compact checkout.
 
 Git stores committed input data in its own database in addition to the working tree. Report upload content, Git size and restored working size separately. Future milestone binaries grow history.
+
+Current 0.8.7 uses `index-087-v1.json.gz` layered on `index.json.gz` in the same store. Both are required. All 171 original packs are unchanged; one additional pack contains 1,192,813 bytes of required changes. No duplicate sound/art bank or full new release ZIP is stored.
