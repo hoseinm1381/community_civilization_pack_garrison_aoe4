@@ -1,0 +1,30 @@
+{
+  "compact": {
+    "passed": true,
+    "command": [
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools/compact",
+      "-p",
+      "test_*.py"
+    ],
+    "returncode": 0,
+    "tests": 7
+  },
+  "contributor": {
+    "passed": true,
+    "command": [
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools/collaboration",
+      "-p",
+      "test_*.py"
+    ],
+    "returncode": 0,
+    "tests": 15
+  }
+}

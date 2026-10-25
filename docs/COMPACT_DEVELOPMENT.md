@@ -74,6 +74,8 @@ The command checks namespace, applies only the map, then freshly verifies every 
 
 Existing compressed sound needs no local AI. For new speech, install the pinned dependencies separately: Python 3.11, VieNeu 3.8.3, Torch/torchaudio 2.8.0+cu128, Transformers 4.57.6, SoundFile, and a compatible ffmpeg with libvorbis. Use the pinned VieNeu/MOSS public model revisions and their publisher/download receipts retained in the store. The source SDK revision is `04044e1b8f822f946bafb2c88b716459f4164152`; the model pins are in `new_voice.py`. Existing installed software/model weights are deliberately not shipped.
 
+Restore the retained local model/SDK lockfiles and publisher receipts with `portable.py restore --prefix external/tool-cache/local-voices-084/ --destination D:/ccp-work --source-parent C:/ccp-work`. This restores recipes/receipts, not weights or an executable environment. Install the SDK at the documented revision and explicitly download the pinned public model payloads into your selected model root before using `--check`. The relocated historical `download_local_models.py --only vieneu` / `--only moss` can perform those two model downloads when you explicitly choose to run them in the configured working source; do not run it without `--only`, which would request optional ASR models as well. No such download is part of normal restoration or package rebuilding.
+
 After explicitly installing local dependencies, use that environment's Python:
 
 ```powershell
