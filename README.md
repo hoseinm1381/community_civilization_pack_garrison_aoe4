@@ -11,7 +11,7 @@ python -B tools/compact/portable.py release --destination .local/delivery
 
 Start with [the contributor guide](docs/COMPACT_DEVELOPMENT.md). It covers restoring/editing sources, configuring locally installed tools, fixing Blender paths, native source builds, selective integration, optional new local voices, and milestone updates. Python 3.12+ is enough for the offline commands above.
 
-The delivered ZIP is **284,922,388 bytes**. Its existing **10,529 Ogg clips total 118,761,135 bytes**, including 9,702 spoken takes. WAV production originals, rejected takes, old deliveries and generated readbacks are omitted from the upload. The owner preserves them separately. Shipped sound bytes are unchanged.
+The delivered ZIP is **284,922,388 bytes**. Its existing **10,529 Ogg clips total 118,761,135 bytes**, including 9,702 spoken takes. WAV production originals, rejected takes, old deliveries and generated readbacks are omitted from the upload. Omitted material is not required by this checkout. Shipped sound bytes are unchanged.
 
 Install compatible Blender/Garrison and an owned AoE4 Content Editor for their respective authoring/build tasks. Optional new local voice production uses the documented pinned environment; ordinary mod development does not require it.
 

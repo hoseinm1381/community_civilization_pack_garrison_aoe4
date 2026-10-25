@@ -8,7 +8,7 @@ Current candidate: self-contained Garrison 0.8.4, fresh independent Git history;
 - 58,048 retained files / 42,964 unique chunks. All retained file/chunk/pack hashes verified. No direct WAV files.
 - Shipped Ogg bank: 10,529 clips / 118,761,135 bytes, including 9,702 spoken takes; exact existing audio preserved.
 - Editable source/art retained; 387 Blender files were checked without saving them. All 2,893 external image references resolve after indexed recovery. The approved buffalo r4 source was opened separately, its nine external paths repaired, and a new portable copy saved outside the repo; original files/live Blender work were preserved.
-- The original repository, its history, WAV originals, rollback and diagnostics remain preserved separately. This is an upload reduction, not deletion/reclaimed disk space.
+- The old historical repository copy was deleted on 2026-10-25 at the owner's explicit request after verifying all 171 retained input-pack hashes and independent active-workspace storage links. Removed file content: 24,876,568,950 bytes; observed free-space increase: 25,437,929,472 bytes. The current self-contained store and main authoring workspace were retained.
 
 ## Fresh verification
 
