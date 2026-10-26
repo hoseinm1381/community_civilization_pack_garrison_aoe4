@@ -1,20 +1,27 @@
-# Garrison 0.8.8
+# Garrison 0.9.0 — Persia joins the pack
 
-- Fix the Flooded Citadel crash after Castle landmark completion by guarding the
-  movement-extension speed lookup against nonmoving actors.
-- Add the explicit native resource drop-off interaction to Phổ Minh Tower,
-  preserving its Hideout-style food, wood, gold and stone resource settings.
-- Preserve existing art, dialogue, per-unit voice cooldowns, Skirmisher selection
-  grouping, mod identity and unrelated gameplay.
+- Add the complete functional Persian civilization: roster, unique units,
+  technologies, Divans, dynasties, Caravanserais and landmarks.
+- Choose Delhi Sultanate in the lobby to select Delhi or Persia at match start.
+  China still offers China or Vietnam. Both choices share a 30-second deadline;
+  timeout keeps the original civilization.
+- Extend Flooded Citadel's safe movement handling to Persian units.
+- Preserve Vietnam's custom buildings, units, voices and compiled resource fixes,
+  along with the independent Garrison mod identity.
+- Retain Persia's current visuals. A complete new Persian art set is the next
+  milestone.
 
-Download the attached community_civilization_pack-0.8.8.zip (284,935,545 bytes).
-GitHub's automatically generated source ZIP is this small notes branch, not the
-installable mod. Use the named release attachment.
+Install: download community_civilization_pack-0.9.0.zip and import it into
+Garrison. Select both its Tuning Pack and Vietnam Game Mode. Use a standard
+Dark Age human start; AI keeps its native civilization.
 
-Verification: source regressions, actual native tuning compilation (377
-instances), archive identity, all 11,973 member hashes/mounts and ZIP integrity
-passed. Exactly two archive members change from 0.8.7. Fresh-game Castle
-completion, Phổ Minh manual/automatic returns, save/load and multiplayer remain
-pending acceptance; package proof is not native-game proof.
+The owner confirmed that 0.9.0 works on 2026-10-26; individual save/load and
+multiplayer coverage was not specified. Verification also passed 59 tests,
+a completed 658-instance native build, independent Git-backed reconstruction,
+and all 12,284 archive member hashes/mounts.
+
+Download the named ZIP attachment, rather than GitHub's automatic source ZIP.
+Package: 286,406,635 bytes. SHA-256:
+967e05a22a36a92c3f0757ffa18376c20c1b7ade402ae1b61ba4d926b4e27aef
 
 Credits: hosein81 and chilly5.
