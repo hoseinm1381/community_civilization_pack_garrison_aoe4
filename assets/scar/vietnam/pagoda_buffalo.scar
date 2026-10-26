@@ -1,0 +1,121 @@
+import("modifiers.scar")
+
+-- Approved automatic slot replaces paid training at this landmark only.
+-- Native queue owns the production clock, HUD, reservation and placement.
+VietnamPagodaBuffaloState = {players = {}, civilizations = {}, ruins = {}, active = false}
+local prefix = "a743d7d1d7534cf78817e29d8ded7366:"
+local buffalo = nil
+local cap = 15
+local function isPagoda(e)
+    return VietnamBlueprints_Matches(e, "vn_building_landmark_age1_vit_one_pilar_pagoda")
+        or VietnamBlueprints_Matches(e, "vn_building_landmark_age1_headquarters_control_chi")
+end
+local function living(e)
+    return Entity_IsValid(Entity_GetID(e)) and Entity_IsAlive(e) and Entity_GetHealth(e) > 0
+end
+local function cancel(e)
+    if Entity_HasProductionQueue(e) then
+        for i = Entity_GetProductionQueueSize(e) - 1, 0, -1 do
+            if Entity_GetProductionQueueItemType(e, i) == PITEM_Spawn
+                and Entity_GetProductionQueueItem(e, i) == buffalo then Entity_CancelProductionQueueItem(e, i) end
+        end
+    end
+end
+local function release(record, cancelQueue)
+    if cancelQueue and Entity_IsValid(record.id) then cancel(Entity_FromID(record.id)) end
+    if record.speed ~= nil then Modifier_Remove(record.speed); record.speed = nil end
+end
+function VietnamPagodaBuffalo_Start(civilizations)
+    VietnamPagodaBuffaloState.civilizations = civilizations
+    if not VietnamPagodaBuffaloState.active then
+        VietnamPagodaBuffaloState.active = true
+        Rule_AddGlobalEvent(VietnamPagodaBuffalo_OnKilled, GE_EntityKilled)
+    end
+end
+function VietnamPagodaBuffalo_OnKilled(context)
+    if context == nil or context.victim == nil then return end
+    local e = context.victim; local id = Entity_GetID(e)
+    if Entity_IsValid(id) and isPagoda(e) then
+        VietnamPagodaBuffaloState.ruins[id] = true
+        for _, state in pairs(VietnamPagodaBuffaloState.players) do
+            local record = state.records[id]
+            if record ~= nil then record.recovering = true; record.active = false; release(record, true) end
+        end
+    end
+end
+function VietnamPagodaBuffalo_Update(player, entities, now)
+    if VietnamPagodaBuffaloState.civilizations[player.index] ~= "vietnam" then return end
+    if buffalo == nil then buffalo = BP_GetSquadBlueprint(prefix .. "vn_unit_water_buffalo_vit") end
+    local state = VietnamPagodaBuffaloState.players[player.index]
+    if state == nil then state = {records = {}}; VietnamPagodaBuffaloState.players[player.index] = state end
+    if not Player_IsAlive(player.id) then
+        for _, record in pairs(state.records) do release(record, true) end
+        state.records = {}; return
+    end
+    local count = 0
+    SGroup_ForEachEx(Player_GetSquads(player.id), function(group, index, squad)
+        if Squad_IsAlive(squad) and Squad_GetBlueprint(squad) == buffalo then count = count + 1 end
+    end, true, true)
+    local seen, producers, ready = {}, {}, {}
+    for i = 1, EGroup_CountSpawned(entities) do
+        local e = EGroup_GetSpawnedEntityAt(entities, i)
+        local id = Entity_GetID(e)
+        if not producers[id] and Entity_IsValid(id) and Entity_GetPlayerOwner(e) == player.id then
+            producers[id] = e
+            if isPagoda(e) then
+                seen[id] = true
+                local record = state.records[id]
+                if record == nil then record = {id = id, active = false, recovering = VietnamPagodaBuffaloState.ruins[id] == true}; state.records[id] = record end
+                local operational = living(e) and not Entity_IsUnderConstruction(e) and Entity_GetBuildingProgress(e) >= 1 and Entity_GetStateModelBool(e, "landmark_active")
+                if not operational then
+                    if record.active or not living(e) then record.recovering = true end
+                    record.active = false; release(record, true)
+                elseif not record.recovering or Entity_GetHealth(e) >= Entity_GetHealthMax(e) then
+                    record.recovering = false; record.active = true; VietnamPagodaBuffaloState.ruins[id] = nil
+                    -- Spawn-only speed: 30 / .4 = 75 seconds. Economic research
+                    -- keeps its ordinary speed; never slow the whole producer.
+                    if record.speed == nil then
+                        local modifier = Modifier_Create(MAT_Entity, "spawn_production_speed_modifier",
+                            MUT_Multiplication, false, 0.4, nil)
+                        record.speed = Modifier_ApplyToEntity(modifier, e, 0)
+                    end
+                    ready[#ready + 1] = e
+                else
+                    record.active = false; release(record, true)
+                end
+            end
+        end
+    end
+    for id, record in pairs(state.records) do
+        if not seen[id] then
+            -- A captured owner owns its queue; only remove our modifier.
+            release(record, false); state.records[id] = nil
+        end
+    end
+    local queued = {}
+    for id, e in pairs(producers) do
+        if living(e) and Entity_HasProductionQueue(e) then
+            for i = 0, Entity_GetProductionQueueSize(e) - 1 do
+                if Entity_GetProductionQueueItemType(e, i) == PITEM_Spawn and Entity_GetProductionQueueItem(e, i) == buffalo then
+                    count = count + 1; queued[id] = true
+                end
+            end
+        end
+    end
+    table.sort(ready, function(a, b) return Entity_GetID(a) < Entity_GetID(b) end)
+    for _, e in ipairs(ready) do
+        local id = Entity_GetID(e)
+        if count < cap and not queued[id] and Entity_QueueProductionItemByPBG(e, PITEM_Spawn, buffalo) then
+            count = count + 1; queued[id] = true
+            print("VIETNAM_V3_PAGODA_QUEUE player=" .. tostring(player.index) .. " source=" .. tostring(id))
+        end
+    end
+end
+function VietnamPagodaBuffalo_Cleanup()
+    if VietnamPagodaBuffaloState.active then Rule_RemoveGlobalEvent(VietnamPagodaBuffalo_OnKilled) end
+    for _, state in pairs(VietnamPagodaBuffaloState.players) do
+        for _, record in pairs(state.records) do release(record, true) end
+    end
+    VietnamPagodaBuffaloState = {players = {}, civilizations = {}, ruins = {}, active = false}
+    buffalo = nil
+end

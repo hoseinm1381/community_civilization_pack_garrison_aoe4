@@ -1,0 +1,13 @@
+# Preserve native Content Editor source and binary assets byte-for-byte.
+* -text
+
+# Portable contributor tooling and documentation use LF in the repository.
+*.md text eol=lf
+*.py text eol=lf
+*.ps1 text eol=crlf
+*.yml text eol=lf
+*.yaml text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+requirements*.txt text eol=lf
+workspace.example.json text eol=lf

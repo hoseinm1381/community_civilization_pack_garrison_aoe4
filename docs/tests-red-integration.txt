@@ -1,0 +1,119 @@
+test_abort_restores_previous_ai_state_and_removes_network_handler (test_engine_adapter.EngineAdapterTests.test_abort_restores_previous_ai_state_and_removes_network_handler) ... ERROR
+test_ai_and_non_chinese_humans_cannot_choose (test_engine_adapter.EngineAdapterTests.test_ai_and_non_chinese_humans_cannot_choose) ... ok
+test_countdown_replaces_its_banner_and_cleans_only_its_own_text (test_engine_adapter.EngineAdapterTests.test_countdown_replaces_its_banner_and_cleans_only_its_own_text) ... FAIL
+test_missing_tuning_does_not_lock_or_resolve_custom_blueprints (test_engine_adapter.EngineAdapterTests.test_missing_tuning_does_not_lock_or_resolve_custom_blueprints) ... ok
+test_no_chinese_humans_does_not_hold_the_match (test_engine_adapter.EngineAdapterTests.test_no_chinese_humans_does_not_hold_the_match) ... ok
+test_occupied_starting_tc_is_rejected_before_any_conversion (test_engine_adapter.EngineAdapterTests.test_occupied_starting_tc_is_rejected_before_any_conversion) ... ok
+test_sender_identity_controls_conversion_and_china_is_untouched (test_engine_adapter.EngineAdapterTests.test_sender_identity_controls_conversion_and_china_is_untouched) ... ERROR
+test_timeout_releases_all_players_and_restores_protection (test_engine_adapter.EngineAdapterTests.test_timeout_releases_all_players_and_restores_protection) ... ERROR
+test_every_mode_localization_key_has_english_text (test_project.ProjectContractTests.test_every_mode_localization_key_has_english_text) ... ok
+test_every_own_reference_resolves_to_this_project (test_project.ProjectContractTests.test_every_own_reference_resolves_to_this_project) ... ok
+test_modes_and_tuning_share_new_project_identity (test_project.ProjectContractTests.test_modes_and_tuning_share_new_project_identity) ... ok
+test_new_rdo_object_identities_are_unique_and_not_template_ids (test_project.ProjectContractTests.test_new_rdo_object_identities_are_unique_and_not_template_ids) ... ok
+test_no_official_blueprint_overrides_in_coexistence_probe (test_project.ProjectContractTests.test_no_official_blueprint_overrides_in_coexistence_probe) ... ok
+test_package_archive_identity_is_the_new_project (test_project.ProjectContractTests.test_package_archive_identity_is_the_new_project) ... FAIL
+test_precache_contains_every_probe_entity (test_project.ProjectContractTests.test_precache_contains_every_probe_entity) ... ok
+test_probe_builder_does_not_offer_mongol_packed_buildings (test_project.ProjectContractTests.test_probe_builder_does_not_offer_mongol_packed_buildings) ... FAIL
+test_all_choices_finish_early (test_selection.SelectionTests.test_all_choices_finish_early) ... ok
+test_choice_cannot_be_changed_or_repeated (test_selection.SelectionTests.test_choice_cannot_be_changed_or_repeated) ... ok
+test_closed_selection_ignores_late_network_input (test_selection.SelectionTests.test_closed_selection_ignores_late_network_input) ... ok
+test_countdown_uses_shared_start_time (test_selection.SelectionTests.test_countdown_uses_shared_start_time) ... ok
+test_disconnect_resolves_slot_without_waiting_for_deadline (test_selection.SelectionTests.test_disconnect_resolves_slot_without_waiting_for_deadline) ... ok
+test_input_at_deadline_is_rejected_before_periodic_tick (test_selection.SelectionTests.test_input_at_deadline_is_rejected_before_periodic_tick) ... ok
+test_no_eligible_players_starts_without_countdown (test_selection.SelectionTests.test_no_eligible_players_starts_without_countdown) ... ok
+test_player_can_only_choose_their_own_slot (test_selection.SelectionTests.test_player_can_only_choose_their_own_slot) ... ok
+test_timeout_defaults_only_unanswered_players_to_china (test_selection.SelectionTests.test_timeout_defaults_only_unanswered_players_to_china) ... ok
+
+======================================================================
+ERROR: test_abort_restores_previous_ai_state_and_removes_network_handler (test_engine_adapter.EngineAdapterTests.test_abort_restores_previous_ai_state_and_removes_network_handler)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_engine_adapter.py", line 122, in test_abort_restores_previous_ai_state_and_removes_network_handler
+    self.g.VietnamMode_OnGameOver()
+  File "lupa/lua51.pyx", line 921, in lupa.lua51._LuaObject.__call__
+  File "lupa/lua51.pyx", line 1886, in lupa.lua51.call_lua
+  File "lupa/lua51.pyx", line 1913, in lupa.lua51.execute_lua_call
+  File "lupa/lua51.pyx", line 1794, in lupa.lua51.raise_lua_error
+lupa.lua51.LuaError: [string "<python>"]:26: assertion failed!
+stack traceback:
+	[string "<python>"]:178: in function <[string "<python>"]:167>
+	[string "<python>"]:91: in function 'closePopup'
+	[string "<python>"]:26: in function 'UI_SystemMessageHide'
+	[C]: in function 'assert'
+
+======================================================================
+ERROR: test_sender_identity_controls_conversion_and_china_is_untouched (test_engine_adapter.EngineAdapterTests.test_sender_identity_controls_conversion_and_china_is_untouched)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_engine_adapter.py", line 89, in test_sender_identity_controls_conversion_and_china_is_untouched
+    self.g.VietnamMode_Tick()
+  File "lupa/lua51.pyx", line 921, in lupa.lua51._LuaObject.__call__
+  File "lupa/lua51.pyx", line 1886, in lupa.lua51.call_lua
+  File "lupa/lua51.pyx", line 1913, in lupa.lua51.execute_lua_call
+  File "lupa/lua51.pyx", line 1794, in lupa.lua51.raise_lua_error
+lupa.lua51.LuaError: [string "<python>"]:26: assertion failed!
+stack traceback:
+	[string "<python>"]:125: in function <[string "<python>"]:119>
+	[string "<python>"]:110: in function 'finishSelection'
+	[string "<python>"]:91: in function 'closePopup'
+	[string "<python>"]:26: in function 'UI_SystemMessageHide'
+	[C]: in function 'assert'
+
+======================================================================
+ERROR: test_timeout_releases_all_players_and_restores_protection (test_engine_adapter.EngineAdapterTests.test_timeout_releases_all_players_and_restores_protection)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_engine_adapter.py", line 112, in test_timeout_releases_all_players_and_restores_protection
+    self.g.VietnamMode_Tick()
+  File "lupa/lua51.pyx", line 921, in lupa.lua51._LuaObject.__call__
+  File "lupa/lua51.pyx", line 1886, in lupa.lua51.call_lua
+  File "lupa/lua51.pyx", line 1913, in lupa.lua51.execute_lua_call
+  File "lupa/lua51.pyx", line 1794, in lupa.lua51.raise_lua_error
+lupa.lua51.LuaError: [string "<python>"]:26: assertion failed!
+stack traceback:
+	[string "<python>"]:125: in function <[string "<python>"]:119>
+	[string "<python>"]:110: in function 'finishSelection'
+	[string "<python>"]:91: in function 'closePopup'
+	[string "<python>"]:26: in function 'UI_SystemMessageHide'
+	[C]: in function 'assert'
+
+======================================================================
+FAIL: test_countdown_replaces_its_banner_and_cleans_only_its_own_text (test_engine_adapter.EngineAdapterTests.test_countdown_replaces_its_banner_and_cleans_only_its_own_text)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_engine_adapter.py", line 148, in test_countdown_replaces_its_banner_and_cleans_only_its_own_text
+    self.assertEqual(len(list(self.g.messages.keys())), 2)
+AssertionError: 3 != 2
+
+======================================================================
+FAIL: test_package_archive_identity_is_the_new_project (test_project.ProjectContractTests.test_package_archive_identity_is_the_new_project)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_project.py", line 71, in test_package_archive_identity_is_the_new_project
+    self.assertEqual(values['NiceName'], guid)
+AssertionError: '4df51f363d114b518cca8b22c21f28e7' != 'a743d7d1d7534cf78817e29d8ded7366'
+- 4df51f363d114b518cca8b22c21f28e7
++ a743d7d1d7534cf78817e29d8ded7366
+
+
+======================================================================
+FAIL: test_probe_builder_does_not_offer_mongol_packed_buildings (test_project.ProjectContractTests.test_probe_builder_does_not_offer_mongol_packed_buildings)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_project.py", line 77, in test_probe_builder_does_not_offer_mongol_packed_buildings
+    self.assertFalse(any('mongol' in value for value in values))
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.021s
+
+FAILED (failures=3, errors=3)
+VIETNAM_V2_SELECTION_STARTED
+VIETNAM_V2_SELECTION_STARTED
+VIETNAM_V2_SELECTION_STARTED
+VIETNAM_V2_INIT_REJECT occupied or unfinished capital
+VIETNAM_V2_SELECTION_STARTED
+VIETNAM_V2_CHOICE player=1 choice=vietnam
+VIETNAM_V2_CHOICE player=2 choice=china
+VIETNAM_V2_INIT_APPLIED player=1
+VIETNAM_V2_SELECTION_STARTED

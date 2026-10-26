@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" template="sbps" description="Native No Than Springald replacement">
+	<uniqueid name="pbgid" value="2147482003" />
+	<instance_reference name="parent_pbg" value="sbps\vietnam\units\siege\no_than\vn_unit_no_than_vit" mod="a743d7d1d7534cf78817e29d8ded7366" />
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" overrideParent="True" List.ItemID="1145231595" List.ParentItemID="1145231595">
+			<list name="unit_list" overrideParent="True">
+				<group name="loadout_data" List.ItemID="-2057768095" List.ParentItemID="-2057768095">
+					<float name="num" value="1" overrideParent="True" />
+					<instance_reference name="type" value="ebps\vietnam\units\siege\no_than\vn_unit_no_than_vit_reinforced" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+					<list name="unit_attachments">
+          </list>
+					<bool name="is_default_unit" value="True" overrideParent="True" />
+				</group>
+			</list>
+			<float name="squad_female_chance" value="0" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="-34640674" List.ParentItemID="-34640674">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="-1006526320" List.ParentItemID="-1006526320">
+					<group name="info">
+						<locstring name="screen_name" value="3047" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+						<locstring name="help_text" value="3048" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+						<locstring name="extra_text" value="3025" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" overrideParent="True" List.ItemID="2145248920" List.ParentItemID="2145248920">
+				<list name="unit_list" overrideParent="True">
+					<group name="loadout_data" List.ItemID="-880339935" List.ParentItemID="-880339935">
+						<float name="num" value="1" overrideParent="True" />
+						<instance_reference name="type" value="ebps\vietnam\units\siege\no_than\vn_unit_no_than_vit_reinforced" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+						<list name="unit_attachments">
+            </list>
+						<bool name="is_default_unit" value="True" overrideParent="True" />
+					</group>
+				</list>
+				<float name="squad_female_chance" value="0" overrideParent="True" />
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="31691925" List.ParentItemID="31691925">
+				<list name="race_list">
+					<group name="race_data" List.ItemID="-112370442" List.ParentItemID="-112370442">
+						<group name="info">
+							<locstring name="screen_name" value="3047" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+							<locstring name="help_text" value="3048" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+							<locstring name="extra_text" value="3025" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+						</group>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+	</variant>
+	<variant name="cordoba">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" overrideParent="True" List.ItemID="1145231595" List.ParentItemID="1145231595">
+				<list name="unit_list" overrideParent="True">
+					<group name="loadout_data" List.ItemID="-2057768095" List.ParentItemID="-2057768095">
+						<float name="num" value="1" overrideParent="True" />
+						<instance_reference name="type" value="ebps\vietnam\units\siege\no_than\vn_unit_no_than_vit_reinforced" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+						<list name="unit_attachments">
+            </list>
+						<bool name="is_default_unit" value="True" overrideParent="True" />
+					</group>
+				</list>
+				<float name="squad_female_chance" value="0" overrideParent="True" />
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="-34640674" List.ParentItemID="-34640674">
+				<list name="race_list">
+					<group name="race_data" List.ItemID="-1006526320" List.ParentItemID="-1006526320">
+						<group name="info">
+							<locstring name="screen_name" value="3047" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+							<locstring name="help_text" value="3048" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+							<locstring name="extra_text" value="3025" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+						</group>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+	</variant>
+</instance>

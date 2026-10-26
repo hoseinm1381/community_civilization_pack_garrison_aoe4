@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" template="ebps" description="Native Serpentine Arquebusier weapon variant; base stats and art inherited">
+	<uniqueid name="pbgid" value="2147481811" />
+	<instance_reference name="parent_pbg" value="ebps\vietnam\units\ranged\heavy_arquebusiers\vn_unit_handcannon_4_chi" mod="a743d7d1d7534cf78817e29d8ded7366" />
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1761061643" List.ParentItemID="-1761061643">
+			<list name="tier_group_list" removedIds="2147481812" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1968019310" List.ParentItemID="1968019310">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-878898247" List.ParentItemID="-878898247">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-464053615" List.ParentItemID="-464053615">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\vietnam\vn_weapon_handcannon_4_serpentine_vit" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\ottoman\weapons\wpn_range_handcannon_4_ott" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="897347378" List.ParentItemID="897347378">
+				<list name="tier_group_list" removedIds="2147481815" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1109447085" List.ParentItemID="-1109447085">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="27430698" List.ParentItemID="27430698">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="1096565765" List.ParentItemID="1096565765">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\vietnam\vn_weapon_handcannon_4_serpentine_vit" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\ottoman\weapons\wpn_range_handcannon_4_ott" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="1346145070" List.ParentItemID="1346145070">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_handcannon_4_melee" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\chinese\weapons\wpn_melee_handcannon_4_melee_chi" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+	</variant>
+</instance>

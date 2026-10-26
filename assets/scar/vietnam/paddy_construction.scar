@@ -1,0 +1,105 @@
+import("player.scar")
+
+-- A completed inert foundation is exchanged for a natively-created resource.
+-- Native spawn/completion may settle after this callback: hold one transaction
+-- across ticks and never recreate/destroy a still-pending resource each frame.
+VietnamPaddyConstructionState = {pending = {}, replacements = {}, failed = {}}
+local settleTimeout = 5
+local function live(entity)
+    return entity ~= nil and Entity_IsValid(Entity_GetID(entity)) and Entity_IsAlive(entity)
+end
+local function discard(record)
+    if record.resource ~= nil and Entity_IsValid(Entity_GetID(record.resource)) then Entity_Destroy(record.resource) end
+    if record.resourceID ~= nil then VietnamPaddyConstructionState.replacements[record.resourceID] = nil end
+end
+local function fail(id, record, reason)
+    discard(record)
+    VietnamPaddyConstructionState.pending[id] = nil
+    -- A failed completed plot remains available to the owner. Do not create a
+    -- new resource every frame; destruction/capture or a fresh match resets it.
+    VietnamPaddyConstructionState.failed[id] = {foundation = record.foundation, owner = record.owner}
+    print("VIETNAM_V9_PADDY_REPLACE_FAILED id=" .. tostring(id) .. " reason=" .. reason)
+end
+local function settle(now)
+    local state = VietnamPaddyConstructionState
+    local ids = {}
+    for id in pairs(state.pending) do ids[#ids + 1] = id end
+    table.sort(ids)
+    for _, id in ipairs(ids) do
+        local record = state.pending[id]
+        local foundation, resource = record.foundation, record.resource
+        if not live(foundation) or Entity_GetHealth(foundation) <= 0
+            or not Player_IsAlive(record.owner) or not Player_OwnsEntity(record.owner, foundation) then
+            discard(record); state.pending[id] = nil
+        elseif now > record.created then
+            if resource == nil or not Entity_IsValid(Entity_GetID(resource))
+                or not VietnamBlueprints_Matches(resource, "vn_building_resource_farm_chi")
+                or (live(resource) and not Player_OwnsEntity(record.owner, resource)) then
+                fail(id, record, "resource_invalid")
+            elseif live(resource) and not Entity_IsUnderConstruction(resource) and Entity_GetRemainingResourceDepositAmount(resource) > 0 then
+                local maximum = Entity_GetHealthMax(foundation)
+                if maximum > 0 then
+                    -- Include damage sustained while the native resource settled.
+                    Entity_SetHealth(resource, math.min(1, Entity_GetHealth(foundation) / maximum))
+                    Entity_Destroy(foundation)
+                    state.replacements[record.resourceID] = nil
+                    state.pending[id] = nil
+                    print("VIETNAM_V9_PADDY_READY old_id=" .. tostring(id)
+                        .. " new_id=" .. tostring(record.resourceID) .. " owner=" .. tostring(Player_GetID(record.owner))
+                        .. " food=" .. tostring(Entity_GetRemainingResourceDepositAmount(resource)))
+                else
+                    fail(id, record, "foundation_health")
+                end
+            elseif now - record.created >= settleTimeout then
+                fail(id, record, "native_completion_timeout")
+            end
+        end
+    end
+    for id, record in pairs(state.failed) do
+        if not live(record.foundation) or not Player_OwnsEntity(record.owner, record.foundation) then state.failed[id] = nil end
+    end
+end
+
+function VietnamPaddyConstruction_Update(player, entities)
+    local now = World_GetGameTime()
+    settle(now)
+    if not Player_IsAlive(player.id) then return end
+    local state = VietnamPaddyConstructionState
+    -- No group mutation until all candidate handles have been collected.
+    local completed = {}
+    for i = 1, EGroup_CountSpawned(entities) do
+        local entity = EGroup_GetSpawnedEntityAt(entities, i)
+        if live(entity) and Entity_GetHealth(entity) > 0
+            and VietnamBlueprints_Matches(entity, "vn_building_resource_farm2_chi")
+            and Player_OwnsEntity(player.id, entity)
+            and Entity_IsBuilding(entity) and not Entity_IsUnderConstruction(entity)
+            and Entity_GetBuildingProgress(entity) >= 1.0 then
+            local id = Entity_GetID(entity)
+            if state.pending[id] == nil and state.failed[id] == nil then completed[#completed + 1] = entity end
+        end
+    end
+    for _, foundation in ipairs(completed) do
+        if live(foundation) and Player_OwnsEntity(player.id, foundation) then
+            local id = Entity_GetID(foundation)
+            local position, heading = Entity_GetPosition(foundation), Entity_GetHeading(foundation)
+            local toward = World_Pos(position.x + heading.x, position.y + heading.y, position.z + heading.z)
+            local resource = Entity_CreateFacing(VietnamBlueprints_Entity("vn_building_resource_farm_chi"), player.id, position, toward, true)
+            local record = {foundation = foundation, owner = player.id, resource = resource, created = now}
+            state.pending[id] = record
+            if resource ~= nil and Entity_IsValid(Entity_GetID(resource)) then
+                record.resourceID = Entity_GetID(resource)
+                state.replacements[record.resourceID] = true
+                -- Official ScarUtil / missionomatic CreateEntity sequence.
+                Entity_Spawn(resource)
+                if Entity_IsBuilding(resource) then Entity_ForceConstruct(resource) end
+            else
+                fail(id, record, "native_create")
+            end
+        end
+    end
+end
+
+function VietnamPaddyConstruction_Cleanup()
+    for _, record in pairs(VietnamPaddyConstructionState.pending) do discard(record) end
+    VietnamPaddyConstructionState = {pending = {}, replacements = {}, failed = {}}
+end

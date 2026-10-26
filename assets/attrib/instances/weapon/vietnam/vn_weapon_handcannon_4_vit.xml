@@ -1,0 +1,382 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="aim">
+			<group name="aim_time_multiplier">
+				<float name="far" value="1" overrideParent="True" />
+			</group>
+			<group name="fire_aim_time">
+				<float name="min" value="0.125" overrideParent="True" />
+				<float name="max" value="0.125" overrideParent="True" />
+			</group>
+		</group>
+		<group name="burst">
+			<bool name="can_burst" value="False" overrideParent="True" />
+		</group>
+		<group name="damage">
+			<float name="max" value="19" overrideParent="True" />
+			<float name="min" value="19" overrideParent="True" />
+		</group>
+		<group name="fire">
+			<float name="wind_up" value="0" overrideParent="True" />
+			<float name="wind_down" value="0.25" overrideParent="True" />
+		</group>
+		<group name="range">
+			<group name="distance">
+				<float name="near" value="-1" overrideParent="True" />
+				<float name="far" value="-1" overrideParent="True" />
+				<float name="mid" value="-1" overrideParent="True" />
+			</group>
+			<float name="max" value="16" overrideParent="True" />
+		</group>
+		<group name="reload">
+			<group name="duration">
+				<float name="max" value="1.625" overrideParent="True" />
+				<float name="min" value="1.625" overrideParent="True" />
+			</group>
+		</group>
+		<group name="area_effect" overrideParent="True">
+			<group name="accuracy">
+				<float name="far" value="1" />
+				<float name="near" value="1" />
+				<float name="mid" value="1" />
+			</group>
+			<template_reference name="area_info" value="options\area_info_options\point_area_option">
+			</template_reference>
+			<group name="damage">
+				<float name="far" value="1" />
+				<float name="near" value="1" />
+				<float name="mid" value="1" />
+			</group>
+			<group name="damage_friendly">
+				<float name="far" value="1" />
+				<float name="near" value="1" />
+				<float name="mid" value="1" />
+			</group>
+			<group name="distance">
+				<float name="far" value="0" />
+				<float name="near" value="0" />
+				<float name="mid" value="0" />
+			</group>
+			<bool name="has_friendly_fire" value="False" />
+			<bool name="can_harm_shooter" value="False" />
+			<group name="suppression">
+				<float name="far" value="0" />
+				<float name="near" value="0" />
+				<float name="mid" value="0" />
+			</group>
+			<group name="suppression_friendly">
+				<float name="far" value="0" />
+				<float name="near" value="0" />
+				<float name="mid" value="0" />
+			</group>
+			<bool name="damage_all_in_hold" value="False" />
+			<template_reference name="aoe_penetration" value="tables\range_table">
+				<float name="far" value="1" />
+				<float name="mid" value="1" />
+				<float name="near" value="1" />
+			</template_reference>
+			<int name="damage_max_members_per_squad" value="-1" />
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
+			<group name="fx">
+				<float name="exponential_distribution_lambda" value="0" />
+				<int name="num_randomized_ground_hit_fx" value="0" />
+			</group>
+			<template_reference name="area_over_time_option" value="">
+			</template_reference>
+		</group>
+		<group name="behaviour">
+			<bool name="piercing" value="True" overrideParent="True" />
+		</group>
+		<group name="projectile">
+			<instance_reference name="projectile" value="ebps\vietnam\projectiles\vn_projectile_arquebusier_vit" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="1073742095" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_handcannon_3" />
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<group name="aim">
+				<group name="aim_time_multiplier">
+					<float name="far" value="1" overrideParent="True" />
+				</group>
+				<group name="fire_aim_time">
+					<float name="min" value="0.125" overrideParent="True" />
+					<float name="max" value="0.125" overrideParent="True" />
+				</group>
+			</group>
+			<group name="burst">
+				<bool name="can_burst" value="False" overrideParent="True" />
+			</group>
+			<group name="damage">
+				<float name="max" value="19" overrideParent="True" />
+				<float name="min" value="19" overrideParent="True" />
+			</group>
+			<group name="area_effect" overrideParent="True">
+				<group name="accuracy">
+					<float name="far" value="1" />
+					<float name="near" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<template_reference name="area_info" value="options\area_info_options\point_area_option">
+			</template_reference>
+				<group name="damage">
+					<float name="far" value="1" />
+					<float name="near" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<group name="damage_friendly">
+					<float name="far" value="1" />
+					<float name="near" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<group name="distance">
+					<float name="far" value="0" />
+					<float name="near" value="0" />
+					<float name="mid" value="0" />
+				</group>
+				<bool name="has_friendly_fire" value="False" />
+				<bool name="can_harm_shooter" value="False" />
+				<group name="suppression">
+					<float name="far" value="0" />
+					<float name="near" value="0" />
+					<float name="mid" value="0" />
+				</group>
+				<group name="suppression_friendly">
+					<float name="far" value="0" />
+					<float name="near" value="0" />
+					<float name="mid" value="0" />
+				</group>
+				<bool name="damage_all_in_hold" value="False" />
+				<template_reference name="aoe_penetration" value="tables\range_table">
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+					<float name="near" value="1" />
+				</template_reference>
+				<int name="damage_max_members_per_squad" value="-1" />
+				<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
+				<group name="fx">
+					<float name="exponential_distribution_lambda" value="0" />
+					<int name="num_randomized_ground_hit_fx" value="0" />
+				</group>
+				<template_reference name="area_over_time_option" value="">
+			</template_reference>
+			</group>
+			<group name="reload">
+				<group name="duration">
+					<float name="max" value="1.625" overrideParent="True" />
+					<float name="min" value="1.625" overrideParent="True" />
+				</group>
+			</group>
+			<group name="range">
+				<float name="max" value="16" overrideParent="True" />
+			</group>
+			<group name="fire">
+				<float name="wind_up" value="0" overrideParent="True" />
+				<float name="wind_down" value="0.25" overrideParent="True" />
+			</group>
+			<group name="behaviour">
+				<bool name="piercing" value="True" overrideParent="True" />
+			</group>
+			<group name="projectile">
+				<instance_reference name="projectile" value="ebps\vietnam\projectiles\vn_projectile_arquebusier_vit" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+			</group>
+		</group>
+		<uniqueid name="pbgid" value="1073742095" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_handcannon_3" />
+	</variant>
+	<variant name="xp3">
+		<group name="weapon_bag">
+			<group name="aim">
+				<group name="aim_time_multiplier">
+					<float name="far" value="1" overrideParent="True" />
+				</group>
+				<group name="fire_aim_time">
+					<float name="min" value="0.125" overrideParent="True" />
+					<float name="max" value="0.125" overrideParent="True" />
+				</group>
+			</group>
+			<group name="burst">
+				<bool name="can_burst" value="False" overrideParent="True" />
+			</group>
+			<group name="damage">
+				<float name="max" value="19" overrideParent="True" />
+				<float name="min" value="19" overrideParent="True" />
+			</group>
+			<group name="fire">
+				<float name="wind_up" value="0" overrideParent="True" />
+				<float name="wind_down" value="0.25" overrideParent="True" />
+			</group>
+			<group name="range">
+				<group name="distance">
+					<float name="near" value="-1" overrideParent="True" />
+					<float name="far" value="-1" overrideParent="True" />
+					<float name="mid" value="-1" overrideParent="True" />
+				</group>
+				<float name="max" value="16" overrideParent="True" />
+			</group>
+			<group name="reload">
+				<group name="duration">
+					<float name="max" value="1.625" overrideParent="True" />
+					<float name="min" value="1.625" overrideParent="True" />
+				</group>
+			</group>
+			<group name="area_effect" overrideParent="True">
+				<group name="accuracy">
+					<float name="far" value="1" />
+					<float name="near" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<template_reference name="area_info" value="options\area_info_options\point_area_option">
+			</template_reference>
+				<group name="damage">
+					<float name="far" value="1" />
+					<float name="near" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<group name="damage_friendly">
+					<float name="far" value="1" />
+					<float name="near" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<group name="distance">
+					<float name="far" value="0" />
+					<float name="near" value="0" />
+					<float name="mid" value="0" />
+				</group>
+				<bool name="has_friendly_fire" value="False" />
+				<bool name="can_harm_shooter" value="False" />
+				<group name="suppression">
+					<float name="far" value="0" />
+					<float name="near" value="0" />
+					<float name="mid" value="0" />
+				</group>
+				<group name="suppression_friendly">
+					<float name="far" value="0" />
+					<float name="near" value="0" />
+					<float name="mid" value="0" />
+				</group>
+				<bool name="damage_all_in_hold" value="False" />
+				<template_reference name="aoe_penetration" value="tables\range_table">
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+					<float name="near" value="1" />
+				</template_reference>
+				<int name="damage_max_members_per_squad" value="-1" />
+				<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
+				<group name="fx">
+					<float name="exponential_distribution_lambda" value="0" />
+					<int name="num_randomized_ground_hit_fx" value="0" />
+				</group>
+				<template_reference name="area_over_time_option" value="">
+			</template_reference>
+			</group>
+			<group name="behaviour">
+				<bool name="piercing" value="True" overrideParent="True" />
+			</group>
+			<group name="projectile">
+				<instance_reference name="projectile" value="ebps\vietnam\projectiles\vn_projectile_arquebusier_vit" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+			</group>
+		</group>
+		<uniqueid name="pbgid" value="1073742095" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_handcannon_3" />
+	</variant>
+	<variant name="hre_brawl">
+		<group name="weapon_bag">
+			<group name="aim">
+				<group name="aim_time_multiplier">
+					<float name="far" value="1" overrideParent="True" />
+				</group>
+				<group name="fire_aim_time">
+					<float name="min" value="0.125" overrideParent="True" />
+					<float name="max" value="0.125" overrideParent="True" />
+				</group>
+			</group>
+			<group name="burst">
+				<bool name="can_burst" value="False" overrideParent="True" />
+			</group>
+			<group name="damage">
+				<float name="max" value="19" overrideParent="True" />
+				<float name="min" value="19" overrideParent="True" />
+			</group>
+			<group name="fire">
+				<float name="wind_up" value="0" overrideParent="True" />
+				<float name="wind_down" value="0.25" overrideParent="True" />
+			</group>
+			<group name="range">
+				<group name="distance">
+					<float name="near" value="-1" overrideParent="True" />
+					<float name="far" value="-1" overrideParent="True" />
+					<float name="mid" value="-1" overrideParent="True" />
+				</group>
+				<float name="max" value="16" overrideParent="True" />
+			</group>
+			<group name="reload">
+				<group name="duration">
+					<float name="max" value="1.625" overrideParent="True" />
+					<float name="min" value="1.625" overrideParent="True" />
+				</group>
+			</group>
+			<template_reference name="siege_option" value="options\none" overrideParent="True">
+			</template_reference>
+			<group name="area_effect" overrideParent="True">
+				<group name="accuracy">
+					<float name="far" value="1" />
+					<float name="near" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<template_reference name="area_info" value="options\area_info_options\point_area_option">
+			</template_reference>
+				<group name="damage">
+					<float name="far" value="1" />
+					<float name="near" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<group name="damage_friendly">
+					<float name="far" value="1" />
+					<float name="near" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<group name="distance">
+					<float name="far" value="0" />
+					<float name="near" value="0" />
+					<float name="mid" value="0" />
+				</group>
+				<bool name="has_friendly_fire" value="False" />
+				<bool name="can_harm_shooter" value="False" />
+				<group name="suppression">
+					<float name="far" value="0" />
+					<float name="near" value="0" />
+					<float name="mid" value="0" />
+				</group>
+				<group name="suppression_friendly">
+					<float name="far" value="0" />
+					<float name="near" value="0" />
+					<float name="mid" value="0" />
+				</group>
+				<bool name="damage_all_in_hold" value="False" />
+				<template_reference name="aoe_penetration" value="tables\range_table">
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+					<float name="near" value="1" />
+				</template_reference>
+				<int name="damage_max_members_per_squad" value="-1" />
+				<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
+				<group name="fx">
+					<float name="exponential_distribution_lambda" value="0" />
+					<int name="num_randomized_ground_hit_fx" value="0" />
+				</group>
+				<template_reference name="area_over_time_option" value="">
+			</template_reference>
+			</group>
+			<group name="behaviour">
+				<bool name="piercing" value="True" overrideParent="True" />
+			</group>
+			<group name="projectile">
+				<instance_reference name="projectile" value="ebps\vietnam\projectiles\vn_projectile_arquebusier_vit" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+			</group>
+		</group>
+		<uniqueid name="pbgid" value="1073742095" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_handcannon_3" />
+	</variant>
+</instance>

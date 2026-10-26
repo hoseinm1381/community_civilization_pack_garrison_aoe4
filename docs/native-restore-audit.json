@@ -1,0 +1,76 @@
+{
+  "revision": "20261016-native-trap-tunnel-r1",
+  "donor_files_unchanged": 318,
+  "pbg_ids_preserved": true,
+  "noncombat_trap_settings_preserved": true,
+  "csv_changed_rows": [
+    "2153",
+    "2154",
+    "2296",
+    "2297"
+  ],
+  "changes": [
+    {
+      "path": "assets/locdb/Vietnam_v2_en.csv",
+      "before": "03f40765f1dc6a2744ac26a35b108885e256bcb04cd8d3146885276c1de48fab",
+      "after": "c7dafc334f16b2f27fed41b51b98f12122210d5c930d7e818054b601309b3efa"
+    },
+    {
+      "path": "assets/attrib/instances/abilities/vietnam/vn_vietnam_unit_mov_vit.xml",
+      "before": "4bab1610b2cfffc15f93fcc0d7c09684fb06042ed71419b24a96d534c8828c89",
+      "after": "56c61e6d2a0a034b005c2eb4d241f6d6cb99ba647fc7aa9635d0511e91679b9c"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_bambo_outpost_chi.xml",
+      "before": "0071b77200d900c558b7bd4056b60642069f90b10f2c7024f5d3745e0634ea95",
+      "after": "4b04aec1309e629204672323f318dff4f9bf269fb6d52aa8f68109c070db2025"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_bambo_chi.xml",
+      "before": "249921f65fb83da1e474765be39bda6a6bcb3946328c548ae8d93fd8b92e5aa4",
+      "after": "d198f4107394d95de8fe9ddb3095b125e03e140fb639a82ee41a4b5f45638d20"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_trap_range_vit.xml",
+      "before": "3d5c1ff006c4de6b1590b642b9f2fa6a167d055feab2e110a52c4d8d3a4ce1d1",
+      "after": "786b17d2c047541736f87fbac79fa0f5711d4bb7c8c4ee5e06985ec96f9b9f16"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/vn_upgrade_trap_roller_trigger.xml",
+      "before": "23708dcf75885fbfffd41b86a523c8dc23ab2a7080cdc3c92bc3cc76c595c943",
+      "after": "f6af4188ce0cdd50d7c1c5698f68f9271c5259cd6713083562a01d94ca070c25"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_outpost_handcannon_bambo_alarm_chi.xml",
+      "before": "6da8efd13379758f9380f55c48b104c9ae456d8b6ebb03ef478c44a25629f5b3",
+      "after": "84ed1831d4c6db158d9f992488c879c3f826a82cbd721e124a04eb7c3a7c56be"
+    },
+    {
+      "path": "assets/attrib/instances/weapon/vietnam/vn_weapon_outpost_handcannon_bambo_chi.xml",
+      "before": "408283104d4da5333a33d49312f171679508461b04c6bb23c7ea10f5de901b1a",
+      "after": "28f532c865c2da4fa034fb382666a60d894329874ee2f5ebf81c78a5bd21fda2"
+    },
+    {
+      "path": "assets/scar/vietnam/lifecycle.scar",
+      "before": "5b2c12df73446126fe6491c13cd0b578277a2cae774b667d45e167224abc6fed",
+      "after": "6ef2afe064a3fe16d5dd0feb5d7b79a9652bb1d624ccf0afbff36b59100beae3"
+    },
+    {
+      "path": "assets/scar/vietnam/traps.scar",
+      "before": "fb12e26861c4566d7772da92d06fb7cd6afc24c09c2e10ef223c37eec78fe764",
+      "after": "a6251b834f9d48c0748d7fb34fcd59d563eb8a5c63d335a24272e73d512f66af"
+    },
+    {
+      "path": "assets/scar/vietnam/tunneling.scar",
+      "before": "72588d978cce37d1f37ea458659413b5204b098de686fb6df05968bb8ccd54e6",
+      "after": null
+    },
+    {
+      "path": "assets/scar/winconditions/VietnamMode.scar",
+      "before": "75b4de0d29c715a5e766fa75bab74a23fa5804419b24a26993c5ca23a3c024c3",
+      "after": "2ef00251fe2d5a88ba5d01dfdea0e2bf85247ebe9784074b8f0f80e2f47cc2d6"
+    }
+  ],
+  "independent_review": "No confirmed Important/Critical findings. Captured-before-observation lifetime edge was reproduced RED then fixed GREEN in the actual lifecycle fixture.",
+  "offline_tests": 59
+}

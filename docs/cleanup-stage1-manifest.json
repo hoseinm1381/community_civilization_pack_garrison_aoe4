@@ -1,0 +1,3003 @@
+{
+  "stage": 1,
+  "status": "source_cleanup_complete_native_acceptance_pending",
+  "guid": "a743d7d1d7534cf78817e29d8ded7366",
+  "rollback_archive": "E:\\age of empires 4 mods\\01_Custom_Civilizations\\Real_Vietnam\\Variants\\main\\Vietnam_v2_cleanup_backups\\Vietnam_v2_before_cleanup_20261015-153444.zip",
+  "rollback_sha256": "5a8ce79e8c3885525f6c549a6396e4b88f8eacb1aa8768f6704d45aafa9ee1bd",
+  "archive_member_hashes": "ROLLBACK_HASHES.json",
+  "instances_before": 297,
+  "instances_after": 235,
+  "families": {
+    "probe": 7,
+    "rattan_unit": 13,
+    "tower_unit": 42
+  },
+  "removed_files": [
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/v2_probe_archer.xml",
+      "family": "probe",
+      "pbg_id": "1073741827",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_2_vit.xml",
+      "sha256": "66869345928a889b78e4223aa2bb70618b67933c2680bcb62677ac0766726d86"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/v2_probe_range.xml",
+      "family": "probe",
+      "pbg_id": "1073741826",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+      "sha256": "f2f54147f2d926c3146d08d075e9f4eb410aedf8cda511470e4983c682f45ad7"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/v2_probe_town_center.xml",
+      "family": "probe",
+      "pbg_id": "1073741825",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_chi.xml",
+      "sha256": "f6a1318c8de6df09ff81969f96db70c74bd335dbbf9d8ea9bfb50480550fa1d5"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/v2_probe_villager.xml",
+      "family": "probe",
+      "pbg_id": "1073741823",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_villager_1_chi.xml",
+      "sha256": "09f67382366b8914d545009821eb224b9e9502a0f881c2acadcf113123958865"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_2_ratten.xml",
+      "family": "rattan_unit",
+      "pbg_id": "1073741901",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_2_vit.xml",
+      "sha256": "51c27089599b0f36d7a9a88e48cfd9a004d649e60fa88f9f0e0ae793baf51681"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_3_ratten.xml",
+      "family": "rattan_unit",
+      "pbg_id": "1073741903",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_3_vit.xml",
+      "sha256": "e33b5362008e0b9f19f86e64e4668328a437108bd7e3a5f21f98108cf365421f"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_4_ratten.xml",
+      "family": "rattan_unit",
+      "pbg_id": "1073741905",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_4_vit.xml",
+      "sha256": "c2b1fa19828bf090e534982cd3904ebc0764682d29e1a6c5efc075bc38bf78bc"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_outpost_2_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741907",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_2_vit.xml",
+      "sha256": "578131ead1c0136f2463e469b135ab1bf08959f384c28f9fc5dddd1f7918284e"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_outpost_2_chi_ratten.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741908",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_2_vit.xml",
+      "sha256": "013e884e2e81f590bd2539f2b59a21e966626eba2d750e86943d15c70d2e3375"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_outpost_3_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741909",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_3_vit.xml",
+      "sha256": "0b0a4a22d3b63f57b120ee841abed68c533b78cb894086996bc9b4975c4b0ecc"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_outpost_3_chi_ratten.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741910",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_3_vit.xml",
+      "sha256": "485ce6057815efb12ec8397866483b07fbc6973999555c3782095e0a5f21853d"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_outpost_4_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741911",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_4_vit.xml",
+      "sha256": "8a09ba36b1501834ea6fbbf17de21cd6c646e649d38d9b73acb7598b5040c10a"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_outpost_4_chi_ratten.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741912",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_4_vit.xml",
+      "sha256": "4d5388714686c4671d1a07f11b2b8629f455adf3329fee1654a701e1056e0498"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_crossbowman_3_chi_ratten.xml",
+      "family": "rattan_unit",
+      "pbg_id": "1073741928",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_crossbowman_3_chi.xml",
+      "sha256": "2c867bb4166864f33ccb8e297e06126a3e7c20de7ad73c7c116123bc2e7ec085"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_crossbowman_4_chi_ratten.xml",
+      "family": "rattan_unit",
+      "pbg_id": "1073741930",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_crossbowman_4_chi.xml",
+      "sha256": "72640c5b6b15050a1f789233ac07eeae624fbc1787c8a00923375a95b73376c7"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_crossbowman_outpost_3_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741921",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_crossbowman_3_chi.xml",
+      "sha256": "521e40d321145bfe7dcf0a06daa91e7c4ac3ca29533235da9554e972f0a4fe1c"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_crossbowman_outpost_3_chi_ratten.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741922",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_crossbowman_3_chi.xml",
+      "sha256": "6937f13b66bd67ddc3e7cec59968662e6159ed27efa590d23928c23899d59c49"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_crossbowman_outpost_4_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741923",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_crossbowman_4_chi.xml",
+      "sha256": "f77f48f22bdbb0b3587023ccd645ab746d2a03de88a8412154880dd7c912dba8"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_crossbowman_outpost_4_chi_ratten.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741924",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_crossbowman_4_chi.xml",
+      "sha256": "dba23e4a8bf04e15298831a11570e9d383e748ecfa9915e12c82873d53b64c41"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_handcannon_4_chi_ratten.xml",
+      "family": "rattan_unit",
+      "pbg_id": "1073741932",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_handcannon_4_chi.xml",
+      "sha256": "65ac37aafc1a81e5129023747fe3a1d640388fd166eefc6aaeb87c1356559049"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_handcannon_outpost_4_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741925",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_handcannon_4_chi.xml",
+      "sha256": "b65b186d3ff3eb1fc637c75ea146790d457b4cc69e806d607f1a112a5b478842"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_handcannon_outpost_4_chi_ratten.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741926",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_handcannon_4_chi.xml",
+      "sha256": "e59a192bb7a4a230ac2bd0e13fdaa152e342c9a5c709617256f41ac4317e6341"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_fire_outpost_1_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741913",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_fire_1_chi.xml",
+      "sha256": "74fe3b2f4063778d3569f3fca33c197f662b4cf4571e2d514cd8ef7ff7884a63"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_fire_outpost_2_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741914",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_fire_2_chi.xml",
+      "sha256": "cf838fe71c75d7b5cce1cdfad499c53b18f1971c55dd2c37e28a8376813bf47e"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_fire_outpost_3_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741915",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_fire_3_chi.xml",
+      "sha256": "b73cef9463249d7d0892f0d8fe4a6764677d6e687317fa2145489f389035eed8"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_fire_outpost_4_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741916",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_fire_4_chi.xml",
+      "sha256": "86708b3c059ffc5cdf2d7998c9db8587d9d8d4df52be907a2acad6e3b7ea54e2"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_outpost_1_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741917",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_1_chi.xml",
+      "sha256": "1cf391f6f48a08ddd717a7a75e49e81a96182c7576ca1fb11abb7d235597d898"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_outpost_2_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741918",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_2_chi.xml",
+      "sha256": "7c24ad91315d9c48e6105263ca83f577584084d90aa2b20889fd3c3e56140cf4"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_outpost_3_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741919",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_3_chi.xml",
+      "sha256": "0746007836e4c949f8575d2ffef20aff12b8b6e48bfdb39dbf48d8b451093e30"
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_outpost_4_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741920",
+      "replacement": "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_4_chi.xml",
+      "sha256": "7b9891a9d2787aeec19d4f0af5f44f2e1f5eb9626d10c531f12bf808d16fcce0"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/v2_probe_archer_squad.xml",
+      "family": "probe",
+      "pbg_id": "1073741828",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_2_vit.xml",
+      "sha256": "c42c715c5498a5e205b8669d62bb50ebf966bf6059ff85bd1c780a8dd62c0e91"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/v2_probe_villager_squad.xml",
+      "family": "probe",
+      "pbg_id": "1073741824",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_villager_1_chi.xml",
+      "sha256": "0382bab7ca28385504837007c6f86d02acc424878eb14a7e79113e15e2e17c0a"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_2_ratten.xml",
+      "family": "rattan_unit",
+      "pbg_id": "1073741978",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_2_vit.xml",
+      "sha256": "c7e2b05787fa9df28de0c911a1061f815ebc18320b682742cbf3cd77b1313306"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_3_ratten.xml",
+      "family": "rattan_unit",
+      "pbg_id": "1073741980",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_3_vit.xml",
+      "sha256": "eb9a078bd943184023f5b631f019b9c3fbfb941c8343502ef0500584b562f4e4"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_4_ratten.xml",
+      "family": "rattan_unit",
+      "pbg_id": "1073741982",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_4_vit.xml",
+      "sha256": "bd93701cc01513506e85d1f9c3fcc3b8f66f92e854836ab06bdb6a97e3145a1d"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_outpost_2_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741984",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_2_vit.xml",
+      "sha256": "b57c8b3d14741f6c79b5a12a56e19f6f0b167d4660be341d4dd6d18abc3f2b8f"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_outpost_2_chi_ratten.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741985",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_2_vit.xml",
+      "sha256": "207d43afa6bd39b33406cb6a1f0ebe52765f2a7bb1267dcc6826e436dfd729ce"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_outpost_3_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741986",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_3_vit.xml",
+      "sha256": "3456b381746aebe9fca561920b7a459c6709f0aa8a8742e4bcbf9249babdb75b"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_outpost_3_chi_ratten.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741987",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_3_vit.xml",
+      "sha256": "342c47a00ba4580fd6356e9d866b815833c6574496cedcbd2528afade7ce2025"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_outpost_4_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741988",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_4_vit.xml",
+      "sha256": "dcf18bb1513f3d5a0c8aaca0a686f1bfcba2111d8b54633d0d7f65893ba4def0"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_outpost_4_chi_ratten.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741989",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_4_vit.xml",
+      "sha256": "626ca7d122620cb0f047a4dcc5e251f938688e20d23c75b7e8f4860bcc0bc550"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_3_chi_ratten.xml",
+      "family": "rattan_unit",
+      "pbg_id": "1073742012",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_3_chi.xml",
+      "sha256": "9ee9183ea8c09d481f7d86d356ed8b953520e98d6abe3612091736e94ec70f5b"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_4_chi_ratten.xml",
+      "family": "rattan_unit",
+      "pbg_id": "1073742014",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_4_chi.xml",
+      "sha256": "53da0aeb302a763c3d725b6238297b66149528ebac37694231e6ee0cc24d11db"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_outpost_3_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741998",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_3_chi.xml",
+      "sha256": "c378196ea953fa44c6f56df7848c27e074a48227051947fe45599fe1726083b8"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_outpost_3_chi_ratten.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741999",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_3_chi.xml",
+      "sha256": "c1afb3f1f68179379dddc90351475f061c49587a3556da6bea7e347112a4bbeb"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_outpost_4_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073742000",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_4_chi.xml",
+      "sha256": "f2da9ac05eef53cad798bb52876f24096d3e0b2a949e0614b5375789f3d84b23"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_outpost_4_chi_ratten.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073742001",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_4_chi.xml",
+      "sha256": "b0f1a7b67ef0c02ed4a0f65adafb551280a187ef61572c19a52fc74f0e8d7eae"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_4_chi_ratten.xml",
+      "family": "rattan_unit",
+      "pbg_id": "1073742019",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_4_chi.xml",
+      "sha256": "b0f22fd16929087861fd601cd2314b46c0d4f577173d11c164beb4c65d8fd68d"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_4_chi_ratten_cheap.xml",
+      "family": "rattan_unit",
+      "pbg_id": "1073742020",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_4_chi_cheap.xml",
+      "sha256": "d95f80f62dec1526c26da47f13af5a387d47576099287ffd64d7d3cf45de0f19"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_outpost_4_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073742002",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_4_chi.xml",
+      "sha256": "72f18441061473bbd349ab00852d1b9ed506462f63036a2c369e46ec6fee8f88"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_outpost_4_chi_cheap.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073742003",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_4_chi_cheap.xml",
+      "sha256": "e74dd0bffdf46ba17d5f03f35254c6deec651ec82b434f119f577055bf840a32"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_outpost_4_chi_ratten.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073742004",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_4_chi.xml",
+      "sha256": "2fc6b29d0e4057beded95f32ba9a1c4579f6c5ff3c5ff1244c852cc548505a52"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_outpost_4_chi_ratten_cheap.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073742005",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_4_chi_cheap.xml",
+      "sha256": "69fa004a8bffff8d7f289e95f0b3d402e5f9e226368c9b0d7246095fb2e8e898"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_outpost_1_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741990",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_1_chi.xml",
+      "sha256": "cd8ea391d94646fd534d2d8c8a670c4a8b89ae25c925e5642c31789f1fb068f7"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_outpost_2_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741991",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_2_chi.xml",
+      "sha256": "9e0ad561b55a6ff7b90c3196a3ffdaeca22eb51642738bfa39d51cd6881c6d8a"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_outpost_3_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741992",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_3_chi.xml",
+      "sha256": "1712f157a7e0b37ce37cecb22196cbd103761032076d35c54ea4071c2050482c"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_outpost_4_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741993",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_4_chi.xml",
+      "sha256": "0d2a9d67c85d349ad11c22e750a3719e06cafc148c823429bf56322c96497eea"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_outpost_1_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741994",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_1_chi.xml",
+      "sha256": "79ab70405e0ec959bbb8beee51bb457bac6bba71aaa135e70ae52c738a264d1d"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_outpost_2_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741995",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_2_chi.xml",
+      "sha256": "61fe4cff1358ce51dda47d3b74e1129f1bd41908722ab9245e966e7d51f2f215"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_outpost_3_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741996",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_3_chi.xml",
+      "sha256": "745e8f2225f9df0243496dcf236662bd1a9ce98007a64ec5d15bc77d256a97ba"
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_outpost_4_chi.xml",
+      "family": "tower_unit",
+      "pbg_id": "1073741997",
+      "replacement": "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_4_chi.xml",
+      "sha256": "7b9e031f3ced2b228adcd1d1e169dd4014bc8d62f9c68bbff139373493dff106"
+    },
+    {
+      "path": "assets/attrib/instances/upgrade/vietnam/v2_probe_textiles.xml",
+      "family": "probe",
+      "pbg_id": "1073741829",
+      "replacement": null,
+      "sha256": "ab4b1a7d1e008bc46f9764de13e276a41d1368e8613c103f897e809dafbae1f6"
+    },
+    {
+      "path": "tools/add_squad_precache.py",
+      "family": "retired_one_shot_tool",
+      "pbg_id": null,
+      "replacement": null,
+      "sha256": "f8422a7a4119f7ed1d647aa094587114e4f7e5dd0ad5a9b5363baab83a26cb91"
+    },
+    {
+      "path": "tools/allocate_list_identity.ps1",
+      "family": "retired_one_shot_tool",
+      "pbg_id": null,
+      "replacement": null,
+      "sha256": "b4485ed325b400b8b84a63ec9b96aa791a16b40276f0c39fdc341cf0bb7d7242"
+    },
+    {
+      "path": "tools/allocate_migration_identity.ps1",
+      "family": "retired_one_shot_tool",
+      "pbg_id": null,
+      "replacement": null,
+      "sha256": "5d23a1594078fc4a1e873bd48461b7b133d622d328899b0f899fd50992992994"
+    },
+    {
+      "path": "tools/connect_civilization.py",
+      "family": "retired_one_shot_tool",
+      "pbg_id": null,
+      "replacement": null,
+      "sha256": "6a8874f95416f937e8a153d1286c96430bac6fef70671db413f5bc6b70bfb7f7"
+    },
+    {
+      "path": "tools/editor_identity.ps1",
+      "family": "retired_one_shot_tool",
+      "pbg_id": null,
+      "replacement": null,
+      "sha256": "1912075ca500ed0a6f8bb389aab06859d41efaf6ccaa9fe90455ddb813f1e90c"
+    },
+    {
+      "path": "tools/generate_foundation.py",
+      "family": "retired_one_shot_tool",
+      "pbg_id": null,
+      "replacement": null,
+      "sha256": "1131e7ae04223e0f5193f549537afc17edd8214ca7e5cc8d0f0181f18257de9b"
+    },
+    {
+      "path": "tools/migrate_civilization.py",
+      "family": "retired_one_shot_tool",
+      "pbg_id": null,
+      "replacement": null,
+      "sha256": "1ebd0430add60e733a5b11fb397a8ba0be8539bd7007bb9865d4fdad242f9727"
+    },
+    {
+      "path": "tools/replace_legacy_issue_list.py",
+      "family": "retired_one_shot_tool",
+      "pbg_id": null,
+      "replacement": null,
+      "sha256": "13274a6862f3e766f6e3a4a693e4179ff0464d98e0f052b15b31218e079420ac"
+    },
+    {
+      "path": "tools/update_description_text.py",
+      "family": "retired_one_shot_tool",
+      "pbg_id": null,
+      "replacement": null,
+      "sha256": "45cdf155330cdd9b3905c1e77f86c5b70fbdf6ef9503d9403e01074bdc12cc7f"
+    },
+    {
+      "path": "assets/scar/vietnam/catalog.scar",
+      "family": "unused_catalog",
+      "pbg_id": null,
+      "replacement": null,
+      "sha256": "5ff5af48fd625b0d4a68fc036e6fdcf06bf87a132a40c83ff2ce7b74378e9db9"
+    }
+  ],
+  "source_edits": [
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml",
+      "before_sha256": "f92b92268c88e46d4f3294997a45d230277b6864072f45a298010c4137cc504d",
+      "after_sha256": "bdefc514c52434b9b2bfadb163d64fcdad227e72a7175c3d94b7c6694e7feac6",
+      "actions": [
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073757075",
+          "replacement": "sbps\\vietnam\\vn_unit_archer_2_vit"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073757076",
+          "replacement": "sbps\\vietnam\\vn_unit_archer_3_vit"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073757077",
+          "replacement": "sbps\\vietnam\\vn_unit_archer_4_vit"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073757078",
+          "replacement": "sbps\\vietnam\\vn_unit_crossbowman_3_chi"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073757079",
+          "replacement": "sbps\\vietnam\\vn_unit_crossbowman_4_chi"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073757080",
+          "replacement": "sbps\\vietnam\\vn_unit_handcannon_4_chi"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073757082",
+          "replacement": "sbps\\vietnam\\vn_unit_handcannon_4_chi_cheap"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073757108",
+          "replacement": "sbps\\vietnam\\vn_unit_archer_2_vit"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073757109",
+          "replacement": "sbps\\vietnam\\vn_unit_archer_3_vit"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073757110",
+          "replacement": "sbps\\vietnam\\vn_unit_archer_4_vit"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073757111",
+          "replacement": "sbps\\vietnam\\vn_unit_crossbowman_3_chi"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073757112",
+          "replacement": "sbps\\vietnam\\vn_unit_crossbowman_4_chi"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073757113",
+          "replacement": "sbps\\vietnam\\vn_unit_handcannon_4_chi"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073757115",
+          "replacement": "sbps\\vietnam\\vn_unit_handcannon_4_chi_cheap"
+        }
+      ]
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml",
+      "before_sha256": "e0b692cd37bc41f8beb0441d6fa70d03120e06da215293635da1d63a7bc6be10",
+      "after_sha256": "eec2630fb72db8c9e535fa461c3de345c71b22e7e133ba12ac583b0d87fa3e63",
+      "actions": [
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073758054",
+          "replacement": "sbps\\vietnam\\vn_unit_archer_2_vit"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073758055",
+          "replacement": "sbps\\vietnam\\vn_unit_archer_3_vit"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073758056",
+          "replacement": "sbps\\vietnam\\vn_unit_archer_4_vit"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073758057",
+          "replacement": "sbps\\vietnam\\vn_unit_crossbowman_3_chi"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073758058",
+          "replacement": "sbps\\vietnam\\vn_unit_crossbowman_4_chi"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073758059",
+          "replacement": "sbps\\vietnam\\vn_unit_handcannon_4_chi"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073758061",
+          "replacement": "sbps\\vietnam\\vn_unit_handcannon_4_chi_cheap"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073758244",
+          "replacement": "sbps\\vietnam\\vn_unit_archer_2_vit"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073758245",
+          "replacement": "sbps\\vietnam\\vn_unit_archer_3_vit"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073758246",
+          "replacement": "sbps\\vietnam\\vn_unit_archer_4_vit"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073758247",
+          "replacement": "sbps\\vietnam\\vn_unit_crossbowman_3_chi"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073758248",
+          "replacement": "sbps\\vietnam\\vn_unit_crossbowman_4_chi"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073758249",
+          "replacement": "sbps\\vietnam\\vn_unit_handcannon_4_chi"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073758251",
+          "replacement": "sbps\\vietnam\\vn_unit_handcannon_4_chi_cheap"
+        }
+      ]
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_trung_foundaries_vit.xml",
+      "before_sha256": "ac0ab1e133a4d888fb1a302daf2e782abe4cdcc73ee9dd4cad171d308a34ad67",
+      "after_sha256": "cc9847a582eae5490e0e4f0cbe9c3571370696bd03702e2d4f009c3fb6c548d4",
+      "actions": [
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073756825",
+          "replacement": "sbps\\vietnam\\vn_unit_handcannon_4_chi_cheap"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073756850",
+          "replacement": "sbps\\vietnam\\vn_unit_handcannon_4_chi_cheap"
+        }
+      ]
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml",
+      "before_sha256": "4fa7450047de498737206343f5bdfbafe8df6b56055ffd245466bc734f0cddaa",
+      "after_sha256": "8d8f8cfbc3d74f0c96572e1f7f6b6fa9616ebac632eee4e9a224fdae73ba674f",
+      "actions": [
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073759140",
+          "replacement": "sbps\\vietnam\\vn_unit_archer_2_vit"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073759141",
+          "replacement": "sbps\\vietnam\\vn_unit_archer_3_vit"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073759142",
+          "replacement": "sbps\\vietnam\\vn_unit_archer_4_vit"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073759143",
+          "replacement": "sbps\\vietnam\\vn_unit_crossbowman_3_chi"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073759144",
+          "replacement": "sbps\\vietnam\\vn_unit_crossbowman_4_chi"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073759145",
+          "replacement": "sbps\\vietnam\\vn_unit_handcannon_4_chi"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073759147",
+          "replacement": "sbps\\vietnam\\vn_unit_handcannon_4_chi_cheap"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073759184",
+          "replacement": "sbps\\vietnam\\vn_unit_archer_2_vit"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073759185",
+          "replacement": "sbps\\vietnam\\vn_unit_archer_3_vit"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073759186",
+          "replacement": "sbps\\vietnam\\vn_unit_archer_4_vit"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073759187",
+          "replacement": "sbps\\vietnam\\vn_unit_crossbowman_3_chi"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073759188",
+          "replacement": "sbps\\vietnam\\vn_unit_crossbowman_4_chi"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073759189",
+          "replacement": "sbps\\vietnam\\vn_unit_handcannon_4_chi"
+        },
+        {
+          "action": "remove_duplicate_spawn_item",
+          "item_id": "1073759191",
+          "replacement": "sbps\\vietnam\\vn_unit_handcannon_4_chi_cheap"
+        }
+      ]
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_2_vit.xml",
+      "before_sha256": "1f847c3af836a9f665171de85bd9aee428db08487b669c019d79369ffda08e71",
+      "after_sha256": "f0f6fe4f434eab264ba990aff235ae40fdde58e53f31a19aed826de5fc7a46c7",
+      "actions": [
+        {
+          "action": "remove_armor_only_tier_group",
+          "item_id": "1073759423"
+        },
+        {
+          "action": "remove_armor_only_tier_group",
+          "item_id": "1073759439"
+        }
+      ]
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_3_vit.xml",
+      "before_sha256": "9d9fe9584faf9f75e4e511231cec724df231e6fae786c5b2a73e918b8aa7088a",
+      "after_sha256": "c7c8e63956f479769458f5f4502440195dc2e0379a445ef0027b1f47be7bdc08",
+      "actions": [
+        {
+          "action": "remove_armor_only_tier_group",
+          "item_id": "1073759472"
+        },
+        {
+          "action": "remove_armor_only_tier_group",
+          "item_id": "1073759487"
+        }
+      ]
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_archer_4_vit.xml",
+      "before_sha256": "5c0c6b7cf8d1a3bfdbbb20526b8e07ae17fcd1b22fd5327d639cdda4e7116373",
+      "after_sha256": "030f0b4ae889ffea0437808480d57e31748b5eeb8a17e1d9e8ccda5b429227d5",
+      "actions": [
+        {
+          "action": "remove_armor_only_tier_group",
+          "item_id": "1073759517"
+        },
+        {
+          "action": "remove_armor_only_tier_group",
+          "item_id": "1073759531"
+        }
+      ]
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_crossbowman_3_chi.xml",
+      "before_sha256": "c1524ff46bb782bd3d038b5d025bb289d5940aff87ca7785d7d322f123baaded",
+      "after_sha256": "5c1772e4610f0851e8fe96f6c62f0f8f85ec535f9185086369b4cd0a8312054c",
+      "actions": [
+        {
+          "action": "remove_armor_only_tier_group",
+          "item_id": "1073759926"
+        },
+        {
+          "action": "remove_armor_only_tier_group",
+          "item_id": "1073759938"
+        }
+      ]
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_crossbowman_4_chi.xml",
+      "before_sha256": "c7a356b6fce30faaefda84e905bce4367cf2b0463c17e9c42470904a9f9e283d",
+      "after_sha256": "9c51b28ed4feffb5ff228c7f5b865785ed61cf4f64b8b9fa7d5ff9db13c134c2",
+      "actions": [
+        {
+          "action": "remove_armor_only_tier_group",
+          "item_id": "1073759967"
+        },
+        {
+          "action": "remove_armor_only_tier_group",
+          "item_id": "1073759979"
+        }
+      ]
+    },
+    {
+      "path": "assets/attrib/instances/ebps/vietnam/vn_unit_handcannon_4_chi.xml",
+      "before_sha256": "e5a3f7f61de134518606b687097048826352fa0f38e57d2dca8dcb3db5bea749",
+      "after_sha256": "c6bde716a2ffbe927e7d02abdafbf782f68f67a633630e75cce03d38bd2b0a4c",
+      "actions": [
+        "Remove only the two Rattan-dependent tiers; preserve the default and campaign baseline tiers with their original attachments, initialization and list identities."
+      ]
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_2_vit.xml",
+      "before_sha256": "277bb45c8d5a8a3bb3080aca59096fbe8ea9346d05f13f0454c7c69856e4d31c",
+      "after_sha256": "17feaf02c5e9b64c2d6b473d0266ddd7a5ddca4f17ab48f10562a07db2678c11",
+      "actions": [
+        {
+          "action": "remove_rattan_production_gate",
+          "item_id": "1073760808"
+        },
+        {
+          "action": "remove_rattan_production_gate",
+          "item_id": "1073760821"
+        }
+      ]
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_3_vit.xml",
+      "before_sha256": "0c1cf50d084d358488f35dd304b099899a40d289d5837107a72a89cfab317756",
+      "after_sha256": "a933e346212241ab2a9adf5ad91d055caf0ce504bd49fcc6ac7bc6d8a22a48ab",
+      "actions": [
+        {
+          "action": "remove_rattan_production_gate",
+          "item_id": "1073760856"
+        },
+        {
+          "action": "remove_rattan_production_gate",
+          "item_id": "1073760869"
+        }
+      ]
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_archer_4_vit.xml",
+      "before_sha256": "c6c2484356d9fe1af59776b2a0f4b4f599e08233b9d69f68ccb5f234f02ad132",
+      "after_sha256": "d227adf74ae5554826e43cc1319699cad5a0711f5e225bdaeec3112901735300",
+      "actions": [
+        {
+          "action": "remove_rattan_production_gate",
+          "item_id": "1073760906"
+        },
+        {
+          "action": "remove_rattan_production_gate",
+          "item_id": "1073760919"
+        }
+      ]
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_3_chi.xml",
+      "before_sha256": "3c35d67652b8e62de65501a128303a792348c5060f79b5986ee3f223e7bef4cb",
+      "after_sha256": "0c83ad357d4361e336b70b8b85e922032e5dd2b81df89edaa778b0a29ca58c05",
+      "actions": [
+        {
+          "action": "remove_rattan_production_gate",
+          "item_id": "1073761595"
+        },
+        {
+          "action": "remove_rattan_production_gate",
+          "item_id": "1073761607"
+        }
+      ]
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_4_chi.xml",
+      "before_sha256": "7e0bed3201d67ae5b402ff1df980899df8b517e2e823d825ee81f8c377e00a18",
+      "after_sha256": "24028ea023a47292db66aee5defde17f61db126a775d33cdf9a090f73203c101",
+      "actions": [
+        {
+          "action": "remove_rattan_production_gate",
+          "item_id": "1073761641"
+        },
+        {
+          "action": "remove_rattan_production_gate",
+          "item_id": "1073761653"
+        }
+      ]
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_4_chi.xml",
+      "before_sha256": "a82400ea6e68a31d3e0988115c830b016e9f36eda59123963a9c0b687a0c8405",
+      "after_sha256": "7adb1ea4e79acc76ff44b78afeb676814588816c98c413dd36855f50d4c91b17",
+      "actions": [
+        {
+          "action": "remove_rattan_production_gate",
+          "item_id": "1073761693"
+        }
+      ]
+    },
+    {
+      "path": "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_4_chi_cheap.xml",
+      "before_sha256": "2e5a7aaa1830dd1afb119742e42b852b40c8db9369e8d7f1857b069496dec794",
+      "after_sha256": "76498283d596ee39ef27110b9be2bf88709685901a281c416c72996f17365d94",
+      "actions": [
+        {
+          "action": "remove_rattan_production_gate",
+          "item_id": "1073761723"
+        }
+      ]
+    },
+    {
+      "path": "assets/scar/winconditions/VietnamMode.rdo",
+      "before_sha256": "2f8bd5c94e665ed753396d7dc3efb4a97d38b1799a2e67df70a71e3248a22b76",
+      "after_sha256": "20717149d7bae7b09bd74877164bc4955f2def53554dbe1f5be5f637254c70c8",
+      "action": "remove_only_retired_private_precache_entries",
+      "entries": 61
+    },
+    {
+      "path": "assets/scar/winconditions/VietnamMode.scar",
+      "before_sha256": "78ca87479fce7278ad38b6b8df361d439b754f6d562d9023d2d9fd721c416082",
+      "after_sha256": "0d0d09dfc3113d7cd5eb215ac5cce18358a888280becde351808548611d1efd8",
+      "action": "remove_unused_catalog_import"
+    },
+    {
+      "path": "assets/scar/vietnam/prematch_precache.scar",
+      "before_sha256": "aef0cbab5804da5dca83d40d3e59aef70c57e51c904ec658f8ed26cfae4ddb40",
+      "after_sha256": "e0af693169cec810ce6b4eef9448e4c09c7b861b4b14b07d0c7690c8f68cd31e",
+      "action": "regenerated_from_cleaned_rdo"
+    }
+  ],
+  "removed_precache": [
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:v2_probe_archer",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400067",
+        "12379813733990400068"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:v2_probe_range",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400069",
+        "12379813733990400070"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:v2_probe_town_center",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400071",
+        "12379813733990400072"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:v2_probe_villager",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400073",
+        "12379813733990400074"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_2_ratten",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400283",
+        "12379813733990400284"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_3_ratten",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400287",
+        "12379813733990400288"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_4_ratten",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400291",
+        "12379813733990400292"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_outpost_2_chi",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400295",
+        "12379813733990400296"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_outpost_2_chi_ratten",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400297",
+        "12379813733990400298"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_outpost_3_chi",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400299",
+        "12379813733990400300"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_outpost_3_chi_ratten",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400301",
+        "12379813733990400302"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_outpost_4_chi",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400303",
+        "12379813733990400304"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_outpost_4_chi_ratten",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400305",
+        "12379813733990400306"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_crossbowman_3_chi_ratten",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400309",
+        "12379813733990400310"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_crossbowman_4_chi_ratten",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400313",
+        "12379813733990400314"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_crossbowman_outpost_3_chi",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400315",
+        "12379813733990400316"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_crossbowman_outpost_3_chi_ratten",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400317",
+        "12379813733990400318"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_crossbowman_outpost_4_chi",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400319",
+        "12379813733990400320"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_crossbowman_outpost_4_chi_ratten",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400321",
+        "12379813733990400322"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_handcannon_4_chi_ratten",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400325",
+        "12379813733990400326"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_handcannon_outpost_4_chi",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400327",
+        "12379813733990400328"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_handcannon_outpost_4_chi_ratten",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400329",
+        "12379813733990400330"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_fire_outpost_1_chi",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400371",
+        "12379813733990400372"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_fire_outpost_2_chi",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400373",
+        "12379813733990400374"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_fire_outpost_3_chi",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400375",
+        "12379813733990400376"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_fire_outpost_4_chi",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400377",
+        "12379813733990400378"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_outpost_1_chi",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400379",
+        "12379813733990400380"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_outpost_2_chi",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400381",
+        "12379813733990400382"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_outpost_3_chi",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400383",
+        "12379813733990400384"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_outpost_4_chi",
+      "type": "EntityPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990400385",
+        "12379813733990400386"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_2_ratten",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401605",
+        "12379813733990401606"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_3_ratten",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401611",
+        "12379813733990401612"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_4_ratten",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401617",
+        "12379813733990401618"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_outpost_2_chi",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401621",
+        "12379813733990401622"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_outpost_2_chi_ratten",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401623",
+        "12379813733990401624"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_outpost_3_chi",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401625",
+        "12379813733990401626"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_outpost_3_chi_ratten",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401627",
+        "12379813733990401628"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_outpost_4_chi",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401629",
+        "12379813733990401630"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_outpost_4_chi_ratten",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401631",
+        "12379813733990401632"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_crossbowman_3_chi_ratten",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401639",
+        "12379813733990401640"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_crossbowman_4_chi_ratten",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401643",
+        "12379813733990401644"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_crossbowman_outpost_3_chi",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401645",
+        "12379813733990401646"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_crossbowman_outpost_3_chi_ratten",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401647",
+        "12379813733990401648"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_crossbowman_outpost_4_chi",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401649",
+        "12379813733990401650"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_crossbowman_outpost_4_chi_ratten",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401651",
+        "12379813733990401652"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_handcannon_4_chi_ratten",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401661",
+        "12379813733990401662"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_handcannon_4_chi_ratten_cheap",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401663",
+        "12379813733990401664"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_handcannon_outpost_4_chi",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401665",
+        "12379813733990401666"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_handcannon_outpost_4_chi_cheap",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401667",
+        "12379813733990401668"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_handcannon_outpost_4_chi_ratten",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401669",
+        "12379813733990401670"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_handcannon_outpost_4_chi_ratten_cheap",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401671",
+        "12379813733990401672"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_fire_outpost_1_chi",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401717",
+        "12379813733990401718"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_fire_outpost_2_chi",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401719",
+        "12379813733990401720"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_fire_outpost_3_chi",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401721",
+        "12379813733990401722"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_fire_outpost_4_chi",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401723",
+        "12379813733990401724"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_outpost_1_chi",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401725",
+        "12379813733990401726"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_outpost_2_chi",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401727",
+        "12379813733990401728"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_outpost_3_chi",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401729",
+        "12379813733990401730"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_outpost_4_chi",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401731",
+        "12379813733990401732"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:v2_probe_archer_squad",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401747",
+        "12379813733990401748"
+      ]
+    },
+    {
+      "name": "a743d7d1d7534cf78817e29d8ded7366:v2_probe_villager_squad",
+      "type": "SquadPrecacheItem",
+      "removed_object_ids": [
+        "12379813733990401749",
+        "12379813733990401750"
+      ]
+    }
+  ],
+  "validation": "No tests, editor build, or native match executed.",
+  "preserved_age_progression": {
+    "assets/attrib/instances/ebps/vietnam/vn_building_house_control_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_building_house_control_faster_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_building_house_mon.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_building_tech_unit_infantry_control_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_building_town_center_2_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\vietnam\\vn_upgrade_age4_upgrade_vit",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_building_town_center_2_chi",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\vietnam\\vn_upgrade_age4_upgrade_vit",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_building_town_center_2_chi",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_2_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_building_town_center_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_building_unit_cavalry_control_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_archer_2_vit.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_archer_3",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_archer_3_vit",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_archer_3_vit"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_archer_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_archer_4_vit",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_archer_4_vit"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_archer_3",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_archer_3_vit",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_archer_3_vit"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_archer_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_archer_4_vit",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_archer_4_vit"
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_archer_3_vit.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_archer_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_archer_4_vit",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_archer_4_vit"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_archer_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_archer_4_vit",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_archer_4_vit"
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_crossbowman_3_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_crossbowman_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_crossbowman_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_crossbowman_4_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_crossbowman_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_crossbowman_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_crossbowman_4_chi"
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_horseman_2_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_horseman_3",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_horseman_3_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_horseman_3_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_horseman_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_horseman_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_horseman_4_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_horseman_3",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_horseman_3_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_horseman_3_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_horseman_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_horseman_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_horseman_4_chi"
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_horseman_3_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_horseman_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_horseman_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_horseman_4_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_horseman_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_horseman_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_horseman_4_chi"
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_knight_3_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_knight_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_knight_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_knight_4_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_knight_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_knight_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_knight_4_chi"
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_manatarms_3_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\vietnam\\vn_upgrade_unit_manatarms_4_chi",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_manatarms_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_manatarms_4_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\vietnam\\vn_upgrade_unit_manatarms_4_chi",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_manatarms_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_manatarms_4_chi"
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_manatarms_3_mon_for_vit.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\vietnam\\vn_upgrade_unit_manatarms_4_chi",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_manatarms_4_mon_for_vit",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_manatarms_4_mon_for_vit"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\vietnam\\vn_upgrade_unit_manatarms_4_chi",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_manatarms_4_mon_for_vit",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_manatarms_4_mon_for_vit"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\vietnam\\vn_upgrade_unit_manatarms_4_chi",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_manatarms_4_mon_for_vit",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_manatarms_4_mon_for_vit"
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_monk_3_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_official_1_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_scout_1_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_1_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_2",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_2_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_2_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_3",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_3_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_3_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_4_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\vietnam\\vn_upgrade_spearman_firelance_vit",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_fire_1_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_fire_1_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_2",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_2_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_2_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_3",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_3_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_3_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_4_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\vietnam\\vn_upgrade_spearman_firelance_vit",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_fire_1_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_fire_1_chi"
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_2_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_3",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_3_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_3_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_4_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\vietnam\\vn_upgrade_spearman_firelance_vit",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_fire_2_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_fire_2_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_3",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_3_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_3_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_4_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\vietnam\\vn_upgrade_spearman_firelance_vit",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_fire_2_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_fire_2_chi"
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_3_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_4_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\vietnam\\vn_upgrade_spearman_firelance_vit",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_fire_3_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_fire_3_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_4_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\vietnam\\vn_upgrade_spearman_firelance_vit",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_fire_3_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_fire_3_chi"
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_4_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\vietnam\\vn_upgrade_spearman_firelance_vit",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_fire_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_fire_4_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\vietnam\\vn_upgrade_spearman_firelance_vit",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_fire_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_fire_4_chi"
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_fire_1_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_2",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_fire_2_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_fire_2_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_3",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_fire_3_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_fire_3_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_fire_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_fire_4_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_2",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_fire_2_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_fire_2_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_3",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_fire_3_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_fire_3_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_fire_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_fire_4_chi"
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_fire_2_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_3",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_fire_3_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_fire_3_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_fire_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_fire_4_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_3",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_fire_3_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_fire_3_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_fire_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_fire_4_chi"
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_fire_3_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_fire_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_fire_4_chi"
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\common\\units\\upgrade_unit_spearman_4",
+        "statetree_tier_pgb_upgrade_target_entity": "ebps\\vietnam\\vn_unit_spearman_fire_4_chi",
+        "statetree_tier_pgb_upgrade_target_squad": "sbps\\vietnam\\vn_unit_spearman_fire_4_chi"
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_villager_1_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_villager_3_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_villager_bambo_chi.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\feudal_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\castle_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      },
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\dev\\ages\\imperial_age",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_war_elephant_handcannon_4_vit.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\sultanate\\research\\upgrade_landmark_siege_elephant_sul",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      }
+    ],
+    "assets/attrib/instances/ebps/vietnam/vn_unit_war_elephant_handcannon_4_vit_free.xml": [
+      {
+        "statetree_tier_requirements_pbg": "upgrade\\races\\sultanate\\research\\upgrade_landmark_siege_elephant_sul",
+        "statetree_tier_pgb_upgrade_target_entity": "",
+        "statetree_tier_pgb_upgrade_target_squad": ""
+      }
+    ]
+  },
+  "surviving_pbg_ids": {
+    "assets/attrib/instances/abilities/vietnam/vn_activate_stealth_for_archer.xml": "1073741836",
+    "assets/attrib/instances/abilities/vietnam/vn_activate_stealth_forvills_vit.xml": "1073741837",
+    "assets/attrib/instances/abilities/vietnam/vn_activate_stealth_vit.xml": "1073741838",
+    "assets/attrib/instances/abilities/vietnam/vn_building_granary_aura_chi.xml": "1073741839",
+    "assets/attrib/instances/abilities/vietnam/vn_core_pc_auto_train_elephant.xml": "1073741853",
+    "assets/attrib/instances/abilities/vietnam/vn_core_xbox_auto_train_villager_test.xml": "1073741854",
+    "assets/attrib/instances/abilities/vietnam/vn_elephant_helper_vit.xml": "1073741831",
+    "assets/attrib/instances/abilities/vietnam/vn_elephant_supervise_building_self_vit.xml": "1073741850",
+    "assets/attrib/instances/abilities/vietnam/vn_elephant_worker_boost.xml": "1073741832",
+    "assets/attrib/instances/abilities/vietnam/vn_fireship_self_detonate_trap.xml": "1073741851",
+    "assets/attrib/instances/abilities/vietnam/vn_general_aura_combat_vit.xml": "1073741840",
+    "assets/attrib/instances/abilities/vietnam/vn_house_aura_cavalry_vit.xml": "1073741833",
+    "assets/attrib/instances/abilities/vietnam/vn_house_aura_melee_vit.xml": "1073741834",
+    "assets/attrib/instances/abilities/vietnam/vn_house_aura_range_vit.xml": "1073741835",
+    "assets/attrib/instances/abilities/vietnam/vn_infantry_speed_vit.xml": "1073741841",
+    "assets/attrib/instances/abilities/vietnam/vn_monastery_create_relic_vit.xml": "1073741852",
+    "assets/attrib/instances/abilities/vietnam/vn_official_auto_collect_tax_chi.xml": "1073741842",
+    "assets/attrib/instances/abilities/vietnam/vn_official_auto_collect_tax_toggle_chi.xml": "1073741843",
+    "assets/attrib/instances/abilities/vietnam/vn_official_auto_collect_tax_toggle_vit.xml": "1073741844",
+    "assets/attrib/instances/abilities/vietnam/vn_official_auto_collect_tax_vit.xml": "1073741845",
+    "assets/attrib/instances/abilities/vietnam/vn_official_collect_tax_target_auto_vit.xml": "1073741846",
+    "assets/attrib/instances/abilities/vietnam/vn_official_collect_tax_target_vit.xml": "1073741847",
+    "assets/attrib/instances/abilities/vietnam/vn_stealth_outpost_aura_vitt.xml": "1073741848",
+    "assets/attrib/instances/abilities/vietnam/vn_vietnam_unit_mov_vit.xml": "1073741849",
+    "assets/attrib/instances/army/vietnam/vn_normal_chinese.xml": "1073741857",
+    "assets/attrib/instances/ebps/vietnam/vn_acacia_med_wild_stealth_vit.xml": "1073741859",
+    "assets/attrib/instances/ebps/vietnam/vn_building_bambo_outpost_chi.xml": "1073741873",
+    "assets/attrib/instances/ebps/vietnam/vn_building_defense_keep_2_chi.xml": "1073741869",
+    "assets/attrib/instances/ebps/vietnam/vn_building_defense_keep_chi.xml": "1073741870",
+    "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_2_chi.xml": "1073741871",
+    "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_bambo_chi.xml": "1073741874",
+    "assets/attrib/instances/ebps/vietnam/vn_building_defense_outpost_chi.xml": "1073741872",
+    "assets/attrib/instances/ebps/vietnam/vn_building_dynasty_granary_control_chi.xml": "1073741875",
+    "assets/attrib/instances/ebps/vietnam/vn_building_dynasty_granary_control_chi2.xml": "1073741876",
+    "assets/attrib/instances/ebps/vietnam/vn_building_dynasty_pagoda_control_vit.xml": "1073741877",
+    "assets/attrib/instances/ebps/vietnam/vn_building_econ_food_control_chi.xml": "1073741878",
+    "assets/attrib/instances/ebps/vietnam/vn_building_econ_wood_control_chi.xml": "1073741879",
+    "assets/attrib/instances/ebps/vietnam/vn_building_house_control_chi.xml": "1073741880",
+    "assets/attrib/instances/ebps/vietnam/vn_building_house_control_faster_chi.xml": "1073741881",
+    "assets/attrib/instances/ebps/vietnam/vn_building_house_mon.xml": "1073741975",
+    "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_gatehouse_control_chi.xml": "1073741882",
+    "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_headquarters_control_chi.xml": "1073741883",
+    "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age1_vit_one_pilar_pagoda.xml": "1073741884",
+    "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age2_headquarter_vit.xml": "1073741863",
+    "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age2_imperrial_citadel_vit.xml": "1073741864",
+    "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age2_minh_pagoda_control_vit.xml": "1073741865",
+    "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_imperial_garden_vit.xml": "1073741866",
+    "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_new_imperial_garden.xml": "1073741868",
+    "assets/attrib/instances/ebps/vietnam/vn_building_landmark_age3_trung_foundaries_vit.xml": "1073741867",
+    "assets/attrib/instances/ebps/vietnam/vn_building_resource_farm2_chi.xml": "1073741885",
+    "assets/attrib/instances/ebps/vietnam/vn_building_resource_farm_chi.xml": "1073741886",
+    "assets/attrib/instances/ebps/vietnam/vn_building_tech_unit_infantry_control_chi.xml": "1073741887",
+    "assets/attrib/instances/ebps/vietnam/vn_building_tech_university_control_chi.xml": "1073741888",
+    "assets/attrib/instances/ebps/vietnam/vn_building_town_center_2_chi.xml": "1073741889",
+    "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_2_chi.xml": "1073741890",
+    "assets/attrib/instances/ebps/vietnam/vn_building_town_center_capital_chi.xml": "1073741891",
+    "assets/attrib/instances/ebps/vietnam/vn_building_town_center_chi.xml": "1073741892",
+    "assets/attrib/instances/ebps/vietnam/vn_building_unit_cavalry_control_chi.xml": "1073741893",
+    "assets/attrib/instances/ebps/vietnam/vn_building_unit_infantry_control_chi.xml": "1073741894",
+    "assets/attrib/instances/ebps/vietnam/vn_building_unit_ranged_control_chi.xml": "1073741895",
+    "assets/attrib/instances/ebps/vietnam/vn_building_unit_siege_control_chi.xml": "1073741896",
+    "assets/attrib/instances/ebps/vietnam/vn_building_wonder_age4_forbidden_control_chi.xml": "1073741897",
+    "assets/attrib/instances/ebps/vietnam/vn_cherry_young_stealth_vit.xml": "1073741860",
+    "assets/attrib/instances/ebps/vietnam/vn_projectile_trap.xml": "1073741862",
+    "assets/attrib/instances/ebps/vietnam/vn_stealth_tree_vit.xml": "1073741861",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_archer_2_vit.xml": "1073741902",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_archer_3_vit.xml": "1073741904",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_archer_4_vit.xml": "1073741906",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_crossbowman_3_chi.xml": "1073741927",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_crossbowman_4_chi.xml": "1073741929",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_handcannon_4_chi.xml": "1073741931",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_horseman_2_chi.xml": "1073741933",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_horseman_3_chi.xml": "1073741934",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_horseman_4_chi.xml": "1073741935",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_knight_3_chi.xml": "1073741936",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_knight_4_chi.xml": "1073741937",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_manatarms_3_chi.xml": "1073741938",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_manatarms_3_mon_for_vit.xml": "1073741939",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_manatarms_4_chi.xml": "1073741940",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_manatarms_4_mon_for_vit.xml": "1073741941",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_monk_3_chi.xml": "1073741942",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_official_1_chi.xml": "1073741943",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_scout_1_chi.xml": "1073741944",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_1_chi.xml": "1073741945",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_2_chi.xml": "1073741946",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_3_chi.xml": "1073741947",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_4_chi.xml": "1073741948",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_fire_1_chi.xml": "1073741949",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_fire_2_chi.xml": "1073741950",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_fire_3_chi.xml": "1073741951",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_spearman_fire_4_chi.xml": "1073741952",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_trade_cart_chi.xml": "1073741953",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_villager_1_chi.xml": "1073741954",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_villager_3_chi.xml": "1073741955",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_villager_bambo_chi.xml": "1073741956",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_war_elephant_1_vit.xml": "1073741957",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_war_elephant_2_vit.xml": "1073741958",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_war_elephant_handcannon_4_vit.xml": "1073741898",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_war_elephant_handcannon_4_vit_free.xml": "1073741899",
+    "assets/attrib/instances/ebps/vietnam/vn_unit_war_elephant_tower_handcannoneer_4_vit.xml": "1073741900",
+    "assets/attrib/instances/ebps/vietnam/vn_wpn_range_barbican_handcannon_chi.xml": "1073741962",
+    "assets/attrib/instances/ebps/vietnam/vn_wpn_range_garrison_keep_arrows_garrison_vit.xml": "1073741963",
+    "assets/attrib/instances/ebps/vietnam/vn_wpn_range_keep_arrows_garrison_new_vit.xml": "1073741959",
+    "assets/attrib/instances/ebps/vietnam/vn_wpn_range_keep_arrows_garrison_vit.xml": "1073741964",
+    "assets/attrib/instances/ebps/vietnam/vn_wpn_range_keep_handcannon_vit.xml": "1073741965",
+    "assets/attrib/instances/ebps/vietnam/vn_wpn_range_landmarktc_arrows_garrison_vit.xml": "1073741966",
+    "assets/attrib/instances/ebps/vietnam/vn_wpn_range_outpost_arrows_garrison_vit.xml": "1073741967",
+    "assets/attrib/instances/ebps/vietnam/vn_wpn_range_outpost_arrows_garrison_vit_landmark.xml": "1073741968",
+    "assets/attrib/instances/ebps/vietnam/vn_wpn_range_tc_main_arrows_garrison_vit.xml": "1073741969",
+    "assets/attrib/instances/ebps/vietnam/vn_wpn_range_tcandkeep_arrows_garrison_vit.xml": "1073741970",
+    "assets/attrib/instances/ebps/vietnam/vn_wpn_range_town_center_arrows_garrison_for_vietnam.xml": "1073741960",
+    "assets/attrib/instances/ebps/vietnam/vn_wpn_range_town_center_arrows_garrison_vietnam.xml": "1073741961",
+    "assets/attrib/instances/ebps/vietnam/vn_wpn_siege_outpost_handcannon_alarrm_chi.xml": "1073741971",
+    "assets/attrib/instances/ebps/vietnam/vn_wpn_siege_outpost_handcannon_chi.xml": "1073741972",
+    "assets/attrib/instances/ebps/vietnam/vn_wpn_siege_outpost_handcannon_new_chi.xml": "1073741973",
+    "assets/attrib/instances/ebps/vietnam/vn_wpn_siege_outpost_handcannon_slit_chi.xml": "1073741974",
+    "assets/attrib/instances/menu/vietnam/vn_siege_engineer_vit.xml": "1073741977",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_archer_2_chi.xml": "1073742006",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_archer_2_vit.xml": "1073741979",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_archer_3_chi.xml": "1073742007",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_archer_3_vit.xml": "1073741981",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_archer_4_chi.xml": "1073742008",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_archer_4_vit.xml": "1073741983",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_bombard_4_chi.xml": "1073742009",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_bombard_4_chi_cheap.xml": "1073742010",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_3_chi.xml": "1073742011",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_crossbowman_4_chi.xml": "1073742013",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_culverin_4_chi.xml": "1073742015",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_culverin_4_chi_cheap.xml": "1073742016",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_4_chi.xml": "1073742017",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_handcannon_4_chi_cheap.xml": "1073742018",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_horseman_2_chi.xml": "1073742021",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_horseman_3_chi.xml": "1073742022",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_horseman_4_chi.xml": "1073742023",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_knight_3_chi.xml": "1073742024",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_knight_4_chi.xml": "1073742025",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_manatarms_3_chi.xml": "1073742026",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_manatarms_3_mon_for_vit.xml": "1073742027",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_manatarms_4_chi.xml": "1073742028",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_manatarms_4_mon_for_vit.xml": "1073742029",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_mangonel_3_chi.xml": "1073742030",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_monk_3_chi.xml": "1073742031",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_official_1_chi.xml": "1073742032",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_ribauldequin_4_chi.xml": "1073742033",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_scout_1_chi.xml": "1073742034",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_1_chi.xml": "1073742035",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_2_chi.xml": "1073742036",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_3_chi.xml": "1073742037",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_4_chi.xml": "1073742038",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_1_chi.xml": "1073742039",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_2_chi.xml": "1073742040",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_3_chi.xml": "1073742041",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_spearman_fire_4_chi.xml": "1073742042",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_villager_1_chi.xml": "1073742043",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_villager_3_chi.xml": "1073742044",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_villager_bambo_chi.xml": "1073742045",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_war_elephant_1_vit.xml": "1073742046",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_war_elephant_2_vit.xml": "1073742047",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_war_elephant_handcannon_4_vit.xml": "1073742048",
+    "assets/attrib/instances/sbps/vietnam/vn_unit_war_elephant_handcannon_4_vit_free.xml": "1073742049",
+    "assets/attrib/instances/upgrade/vietnam/vn_cheaper_house.xml": "1073742051",
+    "assets/attrib/instances/upgrade/vietnam/vn_construction_elephant.xml": "1073742052",
+    "assets/attrib/instances/upgrade/vietnam/vn_construction_elephant_normal.xml": "1073742053",
+    "assets/attrib/instances/upgrade/vietnam/vn_fast_elephant.xml": "1073742054",
+    "assets/attrib/instances/upgrade/vietnam/vn_overrseers_normal.xml": "1073742055",
+    "assets/attrib/instances/upgrade/vietnam/vn_overrseers_pagoda.xml": "1073742056",
+    "assets/attrib/instances/upgrade/vietnam/vn_player_dynasty0_chi.xml": "1073742050",
+    "assets/attrib/instances/upgrade/vietnam/vn_ratten_shield_vit.xml": "1073742057",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_age4_upgrade_vit.xml": "1073742060",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_age4_vit.xml": "1073742061",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_econ_resource_wood_harvest_rate_2_improved_mon.xml": "1073742085",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_econ_resource_wood_harvest_rate_2_vit.xml": "1073742070",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_econ_resource_wood_harvest_rate_3_improved_mon.xml": "1073742086",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_econ_resource_wood_harvest_rate_3_vit.xml": "1073742071",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_econ_resource_wood_harvest_rate_4_improved_mon.xml": "1073742087",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_econ_resource_wood_harvest_rate_4_vit.xml": "1073742072",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_elephant_gold_vit.xml": "1073742083",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_elephant_gold_vit_normal.xml": "1073742084",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_elephant_hp_normal_vit.xml": "1073742081",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_elephant_hp_pagoda_vit.xml": "1073742082",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_elephant_limit.xml": "1073742069",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_hideout_upgrade_vit.xml": "1073742062",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_landmark_25_gold_vit.xml": "1073742063",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_official_unlock_vit.xml": "1073742064",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_outpost_handcannonslits_chi.xml": "1073742065",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_outpost_stone_cannon_vit.xml": "1073742074",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_ranged_damage_i.xml": "1073742075",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_ranged_damage_ii.xml": "1073742076",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_ranged_damage_iii.xml": "1073742077",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_rattan_shields_vit.xml": "1073742066",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_siege_chemistry_vit.xml": "1073742078",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_siege_chemistry_vit_cheap.xml": "1073742079",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_spearman_firelance_vit.xml": "1073742067",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_tech_military_academy.xml": "1073742073",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_trap_range_vit.xml": "1073742088",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_trap_roller_trigger.xml": "1073742080",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_trap_tier1.xml": "1073742058",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_trap_tier2.xml": "1073742059",
+    "assets/attrib/instances/upgrade/vietnam/vn_upgrade_unit_manatarms_4_chi.xml": "1073742068",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_archer_2_vit.xml": "1073742116",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_archer_3_vit.xml": "1073742117",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_archer_4_vit.xml": "1073742118",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_archer_incendiary_3_vit.xml": "1073742119",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_archer_incendiary_4_vit.xml": "1073742120",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_archer_incendiary_vit.xml": "1073742121",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_archer_poisoned_2_mal.xml": "1073742103",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_barbican_handcannon_chi.xml": "1073742104",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_elephant_rocket_vit.xml": "1073742105",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_handcannon_4_vit.xml": "1073742095",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_keep_arrows_garrison_poison.xml": "1073742096",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_keep_arrows_garrison_vit.xml": "1073742106",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_keep_handcannon_vit.xml": "1073742107",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_keeps_arrows_garrison_poison.xml": "1073742097",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_landmark_tower_garrison_arrow_vit.xml": "1073742089",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_landmarktc_arrows_garrison_poison.xml": "1073742098",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_main_tc_arrows_garrison_poison.xml": "1073742099",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_naval_fireship.xml": "1073742100",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_new_handcannonslit_vit.xml": "1073742108",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_outpost_arrows_garrison_poison.xml": "1073742101",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_outpost_handcannon_bambo_alarm_chi.xml": "1073742109",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_outpost_handcannon_bambo_chi.xml": "1073742110",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_outpost_handcannon_bambo_chi_saved.xml": "1073742111",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_outpost_handcannon_bambo_chi_saved3.xml": "1073742112",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_outpost_mangonel.xml": "1073742122",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_spearwall_1_vit.xml": "1073742091",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_spearwall_2_vit.xml": "1073742092",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_spearwall_3_vit.xml": "1073742093",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_spearwall_4_vit.xml": "1073742094",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_tc_and_tower_garrison_arrow_vit.xml": "1073742090",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_tcandkeep_arrows_garrison_poison.xml": "1073742102",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_torch_vit.xml": "1073742123",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_town_center_arrows_garrison_for_vietnam.xml": "1073742124",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_war_elephant_charge_3_vit.xml": "1073742113",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_war_elephant_melee_3_vit.xml": "1073742114",
+    "assets/attrib/instances/weapon/vietnam/vn_weapon_war_elephant_ram_3_vit.xml": "1073742115"
+  },
+  "active_precache_counts": {
+    "EntityPrecacheItem": 674,
+    "SquadPrecacheItem": 43
+  },
+  "readback": {
+    "remaining_instances": 235,
+    "surviving_pbg_identities_preserved": 235,
+    "foreign_precache_entries_unchanged": 583,
+    "preserved_age_progression_files": 35,
+    "rollback_archive_hash_unchanged": true,
+    "user_owned_tests_not_executed": true
+  },
+  "preserved_handcannon_base_tiers": [
+    {
+      "tag": "group",
+      "attributes": {
+        "name": "tier",
+        "List.ItemID": "1073760006"
+      },
+      "children": [
+        {
+          "tag": "instance_reference",
+          "attributes": {
+            "name": "attachments",
+            "value": "attachments\\attachment_lists\\civilizations\\chinese\\units\\tier4_handcannon_chi"
+          },
+          "children": []
+        },
+        {
+          "tag": "template_reference",
+          "attributes": {
+            "name": "statetree_tier_reached_actions",
+            "value": "state_tree_reference_info"
+          },
+          "children": [
+            {
+              "tag": "state_tree_node",
+              "attributes": {
+                "name": "ActionTree_OpeningBranch",
+                "value": "tier_unit_exposure_dca",
+                "overrideParent": "True"
+              },
+              "children": []
+            },
+            {
+              "tag": "bool",
+              "attributes": {
+                "name": "start_suspended",
+                "value": "False"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "tag": "instance_reference",
+          "attributes": {
+            "name": "statetree_tier_requirements_pbg",
+            "value": ""
+          },
+          "children": []
+        },
+        {
+          "tag": "instance_reference",
+          "attributes": {
+            "name": "statetree_tier_pgb_upgrade_target_entity",
+            "value": ""
+          },
+          "children": []
+        },
+        {
+          "tag": "instance_reference",
+          "attributes": {
+            "name": "statetree_tier_pgb_upgrade_target_squad",
+            "value": ""
+          },
+          "children": []
+        },
+        {
+          "tag": "string",
+          "attributes": {
+            "name": "tier_attachment_action",
+            "value": ""
+          },
+          "children": []
+        },
+        {
+          "tag": "template_reference",
+          "attributes": {
+            "name": "blueprint_conversion_parameters",
+            "value": "blueprint_conversion_parameters"
+          },
+          "children": [
+            {
+              "tag": "bool",
+              "attributes": {
+                "name": "reissue_commands",
+                "value": "False"
+              },
+              "children": []
+            },
+            {
+              "tag": "bool",
+              "attributes": {
+                "name": "continue_state_trees",
+                "value": "True"
+              },
+              "children": []
+            },
+            {
+              "tag": "bool",
+              "attributes": {
+                "name": "remove_from_pending_deaths",
+                "value": "False"
+              },
+              "children": []
+            },
+            {
+              "tag": "bool",
+              "attributes": {
+                "name": "enable_all_extensions",
+                "value": "True"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "tag": "string",
+          "attributes": {
+            "name": "inventory_category_to_refresh_on_tier_up",
+            "value": ""
+          },
+          "children": []
+        },
+        {
+          "tag": "enum",
+          "attributes": {
+            "name": "statetree_tier_requirements_pbg_owner",
+            "value": "player"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "group",
+      "attributes": {
+        "name": "tier",
+        "List.ItemID": "1073760015"
+      },
+      "children": [
+        {
+          "tag": "instance_reference",
+          "attributes": {
+            "name": "attachments",
+            "value": "attachments\\attachment_lists\\civilizations\\chinese\\units\\tier4_handcannon_chi"
+          },
+          "children": []
+        },
+        {
+          "tag": "template_reference",
+          "attributes": {
+            "name": "statetree_tier_reached_actions",
+            "value": "state_tree_reference_info"
+          },
+          "children": [
+            {
+              "tag": "state_tree_node",
+              "attributes": {
+                "name": "ActionTree_OpeningBranch",
+                "value": "campaignMod_tier_unit_exposure_dca",
+                "overrideParent": "True"
+              },
+              "children": []
+            },
+            {
+              "tag": "bool",
+              "attributes": {
+                "name": "start_suspended",
+                "value": "False"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "tag": "instance_reference",
+          "attributes": {
+            "name": "statetree_tier_requirements_pbg",
+            "value": ""
+          },
+          "children": []
+        },
+        {
+          "tag": "instance_reference",
+          "attributes": {
+            "name": "statetree_tier_pgb_upgrade_target_entity",
+            "value": ""
+          },
+          "children": []
+        },
+        {
+          "tag": "instance_reference",
+          "attributes": {
+            "name": "statetree_tier_pgb_upgrade_target_squad",
+            "value": ""
+          },
+          "children": []
+        },
+        {
+          "tag": "string",
+          "attributes": {
+            "name": "tier_attachment_action",
+            "value": ""
+          },
+          "children": []
+        },
+        {
+          "tag": "template_reference",
+          "attributes": {
+            "name": "blueprint_conversion_parameters",
+            "value": "blueprint_conversion_parameters"
+          },
+          "children": [
+            {
+              "tag": "bool",
+              "attributes": {
+                "name": "reissue_commands",
+                "value": "False"
+              },
+              "children": []
+            },
+            {
+              "tag": "bool",
+              "attributes": {
+                "name": "continue_state_trees",
+                "value": "True"
+              },
+              "children": []
+            },
+            {
+              "tag": "bool",
+              "attributes": {
+                "name": "remove_from_pending_deaths",
+                "value": "False"
+              },
+              "children": []
+            },
+            {
+              "tag": "bool",
+              "attributes": {
+                "name": "enable_all_extensions",
+                "value": "True"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "tag": "string",
+          "attributes": {
+            "name": "inventory_category_to_refresh_on_tier_up",
+            "value": ""
+          },
+          "children": []
+        },
+        {
+          "tag": "enum",
+          "attributes": {
+            "name": "statetree_tier_requirements_pbg_owner",
+            "value": "player"
+          },
+          "children": []
+        }
+      ]
+    }
+  ]
+}

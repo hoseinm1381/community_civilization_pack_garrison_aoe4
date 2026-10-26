@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\impass_ext" List.ItemID="-1048125279" List.ParentItemID="-1048125279">
+			<group name="impass_simboxes">
+				<bool name="default_simbox" value="False" overrideParent="True" />
+			</group>
+			<list name="block_path" overrideParent="True">
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073771843" />
+	<instance_reference name="parent_pbg" value="ebps\vietnam\buildings\traps\stake_traps\vn_building_bambo_outpost_chi" mod="a743d7d1d7534cf78817e29d8ded7366" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\impass_ext" List.ItemID="-1048125279" List.ParentItemID="-1048125279">
+				<group name="impass_simboxes">
+					<bool name="default_simbox" value="False" overrideParent="True" />
+				</group>
+				<list name="block_path" overrideParent="True">
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="1073771843" />
+		<instance_reference name="parent_pbg" value="ebps\vietnam\buildings\traps\stake_traps\vn_building_bambo_outpost_chi" mod="a743d7d1d7534cf78817e29d8ded7366" />
+	</variant>
+</instance>

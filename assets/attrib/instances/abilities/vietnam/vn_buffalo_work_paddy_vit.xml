@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="abilities">
+	<group name="ability_bag">
+		<enum name="activation" value="targeted" overrideParent="True" />
+		<bool name="can_target_in_fow" value="False" overrideParent="True" />
+		<float name="caster_close_in_distance" value="0" overrideParent="True" />
+		<bool name="casters_can_evacuate" value="False" overrideParent="True" />
+		<enum_table name="cost_to_player" overrideParent="True">
+			<float name="action" value="0" overrideParent="True" />
+			<float name="command" value="0" overrideParent="True" />
+			<float name="popcap" value="0" overrideParent="True" />
+			<float name="food" value="0" overrideParent="True" />
+			<float name="wood" value="0" overrideParent="True" />
+			<float name="stone" value="0" overrideParent="True" />
+			<float name="gold" value="0" overrideParent="True" />
+			<float name="militia_hre" value="0" overrideParent="True" />
+			<float name="merc_byz" value="0" overrideParent="True" />
+		</enum_table>
+		<string name="cursor_ghost_blueprint" value="" overrideParent="True" />
+		<float name="cursor_ghost_blueprint_angle" value="0" overrideParent="True" />
+		<bool name="disable_combat" value="False" overrideParent="True" />
+		<bool name="disable_when_active" value="False" overrideParent="True" />
+		<bool name="enable_in_building" value="False" overrideParent="True" />
+		<bool name="enable_in_vehicle" value="False" overrideParent="True" />
+		<bool name="engage_combat" value="False" overrideParent="True" />
+		<float name="entity_busy_time" value="0" overrideParent="True" />
+		<float name="facing_angle" value="5" overrideParent="True" />
+		<bool name="facing_ignore" value="False" overrideParent="True" />
+		<float name="final_close_in_distance" value="0" overrideParent="True" />
+		<bool name="fire_and_forget" value="False" overrideParent="True" />
+		<bool name="garrison_target" value="False" overrideParent="True" />
+		<bool name="initial_recharge" value="False" overrideParent="True" />
+		<bool name="move_back" value="False" overrideParent="True" />
+		<float name="move_back_distance" value="10" overrideParent="True" />
+		<float name="range" value="5" overrideParent="True" />
+		<bool name="range_ignore" value="False" overrideParent="True" />
+		<float name="recharge_time" value="1" overrideParent="True" />
+		<bool name="refundable" value="True" overrideParent="True" />
+		<bool name="require_no_shot_block" value="False" overrideParent="True" />
+		<enum name="shared_timer" value="" overrideParent="True" />
+		<bool name="shared_timer_player_wide" value="False" overrideParent="True" />
+		<enum name="squad_caster" value="all_entities" overrideParent="True" />
+		<enum name="target" value="tp_entity" overrideParent="True" />
+		<float name="toggled_recharge_time_off" value="0" overrideParent="True" />
+		<float name="toggled_recharge_time_on" value="0" overrideParent="True" />
+		<group name="ui_cursor" overrideParent="True">
+			<string name="cursor_bad" value="cant_move" overrideParent="True" />
+			<string name="cursor_good" value="supervise" overrideParent="True" />
+			<string name="cursor_nonmodal_good" value="supervise" overrideParent="True" />
+		</group>
+		<group name="ui_info" overrideParent="True">
+			<locstring name="extra_text" value="0" overrideParent="True" />
+			<locstring name="help_text" value="3050" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+			<string name="hotkey_name" value="E" overrideParent="True" />
+			<file name="icon_name" value="workerelephanticon" overrideParent="True" />
+			<string name="overlay_name" value="" overrideParent="True" />
+			<bool name="reveal_for_decryption" value="False" overrideParent="True" />
+			<locstring name="screen_name" value="3049" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+			<file name="icon_alternate_name" value="" overrideParent="True" />
+			<locstring name="brief_text" value="0" overrideParent="True" />
+			<locstring name="help_text_alternate" value="0" overrideParent="True" />
+			<locstring name="screen_name_alternate" value="0" overrideParent="True" />
+			<locstring name="screen_name_short" value="0" overrideParent="True" />
+			<string name="debug_text" value="" overrideParent="True" />
+			<string name="tooltip_data_template" value="UniqueAbilityDataTemplate" overrideParent="True" />
+			<enum name="ui_combine_type" value="intersection" overrideParent="True" />
+			<template_reference name="brief_text_formatter" value="" overrideParent="True">
+			</template_reference>
+			<template_reference name="extra_text_formatter" value="" overrideParent="True">
+			</template_reference>
+			<template_reference name="help_text_formatter" value="" overrideParent="True">
+			</template_reference>
+			<template_reference name="help_text_alternate_formatter" value="" overrideParent="True">
+			</template_reference>
+			<template_reference name="screen_name_formatter" value="" overrideParent="True">
+			</template_reference>
+			<template_reference name="screen_name_alternate_formatter" value="" overrideParent="True">
+			</template_reference>
+			<template_reference name="screen_name_short_formatter" value="" overrideParent="True">
+			</template_reference>
+			<string name="sound" value="" overrideParent="True" />
+			<string name="sound_alternative" value="" overrideParent="True" />
+			<template_reference name="ui_info_extended" value="tables\ui_info_ext" overrideParent="True">
+				<template_reference name="command_card_info" value="ui_command_card_info" overrideParent="True">
+					<group name="ui_position" overrideParent="True">
+						<int name="ui_position_row" value="1" overrideParent="True" />
+						<int name="ui_position_column" value="3" overrideParent="True" />
+					</group>
+					<int name="command_card_priority" value="1" overrideParent="True" />
+				</template_reference>
+				<template_reference name="quick_abilities_info" value="" overrideParent="True">
+				</template_reference>
+				<template_reference name="quick_commands_info" value="" overrideParent="True">
+				</template_reference>
+				<template_reference name="quick_formation_info" value="" overrideParent="True">
+				</template_reference>
+				<template_reference name="ping_menu_info" value="" overrideParent="True">
+				</template_reference>
+				<enum name="category" value="Economic" overrideParent="True" />
+				<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info" overrideParent="True">
+					<enum name="quick_commands_hotkey" value="" overrideParent="True" />
+					<int name="quick_commands_priority" value="-1" overrideParent="True" />
+					<int name="quick_commands_slot_index" value="-1" overrideParent="True" />
+					<enum name="quick_commands_hold_time" value="quick_command_hold_time" overrideParent="True" />
+				</template_reference>
+				<template_reference name="relic_radial_menu_info" value="" overrideParent="True">
+				</template_reference>
+				<enum name="observer_type" value="Disabled" overrideParent="True" />
+				<group name="issuable_info" overrideParent="True">
+					<bool name="is_secondary" value="False" overrideParent="True" />
+					<instance_reference name="secondary_issuable" value="" overrideParent="True" />
+				</group>
+			</template_reference>
+			<locstring name="help_text_controller" value="0" overrideParent="True" />
+			<locstring name="extra_text_controller" value="0" overrideParent="True" />
+		</group>
+		<list name="ui_contextual_info" overrideParent="True">
+		</list>
+		<locstring name="ui_usage_txt" value="0" overrideParent="True" />
+		<bool name="validate_actions" value="True" overrideParent="True" />
+		<list name="requirements" overrideParent="True">
+		</list>
+		<enum name="ability_super" value="tp_none" overrideParent="True" />
+		<group name="ui_position" overrideParent="True">
+			<int name="ui_position_row" value="1" overrideParent="True" />
+			<int name="ui_position_column" value="3" overrideParent="True" />
+		</group>
+		<bool name="ui_mini_map_capture" value="False" overrideParent="True" />
+		<bool name="facing_ignore_during_active" value="False" overrideParent="True" />
+		<instance_reference name="ui_range" value="" overrideParent="True" />
+		<instance_reference name="ui_reticule" value="" overrideParent="True" />
+		<float name="ui_reticule_radius_min" value="1" overrideParent="True" />
+		<float name="ui_reticule_radius_max" value="1" overrideParent="True" />
+		<enum name="pending_ability_out_of_range_behaviour" value="chase" overrideParent="True" />
+		<enum name="ui_ability_group" value="group_primary" overrideParent="True" />
+		<string name="ui_targetable_sm_key" value="" overrideParent="True" />
+		<string name="ui_targetable_on_key" value="" overrideParent="True" />
+		<string name="ui_targetable_off_key" value="" overrideParent="True" />
+		<enum name="ui_targetable_receiver" value="local" overrideParent="True" />
+		<enum name="ui_combine_type" value="intersection" overrideParent="True" />
+		<enum_table name="ui_modal_highlight" overrideParent="True">
+			<bool name="world_sector" value="False" overrideParent="True" />
+			<bool name="map_sector" value="False" overrideParent="True" />
+			<bool name="map_sector_hq_link_extender" value="False" overrideParent="True" />
+		</enum_table>
+		<enum name="ui_group_cast_type" value="single" overrideParent="True" />
+		<list name="requirements_target" overrideParent="True">
+			<template_reference name="required" value="requirements\required_all_in_list" List.ItemID="1293664496" List.ParentItemID="1293664496" overrideParent="True">
+				<enum name="reason" value="usage" overrideParent="True" />
+				<locstring name="ui_name" value="0" overrideParent="True" />
+				<list name="requirements" overrideParent="True">
+					<template_reference name="requirement" value="requirements\required_is_entity_pbg" List.ItemID="-1548519024" List.ParentItemID="-1548519024" overrideParent="True">
+						<enum name="reason" value="usage" overrideParent="True" />
+						<locstring name="ui_name" value="0" overrideParent="True" />
+						<instance_reference name="is_entity_pbg" value="ebps\vietnam\buildings\economy\rice_paddies\vn_building_resource_farm_chi" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+						<group name="include_pbg_parenting" overrideParent="True">
+							<bool name="include_child_pbgs" value="False" overrideParent="True" />
+							<bool name="include_parent_pbgs" value="False" overrideParent="True" />
+						</group>
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_constructionstate" List.ItemID="1378032996" List.ParentItemID="1378032996" overrideParent="True">
+						<enum name="reason" value="usage" overrideParent="True" />
+						<locstring name="ui_name" value="0" overrideParent="True" />
+						<bool name="do_construction_completion_check" value="True" overrideParent="True" />
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_ownership" List.ItemID="1021356222" List.ParentItemID="1021356222" overrideParent="True">
+						<enum name="reason" value="usage" overrideParent="True" />
+						<locstring name="ui_name" value="0" overrideParent="True" />
+						<enum name="ownership_type" value="self" overrideParent="True" />
+					</template_reference>
+				</list>
+				<locstring name="ui_name_controller" value="0" overrideParent="True" />
+			</template_reference>
+		</list>
+		<template_reference name="targeted_ability_option" value="options\none" overrideParent="True">
+		</template_reference>
+		<enum name="ui_direction_requirement" value="nondirectional" overrideParent="True" />
+		<instance_reference name="cursor_ghost_ebp" value="" overrideParent="True" />
+		<bool name="can_cast_whilst_constructing" value="False" overrideParent="True" />
+		<list name="requirements_self_recharge" overrideParent="True">
+		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" overrideParent="True" />
+		<enum_table name="cost_to_squad" overrideParent="True">
+			<float name="action" value="0" overrideParent="True" />
+			<float name="command" value="0" overrideParent="True" />
+			<float name="popcap" value="0" overrideParent="True" />
+			<float name="food" value="0" overrideParent="True" />
+			<float name="wood" value="0" overrideParent="True" />
+			<float name="stone" value="0" overrideParent="True" />
+			<float name="gold" value="0" overrideParent="True" />
+			<float name="militia_hre" value="0" overrideParent="True" />
+			<float name="merc_byz" value="0" overrideParent="True" />
+		</enum_table>
+		<bool name="ability_super_event_cue" value="False" overrideParent="True" />
+		<enum name="ui_progress_bar_type" value="auto_bar" overrideParent="True" />
+		<enum name="ui_ability_issue_type" value="Normal" overrideParent="True" />
+		<string name="speech_code" value="" overrideParent="True" />
+		<template_reference name="channeling" value="options\none" overrideParent="True">
+		</template_reference>
+		<bool name="can_be_interrupted" value="True" overrideParent="True" />
+		<template_reference name="casting_option" value="options\none" overrideParent="True">
+		</template_reference>
+		<template_reference name="proxy_range_option" value="options\none" overrideParent="True">
+		</template_reference>
+		<instance_reference name="ability_category" value="" overrideParent="True" />
+		<bool name="always_refund_cost_if_failed" value="False" overrideParent="True" />
+		<instance_reference name="ui_menu" value="" overrideParent="True" />
+		<int name="ui_combine_priority" value="0" overrideParent="True" />
+		<instance_reference name="construction_preview_override" value="" overrideParent="True" />
+		<enum name="statetree_ability_id" value="" overrideParent="True" />
+		<bool name="construction_preview" value="False" overrideParent="True" />
+		<bool name="show_range_reticule_in_contruction_item_preview" value="False" overrideParent="True" />
+		<state_tree_node name="statetree_node_prereq_self_requirement" value="" overrideParent="True" />
+		<state_tree_node name="statetree_node_prereq_target_requirement" value="" overrideParent="True" />
+		<state_tree_node name="statetree_node_prereq_self_recharge_requirement" value="" overrideParent="True" />
+		<state_tree_node name="entity_tree" value="" overrideParent="True" />
+		<state_tree_node name="squad_tree" value="" overrideParent="True" />
+		<group name="ability_active_state_tree_group" overrideParent="True">
+			<state_tree_node name="ability_activate_squad_tree" value="" overrideParent="True" />
+			<state_tree_node name="ability_activate_entity_tree" value="" overrideParent="True" />
+			<state_tree_node name="ability_activate_deferred_tree" value="" overrideParent="True" />
+		</group>
+		<float name="hold_period" value="0" overrideParent="True" />
+		<bool name="clear_ability_on_blueprint_conversion" value="True" overrideParent="True" />
+		<float name="min_range" value="0" overrideParent="True" />
+		<instance_reference name="ability_description" value="" overrideParent="True" />
+		<enum name="ability_description_storage_index" value="" overrideParent="True" />
+		<int name="default_command_weight_modifier" value="0" overrideParent="True" />
+		<state_tree_node name="global_tree" value="" overrideParent="True" />
+		<bool name="ui_visibility_ignore_prerequisite" value="False" overrideParent="True" />
+		<bool name="use_simbox_to_simbox_range" value="False" overrideParent="True" />
+		<bool name="ui_range_reticule_shows_while_active" value="False" overrideParent="True" />
+		<bool name="can_move_to_cast" value="True" overrideParent="True" />
+		<string name="toggle_ability_group" value="" overrideParent="True" />
+		<instance_reference name="projectile_for_preview" value="" overrideParent="True" />
+		<bool name="ui_ability_can_display" value="True" overrideParent="True" />
+		<list name="enable_in_unit_types" overrideParent="True">
+		</list>
+		<float name="can_use_ability_check_interval" value="0.125" overrideParent="True" />
+		<bool name="should_trigger_immediately" value="False" overrideParent="True" />
+		<enum name="ui_target_origin_point" value="center" overrideParent="True" />
+		<locstring name="ui_user_prompt_issue_message" value="0" overrideParent="True" />
+		<bool name="ui_range_reticule_can_cast_only" value="False" overrideParent="True" />
+		<bool name="ui_range_reticule_first_caster_only" value="True" overrideParent="True" />
+		<bool name="ui_range_reticule_enable_team_color" value="False" overrideParent="True" />
+		<bool name="can_passive_ability_create_formation_squad_group" value="False" overrideParent="True" />
+		<bool name="can_cast_again_whilst_pending" value="False" overrideParent="True" />
+		<list name="float_properties" overrideParent="True">
+		</list>
+		<list name="int_properties" overrideParent="True">
+		</list>
+		<bool name="can_queue_passive_ability" value="False" overrideParent="True" />
+		<string name="ui_click_point_action_key" value="" overrideParent="True" />
+		<bool name="ignore_teardown_on_convert" value="False" overrideParent="True" />
+		<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\abilities\ability_supervise" overrideParent="True" />
+		<int name="default_command_additional_rally_weight_modifier" value="0" overrideParent="True" />
+	</group>
+	<uniqueid name="pbgid" value="2147482514" />
+	<instance_reference name="parent_pbg" value="abilities\modal_abilities\abbasid_ha_01\production_building_enhance_abb" />
+</instance>

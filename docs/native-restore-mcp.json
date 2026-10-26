@@ -1,0 +1,193 @@
+[
+  {
+    "path": "assets/scar/vietnam/traps.scar",
+    "result": {
+      "status": "ok",
+      "target_file": "assets/scar/vietnam/traps.scar",
+      "unknown_calls": [],
+      "low_confidence_apis": [],
+      "missing_locdb_ids": [],
+      "summary": {
+        "call_count": 17,
+        "loc_ref_count": 0,
+        "unknown_call_count": 0,
+        "missing_locdb_count": 0
+      },
+      "confidence_model": "source_match_v1"
+    }
+  },
+  {
+    "path": "assets/scar/vietnam/lifecycle.scar",
+    "result": {
+      "status": "ok",
+      "target_file": "assets/scar/vietnam/lifecycle.scar",
+      "unknown_calls": [
+        "VietnamTraps_Tick"
+      ],
+      "low_confidence_apis": [
+        {
+          "name": "Player_GetEntitiesEGroup",
+          "return_type": "",
+          "params": "Player& player, EGroupID group",
+          "returns_doc": "",
+          "description": "Gets all the player's current entities and loads them into the specified egroup.",
+          "confidence": "low",
+          "source_set": "official_api",
+          "usage_count": 0,
+          "usage_sources": "",
+          "file_path": "official_api/Essence_ScarFunctions.api",
+          "line_no": 1285,
+          "confidence_detail": {
+            "model": "source_match_v1",
+            "kind": "api_check",
+            "overall": {
+              "level": "medium",
+              "score": 0.755,
+              "reason": "source=high; match=weak_token_overlap:name"
+            },
+            "source": {
+              "level": "high",
+              "score": 0.98,
+              "source_set": "official_api",
+              "reason": "官方 API 文档 / official API docs"
+            },
+            "match": {
+              "level": "low",
+              "score": 0.48,
+              "reason": "weak_token_overlap:name"
+            },
+            "api_documentation": null
+          }
+        }
+      ],
+      "missing_locdb_ids": [],
+      "summary": {
+        "call_count": 22,
+        "loc_ref_count": 0,
+        "unknown_call_count": 1,
+        "missing_locdb_count": 0
+      },
+      "confidence_model": "source_match_v1"
+    }
+  },
+  {
+    "path": "assets/scar/winconditions/VietnamMode.scar",
+    "result": {
+      "status": "ok",
+      "target_file": "assets/scar/winconditions/VietnamMode.scar",
+      "unknown_calls": [],
+      "low_confidence_apis": [
+        {
+          "name": "Player_GetEntitiesEGroup",
+          "return_type": "",
+          "params": "Player& player, EGroupID group",
+          "returns_doc": "",
+          "description": "Gets all the player's current entities and loads them into the specified egroup.",
+          "confidence": "low",
+          "source_set": "official_api",
+          "usage_count": 0,
+          "usage_sources": "",
+          "file_path": "official_api/Essence_ScarFunctions.api",
+          "line_no": 1285,
+          "confidence_detail": {
+            "model": "source_match_v1",
+            "kind": "api_check",
+            "overall": {
+              "level": "medium",
+              "score": 0.755,
+              "reason": "source=high; match=weak_token_overlap:name"
+            },
+            "source": {
+              "level": "high",
+              "score": 0.98,
+              "source_set": "official_api",
+              "reason": "官方 API 文档 / official API docs"
+            },
+            "match": {
+              "level": "low",
+              "score": 0.48,
+              "reason": "weak_token_overlap:name"
+            },
+            "api_documentation": null
+          }
+        },
+        {
+          "name": "UI_MessageBoxHide",
+          "return_type": "",
+          "params": "DialogResult dialogResult",
+          "returns_doc": "",
+          "description": "If the message box is activated, close it. The callback will receive the button parameter given.",
+          "confidence": "low",
+          "source_set": "official_api",
+          "usage_count": 0,
+          "usage_sources": "",
+          "file_path": "official_api/Essence_ScarFunctions.api",
+          "line_no": 1836,
+          "confidence_detail": {
+            "model": "source_match_v1",
+            "kind": "api_check",
+            "overall": {
+              "level": "medium",
+              "score": 0.755,
+              "reason": "source=high; match=weak_token_overlap:name"
+            },
+            "source": {
+              "level": "high",
+              "score": 0.98,
+              "source_set": "official_api",
+              "reason": "官方 API 文档 / official API docs"
+            },
+            "match": {
+              "level": "low",
+              "score": 0.48,
+              "reason": "weak_token_overlap:name"
+            },
+            "api_documentation": null
+          }
+        },
+        {
+          "name": "UI_MessageBoxReset",
+          "return_type": "",
+          "params": "",
+          "returns_doc": "",
+          "description": "Reset message box data set by previous calls (to display a new message box).",
+          "confidence": "low",
+          "source_set": "official_api",
+          "usage_count": 0,
+          "usage_sources": "",
+          "file_path": "official_api/Essence_ScarFunctions.api",
+          "line_no": 1837,
+          "confidence_detail": {
+            "model": "source_match_v1",
+            "kind": "api_check",
+            "overall": {
+              "level": "medium",
+              "score": 0.755,
+              "reason": "source=high; match=weak_token_overlap:name"
+            },
+            "source": {
+              "level": "high",
+              "score": 0.98,
+              "source_set": "official_api",
+              "reason": "官方 API 文档 / official API docs"
+            },
+            "match": {
+              "level": "low",
+              "score": 0.48,
+              "reason": "weak_token_overlap:name"
+            },
+            "api_documentation": null
+          }
+        }
+      ],
+      "missing_locdb_ids": [],
+      "summary": {
+        "call_count": 68,
+        "loc_ref_count": 0,
+        "unknown_call_count": 0,
+        "missing_locdb_count": 0
+      },
+      "confidence_model": "source_match_v1"
+    }
+  }
+]

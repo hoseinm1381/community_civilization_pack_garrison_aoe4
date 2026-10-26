@@ -1,0 +1,51 @@
+import("player.scar")
+import("modifiers.scar")
+
+VietnamPaddyFoodState = {handles = {}}
+local champaUpgrade = nil
+
+function VietnamPaddyFood_Update(player, entities)
+    if champaUpgrade == nil then
+        champaUpgrade = BP_GetUpgradeBlueprint("a743d7d1d7534cf78817e29d8ded7366:vn_upgrade_champa_rice_vit")
+    end
+    local seen = {}
+    if Player_IsAlive(player.id) and Player_HasUpgrade(player.id, champaUpgrade) then
+        for i = 1, EGroup_CountSpawned(entities) do
+            local entity = EGroup_GetSpawnedEntityAt(entities, i)
+            local id = Entity_GetID(entity)
+            if not seen[id] and Entity_IsValid(id) and Entity_IsAlive(entity)
+                and Player_OwnsEntity(player.id, entity) and Entity_GetHealth(entity) > 0
+                and not Entity_IsUnderConstruction(entity)
+                and VietnamBlueprints_Matches(entity, "vn_building_resource_farm_chi")
+                and (VietnamPaddyConstructionState == nil or not VietnamPaddyConstructionState.replacements[id]) then
+                seen[id] = true
+                local existing = VietnamPaddyFoodState.handles[id]
+                -- Capture can be observed by the new owner before the old one.
+                if existing ~= nil and existing.owner ~= player.index then
+                    Modifier_Remove(existing.handle)
+                    VietnamPaddyFoodState.handles[id] = nil
+                end
+                if VietnamPaddyFoodState.handles[id] == nil then
+                    -- Official Cifte Orchard deposits use this same entity
+                    -- harvest-rate modifier. It affects this paddy's food only.
+                    local modifier = Modifier_Create(MAT_Entity, "resource_entity_harvest_rate_food",
+                        MUT_Multiplication, false, 1.10, "")
+                    VietnamPaddyFoodState.handles[id] = {
+                        owner = player.index, handle = Modifier_ApplyToEntity(modifier, entity, 0),
+                    }
+                end
+            end
+        end
+    end
+    for id, record in pairs(VietnamPaddyFoodState.handles) do
+        if record.owner == player.index and not seen[id] then
+            Modifier_Remove(record.handle)
+            VietnamPaddyFoodState.handles[id] = nil
+        end
+    end
+end
+
+function VietnamPaddyFood_Cleanup()
+    for _, record in pairs(VietnamPaddyFoodState.handles) do Modifier_Remove(record.handle) end
+    VietnamPaddyFoodState.handles = {}
+end

@@ -1,0 +1,40 @@
+# Machine-specific editor state, tool installations, and caches.
+/.aoe4/
+/.tools/
+/.codegraph/
+/cache/
+/.venv/
+/venv/
+/workspace.json
+/workspace.local.json
+/workspace.local.*
+/config.local.*
+/.env
+/.env.*
+!/.env.example
+
+# Local preservation, investigation, and generated build output.
+/archives/
+/output/
+/work/
+/dist/
+/build/
+*.sga
+*.sga.bak
+*.zip
+*.rar
+*.7z
+*.log
+*.dmp
+*.tmp
+*.bak
+*.orig
+*~
+
+# Python and test-generated files.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/

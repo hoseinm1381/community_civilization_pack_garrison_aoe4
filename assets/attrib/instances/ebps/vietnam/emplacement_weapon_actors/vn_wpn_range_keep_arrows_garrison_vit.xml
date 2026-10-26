@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\weapon_ext" List.ItemID="-137176455" List.ParentItemID="-137176455">
+			<instance_reference name="weapon" value="weapon\vietnam\vn_weapon_keep_arrows_garrison_poison" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1073741964" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\weapons\wpn_ebps_template_ai" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\weapon_ext" List.ItemID="1420822876" List.ParentItemID="1420822876">
+				<instance_reference name="weapon" value="weapon\vietnam\vn_weapon_keep_arrows_garrison_poison" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="1073741964" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\weapons\wpn_ebps_template_ai" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\weapon_ext" List.ItemID="-137176455" List.ParentItemID="-137176455">
+				<instance_reference name="weapon" value="weapon\vietnam\vn_weapon_keep_arrows_garrison_poison" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="1073741964" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\weapons\wpn_ebps_template_ai" />
+	</variant>
+</instance>

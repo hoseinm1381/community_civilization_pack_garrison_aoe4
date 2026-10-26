@@ -1,0 +1,122 @@
+import("modifiers.scar")
+
+-- Native production-only squad requirements own the unlock. Never close the
+-- whole queue: defensive fortification must work independently of the landmark.
+-- Producer speed also changes research natively. Correct only fortification
+-- through its own upgrade-type modifier; military training keeps its penalty.
+VietnamTowerTrainingState = {applied = {}, seen = {}, players = {}, fortifications = {}}
+local unlock = nil
+local fortification = nil
+
+local function isTower(entity)
+    return VietnamHideouts_IsHideout(entity)
+        or VietnamBlueprints_Matches(entity, "vn_building_landmark_age1_gatehouse_control_chi")
+end
+
+local function operational(entity)
+    return Entity_IsValid(Entity_GetID(entity)) and Entity_IsAlive(entity)
+        and Entity_GetHealth(entity) > 0 and not Entity_IsUnderConstruction(entity)
+        and Entity_GetBuildingProgress(entity) >= 1
+end
+
+function VietnamTowerTraining_BeginTick()
+    VietnamTowerTrainingState.seen = {}
+end
+
+function VietnamTowerTraining_Update(player, entities)
+    if unlock == nil then
+        unlock = BP_GetUpgradeBlueprint("a743d7d1d7534cf78817e29d8ded7366:vn_upgrade_pho_minh_training_unlocked_vit")
+    end
+    local unlocked = Player_HasUpgrade(player.id, unlock)
+    local previous = VietnamTowerTrainingState.players[player.index]
+    -- A damaged operational tower stays operational. After an observed outage,
+    -- however, partial repair must not restore its benefit before full repair.
+    local recovering = unlocked and previous ~= nil and not previous.alive
+    local phoMinhAlive = false
+    for i = 1, EGroup_CountSpawned(entities) do
+        local landmark = EGroup_GetSpawnedEntityAt(entities, i)
+        if operational(landmark)
+            and VietnamBlueprints_Matches(landmark, "vn_building_landmark_age1_gatehouse_control_chi")
+            and (not recovering or Entity_GetHealth(landmark) >= Entity_GetHealthMax(landmark)) then
+            phoMinhAlive = true
+            break
+        end
+    end
+    if phoMinhAlive and not unlocked then
+        -- Player-owned marker survives destruction; no paid/manual research path.
+        Player_CompleteUpgrade(player.id, unlock)
+        unlocked = Player_HasUpgrade(player.id, unlock)
+    end
+    local rate = phoMinhAlive and 2 / 3 or 1 / 6
+    if fortification == nil then
+        fortification = BP_GetUpgradeBlueprint("a743d7d1d7534cf78817e29d8ded7366:vn_upgrade_hideout_upgrade_vit")
+    end
+    -- Authored 6 seconds / producer speed / this speed = target 30 seconds.
+    -- This is 1.2 before/after destruction and 0.3 while the Tower operates.
+    local fortificationSpeed = 6 / (30 * rate)
+    local correction = VietnamTowerTrainingState.fortifications[player.index]
+    if correction == nil or correction.speed ~= fortificationSpeed then
+        if correction ~= nil then Modifier_Remove(correction.handle) end
+        local modifier = Modifier_Create(MAT_Upgrade, "upgrade_production_speed_modifier",
+            MUT_Multiplication, false, fortificationSpeed, fortification)
+        VietnamTowerTrainingState.fortifications[player.index] = {
+            handle = Modifier_ApplyToPlayer(modifier, player.id, 0), speed = fortificationSpeed,
+        }
+    end
+    if previous == nil or previous.alive ~= phoMinhAlive or previous.unlocked ~= unlocked then
+        print("VIETNAM_V2_TOWER_PLAYER player=" .. tostring(player.index)
+            .. " unlocked=" .. tostring(unlocked) .. " alive=" .. tostring(phoMinhAlive)
+            .. " duration=" .. tostring(phoMinhAlive and 1.5 or 6))
+    end
+    VietnamTowerTrainingState.players[player.index] = {alive = phoMinhAlive, unlocked = unlocked}
+    for i = 1, EGroup_CountSpawned(entities) do
+        local entity = EGroup_GetSpawnedEntityAt(entities, i)
+        local id = Entity_GetID(entity)
+        if operational(entity) and isTower(entity)
+            and (phoMinhAlive or VietnamHideouts_IsHideout(entity)) then
+            VietnamTowerTrainingState.seen[id] = true
+            local applied = VietnamTowerTrainingState.applied[id]
+            local blueprint = Entity_GetBlueprint(entity)
+            if applied == nil or applied.rate ~= rate or applied.blueprint ~= blueprint then
+                if applied ~= nil then Modifier_Remove(applied.production) end
+                local production = Modifier_Create(MAT_Entity, "production_speed_modifier", MUT_Multiplication, false, rate, nil)
+                VietnamTowerTrainingState.applied[id] = {
+                    production = Modifier_ApplyToEntity(production, entity, 0),
+                    rate = rate, blueprint = blueprint,
+                }
+                -- Squad requirements block unit orders before unlock, while the
+                -- queue remains available for ordinary defensive self research.
+                Entity_EnableProductionQueue(entity, true)
+            end
+        end
+    end
+end
+
+function VietnamTowerTraining_EndTick()
+    for id, applied in pairs(VietnamTowerTrainingState.applied) do
+        if not VietnamTowerTrainingState.seen[id] then
+            if Entity_IsValid(id) then
+                Modifier_Remove(applied.production)
+            end
+            VietnamTowerTrainingState.applied[id] = nil
+        end
+    end
+end
+
+function VietnamTowerTraining_Cleanup()
+    for id, applied in pairs(VietnamTowerTrainingState.applied) do
+        if Entity_IsValid(id) then
+            Modifier_Remove(applied.production)
+        end
+    end
+    VietnamTowerTrainingState.applied = {}
+    VietnamTowerTrainingState.seen = {}
+    VietnamTowerTrainingState.players = {}
+    for _, correction in pairs(VietnamTowerTrainingState.fortifications) do
+        Modifier_Remove(correction.handle)
+    end
+    VietnamTowerTrainingState.fortifications = {}
+    unlock = nil
+    fortification = nil
+    -- The native completed upgrade has player/match lifetime, not modifier lifetime.
+end

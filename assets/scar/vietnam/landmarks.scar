@@ -1,0 +1,117 @@
+-- User-fixed native required_near_entity owns eligibility: age2_landmark1,
+-- executing_player, fixed 64m circle. Preserve that ability and its bindings.
+-- This legacy 32m footprint probe is NOT the native requirement evaluation.
+-- Its state writes are retained because the native DisableStealth branch also
+-- reads this key; removing them has not been proven safe in the engine.
+VietnamLandmarksState={sources={},targets={},ruins={},active=false}
+local prefix="a743d7d1d7534cf78817e29d8ded7366:"
+local gate="is_in_stealth_aura_mal"
+local receivers={vn_unit_villager_1_chi=true,vn_unit_villager_3_chi=true,vn_unit_trade_cart_chi=true}
+function VietnamLandmarks_Start()
+    if VietnamLandmarksState.active then return end
+    VietnamLandmarksState.active=true
+    Rule_AddGlobalEvent(VietnamLandmarks_OnEntityKilled,GE_EntityKilled)
+end
+function VietnamLandmarks_OnEntityKilled(context)
+    if context==nil or context.victim==nil then return end
+    local e=context.victim;local id=Entity_GetID(e)
+    if Entity_IsValid(id) and VietnamBlueprints_Matches(e,"vn_building_landmark_age2_headquarter_vit") then
+        VietnamLandmarksState.ruins[id]=true
+        for _,sources in pairs(VietnamLandmarksState.sources) do
+            if sources[id]~=nil then sources[id].active=false;sources[id].recovering=true end
+        end
+    end
+end
+local function receiver(e)
+    for key in pairs(receivers) do if VietnamBlueprints_Matches(e,key) then return true end end
+    return false
+end
+local function report(e,owner,inside,record)
+    local ability=BP_GetAbilityBlueprint(prefix.."vn_activate_stealth_forvills_vit")
+    local eligibility=Entity_GetStateModelBool(e,gate)
+    local enabled=Entity_GetStateModelBool(e,"is_toggled_stealth")
+    local signature=tostring(inside)..":"..tostring(eligibility)..":"..tostring(enabled)
+    if record.signature~=signature then
+        print("VIETNAM_V8_HQ_RECEIVER player="..tostring(owner).." entity="..tostring(Entity_GetID(e))
+            .." legacy_probe_inside="..tostring(inside).." ability="..tostring(Entity_HasAbility(e,ability))
+            .." legacy_state="..tostring(eligibility).." native_toggled="..tostring(enabled)
+            .." native_requirement=near_age2_landmark1_64m")
+        record.signature=signature
+    end
+end
+local function clear(id)
+    if Entity_IsValid(id) then
+        local e=Entity_FromID(id)
+        if Entity_IsAlive(e) and receiver(e) then
+            Entity_SetStateModelBool(e,gate,false)
+            -- The user's native proximity requirement owns eligibility.
+            -- Abruptly stopping its retained action has no verified passive
+            -- restart contract. Keep the binding and native reveal state.
+            local record=VietnamLandmarksState.targets[id]
+            if record~=nil then report(e,record.owner,false,record) end
+        end
+    end
+    VietnamLandmarksState.targets[id]=nil
+end
+function VietnamLandmarks_Update(player,entities)
+    local state=VietnamLandmarksState.sources[player.index] or {}
+    local sources,seen={},{}
+    for i=1,EGroup_CountSpawned(entities) do
+        local e=EGroup_GetSpawnedEntityAt(entities,i)
+        if Entity_IsValid(Entity_GetID(e)) and Entity_GetPlayerOwner(e)==player.id and VietnamBlueprints_Matches(e,"vn_building_landmark_age2_headquarter_vit") then
+            local id=Entity_GetID(e);seen[id]=true
+            local r=state[id] or {recovering=VietnamLandmarksState.ruins[id]==true,active=false}
+            local ready=Player_IsAlive(player.id) and Entity_IsAlive(e) and Entity_GetHealth(e)>0
+                and not Entity_IsUnderConstruction(e) and Entity_GetBuildingProgress(e)>=1 and Entity_GetStateModelBool(e,"landmark_active")
+            if not ready and (r.active or not Entity_IsAlive(e) or Entity_GetHealth(e)<=0) then r.recovering=true end
+            r.active=ready and (not r.recovering or Entity_GetHealth(e)>=Entity_GetHealthMax(e))
+            if r.reportedActive~=r.active then
+                print("VIETNAM_V3_HQ_SOURCE player="..tostring(player.index).." source="..tostring(id)
+                    .." active="..tostring(r.active).." landmark_active="..tostring(Entity_GetStateModelBool(e,"landmark_active")))
+                r.reportedActive=r.active
+            end
+            if r.active then
+                r.recovering=false;local p=Entity_GetPosition(e)
+                -- Current HQ site_ext: forced-axis-aligned, half dimensions 8m.
+                sources[#sources+1]={x=p.x,z=p.z,hx=8,hz=8,heading=0}
+            end
+            state[id]=r
+        end
+    end
+    for id,r in pairs(state) do if not seen[id] then r.active=false;r.recovering=true end end
+    VietnamLandmarksState.sources[player.index]=state
+    local covered={};local group=Player_GetAllEntities(player.id)
+    for i=1,EGroup_CountSpawned(group) do
+        local e=EGroup_GetSpawnedEntityAt(group,i)
+        if Entity_IsValid(Entity_GetID(e)) and Entity_IsAlive(e) and Entity_GetPlayerOwner(e)==player.id and receiver(e) then
+            local inside=false
+            if not Entity_IsInHold(e) then
+                local p=Entity_GetPosition(e)
+                for _,source in ipairs(sources) do if VietnamTunnelCore.PointDistance(source,p.x,p.z)<=32.000001 then inside=true;break end end
+            end
+            local id=Entity_GetID(e)
+            if inside then
+                covered[id]=true;Entity_SetStateModelBool(e,gate,true)
+                local target=VietnamLandmarksState.targets[id]
+                local ability=BP_GetAbilityBlueprint(prefix.."vn_activate_stealth_forvills_vit")
+                -- Use the native indefinite EnableStealth master directly.
+                -- The timed donor root owns combat cancellation and deferred
+                -- 30-second work; that lifecycle is not an always-on receiver.
+                -- The binding persists, including the user's native ability_ext
+                -- binding. This legacy probe never recreates an action or
+                -- resets its native reveal/work state. Its boolean is not
+                -- the user's native proximity requirement.
+                if not Entity_HasAbility(e,ability) then Entity_AddAbility(e,ability) end
+                target=target or {};target.owner=player.index
+                report(e,player.index,true,target)
+                VietnamLandmarksState.targets[id]=target
+            elseif VietnamLandmarksState.targets[id]~=nil then clear(id) end
+        end
+    end
+    for id,r in pairs(VietnamLandmarksState.targets) do if r.owner==player.index and not covered[id] then clear(id) end end
+end
+function VietnamLandmarks_Cleanup()
+    if VietnamLandmarksState.active then Rule_RemoveGlobalEvent(VietnamLandmarks_OnEntityKilled) end
+    for id in pairs(VietnamLandmarksState.targets) do clear(id) end
+    VietnamLandmarksState={sources={},targets={},ruins={},active=false}
+end

@@ -1,0 +1,41 @@
+import("modifiers.scar")
+
+-- Player-owned entity-type modifiers follow new units and normal age tiers.
+-- Ordinary Archers, Skirmishers, Crossbowmen and Arquebusiers; elephants are excluded.
+VietnamRattanArmorState = {applied = {}}
+local upgrade = nil
+local roster = {
+    "vn_unit_archer_2_vit", "vn_unit_archer_3_vit", "vn_unit_archer_4_vit",
+    "vn_unit_skirmisher_2_vit", "vn_unit_skirmisher_3_vit", "vn_unit_skirmisher_4_vit",
+    "vn_unit_crossbowman_3_chi", "vn_unit_crossbowman_4_chi", "vn_unit_handcannon_4_chi", "vn_unit_handcannon_4_chi_serpentine",
+}
+
+function VietnamRattanArmor_Update(player)
+    if upgrade == nil then
+        upgrade = BP_GetUpgradeBlueprint("a743d7d1d7534cf78817e29d8ded7366:vn_ratten_shield_vit")
+    end
+    local active = Player_IsAlive(player.id) and Player_HasUpgrade(player.id, upgrade)
+    local applied = VietnamRattanArmorState.applied[player.index]
+    if active and applied == nil then
+        applied = {}
+        for _, name in ipairs(roster) do
+            local modifier = Modifier_Create(MAT_EntityType, "armor_scalar_for_ranged_damage",
+                MUT_Addition, false, 1, VietnamBlueprints_Entity(name))
+            table.insert(applied, Modifier_ApplyToPlayer(modifier, player.id, 0))
+        end
+        VietnamRattanArmorState.applied[player.index] = applied
+        print("VIETNAM_V2_RATTAN player=" .. tostring(player.index) .. " active=true armor=1")
+    elseif not active and applied ~= nil then
+        for _, modifier in ipairs(applied) do Modifier_Remove(modifier) end
+        VietnamRattanArmorState.applied[player.index] = nil
+        print("VIETNAM_V2_RATTAN player=" .. tostring(player.index) .. " active=false")
+    end
+end
+
+function VietnamRattanArmor_Cleanup()
+    for _, applied in pairs(VietnamRattanArmorState.applied) do
+        for _, modifier in ipairs(applied) do Modifier_Remove(modifier) end
+    end
+    VietnamRattanArmorState.applied = {}
+    upgrade = nil
+end

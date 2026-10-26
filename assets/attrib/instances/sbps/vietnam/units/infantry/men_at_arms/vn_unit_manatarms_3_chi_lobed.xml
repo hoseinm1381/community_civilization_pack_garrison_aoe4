@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="Lobed Maces native squad variant" template="sbps">
+	<uniqueid name="pbgid" value="2147480878" />
+	<instance_reference name="parent_pbg" value="sbps\vietnam\units\infantry\men_at_arms\vn_unit_manatarms_3_chi" mod="a743d7d1d7534cf78817e29d8ded7366" />
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="1336235242" List.ParentItemID="1336235242">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="1233639378" List.ParentItemID="1233639378">
+					<instance_reference name="type" value="ebps\vietnam\units\infantry\men_at_arms\vn_unit_manatarms_3_chi_lobed" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-2011366745" List.ParentItemID="-2011366745">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="-787739070" List.ParentItemID="-787739070">
+						<instance_reference name="type" value="ebps\vietnam\units\infantry\men_at_arms\vn_unit_manatarms_3_chi_lobed" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+		</list>
+	</variant>
+</instance>

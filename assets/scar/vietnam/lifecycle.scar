@@ -1,0 +1,87 @@
+VietnamLifecycleState = {active = false, civilizations = {}}
+
+function VietnamLifecycle_Start(civilizations)
+    if VietnamLifecycleState.active then return end
+    VietnamLifecycleState.civilizations = civilizations
+    for _, player in ipairs(PLAYERS) do
+        if civilizations[player.index] == "vietnam" then
+            VietnamLifecycleState.active = true
+        end
+    end
+    if VietnamLifecycleState.active then
+        VietnamLandmarks_Start()
+        VietnamGarden_Start(civilizations)
+        VietnamTunnels_Start(civilizations)
+        VietnamPagodaBuffalo_Start(civilizations)
+        VietnamEmptyGardens_Start(civilizations)
+        VietnamFloodedCitadel_Start()
+        VietnamTraps_Start()
+        Rule_AddInterval(VietnamLifecycle_Tick, 0.25)
+        VietnamLifecycle_Tick()
+    end
+end
+
+function VietnamLifecycle_Tick()
+    if not VietnamLifecycleState.active then return end
+    local groups = {}
+    -- Each player group is owned only for this tick. No World-owned entity
+    -- ownership queries, retained dead handles, or unordered simulation loops.
+    for _, player in ipairs(PLAYERS) do
+        local group = EGroup_CreateUnique()
+        Player_GetEntitiesEGroup(player.id, group)
+        groups[player.index] = group
+    end
+    local now = World_GetGameTime()
+    VietnamTowerTraining_BeginTick()
+    for _, player in ipairs(PLAYERS) do
+        if VietnamLifecycleState.civilizations[player.index] == "vietnam" then
+            VietnamPaddyConstruction_Update(player, groups[player.index])
+            VietnamPaddyFood_Update(player, groups[player.index])
+            VietnamPaddyWood_Update(player, groups[player.index], now)
+            VietnamPagodaBuffalo_Update(player, groups[player.index], now)
+            VietnamGarden_Update(player, groups[player.index])
+            VietnamLandmarks_Update(player, groups[player.index])
+            VietnamTunnels_Update(player, groups[player.index])
+            VietnamRattanArmor_Update(player)
+            VietnamSiegeResearch_Update(player)
+            VietnamScorchedEarth_Update(player)
+            VietnamFoundries_Update(player, groups[player.index])
+        end
+        if VietnamLifecycleState.civilizations[player.index] == "vietnam" and Player_IsAlive(player.id) then
+            VietnamDynasty_Update(player)
+            VietnamHideouts_Update(player, groups[player.index])
+            VietnamTowerTraining_Update(player, groups[player.index])
+        end
+        -- A captured private trap keeps the same post-attack lifetime.
+        VietnamTraps_Update(player, groups[player.index], now)
+    end
+    VietnamTraps_Tick(now)
+    VietnamFloodedCitadel_Update(groups, VietnamLifecycleState.civilizations)
+    VietnamTowerTraining_EndTick()
+    VietnamTunnels_Step(now, World_GetGameTicks())
+    VietnamTunnels_UpdateUI()
+    for _, player in ipairs(PLAYERS) do EGroup_Destroy(groups[player.index]) end
+end
+
+function VietnamLifecycle_Cleanup()
+    VietnamLifecycleState.active = false
+    Rule_Remove(VietnamLifecycle_Tick)
+    VietnamTunnels_Cleanup()
+    VietnamGarden_Cleanup()
+    VietnamPaddyConstruction_Cleanup()
+    VietnamPaddyFood_Cleanup()
+    VietnamPaddyWood_Cleanup()
+    VietnamPagodaBuffalo_Cleanup()
+    VietnamLandmarks_Cleanup()
+    VietnamTowerTraining_Cleanup()
+    VietnamHideouts_Cleanup()
+    VietnamRattanArmor_Cleanup()
+    VietnamScorchedEarth_Cleanup()
+    VietnamFoundries_Cleanup()
+    VietnamDynasty_Cleanup()
+    VietnamTraps_Cleanup()
+    VietnamFloodedCitadel_Cleanup()
+    VietnamEmptyGardens_Cleanup()
+    VietnamSiegeResearch_Cleanup()
+    VietnamLifecycleState.civilizations = {}
+end

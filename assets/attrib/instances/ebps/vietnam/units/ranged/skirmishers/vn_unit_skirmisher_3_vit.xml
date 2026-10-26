@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="vn_unit_skirmisher_3_vit" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-690770711" List.ParentItemID="-690770711">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="69747504" List.ParentItemID="69747504">
+					<list name="weapon_table" overrideParent="True">
+						<group name="weapon" List.ItemID="2147481063">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="0" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="1.7" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\vietnam\vn_weapon_skirmisher_3_vit" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_range_javelin_3" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="2147481064">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="1.7" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\vietnam\vn_weapon_light_infantry_torch_vit" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_torch" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+			<list name="target_scanning_priority_override" overrideParent="True">
+				<group name="override" List.ItemID="2147481065">
+					<enum name="target_type" value="ram" overrideParent="True" />
+					<float name="priority_value" value="90" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="126082233" List.ParentItemID="126082233">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="2147481066">
+					<group name="tier" List.ItemID="2147481067">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\malian\units\tier3_javelin_mal" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" overrideParent="True" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="2147481068">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\malian\units\tier4_javelin_mal" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\vietnam\vn_upgrade_skirmisher_4_vit" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\vietnam\units\ranged\skirmishers\vn_unit_skirmisher_4_vit" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\vietnam\units\ranged\skirmishers\vn_unit_skirmisher_4_vit" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference List.ItemID="-1115501914" List.ParentItemID="-1115501914" name="exts" value="ebpextensions\cost_ext">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="food" value="60" overrideParent="True" />
+					<float name="wood" value="30" overrideParent="True" />
+					<float name="gold" value="0" overrideParent="True" />
+					<float name="stone" value="0" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="20" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference List.ItemID="-1968249569" List.ParentItemID="-1968249569" name="exts" value="ebpextensions\health_ext">
+			<float name="hitpoints" value="95" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Melee" value="0" overrideParent="True" />
+				<float name="Ranged" value="3" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference List.ItemID="1921186394" List.ParentItemID="1921186394" name="exts" value="ebpextensions\moving_ext">
+			<enum_table name="speed_scaling_table">
+				<float name="default_speed" value="5.5" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference List.ItemID="-1735857511" List.ParentItemID="-1735857511" name="exts" value="ebpextensions\type_ext">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\chinese" List.ItemID="2147481072" />
+			</list>
+			<list name="unit_type_list">
+				<enum name="unit_type" value="stealth_cover" List.ItemID="2147481073" List.ListAction="Append" />
+				<enum name="unit_type" value="musofadi_stealth" List.ItemID="2147481074" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\stealth_ext" List.ItemID="2147481075" List.ListAction="Append">
+			<float name="revealed_time" value="8" />
+			<float name="reveal_radius" value="0" />
+			<bool name="revealed_by_unit" value="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147481062" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_javelin_3" />
+</instance>

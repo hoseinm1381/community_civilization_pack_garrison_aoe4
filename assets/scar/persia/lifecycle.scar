@@ -1,0 +1,16 @@
+-- Stage 1 has no recurring Persian effects. Full roster follows native approval.
+PersiaLifecycleState = {players = {}}
+
+function PersiaLifecycle_Start(civilizations)
+    for _, player in ipairs(PLAYERS) do
+        if civilizations[player.index] == "persia" then
+            PersiaLifecycleState.players[player.index] = true
+            print("PERSIA_PROBE_ACTIVE player=" .. tostring(player.index))
+        end
+    end
+end
+
+function PersiaLifecycle_Cleanup()
+    PersiaLifecycleState.players = {}
+    PersiaInitializationState.applied = {}
+end

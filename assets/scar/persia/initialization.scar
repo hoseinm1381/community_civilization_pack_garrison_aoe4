@@ -1,0 +1,98 @@
+-- Stage 1 native conversion probe. The complete Persian roster is not active.
+PersiaInitializationState = {applied = {}}
+local prefix = "a743d7d1d7534cf78817e29d8ded7366:"
+
+local function blueprintName(blueprint)
+    return string.match(BP_GetName(blueprint), "[^:]+$")
+end
+
+function PersiaInitialization_Apply(player)
+    if player == nil or not player.isHuman or not Player_IsAlive(player.id)
+        or Player_GetRaceName(player.id) ~= "sultanate" then
+        return false, "ineligible-player", false
+    end
+    if PersiaInitializationState.applied[player.index] then return false, "already-applied", false end
+    if type(Squad_ConvertBlueprint) ~= "function" or type(Entity_ConvertBlueprint) ~= "function" then
+        return false, "conversion-contract-unavailable", false
+    end
+    if not PersiaBlueprints_Available() then return false, "blueprints-unavailable", false end
+    -- Official cardinal.scar uses these age-upgrade short names as well.
+    if Player_HasUpgrade(player.id, BP_GetUpgradeBlueprint("feudal_age"))
+        or Player_HasUpgrade(player.id, BP_GetUpgradeBlueprint("castle_age"))
+        or Player_HasUpgrade(player.id, BP_GetUpgradeBlueprint("imperial_age")) then
+        return false, "unsupported-age", false
+    end
+    local capitals, villagers, scouts = {}, {}, {}
+    local group = EGroup_CreateUnique()
+    local ok, reason = pcall(function()
+        Player_GetEntitiesEGroup(player.id, group)
+        for i = 1, EGroup_Count(group) do
+            local entity = EGroup_GetEntityAt(group, i)
+            if Entity_IsValid(Entity_GetID(entity))
+                and blueprintName(Entity_GetBlueprint(entity)) == "building_town_center_capital_sul" then
+                if Entity_IsUnderConstruction(entity) or Entity_GetFilledHoldSquadSlots(entity) ~= 0 then
+                    return "occupied-or-unfinished-capital"
+                end
+                table.insert(capitals, entity)
+            end
+        end
+        -- Engine-owned observer; never destroy it as a temporary SGroup.
+        local squads = Player_GetSquads(player.id)
+        for i = 1, SGroup_Count(squads) do
+            local squad = SGroup_GetSquadAt(squads, i)
+            local name = blueprintName(Squad_GetBlueprint(squad))
+            if name == "unit_villager_1_sul" or name == "unit_scout_1_sul" then
+                local entity = Squad_GetFirstEntity(squad)
+                if entity == nil or not Entity_IsValid(Entity_GetID(entity)) then return "invalid-starting-entity" end
+                local expected = blueprintName(Entity_GetBlueprint(entity))
+                if expected ~= name then return "mismatched-starting-entity" end
+                table.insert(name == "unit_villager_1_sul" and villagers or scouts, {squad = squad, entity = entity})
+            end
+        end
+        if #capitals ~= 1 or #villagers ~= 6 or #scouts ~= 1 then return "unsupported-starting-army" end
+        return nil
+    end)
+    EGroup_Destroy(group)
+    if not ok then return false, "preflight-error:" .. tostring(reason), false end
+    if reason ~= nil then return false, reason, false end
+
+    local mutated = false
+    local converted, result = pcall(function()
+        -- Resolve every blueprint before the first mutation.
+        local tc = BP_GetEntityBlueprint(prefix .. "ps_probe_building_town_center_capital_sul")
+        local vil = BP_GetEntityBlueprint(prefix .. "ps_probe_unit_villager_1_sul")
+        local vilSquad = BP_GetSquadBlueprint(prefix .. "ps_probe_unit_villager_1_sul")
+        local scout = BP_GetEntityBlueprint(prefix .. "ps_probe_unit_scout_1_sul")
+        local scoutSquad = BP_GetSquadBlueprint(prefix .. "ps_probe_unit_scout_1_sul")
+        mutated = true
+        Entity_ConvertBlueprint(capitals[1], tc)
+        -- Same entity-then-squad order as official gameplay/chatcheats.scar.
+        for _, item in ipairs(villagers) do
+            Entity_ConvertBlueprint(item.entity, vil)
+            Squad_ConvertBlueprint(item.squad, vilSquad)
+        end
+        Entity_ConvertBlueprint(scouts[1].entity, scout)
+        Squad_ConvertBlueprint(scouts[1].squad, scoutSquad)
+        if blueprintName(Entity_GetBlueprint(capitals[1])) ~= "ps_probe_building_town_center_capital_sul" then
+            return "conversion-postcondition"
+        end
+        for _, item in ipairs(villagers) do
+            if blueprintName(Entity_GetBlueprint(item.entity)) ~= "ps_probe_unit_villager_1_sul"
+                or blueprintName(Squad_GetBlueprint(item.squad)) ~= "ps_probe_unit_villager_1_sul" then
+                return "conversion-postcondition"
+            end
+        end
+        if blueprintName(Entity_GetBlueprint(scouts[1].entity)) ~= "ps_probe_unit_scout_1_sul"
+            or blueprintName(Squad_GetBlueprint(scouts[1].squad)) ~= "ps_probe_unit_scout_1_sul" then
+            return "conversion-postcondition"
+        end
+        return nil
+    end)
+    if not converted then return false, "conversion-error:" .. tostring(result), mutated end
+    if result ~= nil then return false, result, mutated end
+    -- Source and current official starting resources are identical (200/200/100/0).
+    -- Leave lobby resources and map/army sheep intact; no second spawn or grant.
+    PersiaInitializationState.applied[player.index] = true
+    print("PERSIA_PROBE_INIT_APPLIED player=" .. tostring(player.index) .. " tc=1 villagers=6 scouts=1")
+    return true, "applied", true
+end

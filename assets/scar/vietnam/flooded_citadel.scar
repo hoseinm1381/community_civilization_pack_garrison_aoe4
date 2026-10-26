@@ -1,0 +1,177 @@
+import("modifiers.scar")
+
+VietnamFloodedCitadelState = {active = false, sources = {}, applied = {}, moving = {}}
+local landmark = "vn_building_landmark_age2_imperrial_citadel_vit"
+-- Current engine site_ext schema defines these as HALF dimensions in metres.
+-- The Citadel is forced axis aligned, including when its visual is rotated.
+local halfWidth, halfLength = 8, 8
+local fieldRange = 8 * 4 -- eight game tiles, measured beyond the footprint
+
+local function living(entity)
+    return Entity_IsValid(Entity_GetID(entity)) and Entity_IsAlive(entity)
+        and Entity_GetHealth(entity) > 0
+end
+
+local function removeSlow(id)
+    local applied = VietnamFloodedCitadelState.applied[id]
+    if applied ~= nil then
+        if Entity_IsValid(id) then Modifier_Remove(applied.handle) end
+        VietnamFloodedCitadelState.applied[id] = nil
+    end
+end
+
+local function removeSource(id)
+    for target, applied in pairs(VietnamFloodedCitadelState.applied) do
+        applied.sources[id] = nil
+        if next(applied.sources) == nil then removeSlow(target) end
+    end
+end
+
+local function inside(position, source)
+    local dx = math.max(math.abs(position.x - source.position.x) - halfWidth, 0)
+    local dz = math.max(math.abs(position.z - source.position.z) - halfLength, 0)
+    return dx * dx + dz * dz <= fieldRange * fieldRange
+end
+
+local function eligible(entity, player)
+    if not living(entity) or Entity_IsInHold(entity) or Entity_IsBuilding(entity)
+        or Entity_IsOfType(entity, "naval_unit")
+        or Entity_IsOfType(entity, "deep_water_fish") or Entity_IsOfType(entity, "shore_fish") then return false end
+    local blueprint = Entity_GetBlueprint(entity)
+    local key = BP_GetName(blueprint)
+    local moving = VietnamFloodedCitadelState.moving[key]
+    if moving == nil then
+        -- Unmodified speed: other slows/immobilization cannot hide a unit from
+        -- the field. Zero-speed scenery and attached weapon actors are excluded.
+        local speed = BP_GetEntityBPDefaultSpeed(blueprint, false, player.id)
+        moving = speed > 0
+        print("VIETNAM_V2_FLOODED_TARGET blueprint=" .. BP_GetName(blueprint) .. " base_speed=" .. tostring(speed))
+        VietnamFloodedCitadelState.moving[key] = moving
+    end
+    return moving
+end
+
+function VietnamFloodedCitadel_Start()
+    if VietnamFloodedCitadelState.active then return end
+    VietnamFloodedCitadelState.active = true
+    Rule_AddGlobalEvent(VietnamFloodedCitadel_OnEntityKilled, GE_EntityKilled)
+end
+
+function VietnamFloodedCitadel_OnEntityKilled(context)
+    if not VietnamFloodedCitadelState.active or context == nil or context.victim == nil then return end
+    local entity = context.victim
+    local id = Entity_GetID(entity)
+    if not Entity_IsValid(id) then return end
+    if VietnamBlueprints_Matches(entity, landmark) then
+        local source = VietnamFloodedCitadelState.sources[id] or {}
+        source.active = false
+        source.recovering = true
+        VietnamFloodedCitadelState.sources[id] = source
+        -- Preserve another Citadel's coverage and every unrelated modifier.
+        removeSource(id)
+    end
+    removeSlow(id)
+end
+
+function VietnamFloodedCitadel_Update(groups, civilizations)
+    if not VietnamFloodedCitadelState.active then return end
+    local sources, seenSources = {}, {}
+    for _, player in ipairs(PLAYERS) do
+        if civilizations[player.index] == "vietnam" and Player_IsAlive(player.id) then
+            local group = groups[player.index]
+            for i = 1, EGroup_CountSpawned(group) do
+                local entity = EGroup_GetSpawnedEntityAt(group, i)
+                if VietnamBlueprints_Matches(entity, landmark) then
+                    local id = Entity_GetID(entity)
+                    seenSources[id] = true
+                    local state = VietnamFloodedCitadelState.sources[id] or {active = false, recovering = false}
+                    local wasActive = state.active
+                    local ready = living(entity) and Entity_GetStateModelBool(entity, "landmark_active")
+                        and not Entity_IsUnderConstruction(entity)
+                        and Entity_GetBuildingProgress(entity) >= 1
+                    if state.active and not ready then state.recovering = true end
+                    state.active = ready and (not state.recovering or Entity_GetHealth(entity) >= Entity_GetHealthMax(entity))
+                    if wasActive ~= state.active then
+                        print("VIETNAM_V2_FLOODED_SOURCE id=" .. tostring(id) .. " owner=" .. tostring(player.index)
+                            .. " active=" .. tostring(state.active) .. " progress=" .. tostring(Entity_GetBuildingProgress(entity)))
+                    end
+                    if state.active then
+                        state.recovering = false
+                        table.insert(sources, {id = id, owner = player.id, position = Entity_GetPosition(entity)})
+                    end
+                    VietnamFloodedCitadelState.sources[id] = state
+                end
+            end
+        end
+    end
+    for id, state in pairs(VietnamFloodedCitadelState.sources) do
+        if not seenSources[id] then
+            if state.active then state.recovering = true end
+            state.active = false
+        end
+    end
+
+    local seen = {}
+    if #sources > 0 then
+        for _, player in ipairs(PLAYERS) do
+            if Player_IsAlive(player.id) then
+                local enemies = {}
+                for _, source in ipairs(sources) do
+                    if source.owner ~= player.id and Player_ObserveRelationship(source.owner, player.id) == R_ENEMY then
+                        table.insert(enemies, source)
+                    end
+                end
+                if #enemies > 0 then
+                    -- The lifecycle's building/entity group does not reliably
+                    -- include entities inside squads. This engine-owned observer
+                    -- explicitly includes squad members; never destroy it.
+                    local group = Player_GetAllEntities(player.id)
+                    for i = 1, EGroup_CountSpawned(group) do
+                        local entity = EGroup_GetSpawnedEntityAt(group, i)
+                        if eligible(entity, player) then
+                            local position, coverage = Entity_GetPosition(entity), {}
+                            for _, source in ipairs(enemies) do
+                                if inside(position, source) then coverage[source.id] = true end
+                            end
+                            if next(coverage) ~= nil then
+                                local id, blueprint = Entity_GetID(entity), Entity_GetBlueprint(entity)
+                                local applied = VietnamFloodedCitadelState.applied[id]
+                                if applied ~= nil and applied.blueprint ~= blueprint then
+                                    removeSlow(id)
+                                    applied = nil
+                                end
+                                if applied == nil then
+                                    local modifier = Modifier_Create(MAT_Entity, "speed_maximum_modifier",
+                                        MUT_Multiplication, false, 0.7, "")
+                                    local handle = Modifier_ApplyToEntity(modifier, entity, 0)
+                                    if handle ~= nil then
+                                        applied = {handle = handle, blueprint = blueprint, sources = coverage}
+                                        VietnamFloodedCitadelState.applied[id] = applied
+                                    end
+                                else
+                                    applied.sources = coverage
+                                end
+                                if applied ~= nil then seen[id] = true end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+    -- No lingering duration: remove this field's own handle on the first tick
+    -- outside coverage, including embarkation, ownership/diplomacy or defeat.
+    for id, _ in pairs(VietnamFloodedCitadelState.applied) do
+        if not seen[id] then removeSlow(id) end
+    end
+end
+
+function VietnamFloodedCitadel_Cleanup()
+    if VietnamFloodedCitadelState.active then
+        VietnamFloodedCitadelState.active = false
+        Rule_RemoveGlobalEvent(VietnamFloodedCitadel_OnEntityKilled)
+    end
+    for id, _ in pairs(VietnamFloodedCitadelState.applied) do removeSlow(id) end
+    VietnamFloodedCitadelState.sources = {}
+    VietnamFloodedCitadelState.moving = {}
+end

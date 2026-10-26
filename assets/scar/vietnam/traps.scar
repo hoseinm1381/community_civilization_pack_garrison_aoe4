@@ -1,0 +1,157 @@
+import("modifiers.scar")
+-- Native tuning owns targeting, firing, direct damage and Malian poison.
+-- Build the original blocking actor, then convert it in place after completion.
+-- Completed actors are passable and inherit the native attached weapon relay.
+-- The four-second lifetime still starts only after the first observed attack.
+VietnamTrapsState = {pending = {}, slows = {}, probes = {}, active = false}
+
+local trapKinds = {
+    {building = "vn_building_bambo_outpost_chi", passable = "vn_building_bambo_outpost_chi_passable"},
+    {building = "vn_building_defense_outpost_bambo_chi", passable = "vn_building_defense_outpost_bambo_chi_passable"},
+}
+
+local function trapKind(entity)
+    for _, kind in ipairs(trapKinds) do
+        if VietnamBlueprints_Matches(entity, kind.building) then return kind, true end
+        if VietnamBlueprints_Matches(entity, kind.passable) then return kind, false end
+    end
+    return nil, false
+end
+
+local function isTrap(entity)
+    return trapKind(entity) ~= nil
+end
+
+local function isTrapDamageSource(entity)
+    -- Native building weapons run on an attached weapon EBPS. Depending on
+    -- native attribution, damage may report the building or that private relay.
+    -- This relay is referenced only by the two trap bases, never ordinary Keeps.
+    return isTrap(entity)
+        or VietnamBlueprints_Matches(entity, "vn_wpn_siege_outpost_handcannon_new_chi")
+end
+
+function VietnamTraps_Start()
+    if VietnamTrapsState.active then return end
+    VietnamTrapsState.active = true
+    Rule_AddGlobalEvent(VietnamTraps_OnDamageReceived, GE_DamageReceived)
+end
+
+-- GE_DamageReceived attacker/victim/isRepairing follow official conquest.scar.
+-- Recognize the trap and its dedicated native weapon-AI relay as attackers.
+-- Native test gate: verify poison ticks have no matching trap-attacker event;
+-- they must never count as additional arrow hits.
+function VietnamTraps_OnDamageReceived(context)
+    if not VietnamTrapsState.active or context == nil or context.isRepairing
+        or context.attacker == nil or context.victim == nil
+        or context.attacker == context.victim then return end
+    local attackerId = Entity_GetID(context.attacker)
+    local victimId = Entity_GetID(context.victim)
+    if not Entity_IsValid(attackerId) or not Entity_IsValid(victimId)
+        or not Entity_IsAlive(context.victim) or not isTrapDamageSource(context.attacker) then return end
+    -- Nonexclusive multiplication: each hit owns an explicitly removed handle.
+    -- Never restore speed by setting it or dividing out other modifiers.
+    local modifier = Modifier_Create(MAT_Entity, "speed_maximum_modifier",
+        MUT_Multiplication, false, 0.8, "")
+    local handle = Modifier_ApplyToEntity(modifier, context.victim, 0)
+    if handle ~= nil then
+        table.insert(VietnamTrapsState.slows, {handle = handle, victim = victimId, expires = World_GetGameTime() + 5})
+    end
+    print("VIETNAM_V2_TRAP_SLOW attacker=" .. tostring(attackerId)
+        .. " victim=" .. tostring(victimId) .. " multiplier=0.8 seconds=5")
+end
+
+function VietnamTraps_Update(player, entities, now)
+    for i = 1, EGroup_Count(entities) do
+        local entity = EGroup_GetEntityAt(entities, i)
+        local id = Entity_GetID(entity)
+        if Entity_IsValid(id) and Entity_IsAlive(entity) and not Entity_IsUnderConstruction(entity) then
+            local kind, needsConversion = trapKind(entity)
+            if kind ~= nil then
+                -- Observe before conversion, which may clear native attack history.
+                local attacked = Entity_IsAttacking(entity, 0.5)
+                if needsConversion then
+                    Entity_ConvertBlueprint(entity, VietnamBlueprints_Entity(kind.passable))
+                    -- Conversion uses the existing entity; refresh its handle afterward.
+                    entity = nil
+                    if Entity_IsValid(id) then
+                        entity = Entity_FromID(id)
+                        if Entity_IsAlive(entity) and VietnamBlueprints_Matches(entity, kind.passable) then
+                            VietnamTrapsState.probes[id] = now + 1
+                            print("VIETNAM_V2_TRAP_PASSABLE entity=" .. tostring(id) .. " blueprint=" .. kind.passable)
+                        end
+                    end
+                end
+                if entity ~= nil and Entity_IsAlive(entity) and isTrap(entity)
+                    and VietnamTrapsState.pending[id] == nil and attacked then
+                    -- Record the first observation once. Later attacks never extend it.
+                    VietnamTrapsState.pending[id] = now + 4
+                    print("VIETNAM_V2_TRAP_DESTROY_TIMER entity=" .. tostring(id) .. " seconds=4")
+                end
+            end
+        end
+    end
+end
+
+function VietnamTraps_Tick(now)
+    -- One read-only snapshot after native conversion has settled. This
+    -- distinguishes a missing/inactive firing hardpoint from weapon tuning.
+    local probeIds = {}
+    for id in pairs(VietnamTrapsState.probes) do table.insert(probeIds, id) end
+    table.sort(probeIds)
+    for _, id in ipairs(probeIds) do
+        if now >= VietnamTrapsState.probes[id] then
+            VietnamTrapsState.probes[id] = nil
+            if Entity_IsValid(id) then
+                local entity = Entity_FromID(id)
+                if Entity_IsAlive(entity) and isTrap(entity) then
+                    local count = Entity_GetWeaponHardpointCount(entity)
+                    local active = count > 0 and Entity_IsHardpointActive(entity, 0)
+                    print("VIETNAM_V2_TRAP_WEAPON_PROBE entity=" .. tostring(id)
+                        .. " hardpoints=" .. tostring(count) .. " hp0active=" .. tostring(active))
+                end
+            end
+        end
+    end
+    -- Remove each expired handle; dropping a Lua record alone does not undo it.
+    -- The victim owns the modifier, so trap destruction never cancels expiry.
+    local liveSlows = {}
+    for _, slow in ipairs(VietnamTrapsState.slows) do
+        if slow.expires > now then
+            table.insert(liveSlows, slow)
+        elseif Entity_IsValid(slow.victim) then
+            Modifier_Remove(slow.handle)
+        end
+    end
+    VietnamTrapsState.slows = liveSlows
+    -- Process world IDs in stable order; never retain a delayed entity handle.
+    local ids = {}
+    for id in pairs(VietnamTrapsState.pending) do table.insert(ids, id) end
+    table.sort(ids)
+    for _, id in ipairs(ids) do
+        if not Entity_IsValid(id) then
+            VietnamTrapsState.pending[id] = nil
+        else
+            local entity = Entity_FromID(id)
+            if not Entity_IsAlive(entity) or not isTrap(entity) then
+                VietnamTrapsState.pending[id] = nil
+            elseif now >= VietnamTrapsState.pending[id] then
+                VietnamTrapsState.pending[id] = nil
+                Entity_Kill(entity)
+                print("VIETNAM_V2_TRAP_AUTO_DESTROY entity=" .. tostring(id))
+            end
+        end
+    end
+end
+
+function VietnamTraps_Cleanup()
+    if VietnamTrapsState.active then
+        Rule_RemoveGlobalEvent(VietnamTraps_OnDamageReceived)
+    end
+    for _, slow in ipairs(VietnamTrapsState.slows) do
+        if Entity_IsValid(slow.victim) then Modifier_Remove(slow.handle) end
+    end
+    VietnamTrapsState.active = false
+    VietnamTrapsState.slows = {}
+    VietnamTrapsState.probes = {}
+    VietnamTrapsState.pending = {}
+end

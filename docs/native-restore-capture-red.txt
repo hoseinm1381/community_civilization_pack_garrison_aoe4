@@ -1,0 +1,13 @@
+.F.......
+======================================================================
+FAIL: test_captured_trap_first_attack_also_gets_lifetime_from_real_lifecycle (test_legacy_trap_tunnel.FourSecondTrapLifetimeTests.test_captured_trap_first_attack_also_gets_lifetime_from_real_lifecycle)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 154, in test_captured_trap_first_attack_also_gets_lifetime_from_real_lifecycle
+    self.assertTrue(self.g.trap.dead)
+AssertionError: None is not true
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.032s
+
+FAILED (failures=1)

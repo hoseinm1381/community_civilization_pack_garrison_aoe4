@@ -1,0 +1,27 @@
+import("modifiers.scar")
+
+VietnamBuffaloState = {handles = {}}
+
+function VietnamBuffalo_Start(civilizations)
+    -- Officials already consume China's vehicle pool. Use the unused third
+    -- native population channel for Buffalo, with the same native queue cap.
+    for _, player in ipairs(PLAYERS) do
+        if civilizations[player.index] == "vietnam" and VietnamBuffaloState.handles[player.index] == nil then
+            local handles = {}
+            local maximum = Modifier_Create(MAT_Player, "max_medic_cap_player_modifier",
+                MUT_Addition, false, 15 - Player_GetMaxPopulationCap(player.id, CT_Medic), "")
+            table.insert(handles, Modifier_ApplyToPlayer(maximum, player.id, 0))
+            local current = Modifier_Create(MAT_Player, "medic_cap_player_modifier",
+                MUT_Addition, false, 15 - Player_GetCurrentPopulationCap(player.id, CT_Medic), "")
+            table.insert(handles, Modifier_ApplyToPlayer(current, player.id, 0))
+            VietnamBuffaloState.handles[player.index] = handles
+        end
+    end
+end
+
+function VietnamBuffalo_Cleanup()
+    for _, handles in pairs(VietnamBuffaloState.handles) do
+        for _, handle in ipairs(handles) do Modifier_Remove(handle) end
+    end
+    VietnamBuffaloState.handles = {}
+end

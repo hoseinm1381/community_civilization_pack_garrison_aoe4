@@ -1,0 +1,97 @@
+-- Native replacement queue shared by both Garden representations.
+VietnamGardenState={players={},civilizations={},ruins={},active=false}
+local prefix="a743d7d1d7534cf78817e29d8ded7366:"
+local function freeBP() return BP_GetSquadBlueprint(prefix.."vn_unit_war_elephant_handcannon_4_vit_free") end
+local function paidBP() return BP_GetSquadBlueprint(prefix.."vn_unit_war_elephant_handcannon_4_vit") end
+local function isGarden(e)
+    return VietnamBlueprints_Matches(e,"vn_building_landmark_age3_imperial_garden_vit")
+        or VietnamBlueprints_Matches(e,"vn_building_landmark_age3_new_imperial_garden")
+end
+local function cancel(e)
+    if Entity_HasProductionQueue(e) then for i=Entity_GetProductionQueueSize(e)-1,0,-1 do
+        if Entity_GetProductionQueueItemType(e,i)==PITEM_Spawn and Entity_GetProductionQueueItem(e,i)==freeBP() then Entity_CancelProductionQueueItem(e,i) end
+    end end
+end
+function VietnamGarden_Start(civilizations)
+    VietnamGardenState.civilizations=civilizations
+    if VietnamGardenState.active then return end
+    VietnamGardenState.active=true;Rule_AddGlobalEvent(VietnamGarden_OnEntityKilled,GE_EntityKilled)
+end
+function VietnamGarden_OnEntityKilled(context)
+    if context==nil or context.victim==nil then return end
+    local e=context.victim;local id=Entity_GetID(e)
+    if Entity_IsValid(id) and isGarden(e) then
+        VietnamGardenState.ruins[id]=true;cancel(e)
+        for _,s in pairs(VietnamGardenState.players) do
+            if s.sources[id]~=nil then s.sources[id].active=false;s.sources[id].recovering=true;s.initialGrant=false end
+        end
+    end
+end
+function VietnamGarden_Update(player,entities)
+    if VietnamGardenState.civilizations[player.index]~="vietnam" then return end
+    local s=VietnamGardenState.players[player.index]
+    if s==nil then s={sources={},initialSeen=false,initialGrant=false};VietnamGardenState.players[player.index]=s end
+    local seen,ready={},{};local previouslyDestroyed=false
+    for i=1,EGroup_CountSpawned(entities) do
+        local e=EGroup_GetSpawnedEntityAt(entities,i)
+        if Entity_IsValid(Entity_GetID(e)) and Entity_GetPlayerOwner(e)==player.id and isGarden(e) then
+            local id=Entity_GetID(e);seen[id]=true
+            local r=s.sources[id] or {active=false,recovering=VietnamGardenState.ruins[id]==true}
+            if r.recovering or VietnamGardenState.ruins[id] then previouslyDestroyed=true end
+            local active=Player_IsAlive(player.id) and Entity_IsAlive(e) and Entity_GetHealth(e)>0
+                and not Entity_IsUnderConstruction(e) and Entity_GetBuildingProgress(e)>=1 and Entity_GetStateModelBool(e,"landmark_active")
+            if not active and (r.active or not Entity_IsAlive(e) or Entity_GetHealth(e)<=0) then r.recovering=true;s.initialGrant=false;cancel(e) end
+            r.active=active and (not r.recovering or Entity_GetHealth(e)>=Entity_GetHealthMax(e))
+            if r.reportedActive~=r.active then
+                print("VIETNAM_V2_GARDEN_SOURCE player="..tostring(player.index).." source="..tostring(id)
+                    .." active="..tostring(r.active).." landmark_active="..tostring(Entity_GetStateModelBool(e,"landmark_active")))
+                r.reportedActive=r.active
+            end
+            if r.active then r.recovering=false;ready[#ready+1]=e end
+            s.sources[id]=r
+        end
+    end
+    for id,r in pairs(s.sources) do if not seen[id] then
+        if r.active then s.initialGrant=false end
+        r.active=false;r.recovering=true
+    end end
+    if #ready==0 then return end
+    table.sort(ready,function(a,b) return Entity_GetID(a)<Entity_GetID(b) end)
+    if not s.initialSeen then s.initialSeen=true;s.initialGrant=not previouslyDestroyed end
+    local count=0
+    SGroup_ForEachEx(Player_GetSquads(player.id),function(g,i,squad)
+        if Squad_IsAlive(squad) and (Squad_GetBlueprint(squad)==freeBP() or Squad_GetBlueprint(squad)==paidBP()) then count=count+1 end
+    end,true,true)
+    for i=1,EGroup_CountSpawned(entities) do
+        local e=EGroup_GetSpawnedEntityAt(entities,i)
+        if Entity_IsValid(Entity_GetID(e)) and Entity_HasProductionQueue(e) then for j=0,Entity_GetProductionQueueSize(e)-1 do
+            if Entity_GetProductionQueueItemType(e,j)==PITEM_Spawn then
+                local bp=Entity_GetProductionQueueItem(e,j)
+                if bp==freeBP() or bp==paidBP() then count=count+1 end
+            end
+        end end
+    end
+    if count>0 then s.initialGrant=false;return end
+    if s.initialGrant then
+        if Player_GetCurrentPopulation(player.id,CT_Personnel)+3>Player_GetCurrentPopulationCap(player.id,CT_Personnel) then return end
+        local p=Entity_GetPosition(ready[1]);local pos=World_Pos(p.x-1,p.y,p.z-16)
+        local squad=Squad_CreateAndSpawnToward(freeBP(),player.id,0,pos,p)
+        if squad~=nil and Squad_IsValid(Squad_GetID(squad)) and Squad_IsAlive(squad) then
+            s.initialGrant=false
+            print("VIETNAM_V2_GARDEN_INITIAL player="..tostring(player.index).." source="..tostring(Entity_GetID(ready[1])))
+        end
+    else
+        -- Native queue owns its timer, population pause/reservation and placement.
+        local queued=Entity_QueueProductionItemByPBG(ready[1],PITEM_Spawn,freeBP())
+        if s.queueResult~=queued then
+            print("VIETNAM_V2_GARDEN_QUEUE player="..tostring(player.index)
+                .." source="..tostring(Entity_GetID(ready[1])).." accepted="..tostring(queued))
+            s.queueResult=queued
+        end
+    end
+end
+function VietnamGarden_Cleanup()
+    if VietnamGardenState.active then Rule_RemoveGlobalEvent(VietnamGarden_OnEntityKilled) end
+    for _,s in pairs(VietnamGardenState.players) do for id in pairs(s.sources) do if Entity_IsValid(id) then cancel(Entity_FromID(id)) end end end
+    VietnamGardenState={players={},civilizations={},ruins={},active=false}
+end

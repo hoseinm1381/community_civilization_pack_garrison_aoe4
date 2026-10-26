@@ -1,0 +1,199 @@
+EEEEEEFFFFFFFFFF
+======================================================================
+ERROR: test_both_types_die_four_seconds_after_first_attack_without_scripted_damage (test_legacy_trap_tunnel.FourSecondTrapLifetimeTests.test_both_types_die_four_seconds_after_first_attack_without_scripted_damage) (name='vn_building_bambo_outpost_chi')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 85, in test_both_types_die_four_seconds_after_first_attack_without_scripted_damage
+    self.observe(10)
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 78, in observe
+    self.g.VietnamTraps_Tick(now)
+TypeError: 'NoneType' object is not callable
+
+======================================================================
+ERROR: test_both_types_die_four_seconds_after_first_attack_without_scripted_damage (test_legacy_trap_tunnel.FourSecondTrapLifetimeTests.test_both_types_die_four_seconds_after_first_attack_without_scripted_damage) (name='vn_building_defense_outpost_bambo_chi')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 85, in test_both_types_die_four_seconds_after_first_attack_without_scripted_damage
+    self.observe(10)
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 78, in observe
+    self.g.VietnamTraps_Tick(now)
+TypeError: 'NoneType' object is not callable
+
+======================================================================
+ERROR: test_destroyed_id_and_cleanup_cancel_safely (test_legacy_trap_tunnel.FourSecondTrapLifetimeTests.test_destroyed_id_and_cleanup_cancel_safely)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 130, in test_destroyed_id_and_cleanup_cancel_safely
+    self.observe(0)
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 78, in observe
+    self.g.VietnamTraps_Tick(now)
+TypeError: 'NoneType' object is not callable
+
+======================================================================
+ERROR: test_idle_or_incomplete_trap_does_not_start_timer (test_legacy_trap_tunnel.FourSecondTrapLifetimeTests.test_idle_or_incomplete_trap_does_not_start_timer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 96, in test_idle_or_incomplete_trap_does_not_start_timer
+    self.observe(0)
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 78, in observe
+    self.g.VietnamTraps_Tick(now)
+TypeError: 'NoneType' object is not callable
+
+======================================================================
+ERROR: test_repeated_attacks_do_not_restart_timer (test_legacy_trap_tunnel.FourSecondTrapLifetimeTests.test_repeated_attacks_do_not_restart_timer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 108, in test_repeated_attacks_do_not_restart_timer
+    self.observe(0)
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 78, in observe
+    self.g.VietnamTraps_Tick(now)
+TypeError: 'NoneType' object is not callable
+
+======================================================================
+ERROR: test_timer_survives_loss_from_owner_group_but_never_kills_replacement_blueprint (test_legacy_trap_tunnel.FourSecondTrapLifetimeTests.test_timer_survives_loss_from_owner_group_but_never_kills_replacement_blueprint)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 116, in test_timer_survives_loss_from_owner_group_but_never_kills_replacement_blueprint
+    self.observe(0)
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 78, in observe
+    self.g.VietnamTraps_Tick(now)
+TypeError: 'NoneType' object is not callable
+
+======================================================================
+FAIL: test_both_traps_have_original_native_combat_in_every_variant (test_legacy_trap_tunnel.OriginalTuningParityTests.test_both_traps_have_original_native_combat_in_every_variant) (name='vn_building_bambo_outpost_chi', variant=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 50, in test_both_traps_have_original_native_combat_in_every_variant
+    self.assertEqual(gameplay(combat(aa)),gameplay(combat(bb)))
+AssertionError: Tuples differ: ('tem[162 chars]ints'}, [('group', {'name': 'hardpoint', 'comm[104473 chars][])]) != ('tem[162 chars]ints', 'overrideParent': 'True'}, []), ('bool'[3053 chars][])])
+
+First differing element 2:
+[('li[21 chars]ints'}, [('group', {'name': 'hardpoint', 'comm[104472 chars] [])]
+[('li[21 chars]ints', 'overrideParent': 'True'}, []), ('bool'[3052 chars] [])]
+
+Diff is 152592 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_both_traps_have_original_native_combat_in_every_variant (test_legacy_trap_tunnel.OriginalTuningParityTests.test_both_traps_have_original_native_combat_in_every_variant) (name='vn_building_bambo_outpost_chi', variant='campaign')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 50, in test_both_traps_have_original_native_combat_in_every_variant
+    self.assertEqual(gameplay(combat(aa)),gameplay(combat(bb)))
+AssertionError: Tuples differ: ('tem[162 chars]ints'}, [('group', {'name': 'hardpoint', 'comm[104473 chars][])]) != ('tem[162 chars]ints', 'overrideParent': 'True'}, []), ('bool'[3053 chars][])])
+
+First differing element 2:
+[('li[21 chars]ints'}, [('group', {'name': 'hardpoint', 'comm[104472 chars] [])]
+[('li[21 chars]ints', 'overrideParent': 'True'}, []), ('bool'[3052 chars] [])]
+
+Diff is 152592 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_both_traps_have_original_native_combat_in_every_variant (test_legacy_trap_tunnel.OriginalTuningParityTests.test_both_traps_have_original_native_combat_in_every_variant) (name='vn_building_defense_outpost_bambo_chi', variant=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 50, in test_both_traps_have_original_native_combat_in_every_variant
+    self.assertEqual(gameplay(combat(aa)),gameplay(combat(bb)))
+AssertionError: Tuples differ: ('tem[162 chars]ints'}, [('group', {'name': 'hardpoint', 'comm[51472 chars])])]) != ('tem[162 chars]ints', 'overrideParent': 'True'}, [])])
+
+First differing element 2:
+[('li[21 chars]ints'}, [('group', {'name': 'hardpoint', 'comm[51471 chars]])])]
+[('li[21 chars]ints', 'overrideParent': 'True'}, [])]
+
+Diff is 76786 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_both_traps_have_original_native_combat_in_every_variant (test_legacy_trap_tunnel.OriginalTuningParityTests.test_both_traps_have_original_native_combat_in_every_variant) (name='vn_building_defense_outpost_bambo_chi', variant='campaign')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 50, in test_both_traps_have_original_native_combat_in_every_variant
+    self.assertEqual(gameplay(combat(aa)),gameplay(combat(bb)))
+AssertionError: Tuples differ: ('tem[166 chars]ints'}, [('group', {'name': 'hardpoint', 'comm[39801 chars])])]) != ('tem[166 chars]ints', 'overrideParent': 'True'}, [])])
+
+First differing element 2:
+[('li[21 chars]ints'}, [('group', {'name': 'hardpoint', 'comm[39800 chars]])])]
+[('li[21 chars]ints', 'overrideParent': 'True'}, [])]
+
+Diff is 59409 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_native_tunneling_and_weapon_data_match_original (test_legacy_trap_tunnel.OriginalTuningParityTests.test_native_tunneling_and_weapon_data_match_original) (name='vn_vietnam_unit_mov_vit')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 55, in test_native_tunneling_and_weapon_data_match_original
+    self.assertEqual(gameplay(original(name)),gameplay(current(name)))
+AssertionError: Tuples differ: ('ins[1987 chars]e': '120'}, []), ('bool', {'name': 'refundable[21194 chars][])]) != ('ins[1987 chars]e': '0'}, []), ('bool', {'name': 'refundable',[12336 chars][])])
+
+First differing element 2:
+[('gr[1912 chars]e': '120'}, []), ('bool', {'name': 'refundable[21193 chars] [])]
+[('gr[1912 chars]e': '0'}, []), ('bool', {'name': 'refundable',[12335 chars] [])]
+
+Diff is 31040 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_native_tunneling_and_weapon_data_match_original (test_legacy_trap_tunnel.OriginalTuningParityTests.test_native_tunneling_and_weapon_data_match_original) (name='vn_weapon_outpost_handcannon_bambo_alarm_chi')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 55, in test_native_tunneling_and_weapon_data_match_original
+    self.assertEqual(gameplay(original(name)),gameplay(current(name)))
+AssertionError: Tuples differ: ('ins[4857 chars]': 'point_blank', 'value': 'False'}, []), ('bo[37800 chars])])]) != ('ins[4857 chars]': 'prevents_prone', 'value': 'False'}, []), ([38325 chars])])])
+
+First differing element 2:
+[('gr[4785 chars]': 'point_blank', 'value': 'False'}, []), ('bo[37799 chars]])])]
+[('gr[4785 chars]': 'prevents_prone', 'value': 'False'}, []), ([38324 chars]])])]
+
+Diff is 53208 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_native_tunneling_and_weapon_data_match_original (test_legacy_trap_tunnel.OriginalTuningParityTests.test_native_tunneling_and_weapon_data_match_original) (name='vn_weapon_outpost_handcannon_bambo_chi')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 55, in test_native_tunneling_and_weapon_data_match_original
+    self.assertEqual(gameplay(original(name)),gameplay(current(name)))
+AssertionError: Tuples differ: ('ins[4864 chars]': 'point_blank', 'value': 'False'}, []), ('bo[38080 chars])])]) != ('ins[4864 chars]': 'prevents_prone', 'value': 'False'}, []), ([38604 chars])])])
+
+First differing element 2:
+[('gr[4792 chars]': 'point_blank', 'value': 'False'}, []), ('bo[38079 chars]])])]
+[('gr[4792 chars]': 'prevents_prone', 'value': 'False'}, []), ([38603 chars]])])]
+
+Diff is 53367 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_native_tunneling_and_weapon_data_match_original (test_legacy_trap_tunnel.OriginalTuningParityTests.test_native_tunneling_and_weapon_data_match_original) (name='vn_upgrade_trap_range_vit')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 55, in test_native_tunneling_and_weapon_data_match_original
+    self.assertEqual(gameplay(original(name)),gameplay(current(name)))
+AssertionError: Tuples differ: ('ins[3908 chars]': '1763415431'}, [('enum', {'name': 'reason',[14667 chars])])]) != ('ins[3908 chars]': '1073764015'}, [('enum', {'name': 'reason',[14667 chars])])])
+
+First differing element 2:
+[('gr[3835 chars]': '1763415431'}, [('enum', {'name': 'reason',[14666 chars]])])]
+[('gr[3835 chars]': '1073764015'}, [('enum', {'name': 'reason',[14666 chars]])])]
+
+Diff is 25417 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_native_tunneling_and_weapon_data_match_original (test_legacy_trap_tunnel.OriginalTuningParityTests.test_native_tunneling_and_weapon_data_match_original) (name='vn_upgrade_trap_roller_trigger')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 55, in test_native_tunneling_and_weapon_data_match_original
+    self.assertEqual(gameplay(original(name)),gameplay(current(name)))
+AssertionError: Tuples differ: ('ins[1942 chars]': '1815291936'}, []), ('int', {'name': 'int_v[31618 chars])])]) != ('ins[1942 chars]': '1073763738'}, []), ('int', {'name': 'int_v[31208 chars])])])
+
+First differing element 2:
+[('gr[1834 chars]': '1815291936'}, []), ('int', {'name': 'int_v[31617 chars]])])]
+[('gr[1834 chars]': '1073763738'}, []), ('int', {'name': 'int_v[31207 chars]])])]
+
+Diff is 52673 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_scar_no_longer_owns_tunneling_or_trap_damage (test_legacy_trap_tunnel.OriginalTuningParityTests.test_scar_no_longer_owns_tunneling_or_trap_damage)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\age of empires 4 mods\01_Custom_Civilizations\Real_Vietnam\Variants\main\Vietnam_v2_this\tests\test_legacy_trap_tunnel.py", line 60, in test_scar_no_longer_owns_tunneling_or_trap_damage
+    self.assertNotIn('vietnam/tunneling.scar',mode)
+AssertionError: 'vietnam/tunneling.scar' unexpectedly found in 'import("cardinal.scar")\n-- Register before standard initialization so the opening hold precedes input.\nCore_RegisterModule("VietnamMode")\nimport("gamemodes/standard_mode.scar")\nimport("vietnam/prematch_precache.scar")\nimport("vietnam/selection_core.scar")\nimport("vietnam/blueprints.scar")\nimport("vietnam/initialization.scar")\nimport("vietnam/landmarks.scar")\nimport("vietnam/tower_training.scar")\nimport("vietnam/rattan_armor.scar")\nimport("vietnam/dynasty.scar")\nimport("vietnam/traps.scar")\nimport("vietnam/tunneling.scar")\nimport("vietnam/lifecycle.scar")\n\nVietnamModeState = {started = false, held = false, selection = nil,\n    protected = {}, ai = {}, civilizations = {}, networkRegistered = false,\n    popupActive = false, choiceSent = false, ending = false, banner = nil, dynastyHidden = false}\nlocal state = VietnamModeState\nlocal holdReason = "VietnamV2OpeningSelection"\nlocal locPrefix = "$a743d7d1d7534cf78817e29d8ded7366:"\nlocal blueprintPrefix = "a743d7d1d7534cf78817e29d8ded7366:"\n\nlocal function text(id)\n    return Loc_GetString(locPrefix .. tostring(id))\nend\n\nlocal function messageText(id)\n    -- Loc_GetString returns utf8_mt, which cannot use Lua\'s .. operator.\n    -- Native Cardinal uses Loc_ToAnsi for composed Lua strings. This probe\n    -- declares English only; keep localized values for the popup\'s UI labels.\n    return Loc_ToAnsi(text(id))\nend\n\nlocal function releaseHold()\n    if not state.held then return end\n    state.held = false\n    for _, player in ipairs(PLAYERS) do\n        Player_SetAllCommandAvailability(player.id, ITEM_DEFAULT, holdReason)\n        if state.ai[player.index] ~= nil and Player_IsAlive(player.id) then\n            AI_Enable(player.id, state.ai[player.index])\n        end\n    end\n    for _, item in ipairs(state.protected) do\n        -- Validity accepts the numeric world ID, not a SCAR entity handle.\n        -- Resolve a fresh handle only after validating delayed state.\n        if Entity_IsValid(item.entityID) then\n            Entity_SetInvulnerableMinCap(Entity_FromID(item.entityID), item.cap, -1)\n        end\n    end\n    state.protected = {}\nend\n\nlocal function holdMatch()\n    state.held = true\n    for _, player in ipairs(PLAYERS) do\n        Player_SetAllCommandAvailability(player.id, ITEM_LOCKED, holdReason)\n        if not player.isHuman then\n            state.ai[player.index] = AI_IsEnabled(player.id)\n            AI_Enable(player.id, false)\n        end\n    end\n    -- World_GetAllEntities includes World-owned resources; querying their\n    -- player owner violates Entity_GetPlayerOwner\'s documented precondition.\n    for _, player in ipairs(PLAYERS) do\n        local entities = EGroup_CreateUnique()\n        Player_GetEntitiesEGroup(player.id, entities)\n        for i = 1, EGroup_Count(entities) do\n            local entity = EGroup_GetEntityAt(entities, i)\n            local entityID = Entity_GetID(entity)\n            if Entity_IsValid(entityID) then\n                table.insert(state.protected, {entityID = entityID, cap = Entity_GetInvulnerableMinCap(entity)})\n                Entity_SetInvulnerableMinCap(entity, Entity_GetHealthPercentage(entity), -1)\n            end\n        end\n        EGroup_Destroy(entities)\n    end\nend\n\nfunction VietnamMode_MissingTuningWarning()\n    if state.ending then return end\n    if not UI_IsReplay() then\n        state.banner = messageText(1008)\n        UI_SystemMessageShow(state.banner)\n    end\n    print("VIETNAM_V2_BLUEPRINTS_UNAVAILABLE")\n    Rule_AddOneShot(VietnamMode_HideWarning, 3)\nend\n\nfunction VietnamMode_NoEligibleWarning()\n    if state.ending or UI_IsReplay() then return end\n    state.banner = messageText(1010)\n    local player = Core_GetPlayersTableEntry(Game_GetLocalPlayer())\n    if player ~= nil then state.banner = state.banner .. " (" .. Player_GetRaceName(player.id) .. ")" end\n    UI_SystemMessageShow(state.banner)\n    Rule_AddOneShot(VietnamMode_HideWarning, 3)\nend\n\nfunction VietnamMode_HideWarning()\n    if state.banner ~= nil then\n        UI_SystemMessageHide(state.banner)\n        state.banner = nil\n    end\nend\n\nfunction VietnamMode_DialogChoice(result)\n    if state.ending or state.selection == nil or state.selection.closed or state.choiceSent then return end\n    if result ~= DB_Button1 and result ~= DB_Button2 then return end\n    state.choiceSent = true\n    state.popupActive = false\n    local choice = result == DB_Button2 and "vietnam" or "china"\n    -- Current official network.scar derives sender identity from the engine.\n    -- The message contains no player index and cannot nominate another player.\n    Network_CallEvent("VietnamMode_NetChoose", choice)\nend\n\nfunction VietnamMode_NetChoose(sender, message)\n    if state.ending or state.selection == nil or state.selection.closed then return end\n    local player = Core_GetPlayersTableEntry(sender)\n    if player == nil or not player.isHuman or not Player_IsAlive(player.id) then return end\n    if VietnamSelectionCore.Choose(state.selection, player.index, message, World_GetGameTime()) then\n        print("VIETNAM_V2_CHOICE player=" .. tostring(player.index) .. " choice=" .. message)\n    end\nend\n\nlocal function closePopup()\n    if state.popupActive then\n        state.popupActive = false\n        state.choiceSent = true\n        UI_MessageBoxHide(DB_Button1)\n    end\n    if state.banner ~= nil then\n        UI_SystemMessageHide(state.banner)\n        state.banner = nil\n    end\nend\n\nfunction VietnamMode_RefreshDynastyUI()\n    if state.ending then return end\n    local player = Core_GetPlayersTableEntry(Game_GetLocalPlayer())\n    local vietnam = player ~= nil and state.civilizations[player.index] == "vietnam"\n    if vietnam then\n        -- The stock template ORs its show flag with Chinese RaceID. Hide the\n        -- presenter itself so that inherited race visibility cannot win.\n        DynastyUI_HideDropdown()\n        -- The stock controller helper refuses to toggle without a selected TC.\n        -- Close that local context/handler explicitly if its guard left it open.\n        if _dynasty ~= nil and _dynasty.data_context ~= nil\n            and _dynasty.data_context.is_dropdown_visible then\n            _dynasty.data_context.is_dropdown_visible = false\n            UI_RemoveEventHandler("Scar", "HUDPageBase.Cancel", "DynastyUI_HideDropdown")\n        end\n        DynastyUI_Show(false)\n        UI_SetPropertyValue("DynastyUI", "Visibility", "Collapsed")\n        UI_SetPropertyValue("DynastyUI", "IsHitTestVisible", false)\n        state.dynastyHidden = true\n    else\n        if state.dynastyHidden then\n            UI_SetPropertyValue("DynastyUI", "Visibility", "Visible")\n            UI_SetPropertyValue("DynastyUI", "IsHitTestVisible", true)\n            state.dynastyHidden = false\n        end\n        if player ~= nil then\n            DynastyUI_Show(Player_GetRaceName(player.id) == "chinese")\n        end\n    end\nend\n\nfunction VietnamMode_OnLocalPlayerChanged()\n    Rule_AddOneShot(VietnamMode_RefreshDynastyUI, 0.1)\nend\n\nlocal function finishSelection()\n    -- Resolve in player-index order, never according to local UI order.\n    for _, index in ipairs(state.selection.order) do\n        local record = state.selection.players[index]\n        local player = PLAYERS[index]\n        state.civilizations[index] = "china"\n        if not record.dropped and record.choice == "vietnam" and Player_IsAlive(player.id) then\n            if VietnamInitialization_Apply(player) then\n                state.civilizations[index] = "vietnam"\n            else\n                print("VIETNAM_V2_FEASIBILITY_FAILED player=" .. tostring(index))\n            end\n        end\n    end\n    VietnamSelectionCore.Close(state.selection)\n    releaseHold()\n    VietnamLifecycle_Start(state.civilizations)\n    VietnamMode_RefreshDynastyUI()\n    Rule_AddInterval(VietnamMode_RefreshDynastyUI, 0.5)\n    Rule_AddGlobalEvent(VietnamMode_OnLocalPlayerChanged, GE_LocalPlayerChanged)\n    closePopup()\n    Rule_Remove(VietnamMode_Tick)\n    if state.networkRegistered then\n        Network_RemoveEvent("VietnamMode_NetChoose")\n        state.networkRegistered = false\n    end\n    print("VIETNAM_V2_SELECTION_COMPLETE")\nend\n\nfunction VietnamMode_Tick()\n    if state.ending or state.selection == nil or state.selection.closed then return end\n    for _, index in ipairs(state.selection.order) do\n        if not Player_IsAlive(PLAYERS[index].id) then VietnamSelectionCore.Drop(state.selection, index) end\n    end\n    if VietnamSelectionCore.Tick(state.selection, World_GetGameTime()) then\n        finishSelection()\n        return\n    end\n    if not UI_IsReplay() then\n        local player = Core_GetPlayersTableEntry(Game_GetLocalPlayer())\n        local record = player and state.selection.players[player.index]\n        if record and record.choice == nil and not state.popupActive and not state.choiceSent then\n            UI_MessageBoxReset()\n            UI_MessageBoxSetText(text(1003), text(1007))\n            UI_MessageBoxSetButton(DB_Button1, text(1004), text(1004), "", true)\n            UI_MessageBoxSetButton(DB_Button2, text(1005), text(1009), "", true)\n            state.popupActive = true\n            UI_MessageBoxShow(DC_Default, VietnamMode_DialogChoice)\n        end\n        if state.banner ~= nil then UI_SystemMessageHide(state.banner) end\n        state.banner = messageText(1003) .. " (" .. tostring(math.max(0, math.ceil(state.selection.deadline - World_GetGameTime()))) .. "s)"\n        UI_SystemMessageShow(state.banner)\n    end\nend\n\nfunction VietnamMode_OnInit()\n    if state.started then return end\n    state.started = true\n    print("VIETNAM_V2_INIT_ENTER players=" .. tostring(#PLAYERS))\n    print("VIETNAM_V2_SOURCE revision=20261015-trap-tunnel-dynasty-r1 tunnel_protocol=entity_id_v1 trap_diagnostics=1")\n    local eligible = {}\n    for _, player in ipairs(PLAYERS) do\n        print("VIETNAM_V2_PLAYER index=" .. tostring(player.index) .. " human=" .. tostring(player.isHuman)\n            .. " race=" .. Player_GetRaceName(player.id) .. " alive=" .. tostring(Player_IsAlive(player.id)))\n        if player.isHuman and Player_GetRaceName(player.id) == "chinese" and Player_IsAlive(player.id) then\n            table.insert(eligible, player.index)\n        end\n    end\n    if #eligible == 0 then\n        print("VIETNAM_V2_NO_ELIGIBLE_HUMANS")\n        Rule_AddOneShot(VietnamMode_NoEligibleWarning, 1)\n        return\n    end\n    -- Exists is documented; do not resolve a missing custom blueprint first.\n    if not EBP_Exists(blueprintPrefix .. "vn_building_town_center_capital_chi") or not EBP_Exists(blueprintPrefix .. "vn_unit_villager_1_chi")\n        or not EBP_Exists(blueprintPrefix .. "vn_unit_scout_1_chi")\n        or not EBP_Exists(blueprintPrefix .. "vn_unit_war_elephant_1_vit")\n        or not EBP_Exists(blueprintPrefix .. "vn_building_unit_ranged_control_chi")\n        or not SBP_Exists(blueprintPrefix .. "vn_unit_villager_1_chi")\n        or not SBP_Exists(blueprintPrefix .. "vn_unit_scout_1_chi")\n        or not SBP_Exists(blueprintPrefix .. "vn_unit_war_elephant_1_vit") then\n        print("VIETNAM_V2_QUALIFIED_BLUEPRINTS_MISSING")\n        Rule_AddOneShot(VietnamMode_MissingTuningWarning, 1)\n        return\n    end\n    state.selection = VietnamSelectionCore.New(eligible, World_GetGameTime(), 30)\n    Network_RegisterEvent("VietnamMode_NetChoose")\n    state.networkRegistered = true\n    holdMatch()\n    Rule_AddInterval(VietnamMode_Tick, 1)\n    print("VIETNAM_V2_SELECTION_STARTED")\nend\n\nfunction VietnamMode_Start()\n    -- Start is after initialization and is the earliest presentation phase.\n    -- The interval remains responsible for authoritative timeout handling.\n    if state.held then VietnamMode_Tick() end\nend\n\nfunction VietnamMode_OnGameRestore()\n    Rule_AddOneShot(VietnamMode_RefreshDynastyUI, 0.1)\nend\n\nfunction VietnamMode_OnGameOver()\n    if state.ending then return end\n    state.ending = true\n    if state.selection then VietnamSelectionCore.Close(state.selection) end\n    Rule_Remove(VietnamMode_Tick)\n    Rule_Remove(VietnamMode_MissingTuningWarning)\n    Rule_Remove(VietnamMode_NoEligibleWarning)\n    Rule_Remove(VietnamMode_HideWarning)\n    Rule_Remove(VietnamMode_RefreshDynastyUI)\n    Rule_RemoveGlobalEvent(VietnamMode_OnLocalPlayerChanged)\n    if state.networkRegistered then\n        Network_RemoveEvent("VietnamMode_NetChoose")\n        state.networkRegistered = false\n    end\n    releaseHold()\n    closePopup()\n    VietnamInitialization_Cleanup()\n    VietnamLifecycle_Cleanup()\n    print("VIETNAM_V2_CLEANUP")\nend\n'
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.624s
+
+FAILED (failures=10, errors=6)

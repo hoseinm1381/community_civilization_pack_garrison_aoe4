@@ -1,0 +1,24 @@
+-- Generated from pinned current official donors by tools/persia_port/prepare_probe.py.
+PersiaBlueprints = {entities = {"a743d7d1d7534cf78817e29d8ded7366:ps_probe_building_town_center_capital_sul", "a743d7d1d7534cf78817e29d8ded7366:ps_probe_building_town_center_sul", "a743d7d1d7534cf78817e29d8ded7366:ps_probe_unit_scout_1_sul", "a743d7d1d7534cf78817e29d8ded7366:ps_probe_unit_villager_1_sul"},
+    squads = {"a743d7d1d7534cf78817e29d8ded7366:ps_probe_unit_scout_1_sul", "a743d7d1d7534cf78817e29d8ded7366:ps_probe_unit_villager_1_sul"}}
+
+function PersiaBlueprints_Available()
+    for _, name in ipairs(PersiaBlueprints.entities) do
+        if not EBP_Exists(name) then return false end
+    end
+    for _, name in ipairs(PersiaBlueprints.squads) do
+        if not SBP_Exists(name) then return false end
+    end
+    return true
+end
+
+function PersiaPrecache_Init()
+    if not PersiaBlueprints_Available() then
+        print("PERSIA_PROBE_PRECACHE_MISSING")
+        return
+    end
+    for _, name in ipairs(PersiaBlueprints.entities) do Scar_PrecachePrematchResource(BP_GetEntityBlueprint(name)) end
+    for _, name in ipairs(PersiaBlueprints.squads) do Scar_PrecachePrematchResource(BP_GetSquadBlueprint(name)) end
+end
+
+Scar_AddInit(PersiaPrecache_Init)

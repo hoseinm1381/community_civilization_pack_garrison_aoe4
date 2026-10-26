@@ -1,0 +1,559 @@
+import("command.scar")
+import("ui.scar")
+import("vietnam/tunnel_target_buildings.scar")
+import("vietnam/tunnel_ability_squads.scar")
+VietnamTunnelsState={active=false,players={},civilizations={}}
+VietnamTunnelsLocal={markers={}}
+VietnamTunnelsRecovery=VietnamTunnelsRecovery or {records={},active=false}
+local prefix="a743d7d1d7534cf78817e29d8ded7366:"
+local metadataCache={}
+local abilityCapabilityCache={}
+local abilityBP=nil
+local entranceAcceptanceMetres=8 -- footprint-edge allowance for crowded formations
+local function ability()
+    if abilityBP==nil then abilityBP=BP_GetAbilityBlueprint(prefix.."vn_vietnam_unit_mov_vit") end
+    return abilityBP
+end
+local function text(id) return Loc_GetString("$"..prefix..tostring(id)) end
+local function sortedKeys(t)
+    local result={};for id in pairs(t) do result[#result+1]=id end;table.sort(result);return result
+end
+local function sameOwner(a,b)
+    -- Native player handles may be distinct userdata wrappers for one player.
+    return a~=nil and b~=nil and Player_GetID(a)==Player_GetID(b)
+end
+local warningText={
+    ["native-target-unavailable"]="Tunnel cancelled: no destination was received. Choose the exit again after the cooldown.",
+    ["cooldown"]="Tunnel is cooling down. Wait before trying again.",
+    ["busy"]="A tunnel journey is already in progress.",
+    ["new-order-cancelled"]="Tunnel cancelled by a new order.",
+    ["invalid-squad"]="Tunnel cancelled: the unit is no longer eligible or owned.",
+    ["unit-lost"]="Tunnel cancelled: the unit was lost.",
+    ["unit-owner-changed"]="Tunnel cancelled: the unit changed owner.",
+    ["invalid-handle"]="Tunnel cancelled: the chosen building is no longer available.",
+    ["world-building"]="Tunnel cancelled: choose a building you own.",
+    ["foreign-owner"]="Tunnel cancelled: you no longer own the chosen building.",
+    ["not-building"]="Tunnel cancelled: choose one of your completed buildings.",
+    ["destroyed"]="Tunnel cancelled: the chosen building was destroyed.",
+    ["unknown-building-footprint"]="Tunnel cancelled: this building's entrance could not be located.",
+    ["no-owned-building-within-8m"]="Tunnel cancelled: choose a point within 8 metres of an owned building.",
+    ["foundation"]="Tunnel cancelled: the chosen building is not complete.",
+    ["not-in-network"]="Tunnel cancelled: the chosen building does not support tunnels.",
+    ["disconnected"]="Tunnel cancelled: connect the chosen building to a Town Center or Headquarters.",
+    ["no-connected-entrance"]="Tunnel cancelled: no entrance connects to the chosen building.",
+    ["blocked-entrance"]="Tunnel cancelled: the entrance is blocked.",
+    ["entrance-timeout"]="Tunnel cancelled: the unit could not reach the entrance in time.",
+    ["route-invalidated"]="Tunnel cancelled: an entrance, exit or connection was lost.",
+    ["admission-invalidated"]="Tunnel cancelled: the unit or destination changed.",
+    ["destination-lost"]="Tunnel exit lost. Returning the unit to its entrance.",
+    ["landing-return"]="Tunnel exit blocked. Returning the unit to its entrance.",
+    ["visible-recovery"]="Tunnel cancelled: the unit is visible and available at its current position.",
+    ["spawn-recovery-required"]="Tunnel delayed: the unit could not reappear. Automatic recovery is still trying."
+}
+local function warn(s,reason,id)
+    print("VIETNAM_V9_TUNNEL reason="..reason.." player="..tostring(s.owner).." squad="..tostring(id))
+    -- Only presentation uses local state. Shared movement, cooldown and recovery
+    -- never read this limiter. Collapse selected-unit bursts and repeat clicks.
+    if not sameOwner(Game_GetLocalPlayer(),s.owner) or UI_IsReplay() then return end
+    local now=World_GetGameTime()
+    local warnings=VietnamTunnelsLocal.warnings or {}
+    VietnamTunnelsLocal.warnings=warnings
+    local key=tostring(Player_GetID(s.owner))..":"..reason
+    local previous=warnings[key]
+    if previous==nil or now<previous or now-previous>=2 then
+        warnings[key]=now
+        UIWarning_Show(warningText[reason] or "Tunnel cancelled. Choose another connected building and try again.")
+    end
+end
+local function playerState(player)
+    local s=VietnamTunnelsState.players[player.index]
+    if s==nil then
+        s={owner=player.id,records={},pending={},abilities={},recovering={},cooldown=0,graph=nil}
+        VietnamTunnelsState.players[player.index]=s
+    end
+    return s
+end
+local function eligible(squad)
+    if not Squad_IsValid(Squad_GetID(squad)) or not Squad_IsAlive(squad)
+        or Squad_IsInHoldEntity(squad) or Squad_IsInHoldSquad(squad) then return false end
+    local bp=Squad_GetBlueprint(squad)
+    -- Siege crews need not share the owning squad's type tags.
+    if bp==BP_GetSquadBlueprint(prefix.."vn_unit_water_buffalo_vit")
+        or bp==BP_GetSquadBlueprint(prefix.."vn_unit_no_than_vit")
+        or bp==BP_GetSquadBlueprint(prefix.."vn_unit_no_than_vit_reinforced")
+        or Squad_IsOfType(squad,"siege") then return false end
+    local e=Squad_GetFirstEntity(squad)
+    if e==nil then return false end
+    return not Entity_IsOfType(e,"naval_unit") and not Entity_IsOfType(e,"siege")
+        and not Entity_IsOfType(e,"villager") and not Entity_IsOfType(e,"trade_cart")
+end
+local function canAddAbility(squad)
+    local bp=Squad_GetBlueprint(squad)
+    local name=BP_GetName(bp)
+    local cached=abilityCapabilityCache[name]
+    if cached~=nil and cached.bp==bp then return cached.allowed end
+    -- Names locate candidates only; blueprint equality proves archive identity.
+    local short=string.match(name,"([^:]+)$")
+    local candidates=VietnamTunnelAbilitySquads and VietnamTunnelAbilitySquads[short]
+    local allowed=false
+    for _,qualified in ipairs(candidates or {}) do
+        if bp==BP_GetSquadBlueprint(qualified) then allowed=true;break end
+    end
+    abilityCapabilityCache[name]={bp=bp,allowed=allowed}
+    if not allowed then
+        print("VIETNAM_V9_TUNNEL boundary=ability-capability-denied blueprint="..name)
+    end
+    return allowed
+end
+local function metadata(e,target)
+    local bp=Entity_GetBlueprint(e);local key=BP_GetName(bp)..(target and ":target" or ":network")
+    local cached=metadataCache[key]
+    if cached~=nil and cached.bp==bp then return cached.data end
+    local source=VietnamTunnelBuildings
+    if target and VietnamTunnelTargetBuildings~=nil then source=VietnamTunnelTargetBuildings end
+    for _,name in ipairs(sortedKeys(source)) do
+        if (source[name].native and bp==BP_GetEntityBlueprint(name)) or (not source[name].native and VietnamBlueprints_Matches(e,name)) then
+            metadataCache[key]={bp=bp,data=source[name]};return source[name]
+        end
+    end
+    if target then return metadata(e,false) end
+    metadataCache[key]={bp=bp,data=nil}
+    return nil
+end
+local function removeObserver(r)
+    if r.callback~=nil then
+        if Squad_IsValid(r.id) then Rule_RemoveSquadEvent(r.callback,r.squad) end
+        r.callback=nil
+    end
+end
+local function release(r)
+    removeObserver(r)
+    if not r.departed and not r.manualCancel and Squad_IsValid(r.id) and Squad_IsAlive(r.squad)
+        and sameOwner(Squad_GetPlayerOwner(r.squad),r.owner) and r.group~=nil then Cmd_Stop(r.group) end
+    if r.group~=nil then SGroup_Destroy(r.group);r.group=nil end
+end
+local function landingNear(pos,target,node)
+    if pos==nil or type(pos.x)~="number" or type(pos.z)~="number"
+        or pos.x~=pos.x or pos.z~=pos.z then return false end
+    if node~=nil then return VietnamTunnelCore.PointDistance(node,pos.x,pos.z)<=8 end
+    return (pos.x-target.x)^2+(pos.z-target.z)^2<=64
+end
+local function land(r,pos,node)
+    local now,tick=World_GetGameTime(),World_GetGameTicks()
+    local l=r.landing
+    if l==nil then
+        l={target=pos,node=node,phase="spawn",tick=tick,started=now,spawnAttempts=1,
+            returning=node==nil}
+        r.landing=l
+        -- Restore at the known origin first. Spawn/Stop/SetPosition may become
+        -- observable on different ticks; never immediately re-despawn a mismatch.
+        if SGroup_CountSpawned(r.group)==0 then Squad_Spawn(r.squad,r.origin,"") end
+        return false
+    end
+    if tick<=l.tick then return false end
+    if SGroup_CountSpawned(r.group)==0 then
+        -- A rejected spawn is an engine failure, not a position mismatch. Keep
+        -- ownership of the original reference and retry only at one-second gaps.
+        if now-l.started>=l.spawnAttempts then
+            Squad_Spawn(r.squad,r.origin,"");l.spawnAttempts=l.spawnAttempts+1
+            if l.spawnAttempts==4 then
+                print("VIETNAM_V9_TUNNEL boundary=spawn-recovery-required squad="..tostring(r.id))
+                warn(r,"spawn-recovery-required",r.id)
+            end
+        end
+        return false
+    end
+    -- Conversion, exit death or cleanup supersedes a pending destination warp.
+    if node==nil and not l.returning then
+        l.target=r.origin;l.node=nil;l.returning=true;l.phase="place";l.started=now
+    end
+    if l.phase=="spawn" then
+        Cmd_Stop(r.group);l.phase="place";l.tick=tick
+        return false
+    end
+    if l.phase=="place" then
+        local p=Squad_TryFindClosestFreePosition(r.squad,l.target)
+        if landingNear(p,l.target,l.node) then Squad_SetPosition(r.squad,p,p) end
+        l.phase="verify";l.tick=tick;l.verifyAt=now+1
+        return false
+    end
+    local actual=Squad_GetPosition(r.squad)
+    if landingNear(actual,l.target,l.node) then
+        r.landedPosition=actual;r.landingResult=l.returning and "origin" or "destination"
+        return true
+    end
+    if now<l.verifyAt then return false end
+    if not l.returning then
+        print("VIETNAM_V9_TUNNEL boundary=landing-return squad="..tostring(r.id)
+            .." actual_x="..tostring(actual.x).." actual_z="..tostring(actual.z))
+        l.target=r.origin;l.node=nil;l.returning=true;l.phase="place";l.tick=tick
+        r.returning=true;r.returnNotified=true
+        warn(r,"landing-return",r.id)
+        return false
+    end
+    -- Failed origin relocation is still a VISIBLE original unit. Release it
+    -- where the engine left it instead of hiding it for the rest of the match.
+    r.landedPosition=actual;r.landingResult="visible-recovery"
+    print("VIETNAM_V9_TUNNEL boundary=visible-recovery squad="..tostring(r.id)
+        .." actual_x="..tostring(actual.x).." actual_z="..tostring(actual.z))
+    warn(r,"visible-recovery",r.id)
+    return true
+end
+local function cancelPlayer(s)
+    local remaining={}
+    for _,request in ipairs(s.pending) do removeObserver(request) end
+    for _,id in ipairs(sortedKeys(s.records)) do
+        local r=s.records[id]
+        if r.departed and Squad_IsValid(id) and Squad_IsAlive(r.squad) and not land(r,r.origin) then
+            remaining[id]=r
+        else release(r) end
+    end
+    for _,id in ipairs(sortedKeys(s.abilities)) do
+        local squad=s.abilities[id]
+        if Squad_IsValid(id) and Squad_IsAlive(squad) then Squad_RemoveAbility(squad,ability()) end
+    end
+    if s.objective~=nil then Obj_Delete(s.objective);s.objective=nil end
+    s.records=remaining;s.pending={};s.abilities={};s.batch=nil
+end
+function VietnamTunnels_Start(civilizations)
+    if VietnamTunnelsState.active then return end
+    VietnamTunnelsState.active=true;VietnamTunnelsState.civilizations=civilizations
+    for _,player in ipairs(PLAYERS) do if civilizations[player.index]=="vietnam" then playerState(player) end end
+    Rule_AddGlobalEvent(VietnamTunnels_OnAbilityExecuted,GE_AbilityExecuted)
+    Rule_AddGlobalEvent(VietnamTunnels_OnEntityKilled,GE_EntityKilled)
+end
+function VietnamTunnels_OnEntityKilled(context)
+    if context==nil or context.victim==nil then return end
+    local id=Entity_GetID(context.victim)
+    for _,player in ipairs(PLAYERS) do
+        local s=VietnamTunnelsState.players[player.index]
+        if s~=nil and s.graph~=nil and s.graph.byID[id]~=nil and s.graph.byID[id].landmark then s.recovering[id]=true end
+        if s~=nil then for _,key in ipairs(sortedKeys(s.records)) do
+            local r=s.records[key]
+            if r.destination.id==id then
+                if r.departed then r.returning=true else r.cancelled=true end
+            elseif r.entrance.id==id and not r.departed then r.cancelled=true end
+        end end
+        if s~=nil then for _,request in ipairs(s.pending) do
+            if request.destination==id then request.cancelled=true end
+        end end
+    end
+end
+function VietnamTunnels_Update(player,entities)
+    local s=playerState(player)
+    if not Player_IsAlive(player.id) then cancelPlayer(s);s.graph=nil;return end
+    local nodes={}
+    for i=1,EGroup_CountSpawned(entities) do
+        local e=EGroup_GetSpawnedEntityAt(entities,i)
+        if Entity_IsValid(Entity_GetID(e)) and Entity_IsAlive(e) and Entity_IsBuilding(e) and Entity_GetHealth(e)>0
+            and sameOwner(Entity_GetPlayerOwner(e),player.id) and not Entity_IsUnderConstruction(e) and Entity_GetBuildingProgress(e)>=1 then
+            local d=metadata(e)
+            local id=Entity_GetID(e)
+            if s.recovering[id] and Entity_GetHealth(e)>=Entity_GetHealthMax(e) then s.recovering[id]=nil end
+            if d~=nil and not s.recovering[id] and (not Entity_IsOfType(e,"landmark") or Entity_GetStateModelBool(e,"landmark_active")) then
+                local p,h=Entity_GetPosition(e),Entity_GetHeading(e)
+                local norm=math.sqrt(h.x*h.x+h.z*h.z)
+                nodes[#nodes+1]={id=Entity_GetID(e),x=p.x,y=p.y,z=p.z,hx=d.hx,hz=d.hz,reach=d.reach or 4,
+                    cx=(d.axis or norm==0) and 1 or h.z/norm,
+                    sx=(d.axis or norm==0) and 0 or -h.x/norm,root=d.root,landmark=Entity_IsOfType(e,"landmark")}
+            end
+        end
+    end
+    table.sort(nodes,function(a,b) return a.id<b.id end)
+    local parts={}
+    for _,n in ipairs(nodes) do parts[#parts+1]=n.id..":"..n.x..":"..n.y..":"..n.z..":"..n.cx..":"..n.sx..":"..n.hx..":"..n.hz..":"..tostring(n.root)..":"..n.reach end
+    local signature=table.concat(parts,";")
+    if signature~=s.signature then s.graph=VietnamTunnelCore.Build(nodes);s.signature=signature end
+    local group=Player_GetSquads(player.id)
+    for i=1,SGroup_CountSpawned(group) do
+        local squad=SGroup_GetSpawnedSquadAt(group,i)
+        if eligible(squad) and canAddAbility(squad) and not Squad_HasAbility(squad,ability()) then
+            Squad_AddAbility(squad,ability());s.abilities[Squad_GetID(squad)]=squad
+        end
+    end
+    local owned={}
+    SGroup_ForEachEx(group,function(g,i,squad) if Squad_IsAlive(squad) then owned[Squad_GetID(squad)]=true end end,true,true)
+    for _,id in ipairs(sortedKeys(s.abilities)) do
+        if not owned[id] then
+            local squad=s.abilities[id]
+            if Squad_IsValid(id) and Squad_IsAlive(squad) then Squad_RemoveAbility(squad,ability()) end
+            s.abilities[id]=nil
+        end
+    end
+end
+function VietnamTunnels_OnTravelCommand(context,r)
+    if r~=nil and r.callback~=nil and not r.departed then r.cancelled=true;r.manualCancel=true end
+end
+local function targetStatus(s,id)
+    if not Entity_IsValid(id) then return "invalid-handle" end
+    local e=Entity_FromID(id)
+    if World_OwnsEntity(e) then return "world-building" end
+    if not sameOwner(Entity_GetPlayerOwner(e),s.owner) then return "foreign-owner" end
+    if not Entity_IsBuilding(e) then return "not-building" end
+    if not Entity_IsAlive(e) or Entity_GetHealth(e)<=0 then return "destroyed" end
+    if Entity_IsUnderConstruction(e) or Entity_GetBuildingProgress(e)<1 then return "foundation" end
+    if s.graph==nil or s.graph.byID[id]==nil then return "not-in-network" end
+    if s.graph.byID[id].component==nil then return "disconnected" end
+    return nil
+end
+-- Select identity across ALL owned buildings before checking support,
+-- completion or connectivity. Never jump over the closest invalid building.
+local function nearestOwned(s,pos)
+    local group=EGroup_CreateUnique();Player_GetEntitiesEGroup(s.owner,group)
+    local best,distance=nil,math.huge;local unknown=false
+    for i=1,EGroup_CountSpawned(group) do
+        local e=EGroup_GetSpawnedEntityAt(group,i);local id=Entity_GetID(e)
+        if Entity_IsValid(id) and Entity_IsBuilding(e) and not World_OwnsEntity(e) and sameOwner(Entity_GetPlayerOwner(e),s.owner) then
+            local d=metadata(e,true)
+            if d==nil then
+                -- There is no native footprint getter. Missing generated
+                -- geometry is a visible failure, never a guessed point radius.
+                unknown=true
+            else
+                local p,h=Entity_GetPosition(e),Entity_GetHeading(e);local norm=math.sqrt(h.x*h.x+h.z*h.z)
+                local n={id=id,x=p.x,z=p.z,hx=d.hx,hz=d.hz,
+                    cx=(d.axis or norm==0) and 1 or h.z/norm,sx=(d.axis or norm==0) and 0 or -h.x/norm}
+                local gap=VietnamTunnelCore.PointDistance(n,pos.x,pos.z)
+                if gap<=8 and (gap<distance-0.000001 or (math.abs(gap-distance)<=0.000001 and (best==nil or id<best))) then
+                    best,distance=id,gap
+                end
+            end
+        end
+    end
+    EGroup_Destroy(group)
+    if unknown then return nil,"unknown-building-footprint" end
+    if best==nil then return nil,"no-owned-building-within-8m" end
+    return best,nil
+end
+-- Current official native ProcessAbilityCommand copies the clicked target to
+-- COMMITTED_ABILITY. Read it synchronously, before any Stop/Move or exit clears
+-- the slot. No local selection, mouse sample or guessed event field is used.
+function VietnamTunnels_OnPendingCommand(context,request)
+    if request~=nil and request.callback~=nil then request.cancelled=true end
+end
+function VietnamTunnels_OnAbilityExecuted(context)
+    if not VietnamTunnelsState.active or context==nil or context.ability~=ability()
+        or context.executer==nil or scartype(context.executer)~=ST_ENTITY then return end
+    local e=context.executer
+    if not Entity_IsValid(Entity_GetID(e)) or World_OwnsEntity(e) then return end
+    local squad=Entity_GetSquad(e)
+    if squad==nil or not eligible(squad) then return end
+    local owner=Squad_GetPlayerOwner(squad);local player=Core_GetPlayersTableEntry(owner)
+    if player==nil or VietnamTunnelsState.civilizations[player.index]~="vietnam" or not Player_IsAlive(owner) then return end
+    local s=playerState(player);local id=Squad_GetID(squad)
+    local now,tick=World_GetGameTime(),World_GetGameTicks()
+    local pos=Entity_GetStateTreeTargeting_Vector3f(e,"statetree_commited_target_type","COMMITTED_ABILITY")
+    if pos==nil or type(pos.x)~="number" or type(pos.y)~="number" or type(pos.z)~="number"
+        or pos.x~=pos.x or pos.y~=pos.y or pos.z~=pos.z
+        or math.abs(pos.x)==math.huge or math.abs(pos.y)==math.huge or math.abs(pos.z)==math.huge then
+        -- Native cooldown has already started even if the target handoff fails.
+        if now>=s.cooldown then s.cooldown=now+30 end
+        warn(s,"native-target-unavailable",id);return
+    end
+    local sameBatch=s.batch~=nil and s.batch.tick==tick and s.batch.x==pos.x and s.batch.z==pos.z
+    if not sameBatch then
+        if now<s.cooldown then warn(s,"cooldown",id);return end
+        s.cooldown=now+30
+        if next(s.records)~=nil or #s.pending>0 then warn(s,"busy",id);return end
+        s.batch={tick=tick,x=pos.x,z=pos.z,seen={}}
+    end
+    -- all_entities can emit more than one entity callback for the same squad.
+    if s.batch.seen[id] then return end
+    s.batch.seen[id]=true
+    local destination,reason=nearestOwned(s,pos)
+    if reason==nil then reason=targetStatus(s,destination) end
+    print("VIETNAM_V9_TUNNEL boundary=native-target squad="..tostring(id).." tick="..tostring(tick)
+        .." x="..tostring(pos.x).." z="..tostring(pos.z).." destination="..tostring(destination))
+    if reason~=nil then warn(s,reason,id);return end
+    local request={id=id,squad=squad,destination=destination,activated=now,tick=tick}
+    request.callback=VietnamTunnels_OnPendingCommand
+    Rule_AddSquadEvent(request.callback,squad,GE_SquadCommandIssued,request)
+    s.pending[#s.pending+1]=request
+end
+local function admit(s,now)
+    local accepted=0
+    local owned={};local observer=Player_GetSquads(s.owner)
+    for i=1,SGroup_CountSpawned(observer) do
+        local squad=SGroup_GetSpawnedSquadAt(observer,i);owned[Squad_GetID(squad)]=squad
+    end
+    table.sort(s.pending,function(a,b) return a.destination<b.destination or (a.destination==b.destination and a.id<b.id) end)
+    for _,request in ipairs(s.pending) do
+        removeObserver(request)
+        if not request.cancelled and s.records[request.id]==nil
+            and now<request.activated+15 and owned[request.id]==request.squad
+            and Squad_IsValid(request.id) and eligible(request.squad) and targetStatus(s,request.destination)==nil then
+            local pos=Squad_GetPosition(request.squad)
+            local entrance=VietnamTunnelCore.Nearest(s.graph,request.destination,pos.x,pos.z)
+            local destination=s.graph.byID[request.destination]
+            if entrance~=nil and destination~=nil and targetStatus(s,entrance.id)==nil then
+                local _,edge=VietnamTunnelCore.PointDistance(entrance,pos.x,pos.z)
+                local toward=World_Pos(edge.x,entrance.y or pos.y,edge.z)
+                local approach=Squad_TryFindClosestFreePosition(request.squad,toward)
+                if approach~=nil then
+                local group=SGroup_CreateUniqueWithPrefix("VietnamTunnelTraveler");SGroup_Add(group,request.squad)
+                local r={id=request.id,squad=request.squad,group=group,entrance=entrance,destination=destination,
+                    phase="approach",deadline=request.activated+15,approach=approach,departed=false,owner=s.owner}
+                s.records[r.id]=r
+                accepted=accepted+1
+                Cmd_Move(group,approach,false)
+                -- Observe subsequent commands only; never guess context fields or
+                -- reissue this approach. Native dispatch ordering is a match gate.
+                r.callback=VietnamTunnels_OnTravelCommand
+                Rule_AddSquadEvent(r.callback,r.squad,GE_SquadCommandIssued,r)
+                else
+                    warn(s,"blocked-entrance",request.id)
+                end
+            else warn(s,"no-connected-entrance",request.id) end
+        else warn(s,request.cancelled and "new-order-cancelled" or "admission-invalidated",request.id) end
+    end
+    print("VIETNAM_TUNNEL_ADMIT pending="..tostring(#s.pending).." accepted="..tostring(accepted))
+    s.pending={}
+end
+local function objective(player,s,now)
+    if s.graph==nil then return end
+    local title=3039;local remaining=now<s.cooldown and s.cooldown-now or nil
+    if next(s.records)~=nil then
+        title=3040
+        for _,r in pairs(s.records) do if r.departed then title=3041 end end
+    elseif remaining~=nil then title=3042
+    elseif s.feedbackUntil~=nil and now<s.feedbackUntil then title=s.feedback end
+    if s.objective==nil then
+        s.objective=Obj_Create(player.id,text(title),Loc_Empty(),"icons\\event_queue_medium_priority",DT_INFO_DEFAULT,Player_GetRaceName(player.id),OT_Information,0,"VietnamTunnels")
+        Obj_SetState(s.objective,OS_Incomplete);Obj_SetVisible(s.objective,true)
+    end
+    local seconds=remaining~=nil and math.ceil(remaining) or nil
+    local counter=remaining~=nil and COUNTER_TimerDecreasing or COUNTER_None
+    if s.objectiveTitle~=title then
+        Obj_SetTitle(s.objective,text(title))
+        s.objectiveTitle=title
+    end
+    if s.objectiveCounter~=counter then Obj_SetCounterType(s.objective,counter);s.objectiveCounter=counter end
+    if seconds~=nil and s.objectiveSeconds~=seconds then Obj_SetCounterTimerSeconds(s.objective,seconds) end
+    s.objectiveSeconds=seconds
+end
+function VietnamTunnels_Step(now,tick)
+    if not VietnamTunnelsState.active then return end
+    for _,player in ipairs(PLAYERS) do
+        local s=VietnamTunnelsState.players[player.index]
+        if s~=nil and Player_IsAlive(player.id) then
+            -- Wait past the native dispatch tick so all selected casters can join.
+            if #s.pending>0 and tick>s.pending[1].tick then admit(s,now) end
+            local owned={}
+            -- Idle tunnels must not enumerate the entire army four times/sec.
+            if next(s.records)~=nil then
+                SGroup_ForEachEx(Player_GetSquads(player.id),function(g,i,squad)
+                    if Squad_IsAlive(squad) then owned[Squad_GetID(squad)]=true end
+                end,true,true)
+            end
+            for _,id in ipairs(sortedKeys(s.records)) do
+                local r=s.records[id];local finished=false
+                if not Squad_IsValid(id) or not Squad_IsAlive(r.squad) then
+                    warn(s,"unit-lost",id);finished=true
+                elseif not owned[id] then
+                    finished=not r.departed or land(r,r.origin)
+                    if finished then warn(s,"unit-owner-changed",id) end
+                elseif not r.departed then
+                    if r.cancelled or now>r.deadline or targetStatus(s,r.entrance.id)~=nil or targetStatus(s,r.destination.id)~=nil or s.graph.byID[r.entrance.id]==nil
+                        or s.graph.byID[r.destination.id]==nil
+                        or s.graph.byID[r.entrance.id].component==nil
+                        or s.graph.byID[r.entrance.id].component~=s.graph.byID[r.destination.id].component then
+                        warn(s,r.manualCancel and "new-order-cancelled" or (now>r.deadline and "entrance-timeout" or "route-invalidated"),id);finished=true
+                    else
+                        local pos=Squad_GetPosition(r.squad)
+                        -- Formation/collision offsets need not hit one exact point.
+                        -- Loading requires continuous presence inside entrance reach.
+                        local near=VietnamTunnelCore.PointDistance(r.entrance,pos.x,pos.z)<=entranceAcceptanceMetres
+                        if near and r.phase=="approach" then r.phase="loading";r.loadAt=now end
+                        if not near then r.phase="approach";r.loadAt=nil end
+                        if r.phase=="loading" and now-r.loadAt>=3 then
+                            r.origin=World_Pos(pos.x,pos.y,pos.z);removeObserver(r)
+                            Squad_DeSpawn(r.squad);r.departed=true;r.phase="transit"
+                            print("VIETNAM_V9_TUNNEL boundary=departure squad="..tostring(id)
+                                .." entrance="..tostring(r.entrance.id).." destination="..tostring(r.destination.id)
+                                .." origin_x="..tostring(pos.x).." origin_z="..tostring(pos.z)
+                                .." destination_x="..tostring(r.destination.x).." destination_z="..tostring(r.destination.z))
+                            local distance=math.sqrt((r.entrance.x-r.destination.x)^2+(r.entrance.z-r.destination.z)^2)
+                            r.arrival=now+math.max(1,distance/24);r.finish=r.arrival+1
+                        end
+                    end
+                elseif now>=r.finish then
+                    -- Relay loss after departure does not cancel a committed
+                    -- journey; a lost/converted/destroyed exit returns home.
+                    local destination=not r.returning and s.graph.byID[r.destination.id] or nil
+                    if destination~=nil then
+                        local status=targetStatus(s,r.destination.id)
+                        if status~=nil and status~="disconnected" then destination=nil;r.returning=true end
+                    end
+                    if destination==nil and not r.returnNotified then
+                        r.returnNotified=true;warn(s,"destination-lost",id)
+                    end
+                    local p=destination~=nil and World_Pos(destination.x,destination.y or r.origin.y,destination.z) or r.origin
+                    if land(r,p,destination) then
+                        print("VIETNAM_V9_TUNNEL boundary=arrival squad="..tostring(id).." result="..r.landingResult
+                            .." actual_x="..tostring(r.landedPosition.x).." actual_z="..tostring(r.landedPosition.z))
+                        finished=true
+                    end
+                end
+                if finished then release(r);s.records[id]=nil end
+            end
+            if next(s.records)==nil and #s.pending==0 and s.batch~=nil and tick>s.batch.tick then s.batch=nil end
+            objective(player,s,now)
+        elseif s~=nil then cancelPlayer(s) end
+    end
+end
+function VietnamTunnels_UpdateUI()
+    local localPlayer=Game_GetLocalPlayer();local wanted={}
+    if localPlayer~=nil then
+        for _,player in ipairs(PLAYERS) do
+            local s=VietnamTunnelsState.players[player.index]
+            if s~=nil then for _,r in pairs(s.records) do
+                local id=r.destination.id
+                if Entity_IsValid(id) then
+                    local e=Entity_FromID(id)
+                    local friendly=sameOwner(localPlayer,player.id) or Player_ObserveRelationship(localPlayer,player.id)==R_ALLY
+                    if friendly or Player_CanSeeEntity(localPlayer,e) then
+                        wanted[id]=true
+                        if VietnamTunnelsLocal.markers[id]==nil then
+                            VietnamTunnelsLocal.markers[id]=HintPoint_Add(e,true,text(3046),5,nil,nil,1,friendly)
+                        end
+                    end
+                end
+            end end
+        end
+    end
+    for id,marker in pairs(VietnamTunnelsLocal.markers) do
+        if not wanted[id] then HintPoint_Remove(marker);VietnamTunnelsLocal.markers[id]=nil end
+    end
+end
+-- Cleanup retains blocked original squads in an independent recovery ledger.
+-- Never reset a despawned squad's last reference merely because its exit is busy.
+function VietnamTunnels_RecoveryTick()
+    for _,id in ipairs(sortedKeys(VietnamTunnelsRecovery.records)) do
+        local r=VietnamTunnelsRecovery.records[id]
+        if not Squad_IsValid(id) or not Squad_IsAlive(r.squad) or land(r,r.origin) then
+            release(r);VietnamTunnelsRecovery.records[id]=nil
+        end
+    end
+    if next(VietnamTunnelsRecovery.records)==nil then
+        Rule_Remove(VietnamTunnels_RecoveryTick);VietnamTunnelsRecovery.active=false
+    end
+end
+function VietnamTunnels_Cleanup()
+    if VietnamTunnelsState.active then
+        Rule_RemoveGlobalEvent(VietnamTunnels_OnAbilityExecuted)
+        Rule_RemoveGlobalEvent(VietnamTunnels_OnEntityKilled)
+    end
+    for _,player in ipairs(PLAYERS) do
+        local s=VietnamTunnelsState.players[player.index]
+        if s~=nil then
+            cancelPlayer(s)
+            for _,id in ipairs(sortedKeys(s.records)) do VietnamTunnelsRecovery.records[id]=s.records[id] end
+        end
+    end
+    if next(VietnamTunnelsRecovery.records)~=nil and not VietnamTunnelsRecovery.active then
+        Rule_AddInterval(VietnamTunnels_RecoveryTick,0.25);VietnamTunnelsRecovery.active=true
+    end
+    for _,marker in pairs(VietnamTunnelsLocal.markers) do HintPoint_Remove(marker) end
+    VietnamTunnelsLocal={markers={}};VietnamTunnelsState={active=false,players={},civilizations={}}
+    metadataCache={};abilityCapabilityCache={};abilityBP=nil
+end

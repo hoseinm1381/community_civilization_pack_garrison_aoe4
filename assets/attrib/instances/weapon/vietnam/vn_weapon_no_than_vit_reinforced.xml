@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" template="weapon" description="Reinforced No Than: nine shots in the same native burst window">
+	<uniqueid name="pbgid" value="2147482351" />
+	<instance_reference name="parent_pbg" value="weapon\vietnam\vn_weapon_no_than_vit" mod="a743d7d1d7534cf78817e29d8ded7366" />
+	<group name="weapon_bag">
+		<enum name="weapon_class" value="cdn_siege_projectile" overrideParent="True" />
+		<group name="damage">
+			<enum name="damage_type" value="Ranged" overrideParent="True" />
+		</group>
+		<group name="burst" overrideParent="True">
+			<bool name="can_burst" value="True" />
+			<group name="duration">
+				<float name="max" value="1" />
+				<float name="min" value="1" />
+			</group>
+			<group name="incremental_target_table">
+				<float name="accuracy_multiplier" value="0" />
+				<group name="search_radius">
+					<float name="far" value="0" />
+					<float name="near" value="0" />
+					<float name="mid" value="0" />
+				</group>
+			</group>
+			<group name="rate_of_fire">
+				<float name="max" value="9" />
+				<float name="min" value="9" />
+			</group>
+			<group name="duration_multiplier">
+				<float name="near" value="1" />
+				<float name="far" value="1" />
+				<float name="mid" value="1" />
+			</group>
+			<group name="rate_of_fire_multiplier">
+				<float name="near" value="1" />
+				<float name="far" value="1" />
+				<float name="mid" value="1" />
+			</group>
+			<bool name="focus_fire" value="False" />
+			<bool name="convert_target_to_position_before_firing" value="True" />
+			<bool name="uninterruptible_burst_fire" value="True" />
+		</group>
+	</group>
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<enum name="weapon_class" value="cdn_siege_projectile" overrideParent="True" />
+			<group name="damage">
+				<enum name="damage_type" value="Ranged" overrideParent="True" />
+			</group>
+			<group name="burst" overrideParent="True">
+				<bool name="can_burst" value="True" />
+				<group name="duration">
+					<float name="max" value="1" />
+					<float name="min" value="1" />
+				</group>
+				<group name="incremental_target_table">
+					<float name="accuracy_multiplier" value="0" />
+					<group name="search_radius">
+						<float name="far" value="0" />
+						<float name="near" value="0" />
+						<float name="mid" value="0" />
+					</group>
+				</group>
+				<group name="rate_of_fire">
+					<float name="max" value="9" />
+					<float name="min" value="9" />
+				</group>
+				<group name="duration_multiplier">
+					<float name="near" value="1" />
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<group name="rate_of_fire_multiplier">
+					<float name="near" value="1" />
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<bool name="focus_fire" value="False" />
+				<bool name="convert_target_to_position_before_firing" value="True" />
+				<bool name="uninterruptible_burst_fire" value="True" />
+			</group>
+		</group>
+	</variant>
+	<variant name="xp3">
+		<group name="weapon_bag">
+			<enum name="weapon_class" value="cdn_siege_projectile" overrideParent="True" />
+			<group name="damage">
+				<enum name="damage_type" value="Ranged" overrideParent="True" />
+			</group>
+			<group name="burst" overrideParent="True">
+				<bool name="can_burst" value="True" />
+				<group name="duration">
+					<float name="max" value="1" />
+					<float name="min" value="1" />
+				</group>
+				<group name="incremental_target_table">
+					<float name="accuracy_multiplier" value="0" />
+					<group name="search_radius">
+						<float name="far" value="0" />
+						<float name="near" value="0" />
+						<float name="mid" value="0" />
+					</group>
+				</group>
+				<group name="rate_of_fire">
+					<float name="max" value="9" />
+					<float name="min" value="9" />
+				</group>
+				<group name="duration_multiplier">
+					<float name="near" value="1" />
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<group name="rate_of_fire_multiplier">
+					<float name="near" value="1" />
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<bool name="focus_fire" value="False" />
+				<bool name="convert_target_to_position_before_firing" value="True" />
+				<bool name="uninterruptible_burst_fire" value="True" />
+			</group>
+		</group>
+	</variant>
+	<variant name="hre_brawl">
+		<group name="weapon_bag">
+			<enum name="weapon_class" value="cdn_siege_projectile" overrideParent="True" />
+			<group name="damage">
+				<enum name="damage_type" value="Ranged" overrideParent="True" />
+			</group>
+			<group name="burst" overrideParent="True">
+				<bool name="can_burst" value="True" />
+				<group name="duration">
+					<float name="max" value="1" />
+					<float name="min" value="1" />
+				</group>
+				<group name="incremental_target_table">
+					<float name="accuracy_multiplier" value="0" />
+					<group name="search_radius">
+						<float name="far" value="0" />
+						<float name="near" value="0" />
+						<float name="mid" value="0" />
+					</group>
+				</group>
+				<group name="rate_of_fire">
+					<float name="max" value="9" />
+					<float name="min" value="9" />
+				</group>
+				<group name="duration_multiplier">
+					<float name="near" value="1" />
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<group name="rate_of_fire_multiplier">
+					<float name="near" value="1" />
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<bool name="focus_fire" value="False" />
+				<bool name="convert_target_to_position_before_firing" value="True" />
+				<bool name="uninterruptible_burst_fire" value="True" />
+			</group>
+		</group>
+	</variant>
+	<variant name="cordoba">
+		<group name="weapon_bag">
+			<enum name="weapon_class" value="cdn_siege_projectile" overrideParent="True" />
+			<group name="damage">
+				<enum name="damage_type" value="Ranged" overrideParent="True" />
+			</group>
+			<group name="burst" overrideParent="True">
+				<bool name="can_burst" value="True" />
+				<group name="duration">
+					<float name="max" value="1" />
+					<float name="min" value="1" />
+				</group>
+				<group name="incremental_target_table">
+					<float name="accuracy_multiplier" value="0" />
+					<group name="search_radius">
+						<float name="far" value="0" />
+						<float name="near" value="0" />
+						<float name="mid" value="0" />
+					</group>
+				</group>
+				<group name="rate_of_fire">
+					<float name="max" value="9" />
+					<float name="min" value="9" />
+				</group>
+				<group name="duration_multiplier">
+					<float name="near" value="1" />
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<group name="rate_of_fire_multiplier">
+					<float name="near" value="1" />
+					<float name="far" value="1" />
+					<float name="mid" value="1" />
+				</group>
+				<bool name="focus_fire" value="False" />
+				<bool name="convert_target_to_position_before_firing" value="True" />
+				<bool name="uninterruptible_burst_fire" value="True" />
+			</group>
+		</group>
+	</variant>
+</instance>

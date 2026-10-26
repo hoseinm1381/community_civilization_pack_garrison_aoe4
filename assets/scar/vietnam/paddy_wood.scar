@@ -1,0 +1,375 @@
+import("player.scar")
+import("command.scar")
+
+VietnamPaddyWoodState = {players = {}}
+local radiusSquared = 0.25 -- half-metre arrival tolerance around the exact Paddy center
+local approachTimeout = 60
+local commandGrace = 1
+local workAbility = nil
+local leaveAbility = nil
+local prefix = "a743d7d1d7534cf78817e29d8ded7366:"
+local buffaloBlueprint = nil
+local woodUpgrades = nil
+local champaUpgrade = nil
+
+local function woodRate(player)
+    if woodUpgrades == nil then
+        woodUpgrades = {}
+        for age = 2, 4 do
+            table.insert(woodUpgrades, {
+                BP_GetUpgradeBlueprint("upgrade\\races\\common\\research\\economy\\upgrade_econ_resource_wood_harvest_rate_" .. tostring(age)),
+                BP_GetUpgradeBlueprint("upgrade\\races\\japanese\\research\\economy\\upgrade_econ_resource_wood_harvest_rate_" .. tostring(age) .. "_kura_jpn"),
+            })
+        end
+        champaUpgrade = BP_GetUpgradeBlueprint(prefix .. "vn_upgrade_champa_rice_vit")
+    end
+    local completed = 0
+    for _, level in ipairs(woodUpgrades) do
+        -- Kura variants retain ordinary inherited effects, with layout changes.
+        -- Count the research level once even when both native identities exist.
+        if Player_HasUpgrade(player.id, level[1]) or Player_HasUpgrade(player.id, level[2]) then
+            completed = completed + 1
+        end
+    end
+    -- Current official core Villager TREE rate=.75; ordinary wood techs each
+    -- supply wood_rate=.15. The approved additive parity formula still needs
+    -- a native rate test; no aggregate player-income value is used as work rate.
+    local rate = 0.75 * (1 + 0.15 * completed) * 0.5
+    if Player_HasUpgrade(player.id, champaUpgrade) then rate = rate * 1.10 end
+    return rate
+end
+
+-- Native targeted ability execution admits explicit supervision assignments.
+local function setWorkingMarker(watch, paddy)
+    -- Presentation only. No simulation decision depends on marker state.
+    local visible = paddy ~= nil and Player_GetID(Game_GetLocalPlayer()) == Player_GetID(watch.owner) and not UI_IsReplay()
+    if watch.marker ~= nil and (not visible or watch.markerPaddy ~= watch.paddy) then
+        UI_DestroyTagForPosition(watch.marker)
+        watch.marker = nil
+        watch.markerPaddy = nil
+    end
+    if visible and watch.marker == nil then
+        -- Paddies are stationary; retain the position for safe cleanup even if
+        -- the entity is destroyed before the next observation. training.scar
+        -- proves the tag/data contract; hudresources supplies this compact arrow.
+        local position = Entity_GetPosition(paddy)
+        watch.marker = World_Pos(position.x, position.y, position.z)
+        watch.markerPaddy = watch.paddy
+        UI_CreateTagForPosition(watch.marker, {ID = "VietnamBuffaloSupervision" .. tostring(watch.paddy), DataTemplate = "TagArrowDataTemplate"})
+    end
+end
+local function clearAssignment(watch)
+    setWorkingMarker(watch, nil)
+    watch.paddy = nil
+    watch.center = nil
+    watch.epoch = watch.epoch + 1
+end
+local function validPaddy(e, owner)
+    return e ~= nil and Entity_IsValid(Entity_GetID(e)) and Entity_IsAlive(e) and Entity_GetHealth(e) > 0
+        and VietnamBlueprints_Matches(e, "vn_building_resource_farm_chi")
+        and (VietnamPaddyConstructionState == nil or not VietnamPaddyConstructionState.replacements[Entity_GetID(e)])
+        and Player_OwnsEntity(owner, e)
+        and not Entity_IsUnderConstruction(e)
+end
+function VietnamPaddyWood_IsPaddyTarget(entity, owner)
+    return validPaddy(entity, owner)
+end
+local function distanceSquared(caster, entity)
+    local a, b = Entity_GetPosition(caster), Entity_GetPosition(entity)
+    return (a.x - b.x)^2 + (a.z - b.z)^2
+end
+local function validWorker(w)
+    return Squad_IsValid(w.id) and Squad_IsAlive(w.squad)
+        and Player_GetID(Squad_GetPlayerOwner(w.squad)) == Player_GetID(w.owner) and Squad_GetBlueprint(w.squad) == buffaloBlueprint
+        and Entity_IsValid(w.entityID) and Entity_IsAlive(w.entity)
+        and not Squad_IsInHoldEntity(w.squad) and not Squad_IsInHoldSquad(w.squad)
+end
+local function notifyFailure(watch, reason)
+    print("VIETNAM_V6_PADDY_REJECT squad=" .. tostring(watch.id) .. " reason=" .. reason)
+    -- Presentation only; ownership never selects a simulation mutation.
+    if Player_GetID(Game_GetLocalPlayer()) == Player_GetID(watch.owner) and not UI_IsReplay() then
+        if reason == "timeout" then
+            UIWarning_Show("Buffalo supervision timed out after 60 seconds. Choose a reachable Rice Paddy.")
+        else
+            UIWarning_Show("Buffalo could not supervise. Choose one owned completed Rice Paddy within reach.")
+        end
+    end
+end
+local function clearIntent(watch, blocked)
+    watch.intent = nil
+    watch.pending = nil
+    watch.acceptOwnCommand = nil
+    watch.executionBlocked = blocked
+    watch.bufferedExecution = nil
+end
+local function failApproach(watch, reason)
+    clearAssignment(watch)
+    clearIntent(watch, true)
+    notifyFailure(watch, reason)
+end
+local function executionTarget(watch)
+    local state = VietnamPaddyWoodState.players[watch.playerIndex]
+    if state == nil or Player_GetID(state.owner) ~= Player_GetID(watch.owner) or not Player_IsAlive(watch.owner) then return nil, "owner" end
+    -- The native entity-target command supplies COMMITTED_ABILITY. Read during
+    -- execution, before any new order clears it. Never infer a clicked farm
+    -- from the Buffalo's position: native casting stops at the footprint edge.
+    local entity = Entity_GetStateTreeTargeting_EntityTarget(watch.entity,
+        "statetree_commited_target_type", "COMMITTED_ABILITY")
+    if not validPaddy(entity, watch.owner) then return nil, "invalid_native_target" end
+    return Entity_GetID(entity), nil
+end
+local function assignExecuted(watch, destination, now, commandTime)
+    local state = VietnamPaddyWoodState.players[watch.playerIndex]
+    if state == nil then return end
+    for _, other in pairs(state.watches) do
+        if other ~= watch and other.paddy == destination and validWorker(other) then
+            failApproach(watch, "occupied"); return
+        end
+    end
+    clearAssignment(watch)
+    clearIntent(watch, false)
+    watch.paddy = destination
+    local target = state.candidates[destination]
+    if target == nil then target = Entity_FromID(destination) end
+    if distanceSquared(watch.entity, target) > radiusSquared then
+        watch.center = {started = now, issued = false}
+    end
+    if commandTime == nil then watch.acceptOwnCommand = now end
+    print("VIETNAM_V6_PADDY_ASSIGN squad=" .. tostring(watch.id) .. " paddy=" .. tostring(destination))
+end
+function VietnamPaddyWood_OnCommand(context, watch)
+    if watch == nil or not watch.active or context == nil or context.command == nil then return end
+    -- Only the synchronous command emitted by our one centering move is ours.
+    -- All subsequent player orders, including another Move, cancel normally.
+    if watch.issuingCenterMove and context.command == SCMD_Move then return end
+    local now = World_GetGameTime()
+    if context.command == SCMD_BuildStructure then
+        watch.buildIssued = now
+        print("VIETNAM_V9_BUFFALO_BUILD_ISSUED squad=" .. tostring(watch.id))
+    else
+        watch.buildIssued = nil
+    end
+    -- The native execution and its own command notification may share a tick
+    -- in either order. Coalesce only the first ability command on that tick.
+    -- Move/stop and every later command always invalidate the assignment.
+    if context.command == SCMD_Ability and watch.acceptOwnCommand == now then
+        watch.acceptOwnCommand = nil
+        return
+    end
+    local buffered = watch.bufferedExecution
+    clearAssignment(watch)
+    clearIntent(watch, true)
+    if context.command == SCMD_Ability and validWorker(watch) then
+        -- No command ability/target field is verified. Confirm provisional
+        -- approach with the native work observer on a subsequent tick.
+        watch.intent = now
+        watch.executionBlocked = false
+        if buffered ~= nil and buffered.time == now then
+            -- After cancellation, execution may precede its fresh own command.
+            -- The event already observed a unique valid cast-position target.
+            -- Revalidate it and require the matching command on this same tick;
+            -- a stale event alone, a later tick or an intervening move cannot
+            -- admit buffered work.
+            local entity = Entity_FromID(buffered.paddy)
+            if validPaddy(entity, watch.owner) then assignExecuted(watch, buffered.paddy, now, watch.intent) end
+        end
+    end
+end
+function VietnamPaddyWood_OnAbility(context, watch)
+    if watch == nil or not watch.active or context == nil or not validWorker(watch) then return end
+    if context.ability == leaveAbility then
+        clearAssignment(watch)
+        clearIntent(watch, true)
+        return
+    end
+    if context.ability ~= workAbility then return end
+    local now = World_GetGameTime()
+    -- GE_AbilityExecuted proves context.ability; the committed native target
+    -- identifies the clicked entity. The separate center phase owns approach.
+    local destination, reason = executionTarget(watch)
+    if watch.executionBlocked then
+        watch.bufferedExecution = destination ~= nil and {time = now, paddy = destination} or nil
+        return
+    end
+    local commandTime = watch.pending or watch.intent
+    if commandTime ~= nil and now - commandTime >= approachTimeout then failApproach(watch, "timeout"); return end
+    if destination == nil then failApproach(watch, reason); return end
+    assignExecuted(watch, destination, now, commandTime)
+end
+local function updateApproach(watch, now)
+    if watch.center ~= nil then
+        local center = watch.center
+        local target = Entity_FromID(watch.paddy)
+        if not validWorker(watch) or not validPaddy(target, watch.owner) then
+            clearAssignment(watch); clearIntent(watch, true); return
+        end
+        if now - center.started >= approachTimeout then failApproach(watch, "timeout"); return end
+        if not center.issued then
+            -- Defer one observation so the native ability's own command event
+            -- completes before replacing it. Never teleport or retry movement.
+            if now <= center.started then return end
+            center.issued = true; center.moveAt = now
+            local group = SGroup_CreateUniqueWithPrefix("VietnamBuffaloCenter")
+            SGroup_Add(group, watch.squad)
+            watch.issuingCenterMove = true
+            Cmd_Move(group, Entity_GetPosition(target), false, nil, nil, nil, nil, nil, false, 0.1)
+            watch.issuingCenterMove = nil
+            SGroup_Destroy(group)
+            print("VIETNAM_V11_PADDY_CENTER squad=" .. tostring(watch.id) .. " paddy=" .. tostring(watch.paddy))
+            return
+        end
+        if now > center.moveAt and Squad_IsIdle(watch.squad)
+            and not Squad_HasActiveCommand(watch.squad) and not Squad_HasAcceptedCommands(watch.squad) then
+            if distanceSquared(watch.entity, target) <= radiusSquared then
+                watch.center = nil
+                print("VIETNAM_V11_PADDY_WORK squad=" .. tostring(watch.id) .. " paddy=" .. tostring(watch.paddy))
+            else failApproach(watch, "center_unreachable") end
+        end
+        return
+    end
+    if watch.intent == nil and watch.pending == nil then return end
+    if not validWorker(watch) then clearIntent(watch, true); return end
+    local doingWork = Squad_IsDoingAbility(watch.squad, workAbility)
+    if watch.intent ~= nil then
+        if doingWork then
+            watch.pending = watch.intent
+            watch.intent = nil
+        elseif now - watch.intent >= approachTimeout or (now - watch.intent >= commandGrace
+            and not Squad_HasActiveCommand(watch.squad) and not Squad_HasAcceptedCommands(watch.squad)) then
+            -- An unconfirmed ability command may have been another ability.
+            -- Never display a supervision failure without native confirmation.
+            clearIntent(watch, true)
+            return
+        end
+    end
+    if watch.pending ~= nil then
+        if now - watch.pending >= approachTimeout then failApproach(watch, "timeout")
+        elseif now - watch.pending >= commandGrace and not doingWork
+            and not Squad_HasActiveCommand(watch.squad) and not Squad_HasAcceptedCommands(watch.squad) then
+            failApproach(watch, "native_approach_failed")
+        end
+    end
+end
+-- Observe native build-start separately from supervision. Never reissue a
+-- construction order or stop/move the builder to make this diagnostic pass.
+local function observeBuildStart(watch, now)
+    if watch.buildIssued == nil then return end
+    if not validWorker(watch) then watch.buildIssued = nil; return end
+    local elapsed = now - watch.buildIssued
+    if elapsed <= 0 then return end
+    local constructing = Squad_IsConstructing(watch.squad)
+    local active, queued = Squad_HasActiveCommand(watch.squad), Squad_HasAcceptedCommands(watch.squad)
+    if constructing or (elapsed >= 1 and not active and not queued) or elapsed >= 10 then
+        print("VIETNAM_V9_BUFFALO_BUILD_STATE squad=" .. tostring(watch.id)
+            .. " elapsed=" .. tostring(elapsed) .. " constructing=" .. tostring(constructing)
+            .. " moving=" .. tostring(Squad_IsMoving(watch.squad))
+            .. " active=" .. tostring(active) .. " queued=" .. tostring(queued))
+        watch.buildIssued = nil
+    end
+end
+local function removeWatch(watch)
+    watch.active = false
+    clearAssignment(watch)
+    clearIntent(watch, true)
+    if Entity_IsValid(watch.entityID) then Rule_RemoveEntityEvent(VietnamPaddyWood_OnAbility, watch.entity) end
+    if Squad_IsValid(watch.id) then Rule_RemoveSquadEvent(VietnamPaddyWood_OnCommand, watch.squad) end
+end
+function VietnamPaddyWood_Update(player, entities, now)
+    if buffaloBlueprint == nil then
+        buffaloBlueprint = BP_GetSquadBlueprint(prefix .. "vn_unit_water_buffalo_vit")
+        workAbility = BP_GetAbilityBlueprint(prefix .. "vn_buffalo_work_paddy_vit")
+        leaveAbility = BP_GetAbilityBlueprint(prefix .. "vn_buffalo_leave_paddy_vit")
+    end
+    local state = VietnamPaddyWoodState.players[player.index]
+    if state == nil then
+        state = {owner = player.id, watches = {}, candidates = {}, previous = {}, time = now}
+        VietnamPaddyWoodState.players[player.index] = state
+    end
+    if not Player_IsAlive(player.id) or Player_GetID(state.owner) ~= Player_GetID(player.id) then
+        for _, w in pairs(state.watches) do removeWatch(w) end
+        VietnamPaddyWoodState.players[player.index] = nil; return
+    end
+    local candidates = {}
+    for i = 1, EGroup_CountSpawned(entities) do
+        local e = EGroup_GetSpawnedEntityAt(entities, i)
+        if validPaddy(e, player.id) then candidates[Entity_GetID(e)] = e end
+    end
+    state.candidates = candidates
+    local seen = {}
+    local squads = Player_GetSquads(player.id) -- engine-owned, never destroy
+    for i = 1, SGroup_CountSpawned(squads) do
+        local squad = SGroup_GetSpawnedSquadAt(squads, i)
+        local id = Squad_GetID(squad)
+        if Squad_IsAlive(squad) and Squad_GetBlueprint(squad) == buffaloBlueprint then
+            seen[id] = true
+            local entity = Squad_GetFirstEntity(squad)
+            local entityID = Entity_GetID(entity)
+            local watch = state.watches[id]
+            if watch ~= nil and watch.entityID ~= entityID then removeWatch(watch); watch = nil end
+            if watch == nil then
+                for _, oldState in pairs(VietnamPaddyWoodState.players) do
+                    if oldState ~= state and oldState.watches[id] ~= nil then
+                        removeWatch(oldState.watches[id]); oldState.watches[id] = nil
+                    end
+                end
+                watch = {id = id, squad = squad, entity = entity, entityID = entityID,
+                    owner = player.id, playerIndex = player.index, epoch = 0, active = true}
+                state.watches[id] = watch
+                Rule_AddEntityEvent(VietnamPaddyWood_OnAbility, entity, GE_AbilityExecuted, watch)
+                Rule_AddSquadEvent(VietnamPaddyWood_OnCommand, squad, GE_SquadCommandIssued, watch)
+            end
+        end
+    end
+    for id, watch in pairs(state.watches) do
+        if not seen[id] then removeWatch(watch); state.watches[id] = nil end
+    end
+    local elapsed = now - state.time
+    local continuous = elapsed > 0 and elapsed <= 0.5
+    local current, used, amount = {}, {}, 0
+    local rate = woodRate(player)
+    local ids = {}
+    for id in pairs(state.watches) do ids[#ids + 1] = id end
+    table.sort(ids)
+    for _, id in ipairs(ids) do
+        local watch = state.watches[id]
+        observeBuildStart(watch, now)
+        updateApproach(watch, now)
+        local e = watch.paddy ~= nil and candidates[watch.paddy] or nil
+        if watch.paddy ~= nil and (e == nil or not validWorker(watch)
+            or (watch.center == nil and distanceSquared(watch.entity, e) > radiusSquared) or used[watch.paddy]) then clearAssignment(watch) end
+        if watch.paddy ~= nil then
+            used[watch.paddy] = true
+            if watch.center == nil and Squad_IsIdle(watch.squad)
+                and not Squad_HasActiveCommand(watch.squad) and not Squad_HasAcceptedCommands(watch.squad) then
+                setWorkingMarker(watch, e)
+                local record = {buffalo = id, epoch = watch.epoch, rate = rate}
+                current[watch.paddy] = record
+                local previous = state.previous[watch.paddy]
+                if continuous and previous ~= nil and previous.buffalo == id and previous.epoch == watch.epoch then
+                    amount = amount + math.min(previous.rate, rate) * elapsed
+                end
+            else
+                setWorkingMarker(watch, nil)
+            end
+        end
+    end
+    if now ~= state.time then state.previous = current; state.time = now end
+    -- First observation after an assignment earns no unobserved income.
+    -- Official player.scar forwards RES_Resourcing to Player_SetResourceInternal.
+    -- HUD income-rate aggregation is engine-owned and needs a native test.
+    if amount > 0 then Player_AddResource(player.id, RT_Wood, amount, RES_Resourcing) end
+end
+function VietnamPaddyWood_RestoreUI()
+    -- Restore presentation only. The next normal observation recreates tags
+    -- for centered active workers; serialized assignments/income stay intact.
+    for _, state in pairs(VietnamPaddyWoodState.players) do
+        for _, watch in pairs(state.watches) do setWorkingMarker(watch, nil) end
+    end
+end
+function VietnamPaddyWood_Cleanup()
+    for _, state in pairs(VietnamPaddyWoodState.players) do
+        for _, watch in pairs(state.watches) do removeWatch(watch) end
+    end
+    VietnamPaddyWoodState = {players = {}}
+    buffaloBlueprint = nil; workAbility = nil; leaveAbility = nil
+end

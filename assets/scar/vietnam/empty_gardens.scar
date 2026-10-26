@@ -1,0 +1,60 @@
+import("player.scar")
+
+VietnamEmptyGardensState = {active = false, players = {}, resolved = {}}
+local upgrade = nil
+local resources = {
+    {name = "food", kind = RT_Food}, {name = "wood", kind = RT_Wood},
+    {name = "gold", kind = RT_Gold}, {name = "stone", kind = RT_Stone},
+}
+
+function VietnamEmptyGardens_Start(civilizations)
+    if VietnamEmptyGardensState.active then return end
+    for _, player in ipairs(PLAYERS) do
+        if civilizations[player.index] == "vietnam" then
+            VietnamEmptyGardensState.players[World_GetPlayerIndex(player.id)] = player
+            VietnamEmptyGardensState.active = true
+        end
+    end
+    if VietnamEmptyGardensState.active then
+        upgrade = BP_GetUpgradeBlueprint("a743d7d1d7534cf78817e29d8ded7366:vn_upgrade_empty_gardens_vit")
+        Rule_AddGlobalEvent(VietnamEmptyGardens_OnEntityKilled, GE_EntityKilled)
+    end
+end
+
+-- Official Wonder/DynastyUI callbacks read victim, victimOwner and construction
+-- progress here, including scuttling. Do not infer death from a missing entity.
+function VietnamEmptyGardens_OnEntityKilled(context)
+    if not VietnamEmptyGardensState.active or context == nil
+        or context.victim == nil or context.victimOwner == nil then return end
+    -- PlayerID is engine userdata: equal wrappers need not share Lua table keys.
+    -- Use the stable numeric slot, as official player.scar modifier ledgers do.
+    local player = VietnamEmptyGardensState.players[World_GetPlayerIndex(context.victimOwner)]
+    if player == nil then return end
+    local entity = context.victim
+    local id = Entity_GetID(entity)
+    if not Entity_IsValid(id) or not Entity_IsBuilding(entity)
+        or VietnamEmptyGardensState.resolved[id] then return end
+    -- Resolve before checking research, so an older death cannot pay later.
+    VietnamEmptyGardensState.resolved[id] = true
+    if not Player_IsAlive(player.id) or not Player_HasUpgrade(player.id, upgrade)
+        or Entity_GetBuildingProgress(entity) < 1
+        or Entity_IsOfType(entity, "landmark") or Entity_IsOfType(entity, "wonder") then return end
+    -- Native blueprint cost excludes discounts and all paid research. Fortified
+    -- Hideouts inherit their base construction cost; free traps return zero.
+    local cost = BP_GetEntityBPCost(Entity_GetBlueprint(entity))
+    for _, resource in ipairs(resources) do
+        local amount = cost[resource.name] or 0
+        if amount > 0 then Player_AddResource(player.id, resource.kind, amount * 0.25) end
+    end
+    print("VIETNAM_V2_EMPTY_GARDENS player=" .. tostring(player.index) .. " entity=" .. tostring(id))
+end
+
+function VietnamEmptyGardens_Cleanup()
+    if VietnamEmptyGardensState.active then
+        VietnamEmptyGardensState.active = false
+        Rule_RemoveGlobalEvent(VietnamEmptyGardens_OnEntityKilled)
+    end
+    VietnamEmptyGardensState.players = {}
+    VietnamEmptyGardensState.resolved = {}
+    upgrade = nil
+end

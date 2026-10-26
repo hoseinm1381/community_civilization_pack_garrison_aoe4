@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" template="statemodel_schema">
+	<uniqueid name="pbgid" value="1073741825" />
+	<instance_reference name="parent_pbg" value="statemodel_schema\units\trade_cart" />
+	<group name="schema_bag">
+		<list name="bool_properties">
+			<template_reference name="boolean" value="statemodel_bool_property" List.ItemID="1073741826" List.ListAction="Append">
+				<bool name="default" value="False" />
+				<enum name="bool_property_id" value="is_in_stealth_aura_mal" />
+			</template_reference>
+			<template_reference name="boolean" value="statemodel_bool_property" List.ItemID="2147482509" List.ListAction="Append">
+				<bool name="default" value="False" />
+				<enum name="bool_property_id" value="is_toggled_stealth" />
+			</template_reference>
+			<template_reference name="boolean" value="statemodel_bool_property" List.ItemID="2147482510" List.ListAction="Append">
+				<bool name="default" value="False" />
+				<enum name="bool_property_id" value="stealth_ended_local_knowledge" />
+			</template_reference>
+		</list>
+		<list name="int_properties">
+			<template_reference name="int" value="statemodel_int_property" List.ItemID="2147482511" List.ListAction="Append">
+				<int name="default" value="0" />
+				<enum name="int_property_id" value="stealth_start_time_in_ticks" />
+			</template_reference>
+		</list>
+	</group>
+</instance>
