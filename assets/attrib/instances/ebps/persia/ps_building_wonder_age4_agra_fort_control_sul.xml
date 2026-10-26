@@ -1,0 +1,410 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="-687579933" List.ParentItemID="-687579933">
+			<list name="requirement_table" overrideParent="True">
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="166241742">
+					<enum name="reason" value="usage" overrideParent="True" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_statemodelbool" List.ItemID="-1120941601">
+					<locstring name="ui_name" value="0" />
+					<enum name="reason" value="usage_and_display" overrideParent="True" />
+					<enum name="key" value="is_wonder_construction_enabled" overrideParent="True" />
+					<enum name="data_source_type" value="player_datasource" overrideParent="True" />
+					<bool name="default_value" value="False" />
+					<bool name="compare_to_value" value="True" overrideParent="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_not" List.ItemID="-1358031973">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="11168821" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="1186851891">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements" overrideParent="True">
+								<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1147216274">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<instance_reference name="structure_name" value="ebps\persia\ps_building_wonder_age4_agra_fort_control_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+									<int name="required_structure_count" value="1" />
+									<bool name="check_team" value="False" />
+									<bool name="require_construction_complete" value="False" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1564013048" List.ParentItemID="-1564013048">
+			<state_tree_node name="death_action_tree" value="building_death_actions\landmarks\landmarks_common\common_wonder_shared_death" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-3859106" List.ParentItemID="-3859106">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<float name="animator_scale" value="175" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1488008841" List.ParentItemID="-1488008841">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\sultanate" List.ItemID="1793188627" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1976360599" List.ParentItemID="1976360599">
+			<float name="decorator_height" value="12" overrideParent="True" />
+			<file name="icon_name" value="races\sultanate\buildings\building_wonder_age4_agra_fort" overrideParent="True" />
+			<float name="minimap_icon_scale" value="0.45" overrideParent="True" />
+			<string name="telemetry_name" value="Great Palace of Agra" overrideParent="True" />
+			<locstring name="screen_name" value="5244" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="-954154841" List.ParentItemID="-954154841">
+			<group name="footprint_scale">
+				<float name="x" value="12" overrideParent="True" />
+				<float name="y" value="12" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\building_presentation_ext" overrideParent="True" List.ItemID="-1059384753" List.ParentItemID="-1059384753">
+			<file name="construction_stamp" value="art\stamps\scaffolding\west\west_monastery" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-1945183609" List.ListAction="Append">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="1513046624">
+					<group name="tier" List.ItemID="-2072738704">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\unit_religious_sul\tier1_unit_religious_control_sul" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="-1969494492">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\unit_religious_sul\tier2_unit_religious_control_sul" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\feudal_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="act_set_current_age_feudal" overrideParent="True" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" overrideParent="True" List.ItemID="1374618722">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\unit_religious_sul\tier3_unit_religious_control_sul" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="act_set_current_age_castle" overrideParent="True" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="1207095884">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\unit_religious_sul\tier4_unit_religious_control_sul" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="act_set_current_age_imperial" overrideParent="True" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+				<list name="tier_group" overrideParent="True" List.ItemID="131578806">
+					<group name="tier" List.ItemID="1918653971">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\outskirts\general\sul_monastery_01" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="1203201713">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\outskirts\general\sul_monastery_03" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482568" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_wonder_age4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="-975410046" List.ParentItemID="-975410046">
+				<list name="requirement_table" overrideParent="True">
+					<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-1669194014">
+						<enum name="reason" value="usage" overrideParent="True" />
+						<locstring name="ui_name" value="0" />
+						<bool name="is_present" value="True" />
+						<int name="max_completed" value="100" />
+						<int name="min_completed" value="1" />
+						<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" />
+						<bool name="include_queued" value="False" />
+						<group name="include_pbg_parenting">
+							<bool name="include_child_pbgs" value="False" />
+							<bool name="include_parent_pbgs" value="False" />
+						</group>
+						<bool name="include_completed" value="True" />
+					</template_reference>
+					<template_reference name="required" value="requirements\required_statemodelbool" List.ItemID="1344349136">
+						<locstring name="ui_name" value="0" />
+						<enum name="reason" value="usage_and_display" overrideParent="True" />
+						<enum name="key" value="is_wonder_construction_enabled" overrideParent="True" />
+						<enum name="data_source_type" value="player_datasource" overrideParent="True" />
+						<bool name="default_value" value="False" />
+						<bool name="compare_to_value" value="True" overrideParent="True" />
+					</template_reference>
+					<template_reference name="required" value="requirements\required_not" List.ItemID="1625588058">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="11168821" />
+						<list name="requirement_table">
+							<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="-102339483">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<list name="requirements" overrideParent="True">
+									<template_reference name="requirement" value="requirements\required_structure" List.ItemID="251998929">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<instance_reference name="structure_name" value="ebps\persia\ps_building_wonder_age4_agra_fort_control_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+										<int name="required_structure_count" value="1" />
+										<bool name="check_team" value="False" />
+										<bool name="require_construction_complete" value="False" />
+										<group name="include_pbg_parenting">
+											<bool name="include_child_pbgs" value="False" />
+											<bool name="include_parent_pbgs" value="False" />
+										</group>
+									</template_reference>
+								</list>
+							</template_reference>
+						</list>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1345214938" List.ParentItemID="1345214938">
+				<state_tree_node name="death_action_tree" value="campaignMod_building_death_actions\landmarks\wonders_age4\sul_agra_fort" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1697624988" List.ParentItemID="-1697624988">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+				<float name="animator_scale" value="175" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="82698194" List.ParentItemID="82698194">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\sultanate" List.ItemID="1378930027" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="361736621" List.ParentItemID="361736621">
+				<file name="icon_name" value="races\sultanate\buildings\building_wonder_age4_agra_fort" overrideParent="True" />
+				<string name="telemetry_name" value="Great Palace of Agra" overrideParent="True" />
+				<locstring name="screen_name" value="5245" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="-1206759612" List.ParentItemID="-1206759612">
+				<group name="footprint_scale">
+					<float name="x" value="12" overrideParent="True" />
+					<float name="y" value="12" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="209199011" List.ParentItemID="209199011">
+				<string name="single_select_event" value="sfx_ui_wonder_building_selection_play" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-692668684" List.ListAction="Append">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="-431067324">
+						<group name="tier" List.ItemID="-2072738704">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\unit_religious_sul\tier1_unit_religious_control_sul" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="-1969494492">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\unit_religious_sul\tier2_unit_religious_control_sul" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\feudal_age" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="act_set_current_age_feudal" overrideParent="True" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" overrideParent="True" List.ItemID="1374618722">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\unit_religious_sul\tier3_unit_religious_control_sul" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="act_set_current_age_castle" overrideParent="True" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="1207095884">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\unit_religious_sul\tier4_unit_religious_control_sul" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="act_set_current_age_imperial" overrideParent="True" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+					<list name="tier_group" overrideParent="True" List.ItemID="1241796199">
+						<group name="tier" List.ItemID="1918653971">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\outskirts\general\sul_monastery_01" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="1203201713">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\outskirts\general\sul_monastery_03" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482568" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_wonder_age4" />
+	</variant>
+</instance>

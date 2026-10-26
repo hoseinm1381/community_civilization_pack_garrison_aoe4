@@ -1,0 +1,319 @@
+<instance version="6" description="Imperial Age Horseman" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="1672650537" List.ParentItemID="1672650537">
+			<list name="tier_group_list">
+				<list name="tier_group" overrideParent="True" List.ItemID="-1587347723">
+					<group name="tier" List.ItemID="-744480727">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier4_cavalry_camel_archer_abb" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="armored_camel_convert" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" overrideParent="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-2048321142" List.ParentItemID="-2048321142">
+			<bool name="browsable_in_editor" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" overrideParent="True" List.ItemID="-646768951" List.ParentItemID="-646768951">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\always_on_abilities\abbasid\camel_support_aura_abb" List.ItemID="278834709" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\abbasid\mamluke_anti_cavalry_aura_abb" List.ItemID="-1423353754" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1196515905" List.ParentItemID="-1196515905">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="1417114492" List.ParentItemID="1417114492">
+					<string name="state_tree" value="unit_action_apply\units\camel" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="-876997850" List.ParentItemID="-876997850">
+					<string name="state_tree" value="unit_action_apply\units\cavalry_archer\audio\mon\4" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1105799735" List.ParentItemID="1105799735">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="food" value="85" overrideParent="True" />
+					<float name="wood" value="0" overrideParent="True" />
+					<float name="gold" value="175" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="35" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-727417239" List.ParentItemID="-727417239">
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Melee" value="0" overrideParent="True" />
+				<float name="Ranged" value="0" overrideParent="True" />
+			</enum_table>
+			<float name="hitpoints" value="160" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-451681730" List.ParentItemID="-451681730">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="-1786850898" />
+				<enum name="unit_type" value="cavalry_archer" List.ItemID="-2001941226" />
+				<enum name="unit_type" value="formational" List.ItemID="-1174667872" />
+				<enum name="unit_type" value="human" List.ItemID="103132537" />
+				<enum name="unit_type" value="cavalry" List.ItemID="-2045940455" />
+				<enum name="unit_type" value="ranged" List.ItemID="205993008" />
+				<enum name="unit_type" value="camel" List.ItemID="1287191444" />
+				<enum name="unit_type" value="camel_archer" List.ItemID="-1790386027" />
+				<enum name="unit_type" value="archer" List.ItemID="-1343031343" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="852144417" />
+				<enum name="unit_type" value="included_by_military_hotkeys" List.ItemID="963285731" />
+				<enum name="unit_type" value="find_non_siege_land_military" List.ItemID="-1354612027" />
+				<enum name="unit_type" value="land_military" List.ItemID="136484516" />
+			</list>
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\abbasid" List.ItemID="-1216803668" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="2042384115" List.ParentItemID="2042384115">
+			<instance_reference name="navigation_agent_info" value="navigation\agent_info\default_elephant" overrideParent="True" />
+			<enum_table name="speed_scaling_table">
+				<float name="default_speed" value="6.25" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\speech_ext" List.ItemID="-2068802280" List.ParentItemID="-2068802280">
+			<string name="speaker_code" value="camelArcher" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-501808581" List.ParentItemID="-501808581">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="603242054" List.ParentItemID="603242054">
+					<list name="weapon_table" removedIds="-1422361067, 906138791">
+						<group name="weapon" List.ItemID="1308369739" List.ParentItemID="1308369739">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\persia\ps_weapon_zamburak_4_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\japanese\weapons\wpn_range_ozutsu_4_jpn" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_larmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482645" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_camel_archer_4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="1943139580" List.ParentItemID="1943139580">
+				<list name="tier_group_list">
+					<list name="tier_group" overrideParent="True" List.ItemID="611941523">
+						<group name="tier" List.ItemID="1028667350">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier4_cavalry_camel_archer_abb" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_armored_camel_convert" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" overrideParent="True" List.ItemID="-1698716197" List.ParentItemID="-1698716197">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\always_on_abilities\abbasid\camel_support_aura_abb" List.ItemID="-1104407114" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\abbasid\mamluke_anti_cavalry_aura_abb" List.ItemID="-72712968" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\abbasid\immune_to_conversion_abb" List.ItemID="-764330836" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1777913110" List.ParentItemID="-1777913110">
+				<list name="action_state_trees">
+					<group name="container" List.ItemID="-179645934" List.ParentItemID="-179645934">
+						<string name="state_tree" value="unit_action_apply\units\camel" overrideParent="True" />
+					</group>
+					<group name="container" List.ItemID="1312563378" List.ParentItemID="1312563378">
+						<string name="state_tree" value="unit_action_apply\units\cavalry_archer\audio\mon\4" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="2068701801" List.ParentItemID="2068701801">
+				<group name="time_cost">
+					<enum_table name="cost">
+						<float name="food" value="85" overrideParent="True" />
+						<float name="wood" value="0" overrideParent="True" />
+						<float name="gold" value="175" overrideParent="True" />
+					</enum_table>
+					<float name="time_seconds" value="35" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-32120599" List.ParentItemID="-32120599">
+				<float name="hitpoints" value="160" overrideParent="True" />
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Melee" value="0" overrideParent="True" />
+					<float name="Ranged" value="0" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1703070166" List.ParentItemID="-1703070166">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\abbasid" List.ItemID="329376971" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="2092397392" List.ParentItemID="2092397392">
+				<instance_reference name="navigation_agent_info" value="navigation\agent_info\default_elephant" overrideParent="True" />
+				<enum_table name="speed_scaling_table">
+					<float name="default_speed" value="6.25" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-122484559" List.ParentItemID="-122484559">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="1065918677" List.ParentItemID="1065918677">
+						<list name="weapon_table" removedIds="-1512230999, 1566161299, -1362414931">
+							<group name="weapon" List.ItemID="-1012617350" List.ParentItemID="-1012617350">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\persia\ps_weapon_zamburak_4_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\japanese\weapons\wpn_range_ozutsu_4_jpn" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_larmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482645" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_camel_archer_4" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="1672650537" List.ParentItemID="1672650537">
+				<list name="tier_group_list">
+					<list name="tier_group" overrideParent="True" List.ItemID="-1867387484">
+						<group name="tier" List.ItemID="-1791653693">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier4_cavalry_camel_archer_abb" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="xp3_armored_camel_convert" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" overrideParent="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-2048321142" List.ParentItemID="-2048321142">
+				<bool name="browsable_in_editor" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" overrideParent="True" List.ItemID="-646768951" List.ParentItemID="-646768951">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\always_on_abilities\abbasid\camel_support_aura_abb" List.ItemID="-1892119754" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\abbasid\mamluke_anti_cavalry_aura_abb" List.ItemID="-1110385630" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1196515905" List.ParentItemID="-1196515905">
+				<list name="action_state_trees">
+					<group name="container" List.ItemID="1417114492" List.ParentItemID="1417114492">
+						<string name="state_tree" value="unit_action_apply\units\camel" overrideParent="True" />
+					</group>
+					<group name="container" List.ItemID="-876997850" List.ParentItemID="-876997850">
+						<string name="state_tree" value="unit_action_apply\units\cavalry_archer\audio\mon\4" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1105799735" List.ParentItemID="1105799735">
+				<group name="time_cost">
+					<enum_table name="cost">
+						<float name="food" value="85" overrideParent="True" />
+						<float name="wood" value="0" overrideParent="True" />
+						<float name="gold" value="175" overrideParent="True" />
+					</enum_table>
+					<float name="time_seconds" value="35" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-727417239" List.ParentItemID="-727417239">
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Melee" value="0" overrideParent="True" />
+					<float name="Ranged" value="0" overrideParent="True" />
+				</enum_table>
+				<float name="hitpoints" value="160" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-451681730" List.ParentItemID="-451681730">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="military" List.ItemID="-402116720" />
+					<enum name="unit_type" value="cavalry_archer" List.ItemID="-553812524" />
+					<enum name="unit_type" value="formational" List.ItemID="1692295586" />
+					<enum name="unit_type" value="human" List.ItemID="-1282275540" />
+					<enum name="unit_type" value="cavalry" List.ItemID="-1869250511" />
+					<enum name="unit_type" value="ranged" List.ItemID="-524153837" />
+					<enum name="unit_type" value="camel" List.ItemID="-1002553532" />
+					<enum name="unit_type" value="camel_archer" List.ItemID="530134892" />
+					<enum name="unit_type" value="archer" List.ItemID="-2111822694" />
+					<enum name="unit_type" value="annihilation_condition" List.ItemID="-1975798843" />
+					<enum name="unit_type" value="included_by_military_hotkeys" List.ItemID="-1036977188" />
+					<enum name="unit_type" value="find_non_siege_land_military" List.ItemID="-576857173" />
+					<enum name="unit_type" value="land_military" List.ItemID="1749638053" />
+				</list>
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\abbasid" List.ItemID="1254938141" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="2042384115" List.ParentItemID="2042384115">
+				<instance_reference name="navigation_agent_info" value="navigation\agent_info\default_elephant" overrideParent="True" />
+				<enum_table name="speed_scaling_table">
+					<float name="default_speed" value="6.25" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\speech_ext" List.ItemID="-2068802280" List.ParentItemID="-2068802280">
+				<string name="speaker_code" value="camelArcher" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-501808581" List.ParentItemID="-501808581">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="603242054" List.ParentItemID="603242054">
+						<list name="weapon_table" removedIds="-1422361067, 906138791">
+							<group name="weapon" List.ItemID="1308369739" List.ParentItemID="1308369739">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\persia\ps_weapon_zamburak_4_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\japanese\weapons\wpn_range_ozutsu_4_jpn" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_larmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482645" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_camel_archer_4" />
+	</variant>
+</instance>

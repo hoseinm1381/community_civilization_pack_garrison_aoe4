@@ -1,0 +1,27 @@
+name: Garrison current source
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/development-data/
+            !/0.8.0/
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-tests.txt
+      - run: python -B tools/verify_current_source.py
+      - run: python -B -m unittest discover -s tests/persia -p 'test_*.py'

@@ -1,0 +1,3316 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions" overrideParent="True">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1218543450" List.ParentItemID="-1218543450">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<file name="alternate_sua" value="" />
+			<bool name="always_revealed_in_fow" value="False" />
+			<bool name="is_visible_in_game" value="True" />
+			<int name="precise_size" value="-1" />
+			<enum name="default_spawn_type" value="" />
+			<instance_reference name="unit_badge" value="" />
+			<bool name="is_spawned_when_not_in_interactive_area" value="True" />
+			<bool name="is_wreck" value="False" />
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\buildings\building_unit_naval" />
+			<float name="animator_scale" value="100" />
+			<float name="entity_scale" value="100" />
+			<enum name="subclass_type" value="Building" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sim_entity_ext" List.ItemID="-1895205658" List.ParentItemID="-1895205658">
+			<float name="rotate_snap" value="360" />
+			<bool name="kill_paradrop" value="False" />
+			<enum name="transferable" value="None" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="235383520" List.ParentItemID="235383520">
+			<bool name="can_repair" value="True" />
+			<bool name="cuttable" value="False" />
+			<string name="death_event_name" value="death" />
+			<float name="death_seconds" value="-1" />
+			<bool name="delete_when_dead" value="False" />
+			<bool name="force_attacker_memory" value="False" />
+			<float name="hitpoints" value="1750" />
+			<bool name="is_invincible" value="False" />
+			<bool name="is_salvagable_wreck" value="False" />
+			<instance_reference name="rebuilt_entity" value="" />
+			<instance_reference name="rebuilt_squad" value="" />
+			<bool name="rebuilt_use_wreck_owner" value="False" />
+			<bool name="receive_weapon_cover_modifiers" value="False" />
+			<float name="regeneration" value="0" />
+			<bool name="regeneration_disabled" value="True" />
+			<bool name="remove_from_pathfinding_on_death" value="False" />
+			<bool name="reveal_to_all_on_death" value="False" />
+			<bool name="ui_can_scuttle" value="True" />
+			<float name="target_size" value="5" />
+			<float name="weapon_priority" value="80" />
+			<template_reference name="wreck_entity_option" value="options\none">
+			</template_reference>
+			<enum name="armor_type" value="None" />
+			<template_reference name="armor_layout_option" value="options\ebpextensions\healthext\armor_layouts\armor_layout_uniform">
+				<float name="armor" value="1" />
+			</template_reference>
+			<enum name="allegiance_override" value="none" />
+			<bool name="not_default_attackable" value="False" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="True Damage" value="0" />
+				<float name="Melee" value="0" />
+				<float name="Ranged" value="50" />
+				<float name="Fire" value="0" />
+			</enum_table>
+			<template_reference name="self_destruct_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<template_reference name="rebuilt_entity_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<template_reference name="on_received_damage_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<state_tree_node name="death_action_tree" value="building_death_actions\buildings\dock_death_actions" />
+			<state_tree_node name="on_reach_invulnerable_min_cap_entity_state_tree_ref" value="" />
+			<state_tree_node name="on_reach_max_health_entity_state_tree_ref" value="" />
+			<bool name="can_be_damaged_by_ally" value="False" />
+			<enum_table name="percentage_reduction_armor_by_damage_type">
+				<float name="True Damage" value="0" />
+				<float name="Melee" value="0" />
+				<float name="Ranged" value="0" />
+				<float name="Fire" value="0" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="1705520148" List.ParentItemID="1705520148">
+			<instance_reference name="hit_material" value="hit_material\wood" />
+			<float name="hit_chance" value="1" />
+			<template_reference name="projectile_reflect_option" value="options\none">
+			</template_reference>
+			<enum name="projectile_collision_check_type" value="internal_simboxes_only" />
+			<group name="shot_collision">
+				<enum_table name="pass_through_relation">
+					<bool name="undefined" value="False" />
+					<bool name="enemy" value="True" />
+					<bool name="ally" value="True" />
+					<bool name="neutral" value="True" />
+				</enum_table>
+				<enum_table name="pass_through_projectile">
+					<bool name="tp_artillery" value="True" />
+					<bool name="tp_collide" value="False" />
+					<bool name="tp_vehicle_collide" value="True" />
+					<bool name="tp_piercing_blockers_only" value="True" />
+				</enum_table>
+				<bool name="pass_through_weapon_ranged_non_projectile" value="False" />
+				<bool name="collide_with_missed_ranged_weapon_shots" value="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\line_of_sight_ext" List.ItemID="-2086070140" List.ParentItemID="-2086070140">
+			<group name="blocking_box">
+				<float name="x" value="0.01" />
+				<float name="y" value="0.01" />
+				<float name="z" value="0.01" />
+			</group>
+			<bool name="is_shot_blocking" value="False" />
+			<bool name="use_blocking_box" value="False" />
+			<bool name="reveal_center_when_outside_is_visible" value="True" />
+			<enum name="does_block_line_of_sight" value="never" />
+			<list name="blocked_weapon_types">
+			</list>
+			<bool name="disable_shot_blocking_on_death" value="False" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\modifier_ext" List.ItemID="1617374452" List.ParentItemID="1617374452">
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="1755465546" List.ParentItemID="1755465546">
+			<bool name="snap_to_terrain" value="True" />
+			<float name="extra_build_test_footprint_x" value="0" />
+			<float name="extra_build_test_footprint_z" value="0" />
+			<float name="extra_build_test_footprint_offset_x" value="0" />
+			<float name="extra_build_test_footprint_offset_z" value="0" />
+			<float name="minimum_build_test_footprint_x" value="0" />
+			<float name="minimum_build_test_footprint_z" value="0" />
+			<enum name="impass_cell_check" value="AllCellsFree" />
+			<group name="footprint_scale">
+				<float name="x" value="8" />
+				<float name="y" value="8" />
+			</group>
+			<bool name="forced_axis_aligned_footprint" value="True" />
+			<bool name="remove_if_constructed_over" value="False" />
+			<list name="snap_to_surface_types">
+				<enum name="surface_type" value="Ground" List.ItemID="631348311" List.ParentItemID="631348311" />
+				<enum name="surface_type" value="Water" List.ItemID="-1515390465" List.ParentItemID="-1515390465" />
+			</list>
+			<bool name="snap_to_construction_grid" value="True" />
+			<bool name="despawn_if_constructed_over" value="False" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-844185006" List.ParentItemID="-844185006">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\sultanate" overrideParent="True" List.ItemID="1340040688" />
+			</list>
+			<list name="unit_type_list">
+				<enum name="unit_type" value="building" List.ItemID="-395413778" List.ParentItemID="-395413778" />
+				<enum name="unit_type" value="siegeable" List.ItemID="1391946507" List.ParentItemID="1391946507" />
+				<enum name="unit_type" value="production_building" List.ItemID="-867061455" List.ParentItemID="-867061455" />
+				<enum name="unit_type" value="military_only_production" List.ItemID="985446616" List.ParentItemID="985446616" />
+				<enum name="unit_type" value="naval_production_building" List.ItemID="-42605700" List.ParentItemID="-42605700" />
+				<enum name="unit_type" value="trade_post" List.ItemID="-898220715" List.ParentItemID="-898220715" />
+				<enum name="unit_type" value="scar_dock" List.ItemID="-943784255" List.ParentItemID="-943784255" />
+				<enum name="unit_type" value="resource_drop_off" List.ItemID="-1660676439" List.ParentItemID="-1660676439" />
+				<enum name="unit_type" value="trade_dock" List.ItemID="-589139474" List.ParentItemID="-589139474" />
+			</list>
+			<enum name="weapon_targeting" value="automatic" />
+			<enum_table name="weapon_category_targeting_filter">
+				<bool name="1melee" value="False" />
+				<bool name="2ranged" value="False" />
+				<bool name="3siege" value="True" />
+				<bool name="4charge" value="True" />
+				<bool name="5brace" value="True" />
+				<bool name="6auto_ability_cast" value="True" />
+				<bool name="7single_cast_ability" value="True" />
+				<bool name="8dummy" value="False" />
+				<bool name="9idle" value="True" />
+			</enum_table>
+			<bool name="intersection_testing" value="False" />
+			<list name="attack_target_restriction_on_attacker">
+			</list>
+			<list name="attack_target_restriction_on_victim">
+				<enum name="unit_type" value="human" List.ItemID="-324643905" List.ParentItemID="-324643905" />
+				<enum name="unit_type" value="siege" List.ItemID="-1871352146" List.ParentItemID="-1871352146" />
+				<enum name="unit_type" value="building" List.ItemID="1543059472" List.ParentItemID="1543059472" />
+				<enum name="unit_type" value="war_elephant" List.ItemID="795002148" List.ParentItemID="795002148" />
+			</list>
+			<list name="unit_type_list_selection_keybind_only">
+			</list>
+			<list name="unit_type_list_ui_appear_as_only">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-620052025" List.ParentItemID="-620052025">
+			<bool name="query_weapon_for_range_ui" value="True" overrideParent="True" />
+			<bool name="automatic_fit_on_placement" value="False" />
+			<float name="cancel_refund_percentage" value="100" />
+			<string name="construction_state_name" value="construction_state" />
+			<float name="construction_transition_time" value="0" />
+			<bool name="force_construction" value="False" />
+			<float name="max_engineers" value="0" />
+			<instance_reference name="on_construction_squad" value="" />
+			<float name="orientation" value="0" />
+			<enum name="placement_type" value="tp_structure" />
+			<bool name="prefer_spots_on_side_with_leader" value="False" />
+			<bool name="query_abilities_for_range_ui" value="True" />
+			<bool name="show_ability_range_in_construction_item_preview" value="False" />
+			<bool name="random_rotation" value="False" />
+			<float name="replace_ghost_distance" value="5" />
+			<bool name="self_construct" value="False" />
+			<group name="field_placement_info">
+				<instance_reference name="border_entity" value="" />
+				<instance_reference name="replace_entity" value="" />
+				<int name="replace_count" value="0" />
+				<float name="replace_retry_distance" value="0" />
+			</group>
+			<instance_reference name="placement_valid" value="ui_rectangle\construction_placement_valid" />
+			<instance_reference name="placement_invalid" value="ui_rectangle\construction_placement_invalid" />
+			<instance_reference name="ui_range" value="ui_reticule\aura_ring" />
+			<float name="ui_range_radius" value="0" comment="10 is the setting for deep strike radius, if this number need to be changed, then deep strike radius needs to request programming support" />
+			<instance_reference name="ui_setfacing" value="" />
+			<bool name="squad_ignore_pathfinding" value="False" />
+			<group name="placement_requirements">
+				<bool name="must_be_in_line_of_sight" value="False" />
+				<bool name="must_not_be_in_walkable_surfaces" value="False" />
+				<bool name="must_be_on_strategic_point" value="False" />
+				<list name="requirements">
+				</list>
+				<float name="spacing_distance" value="0" />
+				<bool name="skip_impass_checks_and_ignore_immovable_entities" value="False" />
+				<string name="state_tree_conditions" value="" />
+				<bool name="must_be_in_explored_area" value="True" />
+				<bool name="must_be_on_movement_node" value="False" />
+				<list name="placement_requirement_options">
+					<template_reference name="placement_requirement_option" value="options\placement\requirements\placement_requirement_pass_types_option" List.ItemID="173880973" List.ParentItemID="173880973">
+						<list name="required_pass_types">
+							<group name="pass_type_data" List.ItemID="157146845" List.ParentItemID="157146845">
+								<instance_reference name="pass_type" value="pass_types\infantry" />
+								<int name="minimum_contiguous_cell_count" value="14" />
+							</group>
+							<group name="pass_type_data" List.ItemID="60461707" List.ParentItemID="60461707">
+								<instance_reference name="pass_type" value="pass_types\water_default" />
+								<int name="minimum_contiguous_cell_count" value="7" />
+							</group>
+						</list>
+						<list name="forbidden_pass_types">
+						</list>
+						<bool name="use_simbox_scale_as_footprint" value="True" />
+					</template_reference>
+				</list>
+				<locstring name="ui_usage_txt" value="11183939" />
+			</group>
+			<bool name="can_be_cancelled" value="True" />
+			<state_tree_node name="can_be_cancelled_state_tree_conditions" value="" />
+			<template_reference name="construction_health_option" value="options\ebpextensions\constructionext\construction_health_option">
+				<float name="initial_health" value="175" />
+			</template_reference>
+			<float name="min_music_intensity" value="0" />
+			<string name="tooltip_data_template" value="BuildingMilitaryDataTemplate" />
+			<enum name="placement_set_facing_style" value="disabled" />
+			<group name="facing_quadrants">
+				<int name="search_radius_metres" value="0" />
+				<int name="radius_metres" value="0" />
+				<group name="quadrants">
+					<enum name="front" value="None" />
+					<enum name="rear" value="None" />
+					<enum name="left" value="None" />
+					<enum name="right" value="None" />
+				</group>
+			</group>
+			<bool name="facing_surface_normal" value="False" />
+			<group name="fixed_rotation_impass_avoidance">
+				<int name="minimum_search_radius_cells" value="7" />
+				<bool name="use_impass_avoidance" value="True" />
+			</group>
+			<group name="on_construction_complete_state_tree_refs">
+				<string name="on_construction_complete_entity_state_tree_ref" value="" />
+				<string name="on_construction_complete_physical_state_tree_ref" value="" />
+				<string name="on_construction_complete_squad_state_tree_ref" value="" />
+				<string name="on_construction_plan_complete_global_state_tree_ref" value="" />
+				<string name="while_construction_complete_entity_state_tree_ref" value="building_construction_complete\buildings\dock_construction_complete" />
+				<string name="while_construction_complete_physical_state_tree_ref" value="" />
+			</group>
+			<bool name="query_movement_node_modifier_for_range_ui" value="False" />
+			<enum name="entity_placement_class" value="" />
+			<bool name="construction_site_erase_inactive" value="False" />
+			<group name="preview_upgrade_effects">
+				<template_reference name="area_info" value="">
+				</template_reference>
+				<list name="preview_upgrade_effects_list">
+				</list>
+				<bool name="ignore_depleted_resources" value="False" />
+			</group>
+			<bool name="placement_position_ignores_walkable_surfaces" value="False" />
+			<int name="aqueduct_network_increment_amount" value="0" />
+			<list name="ignorable_entity_types">
+			</list>
+			<float name="aqueduct_cistern_proximity_test_square_scale" value="0" />
+			<bool name="destroy_stamps" value="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="27633050" List.ParentItemID="27633050">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="150" overrideParent="True" />
+					<float name="action" value="0" />
+					<float name="command" value="0" />
+					<float name="popcap" value="0" />
+					<float name="food" value="0" />
+					<float name="stone" value="0" />
+					<float name="gold" value="0" />
+					<float name="militia_hre" value="0" />
+					<float name="merc_byz" value="0" />
+				</enum_table>
+				<float name="time_seconds" value="30" />
+				<int name="time_turns" value="0" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\impass_ext" List.ItemID="-1286100157" List.ParentItemID="-1286100157">
+			<bool name="cant_build" value="True" />
+			<group name="impass_simboxes">
+				<bool name="default_simbox" value="True" />
+				<list name="named_simboxes">
+				</list>
+			</group>
+			<list name="block_path">
+				<instance_reference name="path_type" value="pass_types\water_default" List.ItemID="2095005924" List.ParentItemID="2095005924" />
+				<instance_reference name="path_type" value="pass_types\infantry" List.ItemID="-259781716" List.ParentItemID="-259781716" />
+				<instance_reference name="path_type" value="pass_types\vehicle" List.ItemID="558883332" List.ParentItemID="558883332" />
+			</list>
+			<bool name="should_rasterize_partial_cells" value="False" />
+			<enum name="blocker_lifetime_type" value="match_entity" />
+			<file name="stamp_blockers" value="" />
+			<group name="center_cell">
+				<bool name="cant_build" value="False" />
+				<list name="block_path">
+				</list>
+			</group>
+			<bool name="attach_gap_fillers" value="False" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-742108748" List.ParentItemID="-742108748">
+			<group name="detect_camouflage">
+				<float name="tp_global" value="10" />
+				<float name="tp_mine" value="0" />
+				<float name="tp_unit" value="0" />
+			</group>
+			<bool name="extended_sight" value="False" />
+			<float name="extended_sight_radius" value="0" />
+			<float name="reveal_area_on_death_time" value="1.5" />
+			<group name="sight_package">
+				<float name="inner_height" value="8" />
+				<float name="inner_radius" value="20" />
+				<float name="outer_height" value="0" />
+				<float name="outer_radius" value="50" />
+				<float name="cone_angle" value="360" />
+				<float name="cone_start_radius" value="0" />
+			</group>
+			<list name="extended_sight_target_requirements">
+			</list>
+			<list name="specific_detector_actions">
+			</list>
+			<bool name="camouflage_detection_enabled" value="True" />
+			<group name="vertical_truesight">
+				<bool name="enable" value="False" />
+				<float name="tolerance" value="1" />
+				<float name="eye_height" value="2.5" />
+			</group>
+			<bool name="blockers_check_bounding_box" value="False" />
+			<group name="stealth_detection">
+				<bool name="enabled" value="False" />
+				<float name="radius" value="0" />
+				<float name="throttle" value="0" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-312111757" List.ParentItemID="-312111757">
+			<list name="ui_extra_infos" overrideParent="True">
+			</list>
+			<bool name="ap_killed_kicker" value="True" />
+			<bool name="ap_loss_kicker" value="True" />
+			<float name="decorator_height" value="8" />
+			<string name="extra_text_deprecated" value="" />
+			<bool name="ghost_enable" value="True" />
+			<locstring name="help_text" value="11170616" />
+			<string name="hotkey_name" value="Z" />
+			<file name="icon_name" value="races\common\buildings\dock" />
+			<enum name="kill_type" value="building" />
+			<colour name="minimap_color" value="*" />
+			<bool name="minimap_enable" value="True" />
+			<bool name="minimap_team_only" value="False" />
+			<bool name="minimap_teamcolor" value="True" />
+			<string name="overlay_name" value="" />
+			<bool name="reveal_for_decryption" value="False" />
+			<locstring name="screen_name" value="11170617" />
+			<enum name="selection_name" value="building" />
+			<float name="selection_scale" value="1" />
+			<enum name="selection_type" value="multi_entity_select" />
+			<locstring name="tooltip_txt" value="0" />
+			<int name="ui_priority" value="0" />
+			<file name="minimap_icon" value="" />
+			<float name="minimap_icon_scale" value="0.6" />
+			<file name="portrait_icon" value="" />
+			<locstring name="brief_text" value="0" />
+			<locstring name="extra_text" value="11170615" />
+			<locstring name="screen_name_short" value="0" />
+			<bool name="show_in_build_log" value="True" />
+			<bool name="show_entity_appearance" value="True" />
+			<locstring name="screen_name_world" value="0" />
+			<locstring name="help_text_world" value="0" />
+			<locstring name="extra_text_world" value="0" />
+			<enum name="map_rotation_type_override" value="no_override" />
+			<file name="symbol_icon_name" value="" />
+			<enum name="occlusion_state" value="terrain_layer" />
+			<enum name="decorator_visibility" value="visible" />
+			<bool name="skin_pack_override" value="False" />
+			<string name="skin_summer" value="" />
+			<string name="skin_winter" value="" />
+			<enum name="targeting_and_bandbox_selection_priority" value="lowest" />
+			<enum name="selection_method" value="obb_adjusted_to_terrain" />
+			<group name="terrain_info_display_offset">
+				<float name="x" value="-225" />
+				<float name="y" value="-175" />
+			</group>
+			<string name="decorator_ledger_key" value="" />
+			<instance_reference name="decorator_ledger_bar_style" value="" />
+			<enum name="selection_name_squad_override" value="" />
+			<string name="selection_grouping_ledger_key" value="" />
+			<string name="debug_text" value="" />
+			<string name="selection_datatemplate" value="BuildingMilitaryDataTemplate" />
+			<bool name="use_construction_range_on_selection" value="True" />
+			<bool name="use_combat_range_on_selection" value="False" />
+			<bool name="is_armoured" value="False" />
+			<string name="decorator_data_template" value="" />
+			<enum name="ui_combine_type" value="intersection" />
+			<bool name="spotted_on_spawn" value="False" />
+			<instance_reference name="district_info" value="" />
+			<bool name="force_facing_and_range_visual_to_center_on_entity" value="False" />
+			<bool name="is_unique_to_race" value="False" />
+			<float name="kicker_offset" value="0" />
+			<file name="portrait_name" value="" />
+			<group name="selection_secondary_bounds_scale">
+				<float name="x" value="1" />
+				<float name="y" value="1" />
+				<float name="z" value="1" />
+			</group>
+			<enum name="decorator" value="" />
+			<int name="map_layer" value="0" />
+			<enum name="map_mark" value="" />
+			<group name="ui_codex_info">
+				<int name="priority" value="5575" />
+				<bool name="exclusive" value="False" />
+				<group name="ui_position">
+					<int name="ui_position_column" value="-1" />
+					<int name="ui_position_row" value="-1" />
+				</group>
+			</group>
+			<list name="custom_selection_obbs">
+			</list>
+			<template_reference name="help_text_formatter" value="">
+			</template_reference>
+			<template_reference name="extra_text_formatter" value="">
+			</template_reference>
+			<template_reference name="extra_text_world_formatter" value="">
+			</template_reference>
+			<template_reference name="help_text_world_formatter" value="">
+			</template_reference>
+			<template_reference name="screen_name_formatter" value="">
+			</template_reference>
+			<template_reference name="screen_name_short_formatter" value="">
+			</template_reference>
+			<template_reference name="screen_name_world_formatter" value="">
+			</template_reference>
+			<template_reference name="brief_text_formatter" value="">
+			</template_reference>
+			<string name="sound" value="" />
+			<string name="sound_alternative" value="" />
+			<string name="telemetry_name" value="Dock" />
+			<string name="selection_group" value="" />
+			<group name="selection_obb_size">
+				<float name="x" value="1" />
+				<float name="y" value="1" />
+				<float name="z" value="1" />
+			</group>
+			<float name="kicker_offset_world" value="0" />
+			<int name="global_unit_control_row" value="-1" />
+			<string name="tooltip_data_template" value="" />
+			<bool name="selection_obb_size_align_to_terrain" value="True" />
+			<group name="selection_obb_size_resource_ready">
+				<float name="x" value="1" />
+				<float name="y" value="1" />
+				<float name="z" value="1" />
+			</group>
+			<bool name="reticule_override_enabled" value="False" />
+			<float name="reticule_override_size" value="0" />
+			<float name="minimap_icon_zoom_scale" value="0" />
+			<locstring name="help_text_controller" value="0" />
+			<locstring name="extra_text_controller" value="0" />
+			<bool name="static_selection_bounds" value="False" />
+			<enum name="targeting_and_bandbox_selection_priority_controller" value="" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="1985550230" List.ParentItemID="1985550230">
+			<list name="spawn_items" overrideParent="True">
+				<group name="spawn_item" comment="fireship" List.ItemID="1748218776">
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_fireship_3_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
+					<group name="ui_position">
+						<int name="ui_position_row" value="2" overrideParent="True" />
+						<int name="ui_position_column" value="3" overrideParent="True" />
+					</group>
+					<instance_reference name="ui_menu" value="" />
+					<int name="number_to_spawn" value="1" overrideParent="True" />
+					<enum_table name="item_cost_adjustment">
+						<float name="action" value="0" />
+						<float name="command" value="0" />
+						<float name="popcap" value="0" />
+						<float name="food" value="0" />
+						<float name="wood" value="0" />
+						<float name="stone" value="0" />
+						<float name="gold" value="0" />
+						<float name="militia_hre" value="0" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<locstring name="ui_screen_name" value="0" />
+					<locstring name="ui_help_text" value="0" />
+					<bool name="can_be_cancelled" value="True" />
+					<int name="number_to_queue_up_to_when_modified" value="5" />
+					<list name="additional_squads">
+					</list>
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_demo_ship" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="command_card_info" value="">
+						</template_reference>
+						<template_reference name="quick_abilities_info" value="">
+						</template_reference>
+						<template_reference name="quick_commands_info" value="">
+						</template_reference>
+						<template_reference name="quick_formation_info" value="">
+						</template_reference>
+						<template_reference name="ping_menu_info" value="">
+						</template_reference>
+						<enum name="category" value="Economic" />
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+							<enum name="quick_commands_hotkey" value="" />
+							<int name="quick_commands_priority" value="-1" />
+							<int name="quick_commands_slot_index" value="-1" />
+							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+						</template_reference>
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+							<int name="nominal_index" value="12" overrideParent="True" />
+							<int name="priority" value="0" />
+							<instance_reference name="linked" value="" />
+						</template_reference>
+						<enum name="observer_type" value="Disabled" />
+						<group name="issuable_info">
+							<bool name="is_secondary" value="False" />
+							<instance_reference name="secondary_issuable" value="" />
+						</group>
+					</template_reference>
+					<string name="ui_tooltip_data_template" value="" />
+					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
+				</group>
+				<group name="spawn_item" comment="fishing boat" List.ItemID="-1375346792">
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_fishing_boat_2_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
+					<group name="ui_position">
+						<int name="ui_position_row" value="1" overrideParent="True" />
+						<int name="ui_position_column" value="1" overrideParent="True" />
+					</group>
+					<instance_reference name="ui_menu" value="" />
+					<int name="number_to_spawn" value="1" />
+					<enum_table name="item_cost_adjustment">
+						<float name="action" value="0" />
+						<float name="command" value="0" />
+						<float name="popcap" value="0" />
+						<float name="food" value="0" />
+						<float name="wood" value="0" />
+						<float name="stone" value="0" />
+						<float name="gold" value="0" />
+						<float name="militia_hre" value="0" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<locstring name="ui_screen_name" value="0" />
+					<locstring name="ui_help_text" value="0" />
+					<bool name="can_be_cancelled" value="True" />
+					<int name="number_to_queue_up_to_when_modified" value="5" />
+					<list name="additional_squads">
+					</list>
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_fishing_boat" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="command_card_info" value="">
+						</template_reference>
+						<template_reference name="quick_abilities_info" value="">
+						</template_reference>
+						<template_reference name="quick_commands_info" value="ui_quick_commands_info" overrideParent="True">
+							<int name="quick_commands_slot_index" value="0" overrideParent="True" />
+							<enum name="quick_commands_hotkey" value="x_quick_command_y" overrideParent="True" />
+							<int name="quick_commands_priority" value="5" overrideParent="True" />
+						</template_reference>
+						<template_reference name="quick_formation_info" value="">
+						</template_reference>
+						<template_reference name="ping_menu_info" value="">
+						</template_reference>
+						<enum name="category" value="Economic" />
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info" overrideParent="True">
+							<enum name="quick_commands_hotkey" value="x_quick_command_y" />
+							<int name="quick_commands_priority" value="5" />
+							<int name="quick_commands_slot_index" value="2" overrideParent="True" />
+							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+						</template_reference>
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+							<int name="nominal_index" value="0" overrideParent="True" />
+							<int name="priority" value="0" />
+							<instance_reference name="linked" value="" />
+						</template_reference>
+						<enum name="observer_type" value="Disabled" />
+						<group name="issuable_info">
+							<bool name="is_secondary" value="False" />
+							<instance_reference name="secondary_issuable" value="" />
+						</group>
+					</template_reference>
+					<string name="ui_tooltip_data_template" value="" />
+					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
+				</group>
+				<group name="spawn_item" comment="transport ship" List.ItemID="-1163205377">
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_transport_ship_2_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
+					<group name="ui_position">
+						<int name="ui_position_row" value="1" overrideParent="True" />
+						<int name="ui_position_column" value="3" overrideParent="True" />
+					</group>
+					<instance_reference name="ui_menu" value="" />
+					<int name="number_to_spawn" value="1" />
+					<enum_table name="item_cost_adjustment">
+						<float name="action" value="0" />
+						<float name="command" value="0" />
+						<float name="popcap" value="0" />
+						<float name="food" value="0" />
+						<float name="wood" value="0" />
+						<float name="stone" value="0" />
+						<float name="gold" value="0" />
+						<float name="militia_hre" value="0" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<locstring name="ui_screen_name" value="0" />
+					<locstring name="ui_help_text" value="0" />
+					<bool name="can_be_cancelled" value="True" />
+					<int name="number_to_queue_up_to_when_modified" value="5" />
+					<list name="additional_squads">
+					</list>
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_transport_ship" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="command_card_info" value="">
+						</template_reference>
+						<template_reference name="quick_abilities_info" value="">
+						</template_reference>
+						<template_reference name="quick_commands_info" value="ui_quick_commands_info" overrideParent="True">
+							<int name="quick_commands_slot_index" value="1" overrideParent="True" />
+							<enum name="quick_commands_hotkey" value="x_quick_command_x" overrideParent="True" />
+							<int name="quick_commands_priority" value="5" overrideParent="True" />
+						</template_reference>
+						<template_reference name="quick_formation_info" value="">
+						</template_reference>
+						<template_reference name="ping_menu_info" value="">
+						</template_reference>
+						<enum name="category" value="Economic" />
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+							<enum name="quick_commands_hotkey" value="" />
+							<int name="quick_commands_priority" value="-1" />
+							<int name="quick_commands_slot_index" value="-1" />
+							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+						</template_reference>
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+							<int name="nominal_index" value="2" overrideParent="True" />
+							<int name="priority" value="0" />
+							<instance_reference name="linked" value="" />
+						</template_reference>
+						<enum name="observer_type" value="Disabled" />
+						<group name="issuable_info">
+							<bool name="is_secondary" value="False" />
+							<instance_reference name="secondary_issuable" value="" />
+						</group>
+					</template_reference>
+					<string name="ui_tooltip_data_template" value="" />
+					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
+				</group>
+				<group name="spawn_item" comment="baghlah" List.ItemID="2013788321">
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_combat_ship_2_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
+					<group name="ui_position">
+						<int name="ui_position_row" value="2" overrideParent="True" />
+						<int name="ui_position_column" value="2" overrideParent="True" />
+					</group>
+					<instance_reference name="ui_menu" value="" />
+					<int name="number_to_spawn" value="1" />
+					<enum_table name="item_cost_adjustment">
+						<float name="action" value="0" />
+						<float name="command" value="0" />
+						<float name="popcap" value="0" />
+						<float name="food" value="0" />
+						<float name="wood" value="0" />
+						<float name="stone" value="0" />
+						<float name="gold" value="0" />
+						<float name="militia_hre" value="0" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<locstring name="ui_screen_name" value="0" />
+					<locstring name="ui_help_text" value="0" />
+					<bool name="can_be_cancelled" value="True" />
+					<int name="number_to_queue_up_to_when_modified" value="5" />
+					<list name="additional_squads">
+					</list>
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_attack_ship" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="command_card_info" value="">
+						</template_reference>
+						<template_reference name="quick_abilities_info" value="">
+						</template_reference>
+						<template_reference name="quick_commands_info" value="">
+						</template_reference>
+						<template_reference name="quick_formation_info" value="">
+						</template_reference>
+						<template_reference name="ping_menu_info" value="">
+						</template_reference>
+						<enum name="category" value="Economic" />
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+							<enum name="quick_commands_hotkey" value="" />
+							<int name="quick_commands_priority" value="-1" />
+							<int name="quick_commands_slot_index" value="-1" />
+							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+						</template_reference>
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+							<int name="nominal_index" value="8" overrideParent="True" />
+							<int name="priority" value="0" />
+							<instance_reference name="linked" value="" />
+						</template_reference>
+						<enum name="observer_type" value="Disabled" />
+						<group name="issuable_info">
+							<bool name="is_secondary" value="False" />
+							<instance_reference name="secondary_issuable" value="" />
+						</group>
+					</template_reference>
+					<string name="ui_tooltip_data_template" value="" />
+					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
+				</group>
+				<group name="spawn_item" comment="xebec&#xD;&#xA;" List.ItemID="1461597505">
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_combat_warship_4_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
+					<group name="ui_position">
+						<int name="ui_position_row" value="3" overrideParent="True" />
+						<int name="ui_position_column" value="1" overrideParent="True" />
+					</group>
+					<instance_reference name="ui_menu" value="" />
+					<int name="number_to_spawn" value="1" />
+					<enum_table name="item_cost_adjustment">
+						<float name="action" value="0" />
+						<float name="command" value="0" />
+						<float name="popcap" value="0" />
+						<float name="food" value="0" />
+						<float name="wood" value="0" />
+						<float name="stone" value="0" />
+						<float name="gold" value="0" />
+						<float name="militia_hre" value="0" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<locstring name="ui_screen_name" value="0" overrideParent="True" />
+					<locstring name="ui_help_text" value="0" />
+					<bool name="can_be_cancelled" value="True" />
+					<int name="number_to_queue_up_to_when_modified" value="5" />
+					<list name="additional_squads">
+					</list>
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_war_ship" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="command_card_info" value="">
+						</template_reference>
+						<template_reference name="quick_abilities_info" value="">
+						</template_reference>
+						<template_reference name="quick_commands_info" value="">
+						</template_reference>
+						<template_reference name="quick_formation_info" value="">
+						</template_reference>
+						<template_reference name="ping_menu_info" value="">
+						</template_reference>
+						<enum name="category" value="Economic" />
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+							<enum name="quick_commands_hotkey" value="" />
+							<int name="quick_commands_priority" value="-1" />
+							<int name="quick_commands_slot_index" value="-1" />
+							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+						</template_reference>
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" overrideParent="True" />
+							<int name="nominal_index" value="10" overrideParent="True" />
+							<int name="priority" value="0" />
+							<instance_reference name="linked" value="" />
+						</template_reference>
+						<enum name="observer_type" value="Disabled" />
+						<group name="issuable_info">
+							<bool name="is_secondary" value="False" />
+							<instance_reference name="secondary_issuable" value="" />
+						</group>
+					</template_reference>
+					<string name="ui_tooltip_data_template" value="" />
+					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
+				</group>
+				<group name="spawn_item" comment="trade ship" List.ItemID="-1061505346">
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_trade_ship_3_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
+					<group name="ui_position">
+						<int name="ui_position_row" value="1" overrideParent="True" />
+						<int name="ui_position_column" value="2" overrideParent="True" />
+					</group>
+					<instance_reference name="ui_menu" value="" />
+					<int name="number_to_spawn" value="1" />
+					<enum_table name="item_cost_adjustment">
+						<float name="action" value="0" />
+						<float name="command" value="0" />
+						<float name="popcap" value="0" />
+						<float name="food" value="0" />
+						<float name="wood" value="0" />
+						<float name="stone" value="0" />
+						<float name="gold" value="0" />
+						<float name="militia_hre" value="0" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<locstring name="ui_screen_name" value="0" />
+					<locstring name="ui_help_text" value="0" />
+					<bool name="can_be_cancelled" value="True" />
+					<int name="number_to_queue_up_to_when_modified" value="5" />
+					<list name="additional_squads">
+					</list>
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_trade_ship" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="command_card_info" value="">
+						</template_reference>
+						<template_reference name="quick_abilities_info" value="">
+						</template_reference>
+						<template_reference name="quick_commands_info" value="">
+						</template_reference>
+						<template_reference name="quick_formation_info" value="">
+						</template_reference>
+						<template_reference name="ping_menu_info" value="">
+						</template_reference>
+						<enum name="category" value="Economic" />
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+							<enum name="quick_commands_hotkey" value="" />
+							<int name="quick_commands_priority" value="-1" />
+							<int name="quick_commands_slot_index" value="-1" />
+							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+						</template_reference>
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+							<int name="nominal_index" value="4" />
+							<int name="priority" value="0" />
+							<instance_reference name="linked" value="" />
+						</template_reference>
+						<enum name="observer_type" value="Disabled" />
+						<group name="issuable_info">
+							<bool name="is_secondary" value="False" />
+							<instance_reference name="secondary_issuable" value="" />
+						</group>
+					</template_reference>
+					<string name="ui_tooltip_data_template" value="" />
+					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
+				</group>
+				<group name="spawn_item" comment="dhow" List.ItemID="-1271282146">
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_dhow_2_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
+					<group name="ui_position">
+						<int name="ui_position_row" value="2" overrideParent="True" />
+						<int name="ui_position_column" value="1" overrideParent="True" />
+					</group>
+					<instance_reference name="ui_menu" value="" />
+					<int name="number_to_spawn" value="1" />
+					<enum_table name="item_cost_adjustment">
+						<float name="action" value="0" />
+						<float name="command" value="0" />
+						<float name="popcap" value="0" />
+						<float name="food" value="0" />
+						<float name="wood" value="0" />
+						<float name="stone" value="0" />
+						<float name="gold" value="0" />
+						<float name="militia_hre" value="0" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<locstring name="ui_screen_name" value="0" />
+					<locstring name="ui_help_text" value="0" />
+					<bool name="can_be_cancelled" value="True" />
+					<int name="number_to_queue_up_to_when_modified" value="5" />
+					<list name="additional_squads">
+					</list>
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_archer_ship" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="command_card_info" value="">
+						</template_reference>
+						<template_reference name="quick_abilities_info" value="">
+						</template_reference>
+						<template_reference name="quick_commands_info" value="" overrideParent="True">
+						</template_reference>
+						<template_reference name="quick_formation_info" value="">
+						</template_reference>
+						<template_reference name="ping_menu_info" value="">
+						</template_reference>
+						<enum name="category" value="Economic" />
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+							<enum name="quick_commands_hotkey" value="" />
+							<int name="quick_commands_priority" value="-1" />
+							<int name="quick_commands_slot_index" value="-1" />
+							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+						</template_reference>
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+							<int name="nominal_index" value="6" overrideParent="True" />
+							<int name="priority" value="0" />
+							<instance_reference name="linked" value="" />
+						</template_reference>
+						<enum name="observer_type" value="Disabled" />
+						<group name="issuable_info">
+							<bool name="is_secondary" value="False" />
+							<instance_reference name="secondary_issuable" value="" />
+						</group>
+					</template_reference>
+					<string name="ui_tooltip_data_template" value="" />
+					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
+				</group>
+				<group name="spawn_item" comment="fireship" List.ItemID="909053755">
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_fireship_3_sul_upgraded" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
+					<group name="ui_position">
+						<int name="ui_position_row" value="2" overrideParent="True" />
+						<int name="ui_position_column" value="3" overrideParent="True" />
+					</group>
+					<instance_reference name="ui_menu" value="" />
+					<int name="number_to_spawn" value="1" overrideParent="True" />
+					<enum_table name="item_cost_adjustment">
+						<float name="action" value="0" />
+						<float name="command" value="0" />
+						<float name="popcap" value="0" />
+						<float name="food" value="0" />
+						<float name="wood" value="0" />
+						<float name="stone" value="0" />
+						<float name="gold" value="0" />
+						<float name="militia_hre" value="0" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<locstring name="ui_screen_name" value="0" />
+					<locstring name="ui_help_text" value="0" />
+					<bool name="can_be_cancelled" value="True" />
+					<int name="number_to_queue_up_to_when_modified" value="5" />
+					<list name="additional_squads">
+					</list>
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_demo_ship" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="command_card_info" value="">
+						</template_reference>
+						<template_reference name="quick_abilities_info" value="">
+						</template_reference>
+						<template_reference name="quick_commands_info" value="">
+						</template_reference>
+						<template_reference name="quick_formation_info" value="">
+						</template_reference>
+						<template_reference name="ping_menu_info" value="">
+						</template_reference>
+						<enum name="category" value="Economic" />
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+							<enum name="quick_commands_hotkey" value="" />
+							<int name="quick_commands_priority" value="-1" />
+							<int name="quick_commands_slot_index" value="-1" />
+							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+						</template_reference>
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+							<int name="nominal_index" value="12" overrideParent="True" />
+							<int name="priority" value="0" />
+							<instance_reference name="linked" value="" />
+						</template_reference>
+						<enum name="observer_type" value="Disabled" />
+						<group name="issuable_info">
+							<bool name="is_secondary" value="False" />
+							<instance_reference name="secondary_issuable" value="" />
+						</group>
+					</template_reference>
+					<string name="ui_tooltip_data_template" value="" />
+					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
+				</group>
+				<group name="spawn_item" comment="baghlah" List.ItemID="-1069160961">
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_combat_ship_2_sul_upgraded" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
+					<group name="ui_position">
+						<int name="ui_position_row" value="2" overrideParent="True" />
+						<int name="ui_position_column" value="2" overrideParent="True" />
+					</group>
+					<instance_reference name="ui_menu" value="" />
+					<int name="number_to_spawn" value="1" />
+					<enum_table name="item_cost_adjustment">
+						<float name="action" value="0" />
+						<float name="command" value="0" />
+						<float name="popcap" value="0" />
+						<float name="food" value="0" />
+						<float name="wood" value="0" />
+						<float name="stone" value="0" />
+						<float name="gold" value="0" />
+						<float name="militia_hre" value="0" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<locstring name="ui_screen_name" value="0" />
+					<locstring name="ui_help_text" value="0" />
+					<bool name="can_be_cancelled" value="True" />
+					<int name="number_to_queue_up_to_when_modified" value="5" />
+					<list name="additional_squads">
+					</list>
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_attack_ship" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="command_card_info" value="">
+						</template_reference>
+						<template_reference name="quick_abilities_info" value="">
+						</template_reference>
+						<template_reference name="quick_commands_info" value="">
+						</template_reference>
+						<template_reference name="quick_formation_info" value="">
+						</template_reference>
+						<template_reference name="ping_menu_info" value="">
+						</template_reference>
+						<enum name="category" value="Economic" />
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+							<enum name="quick_commands_hotkey" value="" />
+							<int name="quick_commands_priority" value="-1" />
+							<int name="quick_commands_slot_index" value="-1" />
+							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+						</template_reference>
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+							<int name="nominal_index" value="8" overrideParent="True" />
+							<int name="priority" value="0" />
+							<instance_reference name="linked" value="" />
+						</template_reference>
+						<enum name="observer_type" value="Disabled" />
+						<group name="issuable_info">
+							<bool name="is_secondary" value="False" />
+							<instance_reference name="secondary_issuable" value="" />
+						</group>
+					</template_reference>
+					<string name="ui_tooltip_data_template" value="" />
+					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
+				</group>
+				<group name="spawn_item" comment="xebec&#xD;&#xA;" List.ItemID="229380792">
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_combat_warship_4_sul_upgraded" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
+					<group name="ui_position">
+						<int name="ui_position_row" value="3" overrideParent="True" />
+						<int name="ui_position_column" value="1" overrideParent="True" />
+					</group>
+					<instance_reference name="ui_menu" value="" />
+					<int name="number_to_spawn" value="1" />
+					<enum_table name="item_cost_adjustment">
+						<float name="action" value="0" />
+						<float name="command" value="0" />
+						<float name="popcap" value="0" />
+						<float name="food" value="0" />
+						<float name="wood" value="0" />
+						<float name="stone" value="0" />
+						<float name="gold" value="0" />
+						<float name="militia_hre" value="0" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<locstring name="ui_screen_name" value="0" overrideParent="True" />
+					<locstring name="ui_help_text" value="0" />
+					<bool name="can_be_cancelled" value="True" />
+					<int name="number_to_queue_up_to_when_modified" value="5" />
+					<list name="additional_squads">
+					</list>
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_war_ship" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="command_card_info" value="">
+						</template_reference>
+						<template_reference name="quick_abilities_info" value="">
+						</template_reference>
+						<template_reference name="quick_commands_info" value="">
+						</template_reference>
+						<template_reference name="quick_formation_info" value="">
+						</template_reference>
+						<template_reference name="ping_menu_info" value="">
+						</template_reference>
+						<enum name="category" value="Economic" />
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+							<enum name="quick_commands_hotkey" value="" />
+							<int name="quick_commands_priority" value="-1" />
+							<int name="quick_commands_slot_index" value="-1" />
+							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+						</template_reference>
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" overrideParent="True" />
+							<int name="nominal_index" value="10" overrideParent="True" />
+							<int name="priority" value="0" />
+							<instance_reference name="linked" value="" />
+						</template_reference>
+						<enum name="observer_type" value="Disabled" />
+						<group name="issuable_info">
+							<bool name="is_secondary" value="False" />
+							<instance_reference name="secondary_issuable" value="" />
+						</group>
+					</template_reference>
+					<string name="ui_tooltip_data_template" value="" />
+					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
+				</group>
+				<group name="spawn_item" comment="dhow" List.ItemID="363322393">
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_dhow_2_sul_upgraded" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
+					<group name="ui_position">
+						<int name="ui_position_row" value="2" overrideParent="True" />
+						<int name="ui_position_column" value="1" overrideParent="True" />
+					</group>
+					<instance_reference name="ui_menu" value="" />
+					<int name="number_to_spawn" value="1" />
+					<enum_table name="item_cost_adjustment">
+						<float name="action" value="0" />
+						<float name="command" value="0" />
+						<float name="popcap" value="0" />
+						<float name="food" value="0" />
+						<float name="wood" value="0" />
+						<float name="stone" value="0" />
+						<float name="gold" value="0" />
+						<float name="militia_hre" value="0" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<locstring name="ui_screen_name" value="0" />
+					<locstring name="ui_help_text" value="0" />
+					<bool name="can_be_cancelled" value="True" />
+					<int name="number_to_queue_up_to_when_modified" value="5" />
+					<list name="additional_squads">
+					</list>
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_archer_ship" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+						<template_reference name="command_card_info" value="">
+						</template_reference>
+						<template_reference name="quick_abilities_info" value="">
+						</template_reference>
+						<template_reference name="quick_commands_info" value="" overrideParent="True">
+						</template_reference>
+						<template_reference name="quick_formation_info" value="">
+						</template_reference>
+						<template_reference name="ping_menu_info" value="">
+						</template_reference>
+						<enum name="category" value="Economic" />
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+							<enum name="quick_commands_hotkey" value="" />
+							<int name="quick_commands_priority" value="-1" />
+							<int name="quick_commands_slot_index" value="-1" />
+							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+						</template_reference>
+						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+							<int name="nominal_index" value="6" overrideParent="True" />
+							<int name="priority" value="0" />
+							<instance_reference name="linked" value="" />
+						</template_reference>
+						<enum name="observer_type" value="Disabled" />
+						<group name="issuable_info">
+							<bool name="is_secondary" value="False" />
+							<instance_reference name="secondary_issuable" value="" />
+						</group>
+					</template_reference>
+					<string name="ui_tooltip_data_template" value="" />
+					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
+				</group>
+			</list>
+			<bool name="must_be_in_supply" value="False" />
+			<float name="reinforce_radius" value="0" />
+			<list name="bonus_xp_from_hold_list">
+			</list>
+			<list name="reinforce_requirements">
+			</list>
+			<bool name="spawn_to_hold_try_first" value="False" />
+			<list name="queue_requirements">
+			</list>
+			<bool name="can_rally" value="True" />
+			<template_reference name="animated_spawn_option" value="options\none">
+			</template_reference>
+			<int name="max_queue_size_override" value="-1" />
+			<string name="queue_requirements_openingbranch" value="" />
+			<string name="reinforce_requirements_openingbranch" value="" />
+			<state_tree_node name="production_item_completed_openingbranch" value="building_production_item_completed\Master\building_production_item_complete\building_production_item_complete_naval" />
+			<bool name="enforce_minimum_clearance_at_spawn_positions" value="True" />
+			<bool name="enforce_minimum_clearance_if_entities_blocking" value="True" />
+			<float name="enforce_minimum_clearance_at_spawn_positions_search_range" value="30" />
+			<instance_reference name="rally_pass_type" value="pass_types\water_default" />
+			<bool name="reset_production_progress_at_current_pop_cap" value="False" />
+			<bool name="can_spawn_if_neutral" value="False" />
+			<bool name="default_rally_points_allowed" value="True" />
+			<bool name="economic_rally_points_allowed" value="True" />
+			<bool name="always_use_economic_rally_points" value="False" />
+			<bool name="use_alternative_rally_point_system" value="False" />
+			<bool name="trade_only_economical_rally" value="False" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" overrideParent="True" List.ItemID="1749087632" List.ParentItemID="1749087632">
+			<list name="standard_upgrades" overrideParent="True">
+				<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_incendiaries" List.ItemID="1178565952" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_springald_ship_upgrade_1" List.ItemID="759382576" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_extra_hammocks" List.ItemID="-638326025" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_armored_hull" List.ItemID="-883958500" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_shipwrights" List.ItemID="413935339" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_explosives" List.ItemID="-125475582" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_drift_nets" List.ItemID="-16533340" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_extended_lines" List.ItemID="-972579309" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_swivel_cannon" List.ItemID="1824204797" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_naval_arrowslits" List.ItemID="1643340689" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_heated_shot" List.ItemID="-1508138388" />
+				<instance_reference name="upgrade" value="upgrade\persia\ps_persia_ship_upgrade" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="1089115528" />
+			</list>
+			<bool name="must_be_in_supply" value="False" />
+			<float name="number_of_standard_slots" value="-1" />
+			<int name="max_queue_size_override" value="-1" />
+			<state_tree_node name="production_item_completed_openingbranch" value="" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\burn_ext" List.ItemID="113107934" List.ParentItemID="113107934">
+			<float name="on_fire_damage_per_sec" value="5" />
+			<float name="on_fire_decay_amount_per_sec" value="0" />
+			<float name="on_fire_threshold" value="59" />
+			<float name="max_fire_damage_per_second" value="10000" />
+			<float name="on_fire_health_percentage" value="0.25" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1867819834" List.ParentItemID="1867819834">
+			<list name="requirement_table">
+			</list>
+			<state_tree_node name="requirement_statetree" value="" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1205989620" List.ParentItemID="1205989620">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="835806946">
+					<string name="state_tree" value="building_action_apply\buildings\dock_action_apply" />
+				</group>
+				<group name="container" List.ItemID="368814108">
+					<string name="state_tree" value="influence_invalid_sul" overrideParent="True" />
+				</group>
+			</list>
+			<bool name="reset_on_load" value="True" />
+			<list name="physical_state_trees">
+			</list>
+			<list name="deferred_action_state_trees">
+			</list>
+			<list name="action_state_trees_run_once">
+			</list>
+			<list name="deferred_action_state_trees_run_once">
+			</list>
+			<list name="physical_state_trees_run_once">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="-1928559854" List.ParentItemID="-1928559854">
+			<list name="type_list">
+				<group name="type" comment="Drop Off" List.ItemID="-28463169" List.ParentItemID="-28463169">
+					<enum name="interaction_type" value="resource_drop_off" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="1544397221" List.ParentItemID="1544397221">
+					<enum name="interaction_type" value="repair" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="-618238804" List.ParentItemID="-618238804">
+					<enum name="interaction_type" value="construct" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="1548337304" List.ParentItemID="1548337304">
+			<list name="abilities">
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="37523495" List.ParentItemID="37523495" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\core\dock_upgrade_aura" List.ItemID="-1251419181" List.ParentItemID="-1251419181" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="-1710193481" List.ParentItemID="-1710193481">
+			<state_tree_node name="ActionTree_OpeningBranch" value="unit_building" />
+			<bool name="start_suspended" value="False" />
+			<state_tree_node name="fallback_default_move_command_conditions" value="" />
+			<list name="events">
+			</list>
+			<enum name="stop_on_death" value="Default" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="740762230" List.ParentItemID="740762230">
+			<state_tree_node name="ActionTree_OpeningBranch" value="building" />
+			<bool name="use_root_motion" value="False" />
+			<bool name="start_suspended" value="False" />
+			<enum name="entity_statetree_sort_tag" value="Default" />
+			<float name="speed_scale_threshold" value="100" />
+			<string name="default_animation" value="" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="-68460232" List.ParentItemID="-68460232">
+			<bool name="allow_weapon_target_scanning" value="False" />
+			<int name="history_size" value="2" />
+			<bool name="allow_entity_scan_close_enemies" value="False" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\marker_ext" List.ItemID="-1401850373" List.ParentItemID="-1401850373">
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1843254673" List.ParentItemID="1843254673">
+			<instance_reference name="schema" value="statemodel_schema\buildings\unit_naval" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hit_react_tree_ext" List.ItemID="1930686020" List.ParentItemID="1930686020">
+			<state_tree_node name="ActionTree_OpeningBranch" value="building_hit_tree" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="441995311" List.ParentItemID="441995311">
+			<list name="rtpc_events">
+			</list>
+			<list name="sound_banks">
+			</list>
+			<string name="single_select_event" value="sfx_ui_unit_dock_building_selection_play" />
+			<int name="music_importance" value="-30" />
+			<int name="combat_importance" value="-30" />
+			<list name="select_audible_to_relation_list">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\speech_ext" List.ItemID="-384468860" List.ParentItemID="-384468860">
+			<string name="speaker_code" value="" />
+			<group name="speech_parameters">
+				<string name="class_code" value="" />
+				<string name="name_code" value="" />
+				<string name="unit_code" value="" />
+			</group>
+			<int name="importance" value="15" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\boundary_cells_ext" List.ItemID="1552115645" List.ParentItemID="1552115645">
+			<list name="additional_boundary_simboxes">
+			</list>
+			<list name="waypoint_caching">
+				<group name="pass_type_data" List.ItemID="1405296173" List.ParentItemID="1405296173">
+					<instance_reference name="pass_type" value="pass_types\infantry" />
+					<int name="min_clearance" value="1" />
+					<int name="max_clearance" value="1" />
+				</group>
+			</list>
+			<bool name="allow_cells_across_impasse" value="True" />
+			<bool name="allow_cells_on_wall" value="True" />
+			<list name="center_cells">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\resource_drop_off_ext" List.ItemID="-174536985" List.ParentItemID="-174536985">
+			<enum_table name="accepted_resources">
+				<bool name="action" value="False" />
+				<bool name="command" value="False" />
+				<bool name="popcap" value="False" />
+				<bool name="food" value="True" />
+				<bool name="wood" value="False" />
+				<bool name="stone" value="False" />
+				<bool name="gold" value="False" />
+				<bool name="militia_hre" value="False" />
+				<bool name="merc_byz" value="False" />
+			</enum_table>
+			<enum_table name="drop_off_time_seconds">
+				<float name="action" value="1" />
+				<float name="command" value="1" />
+				<float name="popcap" value="1" />
+				<float name="food" value="0" />
+				<float name="wood" value="0" />
+				<float name="stone" value="0" />
+				<float name="gold" value="0" />
+				<float name="militia_hre" value="1" />
+				<float name="merc_byz" value="1" />
+			</enum_table>
+			<bool name="allow_any_resource_after_construct" value="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="99914381" List.ParentItemID="99914381">
+			<bool name="reject_attack_command" value="False" />
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1057897861" List.ParentItemID="1057897861">
+					<float name="parent_hardpoint" value="-1" />
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-1730885852" List.ParentItemID="-1730885852">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0.3" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="5" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<template_reference name="attach_data" value="attachments\attach_data">
+										<string name="marker_name_parent" value="" />
+										<string name="parent_rigidbody_target_name" value="" />
+										<enum name="game_object_attachment_type" value="scenegraph" />
+									</template_reference>
+									<instance_reference name="ebp" value="ebps\races\core\weapons\wpn_range_dock_arrows" />
+									<group name="attachment_flags">
+										<bool name="sim_only" value="False" />
+										<bool name="no_pathfinding" value="False" />
+										<bool name="not_snappable" value="False" />
+										<bool name="restore_snap_to_ground_on_detach" value="False" />
+										<bool name="no_sim_update" value="True" />
+										<bool name="join_parent_squad" value="False" />
+										<bool name="redirect_damage_to_parent_entity" value="True" />
+										<bool name="assign_as_attachment_combat_leader" value="False" />
+										<bool name="assign_as_attachment_movement_leader" value="False" />
+										<bool name="receive_parent_animations" value="False" />
+										<bool name="receive_parent_death" value="False" />
+									</group>
+								</template_reference>
+								<list name="possible_blueprint_updates">
+								</list>
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="">
+							</template_reference>
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="True" />
+					<string name="base_marker" value="" />
+					<list name="preferred_inventory_item_categories">
+					</list>
+					<list name="firing_offset_markers">
+						<string name="marker" value="fx_muz_arrow_00" List.ItemID="1106124415" List.ParentItemID="1106124415" />
+						<string name="marker" value="fx_muz_arrow_01" List.ItemID="1695906641" List.ParentItemID="1695906641" />
+						<string name="marker" value="fx_muz_arrow_02" List.ItemID="658139642" List.ParentItemID="658139642" />
+						<string name="marker" value="fx_muz_arrow_03" List.ItemID="1899773952" List.ParentItemID="1899773952" />
+					</list>
+					<string name="offhand_marker" value="" />
+					<bool name="initialize_weapons_on_creation" value="False" />
+				</group>
+			</list>
+			<int name="sight_hardpoint" value="-1" />
+			<float name="block_frontal_arc" value="0" />
+			<int name="block_melee_blocks_per_sequence" value="0" />
+			<int name="block_melee_incoming_attack_sequence_length" value="1" />
+			<group name="attack_move">
+				<float name="attack_move_targeting_range" value="30" />
+				<float name="attack_move_priority_per_distance_meter" value="-1" />
+			</group>
+			<group name="idle_targeting">
+				<float name="idle_priority_per_angle_degree" value="-1.5" />
+				<float name="idle_priority_per_distance_meter" value="-1" />
+				<float name="idle_targeting_range" value="15" />
+				<float name="idle_priority_per_distance_unit_angle_multiplier" value="0" />
+			</group>
+			<template_reference name="kill_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<string name="combat_choice_tree" value="" />
+			<int name="block_ranged_blocks_per_sequence" value="0" />
+			<int name="block_ranged_incoming_attack_sequence_length" value="1" />
+			<int name="block_projectile_incoming_attack_sequence_length" value="1" />
+			<int name="block_projectile_blocks_per_sequence" value="0" />
+			<float name="scan_interval_cached_target_invalid" value="2" />
+			<float name="scan_interval_cached_target_valid" value="2" />
+			<group name="combat_scan_intervals">
+				<group name="attack_move_scan_intervals">
+					<float name="interval_with_invalid_target" value="1" />
+					<float name="interval_with_valid_target" value="2" />
+					<float name="interval_with_valid_target_frequent" value="0.5" />
+					<float name="frequent_scan_radius" value="0" />
+				</group>
+				<group name="forced_engagement_scan_intervals">
+					<float name="interval_with_invalid_target" value="0.375" />
+					<float name="interval_with_valid_target" value="2" />
+				</group>
+				<group name="idle_scan_intervals">
+					<float name="interval_with_invalid_target" value="1" />
+					<float name="interval_with_valid_target" value="2" />
+					<float name="interval_with_valid_target_frequent" value="0.5" />
+					<float name="frequent_scan_radius" value="0" />
+				</group>
+			</group>
+			<bool name="unequip_weapons_on_death" value="True" />
+			<bool name="ui_show_most_progressed_weapon_reload" value="False" />
+			<list name="target_scanning_priority_override">
+			</list>
+			<list name="block_ignore_damage_types">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\building_presentation_ext" List.ItemID="-1765316535" List.ParentItemID="-1765316535">
+			<file name="construction_stamp" value="art\stamps\scaffolding\west\west_dock" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="-123217468" List.ParentItemID="-123217468">
+			<list name="acceptable_types" comment="Dock">
+				<enum name="acceptable_type" value="hold_fishing_ship" List.ItemID="-1011255217" List.ParentItemID="-1011255217" />
+			</list>
+			<bool name="attach_passenger_animator" value="False" />
+			<bool name="can_attack_occupant" value="False" />
+			<bool name="invulnerable_in_hold" value="True" />
+			<bool name="disable_area_effect_on_overflow_slot" value="False" />
+			<bool name="disable_unload" value="False" />
+			<bool name="disallow_load_command" value="False" />
+			<bool name="enable_trigger_abilities_in_hold" value="True" />
+			<bool name="enable_trigger_attack_in_hold" value="False" />
+			<bool name="holds_produced_squads" value="False" />
+			<bool name="keep_abandoned_team_weapon" value="False" />
+			<float name="load_seconds" value="0" />
+			<float name="max_load_seconds" value="0" />
+			<float name="min_hold_seconds" value="0" />
+			<float name="num_slots" value="3" />
+			<float name="num_squad_slots" value="3" />
+			<float name="percent_unload_on_death" value="1" />
+			<bool name="revert_ownership" value="False" />
+			<bool name="scavenge_enabled" value="False" />
+			<enum_table name="scavenge_resource">
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="popcap" value="0" />
+				<float name="food" value="0" />
+				<float name="wood" value="0" />
+				<float name="stone" value="0" />
+				<float name="gold" value="0" />
+				<float name="militia_hre" value="0" />
+				<float name="merc_byz" value="0" />
+			</enum_table>
+			<bool name="shared_with_other_same_type_units" value="False" />
+			<float name="unload_seconds" value="0" />
+			<bool name="use_building_target_scan_radius" value="True" />
+			<bool name="use_crouching_posture" value="False" />
+			<list name="on_loading_modifiers">
+			</list>
+			<bool name="despawn_on_load" value="False" />
+			<float name="load_distance" value="8" />
+			<bool name="maintain_selection" value="True" />
+			<template_reference name="on_loaded_hold_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<template_reference name="on_loaded_squad_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<template_reference name="on_unloaded_squad_instant_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<bool name="convert_garrision_on_owner_change" value="False" />
+			<bool name="move_on_remove_hold" value="False" />
+			<bool name="load_separate_entrances" value="False" />
+			<bool name="can_issue_retreat_to_hold_contents" value="True" />
+			<bool name="ensure_pathability_to_hold_for_unload" value="False" />
+			<float name="unload_path_distance_max" value="24" />
+			<bool name="is_indoors" value="True" />
+			<bool name="right_click_garrison_always_enabled" value="False" />
+			<bool name="exclude_allied_units" value="False" />
+			<bool name="on_loaded_squad_action_tree_reapply_on_bp_conversion" value="False" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\modifier_apply_ext" List.ItemID="458573636">
+			<list name="modifiers">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-1982907261">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="-1575346133">
+					<group name="tier" List.ItemID="-254954308">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\buildings\unit_naval_ott\tier2_unit_naval_control_ott" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" overrideParent="True" List.ItemID="1178622244">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\buildings\unit_naval_ott\tier3_unit_naval_control_ott" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="act_set_current_age_castle" overrideParent="True" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="652823780">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\buildings\unit_naval_ott\tier4_unit_naval_control_ott" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\imperial_age" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="act_set_current_age_imperial" overrideParent="True" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482564" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_unit_naval" />
+	<variant name="campaign">
+		<list name="extensions" overrideParent="True">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1218543450" List.ParentItemID="-1218543450">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+				<file name="alternate_sua" value="" />
+				<bool name="always_revealed_in_fow" value="False" />
+				<bool name="is_visible_in_game" value="True" />
+				<int name="precise_size" value="-1" />
+				<enum name="default_spawn_type" value="" />
+				<instance_reference name="unit_badge" value="" />
+				<bool name="is_spawned_when_not_in_interactive_area" value="True" />
+				<bool name="is_wreck" value="False" />
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\buildings\building_unit_naval" />
+				<float name="animator_scale" value="100" />
+				<float name="entity_scale" value="100" />
+				<enum name="subclass_type" value="Building" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\sim_entity_ext" List.ItemID="-1895205658" List.ParentItemID="-1895205658">
+				<float name="rotate_snap" value="360" />
+				<bool name="kill_paradrop" value="False" />
+				<enum name="transferable" value="None" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="235383520" List.ParentItemID="235383520">
+				<bool name="can_repair" value="True" />
+				<bool name="cuttable" value="False" />
+				<string name="death_event_name" value="death" />
+				<float name="death_seconds" value="-1" />
+				<bool name="delete_when_dead" value="False" />
+				<bool name="force_attacker_memory" value="False" />
+				<float name="hitpoints" value="1750" />
+				<bool name="is_invincible" value="False" />
+				<bool name="is_salvagable_wreck" value="False" />
+				<instance_reference name="rebuilt_entity" value="" />
+				<instance_reference name="rebuilt_squad" value="" />
+				<bool name="rebuilt_use_wreck_owner" value="False" />
+				<bool name="receive_weapon_cover_modifiers" value="False" />
+				<float name="regeneration" value="0" />
+				<bool name="regeneration_disabled" value="True" />
+				<bool name="remove_from_pathfinding_on_death" value="False" />
+				<bool name="reveal_to_all_on_death" value="False" />
+				<bool name="ui_can_scuttle" value="True" />
+				<float name="target_size" value="5" />
+				<float name="weapon_priority" value="80" />
+				<template_reference name="wreck_entity_option" value="options\none">
+				</template_reference>
+				<enum name="armor_type" value="None" />
+				<template_reference name="armor_layout_option" value="options\ebpextensions\healthext\armor_layouts\armor_layout_uniform">
+					<float name="armor" value="1" />
+				</template_reference>
+				<enum name="allegiance_override" value="none" />
+				<bool name="not_default_attackable" value="False" />
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="True Damage" value="0" />
+					<float name="Melee" value="0" />
+					<float name="Ranged" value="50" />
+					<float name="Fire" value="0" />
+				</enum_table>
+				<template_reference name="self_destruct_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="rebuilt_entity_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="on_received_damage_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<state_tree_node name="death_action_tree" value="building_death_actions\buildings\dock_death_actions" />
+				<state_tree_node name="on_reach_invulnerable_min_cap_entity_state_tree_ref" value="" />
+				<state_tree_node name="on_reach_max_health_entity_state_tree_ref" value="" />
+				<bool name="can_be_damaged_by_ally" value="False" />
+				<enum_table name="percentage_reduction_armor_by_damage_type">
+					<float name="True Damage" value="0" />
+					<float name="Melee" value="0" />
+					<float name="Ranged" value="0" />
+					<float name="Fire" value="0" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="1705520148" List.ParentItemID="1705520148">
+				<instance_reference name="hit_material" value="hit_material\wood" />
+				<float name="hit_chance" value="1" />
+				<template_reference name="projectile_reflect_option" value="options\none">
+				</template_reference>
+				<enum name="projectile_collision_check_type" value="internal_simboxes_only" />
+				<group name="shot_collision">
+					<enum_table name="pass_through_relation">
+						<bool name="undefined" value="False" />
+						<bool name="enemy" value="True" />
+						<bool name="ally" value="True" />
+						<bool name="neutral" value="True" />
+					</enum_table>
+					<enum_table name="pass_through_projectile">
+						<bool name="tp_artillery" value="True" />
+						<bool name="tp_collide" value="False" />
+						<bool name="tp_vehicle_collide" value="True" />
+						<bool name="tp_piercing_blockers_only" value="True" />
+					</enum_table>
+					<bool name="pass_through_weapon_ranged_non_projectile" value="False" />
+					<bool name="collide_with_missed_ranged_weapon_shots" value="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\line_of_sight_ext" List.ItemID="-2086070140" List.ParentItemID="-2086070140">
+				<group name="blocking_box">
+					<float name="x" value="0.01" />
+					<float name="y" value="0.01" />
+					<float name="z" value="0.01" />
+				</group>
+				<bool name="is_shot_blocking" value="False" />
+				<bool name="use_blocking_box" value="False" />
+				<bool name="reveal_center_when_outside_is_visible" value="True" />
+				<enum name="does_block_line_of_sight" value="never" />
+				<list name="blocked_weapon_types">
+				</list>
+				<bool name="disable_shot_blocking_on_death" value="False" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\modifier_ext" List.ItemID="1617374452" List.ParentItemID="1617374452">
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="1755465546" List.ParentItemID="1755465546">
+				<bool name="snap_to_terrain" value="True" />
+				<float name="extra_build_test_footprint_x" value="0" />
+				<float name="extra_build_test_footprint_z" value="0" />
+				<float name="extra_build_test_footprint_offset_x" value="0" />
+				<float name="extra_build_test_footprint_offset_z" value="0" />
+				<float name="minimum_build_test_footprint_x" value="0" />
+				<float name="minimum_build_test_footprint_z" value="0" />
+				<enum name="impass_cell_check" value="AllCellsFree" />
+				<group name="footprint_scale">
+					<float name="x" value="8" />
+					<float name="y" value="8" />
+				</group>
+				<bool name="forced_axis_aligned_footprint" value="True" />
+				<bool name="remove_if_constructed_over" value="False" />
+				<list name="snap_to_surface_types">
+					<enum name="surface_type" value="Ground" List.ItemID="631348311" List.ParentItemID="631348311" />
+					<enum name="surface_type" value="Water" List.ItemID="-1515390465" List.ParentItemID="-1515390465" />
+				</list>
+				<bool name="snap_to_construction_grid" value="True" />
+				<bool name="despawn_if_constructed_over" value="False" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-844185006" List.ParentItemID="-844185006">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\sultanate" overrideParent="True" List.ItemID="1340040688" />
+				</list>
+				<list name="unit_type_list">
+					<enum name="unit_type" value="building" List.ItemID="-395413778" List.ParentItemID="-395413778" />
+					<enum name="unit_type" value="siegeable" List.ItemID="1391946507" List.ParentItemID="1391946507" />
+					<enum name="unit_type" value="production_building" List.ItemID="-867061455" List.ParentItemID="-867061455" />
+					<enum name="unit_type" value="military_only_production" List.ItemID="985446616" List.ParentItemID="985446616" />
+					<enum name="unit_type" value="naval_production_building" List.ItemID="-42605700" List.ParentItemID="-42605700" />
+					<enum name="unit_type" value="trade_post" List.ItemID="-898220715" List.ParentItemID="-898220715" />
+					<enum name="unit_type" value="scar_dock" List.ItemID="-943784255" List.ParentItemID="-943784255" />
+					<enum name="unit_type" value="resource_drop_off" List.ItemID="-1660676439" List.ParentItemID="-1660676439" />
+					<enum name="unit_type" value="trade_dock" List.ItemID="-589139474" List.ParentItemID="-589139474" />
+				</list>
+				<enum name="weapon_targeting" value="automatic" />
+				<enum_table name="weapon_category_targeting_filter">
+					<bool name="1melee" value="False" />
+					<bool name="2ranged" value="False" />
+					<bool name="3siege" value="True" />
+					<bool name="4charge" value="True" />
+					<bool name="5brace" value="True" />
+					<bool name="6auto_ability_cast" value="True" />
+					<bool name="7single_cast_ability" value="True" />
+					<bool name="8dummy" value="False" />
+					<bool name="9idle" value="True" />
+				</enum_table>
+				<bool name="intersection_testing" value="False" />
+				<list name="attack_target_restriction_on_attacker">
+				</list>
+				<list name="attack_target_restriction_on_victim">
+					<enum name="unit_type" value="human" List.ItemID="-324643905" List.ParentItemID="-324643905" />
+					<enum name="unit_type" value="siege" List.ItemID="-1871352146" List.ParentItemID="-1871352146" />
+					<enum name="unit_type" value="building" List.ItemID="1543059472" List.ParentItemID="1543059472" />
+					<enum name="unit_type" value="war_elephant" List.ItemID="795002148" List.ParentItemID="795002148" />
+				</list>
+				<list name="unit_type_list_selection_keybind_only">
+				</list>
+				<list name="unit_type_list_ui_appear_as_only">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-620052025" List.ParentItemID="-620052025">
+				<bool name="query_weapon_for_range_ui" value="True" overrideParent="True" />
+				<bool name="automatic_fit_on_placement" value="False" />
+				<float name="cancel_refund_percentage" value="100" />
+				<string name="construction_state_name" value="construction_state" />
+				<float name="construction_transition_time" value="0" />
+				<bool name="force_construction" value="False" />
+				<float name="max_engineers" value="0" />
+				<instance_reference name="on_construction_squad" value="" />
+				<float name="orientation" value="0" />
+				<enum name="placement_type" value="tp_structure" />
+				<bool name="prefer_spots_on_side_with_leader" value="False" />
+				<bool name="query_abilities_for_range_ui" value="True" />
+				<bool name="show_ability_range_in_construction_item_preview" value="False" />
+				<bool name="random_rotation" value="False" />
+				<float name="replace_ghost_distance" value="5" />
+				<bool name="self_construct" value="False" />
+				<group name="field_placement_info">
+					<instance_reference name="border_entity" value="" />
+					<instance_reference name="replace_entity" value="" />
+					<int name="replace_count" value="0" />
+					<float name="replace_retry_distance" value="0" />
+				</group>
+				<instance_reference name="placement_valid" value="ui_rectangle\construction_placement_valid" />
+				<instance_reference name="placement_invalid" value="ui_rectangle\construction_placement_invalid" />
+				<instance_reference name="ui_range" value="ui_reticule\aura_ring" />
+				<float name="ui_range_radius" value="0" comment="10 is the setting for deep strike radius, if this number need to be changed, then deep strike radius needs to request programming support" />
+				<instance_reference name="ui_setfacing" value="" />
+				<bool name="squad_ignore_pathfinding" value="False" />
+				<group name="placement_requirements">
+					<bool name="must_be_in_line_of_sight" value="False" />
+					<bool name="must_not_be_in_walkable_surfaces" value="False" />
+					<bool name="must_be_on_strategic_point" value="False" />
+					<list name="requirements">
+					</list>
+					<float name="spacing_distance" value="0" />
+					<bool name="skip_impass_checks_and_ignore_immovable_entities" value="False" />
+					<string name="state_tree_conditions" value="" />
+					<bool name="must_be_in_explored_area" value="True" />
+					<bool name="must_be_on_movement_node" value="False" />
+					<list name="placement_requirement_options">
+						<template_reference name="placement_requirement_option" value="options\placement\requirements\placement_requirement_pass_types_option" List.ItemID="173880973" List.ParentItemID="173880973">
+							<list name="required_pass_types">
+								<group name="pass_type_data" List.ItemID="157146845" List.ParentItemID="157146845">
+									<instance_reference name="pass_type" value="pass_types\infantry" />
+									<int name="minimum_contiguous_cell_count" value="14" />
+								</group>
+								<group name="pass_type_data" List.ItemID="60461707" List.ParentItemID="60461707">
+									<instance_reference name="pass_type" value="pass_types\water_default" />
+									<int name="minimum_contiguous_cell_count" value="7" />
+								</group>
+							</list>
+							<list name="forbidden_pass_types">
+							</list>
+							<bool name="use_simbox_scale_as_footprint" value="True" />
+						</template_reference>
+					</list>
+					<locstring name="ui_usage_txt" value="11183939" />
+				</group>
+				<bool name="can_be_cancelled" value="True" />
+				<state_tree_node name="can_be_cancelled_state_tree_conditions" value="" />
+				<template_reference name="construction_health_option" value="options\ebpextensions\constructionext\construction_health_option">
+					<float name="initial_health" value="175" />
+				</template_reference>
+				<float name="min_music_intensity" value="0" />
+				<string name="tooltip_data_template" value="BuildingMilitaryDataTemplate" />
+				<enum name="placement_set_facing_style" value="disabled" />
+				<group name="facing_quadrants">
+					<int name="search_radius_metres" value="0" />
+					<int name="radius_metres" value="0" />
+					<group name="quadrants">
+						<enum name="front" value="None" />
+						<enum name="rear" value="None" />
+						<enum name="left" value="None" />
+						<enum name="right" value="None" />
+					</group>
+				</group>
+				<bool name="facing_surface_normal" value="False" />
+				<group name="fixed_rotation_impass_avoidance">
+					<int name="minimum_search_radius_cells" value="7" />
+					<bool name="use_impass_avoidance" value="True" />
+				</group>
+				<group name="on_construction_complete_state_tree_refs">
+					<string name="on_construction_complete_entity_state_tree_ref" value="" />
+					<string name="on_construction_complete_physical_state_tree_ref" value="" />
+					<string name="on_construction_complete_squad_state_tree_ref" value="" />
+					<string name="on_construction_plan_complete_global_state_tree_ref" value="" />
+					<string name="while_construction_complete_entity_state_tree_ref" value="building_construction_complete\buildings\dock_construction_complete" />
+					<string name="while_construction_complete_physical_state_tree_ref" value="" />
+				</group>
+				<bool name="query_movement_node_modifier_for_range_ui" value="False" />
+				<enum name="entity_placement_class" value="" />
+				<bool name="construction_site_erase_inactive" value="False" />
+				<group name="preview_upgrade_effects">
+					<template_reference name="area_info" value="">
+					</template_reference>
+					<list name="preview_upgrade_effects_list">
+					</list>
+					<bool name="ignore_depleted_resources" value="False" />
+				</group>
+				<bool name="placement_position_ignores_walkable_surfaces" value="False" />
+				<int name="aqueduct_network_increment_amount" value="0" />
+				<list name="ignorable_entity_types">
+				</list>
+				<float name="aqueduct_cistern_proximity_test_square_scale" value="0" />
+				<bool name="destroy_stamps" value="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="27633050" List.ParentItemID="27633050">
+				<group name="time_cost">
+					<enum_table name="cost">
+						<float name="wood" value="150" overrideParent="True" />
+						<float name="action" value="0" />
+						<float name="command" value="0" />
+						<float name="popcap" value="0" />
+						<float name="food" value="0" />
+						<float name="stone" value="0" />
+						<float name="gold" value="0" />
+						<float name="militia_hre" value="0" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<float name="time_seconds" value="30" />
+					<int name="time_turns" value="0" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\impass_ext" List.ItemID="-1286100157" List.ParentItemID="-1286100157">
+				<bool name="cant_build" value="True" />
+				<group name="impass_simboxes">
+					<bool name="default_simbox" value="True" />
+					<list name="named_simboxes">
+					</list>
+				</group>
+				<list name="block_path">
+					<instance_reference name="path_type" value="pass_types\water_default" List.ItemID="2095005924" List.ParentItemID="2095005924" />
+					<instance_reference name="path_type" value="pass_types\infantry" List.ItemID="-259781716" List.ParentItemID="-259781716" />
+					<instance_reference name="path_type" value="pass_types\vehicle" List.ItemID="558883332" List.ParentItemID="558883332" />
+				</list>
+				<bool name="should_rasterize_partial_cells" value="False" />
+				<enum name="blocker_lifetime_type" value="match_entity" />
+				<file name="stamp_blockers" value="" />
+				<group name="center_cell">
+					<bool name="cant_build" value="False" />
+					<list name="block_path">
+					</list>
+				</group>
+				<bool name="attach_gap_fillers" value="False" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-742108748" List.ParentItemID="-742108748">
+				<group name="detect_camouflage">
+					<float name="tp_global" value="10" />
+					<float name="tp_mine" value="0" />
+					<float name="tp_unit" value="0" />
+				</group>
+				<bool name="extended_sight" value="False" />
+				<float name="extended_sight_radius" value="0" />
+				<float name="reveal_area_on_death_time" value="1.5" />
+				<group name="sight_package">
+					<float name="inner_height" value="8" />
+					<float name="inner_radius" value="20" />
+					<float name="outer_height" value="0" />
+					<float name="outer_radius" value="50" />
+					<float name="cone_angle" value="360" />
+					<float name="cone_start_radius" value="0" />
+				</group>
+				<list name="extended_sight_target_requirements">
+				</list>
+				<list name="specific_detector_actions">
+				</list>
+				<bool name="camouflage_detection_enabled" value="True" />
+				<group name="vertical_truesight">
+					<bool name="enable" value="False" />
+					<float name="tolerance" value="1" />
+					<float name="eye_height" value="2.5" />
+				</group>
+				<bool name="blockers_check_bounding_box" value="False" />
+				<group name="stealth_detection">
+					<bool name="enabled" value="False" />
+					<float name="radius" value="0" />
+					<float name="throttle" value="0" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-312111757" List.ParentItemID="-312111757">
+				<list name="ui_extra_infos" overrideParent="True">
+				</list>
+				<bool name="ap_killed_kicker" value="True" />
+				<bool name="ap_loss_kicker" value="True" />
+				<float name="decorator_height" value="8" />
+				<string name="extra_text_deprecated" value="" />
+				<bool name="ghost_enable" value="True" />
+				<locstring name="help_text" value="11170616" />
+				<string name="hotkey_name" value="Z" />
+				<file name="icon_name" value="races\common\buildings\dock" />
+				<enum name="kill_type" value="building" />
+				<colour name="minimap_color" value="*" />
+				<bool name="minimap_enable" value="True" />
+				<bool name="minimap_team_only" value="False" />
+				<bool name="minimap_teamcolor" value="True" />
+				<string name="overlay_name" value="" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="11170617" />
+				<enum name="selection_name" value="building" />
+				<float name="selection_scale" value="1" />
+				<enum name="selection_type" value="multi_entity_select" />
+				<locstring name="tooltip_txt" value="0" />
+				<int name="ui_priority" value="0" />
+				<file name="minimap_icon" value="" />
+				<float name="minimap_icon_scale" value="0.6" />
+				<file name="portrait_icon" value="" />
+				<locstring name="brief_text" value="0" />
+				<locstring name="extra_text" value="11170615" />
+				<locstring name="screen_name_short" value="0" />
+				<bool name="show_in_build_log" value="True" />
+				<bool name="show_entity_appearance" value="True" />
+				<locstring name="screen_name_world" value="0" />
+				<locstring name="help_text_world" value="0" />
+				<locstring name="extra_text_world" value="0" />
+				<enum name="map_rotation_type_override" value="no_override" />
+				<file name="symbol_icon_name" value="" />
+				<enum name="occlusion_state" value="terrain_layer" />
+				<enum name="decorator_visibility" value="visible" />
+				<bool name="skin_pack_override" value="False" />
+				<string name="skin_summer" value="" />
+				<string name="skin_winter" value="" />
+				<enum name="targeting_and_bandbox_selection_priority" value="lowest" />
+				<enum name="selection_method" value="obb_adjusted_to_terrain" />
+				<group name="terrain_info_display_offset">
+					<float name="x" value="-225" />
+					<float name="y" value="-175" />
+				</group>
+				<string name="decorator_ledger_key" value="" />
+				<instance_reference name="decorator_ledger_bar_style" value="" />
+				<enum name="selection_name_squad_override" value="" />
+				<string name="selection_grouping_ledger_key" value="" />
+				<string name="debug_text" value="" />
+				<string name="selection_datatemplate" value="BuildingMilitaryDataTemplate" />
+				<bool name="use_construction_range_on_selection" value="True" />
+				<bool name="use_combat_range_on_selection" value="False" />
+				<bool name="is_armoured" value="False" />
+				<string name="decorator_data_template" value="" />
+				<enum name="ui_combine_type" value="intersection" />
+				<bool name="spotted_on_spawn" value="False" />
+				<instance_reference name="district_info" value="" />
+				<bool name="force_facing_and_range_visual_to_center_on_entity" value="False" />
+				<bool name="is_unique_to_race" value="False" />
+				<float name="kicker_offset" value="0" />
+				<file name="portrait_name" value="" />
+				<group name="selection_secondary_bounds_scale">
+					<float name="x" value="1" />
+					<float name="y" value="1" />
+					<float name="z" value="1" />
+				</group>
+				<enum name="decorator" value="" />
+				<int name="map_layer" value="0" />
+				<enum name="map_mark" value="" />
+				<group name="ui_codex_info">
+					<int name="priority" value="5575" />
+					<bool name="exclusive" value="False" />
+					<group name="ui_position">
+						<int name="ui_position_column" value="-1" />
+						<int name="ui_position_row" value="-1" />
+					</group>
+				</group>
+				<list name="custom_selection_obbs">
+				</list>
+				<template_reference name="help_text_formatter" value="">
+				</template_reference>
+				<template_reference name="extra_text_formatter" value="">
+				</template_reference>
+				<template_reference name="extra_text_world_formatter" value="">
+				</template_reference>
+				<template_reference name="help_text_world_formatter" value="">
+				</template_reference>
+				<template_reference name="screen_name_formatter" value="">
+				</template_reference>
+				<template_reference name="screen_name_short_formatter" value="">
+				</template_reference>
+				<template_reference name="screen_name_world_formatter" value="">
+				</template_reference>
+				<template_reference name="brief_text_formatter" value="">
+				</template_reference>
+				<string name="sound" value="" />
+				<string name="sound_alternative" value="" />
+				<string name="telemetry_name" value="Dock" />
+				<string name="selection_group" value="" />
+				<group name="selection_obb_size">
+					<float name="x" value="1" />
+					<float name="y" value="1" />
+					<float name="z" value="1" />
+				</group>
+				<float name="kicker_offset_world" value="0" />
+				<int name="global_unit_control_row" value="-1" />
+				<string name="tooltip_data_template" value="" />
+				<bool name="selection_obb_size_align_to_terrain" value="True" />
+				<group name="selection_obb_size_resource_ready">
+					<float name="x" value="1" />
+					<float name="y" value="1" />
+					<float name="z" value="1" />
+				</group>
+				<bool name="reticule_override_enabled" value="False" />
+				<float name="reticule_override_size" value="0" />
+				<float name="minimap_icon_zoom_scale" value="0" />
+				<locstring name="help_text_controller" value="0" />
+				<locstring name="extra_text_controller" value="0" />
+				<bool name="static_selection_bounds" value="False" />
+				<enum name="targeting_and_bandbox_selection_priority_controller" value="" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="1985550230" List.ParentItemID="1985550230">
+				<list name="spawn_items" overrideParent="True">
+					<group name="spawn_item" comment="fireship" List.ItemID="132407323">
+						<instance_reference name="entity" value="" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_fireship_3_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<bool name="spawn_at_map_entry_point" value="False" />
+						<group name="ui_position">
+							<int name="ui_position_row" value="2" overrideParent="True" />
+							<int name="ui_position_column" value="3" overrideParent="True" />
+						</group>
+						<instance_reference name="ui_menu" value="" />
+						<int name="number_to_spawn" value="1" overrideParent="True" />
+						<enum_table name="item_cost_adjustment">
+							<float name="action" value="0" />
+							<float name="command" value="0" />
+							<float name="popcap" value="0" />
+							<float name="food" value="0" />
+							<float name="wood" value="0" />
+							<float name="stone" value="0" />
+							<float name="gold" value="0" />
+							<float name="militia_hre" value="0" />
+							<float name="merc_byz" value="0" />
+						</enum_table>
+						<locstring name="ui_screen_name" value="0" />
+						<locstring name="ui_help_text" value="0" />
+						<bool name="can_be_cancelled" value="True" />
+						<int name="number_to_queue_up_to_when_modified" value="5" />
+						<list name="additional_squads">
+						</list>
+						<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_demo_ship" overrideParent="True" />
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+							<template_reference name="command_card_info" value="">
+							</template_reference>
+							<template_reference name="quick_abilities_info" value="">
+							</template_reference>
+							<template_reference name="quick_commands_info" value="">
+							</template_reference>
+							<template_reference name="quick_formation_info" value="">
+							</template_reference>
+							<template_reference name="ping_menu_info" value="">
+							</template_reference>
+							<enum name="category" value="Economic" />
+							<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+								<enum name="quick_commands_hotkey" value="" />
+								<int name="quick_commands_priority" value="-1" />
+								<int name="quick_commands_slot_index" value="-1" />
+								<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+							</template_reference>
+							<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+								<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+								<int name="nominal_index" value="12" overrideParent="True" />
+								<int name="priority" value="0" />
+								<instance_reference name="linked" value="" />
+							</template_reference>
+							<enum name="observer_type" value="Disabled" />
+							<group name="issuable_info">
+								<bool name="is_secondary" value="False" />
+								<instance_reference name="secondary_issuable" value="" />
+							</group>
+						</template_reference>
+						<string name="ui_tooltip_data_template" value="" />
+						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
+					</group>
+					<group name="spawn_item" comment="fishing boat" List.ItemID="-1836357650">
+						<instance_reference name="entity" value="" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_fishing_boat_2_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<bool name="spawn_at_map_entry_point" value="False" />
+						<group name="ui_position">
+							<int name="ui_position_row" value="1" overrideParent="True" />
+							<int name="ui_position_column" value="1" overrideParent="True" />
+						</group>
+						<instance_reference name="ui_menu" value="" />
+						<int name="number_to_spawn" value="1" />
+						<enum_table name="item_cost_adjustment">
+							<float name="action" value="0" />
+							<float name="command" value="0" />
+							<float name="popcap" value="0" />
+							<float name="food" value="0" />
+							<float name="wood" value="0" />
+							<float name="stone" value="0" />
+							<float name="gold" value="0" />
+							<float name="militia_hre" value="0" />
+							<float name="merc_byz" value="0" />
+						</enum_table>
+						<locstring name="ui_screen_name" value="0" />
+						<locstring name="ui_help_text" value="0" />
+						<bool name="can_be_cancelled" value="True" />
+						<int name="number_to_queue_up_to_when_modified" value="5" />
+						<list name="additional_squads">
+						</list>
+						<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_fishing_boat" overrideParent="True" />
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+							<template_reference name="command_card_info" value="">
+							</template_reference>
+							<template_reference name="quick_abilities_info" value="">
+							</template_reference>
+							<template_reference name="quick_commands_info" value="ui_quick_commands_info" overrideParent="True">
+								<int name="quick_commands_slot_index" value="0" overrideParent="True" />
+								<enum name="quick_commands_hotkey" value="x_quick_command_y" overrideParent="True" />
+								<int name="quick_commands_priority" value="5" overrideParent="True" />
+							</template_reference>
+							<template_reference name="quick_formation_info" value="">
+							</template_reference>
+							<template_reference name="ping_menu_info" value="">
+							</template_reference>
+							<enum name="category" value="Economic" />
+							<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info" overrideParent="True">
+								<enum name="quick_commands_hotkey" value="x_quick_command_y" />
+								<int name="quick_commands_priority" value="5" />
+								<int name="quick_commands_slot_index" value="2" overrideParent="True" />
+								<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+							</template_reference>
+							<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+								<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+								<int name="nominal_index" value="0" overrideParent="True" />
+								<int name="priority" value="0" />
+								<instance_reference name="linked" value="" />
+							</template_reference>
+							<enum name="observer_type" value="Disabled" />
+							<group name="issuable_info">
+								<bool name="is_secondary" value="False" />
+								<instance_reference name="secondary_issuable" value="" />
+							</group>
+						</template_reference>
+						<string name="ui_tooltip_data_template" value="" />
+						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
+					</group>
+					<group name="spawn_item" comment="transport ship" List.ItemID="1237122679">
+						<instance_reference name="entity" value="" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_transport_ship_2_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<bool name="spawn_at_map_entry_point" value="False" />
+						<group name="ui_position">
+							<int name="ui_position_row" value="1" overrideParent="True" />
+							<int name="ui_position_column" value="3" overrideParent="True" />
+						</group>
+						<instance_reference name="ui_menu" value="" />
+						<int name="number_to_spawn" value="1" />
+						<enum_table name="item_cost_adjustment">
+							<float name="action" value="0" />
+							<float name="command" value="0" />
+							<float name="popcap" value="0" />
+							<float name="food" value="0" />
+							<float name="wood" value="0" />
+							<float name="stone" value="0" />
+							<float name="gold" value="0" />
+							<float name="militia_hre" value="0" />
+							<float name="merc_byz" value="0" />
+						</enum_table>
+						<locstring name="ui_screen_name" value="0" />
+						<locstring name="ui_help_text" value="0" />
+						<bool name="can_be_cancelled" value="True" />
+						<int name="number_to_queue_up_to_when_modified" value="5" />
+						<list name="additional_squads">
+						</list>
+						<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_transport_ship" overrideParent="True" />
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+							<template_reference name="command_card_info" value="">
+							</template_reference>
+							<template_reference name="quick_abilities_info" value="">
+							</template_reference>
+							<template_reference name="quick_commands_info" value="ui_quick_commands_info" overrideParent="True">
+								<int name="quick_commands_slot_index" value="1" overrideParent="True" />
+								<enum name="quick_commands_hotkey" value="x_quick_command_x" overrideParent="True" />
+								<int name="quick_commands_priority" value="5" overrideParent="True" />
+							</template_reference>
+							<template_reference name="quick_formation_info" value="">
+							</template_reference>
+							<template_reference name="ping_menu_info" value="">
+							</template_reference>
+							<enum name="category" value="Economic" />
+							<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+								<enum name="quick_commands_hotkey" value="" />
+								<int name="quick_commands_priority" value="-1" />
+								<int name="quick_commands_slot_index" value="-1" />
+								<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+							</template_reference>
+							<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+								<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+								<int name="nominal_index" value="2" overrideParent="True" />
+								<int name="priority" value="0" />
+								<instance_reference name="linked" value="" />
+							</template_reference>
+							<enum name="observer_type" value="Disabled" />
+							<group name="issuable_info">
+								<bool name="is_secondary" value="False" />
+								<instance_reference name="secondary_issuable" value="" />
+							</group>
+						</template_reference>
+						<string name="ui_tooltip_data_template" value="" />
+						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
+					</group>
+					<group name="spawn_item" comment="baghlah" List.ItemID="533391665">
+						<instance_reference name="entity" value="" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_combat_ship_2_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<bool name="spawn_at_map_entry_point" value="False" />
+						<group name="ui_position">
+							<int name="ui_position_row" value="2" overrideParent="True" />
+							<int name="ui_position_column" value="2" overrideParent="True" />
+						</group>
+						<instance_reference name="ui_menu" value="" />
+						<int name="number_to_spawn" value="1" />
+						<enum_table name="item_cost_adjustment">
+							<float name="action" value="0" />
+							<float name="command" value="0" />
+							<float name="popcap" value="0" />
+							<float name="food" value="0" />
+							<float name="wood" value="0" />
+							<float name="stone" value="0" />
+							<float name="gold" value="0" />
+							<float name="militia_hre" value="0" />
+							<float name="merc_byz" value="0" />
+						</enum_table>
+						<locstring name="ui_screen_name" value="0" />
+						<locstring name="ui_help_text" value="0" />
+						<bool name="can_be_cancelled" value="True" />
+						<int name="number_to_queue_up_to_when_modified" value="5" />
+						<list name="additional_squads">
+						</list>
+						<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_attack_ship" overrideParent="True" />
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+							<template_reference name="command_card_info" value="">
+							</template_reference>
+							<template_reference name="quick_abilities_info" value="">
+							</template_reference>
+							<template_reference name="quick_commands_info" value="">
+							</template_reference>
+							<template_reference name="quick_formation_info" value="">
+							</template_reference>
+							<template_reference name="ping_menu_info" value="">
+							</template_reference>
+							<enum name="category" value="Economic" />
+							<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+								<enum name="quick_commands_hotkey" value="" />
+								<int name="quick_commands_priority" value="-1" />
+								<int name="quick_commands_slot_index" value="-1" />
+								<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+							</template_reference>
+							<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+								<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+								<int name="nominal_index" value="8" overrideParent="True" />
+								<int name="priority" value="0" />
+								<instance_reference name="linked" value="" />
+							</template_reference>
+							<enum name="observer_type" value="Disabled" />
+							<group name="issuable_info">
+								<bool name="is_secondary" value="False" />
+								<instance_reference name="secondary_issuable" value="" />
+							</group>
+						</template_reference>
+						<string name="ui_tooltip_data_template" value="" />
+						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
+					</group>
+					<group name="spawn_item" comment="xebec&#xD;&#xA;" List.ItemID="1697832863">
+						<instance_reference name="entity" value="" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_combat_warship_4_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<bool name="spawn_at_map_entry_point" value="False" />
+						<group name="ui_position">
+							<int name="ui_position_row" value="3" overrideParent="True" />
+							<int name="ui_position_column" value="1" overrideParent="True" />
+						</group>
+						<instance_reference name="ui_menu" value="" />
+						<int name="number_to_spawn" value="1" />
+						<enum_table name="item_cost_adjustment">
+							<float name="action" value="0" />
+							<float name="command" value="0" />
+							<float name="popcap" value="0" />
+							<float name="food" value="0" />
+							<float name="wood" value="0" />
+							<float name="stone" value="0" />
+							<float name="gold" value="0" />
+							<float name="militia_hre" value="0" />
+							<float name="merc_byz" value="0" />
+						</enum_table>
+						<locstring name="ui_screen_name" value="0" overrideParent="True" />
+						<locstring name="ui_help_text" value="0" />
+						<bool name="can_be_cancelled" value="True" />
+						<int name="number_to_queue_up_to_when_modified" value="5" />
+						<list name="additional_squads">
+						</list>
+						<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_war_ship" overrideParent="True" />
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+							<template_reference name="command_card_info" value="">
+							</template_reference>
+							<template_reference name="quick_abilities_info" value="">
+							</template_reference>
+							<template_reference name="quick_commands_info" value="">
+							</template_reference>
+							<template_reference name="quick_formation_info" value="">
+							</template_reference>
+							<template_reference name="ping_menu_info" value="">
+							</template_reference>
+							<enum name="category" value="Economic" />
+							<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+								<enum name="quick_commands_hotkey" value="" />
+								<int name="quick_commands_priority" value="-1" />
+								<int name="quick_commands_slot_index" value="-1" />
+								<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+							</template_reference>
+							<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+								<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" overrideParent="True" />
+								<int name="nominal_index" value="10" overrideParent="True" />
+								<int name="priority" value="0" />
+								<instance_reference name="linked" value="" />
+							</template_reference>
+							<enum name="observer_type" value="Disabled" />
+							<group name="issuable_info">
+								<bool name="is_secondary" value="False" />
+								<instance_reference name="secondary_issuable" value="" />
+							</group>
+						</template_reference>
+						<string name="ui_tooltip_data_template" value="" />
+						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
+					</group>
+					<group name="spawn_item" comment="trade ship" List.ItemID="-94260486">
+						<instance_reference name="entity" value="" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_trade_ship_3_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<bool name="spawn_at_map_entry_point" value="False" />
+						<group name="ui_position">
+							<int name="ui_position_row" value="1" overrideParent="True" />
+							<int name="ui_position_column" value="2" overrideParent="True" />
+						</group>
+						<instance_reference name="ui_menu" value="" />
+						<int name="number_to_spawn" value="1" />
+						<enum_table name="item_cost_adjustment">
+							<float name="action" value="0" />
+							<float name="command" value="0" />
+							<float name="popcap" value="0" />
+							<float name="food" value="0" />
+							<float name="wood" value="0" />
+							<float name="stone" value="0" />
+							<float name="gold" value="0" />
+							<float name="militia_hre" value="0" />
+							<float name="merc_byz" value="0" />
+						</enum_table>
+						<locstring name="ui_screen_name" value="0" />
+						<locstring name="ui_help_text" value="0" />
+						<bool name="can_be_cancelled" value="True" />
+						<int name="number_to_queue_up_to_when_modified" value="5" />
+						<list name="additional_squads">
+						</list>
+						<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_trade_ship" overrideParent="True" />
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+							<template_reference name="command_card_info" value="">
+							</template_reference>
+							<template_reference name="quick_abilities_info" value="">
+							</template_reference>
+							<template_reference name="quick_commands_info" value="">
+							</template_reference>
+							<template_reference name="quick_formation_info" value="">
+							</template_reference>
+							<template_reference name="ping_menu_info" value="">
+							</template_reference>
+							<enum name="category" value="Economic" />
+							<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+								<enum name="quick_commands_hotkey" value="" />
+								<int name="quick_commands_priority" value="-1" />
+								<int name="quick_commands_slot_index" value="-1" />
+								<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+							</template_reference>
+							<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+								<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+								<int name="nominal_index" value="4" />
+								<int name="priority" value="0" />
+								<instance_reference name="linked" value="" />
+							</template_reference>
+							<enum name="observer_type" value="Disabled" />
+							<group name="issuable_info">
+								<bool name="is_secondary" value="False" />
+								<instance_reference name="secondary_issuable" value="" />
+							</group>
+						</template_reference>
+						<string name="ui_tooltip_data_template" value="" />
+						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
+					</group>
+					<group name="spawn_item" comment="dhow" List.ItemID="-1503235125">
+						<instance_reference name="entity" value="" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_dhow_2_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<bool name="spawn_at_map_entry_point" value="False" />
+						<group name="ui_position">
+							<int name="ui_position_row" value="2" overrideParent="True" />
+							<int name="ui_position_column" value="1" overrideParent="True" />
+						</group>
+						<instance_reference name="ui_menu" value="" />
+						<int name="number_to_spawn" value="1" />
+						<enum_table name="item_cost_adjustment">
+							<float name="action" value="0" />
+							<float name="command" value="0" />
+							<float name="popcap" value="0" />
+							<float name="food" value="0" />
+							<float name="wood" value="0" />
+							<float name="stone" value="0" />
+							<float name="gold" value="0" />
+							<float name="militia_hre" value="0" />
+							<float name="merc_byz" value="0" />
+						</enum_table>
+						<locstring name="ui_screen_name" value="0" />
+						<locstring name="ui_help_text" value="0" />
+						<bool name="can_be_cancelled" value="True" />
+						<int name="number_to_queue_up_to_when_modified" value="5" />
+						<list name="additional_squads">
+						</list>
+						<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_archer_ship" overrideParent="True" />
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+							<template_reference name="command_card_info" value="">
+							</template_reference>
+							<template_reference name="quick_abilities_info" value="">
+							</template_reference>
+							<template_reference name="quick_commands_info" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="quick_formation_info" value="">
+							</template_reference>
+							<template_reference name="ping_menu_info" value="">
+							</template_reference>
+							<enum name="category" value="Economic" />
+							<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+								<enum name="quick_commands_hotkey" value="" />
+								<int name="quick_commands_priority" value="-1" />
+								<int name="quick_commands_slot_index" value="-1" />
+								<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+							</template_reference>
+							<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+								<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+								<int name="nominal_index" value="6" overrideParent="True" />
+								<int name="priority" value="0" />
+								<instance_reference name="linked" value="" />
+							</template_reference>
+							<enum name="observer_type" value="Disabled" />
+							<group name="issuable_info">
+								<bool name="is_secondary" value="False" />
+								<instance_reference name="secondary_issuable" value="" />
+							</group>
+						</template_reference>
+						<string name="ui_tooltip_data_template" value="" />
+						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
+					</group>
+					<group name="spawn_item" comment="fireship" List.ItemID="-584083728">
+						<instance_reference name="entity" value="" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_fireship_3_sul_upgraded" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<bool name="spawn_at_map_entry_point" value="False" />
+						<group name="ui_position">
+							<int name="ui_position_row" value="2" overrideParent="True" />
+							<int name="ui_position_column" value="3" overrideParent="True" />
+						</group>
+						<instance_reference name="ui_menu" value="" />
+						<int name="number_to_spawn" value="1" overrideParent="True" />
+						<enum_table name="item_cost_adjustment">
+							<float name="action" value="0" />
+							<float name="command" value="0" />
+							<float name="popcap" value="0" />
+							<float name="food" value="0" />
+							<float name="wood" value="0" />
+							<float name="stone" value="0" />
+							<float name="gold" value="0" />
+							<float name="militia_hre" value="0" />
+							<float name="merc_byz" value="0" />
+						</enum_table>
+						<locstring name="ui_screen_name" value="0" />
+						<locstring name="ui_help_text" value="0" />
+						<bool name="can_be_cancelled" value="True" />
+						<int name="number_to_queue_up_to_when_modified" value="5" />
+						<list name="additional_squads">
+						</list>
+						<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_demo_ship" overrideParent="True" />
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+							<template_reference name="command_card_info" value="">
+							</template_reference>
+							<template_reference name="quick_abilities_info" value="">
+							</template_reference>
+							<template_reference name="quick_commands_info" value="">
+							</template_reference>
+							<template_reference name="quick_formation_info" value="">
+							</template_reference>
+							<template_reference name="ping_menu_info" value="">
+							</template_reference>
+							<enum name="category" value="Economic" />
+							<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+								<enum name="quick_commands_hotkey" value="" />
+								<int name="quick_commands_priority" value="-1" />
+								<int name="quick_commands_slot_index" value="-1" />
+								<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+							</template_reference>
+							<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+								<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+								<int name="nominal_index" value="12" overrideParent="True" />
+								<int name="priority" value="0" />
+								<instance_reference name="linked" value="" />
+							</template_reference>
+							<enum name="observer_type" value="Disabled" />
+							<group name="issuable_info">
+								<bool name="is_secondary" value="False" />
+								<instance_reference name="secondary_issuable" value="" />
+							</group>
+						</template_reference>
+						<string name="ui_tooltip_data_template" value="" />
+						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
+					</group>
+					<group name="spawn_item" comment="baghlah" List.ItemID="1547064666">
+						<instance_reference name="entity" value="" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_combat_ship_2_sul_upgraded" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<bool name="spawn_at_map_entry_point" value="False" />
+						<group name="ui_position">
+							<int name="ui_position_row" value="2" overrideParent="True" />
+							<int name="ui_position_column" value="2" overrideParent="True" />
+						</group>
+						<instance_reference name="ui_menu" value="" />
+						<int name="number_to_spawn" value="1" />
+						<enum_table name="item_cost_adjustment">
+							<float name="action" value="0" />
+							<float name="command" value="0" />
+							<float name="popcap" value="0" />
+							<float name="food" value="0" />
+							<float name="wood" value="0" />
+							<float name="stone" value="0" />
+							<float name="gold" value="0" />
+							<float name="militia_hre" value="0" />
+							<float name="merc_byz" value="0" />
+						</enum_table>
+						<locstring name="ui_screen_name" value="0" />
+						<locstring name="ui_help_text" value="0" />
+						<bool name="can_be_cancelled" value="True" />
+						<int name="number_to_queue_up_to_when_modified" value="5" />
+						<list name="additional_squads">
+						</list>
+						<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_attack_ship" overrideParent="True" />
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+							<template_reference name="command_card_info" value="">
+							</template_reference>
+							<template_reference name="quick_abilities_info" value="">
+							</template_reference>
+							<template_reference name="quick_commands_info" value="">
+							</template_reference>
+							<template_reference name="quick_formation_info" value="">
+							</template_reference>
+							<template_reference name="ping_menu_info" value="">
+							</template_reference>
+							<enum name="category" value="Economic" />
+							<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+								<enum name="quick_commands_hotkey" value="" />
+								<int name="quick_commands_priority" value="-1" />
+								<int name="quick_commands_slot_index" value="-1" />
+								<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+							</template_reference>
+							<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+								<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+								<int name="nominal_index" value="8" overrideParent="True" />
+								<int name="priority" value="0" />
+								<instance_reference name="linked" value="" />
+							</template_reference>
+							<enum name="observer_type" value="Disabled" />
+							<group name="issuable_info">
+								<bool name="is_secondary" value="False" />
+								<instance_reference name="secondary_issuable" value="" />
+							</group>
+						</template_reference>
+						<string name="ui_tooltip_data_template" value="" />
+						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
+					</group>
+					<group name="spawn_item" comment="xebec&#xD;&#xA;" List.ItemID="-2100600302">
+						<instance_reference name="entity" value="" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_combat_warship_4_sul_upgraded" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<bool name="spawn_at_map_entry_point" value="False" />
+						<group name="ui_position">
+							<int name="ui_position_row" value="3" overrideParent="True" />
+							<int name="ui_position_column" value="1" overrideParent="True" />
+						</group>
+						<instance_reference name="ui_menu" value="" />
+						<int name="number_to_spawn" value="1" />
+						<enum_table name="item_cost_adjustment">
+							<float name="action" value="0" />
+							<float name="command" value="0" />
+							<float name="popcap" value="0" />
+							<float name="food" value="0" />
+							<float name="wood" value="0" />
+							<float name="stone" value="0" />
+							<float name="gold" value="0" />
+							<float name="militia_hre" value="0" />
+							<float name="merc_byz" value="0" />
+						</enum_table>
+						<locstring name="ui_screen_name" value="0" overrideParent="True" />
+						<locstring name="ui_help_text" value="0" />
+						<bool name="can_be_cancelled" value="True" />
+						<int name="number_to_queue_up_to_when_modified" value="5" />
+						<list name="additional_squads">
+						</list>
+						<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_war_ship" overrideParent="True" />
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+							<template_reference name="command_card_info" value="">
+							</template_reference>
+							<template_reference name="quick_abilities_info" value="">
+							</template_reference>
+							<template_reference name="quick_commands_info" value="">
+							</template_reference>
+							<template_reference name="quick_formation_info" value="">
+							</template_reference>
+							<template_reference name="ping_menu_info" value="">
+							</template_reference>
+							<enum name="category" value="Economic" />
+							<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+								<enum name="quick_commands_hotkey" value="" />
+								<int name="quick_commands_priority" value="-1" />
+								<int name="quick_commands_slot_index" value="-1" />
+								<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+							</template_reference>
+							<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+								<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" overrideParent="True" />
+								<int name="nominal_index" value="10" overrideParent="True" />
+								<int name="priority" value="0" />
+								<instance_reference name="linked" value="" />
+							</template_reference>
+							<enum name="observer_type" value="Disabled" />
+							<group name="issuable_info">
+								<bool name="is_secondary" value="False" />
+								<instance_reference name="secondary_issuable" value="" />
+							</group>
+						</template_reference>
+						<string name="ui_tooltip_data_template" value="" />
+						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
+					</group>
+					<group name="spawn_item" comment="dhow" List.ItemID="-1128147984">
+						<instance_reference name="entity" value="" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_dhow_2_sul_upgraded" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<bool name="spawn_at_map_entry_point" value="False" />
+						<group name="ui_position">
+							<int name="ui_position_row" value="2" overrideParent="True" />
+							<int name="ui_position_column" value="1" overrideParent="True" />
+						</group>
+						<instance_reference name="ui_menu" value="" />
+						<int name="number_to_spawn" value="1" />
+						<enum_table name="item_cost_adjustment">
+							<float name="action" value="0" />
+							<float name="command" value="0" />
+							<float name="popcap" value="0" />
+							<float name="food" value="0" />
+							<float name="wood" value="0" />
+							<float name="stone" value="0" />
+							<float name="gold" value="0" />
+							<float name="militia_hre" value="0" />
+							<float name="merc_byz" value="0" />
+						</enum_table>
+						<locstring name="ui_screen_name" value="0" />
+						<locstring name="ui_help_text" value="0" />
+						<bool name="can_be_cancelled" value="True" />
+						<int name="number_to_queue_up_to_when_modified" value="5" />
+						<list name="additional_squads">
+						</list>
+						<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_dock\produce_archer_ship" overrideParent="True" />
+						<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+							<template_reference name="command_card_info" value="">
+							</template_reference>
+							<template_reference name="quick_abilities_info" value="">
+							</template_reference>
+							<template_reference name="quick_commands_info" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="quick_formation_info" value="">
+							</template_reference>
+							<template_reference name="ping_menu_info" value="">
+							</template_reference>
+							<enum name="category" value="Economic" />
+							<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+								<enum name="quick_commands_hotkey" value="" />
+								<int name="quick_commands_priority" value="-1" />
+								<int name="quick_commands_slot_index" value="-1" />
+								<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+							</template_reference>
+							<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
+								<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+								<int name="nominal_index" value="6" overrideParent="True" />
+								<int name="priority" value="0" />
+								<instance_reference name="linked" value="" />
+							</template_reference>
+							<enum name="observer_type" value="Disabled" />
+							<group name="issuable_info">
+								<bool name="is_secondary" value="False" />
+								<instance_reference name="secondary_issuable" value="" />
+							</group>
+						</template_reference>
+						<string name="ui_tooltip_data_template" value="" />
+						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
+					</group>
+				</list>
+				<bool name="must_be_in_supply" value="False" />
+				<float name="reinforce_radius" value="0" />
+				<list name="bonus_xp_from_hold_list">
+				</list>
+				<list name="reinforce_requirements">
+				</list>
+				<bool name="spawn_to_hold_try_first" value="False" />
+				<list name="queue_requirements">
+				</list>
+				<bool name="can_rally" value="True" />
+				<template_reference name="animated_spawn_option" value="options\none">
+				</template_reference>
+				<int name="max_queue_size_override" value="-1" />
+				<string name="queue_requirements_openingbranch" value="" />
+				<string name="reinforce_requirements_openingbranch" value="" />
+				<state_tree_node name="production_item_completed_openingbranch" value="building_production_item_completed\Master\building_production_item_complete\building_production_item_complete_naval" />
+				<bool name="enforce_minimum_clearance_at_spawn_positions" value="True" />
+				<bool name="enforce_minimum_clearance_if_entities_blocking" value="True" />
+				<float name="enforce_minimum_clearance_at_spawn_positions_search_range" value="30" />
+				<instance_reference name="rally_pass_type" value="pass_types\water_default" />
+				<bool name="reset_production_progress_at_current_pop_cap" value="False" />
+				<bool name="can_spawn_if_neutral" value="False" />
+				<bool name="default_rally_points_allowed" value="True" />
+				<bool name="economic_rally_points_allowed" value="True" />
+				<bool name="always_use_economic_rally_points" value="False" />
+				<bool name="use_alternative_rally_point_system" value="False" />
+				<bool name="trade_only_economical_rally" value="False" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" overrideParent="True" List.ItemID="1749087632" List.ParentItemID="1749087632">
+				<list name="standard_upgrades" overrideParent="True">
+					<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_incendiaries" List.ItemID="-1921082377" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_springald_ship_upgrade_1" List.ItemID="1353481528" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_extra_hammocks" List.ItemID="1108912316" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_armored_hull" List.ItemID="1261127117" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_shipwrights" List.ItemID="2009490876" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_explosives" List.ItemID="-1483893802" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_drift_nets" List.ItemID="-954908172" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_extended_lines" List.ItemID="2038294755" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_swivel_cannon" List.ItemID="-1779916580" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_naval_arrowslits" List.ItemID="728139115" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_heated_shot" List.ItemID="1534853717" />
+					<instance_reference name="upgrade" value="upgrade\persia\ps_persia_ship_upgrade" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="-208520284" />
+				</list>
+				<bool name="must_be_in_supply" value="False" />
+				<float name="number_of_standard_slots" value="-1" />
+				<int name="max_queue_size_override" value="-1" />
+				<state_tree_node name="production_item_completed_openingbranch" value="" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\burn_ext" List.ItemID="113107934" List.ParentItemID="113107934">
+				<float name="on_fire_damage_per_sec" value="5" />
+				<float name="on_fire_decay_amount_per_sec" value="0" />
+				<float name="on_fire_threshold" value="59" />
+				<float name="max_fire_damage_per_second" value="10000" />
+				<float name="on_fire_health_percentage" value="0.25" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1867819834" List.ParentItemID="1867819834">
+				<list name="requirement_table">
+				</list>
+				<state_tree_node name="requirement_statetree" value="" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1205989620" List.ParentItemID="1205989620">
+				<list name="action_state_trees" overrideParent="True">
+					<group name="container" List.ItemID="835806946">
+						<string name="state_tree" value="building_action_apply\buildings\dock_action_apply" />
+					</group>
+					<group name="container" List.ItemID="368814108">
+						<string name="state_tree" value="influence_invalid_sul" overrideParent="True" />
+					</group>
+				</list>
+				<bool name="reset_on_load" value="True" />
+				<list name="physical_state_trees">
+				</list>
+				<list name="deferred_action_state_trees">
+				</list>
+				<list name="action_state_trees_run_once">
+				</list>
+				<list name="deferred_action_state_trees_run_once">
+				</list>
+				<list name="physical_state_trees_run_once">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="-1928559854" List.ParentItemID="-1928559854">
+				<list name="type_list">
+					<group name="type" comment="Drop Off" List.ItemID="-28463169" List.ParentItemID="-28463169">
+						<enum name="interaction_type" value="resource_drop_off" />
+						<int name="prefer_number" value="-1" />
+						<int name="max_number" value="-1" />
+						<enum name="interaction_target_type" value="entity" />
+						<template_reference name="node_list_option" value="options\none">
+						</template_reference>
+						<bool name="block_pathing_when_interacted" value="False" />
+					</group>
+					<group name="type" List.ItemID="1544397221" List.ParentItemID="1544397221">
+						<enum name="interaction_type" value="repair" />
+						<int name="prefer_number" value="-1" />
+						<int name="max_number" value="-1" />
+						<enum name="interaction_target_type" value="entity" />
+						<template_reference name="node_list_option" value="options\none">
+						</template_reference>
+						<bool name="block_pathing_when_interacted" value="False" />
+					</group>
+					<group name="type" List.ItemID="-618238804" List.ParentItemID="-618238804">
+						<enum name="interaction_type" value="construct" />
+						<int name="prefer_number" value="-1" />
+						<int name="max_number" value="-1" />
+						<enum name="interaction_target_type" value="entity" />
+						<template_reference name="node_list_option" value="options\none">
+						</template_reference>
+						<bool name="block_pathing_when_interacted" value="False" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="1548337304" List.ParentItemID="1548337304">
+				<list name="abilities">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="37523495" List.ParentItemID="37523495" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\core\dock_upgrade_aura" List.ItemID="-1251419181" List.ParentItemID="-1251419181" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="-1710193481" List.ParentItemID="-1710193481">
+				<state_tree_node name="ActionTree_OpeningBranch" value="unit_building" />
+				<bool name="start_suspended" value="False" />
+				<state_tree_node name="fallback_default_move_command_conditions" value="" />
+				<list name="events">
+				</list>
+				<enum name="stop_on_death" value="Default" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="740762230" List.ParentItemID="740762230">
+				<state_tree_node name="ActionTree_OpeningBranch" value="building" />
+				<bool name="use_root_motion" value="False" />
+				<bool name="start_suspended" value="False" />
+				<enum name="entity_statetree_sort_tag" value="Default" />
+				<float name="speed_scale_threshold" value="100" />
+				<string name="default_animation" value="" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="-68460232" List.ParentItemID="-68460232">
+				<bool name="allow_weapon_target_scanning" value="False" />
+				<int name="history_size" value="2" />
+				<bool name="allow_entity_scan_close_enemies" value="False" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\marker_ext" List.ItemID="-1401850373" List.ParentItemID="-1401850373">
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1843254673" List.ParentItemID="1843254673">
+				<instance_reference name="schema" value="statemodel_schema\buildings\unit_naval" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\hit_react_tree_ext" List.ItemID="1930686020" List.ParentItemID="1930686020">
+				<state_tree_node name="ActionTree_OpeningBranch" value="building_hit_tree" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="441995311" List.ParentItemID="441995311">
+				<list name="rtpc_events">
+				</list>
+				<list name="sound_banks">
+				</list>
+				<string name="single_select_event" value="sfx_ui_unit_dock_building_selection_play" />
+				<int name="music_importance" value="-30" />
+				<int name="combat_importance" value="-30" />
+				<list name="select_audible_to_relation_list">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\speech_ext" List.ItemID="-384468860" List.ParentItemID="-384468860">
+				<string name="speaker_code" value="" />
+				<group name="speech_parameters">
+					<string name="class_code" value="" />
+					<string name="name_code" value="" />
+					<string name="unit_code" value="" />
+				</group>
+				<int name="importance" value="15" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\boundary_cells_ext" List.ItemID="1552115645" List.ParentItemID="1552115645">
+				<list name="additional_boundary_simboxes">
+				</list>
+				<list name="waypoint_caching">
+					<group name="pass_type_data" List.ItemID="1405296173" List.ParentItemID="1405296173">
+						<instance_reference name="pass_type" value="pass_types\infantry" />
+						<int name="min_clearance" value="1" />
+						<int name="max_clearance" value="1" />
+					</group>
+				</list>
+				<bool name="allow_cells_across_impasse" value="True" />
+				<bool name="allow_cells_on_wall" value="True" />
+				<list name="center_cells">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\resource_drop_off_ext" List.ItemID="-174536985" List.ParentItemID="-174536985">
+				<enum_table name="accepted_resources">
+					<bool name="action" value="False" />
+					<bool name="command" value="False" />
+					<bool name="popcap" value="False" />
+					<bool name="food" value="True" />
+					<bool name="wood" value="False" />
+					<bool name="stone" value="False" />
+					<bool name="gold" value="False" />
+					<bool name="militia_hre" value="False" />
+					<bool name="merc_byz" value="False" />
+				</enum_table>
+				<enum_table name="drop_off_time_seconds">
+					<float name="action" value="1" />
+					<float name="command" value="1" />
+					<float name="popcap" value="1" />
+					<float name="food" value="0" />
+					<float name="wood" value="0" />
+					<float name="stone" value="0" />
+					<float name="gold" value="0" />
+					<float name="militia_hre" value="1" />
+					<float name="merc_byz" value="1" />
+				</enum_table>
+				<bool name="allow_any_resource_after_construct" value="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="99914381" List.ParentItemID="99914381">
+				<bool name="reject_attack_command" value="False" />
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="1057897861" List.ParentItemID="1057897861">
+						<float name="parent_hardpoint" value="-1" />
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-1730885852" List.ParentItemID="-1730885852">
+								<group name="heading">
+									<float name="x" value="0" />
+									<float name="y" value="0.3" />
+									<float name="z" value="1" />
+								</group>
+								<float name="length" value="0" />
+								<group name="origin">
+									<float name="x" value="0" />
+									<float name="y" value="5" />
+									<float name="z" value="0" />
+								</group>
+								<enum name="type" value="default" />
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<template_reference name="attach_data" value="attachments\attach_data">
+											<string name="marker_name_parent" value="" />
+											<string name="parent_rigidbody_target_name" value="" />
+											<enum name="game_object_attachment_type" value="scenegraph" />
+										</template_reference>
+										<instance_reference name="ebp" value="ebps\races\core\weapons\wpn_range_dock_arrows" />
+										<group name="attachment_flags">
+											<bool name="sim_only" value="False" />
+											<bool name="no_pathfinding" value="False" />
+											<bool name="not_snappable" value="False" />
+											<bool name="restore_snap_to_ground_on_detach" value="False" />
+											<bool name="no_sim_update" value="True" />
+											<bool name="join_parent_squad" value="False" />
+											<bool name="redirect_damage_to_parent_entity" value="True" />
+											<bool name="assign_as_attachment_combat_leader" value="False" />
+											<bool name="assign_as_attachment_movement_leader" value="False" />
+											<bool name="receive_parent_animations" value="False" />
+											<bool name="receive_parent_death" value="False" />
+										</group>
+									</template_reference>
+									<list name="possible_blueprint_updates">
+									</list>
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="">
+								</template_reference>
+							</group>
+						</list>
+						<bool name="receives_attack_commands" value="True" />
+						<string name="base_marker" value="" />
+						<list name="preferred_inventory_item_categories">
+						</list>
+						<list name="firing_offset_markers">
+							<string name="marker" value="fx_muz_arrow_00" List.ItemID="1106124415" List.ParentItemID="1106124415" />
+							<string name="marker" value="fx_muz_arrow_01" List.ItemID="1695906641" List.ParentItemID="1695906641" />
+							<string name="marker" value="fx_muz_arrow_02" List.ItemID="658139642" List.ParentItemID="658139642" />
+							<string name="marker" value="fx_muz_arrow_03" List.ItemID="1899773952" List.ParentItemID="1899773952" />
+						</list>
+						<string name="offhand_marker" value="" />
+						<bool name="initialize_weapons_on_creation" value="False" />
+					</group>
+				</list>
+				<int name="sight_hardpoint" value="-1" />
+				<float name="block_frontal_arc" value="0" />
+				<int name="block_melee_blocks_per_sequence" value="0" />
+				<int name="block_melee_incoming_attack_sequence_length" value="1" />
+				<group name="attack_move">
+					<float name="attack_move_targeting_range" value="30" />
+					<float name="attack_move_priority_per_distance_meter" value="-1" />
+				</group>
+				<group name="idle_targeting">
+					<float name="idle_priority_per_angle_degree" value="-1.5" />
+					<float name="idle_priority_per_distance_meter" value="-1" />
+					<float name="idle_targeting_range" value="15" />
+					<float name="idle_priority_per_distance_unit_angle_multiplier" value="0" />
+				</group>
+				<template_reference name="kill_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<string name="combat_choice_tree" value="" />
+				<int name="block_ranged_blocks_per_sequence" value="0" />
+				<int name="block_ranged_incoming_attack_sequence_length" value="1" />
+				<int name="block_projectile_incoming_attack_sequence_length" value="1" />
+				<int name="block_projectile_blocks_per_sequence" value="0" />
+				<float name="scan_interval_cached_target_invalid" value="2" />
+				<float name="scan_interval_cached_target_valid" value="2" />
+				<group name="combat_scan_intervals">
+					<group name="attack_move_scan_intervals">
+						<float name="interval_with_invalid_target" value="1" />
+						<float name="interval_with_valid_target" value="2" />
+						<float name="interval_with_valid_target_frequent" value="0.5" />
+						<float name="frequent_scan_radius" value="0" />
+					</group>
+					<group name="forced_engagement_scan_intervals">
+						<float name="interval_with_invalid_target" value="0.375" />
+						<float name="interval_with_valid_target" value="2" />
+					</group>
+					<group name="idle_scan_intervals">
+						<float name="interval_with_invalid_target" value="1" />
+						<float name="interval_with_valid_target" value="2" />
+						<float name="interval_with_valid_target_frequent" value="0.5" />
+						<float name="frequent_scan_radius" value="0" />
+					</group>
+				</group>
+				<bool name="unequip_weapons_on_death" value="True" />
+				<bool name="ui_show_most_progressed_weapon_reload" value="False" />
+				<list name="target_scanning_priority_override">
+				</list>
+				<list name="block_ignore_damage_types">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\building_presentation_ext" List.ItemID="-1765316535" List.ParentItemID="-1765316535">
+				<file name="construction_stamp" value="art\stamps\scaffolding\west\west_dock" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="-123217468" List.ParentItemID="-123217468">
+				<list name="acceptable_types" comment="Dock">
+					<enum name="acceptable_type" value="hold_fishing_ship" List.ItemID="-1011255217" List.ParentItemID="-1011255217" />
+				</list>
+				<bool name="attach_passenger_animator" value="False" />
+				<bool name="can_attack_occupant" value="False" />
+				<bool name="invulnerable_in_hold" value="True" />
+				<bool name="disable_area_effect_on_overflow_slot" value="False" />
+				<bool name="disable_unload" value="False" />
+				<bool name="disallow_load_command" value="False" />
+				<bool name="enable_trigger_abilities_in_hold" value="True" />
+				<bool name="enable_trigger_attack_in_hold" value="False" />
+				<bool name="holds_produced_squads" value="False" />
+				<bool name="keep_abandoned_team_weapon" value="False" />
+				<float name="load_seconds" value="0" />
+				<float name="max_load_seconds" value="0" />
+				<float name="min_hold_seconds" value="0" />
+				<float name="num_slots" value="3" />
+				<float name="num_squad_slots" value="3" />
+				<float name="percent_unload_on_death" value="1" />
+				<bool name="revert_ownership" value="False" />
+				<bool name="scavenge_enabled" value="False" />
+				<enum_table name="scavenge_resource">
+					<float name="action" value="0" />
+					<float name="command" value="0" />
+					<float name="popcap" value="0" />
+					<float name="food" value="0" />
+					<float name="wood" value="0" />
+					<float name="stone" value="0" />
+					<float name="gold" value="0" />
+					<float name="militia_hre" value="0" />
+					<float name="merc_byz" value="0" />
+				</enum_table>
+				<bool name="shared_with_other_same_type_units" value="False" />
+				<float name="unload_seconds" value="0" />
+				<bool name="use_building_target_scan_radius" value="True" />
+				<bool name="use_crouching_posture" value="False" />
+				<list name="on_loading_modifiers">
+				</list>
+				<bool name="despawn_on_load" value="False" />
+				<float name="load_distance" value="8" />
+				<bool name="maintain_selection" value="True" />
+				<template_reference name="on_loaded_hold_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="on_loaded_squad_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="on_unloaded_squad_instant_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<bool name="convert_garrision_on_owner_change" value="False" />
+				<bool name="move_on_remove_hold" value="False" />
+				<bool name="load_separate_entrances" value="False" />
+				<bool name="can_issue_retreat_to_hold_contents" value="True" />
+				<bool name="ensure_pathability_to_hold_for_unload" value="False" />
+				<float name="unload_path_distance_max" value="24" />
+				<bool name="is_indoors" value="True" />
+				<bool name="right_click_garrison_always_enabled" value="False" />
+				<bool name="exclude_allied_units" value="False" />
+				<bool name="on_loaded_squad_action_tree_reapply_on_bp_conversion" value="False" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\modifier_apply_ext" List.ItemID="2143288309">
+				<list name="modifiers">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-1176281447">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="-1575346133">
+						<group name="tier" List.ItemID="-254954308">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\buildings\unit_naval_ott\tier2_unit_naval_control_ott" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" overrideParent="True" List.ItemID="1178622244">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\buildings\unit_naval_ott\tier3_unit_naval_control_ott" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="act_set_current_age_castle" overrideParent="True" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="652823780">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\buildings\unit_naval_ott\tier4_unit_naval_control_ott" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\imperial_age" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="act_set_current_age_imperial" overrideParent="True" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482564" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_unit_naval" />
+	</variant>
+</instance>

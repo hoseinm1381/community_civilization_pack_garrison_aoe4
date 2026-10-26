@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-2056667985" List.ParentItemID="-2056667985">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="-549554534" List.ParentItemID="-549554534">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="1313233418" List.ParentItemID="1313233418">
+					<group name="info">
+						<file name="flag_icon_override" value="persia\safavid_flag" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" overrideParent="True" List.ItemID="441410628" List.ParentItemID="441410628">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="1503075598">
+					<float name="num" value="1" />
+					<instance_reference name="type" value="ebps\persia\ps_unit_siege_tower_3_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<list name="unit_attachments">
+					</list>
+					<bool name="is_default_unit" value="True" />
+				</group>
+			</list>
+			<float name="squad_female_chance" value="0" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="-1817122395" List.ParentItemID="-1817122395">
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\sultanate" List.ItemID="-1571863151" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="-1090971063" List.ParentItemID="-1090971063">
+			<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482713" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_siege_tower_3" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" overrideParent="True" List.ItemID="-2108872559" List.ParentItemID="-2108872559">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="-2092777300">
+						<float name="num" value="1" />
+						<instance_reference name="type" value="ebps\persia\ps_unit_siege_tower_3_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+						<list name="unit_attachments">
+						</list>
+						<bool name="is_default_unit" value="True" />
+					</group>
+				</list>
+				<float name="squad_female_chance" value="0" />
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="1785462391" List.ParentItemID="1785462391">
+				<list name="squad_race_type_list" overrideParent="True">
+					<instance_reference name="squad_race_type" value="racebps\sultanate" List.ItemID="-1321229076" />
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="-1513048549" List.ParentItemID="-1513048549">
+				<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482713" />
+		<instance_reference name="parent_pbg" value="sbps\races\core\unit_siege_tower_3" />
+	</variant>
+</instance>

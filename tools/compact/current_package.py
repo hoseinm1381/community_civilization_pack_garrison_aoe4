@@ -13,13 +13,22 @@ def apply_verification_delta(original, delta):
     if not delta:
         return copy.deepcopy(original)
     metadata=delta.get('metadata', {})
-    if (set(delta)-{'metadata','member_sha256'} or
+    if (set(delta)-{'metadata','member_sha256','added_members'} or
         {'mounts','member_sha256'} & set(metadata) or
         set(delta.get('member_sha256', {}))-set(original['member_sha256'])):
         raise ValueError('Sparse verification may only replace existing members')
     result=copy.deepcopy({k:original[k] for k in ('mounts','member_sha256')})
     result.update(metadata)
     result['member_sha256'].update(delta.get('member_sha256', {}))
+    for member,row in delta.get('added_members',{}).items():
+        import re
+        if (member in result['member_sha256'] or member.startswith('/') or '\\' in member or ':' in member
+            or any(p in ('','.','..') for p in member.split('/')) or set(row)!={'sha256','mount'}
+            or not re.fullmatch('[0-9a-f]{64}',row['sha256'])
+            or row['mount']!=('attrib' if member.startswith('attrib/') else 'data')):
+            raise ValueError('Invalid explicit member addition: '+member)
+        result['member_sha256'][member]=row['sha256']
+        result['mounts'][member]=row['mount']
     return result
 
 
@@ -66,11 +75,14 @@ def rebuild(args, reader):
         raise ValueError('Baseline archive differs')
     current = baseline
     replacements = {}
+    latest={row['member']:row['sha256'] for step in policy['steps'] for row in step['payloads']}
+    if any(expected['member_sha256'].get(k)!=v for k,v in latest.items()):
+        raise ValueError('Final delta winners differ from verification policy')
     for number, step in enumerate(policy['steps']):
         lines = []
         for i, row in enumerate(step['payloads']):
             data = reader.read(row['key'])
-            if sha(data) != row['sha256'] or expected['member_sha256'][row['member']] != row['sha256']:
+            if sha(data) != row['sha256']:
                 raise ValueError('Delta differs from final member policy')
             p = dest/f'payload-{number}-{i}.bin'
             p.write_bytes(data)

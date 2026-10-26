@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="584368357" List.ParentItemID="584368357">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="-260132349" List.ParentItemID="-260132349">
+					<group name="info">
+						<file name="flag_icon_override" value="persia\safavid_flag" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" overrideParent="True" List.ItemID="388551960" List.ParentItemID="388551960">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="1400733642">
+					<float name="num" value="1" />
+					<instance_reference name="type" value="ebps\persia\ps_unit_bombard_4_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<list name="unit_attachments" overrideParent="True">
+						<group name="unit" List.ItemID="-839958666">
+							<instance_reference name="type" value="ebps\dev\units\unit_siege_cart" overrideParent="True" />
+							<string name="marker" value="mkr_attach" overrideParent="True" />
+						</group>
+					</list>
+					<bool name="is_default_unit" value="True" />
+				</group>
+			</list>
+			<float name="squad_female_chance" value="0" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="-968903709" List.ParentItemID="-968903709">
+			<list name="requirement_table" comment="Requires Imperial age, Tech army, chemistry upgrade&#13;&#10;">
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="389830191" List.ParentItemID="389830191">
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\sultanate" List.ItemID="-365030769" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-787674146" List.ParentItemID="-787674146">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="851362141" List.ParentItemID="851362141">
+			<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482691" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_bombard_4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" overrideParent="True" List.ItemID="1592277183" List.ParentItemID="1592277183">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="145001843">
+						<float name="num" value="1" />
+						<instance_reference name="type" value="ebps\persia\ps_unit_bombard_4_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+						<list name="unit_attachments" overrideParent="True">
+							<group name="unit" List.ItemID="1062926593">
+								<instance_reference name="type" value="ebps\dev\units\unit_siege_cart" overrideParent="True" />
+								<string name="marker" value="mkr_attach" overrideParent="True" />
+							</group>
+						</list>
+						<bool name="is_default_unit" value="True" />
+					</group>
+				</list>
+				<float name="squad_female_chance" value="0" />
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="-1185221592" List.ParentItemID="-1185221592">
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="1647925238" List.ParentItemID="1647925238">
+						<instance_reference name="upgrade_name" value="upgrade\races\sultanate\research\upgrade_siege_chemistry_sul" overrideParent="True" />
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="378728744" List.ParentItemID="378728744">
+				<list name="squad_race_type_list" overrideParent="True">
+					<instance_reference name="squad_race_type" value="racebps\sultanate" List.ItemID="304492307" />
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="2040929918" List.ParentItemID="2040929918">
+				<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482691" />
+		<instance_reference name="parent_pbg" value="sbps\races\core\unit_bombard_4" />
+	</variant>
+</instance>

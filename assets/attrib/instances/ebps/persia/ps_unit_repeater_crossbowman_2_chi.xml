@@ -1,0 +1,311 @@
+<instance version="6" description="Chinese Castle Age Crossbowman" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1979743353" List.ParentItemID="-1979743353">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1380317016" List.ParentItemID="1380317016">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="-899790785">
+					<string name="state_tree" value="unit_action_apply\units\ranged_infantry_other" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="-1898820883">
+					<string name="state_tree" value="unit_action_apply\units\ranged_infantry_other\audio\repeater_crossbow\2" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="-1720105191">
+					<string name="state_tree" value="spirit_way_dynasty_unit_death_action\on_dynasty_unit_death" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="289202148" List.ParentItemID="289202148">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="food" value="30" overrideParent="True" />
+					<float name="wood" value="30" overrideParent="True" />
+					<float name="gold" value="20" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="15" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2097449255" List.ParentItemID="2097449255">
+			<float name="hitpoints" value="70" overrideParent="True" />
+			<bool name="regeneration_disabled" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="460727731" List.ParentItemID="460727731">
+			<group name="sight_package">
+				<float name="inner_radius" value="12" overrideParent="True" />
+				<float name="outer_radius" value="40" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="231008259" List.ParentItemID="231008259">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="1301201762" />
+				<enum name="unit_type" value="crossbowman" List.ItemID="-1214539318" />
+				<enum name="unit_type" value="human" List.ItemID="-1548088095" />
+				<enum name="unit_type" value="infantry" List.ItemID="-982985350" />
+				<enum name="unit_type" value="ranged" List.ItemID="-653754207" />
+				<enum name="unit_type" value="formational" List.ItemID="1593063495" />
+				<enum name="unit_type" value="dynasty_unit" List.ItemID="-1191730537" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="-1956836187" />
+				<enum name="unit_type" value="included_by_military_hotkeys" List.ItemID="1726328955" />
+				<enum name="unit_type" value="land_military" List.ItemID="1255449664" />
+				<enum name="unit_type" value="find_non_siege_land_military" List.ItemID="-974620457" />
+				<enum name="unit_type" value="ranged_infantry" List.ItemID="377294358" />
+				<enum name="unit_type" value="infantry_light" List.ItemID="-1590563241" />
+			</list>
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\chinese" List.ItemID="1440814724" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1381607687" List.ParentItemID="-1381607687">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="751434855" List.ParentItemID="751434855">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-1071856729" List.ParentItemID="-1071856729">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\chinese\ranged\weapon_repeater_crossbow_2_chi" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\chinese\weapons\wpn_range_repeater_crossbow_2_chi" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-485040964" List.ParentItemID="-485040964">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\chinese\ranged\weapon_repeater_crossbow_incendiary_chi" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\chinese\weapons\wpn_range_repeater_crossbow_2_chi" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="1094609832" List.ParentItemID="1094609832">
+			<list name="events" overrideParent="True">
+				<instance_reference name="statetree_event" value="statetree_event\statetree_event\statetree_event_on_wall_infantry" List.ItemID="803031727" />
+				<instance_reference name="statetree_event" value="statetree_event\statetree_event\statetree_event_on_great_wall_infantry_chi" overrideParent="True" List.ItemID="1095227795" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-1178936770" List.ParentItemID="-1178936770">
+			<list name="tier_group_list">
+				<list name="tier_group" overrideParent="True" List.ItemID="571750464">
+					<group name="tier" List.ItemID="-1985233842">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese\units\tier2_repeater_crossbowman_chi" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="-2099878792">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese\units\tier3_repeater_crossbowman_chi" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\chinese\units\upgrade_unit_repeater_crossbow_3_chi" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\persia\ps_unit_repeater_crossbowman_3_chi" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\chinese\unit_repeater_crossbowman_3_chi" overrideParent="True" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="188630067">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese\units\tier4_repeater_crossbowman_chi" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\chinese\units\upgrade_unit_repeater_crossbow_4_chi" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\persia\ps_unit_repeater_crossbowman_4_chi" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\chinese\unit_repeater_crossbowman_4_chi" overrideParent="True" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482543" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_crossbowman_3" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1658121368" List.ParentItemID="-1658121368">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="982774076" List.ParentItemID="982774076">
+				<list name="action_state_trees">
+					<group name="container" List.ItemID="-1452127984" List.ParentItemID="-1452127984">
+						<string name="state_tree" value="campaignMod_unit_action_apply\units\ranged_infantry_other" overrideParent="True" />
+					</group>
+					<group name="container" List.ItemID="377043874" List.ParentItemID="377043874">
+						<string name="state_tree" value="campaignMod_unit_action_apply\units\ranged_infantry_other\audio\repeater_crossbow\2" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-241612100" List.ParentItemID="-241612100">
+				<group name="time_cost">
+					<enum_table name="cost">
+						<float name="gold" value="80" overrideParent="True" />
+					</enum_table>
+					<float name="time_seconds" value="30" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="448524743" List.ParentItemID="448524743">
+				<float name="hitpoints" value="110" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="1873290494" List.ParentItemID="1873290494">
+				<group name="sight_package">
+					<float name="inner_radius" value="12" overrideParent="True" />
+					<float name="outer_radius" value="40" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-91122215" List.ParentItemID="-91122215">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="military" List.ItemID="-95014819" />
+					<enum name="unit_type" value="crossbowman" List.ItemID="-1701731738" />
+					<enum name="unit_type" value="human" List.ItemID="1947653634" />
+					<enum name="unit_type" value="infantry" List.ItemID="-85982222" />
+					<enum name="unit_type" value="ranged" List.ItemID="-486238444" />
+					<enum name="unit_type" value="formational" List.ItemID="148730228" />
+					<enum name="unit_type" value="dynasty_unit" List.ItemID="435285635" />
+					<enum name="unit_type" value="annihilation_condition" List.ItemID="865660567" />
+					<enum name="unit_type" value="included_by_military_hotkeys" List.ItemID="-107002825" />
+					<enum name="unit_type" value="land_military" List.ItemID="-1291517879" />
+					<enum name="unit_type" value="find_non_siege_land_military" List.ItemID="1694077269" />
+					<enum name="unit_type" value="ranged_infantry" List.ItemID="-1503890879" />
+					<enum name="unit_type" value="infantry_light" List.ItemID="1668861744" />
+				</list>
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\chinese" List.ItemID="1512378400" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1533566098" List.ParentItemID="-1533566098">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-1270003520" List.ParentItemID="-1270003520">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-143112236" List.ParentItemID="-143112236">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\chinese\ranged\weapon_repeater_crossbow_2_chi" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\chinese\weapons\wpn_range_repeater_crossbow_2_chi" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-1028271217" List.ParentItemID="-1028271217">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_crossbow_3_melee" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\chinese\weapons\wpn_melee_crossbow_3_melee_chi" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="2130432404" List.ParentItemID="2130432404">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\chinese\ranged\weapon_repeater_crossbow_incendiary_chi" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\chinese\weapons\wpn_range_repeater_crossbow_2_chi" overrideParent="True" />
+									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="1645427230" List.ParentItemID="1645427230">
+				<list name="tier_group_list">
+					<list name="tier_group" overrideParent="True" List.ItemID="1739969553">
+						<group name="tier" List.ItemID="-1495248861">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese\units\tier2_repeater_crossbowman_chi" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="746347530">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese\units\tier3_repeater_crossbowman_chi" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\chinese\units\upgrade_unit_repeater_crossbow_3_chi" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\persia\ps_unit_repeater_crossbowman_3_chi" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\chinese\unit_repeater_crossbowman_3_chi" overrideParent="True" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="-926750292">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese\units\tier4_repeater_crossbowman_chi" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\chinese\units\upgrade_unit_repeater_crossbow_4_chi" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\persia\ps_unit_repeater_crossbowman_4_chi" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\chinese\unit_repeater_crossbowman_4_chi" overrideParent="True" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482543" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_crossbowman_3" />
+	</variant>
+</instance>

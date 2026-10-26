@@ -42,7 +42,7 @@
 50,,,,,,Revealed
 51,,,,,,Revealed
 1001,,,Vietnam v2 foundation,,,Community Civilization Pack
-1002,,,Vietnam v2 foundation,,,"Combined game mode and Vietnamese tuning pack for Dark Age human starts. Select China in the lobby, then choose China or Vietnam at match start. English text."
+1002,,,Vietnam v2 foundation,,,Community Civilization Pack.\r\n- Select China: choose China or Vietnam.\r\n- Select Delhi: choose Delhi or Persia.\r\n- 30-second choice; timeout keeps your original civilization.\r\nCredits: hosein81 and chilly5.
 1003,,,Vietnam v2 foundation,,,Choose your civilization
 1004,,,Vietnam v2 foundation,,,China
 1005,,,Vietnam v2 foundation,,,Vietnam
@@ -50,7 +50,7 @@
 1007,,,Vietnam v2 foundation,,,30 seconds to choose. Default: China.
 1008,,,Vietnam v2 foundation,,,Vietnam v2 private blueprints are unavailable. Confirm the matching tuning pack is enabled. China remains active; Vietnam selection is unavailable.
 1009,,,Vietnam v2 foundation,,,"Play as Vietnam.\r\n+ Water Buffalo and Rice Paddies.\r\n+ Defensive Hideouts, traps and tunnels.\r\n+ Unique light infantry and gunpowder units."
-1010,,,Vietnam v2 foundation,,,Vietnam v2 mode initialized. No eligible Chinese human was detected; ordinary civilizations remain active.
+1010,,,Vietnam v2 foundation,,,Community Civilization Pack initialized. No eligible Chinese or Delhi human with the required tuning data was detected; ordinary civilizations remain active.
 2001,,,Mod name.,,,The Vietnamese - New Civilization
 2002,,,Mod description.,,,"THE VIETNAMESE\r\nDefense, light infantry and gunpowder.\r\n\r\n+ Water Buffalo build free Rice Paddies. One Villager gathers food while one Buffalo produces wood.\r\n+ Hideouts accept all four resources and can be fortified.\r\n+ Light infantry build free Bamboo Stake Traps.\r\n+ Lam Sơn Skirmishers counter ranged units; Heavy Arquebusiers fire penetrating shots.\r\n+ Nỏ thần fire scattered volleys of bolts.\r\n+ Town Center-rooted tunnels transport eligible land units between connected buildings.\r\n+ Unique landmarks provide free Buffalo, economic stealth and Royal Elephants.\r\n\r\nSelect China in the lobby, then choose Vietnam at match start.\r\nCredits: hosein81 and chilly5."
 2004,,,ui_name,,,Trap
@@ -535,3 +535,317 @@
 3051,,,,,,Stop supervising
 3052,,,,,,End this Buffalo's Rice Paddy supervision.
 3053,,,,,,Only Buffalo can construct Rice Paddies.
+1104,,,,,,Delhi Sultanate
+1105,,,,,,Persia
+1107,,,,,,30 seconds to choose. Default: Delhi Sultanate.
+1109,,,,,,"Play as Persia.\r\n+ Iranian dynasties and unique counter units.\r\n+ Divan supervision and economic reforms.\r\n+ Caravanserais, siege camels and Ali Qapu army batches."
+1110,,,,,,Civilization conversion was not applied. Your original civilization remains active. See warnings.log for the reason.
+1111,,,,,,"Civilization conversion failed after changes may have begun. The opening hold is released, but this army is not a validated Delhi or Persia state. Restart the test and retain warnings.log."
+5001,,,,,,The Persians - New Civilization
+5002,,,,,,"This mod adds the Persian civilization to the game. To play, enable Community Civilization Pack, select the Delhi Sultanate, then choose Persia at match start.\r\n\r\nSpecial thanks to ChillyEmpire for his design concept and assistance during development.\r\n\r\nContact us at:\r\nHossein - youtube.com/@aoe4kingdom\r\nChillyEmpire - youtube.com/@ChillyEmpire\r\n\r\n===================================\r\n\r\nTHE PERSIANS\r\n934-1629 CE\r\nIRANIAN DYNASTIES, DIVANS, TRADE\r\nDifficulty: 3 stars\r\n\r\nThe collapse of the Sassanian Empire saw Persia fall into disunity for over 700 years. Yet, in spite of its fractionalization, Persian culture, language, and martial traditions continued to foster and grow. In Age of Empires IV, the Persian civilization represents the various medieval dynasties, both native and foreign, that ruled over the region of “Ērān.” In-game, Persia sports a powerful economy, with an emphasis on trade and flexibility. In combat, this is THE “counter” civ, with units that are weaker at a base level, but much more effective against their counters.\r\n\r\nSTRENGTHS:\r\nStrong economy enabled by Divans that can supervise.\r\nFlexible - can easily switch army compositions.\r\nVery strong trade!\r\nZamburak Siege Camels!\r\n\r\nWEAKNESSES:\r\nCannot upgrade unit Veterancy seperately.\r\nUnits are weak in general-purpose roles.\r\nWeak in early Imperial due to expensive techs.\r\n\r\nUNIQUE UNITS:\r\nQizilbash: Fast moving Horse Archer that deals bonus damage to melee units.\r\nDaylamite: Cheap Man-at-arms with less armor, but deals bonus damage to light infantry.\r\nSavar: Slow, tanky Lancer with an anti-armor mace attack.\r\nAssassin*: Stealthed killer that first strikes for double damage. Can’t attack buildings but can Sabotage them.\r\nZamburak*: Siege Camelry. Functions like Mounted Ozutsu. Place it in the Archery Range just like the Grenadier.\r\n\r\nIRANIAN DYNASTIES:\r\nMedieval Iran was a melting pot of diverse cultures and transient empires. Each conquering dynasty brought their own veteran forces with them. This is represented in-game by the Dynasty system.\r\n\r\nUnlike other civilization’s units, Persian units do not research veterancy individually. Instead, all of your units are upgraded simultaneously as you upgrade your dynasty.\r\n\r\nBuyid (Regular) ➟ Khwarazmid (Hardened) ➟ Il-Khanid (Veteran) ➟ Safavid (Elite)\r\n\r\nMILITARY SPECIALIZATION:\r\nAll of Persia’s unique units have less base damage but more bonus damage vs. the units they counter. This makes them weaker as generalist units but much stronger as specialist units.\r\n\r\nINFLUENCE - DYNASTIC BUREAUCRACY:\r\nEach time you advance your Dynasty, you can build an additional Divan. Divans are special buildings that can supervise nearby structures (think Chinese Imperial Official, but in the form of a building). Choose either:\r\n\r\nDivan of Commerce:\r\nHouses unique economic technologies. Emits an aura range of 4 units.\r\nAbility: Commerce Vizier - Supervise a nearby economic drop-off, granting +20% bonus resources and improving research speed (does not affect Town Centers, Docks, or Markets).\r\n\r\nDivan of War:\r\nHouses unique military technologies. Emits an influence range of 4 units.\r\nAbility: War Vizier - Supervise a military production or technology building within the Divan’s influence, boosting its military production or research speed by +150%.\r\n\r\nUNIQUE BUILDING: CARAVANSERAI:\r\nUnique structure that massively buffs nearby Traders’ movement speed and armor. Unlocked in the Castle Age.\r\n\r\nTURKOMAN HORSE ARCHERS:\r\nIn the Feudal Age unlock the Qizilbash, a unique Horse Archer that counters melee units. In Age IV, research Turkoman Traditions to enable the Qizilbash to attack while moving, just like Mongol Mangudai.\r\n\r\nGARDEN BOUNTY:\r\nMills constructed near Berry Bushes create Orchards, increasing Food capacity by +100. Gather from Berry Bushes +30% faster, but cannot gather from Boar. Berry carry capacity increased +3.\r\n\r\n===================================\r\n\r\nKNOWN ISSUES:\r\n\r\nMajor:\r\nAI will act really janky if you try to get them to play as the Persians.\r\nSome Landmarks will still provide their bonus even when destroyed.\r\n\r\nMinor:\r\nWe cannot affect unit visuals, building visuals, voice lines, sound effects, music, or image assets, so all assets are recycled.\r\n"
+5003,,,,,,"Supervise a production With war divan to make it work %1%%% faster. Cannot be used on Landmarks, Town Centers, or Docks."
+5004,,,,,,"Supervise a drop-off building with an Economic Divan to make Resource drop-off buildings receive %2%%% more resources. Cannot be used on Landmarks, Town Centers, or Docks."
+5005,,,,,,Supervise a drop-off building with an Economic Divan to make Resource drop-off buildings receive %2%%% more resources.
+5006,,,,,,Divan of Commerce
+5007,,,,,,Divan of Commerce
+5008,,,,,,Divan of Commerce
+5009,,,,,,Divan of War
+5010,,,,,,Divan of War
+5011,,,,,,Divan of War
+5012,,,,,,You reached Maximum capacity
+5013,,,,,,You reached Maximum capacity
+5014,,,,,,You reached Maximum capacity
+5015,,,,,,You reached Maximum capacity
+5016,,,,,,You reached Maximum capacity
+5017,,,,,,You reached Maximum capacity
+5018,,,,,,Khwarazmian Dynasty
+5019,,,,,,Il-Khanid Dynasty
+5020,,,,,,Safavid Dynasty
+5021,,,,,,Tabar
+5022,,,,,,Tabar
+5023,,,,,,Tabar
+5024,,,,,,Tabar
+5025,,,,,,Tabar
+5026,,,,,,Tabar
+5027,,,,,,Tabar
+5028,,,,,,Tabar
+5029,,,,,,Tabar
+5030,,,,,,Tabar
+5031,,,,,,Shamshir
+5032,,,,,,Shamshir
+5033,,,,,,Shamshir
+5034,,,,,,Shamshir
+5035,,,,,,Shamshir
+5036,,,,,,Shamshir
+5037,,,,,,Shamshir
+5038,,,,,,Shamshir
+5039,,,,,,Shamshir
+5040,,,,,,Shamshir
+5041,,,,,,Kamandaran
+5042,,,,,,Shamshir
+5043,,,,,,Parthian shot
+5044,,,,,,Parthian shot
+5045,,,,,,Parthian shot
+5046,,,,,,Dynastic Reform
+5047,,,,,,Caravanserai
+5048,,,,,,Caravanserai
+5049,,,,,,Caravanserai
+5050,,,,,,Crop Sharing
+5051,,,,,,Mathematics
+5052,,,,,,Mathematics
+5053,,,,,,The Grand Caravanserai
+5054,,,,,,The Grand Caravanserai
+5055,,,,,,"Functions as a Caravanserai (has 5 garrison slots, and provides +30% movement speed and +8 armor to nearby Traders).\r\nAll Traders are now 33% cheaper.\r\n"
+5056,,,,,,"Functions as a Caravanserai (has 5 garrison slots, and provides +30% movement speed and +8 armor to nearby Traders).\r\nAll Traders are now 33% cheaper.\r\n"
+5057,,,,,,Gundeshapur
+5058,,,,,,Gundeshapur
+5059,,,,,,"Functions as an additional Divan of War.\r\nUnlocks Daylamites in the Feudal Age.\r\nWhile functioning, permits Il-Khanid research in Feudal after the preceding dynasty."
+5060,,,,,,"Functions as an additional Divan of War.\r\nUnlocks Daylamites in the Feudal Age.\r\nWhile functioning, permits Il-Khanid research in Feudal after the preceding dynasty."
+5061,,,,,,Samarkand Bazaar
+5062,,,,,,Samarkand Bazaar
+5063,,,,,,Assassin Brotherhood
+5064,,,,,,Assassin Brotherhood
+5065,,,,,,Functions as an extra Commerce Ministry with the ability to oversee TownFunctions as an extra Commerce Ministry with the ability to oversee Town
+5066,,,,,,Functions as an extra Commerce Ministry with the ability to oversee TownFunctions as an extra Commerce Ministry with the ability to oversee Town
+5067,,,,,,"Functions as an additional Divan of Commerce with the added ability to oversee Town Centers, Markets, or Docks as well.\r\n This Landmark is 10% more expensive."
+5068,,,,,,"Functions as an additional Divan of Commerce with the added ability to oversee Town Centers, Markets, or Docks as well.\r\n This Landmark is 10% more expensive."
+5069,,,,,,This landmark has two abilities:\r\nSpy Network - This landmark gains +50 vision radius for 2 minutes (3 minute cooldown).\r\nAssassination Contract - Pay 100 gold to spawn an Assassin anywhere you have vision (1 minute cooldown)
+5070,,,,,,This landmark has two abilities:\r\nSpy Network - This landmark gains +50 vision radius for 2 minutes (3 minute cooldown).\r\nAssassination Contract - Pay 100 gold to spawn an Assassin anywhere you have vision (1 minute cooldown)
+5071,,,,,,Ali Qapu Palace
+5072,,,,,,Ali Qapu Palace
+5073,,,,,,Ali Qapu Palace
+5074,,,,,,Shah Abbas Siege Factory
+5075,,,,,,Shah Abbas Siege Factory
+5076,,,,,,Shah Abbas Siege Factory
+5077,,,,,,Trains Siege units that only cost gold with a 25% discount.\r\nCan train the unique Zamburak Siege Camel.
+5078,,,,,,Trains Siege units that only cost gold with a 25% discount.\r\nCan train the unique Zamburak Siege Camel.
+5079,,,,,,Trains Siege units that only cost gold with a 25% discount.\r\nCan train the unique Zamburak Siege Camel.
+5080,,,,,,"Trains batches of units at a discount.\r\nArmy of Kerman: 3 Savar, 2 archer\r\nArmy of Gilan: 3 Daylamites, 2 Crossbow.\r\nArmy of Khorasan: 3 Qizilbash, 2 Horsemen. \r\nArmy of Isfahan: 3 Handcannoneer , 2 Spearman.\r\n"
+5081,,,,,,"Trains batches of units at a discount.\r\nArmy of Kerman: 3 Savar, 2 archer\r\nArmy of Gilan: 3 Daylamites, 2 Crossbow.\r\nArmy of Khorasan: 3 Qizilbash, 2 Horsemen. \r\nArmy of Isfahan: 3 Handcannoneer , 2 Spearman.\r\n"
+5082,,,,,,"Trains batches of units at a discount.\r\nArmy of Kerman: 3 Savar, 2 archer\r\nArmy of Gilan: 3 Daylamites, 2 Crossbow.\r\nArmy of Khorasan: 3 Qizilbash, 2 Horsemen. \r\nArmy of Isfahan: 3 Handcannoneer , 2 Spearman.\r\n"
+5083,,,,,,"Can supervise a nearby economic drop-off, boosting research speed and granting +20% bonus resources.\r\n Houses unique Persian economic technologies.\r\n(You can build one new Divan with each Dynasty)"
+5084,,,,,,"Can supervise a nearby economic drop-off, boosting research speed and granting +20% bonus resources.\r\n Houses unique Persian economic technologies.\r\n(You can build one new Divan with each Dynasty)"
+5085,,,,,,"Can supervise a nearby economic drop-off, boosting research speed and granting +20% bonus resources.\r\n Houses unique Persian economic technologies.\r\n(You can build one new Divan with each Dynasty)"
+5086,,,,,,"Can supervise a nearby military production or technology building, boosting production speed by +150%.\r\n Houses Persia’s Dynastic upgrades, \r\nand other unique Persian military technologies. (You can build one new Divan with each Dynasty)"
+5087,,,,,,"Can supervise a nearby military production or technology building, boosting production speed by +150%.\r\n Houses Persia’s Dynastic upgrades, \r\nand other unique Persian military technologies. (You can build one new Divan with each Dynasty)"
+5088,,,,,,"Can supervise a nearby military production or technology building, boosting production speed by +150%.\r\n Houses Persia’s Dynastic upgrades, \r\nand other unique Persian military technologies. (You can build one new Divan with each Dynasty)"
+5089,,,,,,Tanky structure that provides +30% movement speed and +8 armor to nearby Traders as well as 5 garrison slot
+5090,,,,,,Tanky structure that provides +30% movement speed and +8 armor to nearby Traders as well as 5 garrison slot
+5091,,,,,,Tanky structure that provides +30% movement speed and +8 armor to nearby Traders as well as 5 garrison slot
+5092,,,,,,"Siege Ranged Cavalry, Camel"
+5093,,,,,,"Siege Ranged Cavalry, Camel"
+5094,,,,,,"Siege Ranged Cavalry, Camel"
+5095,,,,,,Siege Camelry. Functions like a Mounted Ozutsu.\r\n
+5096,,,,,,Siege Camelry. Functions like a Mounted Ozutsu.\r\n
+5097,,,,,,Siege Camelry. Functions like a Mounted Ozutsu.\r\n
+5098,,,,,,Zamburak
+5099,,,,,,Zamburak
+5100,,,,,,Zamburak
+5101,,,,,,Army of Kerman
+5102,,,,,,Army of Kerman
+5103,,,,,,Army of Kerman
+5104,,,,,,Army of Gilan
+5105,,,,,,Army of Gilan
+5106,,,,,,Army of Gilan
+5107,,,,,,Army of Khorasan
+5108,,,,,,Army of Khorasan
+5109,,,,,,Army of Khorasan
+5110,,,,,,Army of Isfahan
+5111,,,,,,Army of Isfahan
+5112,,,,,,Army of Isfahan
+5113,,,,,,Produces an army including  3 Hand Cannoneer and 2 spear.
+5114,,,,,,Produces an army including  3 Hand Cannoneer and 2 spear.
+5115,,,,,,Produces an army including  3 Hand Cannoneer and 2 spear.
+5116,,,,,,"Produces an army including  3 Qizilbash, 2 Horsemen."
+5117,,,,,,"Produces an army including  3 Qizilbash, 2 Horsemen."
+5118,,,,,,"Produces an army including  3 Qizilbash, 2 Horsemen."
+5119,,,,,,"Produces an army including  3 Daylamites, 2 Crossbow."
+5120,,,,,,"Produces an army including  3 Daylamites, 2 Crossbow."
+5121,,,,,,"Produces an army including  3 Daylamites, 2 Crossbow."
+5122,,,,,,"Produces an army including  3 Savar, 2 Archer."
+5123,,,,,,"Produces an army including  3 Savar, 2 Archer."
+5124,,,,,,"Produces an army including  3 Savar, 2 Archer."
+5125,,,,,,Qizilbash
+5126,,,,,,Qizilbash
+5127,,,,,,Veteran Qizilbash
+5128,,,,,,Veteran Qizilbash
+5129,,,,,,Elite Qizilbash
+5130,,,,,,Elite Qizilbash
+5131,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5132,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5133,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5134,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5135,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5136,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5137,,,,,,Daylamite
+5138,,,,,,Daylamite
+5139,,,,,,Daylamite
+5140,,,,,,Daylamite
+5141,,,,,,Daylamite
+5142,,,,,,Daylamite
+5143,,,,,,Veteran Daylamite
+5144,,,,,,Veteran Daylamite
+5145,,,,,,Veteran Daylamite
+5146,,,,,,Veteran Daylamite
+5147,,,,,,Elite Daylamite
+5148,,,,,,Elite Daylamite
+5149,,,,,,Elite Daylamite
+5150,,,,,,Elite Daylamite
+5151,,,,,,"Tough and cheap infantry with good damage vs light infantry.\r\n+ High armor\r\n- Slow movement\r\n- Countered by Knights, Lancers, and Crossbowmen"
+5152,,,,,,"Tough and cheap infantry with good damage vs light infantry.\r\n+ High armor\r\n- Slow movement\r\n- Countered by Knights, Lancers, and Crossbowmen"
+5153,,,,,,"Tough and cheap infantry with good damage vs light infantry.\r\n+ High armor\r\n- Slow movement\r\n- Countered by Knights, Lancers, and Crossbowmen"
+5154,,,,,,"Tough and cheap infantry with good damage vs light infantry.\r\n+ High armor\r\n- Slow movement\r\n- Countered by Knights, Lancers, and Crossbowmen"
+5155,,,,,,"Tough and cheap infantry with good damage vs light infantry.\r\n+ High armor\r\n- Slow movement\r\n- Countered by Knights, Lancers, and Crossbowmen"
+5156,,,,,,"Tough and cheap infantry with good damage vs light infantry.\r\n+ High armor\r\n- Slow movement\r\n- Countered by Knights, Lancers, and Crossbowmen"
+5157,,,,,,"Tough and cheap infantry with good damage vs light infantry.\r\n+ High armor\r\n- Slow movement\r\n- Countered by Knights, Lancers, and Crossbowmen"
+5158,,,,,,Savar
+5159,,,,,,Savar
+5160,,,,,,Elite Savar
+5161,,,,,,Elite Savar
+5162,,,,,,Expensive cavalry with high damage and melee armor. Effective against Heavy units.\r\n+ Heavy armor\r\n+ Strong in melee combat\r\n- Countered by Spearmen and Crossbowmen
+5163,,,,,,Expensive cavalry with high damage and melee armor. Effective against Heavy units.\r\n+ Heavy armor\r\n+ Strong in melee combat\r\n- Countered by Spearmen and Crossbowmen
+5164,,,,,,Expensive cavalry with high damage and melee armor. Effective against Heavy units.\r\n+ Heavy armor\r\n+ Strong in melee combat\r\n- Countered by Spearmen and Crossbowmen
+5165,,,,,,Expensive cavalry with high damage and melee armor. Effective against Heavy units.\r\n+ Heavy armor\r\n+ Strong in melee combat\r\n- Countered by Spearmen and Crossbowmen
+5166,,,,,,Tofangchi
+5167,,,,,,Tofangchi
+5168,,,,,,Age IV -  Military Landmark
+5169,,,,,,Age II - Military Landmark
+5170,,,,,,Age IV -  Military Landmark
+5171,,,,,,Age IV -  Military Landmark
+5172,,,,,,Age II -  Military Landmark
+5173,,,,,,Age II -  Military Landmark
+5174,,,,,,Age II -  Economic Landmark
+5175,,,,,,Age II -  Economic Landmark
+5176,,,,,,Age III -  Economic Landmark
+5177,,,,,,Age III -  Economic Landmark
+5178,,,,,,Age III -  Ability Landmark
+5179,,,,,,Age III -  Ability Landmark
+5180,,,,,, Farms are 33% cheaper
+5181,,,,,,Economic Upgrade
+5182,,,,,,Economic Upgrade
+5183,,,,,,Economic Upgrade
+5184,,,,,,Economic Upgrade
+5185,,,,,,Economic Upgrade
+5186,,,,,,Economic Upgrade
+5187,,,,,,Economic Upgrade
+5188,,,,,,Improves Villager gather rate based on the dynasty you’re in at the time of researching this technology. (Buyid +4%)\r\n\r\n
+5189,,,,,,Improves Villager gather rate based on the dynasty you’re in at the time of researching this technology. (Khwarazmid +7%)
+5190,,,,,,Improves Villager gather rate based on the dynasty you’re in at the time of researching this technology. (Il-Khanid +12%)
+5191,,,,,,Improves Villager gather rate based on the dynasty you’re in at the time of researching this technology. (Safavid +19%)
+5192,,,,,, All economic technologies are 30% cheaper.
+5193,,,,,, All economic technologies are 30% cheaper.
+5194,,,,,,Cavalry Technology
+5195,,,,,,Cavalry Technology
+5196,,,,,,Cavalry Technology
+5197,,,,,,Qizilbash can now attack while moving .
+5198,,,,,,Qizilbash can now attack while moving .
+5199,,,,,,Qizilbash can now attack while moving .
+5200,,,,,,Increases Daylamite attack speed by 50%.
+5201,,,,,,Archer Technology
+5202,,,,,,Archers and Qizilbash cost 30% less wood.
+5203,,,,,,Man-at-arms Technology
+5204,,,,,,Economic Building
+5205,,,,,,Economic Building
+5206,,,,,,Economic Building
+5207,,,,,,Economic Building
+5208,,,,,,Economic Building
+5209,,,,,,Economic Building
+5210,,,,,,Military Building
+5211,,,,,,Military Building
+5212,,,,,,Military Building
+5213,,,,,,Commerce Vizier
+5214,,,,,,Commerce Vizier
+5215,,,,,,War Vizier
+5216,,,,,,War Vizier
+5217,,,,,,Dynasty Upgrade
+5218,,,,,,Dynasty Upgrade
+5219,,,,,,Dynasty Upgrade
+5220,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5221,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5222,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5223,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5224,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5225,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5226,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5227,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5228,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5229,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5230,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5231,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5232,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5233,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5234,,,,,,Divan of Commerce Aura
+5235,,,,,,Economic building in this range can be overseer
+5236,,,,,,Shahanshah
+5237,,,,,,Increase the range of Divans of Commerce by +2.
+5238,,,,,,Divan of Commerce range
+5239,,,,,,Divan of Commerce range
+5240,,,,,,Range of Divan of Commerce
+5241,,,,,,Range of Divan of Commerce
+5242,,,,,,Imperial Domain
+5243,,,,,,There is no longer a limit on the number of Divans you can build.
+5244,,,,,,The Shah Masjid
+5245,,,,,,The Shah Masjid
+5246,,,,,,Tabar
+5247,,,,,,Tabar
+5248,,,,,,Tabar
+5249,,,,,,Tabar
+5250,,,,,,Tabar
+5251,,,,,,Tabar
+5252,,,,,,Tabar
+5253,,,,,,Tabar
+5254,,,,,,Tabar
+5255,,,,,,Tabar
+5256,,,,,,Shamshir
+5257,,,,,,Shamshir
+5258,,,,,,Shamshir
+5259,,,,,,Shamshir
+5260,,,,,,Shamshir
+5261,,,,,,Shamshir
+5262,,,,,,Shamshir
+5263,,,,,,Shamshir
+5264,,,,,,Shamshir
+5265,,,,,,Shamshir
+5266,,,,,,"Advance to the Khwarazmian Dynasty, upgrading your units to the Hardened level"
+5267,,,,,,"Advance to the Il-Khanid Dynasty, upgrading your units to the Veteran level."
+5268,,,,,,"Advance to the Safavid Dynasty, upgrading your units to the Elite level."
+5269,,,,,,Hashashin
+5270,,,,,,Hashashin
+5271,,,,,,Hashashin Contract
+5272,,,,,,Hashashin Contract
+5273,,,,,,Pay 100 gold to spawn an assassin anywhere you have vision
+5274,,,,,,Pay 100 gold to spawn an assassin anywhere you have vision
+5275,,,,,,Spy network
+5276,,,,,,Spy network
+5277,,,,,,Spy network
+5278,,,,,,This landmark gains +50 vision radius for 2 minutes 
+5279,,,,,,This landmark gains +50 vision radius for 2 minutes 
+5280,,,,,,This landmark gains +50 vision radius for 2 minutes 
+5281,,,,,,Handcannoneers gain +10% attack speed and 10% movement speed.
+5282,,,,,,Tofangchi 
+5283,,,,,,HandCannoneer Upgrade
+5284,,,,,,Imam
+5285,,,,,,Imam
+5286,,,,,,Assassination Training
+5287,,,,,,Assassination Training
+5288,,,,,,Activate to increase weapon range by +%1% tile and gain +%2% ranged armor.\r\n\r\nRemains active for %3% seconds or until the Zamburak moves away.
+5289,,,,,,Activate to increase weapon range by +%1% tile and gain +%2% ranged armor.\r\n\r\nRemains active for %3% seconds or until the Zamburak moves away.
+5290,,,,,,Activate to increase weapon range by +%1% tile and gain +%2% ranged armor.\r\n\r\nRemains active for %3% seconds or until the Zamburak moves away.
+5291,,,,,,"Spies gain First Strike if they attack from stealth, do 50 damage instead of 25."
+5292,,,,,,"Spies gain First Strike if they attack from stealth, do 50 damage instead of 25."
+5293,,,,,,Naval Technology
+5294,,,,,,Dhows gain 10% bonus damage vs Incendiary Ships.\r\n\r\nBaghlahs gain 10% bonus damage vs Arrow Ships.
+5295,,,,,,Crew Specialization
+5296,,,,,,Tofang
+5297,,,,,,Tofang
+5298,,,,,,"Qizilbash: Fast moving Horse Archer that deals bonus damage to melee units.\r\n\r\nDaylamite: Cheap Man-at-arms with less armor, but deals bonus damage to light infantry.\r\n\r\nSavar: Slow, tanky Lancer with an anti-armor mace attack.\r\n\r\nAssassin*: Stealthed killer that first strikes for double damage. Can’t attack buildings but can Sabotage them.\r\n\r\nZamburak*: Siege Camelry. Functions like Mounted Ozutsu. Place it in the Archery Range just like the Grenadier."
+5299,,,,,,"Each time you advance your Dynasty, you can build an additional Divan. Divans are special buildings that can supervise nearby structures (think Chinese Imperial Official, but in the form of a building). Choose either:"
+5300,,,,,,IRANIAN DYNASTIES
+5301,,,,,,"Medieval Iran was a melting pot of diverse cultures and transient empires. Each conquering dynasty brought their own veteran forces with them. This is represented in-game by the Dynasty system.\r\n\r\nUnlike other civilization’s units, Persian units do not research veterancy individually. Instead, all of your units are upgraded simultaneously as you upgrade your dynasty.\r\n\r\nBuyid (Regular) ➟ Khwarazmid (Hardened) ➟ Il-Khanid (Veteran) ➟ Safavid (Elite)"
+5302,,,,,,STRENGTHS:\r\nStrong economy enabled by Divans that can supervise.\r\nFlexible - can easily switch army compositions.\r\nVery strong trade!\r\nZamburak Siege Camels!\r\n\r\nWEAKNESSES:\r\nCannot upgrade unit Veterancy seperately.\r\nUnits are weak in general-purpose roles.\r\nWeak in early Imperial due to expensive techs.
+5303,,,,,,Divan of Commerce
+5304,,,,,,"Houses unique economic technologies. Emits an aura range of 4 units.\r\nAbility: Commerce Vizier - Supervise a nearby economic drop-off, granting +20% bonus resources and improving research speed (does not affect Town Centers, Docks, or Markets).\r\n"
+5305,,,,,,Divan of War
+5306,,,,,,"Houses unique military technologies. Emits an influence range of 4 units.\r\nAbility: War Vizier - Supervise a military production or technology building within the Divan’s influence, boosting its military production or research speed by +150%."
+5307,,,,,,CARAVANSERAI
+5308,,,,,,Unique structure that massively buffs nearby Traders’ movement speed and armor. Unlocked in the Castle Age.

@@ -1,0 +1,118 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-638368952" List.ParentItemID="-638368952">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_large_lateen" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-948361275" List.ParentItemID="-948361275">
+			<group name="time_cost">
+				<float name="time_seconds" value="36" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-791983380" List.ParentItemID="-791983380">
+			<group name="sight_package">
+				<float name="inner_radius" value="24" overrideParent="True" />
+				<float name="outer_radius" value="48" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1481453663" List.ParentItemID="-1481453663">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="1637745606" />
+				<enum name="unit_type" value="ship" List.ItemID="-1273725958" />
+				<enum name="unit_type" value="naval_broadside" List.ItemID="1974069925" />
+				<enum name="unit_type" value="naval_warship" List.ItemID="836756684" />
+				<enum name="unit_type" value="naval_unit" List.ItemID="-278656445" />
+				<enum name="unit_type" value="ranged" List.ItemID="-1278207068" />
+				<enum name="unit_type" value="siegeable" List.ItemID="331099526" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="326407569" />
+				<enum name="unit_type" value="gunpowder" List.ItemID="1115788503" />
+				<enum name="unit_type" value="naval_eastern" List.ItemID="1223716319" />
+				<enum name="unit_type" value="naval_military" overrideParent="True" List.ItemID="-616985514" List.ParentItemID="-2059902898" />
+				<enum name="unit_type" value="massive" List.ItemID="-2031142994" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1092792524" List.ParentItemID="1092792524">
+			<list name="hardpoints">
+				<group name="hardpoint" comment="AI Left 1" List.ItemID="1847161327" List.ParentItemID="1847161327">
+				</group>
+				<group name="hardpoint" comment="Left 4" List.ItemID="822147706" List.ParentItemID="822147706">
+				</group>
+				<group name="hardpoint" comment="Left 5" List.ItemID="-1159284020" List.ParentItemID="-1159284020">
+				</group>
+				<group name="hardpoint" comment="AI Right 1" List.ItemID="1848079065" List.ParentItemID="1848079065">
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1265230428" List.ParentItemID="-1265230428">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="86044439" List.ParentItemID="86044439">
+					<group name="tier" List.ItemID="1888019086" List.ParentItemID="1888019086">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier4_naval_combat_warship_sul" overrideParent="True" />
+					</group>
+					<group name="tier" List.ItemID="-973194384" List.ListAction="Append">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier4_naval_combat_warship_sul" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\persia\ps_persia_ship_upgrade" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\persia\ps_unit_naval_combat_warship_4_sul_upgraded" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\persia\ps_unit_naval_combat_warship_4_sul_upgraded" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482595" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_warship_4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-718687731" List.ParentItemID="-718687731">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_large_lateen" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1108099770" List.ParentItemID="1108099770">
+				<group name="time_cost">
+					<float name="time_seconds" value="36" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1562115440" List.ParentItemID="1562115440">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="1473829252" List.ParentItemID="1473829252">
+						<group name="tier" List.ItemID="1040271146" List.ParentItemID="1040271146">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier4_naval_combat_warship_sul" overrideParent="True" />
+						</group>
+						<group name="tier" List.ItemID="-666030972" List.ListAction="Append">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier4_naval_combat_warship_sul" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\persia\ps_persia_ship_upgrade" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\persia\ps_unit_naval_combat_warship_4_sul_upgraded" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\persia\ps_unit_naval_combat_warship_4_sul_upgraded" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482595" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_warship_4" />
+	</variant>
+</instance>

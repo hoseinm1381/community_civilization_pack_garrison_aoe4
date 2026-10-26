@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-2056667985" List.ParentItemID="-2056667985">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="622883571" List.ParentItemID="622883571">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="1000566639" List.ParentItemID="1000566639">
+					<group name="info">
+						<file name="flag_icon_override" value="persia\safavid_flag" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" overrideParent="True" List.ItemID="-1759721708" List.ParentItemID="-1759721708">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="-500545055">
+					<float name="num" value="1" />
+					<instance_reference name="type" value="ebps\persia\ps_unit_trebuchet_4_tr_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<list name="unit_attachments" overrideParent="True">
+						<group name="unit" List.ItemID="-1234601302">
+							<instance_reference name="type" value="ebps\dev\units\unit_siege_cart" overrideParent="True" />
+							<string name="marker" value="mkr_attach" overrideParent="True" />
+						</group>
+					</list>
+					<bool name="is_default_unit" value="True" />
+				</group>
+			</list>
+			<float name="squad_female_chance" value="0" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="1437820658" List.ParentItemID="1437820658">
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\sultanate" List.ItemID="-761487146" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="2027629958" List.ParentItemID="2027629958">
+			<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482723" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_trebuchet_4_traction" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" overrideParent="True" List.ItemID="-998566909" List.ParentItemID="-998566909">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="471910150">
+						<float name="num" value="1" />
+						<instance_reference name="type" value="ebps\persia\ps_unit_trebuchet_4_tr_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+						<list name="unit_attachments" overrideParent="True">
+							<group name="unit" List.ItemID="2098725406">
+								<instance_reference name="type" value="ebps\dev\units\unit_siege_cart" overrideParent="True" />
+								<string name="marker" value="mkr_attach" overrideParent="True" />
+							</group>
+						</list>
+						<bool name="is_default_unit" value="True" />
+					</group>
+				</list>
+				<float name="squad_female_chance" value="0" />
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="520028763" List.ParentItemID="520028763">
+				<list name="squad_race_type_list" overrideParent="True">
+					<instance_reference name="squad_race_type" value="racebps\sultanate" List.ItemID="934581125" />
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="-235456858" List.ParentItemID="-235456858">
+				<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482723" />
+		<instance_reference name="parent_pbg" value="sbps\races\core\unit_trebuchet_4_traction" />
+	</variant>
+</instance>

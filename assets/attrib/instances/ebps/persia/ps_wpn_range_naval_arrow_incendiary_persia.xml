@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\weapon_ext" List.ItemID="-1842397396" List.ParentItemID="-1842397396">
+			<instance_reference name="weapon" value="weapon\persia\ps_weapon_naval_arrow_ship_incendiary_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482651" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\weapons\ranged\wpn_ranged_naval_arrow" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\weapon_ext" List.ItemID="394560988" List.ParentItemID="394560988">
+				<instance_reference name="weapon" value="weapon\persia\ps_weapon_naval_arrow_ship_incendiary_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="-950104583" List.ListAction="Append">
+				<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_weapon_ranged_naval" />
+				<bool name="use_root_motion" value="False" />
+				<bool name="start_suspended" value="False" />
+				<enum name="entity_statetree_sort_tag" value="weapon_default" />
+				<float name="speed_scale_threshold" value="100" />
+				<string name="default_animation" value="" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="-919886719" List.ListAction="Append">
+				<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_weapon_ai_naval" />
+				<bool name="start_suspended" value="False" />
+				<state_tree_node name="fallback_default_move_command_conditions" value="" />
+				<list name="events">
+				</list>
+				<enum name="stop_on_death" value="Default" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="1685173028" List.ListAction="Append">
+				<bool name="allow_weapon_target_scanning" value="False" />
+				<int name="history_size" value="2" />
+				<bool name="allow_entity_scan_close_enemies" value="False" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\hit_react_tree_ext" List.ItemID="-1742452424" List.ListAction="Append">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482651" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\weapons\wpn_ebps_template" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\weapon_ext" List.ItemID="-1842397396" List.ParentItemID="-1842397396">
+				<instance_reference name="weapon" value="weapon\persia\ps_weapon_naval_arrow_ship_incendiary_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482651" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\weapons\ranged\wpn_ranged_naval_arrow" />
+	</variant>
+</instance>

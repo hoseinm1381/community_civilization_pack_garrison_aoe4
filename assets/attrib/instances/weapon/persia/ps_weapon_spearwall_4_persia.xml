@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="damage">
+			<float name="max" value="8.8" overrideParent="True" />
+			<float name="min" value="8.8" overrideParent="True" />
+		</group>
+		<string name="fx_munition_name" value="common_spear_wall" overrideParent="True" />
+		<list name="target_type_table">
+			<group name="target_unit_type_multipliers" List.ItemID="-293834029" List.ParentItemID="-293834029">
+				<float name="base_damage_modifier" value="37.4" overrideParent="True" />
+			</group>
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="2147482789" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_spearwall_3" />
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<string name="fx_munition_name" value="common_spear_wall" overrideParent="True" />
+			<group name="damage">
+				<float name="max" value="8.8" overrideParent="True" />
+				<float name="min" value="8.8" overrideParent="True" />
+			</group>
+			<list name="target_type_table">
+				<group name="target_unit_type_multipliers" List.ItemID="270547425" List.ParentItemID="270547425">
+					<float name="base_damage_modifier" value="37.4" overrideParent="True" />
+				</group>
+			</list>
+		</group>
+		<uniqueid name="pbgid" value="2147482789" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_spearwall_3" />
+	</variant>
+	<variant name="xp3">
+		<group name="weapon_bag">
+			<group name="damage">
+				<float name="max" value="8.8" overrideParent="True" />
+				<float name="min" value="8.8" overrideParent="True" />
+			</group>
+			<string name="fx_munition_name" value="common_spear_wall" overrideParent="True" />
+			<list name="target_type_table">
+				<group name="target_unit_type_multipliers" List.ItemID="-293834029" List.ParentItemID="-293834029">
+					<float name="base_damage_modifier" value="37.4" overrideParent="True" />
+				</group>
+			</list>
+		</group>
+		<uniqueid name="pbgid" value="2147482789" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_spearwall_3" />
+	</variant>
+</instance>

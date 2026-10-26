@@ -1,0 +1,2061 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-87256776" List.ParentItemID="-87256776">
+			<file name="icon_name" value="persia\wardivan2" overrideParent="True" />
+			<bool name="use_construction_range_on_selection" value="True" overrideParent="True" />
+			<bool name="is_unique_to_race" value="True" overrideParent="True" />
+			<template_reference name="help_text_formatter" value="" overrideParent="True">
+			</template_reference>
+			<string name="telemetry_name" value="Hunting Cabin" overrideParent="True" />
+			<string name="selection_group" value="Mil_divan" overrideParent="True" />
+			<locstring name="screen_name" value="5009" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+			<locstring name="help_text" value="5086" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+			<locstring name="extra_text" value="5210" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1131493931" List.ParentItemID="-1131493931">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="building" List.ItemID="1355114552" />
+				<enum name="unit_type" value="siegeable" List.ItemID="-273441717" />
+				<enum name="unit_type" value="economy_building" List.ItemID="-1492168496" />
+				<enum name="unit_type" value="emits_herding_interest" List.ItemID="1346722230" />
+				<enum name="unit_type" value="audio_production_landmark" List.ItemID="-83109537" />
+			</list>
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\sultanate" overrideParent="True" List.ItemID="-1540292943" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-349572381" List.ParentItemID="-349572381">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\buildings\building_econ_market" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<enum name="subclass_type" value="Generic" overrideParent="True" />
+			<float name="animator_scale" value="88" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-589959009" List.ParentItemID="-589959009">
+			<state_tree_node name="death_action_tree" value="building_death_actions\buildings\hunting_cabin_death_actions" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" overrideParent="True" List.ItemID="111767974" List.ParentItemID="111767974">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" overrideParent="True" List.ItemID="-1718073761">
+					<string name="state_tree" value="building_action_apply\buildings\blacksmith_action_apply" overrideParent="True" />
+				</group>
+				<group name="container" List.ItemID="-824648493">
+					<string name="state_tree" value="influence_invalid_sul" overrideParent="True" />
+				</group>
+			</list>
+			<bool name="reset_on_load" value="True" />
+			<list name="physical_state_trees">
+			</list>
+			<list name="deferred_action_state_trees">
+			</list>
+			<list name="action_state_trees_run_once">
+			</list>
+			<list name="deferred_action_state_trees_run_once">
+			</list>
+			<list name="physical_state_trees_run_once">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-307639384" List.ParentItemID="-307639384">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="50" overrideParent="True" />
+					<float name="gold" value="50" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="20" overrideParent="True" />
+				<int name="time_turns" value="0" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="54229194" List.ParentItemID="54229194">
+			<instance_reference name="ui_range" value="ui_reticule\aura_ring" overrideParent="True" />
+			<float name="ui_range_radius" value="31" overrideParent="True" />
+			<group name="placement_requirements">
+				<list name="placement_requirement_options">
+					<template_reference name="placement_requirement_option" value="options\placement\requirements\placement_requirement_pass_types_option" List.ItemID="1382891795" List.ParentItemID="1382891795">
+						<list name="forbidden_pass_types" overrideParent="True">
+						</list>
+					</template_reference>
+				</list>
+			</group>
+			<group name="on_construction_complete_state_tree_refs" overrideParent="True">
+				<string name="on_construction_complete_entity_state_tree_ref" value="" overrideParent="True" />
+				<string name="while_construction_complete_entity_state_tree_ref" value="building_construction_complete\buildings\blacksmith_construction_complete" overrideParent="True" />
+				<string name="on_construction_complete_physical_state_tree_ref" value="" />
+				<string name="on_construction_complete_squad_state_tree_ref" value="" />
+				<string name="on_construction_plan_complete_global_state_tree_ref" value="" />
+				<string name="while_construction_complete_physical_state_tree_ref" value="" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1680869093" List.ParentItemID="1680869093">
+			<list name="requirement_table" overrideParent="True">
+				<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="1783406829">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="5015" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					<list name="requirements">
+						<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="1141966026">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements" overrideParent="True">
+								<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="225821469">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="is_present" value="True" />
+									<int name="max_completed" value="100" />
+									<int name="min_completed" value="1" />
+									<instance_reference name="upgrade_name" value="upgrade\dev\ages\dark_age" overrideParent="True" />
+									<bool name="include_completed" value="True" />
+									<bool name="include_queued" value="False" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="157695731">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="is_present" value="False" overrideParent="True" />
+									<int name="max_completed" value="100" />
+									<int name="min_completed" value="1" />
+									<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_dark_to_feudal" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+									<bool name="include_completed" value="True" />
+									<bool name="include_queued" value="False" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_not" List.ItemID="-1932404344">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<list name="requirement_table">
+										<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="-291100766">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<list name="requirements">
+												<template_reference name="requirement" value="requirements\required_structure" List.ItemID="325919100">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+													<int name="required_structure_count" value="1" />
+													<bool name="check_team" value="False" />
+													<bool name="require_construction_complete" value="False" overrideParent="True" />
+													<group name="include_pbg_parenting">
+														<bool name="include_child_pbgs" value="False" />
+														<bool name="include_parent_pbgs" value="False" />
+													</group>
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1188998055">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+													<int name="required_structure_count" value="1" />
+													<bool name="check_team" value="False" />
+													<bool name="require_construction_complete" value="False" overrideParent="True" />
+													<group name="include_pbg_parenting">
+														<bool name="include_child_pbgs" value="False" />
+														<bool name="include_parent_pbgs" value="False" />
+													</group>
+												</template_reference>
+											</list>
+										</template_reference>
+									</list>
+								</template_reference>
+							</list>
+							<locstring name="ui_name_controller" value="0" />
+						</template_reference>
+						<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="2092476785">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements" overrideParent="True">
+								<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="225821469">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="is_present" value="True" />
+									<int name="max_completed" value="100" />
+									<int name="min_completed" value="1" />
+									<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_dark_to_feudal" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+									<bool name="include_completed" value="True" />
+									<bool name="include_queued" value="False" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="157695731">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="is_present" value="False" overrideParent="True" />
+									<int name="max_completed" value="100" />
+									<int name="min_completed" value="1" />
+									<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_feudal_to_castle" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+									<bool name="include_completed" value="True" />
+									<bool name="include_queued" value="False" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_not" overrideParent="True" List.ItemID="-1664566743">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<list name="requirement_table">
+										<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="276931248">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<list name="requirements">
+												<template_reference name="requirement" value="requirements\required_structure" List.ItemID="325919100">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+													<int name="required_structure_count" value="2" overrideParent="True" />
+													<bool name="check_team" value="False" />
+													<bool name="require_construction_complete" value="False" overrideParent="True" />
+													<group name="include_pbg_parenting">
+														<bool name="include_child_pbgs" value="False" />
+														<bool name="include_parent_pbgs" value="False" />
+													</group>
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1188998055">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+													<int name="required_structure_count" value="2" overrideParent="True" />
+													<bool name="check_team" value="False" />
+													<bool name="require_construction_complete" value="False" overrideParent="True" />
+													<group name="include_pbg_parenting">
+														<bool name="include_child_pbgs" value="False" />
+														<bool name="include_parent_pbgs" value="False" />
+													</group>
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="598238521">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<list name="requirements">
+														<template_reference name="requirement" value="requirements\required_structure" List.ItemID="650359850">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+															<int name="required_structure_count" value="1" overrideParent="True" />
+															<bool name="check_team" value="False" />
+															<bool name="require_construction_complete" value="False" overrideParent="True" />
+															<group name="include_pbg_parenting">
+																<bool name="include_child_pbgs" value="False" />
+																<bool name="include_parent_pbgs" value="False" />
+															</group>
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1427682737">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+															<int name="required_structure_count" value="1" overrideParent="True" />
+															<bool name="check_team" value="False" />
+															<bool name="require_construction_complete" value="False" overrideParent="True" />
+															<group name="include_pbg_parenting">
+																<bool name="include_child_pbgs" value="False" />
+																<bool name="include_parent_pbgs" value="False" />
+															</group>
+														</template_reference>
+													</list>
+													<locstring name="ui_name_controller" value="0" />
+												</template_reference>
+											</list>
+										</template_reference>
+									</list>
+								</template_reference>
+							</list>
+							<locstring name="ui_name_controller" value="0" />
+						</template_reference>
+						<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="1131521366">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements" overrideParent="True">
+								<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="225821469">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="is_present" value="True" />
+									<int name="max_completed" value="100" />
+									<int name="min_completed" value="1" />
+									<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_feudal_to_castle" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+									<bool name="include_completed" value="True" />
+									<bool name="include_queued" value="False" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="157695731">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="is_present" value="False" overrideParent="True" />
+									<int name="max_completed" value="100" />
+									<int name="min_completed" value="1" />
+									<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_castle_to_imp" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+									<bool name="include_completed" value="True" />
+									<bool name="include_queued" value="False" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_not" overrideParent="True" List.ItemID="-1664566743">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<list name="requirement_table">
+										<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="276931248">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<list name="requirements">
+												<template_reference name="requirement" value="requirements\required_structure" List.ItemID="325919100">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+													<int name="required_structure_count" value="3" overrideParent="True" />
+													<bool name="check_team" value="False" />
+													<bool name="require_construction_complete" value="False" overrideParent="True" />
+													<group name="include_pbg_parenting">
+														<bool name="include_child_pbgs" value="False" />
+														<bool name="include_parent_pbgs" value="False" />
+													</group>
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1188998055">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+													<int name="required_structure_count" value="3" overrideParent="True" />
+													<bool name="check_team" value="False" />
+													<bool name="require_construction_complete" value="False" overrideParent="True" />
+													<group name="include_pbg_parenting">
+														<bool name="include_child_pbgs" value="False" />
+														<bool name="include_parent_pbgs" value="False" />
+													</group>
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="598238521">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<list name="requirements">
+														<template_reference name="requirement" value="requirements\required_structure" List.ItemID="650359850">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+															<int name="required_structure_count" value="1" overrideParent="True" />
+															<bool name="check_team" value="False" />
+															<bool name="require_construction_complete" value="False" overrideParent="True" />
+															<group name="include_pbg_parenting">
+																<bool name="include_child_pbgs" value="False" />
+																<bool name="include_parent_pbgs" value="False" />
+															</group>
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1427682737">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+															<int name="required_structure_count" value="2" overrideParent="True" />
+															<bool name="check_team" value="False" />
+															<bool name="require_construction_complete" value="False" overrideParent="True" />
+															<group name="include_pbg_parenting">
+																<bool name="include_child_pbgs" value="False" />
+																<bool name="include_parent_pbgs" value="False" />
+															</group>
+														</template_reference>
+													</list>
+													<locstring name="ui_name_controller" value="0" />
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="-495145919">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<list name="requirements">
+														<template_reference name="requirement" value="requirements\required_structure" List.ItemID="650359850">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+															<int name="required_structure_count" value="2" overrideParent="True" />
+															<bool name="check_team" value="False" />
+															<bool name="require_construction_complete" value="False" overrideParent="True" />
+															<group name="include_pbg_parenting">
+																<bool name="include_child_pbgs" value="False" />
+																<bool name="include_parent_pbgs" value="False" />
+															</group>
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1427682737">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+															<int name="required_structure_count" value="1" overrideParent="True" />
+															<bool name="check_team" value="False" />
+															<bool name="require_construction_complete" value="False" overrideParent="True" />
+															<group name="include_pbg_parenting">
+																<bool name="include_child_pbgs" value="False" />
+																<bool name="include_parent_pbgs" value="False" />
+															</group>
+														</template_reference>
+													</list>
+													<locstring name="ui_name_controller" value="0" />
+												</template_reference>
+											</list>
+										</template_reference>
+									</list>
+								</template_reference>
+							</list>
+							<locstring name="ui_name_controller" value="0" />
+						</template_reference>
+						<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="1151480928">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements" overrideParent="True">
+								<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="225821469">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="is_present" value="True" />
+									<int name="max_completed" value="100" />
+									<int name="min_completed" value="1" />
+									<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_castle_to_imp" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+									<bool name="include_completed" value="True" />
+									<bool name="include_queued" value="False" />
+									<group name="include_pbg_parenting">
+										<bool name="include_child_pbgs" value="False" />
+										<bool name="include_parent_pbgs" value="False" />
+									</group>
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_not" overrideParent="True" List.ItemID="-1664566743">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<list name="requirement_table">
+										<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="276931248">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<list name="requirements">
+												<template_reference name="requirement" value="requirements\required_structure" List.ItemID="325919100">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+													<int name="required_structure_count" value="4" overrideParent="True" />
+													<bool name="check_team" value="False" />
+													<bool name="require_construction_complete" value="False" overrideParent="True" />
+													<group name="include_pbg_parenting">
+														<bool name="include_child_pbgs" value="False" />
+														<bool name="include_parent_pbgs" value="False" />
+													</group>
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1188998055">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+													<int name="required_structure_count" value="4" overrideParent="True" />
+													<bool name="check_team" value="False" />
+													<bool name="require_construction_complete" value="False" overrideParent="True" />
+													<group name="include_pbg_parenting">
+														<bool name="include_child_pbgs" value="False" />
+														<bool name="include_parent_pbgs" value="False" />
+													</group>
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="598238521">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<list name="requirements">
+														<template_reference name="requirement" value="requirements\required_structure" List.ItemID="650359850">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+															<int name="required_structure_count" value="1" overrideParent="True" />
+															<bool name="check_team" value="False" />
+															<bool name="require_construction_complete" value="False" overrideParent="True" />
+															<group name="include_pbg_parenting">
+																<bool name="include_child_pbgs" value="False" />
+																<bool name="include_parent_pbgs" value="False" />
+															</group>
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1427682737">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+															<int name="required_structure_count" value="3" overrideParent="True" />
+															<bool name="check_team" value="False" />
+															<bool name="require_construction_complete" value="False" overrideParent="True" />
+															<group name="include_pbg_parenting">
+																<bool name="include_child_pbgs" value="False" />
+																<bool name="include_parent_pbgs" value="False" />
+															</group>
+														</template_reference>
+													</list>
+													<locstring name="ui_name_controller" value="0" />
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="-495145919">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<list name="requirements">
+														<template_reference name="requirement" value="requirements\required_structure" List.ItemID="650359850">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+															<int name="required_structure_count" value="2" overrideParent="True" />
+															<bool name="check_team" value="False" />
+															<bool name="require_construction_complete" value="False" overrideParent="True" />
+															<group name="include_pbg_parenting">
+																<bool name="include_child_pbgs" value="False" />
+																<bool name="include_parent_pbgs" value="False" />
+															</group>
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1427682737">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+															<int name="required_structure_count" value="2" overrideParent="True" />
+															<bool name="check_team" value="False" />
+															<bool name="require_construction_complete" value="False" overrideParent="True" />
+															<group name="include_pbg_parenting">
+																<bool name="include_child_pbgs" value="False" />
+																<bool name="include_parent_pbgs" value="False" />
+															</group>
+														</template_reference>
+													</list>
+													<locstring name="ui_name_controller" value="0" />
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="774003074">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<list name="requirements">
+														<template_reference name="requirement" value="requirements\required_structure" List.ItemID="650359850">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+															<int name="required_structure_count" value="3" overrideParent="True" />
+															<bool name="check_team" value="False" />
+															<bool name="require_construction_complete" value="False" overrideParent="True" />
+															<group name="include_pbg_parenting">
+																<bool name="include_child_pbgs" value="False" />
+																<bool name="include_parent_pbgs" value="False" />
+															</group>
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1427682737">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+															<int name="required_structure_count" value="1" overrideParent="True" />
+															<bool name="check_team" value="False" />
+															<bool name="require_construction_complete" value="False" overrideParent="True" />
+															<group name="include_pbg_parenting">
+																<bool name="include_child_pbgs" value="False" />
+																<bool name="include_parent_pbgs" value="False" />
+															</group>
+														</template_reference>
+													</list>
+													<locstring name="ui_name_controller" value="0" />
+												</template_reference>
+											</list>
+										</template_reference>
+									</list>
+								</template_reference>
+							</list>
+							<locstring name="ui_name_controller" value="0" />
+						</template_reference>
+						<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="-1451528657">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="is_present" value="True" />
+							<int name="max_completed" value="100" />
+							<int name="min_completed" value="1" />
+							<instance_reference name="upgrade_name" value="upgrade\persia\ps_eco_divan_no_limit_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+							<bool name="include_completed" value="True" />
+							<bool name="include_queued" value="False" />
+							<group name="include_pbg_parenting">
+								<bool name="include_child_pbgs" value="False" />
+								<bool name="include_parent_pbgs" value="False" />
+							</group>
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="1587650352" List.ParentItemID="1587650352">
+			<list name="type_list" overrideParent="True">
+				<group name="type" List.ItemID="-1965924860">
+					<enum name="interaction_type" value="repair" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="1089210191">
+					<enum name="interaction_type" value="construct" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="1509869152">
+					<enum name="interaction_type" value="resource_drop_off" overrideParent="True" />
+					<int name="prefer_number" value="-1" overrideParent="True" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="183393405" List.ParentItemID="183393405">
+			<group name="footprint_scale">
+				<float name="x" value="6" overrideParent="True" />
+				<float name="y" value="6" overrideParent="True" />
+			</group>
+			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="565686377" List.ParentItemID="565686377">
+			<group name="sight_package">
+				<float name="inner_height" value="501" overrideParent="True" />
+				<float name="inner_radius" value="25" overrideParent="True" />
+				<float name="outer_radius" value="25" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-290320659" List.ParentItemID="-290320659">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\persia\ps_military_supervise_peria" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" List.ItemID="-2124044036" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-1077991447" />
+				<instance_reference name="ability" value="abilities\persia\ps_persia_military_divan_aura" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="1886715582" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="356598772" List.ParentItemID="356598772">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\sultanate\tech_infantry_sul" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="97761903" List.ParentItemID="97761903">
+			<string name="single_select_event" value="sfx_ui_econ_food_building_selection_play" overrideParent="True" />
+			<int name="music_importance" value="20" overrideParent="True" />
+			<int name="combat_importance" value="-20" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-505557511" List.ParentItemID="-505557511">
+			<list name="standard_upgrades" overrideParent="True">
+				<instance_reference name="upgrade" value="upgrade\persia\ps_persia_archer_cost_reduction" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="544886742" />
+				<instance_reference name="upgrade" value="upgrade\persia\ps_persia_unit_castle_to_imp" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="-1507375677" />
+				<instance_reference name="upgrade" value="upgrade\persia\ps_persia_unit_dark_to_feudal" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" List.ItemID="-28168485" />
+				<instance_reference name="upgrade" value="upgrade\persia\ps_persia_unit_feudal_to_castle" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" List.ItemID="1466044970" />
+				<instance_reference name="upgrade" value="upgrade\persia\ps_persia_shamshir_divan" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="-798895474" />
+				<instance_reference name="upgrade" value="upgrade\persia\ps_divan_military_horse_speed_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="-911174706" />
+				<instance_reference name="upgrade" value="upgrade\persia\ps_unit_tofangchi_4_per" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="1603148020" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="640648894" List.ListAction="Append">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="-635198958">
+					<group name="tier" List.ItemID="1610542693">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\tech_unit_ranged_sul\tier3_tech_unit_ranged_control_sul" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+				<list name="tier_group" overrideParent="True" List.ItemID="-913685414">
+					<group name="tier" List.ItemID="1049035518">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rus\outskirts\houses\cabin" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482571" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_house" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="138074034" List.ParentItemID="138074034">
+				<file name="icon_name" value="persia\wardivan2" overrideParent="True" />
+				<bool name="use_construction_range_on_selection" value="True" overrideParent="True" />
+				<bool name="is_unique_to_race" value="True" overrideParent="True" />
+				<template_reference name="help_text_formatter" value="" overrideParent="True">
+				</template_reference>
+				<string name="telemetry_name" value="Hunting Cabin" overrideParent="True" />
+				<string name="selection_group" value="Mil_divan" overrideParent="True" />
+				<locstring name="screen_name" value="5010" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+				<locstring name="help_text" value="5087" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+				<locstring name="extra_text" value="5211" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1771335689" List.ParentItemID="1771335689">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="building" List.ItemID="-1452160158" />
+					<enum name="unit_type" value="siegeable" List.ItemID="922512314" />
+					<enum name="unit_type" value="economy_building" List.ItemID="302022322" />
+					<enum name="unit_type" value="emits_herding_interest" List.ItemID="-1803576149" />
+					<enum name="unit_type" value="audio_production_landmark" List.ItemID="-1143139421" />
+				</list>
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\sultanate" overrideParent="True" List.ItemID="-1220512241" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1330252291" List.ParentItemID="1330252291">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\buildings\building_econ_market" overrideParent="True" />
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+				<float name="animator_scale" value="88" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-754311359" List.ParentItemID="-754311359">
+				<state_tree_node name="death_action_tree" value="campaignMod_building_death_actions\buildings\hunting_cabin_death_actions" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" overrideParent="True" List.ItemID="1883880008" List.ParentItemID="1883880008">
+				<list name="action_state_trees" overrideParent="True">
+					<group name="container" overrideParent="True" List.ItemID="510301974">
+						<string name="state_tree" value="building_action_apply\buildings\blacksmith_action_apply" overrideParent="True" />
+					</group>
+					<group name="container" List.ItemID="-1917420136">
+						<string name="state_tree" value="influence_invalid_sul" overrideParent="True" />
+					</group>
+				</list>
+				<bool name="reset_on_load" value="True" />
+				<list name="physical_state_trees">
+				</list>
+				<list name="deferred_action_state_trees">
+				</list>
+				<list name="action_state_trees_run_once">
+				</list>
+				<list name="deferred_action_state_trees_run_once">
+				</list>
+				<list name="physical_state_trees_run_once">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-1357701339" List.ParentItemID="-1357701339">
+				<group name="time_cost">
+					<enum_table name="cost">
+						<float name="wood" value="50" overrideParent="True" />
+						<float name="gold" value="50" overrideParent="True" />
+					</enum_table>
+					<float name="time_seconds" value="20" overrideParent="True" />
+					<int name="time_turns" value="0" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="742476025" List.ParentItemID="742476025">
+				<instance_reference name="ui_range" value="ui_reticule\aura_ring" overrideParent="True" />
+				<float name="ui_range_radius" value="32" overrideParent="True" />
+				<group name="on_construction_complete_state_tree_refs" overrideParent="True">
+					<string name="on_construction_complete_entity_state_tree_ref" value="" overrideParent="True" />
+					<string name="while_construction_complete_entity_state_tree_ref" value="building_construction_complete\buildings\blacksmith_construction_complete" overrideParent="True" />
+					<string name="on_construction_complete_physical_state_tree_ref" value="" />
+					<string name="on_construction_complete_squad_state_tree_ref" value="" />
+					<string name="on_construction_plan_complete_global_state_tree_ref" value="" />
+					<string name="while_construction_complete_physical_state_tree_ref" value="" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1934841860" List.ParentItemID="1934841860">
+				<list name="requirement_table" overrideParent="True">
+					<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="-2017295109">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="5016" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<list name="requirements">
+							<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="-1565765867">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<list name="requirements" overrideParent="True">
+									<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="-1964378788">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<bool name="is_present" value="True" />
+										<int name="max_completed" value="100" />
+										<int name="min_completed" value="1" />
+										<instance_reference name="upgrade_name" value="upgrade\dev\ages\dark_age" overrideParent="True" />
+										<bool name="include_completed" value="True" />
+										<bool name="include_queued" value="False" />
+										<group name="include_pbg_parenting">
+											<bool name="include_child_pbgs" value="False" />
+											<bool name="include_parent_pbgs" value="False" />
+										</group>
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="-1164393625">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<bool name="is_present" value="False" overrideParent="True" />
+										<int name="max_completed" value="100" />
+										<int name="min_completed" value="1" />
+										<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_dark_to_feudal" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+										<bool name="include_completed" value="True" />
+										<bool name="include_queued" value="False" />
+										<group name="include_pbg_parenting">
+											<bool name="include_child_pbgs" value="False" />
+											<bool name="include_parent_pbgs" value="False" />
+										</group>
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_not" List.ItemID="1810125114">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<list name="requirement_table">
+											<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="-1134465639">
+												<enum name="reason" value="usage" />
+												<locstring name="ui_name" value="0" />
+												<list name="requirements">
+													<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1805102670">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+														<int name="required_structure_count" value="1" />
+														<bool name="check_team" value="False" />
+														<bool name="require_construction_complete" value="False" overrideParent="True" />
+														<group name="include_pbg_parenting">
+															<bool name="include_child_pbgs" value="False" />
+															<bool name="include_parent_pbgs" value="False" />
+														</group>
+													</template_reference>
+													<template_reference name="requirement" value="requirements\required_structure" List.ItemID="436237694">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+														<int name="required_structure_count" value="1" />
+														<bool name="check_team" value="False" />
+														<bool name="require_construction_complete" value="False" overrideParent="True" />
+														<group name="include_pbg_parenting">
+															<bool name="include_child_pbgs" value="False" />
+															<bool name="include_parent_pbgs" value="False" />
+														</group>
+													</template_reference>
+												</list>
+											</template_reference>
+										</list>
+									</template_reference>
+								</list>
+								<locstring name="ui_name_controller" value="0" />
+							</template_reference>
+							<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="-221504306">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<list name="requirements" overrideParent="True">
+									<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="225821469">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<bool name="is_present" value="True" />
+										<int name="max_completed" value="100" />
+										<int name="min_completed" value="1" />
+										<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_dark_to_feudal" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+										<bool name="include_completed" value="True" />
+										<bool name="include_queued" value="False" />
+										<group name="include_pbg_parenting">
+											<bool name="include_child_pbgs" value="False" />
+											<bool name="include_parent_pbgs" value="False" />
+										</group>
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="157695731">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<bool name="is_present" value="False" overrideParent="True" />
+										<int name="max_completed" value="100" />
+										<int name="min_completed" value="1" />
+										<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_feudal_to_castle" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+										<bool name="include_completed" value="True" />
+										<bool name="include_queued" value="False" />
+										<group name="include_pbg_parenting">
+											<bool name="include_child_pbgs" value="False" />
+											<bool name="include_parent_pbgs" value="False" />
+										</group>
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_not" overrideParent="True" List.ItemID="-1664566743">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<list name="requirement_table">
+											<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="-555525607">
+												<enum name="reason" value="usage" />
+												<locstring name="ui_name" value="0" />
+												<list name="requirements">
+													<template_reference name="requirement" value="requirements\required_structure" List.ItemID="325919100">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+														<int name="required_structure_count" value="2" overrideParent="True" />
+														<bool name="check_team" value="False" />
+														<bool name="require_construction_complete" value="False" overrideParent="True" />
+														<group name="include_pbg_parenting">
+															<bool name="include_child_pbgs" value="False" />
+															<bool name="include_parent_pbgs" value="False" />
+														</group>
+													</template_reference>
+													<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1188998055">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+														<int name="required_structure_count" value="2" overrideParent="True" />
+														<bool name="check_team" value="False" />
+														<bool name="require_construction_complete" value="False" overrideParent="True" />
+														<group name="include_pbg_parenting">
+															<bool name="include_child_pbgs" value="False" />
+															<bool name="include_parent_pbgs" value="False" />
+														</group>
+													</template_reference>
+													<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="-1159126622">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<list name="requirements">
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-2116694380">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="1" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-612203057">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="1" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+														</list>
+														<locstring name="ui_name_controller" value="0" />
+													</template_reference>
+												</list>
+											</template_reference>
+										</list>
+									</template_reference>
+								</list>
+								<locstring name="ui_name_controller" value="0" />
+							</template_reference>
+							<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="1225929594">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<list name="requirements" overrideParent="True">
+									<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="225821469">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<bool name="is_present" value="True" />
+										<int name="max_completed" value="100" />
+										<int name="min_completed" value="1" />
+										<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_feudal_to_castle" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+										<bool name="include_completed" value="True" />
+										<bool name="include_queued" value="False" />
+										<group name="include_pbg_parenting">
+											<bool name="include_child_pbgs" value="False" />
+											<bool name="include_parent_pbgs" value="False" />
+										</group>
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="157695731">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<bool name="is_present" value="False" overrideParent="True" />
+										<int name="max_completed" value="100" />
+										<int name="min_completed" value="1" />
+										<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_castle_to_imp" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+										<bool name="include_completed" value="True" />
+										<bool name="include_queued" value="False" />
+										<group name="include_pbg_parenting">
+											<bool name="include_child_pbgs" value="False" />
+											<bool name="include_parent_pbgs" value="False" />
+										</group>
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_not" overrideParent="True" List.ItemID="-1664566743">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<list name="requirement_table">
+											<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="276931248">
+												<enum name="reason" value="usage" />
+												<locstring name="ui_name" value="0" />
+												<list name="requirements">
+													<template_reference name="requirement" value="requirements\required_structure" List.ItemID="325919100">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+														<int name="required_structure_count" value="3" overrideParent="True" />
+														<bool name="check_team" value="False" />
+														<bool name="require_construction_complete" value="False" overrideParent="True" />
+														<group name="include_pbg_parenting">
+															<bool name="include_child_pbgs" value="False" />
+															<bool name="include_parent_pbgs" value="False" />
+														</group>
+													</template_reference>
+													<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1188998055">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+														<int name="required_structure_count" value="3" overrideParent="True" />
+														<bool name="check_team" value="False" />
+														<bool name="require_construction_complete" value="False" overrideParent="True" />
+														<group name="include_pbg_parenting">
+															<bool name="include_child_pbgs" value="False" />
+															<bool name="include_parent_pbgs" value="False" />
+														</group>
+													</template_reference>
+													<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="598238521">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<list name="requirements">
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="650359850">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="1" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1427682737">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="2" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+														</list>
+														<locstring name="ui_name_controller" value="0" />
+													</template_reference>
+													<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="-1936579563">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<list name="requirements">
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="650359850">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="2" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1427682737">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="1" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+														</list>
+														<locstring name="ui_name_controller" value="0" />
+													</template_reference>
+												</list>
+											</template_reference>
+										</list>
+									</template_reference>
+								</list>
+								<locstring name="ui_name_controller" value="0" />
+							</template_reference>
+							<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="880119199">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<list name="requirements" overrideParent="True">
+									<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="225821469">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<bool name="is_present" value="True" />
+										<int name="max_completed" value="100" />
+										<int name="min_completed" value="1" />
+										<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_castle_to_imp" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+										<bool name="include_completed" value="True" />
+										<bool name="include_queued" value="False" />
+										<group name="include_pbg_parenting">
+											<bool name="include_child_pbgs" value="False" />
+											<bool name="include_parent_pbgs" value="False" />
+										</group>
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_not" overrideParent="True" List.ItemID="-1664566743">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<list name="requirement_table">
+											<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="276931248">
+												<enum name="reason" value="usage" />
+												<locstring name="ui_name" value="0" />
+												<list name="requirements">
+													<template_reference name="requirement" value="requirements\required_structure" List.ItemID="325919100">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+														<int name="required_structure_count" value="4" overrideParent="True" />
+														<bool name="check_team" value="False" />
+														<bool name="require_construction_complete" value="False" overrideParent="True" />
+														<group name="include_pbg_parenting">
+															<bool name="include_child_pbgs" value="False" />
+															<bool name="include_parent_pbgs" value="False" />
+														</group>
+													</template_reference>
+													<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1188998055">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+														<int name="required_structure_count" value="4" overrideParent="True" />
+														<bool name="check_team" value="False" />
+														<bool name="require_construction_complete" value="False" overrideParent="True" />
+														<group name="include_pbg_parenting">
+															<bool name="include_child_pbgs" value="False" />
+															<bool name="include_parent_pbgs" value="False" />
+														</group>
+													</template_reference>
+													<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="598238521">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<list name="requirements">
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="650359850">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="1" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1427682737">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="3" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+														</list>
+														<locstring name="ui_name_controller" value="0" />
+													</template_reference>
+													<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="-495145919">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<list name="requirements">
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="650359850">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="2" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1427682737">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="2" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+														</list>
+														<locstring name="ui_name_controller" value="0" />
+													</template_reference>
+													<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="1967183915">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<list name="requirements">
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="650359850">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="3" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1427682737">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="1" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+														</list>
+														<locstring name="ui_name_controller" value="0" />
+													</template_reference>
+												</list>
+											</template_reference>
+										</list>
+									</template_reference>
+								</list>
+								<locstring name="ui_name_controller" value="0" />
+							</template_reference>
+							<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="-1845837442">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<bool name="is_present" value="True" />
+								<int name="max_completed" value="100" />
+								<int name="min_completed" value="1" />
+								<instance_reference name="upgrade_name" value="upgrade\persia\ps_eco_divan_no_limit_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+								<bool name="include_completed" value="True" />
+								<bool name="include_queued" value="False" />
+								<group name="include_pbg_parenting">
+									<bool name="include_child_pbgs" value="False" />
+									<bool name="include_parent_pbgs" value="False" />
+								</group>
+							</template_reference>
+						</list>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="-1127106728" List.ParentItemID="-1127106728">
+				<list name="type_list" overrideParent="True">
+					<group name="type" List.ItemID="-2078719441">
+						<enum name="interaction_type" value="repair" />
+						<int name="prefer_number" value="-1" />
+						<int name="max_number" value="-1" />
+						<enum name="interaction_target_type" value="entity" />
+						<template_reference name="node_list_option" value="options\none">
+						</template_reference>
+						<bool name="block_pathing_when_interacted" value="False" />
+					</group>
+					<group name="type" List.ItemID="293692606">
+						<enum name="interaction_type" value="construct" />
+						<int name="prefer_number" value="-1" />
+						<int name="max_number" value="-1" />
+						<enum name="interaction_target_type" value="entity" />
+						<template_reference name="node_list_option" value="options\none">
+						</template_reference>
+						<bool name="block_pathing_when_interacted" value="False" />
+					</group>
+					<group name="type" List.ItemID="1101528109">
+						<enum name="interaction_type" value="resource_drop_off" overrideParent="True" />
+						<int name="prefer_number" value="-1" overrideParent="True" />
+						<int name="max_number" value="-1" />
+						<enum name="interaction_target_type" value="entity" />
+						<template_reference name="node_list_option" value="options\none">
+						</template_reference>
+						<bool name="block_pathing_when_interacted" value="False" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="-1251518322" List.ParentItemID="-1251518322">
+				<group name="footprint_scale">
+					<float name="x" value="6" overrideParent="True" />
+					<float name="y" value="6" overrideParent="True" />
+				</group>
+				<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-1236827596" List.ParentItemID="-1236827596">
+				<group name="sight_package">
+					<float name="inner_height" value="501" overrideParent="True" />
+					<float name="inner_radius" value="35" overrideParent="True" />
+					<float name="outer_radius" value="25" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-690698850" List.ParentItemID="-690698850">
+				<list name="abilities" removedIds="-662770238">
+					<instance_reference name="ability" value="abilities\persia\ps_military_supervise_peria" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" List.ItemID="-845487392" List.ListAction="Append" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="1788061685" List.ListAction="Append" />
+					<instance_reference name="ability" value="abilities\persia\ps_persia_military_divan_aura" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="731995124" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-295598877" List.ParentItemID="-295598877">
+				<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\sultanate\tech_infantry_sul" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="1558939640" List.ParentItemID="1558939640">
+				<string name="single_select_event" value="sfx_ui_econ_food_building_selection_play" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="1144925490" List.ParentItemID="1144925490">
+				<list name="standard_upgrades" overrideParent="True">
+					<instance_reference name="upgrade" value="upgrade\persia\ps_persia_archer_cost_reduction" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="1273261021" />
+					<instance_reference name="upgrade" value="upgrade\persia\ps_persia_unit_castle_to_imp" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="600255466" />
+					<instance_reference name="upgrade" value="upgrade\persia\ps_persia_unit_dark_to_feudal" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" List.ItemID="2124228288" />
+					<instance_reference name="upgrade" value="upgrade\persia\ps_persia_unit_feudal_to_castle" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" List.ItemID="-326671814" />
+					<instance_reference name="upgrade" value="upgrade\persia\ps_persia_shamshir_divan" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="-1392443079" />
+					<instance_reference name="upgrade" value="upgrade\persia\ps_divan_military_horse_speed_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="-128488590" />
+					<instance_reference name="upgrade" value="upgrade\persia\ps_unit_tofangchi_4_per" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="2143894341" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="2064018341" List.ListAction="Append">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="644212129">
+						<group name="tier" List.ItemID="-1167992325">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\buildings\building_military_school_ott\tier4_military_school_control_ott" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+					<list name="tier_group" overrideParent="True" List.ItemID="-1337251093">
+						<group name="tier" List.ItemID="-1787113023">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rus\outskirts\houses\cabin" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482571" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_house" />
+	</variant>
+	<variant name="hre_brawl">
+		<list name="extensions" removedIds="34431973">
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-87256776" List.ParentItemID="-87256776">
+				<file name="icon_name" value="persia\wardivan2" overrideParent="True" />
+				<bool name="use_construction_range_on_selection" value="True" overrideParent="True" />
+				<bool name="is_unique_to_race" value="False" overrideParent="True" />
+				<template_reference name="help_text_formatter" value="" overrideParent="True">
+				</template_reference>
+				<string name="telemetry_name" value="Hunting Cabin" overrideParent="True" />
+				<string name="selection_group" value="Mil_divan" overrideParent="True" />
+				<float name="minimap_icon_scale" value="0.3" overrideParent="True" />
+				<file name="minimap_icon" value="minimap\landmark" overrideParent="True" />
+				<enum name="map_mark" value="" overrideParent="True" />
+				<float name="minimap_icon_zoom_scale" value="1" overrideParent="True" />
+				<locstring name="screen_name" value="5011" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+				<locstring name="help_text" value="5088" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+				<locstring name="extra_text" value="5212" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1131493931" List.ParentItemID="-1131493931">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="building" List.ItemID="-112581279" />
+					<enum name="unit_type" value="siegeable" List.ItemID="-260356005" />
+					<enum name="unit_type" value="economy_building" List.ItemID="499590570" />
+					<enum name="unit_type" value="emits_herding_interest" List.ItemID="-68345264" />
+					<enum name="unit_type" value="audio_production_landmark" List.ItemID="1173055262" />
+				</list>
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\sultanate" overrideParent="True" List.ItemID="563401086" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-349572381" List.ParentItemID="-349572381">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\buildings\building_econ_market" overrideParent="True" />
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+				<enum name="subclass_type" value="Generic" overrideParent="True" />
+				<float name="animator_scale" value="88" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-589959009" List.ParentItemID="-589959009">
+				<state_tree_node name="death_action_tree" value="building_death_actions\buildings\hunting_cabin_death_actions" overrideParent="True" />
+				<float name="hitpoints" value="750" overrideParent="True" />
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Ranged" value="0" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" overrideParent="True" List.ItemID="111767974" List.ParentItemID="111767974">
+				<list name="action_state_trees" overrideParent="True">
+					<group name="container" overrideParent="True" List.ItemID="-1396094821">
+						<string name="state_tree" value="building_action_apply\buildings\blacksmith_action_apply" overrideParent="True" />
+					</group>
+					<group name="container" List.ItemID="-1646422428">
+						<string name="state_tree" value="influence_invalid_sul" overrideParent="True" />
+					</group>
+				</list>
+				<bool name="reset_on_load" value="True" />
+				<list name="physical_state_trees">
+				</list>
+				<list name="deferred_action_state_trees">
+				</list>
+				<list name="action_state_trees_run_once">
+				</list>
+				<list name="deferred_action_state_trees_run_once">
+				</list>
+				<list name="physical_state_trees_run_once">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-307639384" List.ParentItemID="-307639384">
+				<group name="time_cost">
+					<enum_table name="cost">
+						<float name="wood" value="50" overrideParent="True" />
+						<float name="gold" value="50" overrideParent="True" />
+					</enum_table>
+					<float name="time_seconds" value="20" overrideParent="True" />
+					<int name="time_turns" value="0" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="54229194" List.ParentItemID="54229194">
+				<group name="placement_requirements">
+					<list name="placement_requirement_options">
+						<template_reference name="placement_requirement_option" value="options\placement\requirements\placement_requirement_pass_types_option" List.ItemID="1382891795" List.ParentItemID="1382891795">
+							<list name="forbidden_pass_types" overrideParent="True">
+							</list>
+						</template_reference>
+					</list>
+				</group>
+				<group name="on_construction_complete_state_tree_refs" overrideParent="True">
+					<string name="on_construction_complete_entity_state_tree_ref" value="" overrideParent="True" />
+					<string name="while_construction_complete_entity_state_tree_ref" value="building_construction_complete\buildings\blacksmith_construction_complete" overrideParent="True" />
+					<string name="on_construction_complete_physical_state_tree_ref" value="" />
+					<string name="on_construction_complete_squad_state_tree_ref" value="" />
+					<string name="on_construction_plan_complete_global_state_tree_ref" value="" />
+					<string name="while_construction_complete_physical_state_tree_ref" value="" />
+				</group>
+				<instance_reference name="ui_range" value="ui_reticule\aura_ring" overrideParent="True" />
+				<float name="ui_range_radius" value="32" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1680869093" List.ParentItemID="1680869093">
+				<list name="requirement_table" overrideParent="True">
+					<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="-469331692">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="5017" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<list name="requirements">
+							<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="1909004426">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<list name="requirements" overrideParent="True">
+									<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="1516673185">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<bool name="is_present" value="True" />
+										<int name="max_completed" value="100" />
+										<int name="min_completed" value="1" />
+										<instance_reference name="upgrade_name" value="upgrade\dev\ages\dark_age" overrideParent="True" />
+										<bool name="include_completed" value="True" />
+										<bool name="include_queued" value="False" />
+										<group name="include_pbg_parenting">
+											<bool name="include_child_pbgs" value="False" />
+											<bool name="include_parent_pbgs" value="False" />
+										</group>
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="956517202">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<bool name="is_present" value="False" overrideParent="True" />
+										<int name="max_completed" value="100" />
+										<int name="min_completed" value="1" />
+										<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_dark_to_feudal" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+										<bool name="include_completed" value="True" />
+										<bool name="include_queued" value="False" />
+										<group name="include_pbg_parenting">
+											<bool name="include_child_pbgs" value="False" />
+											<bool name="include_parent_pbgs" value="False" />
+										</group>
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_not" List.ItemID="59579498">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<list name="requirement_table">
+											<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="-415568261">
+												<enum name="reason" value="usage" />
+												<locstring name="ui_name" value="0" />
+												<list name="requirements">
+													<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1575937873">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+														<int name="required_structure_count" value="1" />
+														<bool name="check_team" value="False" />
+														<bool name="require_construction_complete" value="False" overrideParent="True" />
+														<group name="include_pbg_parenting">
+															<bool name="include_child_pbgs" value="False" />
+															<bool name="include_parent_pbgs" value="False" />
+														</group>
+													</template_reference>
+													<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1799697744">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+														<int name="required_structure_count" value="1" />
+														<bool name="check_team" value="False" />
+														<bool name="require_construction_complete" value="False" overrideParent="True" />
+														<group name="include_pbg_parenting">
+															<bool name="include_child_pbgs" value="False" />
+															<bool name="include_parent_pbgs" value="False" />
+														</group>
+													</template_reference>
+												</list>
+											</template_reference>
+										</list>
+									</template_reference>
+								</list>
+								<locstring name="ui_name_controller" value="0" />
+							</template_reference>
+							<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="-1822846530">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<list name="requirements" overrideParent="True">
+									<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="225821469">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<bool name="is_present" value="True" />
+										<int name="max_completed" value="100" />
+										<int name="min_completed" value="1" />
+										<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_dark_to_feudal" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+										<bool name="include_completed" value="True" />
+										<bool name="include_queued" value="False" />
+										<group name="include_pbg_parenting">
+											<bool name="include_child_pbgs" value="False" />
+											<bool name="include_parent_pbgs" value="False" />
+										</group>
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="157695731">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<bool name="is_present" value="False" overrideParent="True" />
+										<int name="max_completed" value="100" />
+										<int name="min_completed" value="1" />
+										<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_feudal_to_castle" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+										<bool name="include_completed" value="True" />
+										<bool name="include_queued" value="False" />
+										<group name="include_pbg_parenting">
+											<bool name="include_child_pbgs" value="False" />
+											<bool name="include_parent_pbgs" value="False" />
+										</group>
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_not" overrideParent="True" List.ItemID="-1664566743">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<list name="requirement_table">
+											<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="967163586">
+												<enum name="reason" value="usage" />
+												<locstring name="ui_name" value="0" />
+												<list name="requirements">
+													<template_reference name="requirement" value="requirements\required_structure" List.ItemID="325919100">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+														<int name="required_structure_count" value="2" overrideParent="True" />
+														<bool name="check_team" value="False" />
+														<bool name="require_construction_complete" value="False" overrideParent="True" />
+														<group name="include_pbg_parenting">
+															<bool name="include_child_pbgs" value="False" />
+															<bool name="include_parent_pbgs" value="False" />
+														</group>
+													</template_reference>
+													<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1188998055">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+														<int name="required_structure_count" value="2" overrideParent="True" />
+														<bool name="check_team" value="False" />
+														<bool name="require_construction_complete" value="False" overrideParent="True" />
+														<group name="include_pbg_parenting">
+															<bool name="include_child_pbgs" value="False" />
+															<bool name="include_parent_pbgs" value="False" />
+														</group>
+													</template_reference>
+													<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="1631988817">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<list name="requirements">
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="661923899">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="1" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="1207307245">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="1" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+														</list>
+														<locstring name="ui_name_controller" value="0" />
+													</template_reference>
+												</list>
+											</template_reference>
+										</list>
+									</template_reference>
+								</list>
+								<locstring name="ui_name_controller" value="0" />
+							</template_reference>
+							<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="32502734">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<list name="requirements" overrideParent="True">
+									<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="225821469">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<bool name="is_present" value="True" />
+										<int name="max_completed" value="100" />
+										<int name="min_completed" value="1" />
+										<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_feudal_to_castle" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+										<bool name="include_completed" value="True" />
+										<bool name="include_queued" value="False" />
+										<group name="include_pbg_parenting">
+											<bool name="include_child_pbgs" value="False" />
+											<bool name="include_parent_pbgs" value="False" />
+										</group>
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="157695731">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<bool name="is_present" value="False" overrideParent="True" />
+										<int name="max_completed" value="100" />
+										<int name="min_completed" value="1" />
+										<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_castle_to_imp" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+										<bool name="include_completed" value="True" />
+										<bool name="include_queued" value="False" />
+										<group name="include_pbg_parenting">
+											<bool name="include_child_pbgs" value="False" />
+											<bool name="include_parent_pbgs" value="False" />
+										</group>
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_not" overrideParent="True" List.ItemID="-1664566743">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<list name="requirement_table">
+											<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="276931248">
+												<enum name="reason" value="usage" />
+												<locstring name="ui_name" value="0" />
+												<list name="requirements">
+													<template_reference name="requirement" value="requirements\required_structure" List.ItemID="325919100">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+														<int name="required_structure_count" value="3" overrideParent="True" />
+														<bool name="check_team" value="False" />
+														<bool name="require_construction_complete" value="False" overrideParent="True" />
+														<group name="include_pbg_parenting">
+															<bool name="include_child_pbgs" value="False" />
+															<bool name="include_parent_pbgs" value="False" />
+														</group>
+													</template_reference>
+													<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1188998055">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+														<int name="required_structure_count" value="3" overrideParent="True" />
+														<bool name="check_team" value="False" />
+														<bool name="require_construction_complete" value="False" overrideParent="True" />
+														<group name="include_pbg_parenting">
+															<bool name="include_child_pbgs" value="False" />
+															<bool name="include_parent_pbgs" value="False" />
+														</group>
+													</template_reference>
+													<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="598238521">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<list name="requirements">
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="650359850">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="1" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1427682737">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="2" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+														</list>
+														<locstring name="ui_name_controller" value="0" />
+													</template_reference>
+													<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="-1304868367">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<list name="requirements">
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="650359850">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="2" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1427682737">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="1" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+														</list>
+														<locstring name="ui_name_controller" value="0" />
+													</template_reference>
+												</list>
+											</template_reference>
+										</list>
+									</template_reference>
+								</list>
+								<locstring name="ui_name_controller" value="0" />
+							</template_reference>
+							<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="-2066010610">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<list name="requirements" overrideParent="True">
+									<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="225821469">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<bool name="is_present" value="True" />
+										<int name="max_completed" value="100" />
+										<int name="min_completed" value="1" />
+										<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_castle_to_imp" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+										<bool name="include_completed" value="True" />
+										<bool name="include_queued" value="False" />
+										<group name="include_pbg_parenting">
+											<bool name="include_child_pbgs" value="False" />
+											<bool name="include_parent_pbgs" value="False" />
+										</group>
+									</template_reference>
+									<template_reference name="requirement" value="requirements\required_not" overrideParent="True" List.ItemID="-1664566743">
+										<enum name="reason" value="usage" />
+										<locstring name="ui_name" value="0" />
+										<list name="requirement_table">
+											<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="276931248">
+												<enum name="reason" value="usage" />
+												<locstring name="ui_name" value="0" />
+												<list name="requirements">
+													<template_reference name="requirement" value="requirements\required_structure" List.ItemID="325919100">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+														<int name="required_structure_count" value="4" overrideParent="True" />
+														<bool name="check_team" value="False" />
+														<bool name="require_construction_complete" value="False" overrideParent="True" />
+														<group name="include_pbg_parenting">
+															<bool name="include_child_pbgs" value="False" />
+															<bool name="include_parent_pbgs" value="False" />
+														</group>
+													</template_reference>
+													<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1188998055">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+														<int name="required_structure_count" value="4" overrideParent="True" />
+														<bool name="check_team" value="False" />
+														<bool name="require_construction_complete" value="False" overrideParent="True" />
+														<group name="include_pbg_parenting">
+															<bool name="include_child_pbgs" value="False" />
+															<bool name="include_parent_pbgs" value="False" />
+														</group>
+													</template_reference>
+													<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="598238521">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<list name="requirements">
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="650359850">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="1" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1427682737">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="3" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+														</list>
+														<locstring name="ui_name_controller" value="0" />
+													</template_reference>
+													<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="-495145919">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<list name="requirements">
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="650359850">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="2" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1427682737">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="2" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+														</list>
+														<locstring name="ui_name_controller" value="0" />
+													</template_reference>
+													<template_reference name="requirement" value="requirements\required_all_in_list" List.ItemID="2049213285">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<list name="requirements">
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="650359850">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_economy_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="3" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+															<template_reference name="requirement" value="requirements\required_structure" List.ItemID="-1427682737">
+																<enum name="reason" value="usage" />
+																<locstring name="ui_name" value="0" />
+																<instance_reference name="structure_name" value="ebps\persia\ps_building_divan_military_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+																<int name="required_structure_count" value="1" overrideParent="True" />
+																<bool name="check_team" value="False" />
+																<bool name="require_construction_complete" value="False" overrideParent="True" />
+																<group name="include_pbg_parenting">
+																	<bool name="include_child_pbgs" value="False" />
+																	<bool name="include_parent_pbgs" value="False" />
+																</group>
+															</template_reference>
+														</list>
+														<locstring name="ui_name_controller" value="0" />
+													</template_reference>
+												</list>
+											</template_reference>
+										</list>
+									</template_reference>
+								</list>
+								<locstring name="ui_name_controller" value="0" />
+							</template_reference>
+							<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="-462234422">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<bool name="is_present" value="True" />
+								<int name="max_completed" value="100" />
+								<int name="min_completed" value="1" />
+								<instance_reference name="upgrade_name" value="upgrade\persia\ps_eco_divan_no_limit_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+								<bool name="include_completed" value="True" />
+								<bool name="include_queued" value="False" />
+								<group name="include_pbg_parenting">
+									<bool name="include_child_pbgs" value="False" />
+									<bool name="include_parent_pbgs" value="False" />
+								</group>
+							</template_reference>
+						</list>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="1587650352" List.ParentItemID="1587650352">
+				<list name="type_list" overrideParent="True">
+					<group name="type" List.ItemID="1326216827">
+						<enum name="interaction_type" value="repair" />
+						<int name="prefer_number" value="-1" />
+						<int name="max_number" value="-1" />
+						<enum name="interaction_target_type" value="entity" />
+						<template_reference name="node_list_option" value="options\none">
+						</template_reference>
+						<bool name="block_pathing_when_interacted" value="False" />
+					</group>
+					<group name="type" List.ItemID="-1079497040">
+						<enum name="interaction_type" value="construct" />
+						<int name="prefer_number" value="-1" />
+						<int name="max_number" value="-1" />
+						<enum name="interaction_target_type" value="entity" />
+						<template_reference name="node_list_option" value="options\none">
+						</template_reference>
+						<bool name="block_pathing_when_interacted" value="False" />
+					</group>
+					<group name="type" List.ItemID="595352514">
+						<enum name="interaction_type" value="resource_drop_off" overrideParent="True" />
+						<int name="prefer_number" value="-1" overrideParent="True" />
+						<int name="max_number" value="-1" />
+						<enum name="interaction_target_type" value="entity" />
+						<template_reference name="node_list_option" value="options\none">
+						</template_reference>
+						<bool name="block_pathing_when_interacted" value="False" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="183393405" List.ParentItemID="183393405">
+				<group name="footprint_scale">
+					<float name="x" value="6" overrideParent="True" />
+					<float name="y" value="6" overrideParent="True" />
+				</group>
+				<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="565686377" List.ParentItemID="565686377">
+				<group name="sight_package" overrideParent="True">
+					<float name="inner_height" value="501" overrideParent="True" />
+					<float name="inner_radius" value="44" overrideParent="True" />
+					<float name="outer_radius" value="44" overrideParent="True" />
+					<float name="outer_height" value="-20" />
+					<float name="cone_angle" value="360" />
+					<float name="cone_start_radius" value="0" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-290320659" List.ParentItemID="-290320659">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\persia\ps_military_supervise_peria" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" List.ItemID="375226388" />
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-612558119" />
+					<instance_reference name="ability" value="abilities\persia\ps_persia_military_divan_aura" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="1140038891" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="356598772" List.ParentItemID="356598772">
+				<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\sultanate\tech_infantry_sul" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="97761903" List.ParentItemID="97761903">
+				<string name="single_select_event" value="sfx_ui_econ_food_building_selection_play" overrideParent="True" />
+				<int name="music_importance" value="20" overrideParent="True" />
+				<int name="combat_importance" value="-20" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-505557511" List.ParentItemID="-505557511">
+				<list name="standard_upgrades" overrideParent="True">
+					<instance_reference name="upgrade" value="upgrade\persia\ps_persia_archer_cost_reduction" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="-568714553" />
+					<instance_reference name="upgrade" value="upgrade\persia\ps_persia_unit_castle_to_imp" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="766363499" />
+					<instance_reference name="upgrade" value="upgrade\persia\ps_persia_unit_dark_to_feudal" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" List.ItemID="1711298357" />
+					<instance_reference name="upgrade" value="upgrade\persia\ps_persia_unit_feudal_to_castle" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" List.ItemID="-741280692" />
+					<instance_reference name="upgrade" value="upgrade\persia\ps_persia_shamshir_divan" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="308600010" />
+					<instance_reference name="upgrade" value="upgrade\persia\ps_divan_military_horse_speed_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="1941375399" />
+					<instance_reference name="upgrade" value="upgrade\persia\ps_unit_tofangchi_4_per" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="2012645220" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-154346898" List.ListAction="Append">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="1556591982">
+						<group name="tier" List.ItemID="1991051502">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\buildings\building_military_school_ott\tier4_military_school_control_ott" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+					<list name="tier_group" overrideParent="True" List.ItemID="582607550">
+						<group name="tier" List.ItemID="-644696258">
+							<instance_reference name="attachments" value="" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482571" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_house" />
+	</variant>
+</instance>

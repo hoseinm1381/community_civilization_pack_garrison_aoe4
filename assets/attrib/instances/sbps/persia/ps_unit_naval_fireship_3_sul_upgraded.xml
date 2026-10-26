@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" overrideParent="True" List.ItemID="982723393" List.ParentItemID="982723393">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="1868141578" List.ParentItemID="1868141578">
+					<group name="info">
+						<locstring name="extra_text" value="11203550" overrideParent="True" />
+						<locstring name="screen_name" value="11203543" overrideParent="True" />
+						<bool name="allow_spawner_production" value="False" />
+						<locstring name="help_text" value="11171910" />
+						<string name="hotkey_name" value="E" />
+						<file name="icon_name" value="races\common\units\fireship" />
+						<bool name="minimap_team_only" value="False" />
+						<file name="minimap_texture" value="" />
+						<instance_reference name="modal_ability" value="" />
+						<bool name="reveal_for_decryption" value="True" />
+						<string name="selection_group" value="fireship" />
+						<int name="ui_priority" value="0" />
+						<bool name="use_random_entity_speaker" value="False" />
+						<file name="portrait_name" value="" />
+						<float name="minimap_texture_scale" value="0.65" />
+						<locstring name="brief_text" value="0" />
+						<locstring name="screen_name_short" value="0" />
+						<enum name="map_rotation_type_override" value="no_override" />
+						<bool name="show_in_build_log" value="True" />
+						<file name="symbol_icon_name" value="" />
+						<string name="cover_level_icon_postfix" value="" />
+						<bool name="hide_ucs" value="False" />
+						<enum name="decorator_visibility" value="visible" />
+						<string name="debug_text" value="" />
+						<string name="selection_datatemplate" value="MilitaryUnitSelectionDataTemplate" />
+						<string name="tooltip_data_template" value="BuildingMilitaryDataTemplate" />
+						<bool name="is_unique" value="False" />
+						<string name="decorator_data_template" value="" />
+						<enum name="ui_combine_type" value="intersection" />
+						<int name="global_unit_control_row" value="1" />
+						<instance_reference name="ui_decorator" value="" />
+						<bool name="decorator_show_reload_progress" value="True" />
+						<bool name="is_respawnable" value="False" />
+						<enum name="respawn_location" value="" />
+						<enum name="respawn_progress" value="" />
+						<enum name="respawn_time" value="" />
+						<locstring name="respawn_help" value="0" />
+						<enum name="respawn_unit_class" value="" />
+						<bool name="is_unique_to_race" value="False" />
+						<bool name="show_production" value="True" />
+						<string name="respawn_datatemplate" value="" />
+						<enum name="decorator" value="CardinalSquad" />
+						<int name="map_layer" value="-1" />
+						<enum name="map_mark" value="" />
+						<file name="flag_icon_override" value="persia\safavid_flag" overrideParent="True" />
+						<file name="extra_icon" value="" />
+						<group name="ui_codex_info">
+							<bool name="exclusive" value="False" />
+							<int name="priority" value="3500" />
+							<group name="ui_position">
+								<int name="ui_position_column" value="-1" />
+								<int name="ui_position_row" value="-1" />
+							</group>
+						</group>
+						<template_reference name="extra_text_formatter" value="">
+						</template_reference>
+						<template_reference name="help_text_formatter" value="">
+						</template_reference>
+						<template_reference name="screen_name_formatter" value="">
+						</template_reference>
+						<template_reference name="screen_name_short_formatter" value="">
+						</template_reference>
+						<template_reference name="brief_text_formatter" value="">
+						</template_reference>
+						<string name="sound" value="sfx_ui_produce_unit_click" />
+						<string name="sound_alternative" value="" />
+						<group name="stats_info">
+							<bool name="include_in_lifespan_stat" value="True" />
+						</group>
+						<float name="minimap_texture_zoom_scale" value="0" />
+						<locstring name="help_text_controller" value="0" />
+						<locstring name="extra_text_controller" value="0" />
+					</group>
+					<instance_reference name="ext_key" value="" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="712128181" List.ParentItemID="712128181">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="-946627283" List.ParentItemID="-946627283">
+					<instance_reference name="type" value="ebps\persia\ps_unit_naval_fireship_3_sul_upgraded" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="395234859" List.ParentItemID="395234859">
+			<list name="requirement_table" comment="Requires castle age&#13;&#10;">
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-1986442643" List.ListAction="Append">
+					<enum name="reason" value="usage_and_display" overrideParent="True" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_ship_upgrade" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					<bool name="include_completed" value="True" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="-658422521" List.ParentItemID="-658422521">
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\sultanate" List.ItemID="-977825903" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-1540740391" List.ParentItemID="-1540740391">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482690" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_naval_fireship_3" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" overrideParent="True" List.ItemID="337530741" List.ParentItemID="337530741">
+				<list name="race_list">
+					<group name="race_data" List.ItemID="1868141578" List.ParentItemID="1868141578">
+						<group name="info">
+							<locstring name="extra_text" value="11203550" overrideParent="True" />
+							<locstring name="screen_name" value="11203543" overrideParent="True" />
+							<bool name="allow_spawner_production" value="False" />
+							<locstring name="help_text" value="11171910" />
+							<string name="hotkey_name" value="E" />
+							<file name="icon_name" value="races\common\units\fireship" />
+							<bool name="minimap_team_only" value="False" />
+							<file name="minimap_texture" value="" />
+							<instance_reference name="modal_ability" value="" />
+							<bool name="reveal_for_decryption" value="True" />
+							<string name="selection_group" value="fireship" />
+							<int name="ui_priority" value="0" />
+							<bool name="use_random_entity_speaker" value="False" />
+							<file name="portrait_name" value="" />
+							<float name="minimap_texture_scale" value="0.65" />
+							<locstring name="brief_text" value="0" />
+							<locstring name="screen_name_short" value="0" />
+							<enum name="map_rotation_type_override" value="no_override" />
+							<bool name="show_in_build_log" value="True" />
+							<file name="symbol_icon_name" value="" />
+							<string name="cover_level_icon_postfix" value="" />
+							<bool name="hide_ucs" value="False" />
+							<enum name="decorator_visibility" value="visible" />
+							<string name="debug_text" value="" />
+							<string name="selection_datatemplate" value="MilitaryUnitSelectionDataTemplate" />
+							<string name="tooltip_data_template" value="BuildingMilitaryDataTemplate" />
+							<bool name="is_unique" value="False" />
+							<string name="decorator_data_template" value="" />
+							<enum name="ui_combine_type" value="intersection" />
+							<int name="global_unit_control_row" value="1" />
+							<instance_reference name="ui_decorator" value="" />
+							<bool name="decorator_show_reload_progress" value="True" />
+							<bool name="is_respawnable" value="False" />
+							<enum name="respawn_location" value="" />
+							<enum name="respawn_progress" value="" />
+							<enum name="respawn_time" value="" />
+							<locstring name="respawn_help" value="0" />
+							<enum name="respawn_unit_class" value="" />
+							<bool name="is_unique_to_race" value="False" />
+							<bool name="show_production" value="True" />
+							<string name="respawn_datatemplate" value="" />
+							<enum name="decorator" value="CardinalSquad" />
+							<int name="map_layer" value="-1" />
+							<enum name="map_mark" value="" />
+							<file name="flag_icon_override" value="" />
+							<file name="extra_icon" value="" />
+							<group name="ui_codex_info">
+								<bool name="exclusive" value="False" />
+								<int name="priority" value="3500" />
+								<group name="ui_position">
+									<int name="ui_position_column" value="-1" />
+									<int name="ui_position_row" value="-1" />
+								</group>
+							</group>
+							<template_reference name="extra_text_formatter" value="">
+							</template_reference>
+							<template_reference name="help_text_formatter" value="">
+							</template_reference>
+							<template_reference name="screen_name_formatter" value="">
+							</template_reference>
+							<template_reference name="screen_name_short_formatter" value="">
+							</template_reference>
+							<template_reference name="brief_text_formatter" value="">
+							</template_reference>
+							<string name="sound" value="sfx_ui_produce_unit_click" />
+							<string name="sound_alternative" value="" />
+							<group name="stats_info">
+								<bool name="include_in_lifespan_stat" value="True" />
+							</group>
+							<float name="minimap_texture_zoom_scale" value="0" />
+							<locstring name="help_text_controller" value="0" />
+							<locstring name="extra_text_controller" value="0" />
+						</group>
+						<instance_reference name="ext_key" value="" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-1526979147" List.ParentItemID="-1526979147">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="1251158402" List.ParentItemID="1251158402">
+						<instance_reference name="type" value="ebps\persia\ps_unit_naval_fireship_3_sul_upgraded" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="-1932917483" List.ParentItemID="-1932917483">
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-490252236" List.ListAction="Append">
+						<enum name="reason" value="usage_and_display" overrideParent="True" />
+						<locstring name="ui_name" value="0" />
+						<bool name="is_present" value="True" />
+						<int name="max_completed" value="100" />
+						<int name="min_completed" value="1" />
+						<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_ship_upgrade" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<bool name="include_completed" value="True" />
+						<bool name="include_queued" value="False" />
+						<group name="include_pbg_parenting">
+							<bool name="include_child_pbgs" value="False" />
+							<bool name="include_parent_pbgs" value="False" />
+						</group>
+					</template_reference>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482690" />
+		<instance_reference name="parent_pbg" value="sbps\races\core\unit_naval_fireship_3" />
+	</variant>
+</instance>

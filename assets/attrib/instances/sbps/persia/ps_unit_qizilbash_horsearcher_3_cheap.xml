@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-2056667985" List.ParentItemID="-2056667985">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="1317901561" List.ParentItemID="1317901561">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="1182808320" List.ParentItemID="1182808320">
+					<group name="info">
+						<file name="icon_name" value="persia\unit\qizilbashart2" overrideParent="True" />
+						<locstring name="help_text" value="5220" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<locstring name="screen_name" value="5127" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<file name="flag_icon_override" value="persia\safavid_flag" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="706311447" List.ParentItemID="706311447">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="1509478652" List.ParentItemID="1509478652">
+					<instance_reference name="type" value="ebps\persia\ps_unit_qizilbash_horsearcher_3" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="1250368617" List.ParentItemID="1250368617">
+			<list name="requirement_table" overrideParent="True">
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="409032711" List.ParentItemID="-2018071606">
+					<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_feudal_to_castle" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					<enum name="reason" value="usage_and_display" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<bool name="include_completed" value="True" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+				</template_reference>
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-1729155978" List.ParentItemID="-978747128">
+					<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_castle_to_imp" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					<enum name="reason" value="usage_and_display" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="False" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<bool name="include_completed" value="True" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+				</template_reference>
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-686268155">
+					<enum name="reason" value="usage_and_display" overrideParent="True" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="False" overrideParent="True" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\persia\ps_divan_military_horse_speed_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					<bool name="include_completed" value="True" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+				</template_reference>
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-986302895">
+					<enum name="reason" value="usage_and_display" overrideParent="True" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" overrideParent="True" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_archer_cost_reduction" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					<bool name="include_completed" value="True" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="-136741945" List.ParentItemID="-136741945">
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="624258722" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_speech_ext" overrideParent="True" List.ItemID="-170646478" List.ParentItemID="-170646478">
+			<string name="squad_speaker_code" value="crossbowman" overrideParent="True" />
+			<list name="age_mapping">
+				<int name="age_number" value="3" List.ItemID="-1958534292" List.ParentItemID="-1958534292" />
+				<int name="age_number" value="3" List.ItemID="379557226" List.ParentItemID="379557226" />
+				<int name="age_number" value="3" List.ItemID="698243891" List.ParentItemID="698243891" />
+				<int name="age_number" value="4" List.ItemID="-728851688" List.ParentItemID="-728851688" />
+			</list>
+			<group name="squad_speech_parameters">
+				<string name="squad_class_code" value="military_ranged" overrideParent="True" />
+				<string name="squad_name_code" value="crossbowman" overrideParent="True" />
+				<enum name="squad_race_code" value="no_race" overrideParent="True" />
+				<string name="squad_unit_code" value="non_mounted" overrideParent="True" />
+			</group>
+			<int name="importance" value="7" />
+			<bool name="is_idle_battle_chatter_enabled" value="False" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482666" />
+	<instance_reference name="parent_pbg" value="sbps\races\mongol\unit_horsearcher_3_mon" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-2056667985" List.ParentItemID="-2056667985">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="1317901561" List.ParentItemID="1317901561">
+				<list name="race_list">
+					<group name="race_data" List.ItemID="1182808320" List.ParentItemID="1182808320">
+						<group name="info">
+							<file name="icon_name" value="persia\unit\qizilbashart2" overrideParent="True" />
+							<locstring name="help_text" value="5221" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+							<locstring name="screen_name" value="5127" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						</group>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="706311447" List.ParentItemID="706311447">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="1509478652" List.ParentItemID="1509478652">
+						<instance_reference name="type" value="ebps\persia\ps_unit_qizilbash_horsearcher_3" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="1250368617" List.ParentItemID="1250368617">
+				<list name="requirement_table" overrideParent="True">
+					<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-1119390794" List.ParentItemID="-2018071606">
+						<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_feudal_to_castle" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<enum name="reason" value="usage_and_display" />
+						<locstring name="ui_name" value="0" />
+						<bool name="is_present" value="True" />
+						<int name="max_completed" value="100" />
+						<int name="min_completed" value="1" />
+						<bool name="include_completed" value="True" />
+						<bool name="include_queued" value="False" />
+						<group name="include_pbg_parenting">
+							<bool name="include_child_pbgs" value="False" />
+							<bool name="include_parent_pbgs" value="False" />
+						</group>
+					</template_reference>
+					<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-105773901" List.ParentItemID="-978747128">
+						<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_unit_castle_to_imp" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<enum name="reason" value="usage_and_display" />
+						<locstring name="ui_name" value="0" />
+						<bool name="is_present" value="False" />
+						<int name="max_completed" value="100" />
+						<int name="min_completed" value="1" />
+						<bool name="include_completed" value="True" />
+						<bool name="include_queued" value="False" />
+						<group name="include_pbg_parenting">
+							<bool name="include_child_pbgs" value="False" />
+							<bool name="include_parent_pbgs" value="False" />
+						</group>
+					</template_reference>
+					<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-1451143194">
+						<enum name="reason" value="usage_and_display" overrideParent="True" />
+						<locstring name="ui_name" value="0" />
+						<bool name="is_present" value="False" overrideParent="True" />
+						<int name="max_completed" value="100" />
+						<int name="min_completed" value="1" />
+						<instance_reference name="upgrade_name" value="upgrade\persia\ps_divan_military_horse_speed_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<bool name="include_completed" value="True" />
+						<bool name="include_queued" value="False" />
+						<group name="include_pbg_parenting">
+							<bool name="include_child_pbgs" value="False" />
+							<bool name="include_parent_pbgs" value="False" />
+						</group>
+					</template_reference>
+					<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-919618990">
+						<enum name="reason" value="usage_and_display" overrideParent="True" />
+						<locstring name="ui_name" value="0" />
+						<bool name="is_present" value="True" overrideParent="True" />
+						<int name="max_completed" value="100" />
+						<int name="min_completed" value="1" />
+						<instance_reference name="upgrade_name" value="upgrade\persia\ps_persia_archer_cost_reduction" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<bool name="include_completed" value="True" />
+						<bool name="include_queued" value="False" />
+						<group name="include_pbg_parenting">
+							<bool name="include_child_pbgs" value="False" />
+							<bool name="include_parent_pbgs" value="False" />
+						</group>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="-136741945" List.ParentItemID="-136741945">
+				<list name="squad_race_type_list" overrideParent="True">
+					<instance_reference name="squad_race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="-1584796284" />
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_speech_ext" overrideParent="True" List.ItemID="-170646478" List.ParentItemID="-170646478">
+				<string name="squad_speaker_code" value="crossbowman" overrideParent="True" />
+				<list name="age_mapping">
+					<int name="age_number" value="3" List.ItemID="-1958534292" List.ParentItemID="-1958534292" />
+					<int name="age_number" value="3" List.ItemID="379557226" List.ParentItemID="379557226" />
+					<int name="age_number" value="3" List.ItemID="698243891" List.ParentItemID="698243891" />
+					<int name="age_number" value="4" List.ItemID="-728851688" List.ParentItemID="-728851688" />
+				</list>
+				<group name="squad_speech_parameters">
+					<string name="squad_class_code" value="military_ranged" overrideParent="True" />
+					<string name="squad_name_code" value="crossbowman" overrideParent="True" />
+					<enum name="squad_race_code" value="no_race" overrideParent="True" />
+					<string name="squad_unit_code" value="non_mounted" overrideParent="True" />
+				</group>
+				<int name="importance" value="7" />
+				<bool name="is_idle_battle_chatter_enabled" value="False" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482666" />
+		<instance_reference name="parent_pbg" value="sbps\races\mongol\unit_horsearcher_3_mon" />
+	</variant>
+</instance>

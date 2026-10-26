@@ -1,0 +1,72 @@
+-- Reconcile only private landmark eligibility; native donor trees own benefits.
+-- Never remove completed dynasty, unit-veterancy or economic research.
+PersiaLifecycleState = {players = {}, counts = {}, active = false}
+local prefix = "b7fcea91257b408fb9e8ae4d8bc402e1:"
+local gundeshapur = "ps_building_landmark_age1_military_divan_persia"
+local markerName = prefix .. "ps_gundeshapur_functioning"
+
+local function functioning(entity)
+    return Entity_IsValid(Entity_GetID(entity)) and Entity_IsAlive(entity)
+        and Entity_GetHealth(entity) > 0 and not Entity_IsUnderConstruction(entity)
+        and Entity_GetBuildingProgress(entity) >= 1
+        and Entity_GetStateModelBool(entity, "landmark_active")
+end
+
+function PersiaLifecycle_Tick()
+    if not PersiaLifecycleState.active then return end
+    local marker = BP_GetUpgradeBlueprint(markerName)
+    for _, player in ipairs(PLAYERS) do
+        if PersiaLifecycleState.players[player.index] then
+            local counts = {}
+            local group = EGroup_CreateUnique()
+            Player_GetEntitiesEGroup(player.id, group)
+            for i = 1, EGroup_Count(group) do
+                local entity = EGroup_GetEntityAt(group, i)
+                if Entity_IsValid(Entity_GetID(entity)) then
+                    local name = string.match(BP_GetName(Entity_GetBlueprint(entity)), "[^:]+$")
+                    if string.find(name, "ps_building_landmark_", 1, true) == 1 and functioning(entity) then
+                        counts[name] = (counts[name] or 0) + 1
+                    end
+                end
+            end
+            EGroup_Destroy(group)
+            PersiaLifecycleState.counts[player.index] = counts
+            local desired = Player_IsAlive(player.id) and (counts[gundeshapur] or 0) > 0
+            local present = Player_HasUpgrade(player.id, marker)
+            if desired and not present then Player_CompleteUpgrade(player.id, marker)
+            elseif not desired and present then Player_RemoveUpgrade(player.id, marker) end
+        end
+    end
+end
+
+function PersiaLifecycle_Start(civilizations)
+    if PersiaLifecycleState.active then return end
+    for _, player in ipairs(PLAYERS) do
+        if civilizations[player.index] == "persia" then
+            PersiaLifecycleState.players[player.index] = true
+            PersiaLifecycleState.active = true
+            print("PERSIA_ACTIVE player=" .. tostring(player.index))
+        end
+    end
+    if PersiaLifecycleState.active then
+        PersiaLifecycle_Tick()
+        -- Official dynasty UI also waits for deferred native landmark state.
+        Rule_AddInterval(PersiaLifecycle_Tick, 0.5)
+    end
+end
+
+function PersiaLifecycle_Cleanup()
+    Rule_Remove(PersiaLifecycle_Tick)
+    if PersiaLifecycleState.active then
+        local marker = BP_GetUpgradeBlueprint(markerName)
+        for _, player in ipairs(PLAYERS) do
+            if PersiaLifecycleState.players[player.index] and Player_HasUpgrade(player.id, marker) then
+                Player_RemoveUpgrade(player.id, marker)
+            end
+        end
+    end
+    PersiaLifecycleState.active = false
+    PersiaLifecycleState.players = {}
+    PersiaLifecycleState.counts = {}
+    PersiaInitializationState.applied = {}
+end

@@ -1,0 +1,260 @@
+-- Everything Garrison gives SCAR lives in the one global table Garrison.
+-- API reference: guide/src/garrison-api.md.
+--   Garrison.encode/send/ping/available  the one-way transport to the Garrison agent
+--   Garrison.decode/call                 ask the agent and decode its answer (experimental)
+--   Garrison.audio.forMod(key)           a mod's audio endpoint
+--   Garrison.audio.events                cooldown-checked event source (modules/audio.scar)
+--   Garrison.ai/lights/physics/presentation/scene   the helper modules (modules/*.scar)
+--   Garrison.mods.<key>                  what Garrison generated for one mod
+-- The agent installs the natives Garrison_Send, Garrison_Ping and Garrison_Call as
+-- globals; call Garrison.send, Garrison.ping and Garrison.call instead.
+
+---@class Garrison
+---@field available boolean The agent's transport was installed when this file loaded
+---@field audio Garrison.audio
+---@field ai Garrison.ai
+---@field lights Garrison.lights
+---@field physics Garrison.physics
+---@field presentation Garrison.presentation
+---@field scene Garrison.scene
+---@field mods Garrison.mods Everything Garrison generated, one table per mod key
+Garrison = Garrison or {}
+
+---What Garrison generated for each mod, by mod key: Garrison.mods.<key>.
+---@class Garrison.mods
+Garrison.mods = Garrison.mods or {}
+
+local schar, spack = string.char, string.pack
+local LIMIT = 65536
+local function finite(v) return type(v)=='number' and v==v and math.abs(v)<math.huge end
+
+---Encode nil, bool, finite number, string or a table as MessagePack.
+---Tables are maps, including integer-keyed tables. Cycles/oversized input raise.
+---@param message any
+---@return string
+function Garrison.encode(message)
+    assert(spack, 'Garrison transport requires Lua 5.3 string.pack')
+    local out, seen, bytes, nodes = {}, {}, 0, 0
+    local function put(s)
+        bytes=bytes+#s;assert(bytes<=LIMIT,'Garrison message exceeds 64 KiB')
+        out[#out+1]=s
+    end
+    local encode
+    encode=function(value,depth)
+        nodes=nodes+1;assert(depth<=16 and nodes<=4096,'Garrison message is too complex')
+        local kind=type(value)
+        if value==nil then put(schar(0xc0))
+        elseif kind=='boolean' then put(schar(value and 0xc3 or 0xc2))
+        elseif kind=='number' then assert(finite(value),'nonfinite number');put(schar(0xcb)..spack('>d',value))
+        elseif kind=='string' then
+            local n=#value;assert(n<LIMIT,'string too large')
+            if n<32 then put(schar(0xa0+n)..value)
+            elseif n<256 then put(schar(0xd9,n)..value)
+            else put(schar(0xda)..spack('>I2',n)..value) end
+        elseif kind=='table' then
+            assert(not seen[value],'cyclic table');seen[value]=true
+            local n=0;for _ in pairs(value) do n=n+1;assert(n<=2048,'map too large') end
+            if n<16 then put(schar(0x80+n)) else put(schar(0xde)..spack('>I2',n)) end
+            for k,v in pairs(value) do encode(k,depth+1);encode(v,depth+1) end
+            seen[value]=nil
+        else error('cannot encode '..kind) end
+    end
+    encode(message,0)
+    return table.concat(out)
+end
+
+local sunpack = string.unpack
+
+---Decode one MessagePack value: the inverse of Garrison.encode, and how
+---Garrison.call reads the agent's reply. Integers stay integers, floats stay
+---floats, str and bin are strings, an array is a sequence {1..n} and a map a
+---table. Bounded like encode: 64 KiB, nesting 16, 4,096 values, 2,048 entries
+---per table. Malformed, truncated or trailing bytes, extension types and
+---nil or NaN keys raise.
+---@param blob string
+---@return any
+function Garrison.decode(blob)
+    assert(sunpack, 'Garrison transport requires Lua 5.3 string.unpack')
+    assert(type(blob)=='string' and #blob<=LIMIT,'Garrison message exceeds 64 KiB')
+    local at, size, nodes = 1, #blob, 0
+    local function left(n) assert(n<=size-at+1,'truncated message') return n end
+    local function num(fmt,n) left(n);local v;v,at=sunpack(fmt,blob,at);return v end
+    local function take(n) left(n);local s=blob:sub(at,at+n-1);at=at+n;return s end
+    local function entries(n) assert(n<=2048 and n<=size-at+1,'table too large') return n end
+    local value
+    local function array(n,depth)
+        local t={};for i=1,entries(n) do t[i]=value(depth+1) end;return t
+    end
+    local function map(n,depth)
+        local t={}
+        for _=1,entries(n) do
+            local k=value(depth+1);local v=value(depth+1)
+            assert(k~=nil and k==k,'invalid table key');t[k]=v
+        end
+        return t
+    end
+    value=function(depth)
+        nodes=nodes+1;assert(depth<=16 and nodes<=4096,'Garrison message is too complex')
+        left(1);local tag=blob:byte(at);at=at+1
+        if tag<0x80 then return tag
+        elseif tag>=0xe0 then return tag-0x100
+        elseif tag<0x90 then return map(tag-0x80,depth)
+        elseif tag<0xa0 then return array(tag-0x90,depth)
+        elseif tag<0xc0 then return take(tag-0xa0)
+        elseif tag==0xc0 then return nil
+        elseif tag==0xc2 then return false
+        elseif tag==0xc3 then return true
+        elseif tag==0xc4 then return take(num('>I1',1))
+        elseif tag==0xc5 then return take(num('>I2',2))
+        elseif tag==0xc6 then return take(num('>I4',4))
+        elseif tag==0xca then return num('>f',4)
+        elseif tag==0xcb then return num('>d',8)
+        elseif tag==0xcc then return num('>I1',1)
+        elseif tag==0xcd then return num('>I2',2)
+        elseif tag==0xce then return num('>I4',4)
+        elseif tag==0xcf then
+            local v=num('>I8',8)
+            if v<0 then v=v+18446744073709551616.0 end -- above math.maxinteger: a float
+            return v
+        elseif tag==0xd0 then return num('>i1',1)
+        elseif tag==0xd1 then return num('>i2',2)
+        elseif tag==0xd2 then return num('>i4',4)
+        elseif tag==0xd3 then return num('>i8',8)
+        elseif tag==0xd9 then return take(num('>I1',1))
+        elseif tag==0xda then return take(num('>I2',2))
+        elseif tag==0xdb then return take(num('>I4',4))
+        elseif tag==0xdc then return array(num('>I2',2),depth)
+        elseif tag==0xdd then return array(num('>I4',4),depth)
+        elseif tag==0xde then return map(num('>I2',2),depth)
+        elseif tag==0xdf then return map(num('>I4',4),depth)
+        end
+        error(string.format('type byte 0x%02x is not part of the format',tag))
+    end
+    local result=value(0)
+    assert(at==size+1,'trailing bytes after the message')
+    return result
+end
+
+-- Snapshot at import; send() checks the actual function again on every call.
+Garrison.available = type(Garrison_Send)=='function' and type(spack)=='function'
+
+---True means locally submitted, not delivered or played. Never raises.
+---@param message table
+---@return boolean
+function Garrison.send(message)
+    if type(Garrison_Send)~='function' or not spack then return false end
+    local ok,blob=pcall(Garrison.encode,message)
+    if not ok then return false end
+    local sent=pcall(Garrison_Send,blob)
+    return sent
+end
+
+---Experimental: ask the Garrison agent and get its answer, synchronously.
+---message is a table with a string field m naming the question: m='echo'
+---answers its payload field; m='mod_source' with mod=<key> answers
+---{path=<the mod's local source/scar folder>} when the launch knows one.
+---Nil when the native is absent, the agent has no answer, or anything fails.
+---Never raises. Never use the answer to change gameplay.
+---@param message table
+---@return any
+function Garrison.call(message)
+    if type(Garrison_Call)~='function' or not spack or not sunpack then return nil end
+    local ok,blob=pcall(Garrison.encode,message)
+    if not ok then return nil end
+    local called,reply=pcall(Garrison_Call,blob)
+    if not called or type(reply)~='string' then return nil end
+    local decoded,value=pcall(Garrison.decode,reply)
+    if decoded then return value end
+end
+
+---Returns 42 on a working bridge, nil on absence/failure.
+---@return integer?
+function Garrison.ping()
+    if type(Garrison_Ping)~='function' then return nil end
+    local ok,value=pcall(Garrison_Ping)
+    if ok then return value end
+end
+
+---@class Garrison.audio
+---@field events Garrison.audio.events
+---@field package _endpoints table<string, Garrison.audio.endpoint> Internal: one endpoint per mod key
+Garrison.audio = Garrison.audio or {}
+local function clock()
+    if type(World_GetGameTime)=='function' then
+        local ok,t=pcall(World_GetGameTime)
+        if ok and finite(t) and t>=0 then return t end
+    end
+    return 0
+end
+
+---A mod's audio endpoint. Methods use dot calls (a.play(...)), not colon calls.
+---@class Garrison.audio.endpoint
+---@field session fun(version?: integer): boolean Start a new session: a new epoch, and the endpoint accepts sounds again
+---@field play fun(clip: string, x?: number, z?: number, gain?: number): boolean One-shot clip, positioned relative to the listener
+---@field event fun(kind: string, now?: number, x?: number, z?: number, count?: integer, gain?: number): boolean Symbolic event; optional gain multiplies its configured level
+---@field bed fun(clip: string, gain?: number): boolean Looping bed
+---@field stopBed fun(): boolean Stop only the looping bed; cues and this session continue
+---@field pulse fun(now?: number): boolean Keep-alive with the game clock
+---@field stop fun(): boolean Stop barrier; nothing more is sent until the next session
+---@field accept fun(event: table): boolean Sink for Garrison.audio.events
+
+-- Every script of one mod shares its endpoint, so wire sequence and epoch stay
+-- consistent; different mods stay independent.
+Garrison.audio._endpoints = Garrison.audio._endpoints or {}
+
+---The mod's audio endpoint. Match key to the mod-project key.
+---Garrison.mods.<key>.audio is the same endpoint.
+---@param key string
+---@return Garrison.audio.endpoint
+function Garrison.audio.forMod(key)
+    -- The mod key rule; tests/fixtures/mod_key_vectors.json holds it to the kit's.
+    assert(type(key)=='string' and #key<=48 and key:match('^[a-z][a-z0-9_]*$'),'invalid mod key')
+    if Garrison.audio._endpoints[key] then return Garrison.audio._endpoints[key] end
+    local a,epoch,seq,stopped,announced={},0,0,true,false
+    local function post(message,now)
+        seq=seq+1
+        message.v=1;message.mod=key;message.epoch=epoch;message.seq=seq
+        message.t=now or clock()
+        return Garrison.send(message)
+    end
+    local function announce()
+        seq=0;announced=post({m='audio_session'},0)
+        return announced
+    end
+    local function send(message,now)
+        if stopped then return false end
+        -- A session sent before the bridge reached this match's script state
+        -- was lost, and the backend drops every event of a session it never
+        -- saw: announce it again first.
+        if not announced and not announce() then return false end
+        return post(message,now)
+    end
+    function a.session(version)
+        if version~=nil and version~=1 then return false end
+        epoch=epoch+1;stopped=false
+        return announce()
+    end
+    function a.play(clip,x,z,gain)
+        return send({m='audio',clip=clip,x=x or 0,z=z or 0,gain=gain or 1})
+    end
+    function a.event(kind,now,x,z,count,gain)
+        return send({m='audio',kind=kind,x=x or 0,z=z or 0,count=count or (seq+1),gain=gain},now)
+    end
+    function a.bed(clip,gain)
+        return send({m='audio',clip=clip,['loop']=true,gain=gain or 1})
+    end
+    function a.stopBed() return send({m='audio',stop_bed=true}) end
+    function a.pulse(now) return send({m='audio',kind='pulse'},now) end
+    function a.stop()
+        if stopped then return false end
+        local ok=send({m='audio',stop=true});stopped=true;return ok
+    end
+    -- Sink for Garrison.audio.events; its own epoch/seq stay internal.
+    function a.accept(event)
+        if event.kind=='session' then return a.session() end
+        if event.kind=='stop' then return a.stop() end
+        return a.event(event.kind,event.time,event.x,event.z,event.ordinal)
+    end
+    Garrison.audio._endpoints[key]=a
+    return a
+end

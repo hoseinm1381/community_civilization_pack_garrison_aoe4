@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-2056667985" List.ParentItemID="-2056667985">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="1627760721" List.ParentItemID="1627760721">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="1549991796" List.ParentItemID="1549991796">
+					<group name="info">
+						<file name="flag_icon_override" value="persia\safavid_flag" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" overrideParent="True" List.ItemID="108014063" List.ParentItemID="108014063">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="117859834">
+					<float name="num" value="1" />
+					<instance_reference name="type" value="ebps\persia\ps_unit_mangonel_3_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<list name="unit_attachments" overrideParent="True">
+						<group name="unit" List.ItemID="-1853521388">
+							<instance_reference name="type" value="ebps\dev\units\unit_siege_cart" overrideParent="True" />
+							<string name="marker" value="mkr_attach" overrideParent="True" />
+						</group>
+					</list>
+					<bool name="is_default_unit" value="True" />
+				</group>
+			</list>
+			<float name="squad_female_chance" value="0" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="1699780273" List.ParentItemID="1699780273">
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\sultanate" List.ItemID="-2051306763" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="134431530" List.ParentItemID="134431530">
+			<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482704" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_mangonel_3" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" overrideParent="True" List.ItemID="-560988483" List.ParentItemID="-560988483">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="215389575">
+						<float name="num" value="1" />
+						<instance_reference name="type" value="ebps\persia\ps_unit_mangonel_3_sul" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+						<list name="unit_attachments" overrideParent="True">
+							<group name="unit" List.ItemID="182919448">
+								<instance_reference name="type" value="ebps\dev\units\unit_siege_cart" overrideParent="True" />
+								<string name="marker" value="mkr_attach" overrideParent="True" />
+							</group>
+						</list>
+						<bool name="is_default_unit" value="True" />
+					</group>
+				</list>
+				<float name="squad_female_chance" value="0" />
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="-279860070" List.ParentItemID="-279860070">
+				<list name="squad_race_type_list" overrideParent="True">
+					<instance_reference name="squad_race_type" value="racebps\sultanate" List.ItemID="1904878474" />
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="1358782723" List.ParentItemID="1358782723">
+				<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482704" />
+		<instance_reference name="parent_pbg" value="sbps\races\core\unit_mangonel_3" />
+	</variant>
+</instance>

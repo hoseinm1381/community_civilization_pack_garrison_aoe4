@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1571357040" List.ParentItemID="1571357040">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_medium_lateen" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="320707304" List.ParentItemID="320707304">
+			<group name="time_cost">
+				<float name="time_seconds" value="24" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-2021965485" List.ParentItemID="-2021965485">
+			<list name="hardpoints">
+				<group name="hardpoint" comment="Left Primary" List.ItemID="-653934340" List.ParentItemID="-653934340">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-2042765210" List.ParentItemID="-2042765210">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\persia\ps_wpn_range_naval_springald_left_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+				</group>
+				<group name="hardpoint" comment="Right Primary" List.ItemID="1627678101" List.ParentItemID="1627678101">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-1315296552" List.ParentItemID="-1315296552">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\persia\ps_wpn_range_naval_springald_right_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-564826070" List.ParentItemID="-564826070">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="628638250" List.ParentItemID="628638250">
+					<group name="tier" List.ItemID="1812081355" List.ParentItemID="1812081355">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier3_naval_combat_ship_sul" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482598" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_ship_2" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="175959572" List.ParentItemID="175959572">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_medium_lateen" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-551598370" List.ParentItemID="-551598370">
+				<group name="time_cost">
+					<float name="time_seconds" value="24" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1085207674" List.ParentItemID="-1085207674">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="493601363" List.ParentItemID="493601363">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-1356970070" List.ParentItemID="-1356970070">
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<instance_reference name="ebp" value="ebps\persia\ps_wpn_range_naval_springald_left_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+									</template_reference>
+								</template_reference>
+							</group>
+						</list>
+					</group>
+					<group name="hardpoint" List.ItemID="281280290" List.ParentItemID="281280290">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="1397012351" List.ParentItemID="1397012351">
+								<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+									<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+										<instance_reference name="ebp" value="ebps\persia\ps_wpn_range_naval_springald_right_persia" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+									</template_reference>
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="399410727" List.ParentItemID="399410727">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="-1182815474" List.ParentItemID="-1182815474">
+						<group name="tier" List.ItemID="591891212" List.ParentItemID="591891212">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier3_naval_combat_ship_sul" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482598" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_ship_2" />
+	</variant>
+</instance>

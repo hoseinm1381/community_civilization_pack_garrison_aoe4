@@ -1,0 +1,370 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-315500114" List.ParentItemID="-315500114">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="2022824018" List.ParentItemID="2022824018">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="building" List.ItemID="-733364859" />
+				<enum name="unit_type" value="castle" List.ItemID="-1535652772" />
+				<enum name="unit_type" value="defensive_structure" List.ItemID="885606268" />
+				<enum name="unit_type" value="siegeable" List.ItemID="298826066" />
+				<enum name="unit_type" value="scar_keep" List.ItemID="-1098626219" />
+				<enum name="unit_type" value="town_bell_target" List.ItemID="927465293" />
+				<enum name="unit_type" value="military" overrideParent="True" List.ItemID="-420898551" />
+				<enum name="unit_type" value="has_default_building_weapons" List.ItemID="-1316760984" />
+			</list>
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\sultanate" List.ItemID="1834422833" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="776973782" List.ParentItemID="776973782">
+			<group name="on_construction_complete_state_tree_refs">
+				<string name="while_construction_complete_entity_state_tree_ref" value="caslte_construction_complete_sul" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\impass_ext" List.ItemID="-1048125279" List.ParentItemID="-1048125279">
+			<file name="stamp_blockers" value="" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-2126635196" List.ParentItemID="-2126635196">
+			<group name="ui_codex_info">
+				<bool name="exclusive" value="True" overrideParent="True" />
+			</group>
+			<list name="ui_extra_infos" overrideParent="True">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="519464119" List.ParentItemID="519464119">
+			<list name="hardpoints">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="-1319836977" List.ParentItemID="-1319836977">
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-1174991843" List.ParentItemID="-1174991843">
+			<list name="spawn_items" overrideParent="True">
+			</list>
+			<list name="queue_requirements" overrideParent="True">
+			</list>
+			<state_tree_node name="production_item_completed_openingbranch" value="building_production_item_completed\Master\building_production_item_complete\building_production_item_complete_keep" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" overrideParent="True" List.ItemID="-57558359" List.ParentItemID="-57558359">
+			<list name="standard_upgrades" overrideParent="True">
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_keep_springald" List.ItemID="-1999999910" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_keep_cannon" List.ItemID="-1660161242" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_murder_holes_4" List.ItemID="1340768672" />
+			</list>
+			<bool name="must_be_in_supply" value="False" />
+			<float name="number_of_standard_slots" value="-1" />
+			<int name="max_queue_size_override" value="-1" />
+			<state_tree_node name="production_item_completed_openingbranch" value="" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="687655738" List.ParentItemID="687655738">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="-1432247124">
+					<string name="state_tree" value="building_action_apply\buildings\keep_action_apply" />
+				</group>
+				<group name="container" overrideParent="True" List.ItemID="-1712845135">
+					<string name="state_tree" value="influence_invalid_sul" />
+				</group>
+			</list>
+			<list name="action_state_trees_run_once" overrideParent="True">
+				<group name="container" List.ItemID="-2313608">
+					<string name="state_tree" value="building_action_apply\buildings\town_center_action_apply\set_civ_dynamic_root\sul" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-231398338" List.ParentItemID="-231398338">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-1365634240" />
+				<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\hold_return_to_work" List.ItemID="1219245541" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="1887967718" List.ParentItemID="1887967718">
+			<list name="type_list" overrideParent="True">
+				<group name="type" List.ItemID="455770249">
+					<enum name="interaction_type" value="repair" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="-1962109645">
+					<enum name="interaction_type" value="construct" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" comment="Seek Shelter" List.ItemID="1674854111">
+					<enum name="interaction_type" value="seek_shelter_destination" />
+					<int name="prefer_number" value="10" overrideParent="True" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+				<group name="type" List.ItemID="1322000585">
+					<enum name="interaction_type" value="resource_drop_off" />
+					<int name="prefer_number" value="-1" />
+					<int name="max_number" value="-1" />
+					<enum name="interaction_target_type" value="entity" />
+					<template_reference name="node_list_option" value="options\none">
+					</template_reference>
+					<bool name="block_pathing_when_interacted" value="False" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-1325636409" List.ParentItemID="-1325636409">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\sultanate\keep_sul" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1833184106" List.ListAction="Append">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="-884670452">
+					<group name="tier" List.ItemID="-761733561">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\defense_keep_sul\tier3_keep_control_sul" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+				<list name="tier_group" overrideParent="True" List.ItemID="51039029">
+					<group name="tier" List.ItemID="1224798367">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\military\keep" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\resource_drop_off_ext" List.ItemID="-679503341" List.ListAction="Append">
+			<enum_table name="accepted_resources">
+				<bool name="action" value="False" />
+				<bool name="command" value="False" />
+				<bool name="popcap" value="False" />
+				<bool name="food" value="True" />
+				<bool name="wood" value="True" />
+				<bool name="stone" value="True" />
+				<bool name="gold" value="True" />
+				<bool name="militia_hre" value="False" />
+				<bool name="merc_byz" value="False" />
+			</enum_table>
+			<enum_table name="drop_off_time_seconds">
+				<float name="action" value="1" />
+				<float name="command" value="1" />
+				<float name="popcap" value="1" />
+				<float name="food" value="0" />
+				<float name="wood" value="0" />
+				<float name="stone" value="0" />
+				<float name="gold" value="0" />
+				<float name="militia_hre" value="1" />
+				<float name="merc_byz" value="1" />
+			</enum_table>
+			<bool name="allow_any_resource_after_construct" value="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482548" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_keep" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1490317030" List.ParentItemID="-1490317030">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1989258776" List.ParentItemID="-1989258776">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="building" List.ItemID="-1124098870" />
+					<enum name="unit_type" value="castle" List.ItemID="-2026295522" />
+					<enum name="unit_type" value="defensive_structure" List.ItemID="1407138992" />
+					<enum name="unit_type" value="siegeable" List.ItemID="129580252" />
+					<enum name="unit_type" value="scar_keep" List.ItemID="-1876339774" />
+					<enum name="unit_type" value="town_bell_target" List.ItemID="-1408421348" />
+					<enum name="unit_type" value="military" overrideParent="True" List.ItemID="59957958" />
+					<enum name="unit_type" value="has_default_building_weapons" List.ItemID="-283279030" />
+				</list>
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\sultanate" List.ItemID="-357644558" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="871060906" List.ParentItemID="871060906">
+				<group name="on_construction_complete_state_tree_refs">
+					<string name="while_construction_complete_entity_state_tree_ref" value="caslte_construction_complete_sul" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\impass_ext" List.ItemID="1723600391" List.ParentItemID="1723600391">
+				<file name="stamp_blockers" value="" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-155244866" List.ParentItemID="-155244866">
+				<group name="ui_codex_info">
+					<bool name="exclusive" value="True" overrideParent="True" />
+				</group>
+				<list name="ui_extra_infos" overrideParent="True">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1272090094" List.ParentItemID="-1272090094">
+				<list name="hardpoints">
+					<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="309284148" List.ParentItemID="309284148">
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-1147509844" List.ParentItemID="-1147509844">
+				<list name="spawn_items" overrideParent="True">
+				</list>
+				<list name="queue_requirements" overrideParent="True">
+				</list>
+				<state_tree_node name="production_item_completed_openingbranch" value="building_production_item_completed\Master\building_production_item_complete\building_production_item_complete_keep" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" overrideParent="True" List.ItemID="-1744773604" List.ParentItemID="-1744773604">
+				<list name="standard_upgrades" overrideParent="True">
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_keep_springald" List.ItemID="1569044625" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_keep_cannon" List.ItemID="-1331794823" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_murder_holes_4" List.ItemID="-1754847888" />
+				</list>
+				<bool name="must_be_in_supply" value="False" />
+				<float name="number_of_standard_slots" value="-1" />
+				<int name="max_queue_size_override" value="-1" />
+				<state_tree_node name="production_item_completed_openingbranch" value="" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="603633965" List.ParentItemID="603633965">
+				<list name="action_state_trees" overrideParent="True">
+					<group name="container" List.ItemID="2006436400">
+						<string name="state_tree" value="campaignMod_building_action_apply\buildings\keep_action_apply" />
+					</group>
+					<group name="container" overrideParent="True" List.ItemID="-1770693378">
+						<string name="state_tree" value="campaignMod_influence_invalid_sul" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="1975057553" List.ParentItemID="1975057553">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-1954521778" />
+					<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\hold_return_to_work" List.ItemID="357302033" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="720790156" List.ParentItemID="720790156">
+				<list name="type_list" overrideParent="True">
+					<group name="type" List.ItemID="855495992">
+						<enum name="interaction_type" value="repair" />
+						<int name="prefer_number" value="-1" />
+						<int name="max_number" value="-1" />
+						<enum name="interaction_target_type" value="entity" />
+						<template_reference name="node_list_option" value="options\none">
+						</template_reference>
+						<bool name="block_pathing_when_interacted" value="False" />
+					</group>
+					<group name="type" List.ItemID="922678257">
+						<enum name="interaction_type" value="construct" />
+						<int name="prefer_number" value="-1" />
+						<int name="max_number" value="-1" />
+						<enum name="interaction_target_type" value="entity" />
+						<template_reference name="node_list_option" value="options\none">
+						</template_reference>
+						<bool name="block_pathing_when_interacted" value="False" />
+					</group>
+					<group name="type" comment="Seek Shelter" List.ItemID="867925190">
+						<enum name="interaction_type" value="seek_shelter_destination" />
+						<int name="prefer_number" value="10" overrideParent="True" />
+						<int name="max_number" value="-1" />
+						<enum name="interaction_target_type" value="entity" />
+						<template_reference name="node_list_option" value="options\none">
+						</template_reference>
+						<bool name="block_pathing_when_interacted" value="False" />
+					</group>
+					<group name="type" List.ItemID="-1935822614">
+						<enum name="interaction_type" value="resource_drop_off" />
+						<int name="prefer_number" value="-1" />
+						<int name="max_number" value="-1" />
+						<enum name="interaction_target_type" value="entity" />
+						<template_reference name="node_list_option" value="options\none">
+						</template_reference>
+						<bool name="block_pathing_when_interacted" value="False" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-1047776678" List.ParentItemID="-1047776678">
+				<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\sultanate\keep_sul" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="103541840" List.ListAction="Append">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="1409614691">
+						<group name="tier" List.ItemID="-1621638391">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\defense_keep_sul\tier3_keep_control_sul" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\resource_drop_off_ext" List.ItemID="-379305255" List.ListAction="Append">
+				<enum_table name="accepted_resources">
+					<bool name="action" value="False" />
+					<bool name="command" value="False" />
+					<bool name="popcap" value="False" />
+					<bool name="food" value="True" />
+					<bool name="wood" value="True" />
+					<bool name="stone" value="True" />
+					<bool name="gold" value="True" />
+					<bool name="militia_hre" value="False" />
+					<bool name="merc_byz" value="False" />
+				</enum_table>
+				<enum_table name="drop_off_time_seconds">
+					<float name="action" value="1" />
+					<float name="command" value="1" />
+					<float name="popcap" value="1" />
+					<float name="food" value="0" />
+					<float name="wood" value="0" />
+					<float name="stone" value="0" />
+					<float name="gold" value="0" />
+					<float name="militia_hre" value="1" />
+					<float name="merc_byz" value="1" />
+				</enum_table>
+				<bool name="allow_any_resource_after_construct" value="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482548" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_keep" />
+	</variant>
+</instance>

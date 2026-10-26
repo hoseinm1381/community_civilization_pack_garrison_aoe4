@@ -1,0 +1,324 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1096691397" List.ParentItemID="-1096691397">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1027607061" List.ParentItemID="-1027607061">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\sultanate" List.ItemID="-1463660189" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1568647967" List.ParentItemID="-1568647967">
+			<list name="ui_extra_infos" overrideParent="True">
+				<template_reference name="ui_extra_info" value="info\ui_extra_info" List.ItemID="1741918229">
+					<file name="icon" value="influence_buff" overrideParent="True" />
+					<locstring name="description" value="11191901" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="1491118015" List.ParentItemID="1491118015">
+			<list name="standard_upgrades">
+				<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_ranged_damage_i_sul" overrideParent="True" List.ItemID="-870478020" List.ParentItemID="-870478020" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_ranged_damage_ii_sul" overrideParent="True" List.ItemID="1859729351" List.ParentItemID="1859729351" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_ranged_damage_iii_sul" overrideParent="True" List.ItemID="997133659" List.ParentItemID="997133659" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_ranged_armor_i_sul" overrideParent="True" List.ItemID="-914465698" List.ParentItemID="-914465698" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_ranged_armor_ii_sul" overrideParent="True" List.ItemID="-1472682793" List.ParentItemID="-1472682793" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_ranged_armor_iii_sul" overrideParent="True" List.ItemID="-1627818889" List.ParentItemID="-1627818889" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate\research\economy\upgrade_tech_university_murder_holes_4_sul" overrideParent="True" List.ItemID="-1858026419" List.ParentItemID="-1858026419" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_ranged_incendiary_sul" overrideParent="True" List.ItemID="1009705116" List.ParentItemID="1009705116" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_siege_weapon_speed_sul" overrideParent="True" List.ItemID="63086353" List.ParentItemID="63086353" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_siege_works_sul" overrideParent="True" List.ItemID="-1276853755" List.ParentItemID="-1276853755" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_siege_roller_trigger_sul" overrideParent="True" List.ItemID="907576384" List.ParentItemID="907576384" />
+				<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_siege_adjustable_crossbar_sul" overrideParent="True" List.ItemID="1829940004" List.ParentItemID="1829940004" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-511212131" List.ParentItemID="-511212131">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" overrideParent="True" List.ItemID="2053504252">
+					<string name="state_tree" value="building_action_apply\buildings\arsenal_action_apply" />
+				</group>
+				<group name="container" List.ItemID="704123076">
+					<string name="state_tree" value="influence_invalid_sul" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="1131569299" List.ParentItemID="1131569299">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-605081410" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-499680381" List.ParentItemID="-499680381">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\sultanate\tech_ranged_sul" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-1191568182" List.ListAction="Append">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="-1510876110">
+					<group name="tier" List.ItemID="-621672179">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\tech_unit_ranged_sul\tier3_tech_unit_ranged_control_sul" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="-1144358389">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\tech_unit_ranged_sul\tier4_tech_unit_ranged_control_sul" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="act_set_current_age_imperial" overrideParent="True" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+				<list name="tier_group" overrideParent="True" List.ItemID="-1042477020">
+					<group name="tier" List.ItemID="-1523617059">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\military\tech_02" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="-915816793">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\military\tech_03" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="-989407859">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\military\tech_04" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482558" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_tech_unit_ranged" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="384341523" List.ParentItemID="384341523">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-949249170" List.ParentItemID="-949249170">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\sultanate" List.ItemID="1363509103" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-2106947033" List.ParentItemID="-2106947033">
+				<list name="ui_extra_infos" overrideParent="True">
+					<template_reference name="ui_extra_info" value="info\ui_extra_info" List.ItemID="1570040954">
+						<file name="icon" value="influence_buff" overrideParent="True" />
+						<locstring name="description" value="11191901" />
+						<template_reference name="description_formatter" value="">
+						</template_reference>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="1074277124" List.ParentItemID="1074277124">
+				<list name="standard_upgrades">
+					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_ranged_damage_i_sul" overrideParent="True" List.ItemID="304276122" List.ParentItemID="304276122" />
+					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_ranged_damage_ii_sul" overrideParent="True" List.ItemID="674429200" List.ParentItemID="674429200" />
+					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_ranged_damage_iii_sul" overrideParent="True" List.ItemID="-216335717" List.ParentItemID="-216335717" />
+					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_ranged_armor_i_sul" overrideParent="True" List.ItemID="124696304" List.ParentItemID="124696304" />
+					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_ranged_armor_ii_sul" overrideParent="True" List.ItemID="1542281044" List.ParentItemID="1542281044" />
+					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_ranged_armor_iii_sul" overrideParent="True" List.ItemID="-970524365" List.ParentItemID="-970524365" />
+					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\economy\upgrade_tech_university_murder_holes_4_sul" overrideParent="True" List.ItemID="82920634" List.ParentItemID="82920634" />
+					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_ranged_archer_silkstring_sul" overrideParent="True" List.ItemID="-1975619697" List.ParentItemID="-1975619697" />
+					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_ranged_incendiary_sul" overrideParent="True" List.ItemID="109734906" List.ParentItemID="109734906" />
+					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_siege_weapon_speed_sul" overrideParent="True" List.ItemID="1053637231" List.ParentItemID="1053637231" />
+					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_ranged_crossbow_cranequin_sul" overrideParent="True" List.ItemID="-1783201711" List.ParentItemID="-1783201711" />
+					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_siege_works_sul" overrideParent="True" List.ItemID="1007871099" List.ParentItemID="1007871099" />
+					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_siege_roller_trigger_sul" overrideParent="True" List.ItemID="576339851" List.ParentItemID="576339851" />
+					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_siege_adjustable_crossbar_sul" overrideParent="True" List.ItemID="1077875274" List.ParentItemID="1077875274" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1800211665" List.ParentItemID="-1800211665">
+				<list name="action_state_trees" overrideParent="True">
+					<group name="container" overrideParent="True" List.ItemID="-1421831666">
+						<string name="state_tree" value="campaignMod_building_action_apply\buildings\arsenal_action_apply" />
+					</group>
+					<group name="container" List.ItemID="-328117480">
+						<string name="state_tree" value="campaignMod_influence_invalid_sul" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="342618929" List.ParentItemID="342618929">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-945970570" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-234130427" List.ParentItemID="-234130427">
+				<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\sultanate\tech_ranged_sul" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="1669057222" List.ListAction="Append">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="-1478632814">
+						<group name="tier" List.ItemID="-409815219">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\tech_unit_ranged_sul\tier3_tech_unit_ranged_control_sul" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="310287474">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\tech_unit_ranged_sul\tier4_tech_unit_ranged_control_sul" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="act_set_current_age_imperial" overrideParent="True" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+					<list name="tier_group" overrideParent="True" List.ItemID="1742567389">
+						<group name="tier" List.ItemID="-938116025">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\military\tech_02" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="-1988845608">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\military\tech_03" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="-677118579">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\military\tech_04" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482558" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_tech_unit_ranged" />
+	</variant>
+</instance>

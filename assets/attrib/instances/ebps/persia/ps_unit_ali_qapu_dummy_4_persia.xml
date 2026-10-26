@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1416011448" List.ListAction="Append">
+			<list name="action_state_trees">
+			</list>
+			<bool name="reset_on_load" value="True" />
+			<list name="physical_state_trees">
+				<group name="container" List.ItemID="337307819">
+					<string name="state_tree" value="wynguard_army_action_apply_eng" />
+				</group>
+			</list>
+			<list name="deferred_action_state_trees">
+			</list>
+			<list name="action_state_trees_run_once">
+			</list>
+			<list name="deferred_action_state_trees_run_once">
+			</list>
+			<list name="physical_state_trees_run_once">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-14398088" List.ListAction="Append">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="action" value="0" />
+					<float name="popcap" value="0" />
+					<float name="command" value="0" />
+					<float name="food" value="240" />
+					<float name="wood" value="20" />
+					<float name="stone" value="0" />
+					<float name="gold" value="180" />
+					<float name="militia_hre" value="0" />
+					<float name="merc_byz" value="0" />
+				</enum_table>
+				<float name="time_seconds" value="88" />
+				<int name="time_turns" value="0" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="-2110132044" List.ListAction="Append">
+			<float name="medic_pop" value="0" />
+			<float name="personnel_pop" value="5" />
+			<float name="vehicle_pop" value="0" />
+			<enum_table name="upkeep_per_pop_per_minute_override">
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="popcap" value="0" />
+				<float name="food" value="0" />
+				<float name="wood" value="0" />
+				<float name="stone" value="0" />
+				<float name="gold" value="0" />
+				<float name="militia_hre" value="0" />
+				<float name="merc_byz" value="0" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="646273266" List.ListAction="Append">
+			<state_tree_node name="ActionTree_OpeningBranch" value="" />
+			<bool name="use_root_motion" value="True" />
+			<bool name="start_suspended" value="False" />
+			<enum name="entity_statetree_sort_tag" value="Default" />
+			<float name="speed_scale_threshold" value="100" />
+			<string name="default_animation" value="" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482581" />
+	<instance_reference name="parent_pbg" value="" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-989822697" List.ListAction="Append">
+				<list name="action_state_trees">
+				</list>
+				<bool name="reset_on_load" value="True" />
+				<list name="physical_state_trees">
+					<group name="container" List.ItemID="-2042931482">
+						<string name="state_tree" value="campaignMod_wynguard_army_action_apply_eng" />
+					</group>
+				</list>
+				<list name="deferred_action_state_trees">
+				</list>
+				<list name="action_state_trees_run_once">
+				</list>
+				<list name="deferred_action_state_trees_run_once">
+				</list>
+				<list name="physical_state_trees_run_once">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1531399377" List.ListAction="Append">
+				<group name="time_cost">
+					<enum_table name="cost">
+						<float name="action" value="0" />
+						<float name="popcap" value="0" />
+						<float name="command" value="0" />
+						<float name="food" value="240" />
+						<float name="wood" value="20" />
+						<float name="stone" value="0" />
+						<float name="gold" value="180" />
+						<float name="militia_hre" value="0" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<float name="time_seconds" value="88" />
+					<int name="time_turns" value="0" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="-1778828304" List.ListAction="Append">
+				<float name="medic_pop" value="0" />
+				<float name="personnel_pop" value="5" />
+				<float name="vehicle_pop" value="0" />
+				<enum_table name="upkeep_per_pop_per_minute_override">
+					<float name="action" value="0" />
+					<float name="command" value="0" />
+					<float name="popcap" value="0" />
+					<float name="food" value="0" />
+					<float name="wood" value="0" />
+					<float name="stone" value="0" />
+					<float name="gold" value="0" />
+					<float name="militia_hre" value="0" />
+					<float name="merc_byz" value="0" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="-2034983757" List.ListAction="Append">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="use_root_motion" value="True" />
+				<bool name="start_suspended" value="False" />
+				<enum name="entity_statetree_sort_tag" value="Default" />
+				<float name="speed_scale_threshold" value="100" />
+				<string name="default_animation" value="" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482581" />
+		<instance_reference name="parent_pbg" value="" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1661850856" List.ListAction="Append">
+				<list name="action_state_trees">
+				</list>
+				<bool name="reset_on_load" value="True" />
+				<list name="physical_state_trees">
+					<group name="container" List.ItemID="1777335380">
+						<string name="state_tree" value="xp3_wynguard_army_action_apply_eng" />
+					</group>
+				</list>
+				<list name="deferred_action_state_trees">
+				</list>
+				<list name="action_state_trees_run_once">
+				</list>
+				<list name="deferred_action_state_trees_run_once">
+				</list>
+				<list name="physical_state_trees_run_once">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="2079972692" List.ListAction="Append">
+				<group name="time_cost">
+					<enum_table name="cost">
+						<float name="action" value="0" />
+						<float name="popcap" value="0" />
+						<float name="command" value="0" />
+						<float name="food" value="240" />
+						<float name="wood" value="20" />
+						<float name="stone" value="0" />
+						<float name="gold" value="180" />
+						<float name="militia_hre" value="0" />
+						<float name="merc_byz" value="0" />
+					</enum_table>
+					<float name="time_seconds" value="88" />
+					<int name="time_turns" value="0" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="-2041239481" List.ListAction="Append">
+				<float name="medic_pop" value="0" />
+				<float name="personnel_pop" value="5" />
+				<float name="vehicle_pop" value="0" />
+				<enum_table name="upkeep_per_pop_per_minute_override">
+					<float name="action" value="0" />
+					<float name="command" value="0" />
+					<float name="popcap" value="0" />
+					<float name="food" value="0" />
+					<float name="wood" value="0" />
+					<float name="stone" value="0" />
+					<float name="gold" value="0" />
+					<float name="militia_hre" value="0" />
+					<float name="merc_byz" value="0" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="2128178973" List.ListAction="Append">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="use_root_motion" value="True" />
+				<bool name="start_suspended" value="False" />
+				<enum name="entity_statetree_sort_tag" value="Default" />
+				<float name="speed_scale_threshold" value="100" />
+				<string name="default_animation" value="" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482581" />
+		<instance_reference name="parent_pbg" value="" />
+	</variant>
+</instance>

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="-524895394" List.ParentItemID="-524895394">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="949711674" List.ParentItemID="949711674">
+					<group name="info">
+						<file name="flag_icon_override" value="persia\safavid_flag" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="200311294" List.ParentItemID="200311294">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="-166728647" List.ParentItemID="-166728647">
+					<instance_reference name="type" value="ebps\persia\ps_unit_naval_transport_ship_2_sul" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="-798610635" List.ParentItemID="-798610635">
+			<list name="requirement_table" comment="Requires castle age&#13;&#10;">
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="1356597876" List.ParentItemID="1356597876">
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\sultanate" List.ItemID="-1953794539" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_speech_ext" List.ItemID="1294234716" List.ParentItemID="1294234716">
+			<list name="age_mapping">
+				<int name="age_number" value="2" overrideParent="True" List.ItemID="2011288999" List.ParentItemID="2011288999" />
+				<int name="age_number" value="2" overrideParent="True" List.ItemID="-959954430" List.ParentItemID="-959954430" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-2109432980" List.ParentItemID="-2109432980">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482709" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_naval_transport_ship_2" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="737444169" List.ParentItemID="737444169">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="-758645522" List.ParentItemID="-758645522">
+						<instance_reference name="type" value="ebps\persia\ps_unit_naval_transport_ship_2_sul" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="-672919893" List.ParentItemID="-672919893">
+				<list name="requirement_table" comment="Requires castle age&#13;&#10;">
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_speech_ext" List.ItemID="1586633172" List.ParentItemID="1586633172">
+				<string name="squad_speaker_code" value="scoutShip" overrideParent="True" />
+				<list name="age_mapping">
+					<int name="age_number" value="2" overrideParent="True" List.ItemID="1839046986" List.ParentItemID="1839046986" />
+					<int name="age_number" value="2" overrideParent="True" List.ItemID="1958279414" List.ParentItemID="1958279414" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482709" />
+		<instance_reference name="parent_pbg" value="sbps\races\core\unit_naval_transport_ship_2" />
+	</variant>
+</instance>

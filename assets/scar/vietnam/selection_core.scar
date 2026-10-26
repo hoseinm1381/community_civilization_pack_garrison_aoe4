@@ -2,11 +2,14 @@
 VietnamSelectionCore = {}
 local Core = VietnamSelectionCore
 
-function Core.New(indices, startedAt, timeout)
+function Core.New(indices, startedAt, timeout, originals)
     local state = {players = {}, order = {}, deadline = startedAt + timeout, closed = false}
     for _, index in ipairs(indices) do
         if state.players[index] == nil then
-            state.players[index] = {choice = nil, dropped = false}
+            local original = originals and originals[index] or "china"
+            assert(original == "china" or original == "delhi", "Unsupported selection pair")
+            state.players[index] = {choice = nil, dropped = false, original = original,
+                alternate = original == "delhi" and "persia" or "vietnam"}
             table.insert(state.order, index)
         end
     end
@@ -17,7 +20,7 @@ end
 function Core.Choose(state, senderIndex, choice, now)
     local player = state.players[senderIndex]
     if state.closed or now >= state.deadline or player == nil or player.dropped
-        or player.choice ~= nil or (choice ~= "china" and choice ~= "vietnam") then
+        or player.choice ~= nil or (choice ~= player.original and choice ~= player.alternate) then
         return false
     end
     player.choice = choice
@@ -29,7 +32,7 @@ function Core.Tick(state, now)
     if now >= state.deadline then
         for _, index in ipairs(state.order) do
             local player = state.players[index]
-            if player.choice == nil then player.choice = "china" end
+            if player.choice == nil then player.choice = player.original end
         end
     end
     return Core.IsReady(state)
@@ -40,7 +43,7 @@ function Core.Drop(state, index)
     local player = state.players[index]
     if player ~= nil then
         player.dropped = true
-        if player.choice == nil then player.choice = "china" end
+        if player.choice == nil then player.choice = player.original end
     end
 end
 

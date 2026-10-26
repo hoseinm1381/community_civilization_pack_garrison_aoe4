@@ -2,6 +2,16 @@
 -- Selection occurs after loading, so every private Vietnam blueprint must be ready
 -- even when the player later chooses ordinary China.
 local entities = {
+    "b7fcea91257b408fb9e8ae4d8bc402e1:vn084_e_unit_culverin_4_chi",
+    "b7fcea91257b408fb9e8ae4d8bc402e1:vn084_e_unit_mangonel_3_chi",
+    "b7fcea91257b408fb9e8ae4d8bc402e1:vn084_e_unit_monk_3_chi",
+    "b7fcea91257b408fb9e8ae4d8bc402e1:vn084_e_unit_naval_combat_ship_3_chi",
+    "b7fcea91257b408fb9e8ae4d8bc402e1:vn084_e_unit_naval_combat_warship_4_chi",
+    "b7fcea91257b408fb9e8ae4d8bc402e1:vn084_e_unit_naval_fireship_3_chi",
+    "b7fcea91257b408fb9e8ae4d8bc402e1:vn084_e_unit_naval_fishing_boat_2_chi",
+    "b7fcea91257b408fb9e8ae4d8bc402e1:vn084_e_unit_naval_trade_ship_3_chi",
+    "b7fcea91257b408fb9e8ae4d8bc402e1:vn084_e_unit_naval_transport_ship_2_chi",
+    "b7fcea91257b408fb9e8ae4d8bc402e1:vn084_e_unit_naval_war_galley_3_chi",
     "b7fcea91257b408fb9e8ae4d8bc402e1:v6i10f848c",
     "b7fcea91257b408fb9e8ae4d8bc402e1:v6i12eebd9",
     "b7fcea91257b408fb9e8ae4d8bc402e1:v6i26e2e88",
@@ -125,6 +135,14 @@ local entities = {
     "b7fcea91257b408fb9e8ae4d8bc402e1:vn_wpn_siege_outpost_handcannon_slit_chi",
 }
 local squads = {
+    "b7fcea91257b408fb9e8ae4d8bc402e1:vn084_s_unit_monk_3_chi",
+    "b7fcea91257b408fb9e8ae4d8bc402e1:vn084_s_unit_naval_combat_ship_2_chi",
+    "b7fcea91257b408fb9e8ae4d8bc402e1:vn084_s_unit_naval_combat_warship_4_chi",
+    "b7fcea91257b408fb9e8ae4d8bc402e1:vn084_s_unit_naval_fireship_3_chi",
+    "b7fcea91257b408fb9e8ae4d8bc402e1:vn084_s_unit_naval_fishing_boat_2_chi",
+    "b7fcea91257b408fb9e8ae4d8bc402e1:vn084_s_unit_naval_trade_ship_3_chi",
+    "b7fcea91257b408fb9e8ae4d8bc402e1:vn084_s_unit_naval_transport_ship_2_chi",
+    "b7fcea91257b408fb9e8ae4d8bc402e1:vn084_s_unit_naval_war_galley_3_chi",
     "b7fcea91257b408fb9e8ae4d8bc402e1:v6i0b03f49",
     "b7fcea91257b408fb9e8ae4d8bc402e1:v6i4880d13",
     "b7fcea91257b408fb9e8ae4d8bc402e1:v6i6861c52",

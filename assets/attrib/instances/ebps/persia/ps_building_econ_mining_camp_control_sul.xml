@@ -1,0 +1,196 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-14273954" List.ParentItemID="-14273954">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="638199223" List.ParentItemID="638199223">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\sultanate" List.ItemID="1995977084" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1052696877" List.ParentItemID="-1052696877">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="917532197" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-1447678292" List.ParentItemID="-1447678292">
+			<float name="orientation" value="0" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1976265074" List.ParentItemID="-1976265074">
+			<list name="ui_extra_infos" overrideParent="True">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" overrideParent="True" List.ItemID="1509683293" List.ParentItemID="1509683293">
+			<list name="standard_upgrades">
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_resource_gold_harvest_rate_2" List.ItemID="1198242446" List.ParentItemID="1198242446" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_resource_gold_harvest_rate_3" List.ItemID="-650941483" List.ParentItemID="-650941483" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_resource_gold_harvest_rate_4" List.ItemID="161105674" List.ParentItemID="161105674" />
+			</list>
+			<bool name="must_be_in_supply" value="False" />
+			<float name="number_of_standard_slots" value="-1" />
+			<int name="max_queue_size_override" value="-1" />
+			<state_tree_node name="production_item_completed_openingbranch" value="" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-627625063" List.ParentItemID="-627625063">
+			<list name="action_state_trees" overrideParent="True">
+				<group name="container" List.ItemID="-632399373">
+					<string name="state_tree" value="building_action_apply\buildings\mining_camp_action_apply" />
+				</group>
+				<group name="container" List.ItemID="1423352873">
+					<string name="state_tree" value="influence_invalid_sul" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1106566552" List.ParentItemID="1106566552">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\sultanate\econ_mining_sul" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-1637602737" List.ListAction="Append">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="-1732493489">
+					<group name="tier" List.ItemID="1530400370">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\buildings\econ_mining_camp_eng\tier1_econ_mining_camp_control_eng" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+				<list name="tier_group" overrideParent="True" List.ItemID="-1793389124">
+					<group name="tier" List.ItemID="-296190765">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\core\outskirts\resource" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482552" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_econ_mining_camp" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1989439900" List.ParentItemID="1989439900">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1979449331" List.ParentItemID="-1979449331">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\sultanate" List.ItemID="685798472" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="655982356" List.ParentItemID="655982356">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-1315264675" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-1868746158" List.ParentItemID="-1868746158">
+				<float name="orientation" value="0" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1820189151" List.ParentItemID="1820189151">
+				<list name="ui_extra_infos" overrideParent="True">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" overrideParent="True" List.ItemID="913966498" List.ParentItemID="913966498">
+				<list name="standard_upgrades">
+					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_resource_gold_harvest_rate_2" List.ItemID="1198242446" List.ParentItemID="1198242446" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_resource_gold_harvest_rate_3" List.ItemID="-650941483" List.ParentItemID="-650941483" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_econ_resource_gold_harvest_rate_4" List.ItemID="161105674" List.ParentItemID="161105674" />
+				</list>
+				<bool name="must_be_in_supply" value="False" />
+				<float name="number_of_standard_slots" value="-1" />
+				<int name="max_queue_size_override" value="-1" />
+				<state_tree_node name="production_item_completed_openingbranch" value="" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1637693054" List.ParentItemID="-1637693054">
+				<list name="action_state_trees" overrideParent="True">
+					<group name="container" List.ItemID="-109710684">
+						<string name="state_tree" value="campaignMod_building_action_apply\buildings\mining_camp_action_apply" />
+					</group>
+					<group name="container" List.ItemID="484183649">
+						<string name="state_tree" value="campaignMod_influence_invalid_sul" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-1633306399" List.ParentItemID="-1633306399">
+				<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\sultanate\econ_mining_sul" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-1260035014" List.ListAction="Append">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="-828741866">
+						<group name="tier" List.ItemID="-599986710">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\buildings\econ_mining_camp_eng\tier1_econ_mining_camp_control_eng" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+					<list name="tier_group" overrideParent="True" List.ItemID="-2092174621">
+						<group name="tier" List.ItemID="997465975">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\core\outskirts\resource" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\modifier_apply_ext" List.ItemID="-1422795329" List.ListAction="Append">
+				<list name="modifiers">
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482552" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_econ_mining_camp" />
+	</variant>
+</instance>

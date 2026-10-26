@@ -1,5 +1,6 @@
 """Supported compact-checkout workflows; immutable evidence stays in the store."""
 import argparse
+import io
 import json
 import os
 from pathlib import Path
@@ -19,6 +20,44 @@ FINAL = 'external/output/release_084/delivery/final-v1/'
 
 
 class AliasReader(Reader):
+    def git_pack(self,name):
+        if Path(name).name!=name or name not in self.doc['packs']:
+            raise ValueError('Unsafe or undeclared pack name')
+        config=ROOT/'workspace.json'
+        cfg=load(config) if config.exists() else {}
+        executable=os.environ.get('GIT_EXECUTABLE') or cfg.get('git_path') or shutil.which('git')
+        if not executable:raise ValueError('Git is required to read an omitted immutable pack')
+        relative=(self.folder/name).resolve().relative_to(ROOT.resolve()).as_posix()
+        result=subprocess.run([str(executable),'-C',str(ROOT),'show','HEAD:'+relative],capture_output=True)
+        expected=self.doc['packs'][name]
+        if result.returncode or len(result.stdout)!=expected['bytes'] or sha(result.stdout)!=expected['sha256']:
+            raise ValueError('Missing or corrupt Git-backed immutable pack: '+name)
+        return result.stdout
+
+    def chunk(self,h):
+        row=self.doc['chunks'][h];name=row['pack']
+        if Path(name).name!=name or name not in self.doc['packs']:
+            raise ValueError('Unsafe or undeclared pack name')
+        if name not in self.opened and not (self.folder/name).is_file():
+            data=self.git_pack(name)
+            if len(self.opened)>=8:self.opened.pop(next(iter(self.opened))).close()
+            self.opened[name]=zipfile.ZipFile(io.BytesIO(data))
+        return super().chunk(h)
+
+    def verify(self,progress=None):
+        for name,row in self.doc['packs'].items():
+            if Path(name).name!=name:raise ValueError('Unsafe pack name')
+            path=self.folder/name
+            if path.is_file():
+                if path.stat().st_size!=row['bytes'] or file_sha(path)!=row['sha256']:
+                    raise ValueError('Corrupt pack: '+name)
+            else:
+                self.git_pack(name)
+        for i,key in enumerate(self.doc['files'],1):
+            check_text(key,self.read(key))
+            if progress and i%2000==0:progress(i)
+        return dict(files=len(self.doc['files']),chunks=len(self.doc['chunks']),packs=len(self.doc['packs']))
+
     def read(self, key):
         key = self.doc.get('aliases', {}).get(key, key)
         # Keys address virtual archive records, not physical workspace files.

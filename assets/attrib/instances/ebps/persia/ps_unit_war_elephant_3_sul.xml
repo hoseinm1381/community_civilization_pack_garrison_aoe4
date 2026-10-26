@@ -1,0 +1,249 @@
+<instance version="6" description="War Elephant" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="2015716676" List.ParentItemID="2015716676">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="-519712866">
+					<group name="tier" List.ItemID="-1877252529">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier3_war_elephant_sul" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+					<group name="tier" List.ItemID="-1007062869">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier3_war_elephant_upgraded_sul" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\sultanate\research\landmark_new\upgrade_age3_war_elephant_elite_sul" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-638902394" List.ParentItemID="-638902394">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="food" value="400" overrideParent="True" />
+					<float name="gold" value="350" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1860277336" List.ParentItemID="-1860277336">
+			<float name="hitpoints" value="850" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Melee" value="4" overrideParent="True" />
+				<float name="Ranged" value="5" overrideParent="True" />
+				<float name="Fire" value="0" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="1621966410" List.ParentItemID="1621966410">
+			<group name="sight_package">
+				<float name="inner_radius" value="12" overrideParent="True" />
+				<float name="outer_radius" value="36" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1316572367" List.ParentItemID="-1316572367">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="1839232108" />
+				<enum name="unit_type" value="armored" List.ItemID="652363666" />
+				<enum name="unit_type" value="war_elephant" List.ItemID="-1979536911" />
+				<enum name="unit_type" value="cavalry_war_elephant" List.ItemID="-1698692104" />
+				<enum name="unit_type" value="melee" List.ItemID="129142498" />
+				<enum name="unit_type" value="formational" List.ItemID="1920321886" />
+				<enum name="unit_type" value="dynamic_root_war_elephant" List.ItemID="-818443323" />
+				<enum name="unit_type" value="cavalry" List.ItemID="-1302585281" />
+				<enum name="unit_type" value="heavy" List.ItemID="-1511323398" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="844568956" />
+				<enum name="unit_type" value="included_by_military_hotkeys" List.ItemID="1747005218" />
+				<enum name="unit_type" value="find_non_siege_land_military" List.ItemID="-1080433106" />
+				<enum name="unit_type" value="land_military" List.ItemID="-198654333" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-2019497169" List.ParentItemID="-2019497169">
+			<float name="decorator_height" value="8.5" overrideParent="True" />
+			<enum name="selection_method" value="bone_obb" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1189022316" List.ParentItemID="-1189022316">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="610239617" List.ParentItemID="610239617">
+					<list name="weapon_table" removedIds="-1840675100">
+						<group name="weapon" List.ItemID="-719422087" List.ParentItemID="-719422087">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\sultanate\melee\weapon_war_elephant_melee_3_sul" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\sultanate\weapons\wpn_melee_war_elephant_goad_3_sul" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="104557654" List.ParentItemID="104557654">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\sultanate\melee\weapon_war_elephant_charge_3_sul" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_ebps_template" overrideParent="True" />
+								<string name="marker_name_parent" value="" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-867415763" List.ParentItemID="-867415763">
+			<enum_table name="speed_scaling_table">
+				<float name="default_speed" value="4" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="1887272483" List.ParentItemID="1887272483">
+			<state_tree_node name="ActionTree_OpeningBranch" value="unit_entity" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482638" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_war_elephant" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-1668209998" List.ParentItemID="-1668209998">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="-1181251929">
+						<group name="tier" List.ItemID="-902805261">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier3_war_elephant_sul" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+						<group name="tier" List.ItemID="427797093">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier3_war_elephant_upgraded_sul" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\sultanate\research\landmark_new\upgrade_age3_war_elephant_elite_sul" overrideParent="True" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="100414235" List.ParentItemID="100414235">
+				<group name="time_cost">
+					<enum_table name="cost">
+						<float name="food" value="800" overrideParent="True" />
+						<float name="gold" value="400" overrideParent="True" />
+					</enum_table>
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-153028879" List.ParentItemID="-153028879">
+				<float name="hitpoints" value="2000" overrideParent="True" />
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Melee" value="5" overrideParent="True" />
+					<float name="Ranged" value="5" overrideParent="True" />
+					<float name="Fire" value="0" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-2047010920" List.ParentItemID="-2047010920">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="military" List.ItemID="-329836309" />
+					<enum name="unit_type" value="armored" List.ItemID="-1915110970" />
+					<enum name="unit_type" value="war_elephant" List.ItemID="-1547708821" />
+					<enum name="unit_type" value="cavalry_war_elephant" List.ItemID="1712604709" />
+					<enum name="unit_type" value="melee" List.ItemID="1168634975" />
+					<enum name="unit_type" value="formational" List.ItemID="-1377198380" />
+					<enum name="unit_type" value="dynamic_root_war_elephant" List.ItemID="-1467853997" />
+					<enum name="unit_type" value="cavalry" List.ItemID="705803125" />
+					<enum name="unit_type" value="annihilation_condition" List.ItemID="1404677482" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="356917568" List.ParentItemID="356917568">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="-1367060222" List.ParentItemID="-1367060222">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="650735708" List.ParentItemID="650735708">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\sultanate\melee\weapon_war_elephant_melee_3_sul" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\sultanate\weapons\wpn_melee_war_elephant_goad_3_sul" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="823156273" List.ParentItemID="823156273">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\sultanate\melee\weapon_war_elephant_ram_3_sul" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="" overrideParent="True" />
+									<string name="marker_name_parent" value="" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-1177053153" List.ParentItemID="-1177053153">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\sultanate\melee\weapon_war_elephant_charge_3_sul" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_ebps_template" overrideParent="True" />
+									<string name="marker_name_parent" value="" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-269178263" List.ParentItemID="-269178263">
+				<enum_table name="speed_scaling_table">
+					<float name="default_speed" value="4" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="366066593" List.ParentItemID="366066593">
+				<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_unit_entity" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482638" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_war_elephant" />
+	</variant>
+</instance>

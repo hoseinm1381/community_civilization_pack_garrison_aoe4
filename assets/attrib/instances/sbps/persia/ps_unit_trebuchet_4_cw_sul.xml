@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-2056667985" List.ParentItemID="-2056667985">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="237556951" List.ParentItemID="237556951">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="-320941912" List.ParentItemID="-320941912">
+					<group name="info">
+						<file name="flag_icon_override" value="persia\safavid_flag" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-469993225" List.ParentItemID="-469993225">
+			<list name="unit_list" overrideParent="True">
+				<group name="loadout_data" List.ItemID="-1968680378">
+					<float name="num" value="1" />
+					<instance_reference name="type" value="ebps\persia\ps_unit_trebuchet_4_cw_sul" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<list name="unit_attachments" overrideParent="True">
+						<group name="unit" List.ItemID="-2130924019">
+							<instance_reference name="type" value="ebps\dev\units\unit_siege_cart" overrideParent="True" />
+							<string name="marker" value="mkr_attach" overrideParent="True" />
+						</group>
+					</list>
+					<bool name="is_default_unit" value="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="-559157649" List.ParentItemID="-559157649">
+			<list name="squad_type_list" overrideParent="True">
+				<enum name="squad_type" value="military" List.ItemID="-1365003842" />
+				<enum name="squad_type" value="scar_age4" List.ItemID="-826641065" />
+				<enum name="squad_type" value="scar_trebuchet_cw" List.ItemID="-1755549679" />
+				<enum name="squad_type" value="scar_military" List.ItemID="-662739486" />
+				<enum name="squad_type" value="siege" List.ItemID="-1825195927" />
+				<enum name="squad_type" value="siege_range" List.ItemID="-1741915831" />
+				<enum name="squad_type" value="trebuchet_counterweight" List.ItemID="-1073703626" />
+				<enum name="squad_type" value="scar_trebuchet" List.ItemID="-1598761489" />
+			</list>
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\sultanate" List.ItemID="-420282465" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="820980818" List.ParentItemID="820980818">
+			<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482722" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_trebuchet_4_counterweight" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-1374300086" List.ParentItemID="-1374300086">
+				<list name="unit_list" overrideParent="True">
+					<group name="loadout_data" List.ItemID="-616462062">
+						<float name="num" value="1" />
+						<instance_reference name="type" value="ebps\persia\ps_unit_trebuchet_4_cw_sul" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+						<list name="unit_attachments" overrideParent="True">
+							<group name="unit" List.ItemID="-903758148">
+								<instance_reference name="type" value="ebps\dev\units\unit_siege_cart" overrideParent="True" />
+								<string name="marker" value="mkr_attach" overrideParent="True" />
+							</group>
+						</list>
+						<bool name="is_default_unit" value="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="-47476714" List.ParentItemID="-47476714">
+				<list name="squad_race_type_list" overrideParent="True">
+					<instance_reference name="squad_race_type" value="racebps\sultanate" List.ItemID="1999850794" />
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="1146964147" List.ParentItemID="1146964147">
+				<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482722" />
+		<instance_reference name="parent_pbg" value="sbps\races\core\unit_trebuchet_4_counterweight" />
+	</variant>
+</instance>

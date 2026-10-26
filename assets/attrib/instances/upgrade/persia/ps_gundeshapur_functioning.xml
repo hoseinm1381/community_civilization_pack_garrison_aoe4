@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="4" template="upgrade">
+	<group name="upgrade_bag">
+		<enum name="owner_type" value="player" />
+		<float name="local_max_limit" value="1" />
+		<bool name="ui_event_cue" value="False" />
+	</group>
+	<uniqueid name="pbgid" value="2147482804" />
+	<instance_reference name="parent_pbg" value="" />
+</instance>

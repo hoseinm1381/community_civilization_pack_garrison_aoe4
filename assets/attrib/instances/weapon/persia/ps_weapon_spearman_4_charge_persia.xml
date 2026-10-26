@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="behaviour">
+			<bool name="enable_auto_target_search" value="False" overrideParent="True" />
+		</group>
+		<group name="cooldown">
+			<group name="duration">
+				<float name="max" value="1" overrideParent="True" />
+				<float name="min" value="1" overrideParent="True" />
+			</group>
+		</group>
+		<group name="damage">
+			<float name="max" value="8.8" overrideParent="True" />
+			<float name="min" value="8.8" overrideParent="True" />
+		</group>
+		<group name="fire">
+			<float name="wind_down" value="0.5" overrideParent="True" />
+			<float name="wind_up" value="0.25" overrideParent="True" />
+		</group>
+		<string name="fx_munition_name" value="common_pike_charge" overrideParent="True" />
+		<group name="range">
+			<float name="max" value="2.18" overrideParent="True" />
+		</group>
+		<group name="penetration">
+			<float name="near" value="0" overrideParent="True" />
+			<float name="far" value="0" overrideParent="True" />
+			<float name="mid" value="0" overrideParent="True" />
+		</group>
+		<template_reference name="charge_option" value="options\weapon\charge_option" overrideParent="True">
+			<float name="weapon_hit_disabled_duration" value="1" />
+			<float name="charge_attack_target_position_offset" value="2" />
+		</template_reference>
+		<bool name="ui_show_on_tooltip" value="False" overrideParent="True" />
+		<list name="target_type_table">
+			<group name="target_unit_type_multipliers" List.ItemID="-552589717" List.ParentItemID="-552589717">
+				<float name="base_damage_modifier" value="32.4" overrideParent="True" />
+			</group>
+			<group name="target_unit_type_multipliers" List.ItemID="-854805182" List.ListAction="Append">
+				<enum name="unit_type" value="worker" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="1" />
+					<float name="penetration_multiplier" value="1" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+				<float name="base_damage_modifier" value="2.6" overrideParent="True" />
+			</group>
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="2147482784" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_spearman_4" />
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<group name="behaviour">
+				<bool name="enable_auto_target_search" value="False" overrideParent="True" />
+			</group>
+			<group name="cooldown">
+				<group name="duration">
+					<float name="max" value="1" overrideParent="True" />
+					<float name="min" value="1" overrideParent="True" />
+				</group>
+			</group>
+			<group name="damage">
+				<float name="max" value="8.8" overrideParent="True" />
+				<float name="min" value="8.8" overrideParent="True" />
+			</group>
+			<group name="fire">
+				<float name="wind_down" value="0.5" overrideParent="True" />
+				<float name="wind_up" value="0.25" overrideParent="True" />
+				<float name="animation_impact_frame_time" value="0.25" overrideParent="True" />
+			</group>
+			<string name="fx_munition_name" value="common_pike_charge" overrideParent="True" />
+			<group name="range">
+				<float name="max" value="2.18" overrideParent="True" />
+			</group>
+			<group name="penetration">
+				<float name="near" value="0" overrideParent="True" />
+				<float name="far" value="0" overrideParent="True" />
+				<float name="mid" value="0" overrideParent="True" />
+			</group>
+			<list name="target_type_table">
+				<group name="target_unit_type_multipliers" List.ItemID="-1954570790" List.ParentItemID="-1954570790">
+					<float name="base_damage_modifier" value="32.4" overrideParent="True" />
+				</group>
+				<group name="target_unit_type_multipliers" List.ItemID="269938895" List.ListAction="Append">
+					<enum name="unit_type" value="worker" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="2.6" overrideParent="True" />
+				</group>
+			</list>
+			<template_reference name="charge_option" value="options\weapon\charge_option" overrideParent="True">
+				<float name="weapon_hit_disabled_duration" value="1" />
+				<float name="charge_attack_target_position_offset" value="2" />
+			</template_reference>
+		</group>
+		<uniqueid name="pbgid" value="2147482784" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_spearman_4" />
+	</variant>
+	<variant name="xp3">
+		<group name="weapon_bag">
+			<group name="behaviour">
+				<bool name="enable_auto_target_search" value="False" overrideParent="True" />
+			</group>
+			<group name="cooldown">
+				<group name="duration">
+					<float name="max" value="1" overrideParent="True" />
+					<float name="min" value="1" overrideParent="True" />
+				</group>
+			</group>
+			<group name="damage">
+				<float name="max" value="8.8" overrideParent="True" />
+				<float name="min" value="8.8" overrideParent="True" />
+			</group>
+			<group name="fire">
+				<float name="wind_down" value="0.5" overrideParent="True" />
+				<float name="wind_up" value="0.25" overrideParent="True" />
+			</group>
+			<string name="fx_munition_name" value="common_pike_charge" overrideParent="True" />
+			<group name="range">
+				<float name="max" value="2.18" overrideParent="True" />
+			</group>
+			<group name="penetration">
+				<float name="near" value="0" overrideParent="True" />
+				<float name="far" value="0" overrideParent="True" />
+				<float name="mid" value="0" overrideParent="True" />
+			</group>
+			<template_reference name="charge_option" value="options\weapon\charge_option" overrideParent="True">
+				<float name="weapon_hit_disabled_duration" value="1" />
+				<float name="charge_attack_target_position_offset" value="2" />
+			</template_reference>
+			<bool name="ui_show_on_tooltip" value="False" overrideParent="True" />
+			<list name="target_type_table">
+				<group name="target_unit_type_multipliers" List.ItemID="-552589717" List.ParentItemID="-552589717">
+					<float name="base_damage_modifier" value="32.4" overrideParent="True" />
+				</group>
+				<group name="target_unit_type_multipliers" List.ItemID="-1267459909" List.ListAction="Append">
+					<enum name="unit_type" value="worker" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="2.6" overrideParent="True" />
+				</group>
+			</list>
+		</group>
+		<uniqueid name="pbgid" value="2147482784" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_spearman_4" />
+	</variant>
+</instance>

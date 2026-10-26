@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="4" description="" template="upgrade">
+	<group name="upgrade_bag">
+		<group name="ui_info">
+			<locstring name="extra_text" value="5283" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+			<locstring name="help_text" value="5281" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+			<locstring name="screen_name" value="5282" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+			<file name="icon_name" value="persia\handcannon_tech" overrideParent="True" />
+			<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+				<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info">
+					<int name="nominal_index" value="7" overrideParent="True" />
+				</template_reference>
+			</template_reference>
+		</group>
+		<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_monastery\tech_upgrade_sanctity_sul" overrideParent="True" />
+		<group name="time_cost">
+			<enum_table name="cost">
+				<float name="food" value="100" overrideParent="True" />
+				<float name="gold" value="350" overrideParent="True" />
+			</enum_table>
+			<float name="time_seconds" value="60" overrideParent="True" />
+		</group>
+		<group name="ui_position">
+			<int name="ui_position_row" value="3" overrideParent="True" />
+			<int name="ui_position_column" value="2" overrideParent="True" />
+		</group>
+		<list name="requirements">
+			<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="1797661703" List.ParentItemID="1797661703">
+				<enum name="reason" value="usage" overrideParent="True" />
+				<bool name="is_present" value="True" overrideParent="True" />
+				<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
+				<bool name="include_queued" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="1539658827" List.ListAction="Append">
+				<enum name="reason" value="usage_and_display" overrideParent="True" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="False" overrideParent="True" />
+				<int name="max_completed" value="100" />
+				<int name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\persia\ps_unit_tofangchi_4_per" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+				<bool name="include_queued" value="True" overrideParent="True" />
+				<group name="include_pbg_parenting">
+					<bool name="include_child_pbgs" value="True" />
+					<bool name="include_parent_pbgs" value="False" />
+				</group>
+				<bool name="include_completed" value="True" />
+			</template_reference>
+		</list>
+		<group name="state_tree_references">
+			<template_reference name="on_action_entity_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="common_upgrade_master\handcannon_leadshot\swap_weapons" overrideParent="True" />
+			</template_reference>
+		</group>
+		<group name="filter_conditions">
+			<list name="apply_to_unit_classes" overrideParent="True">
+				<enum name="unit_class" value="handcannon" List.ItemID="-842249550" List.ParentItemID="-842249550" />
+			</list>
+		</group>
+		<list name="float_properties" overrideParent="True">
+			<template_reference name="float" value="upgradebag_float_property" List.ItemID="-1194676833" List.ParentItemID="-1194676833">
+				<float name="value" value="0.2" />
+				<enum name="id" value="move_speed" />
+			</template_reference>
+			<template_reference name="float" value="upgradebag_float_property" List.ItemID="-1145464022" List.ParentItemID="-1145464022">
+				<float name="value" value="1.5" />
+				<enum name="id" value="duration" />
+			</template_reference>
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="2147482746" />
+	<instance_reference name="parent_pbg" value="upgrade\races\byzantine\mercenary_contracts\merc_contract_base_byz" />
+</instance>

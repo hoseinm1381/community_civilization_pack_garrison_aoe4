@@ -11,6 +11,14 @@ inputs and required ignored art/audio/recovery assets: Git alone does not cover
 ignored data. Do not delete those stores or old deliveries as an incidental
 part of implementation.
 
+This folder is now the active Git checkout on `main`. Its independent Git
+HEAD/index reuse historical objects through `.git/objects/info/alternates`
+pointing to the retained F: repository object database. Do not delete that
+database. Large immutable packs omitted from the working directory remain
+tracked with skip-worktree and can be read by the compact Git-backed reader;
+do not stage their absence as deletions. No second working copy is needed for
+milestone synchronization: commit the source and new compact delta here.
+
 The current authorized task is a functional Persia port with existing visuals,
 followed by local GitHub readiness. Full Persian art is the next milestone.
 Preserve Garrison identity, Vietnam's current art/voices/compiled fixes and the
@@ -19,7 +27,7 @@ branch is ready for their manual push. This supersedes historical requirements
 to create fresh per-version source/staging trees. Keep source/static, actual
 native burn, archive/package proof and game acceptance as separate gates.
 
-Parent instructions still apply. Current packaged milestone is **0.8.8**; read
+Parent instructions still apply. Preserved pre-port baseline is **0.8.8**; read
 `docs/DEVELOPMENT_085.md`, `docs/RELEASE_088_DELIVERY.md`, and `COLLABORATION.md` before resuming. Historical
 release commands/freezes are provenance, not instructions to rebuild old milestones.
 

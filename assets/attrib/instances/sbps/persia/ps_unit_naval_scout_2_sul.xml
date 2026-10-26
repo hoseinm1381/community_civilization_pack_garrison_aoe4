@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="151824876" List.ParentItemID="151824876">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="-2083182079" List.ParentItemID="-2083182079">
+					<group name="info">
+						<file name="flag_icon_override" value="persia\safavid_flag" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="1456145803" List.ParentItemID="1456145803">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="-1334856577" List.ParentItemID="-1334856577">
+					<instance_reference name="type" value="ebps\persia\ps_unit_naval_scout_2_sul" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="311089759" List.ParentItemID="311089759">
+			<list name="requirement_table" comment="&#13;&#10;">
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_attention_ext" List.ItemID="356970101" List.ParentItemID="356970101">
+			<bool name="spot_enemy_activity" value="False" overrideParent="True" />
+			<float name="last_seen_reset_delay_secs" value="10" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="99577591" List.ParentItemID="99577591">
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\sultanate" List.ItemID="-1589489569" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_speech_ext" List.ItemID="-675411632" List.ParentItemID="-675411632">
+			<list name="age_mapping">
+				<int name="age_number" value="2" overrideParent="True" List.ItemID="-702922098" List.ParentItemID="-702922098" />
+				<int name="age_number" value="2" overrideParent="True" List.ItemID="-1209163252" List.ParentItemID="-1209163252" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-800409938" List.ParentItemID="-800409938">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482707" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_naval_scout_2" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="1823326646" List.ParentItemID="1823326646">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="1454876869" List.ParentItemID="1454876869">
+						<instance_reference name="type" value="ebps\persia\ps_unit_naval_scout_2_sul" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="891622959" List.ParentItemID="891622959">
+				<list name="requirement_table" comment="&#13;&#10;">
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_speech_ext" List.ItemID="8909615" List.ParentItemID="8909615">
+				<list name="age_mapping">
+					<int name="age_number" value="2" overrideParent="True" List.ItemID="1458521745" List.ParentItemID="1458521745" />
+					<int name="age_number" value="2" overrideParent="True" List.ItemID="133076715" List.ParentItemID="133076715" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482707" />
+		<instance_reference name="parent_pbg" value="sbps\races\core\unit_naval_scout_2" />
+	</variant>
+</instance>
