@@ -2,6 +2,8 @@
 
 Current functional release: **0.9.0 — Persia and Vietnam**.
 
+[Download 0.9.0](https://github.com/hoseinm1381/community_civilization_pack_garrison_aoe4/releases/download/v0.9.0/community_civilization_pack-0.9.0.zip) · [Patch notes](docs/RELEASE_090.md)
+
 - Select China in the lobby: choose China or Vietnam at match start.
 - Select Delhi Sultanate: choose Delhi or Persia.
 - One shared 30-second deadline; timeout keeps the original civilization.
