@@ -1,0 +1,56 @@
+{
+  "schema": "ccp-base-game-distribution/v1",
+  "date": "2026-10-26",
+  "edition": "Normal",
+  "project_guid": "a743d7d1d7534cf78817e29d8ded7366",
+  "distribution_branch": "base_game_release",
+  "source_git_base": "83ab0c900c1609aa3936e13323e427e9eb36def6",
+  "source_current_tests_passed": 29,
+  "source_portable_verifier": "passed",
+  "source_changed_paths_count": 104,
+  "source_snapshot_files": 772,
+  "native_compile_performed_for_distribution": false,
+  "compiled_source_exact_rebuild_proven": false,
+  "archive": {
+    "filename": "Vietnam_v2.sga",
+    "sha256": "c3dae72e206517910aca75803bdb44f43a9b79b0187be6ea9cb09c63b537fac9",
+    "bytes": 7400896,
+    "namespace": "a743d7d1d7534cf78817e29d8ded7366",
+    "members": 609,
+    "private_persia_instances": 281,
+    "stored_byte_verification": {
+      "checked_files": 609,
+      "crc_mismatches": [],
+      "scope": "stored bytes against recorded CRC32 and SHA1 block hashes; the header signature is not validated",
+      "sha1_mismatches": [],
+      "unhashed_files": 0,
+      "verified": true
+    }
+  },
+  "acceptance": {
+    "earlier_opening_selection_user_accepted": true,
+    "fresh_match_after_duplicate_repair": false,
+    "full_persia_roster_gameplay": false,
+    "landmark_effect_teardown": false,
+    "save_load": false,
+    "multiplayer": false
+  },
+  "downloads": {
+    "Community_Civilization_Pack_Normal-local.zip": {
+      "bytes": 7253990,
+      "sha256": "e13b332d8caa24550e5bd0a04d98298e975e5977614c9cde25c6aae1b03acd3f"
+    },
+    "Community_Civilization_Pack_Normal-editable-source.zip": {
+      "bytes": 6616763,
+      "sha256": "3e81908067e00332c8ad51933a4b9d1041cd8a77dfcd5661f4f73ddae0079740"
+    }
+  },
+  "zip_crc_and_all_payload_hashes_verified": true,
+  "excluded": [
+    "machine configuration",
+    "Git database",
+    "editor/tool installs",
+    "cache/work/output/history",
+    "obsolete probe archive"
+  ]
+}
