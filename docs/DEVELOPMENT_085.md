@@ -1,4 +1,8 @@
-# Garrison development and cold storage (current 0.8.7)
+> Current 088: see RELEASE_088_DELIVERY.md for the Castle crash and Phổ Minh
+> interaction fix. Existing 086 cooldowns and 087 selection/resource flags remain.
+> Lower-version build recipes below are historical.
+
+# Garrison development and cold storage (current 0.8.8)
 
 The owner continues developing in this E: workspace. Do not access or modify the
 separate contributor/GitHub checkout: the owner is reducing it independently.
@@ -15,12 +19,12 @@ remain protected.
 
 ## Minimal working release route
 
-Current package: `output/release_085/final-v2/community_civilization_pack-0.8.7.zip`.
-See `RELEASE_087_DELIVERY.md`: the delivery folder is intentionally reused, timers
+Current package: `output/release_085/final-v2/community_civilization_pack-0.8.8.zip`.
+See `RELEASE_088_DELIVERY.md`: the delivery folder is intentionally reused, timers
 are now per individual unit, and the current dispatcher is `voices_086.scar`.
 The 085 build recipe and global-timer description below are historical; do not
 use that recipe for the current release. Cold-storage restore commands remain
-current and its package guard now recognizes 087.
+current and its package guard now recognizes 088.
 Rollback: `output/release_084/delivery/final-v1`.
 
 The accepted 084 owning archive includes compiled-only resource fixes, all custom

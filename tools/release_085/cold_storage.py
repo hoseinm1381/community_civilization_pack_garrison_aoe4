@@ -63,7 +63,7 @@ def guard():
     proof=load(EXT/'output/release_085/final-v2/verification.json')
     delivery=EXT/'output/release_085/final-v2'
     version=proof.get('version','0.8.5')
-    if version not in ('0.8.5','0.8.6','0.8.7'):raise ValueError('Unreviewed current release version')
+    if version not in ('0.8.5','0.8.6','0.8.7','0.8.8'):raise ValueError('Unreviewed current release version')
     if file_sha(delivery/'community_civilization_pack.sga')!=proof['sga_sha256'] or file_sha(delivery/('community_civilization_pack-'+version+'.zip'))!=proof['zip_sha256']:
         raise ValueError('085 release changed')
     return proof

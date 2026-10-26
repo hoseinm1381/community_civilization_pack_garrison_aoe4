@@ -1,14 +1,15 @@
 {
-  "version": "0.8.8",
-  "baseline_version": "0.8.4 compact inputs plus 087/088 member deltas",
-  "project_guid": "b7fcea91-257b-408f-b9e8-ae4d8bc402e1",
-  "bundle_key": "community_civilization_pack",
-  "entrypoint": "tools/compact/portable.py",
-  "guide": "docs/COMPACT_DEVELOPMENT.md",
-  "data_index": "development-data/current-084-v1/index-088-v1.json.gz",
-  "zip_sha256": "ca7ff19b1da774666f6f8e1dc3d6d9a4357dc8aa97dc99578dc5f776f9d63e2a",
-  "sga_sha256": "a341dfb4ceec21c42f795502de5e3017a490ac83c66a7056eb8aa33d81c6b09a",
-  "zip_limit_bytes": 400000000,
-  "normal_edition_included": false,
-  "native_game_acceptance": "pending"
+  "version": "0.8.1",
+  "baseline_version": "0.8.0",
+  "package": "output/release_081/delivery/final-v1/community_civilization_pack-0.8.1.zip",
+  "sga_sha256": "a295752f63ad8bcf62b1ca323d0a60c1084d6f6c3c4f380ab52421324ca17a10",
+  "entrypoint": "tools/build_release_081.ps1",
+  "guide": "docs/RELEASE_081_REPORT.md",
+  "recovery_stores": [
+    "resources_071",
+    "resources_080"
+  ],
+  "preservation_release": false,
+  "normal_edition_untouched": true,
+  "consolidation_080_allocated_file_budget": 6000000000
 }
