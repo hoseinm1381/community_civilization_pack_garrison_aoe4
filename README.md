@@ -1,5 +1,7 @@
 # Community Civilization Pack — Garrison
 
+**[Download Garrison 0.8.8 — installable ZIP (284.94 MB)](https://github.com/hoseinm1381/community_civilization_pack_garrison_aoe4/releases/download/v0.8.8/community_civilization_pack-0.8.8.zip)**
+
 Self-contained current development handoff for **0.8.8**. Includes editable art, gameplay source, native recipes, exact shipped Ogg voices and rebuild inputs. The compact data store is approximately **5.96 GB**; Git also stores committed data locally. No LFS, separate asset download, API key or AI model is needed to use the existing assets or reproduce the package.
 
 ```powershell
