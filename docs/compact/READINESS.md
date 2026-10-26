@@ -1,3 +1,10 @@
+# Current release: Garrison 0.9.0
+
+The sole active workspace is this F: GitHub repository. Read ../GITHUB_WORKSPACE_090.md
+and INPUT_CLOSURE_090.json for current independent-build evidence and storage policy.
+The older 0.8.8/0.8.4 measurements below are immutable historical context; they
+are not the current release version or a requirement for another workspace.
+
 # Compact publishing readiness â€” 2026-10-25
 
 Current release: self-contained Garrison **0.8.8**. See [0.8.8 update verification](UPDATE_088.md). The 0.8.4 measurements and acceptance evidence below describe the retained immutable baseline. No push/publication performed.

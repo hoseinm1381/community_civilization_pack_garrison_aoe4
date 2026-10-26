@@ -103,7 +103,7 @@ def rebuild(args, reader):
         not listing['archive']['verification']['verified'] or
         {m['path']:m['toc'] for m in listing['members']} != expected['mounts']):
         raise ValueError('Archive namespace, verification or mounts differ')
-    with tempfile.TemporaryDirectory(prefix='ccp-milestone-readback-') as tmp:
+    with tempfile.TemporaryDirectory(prefix='ccp-milestone-readback-', dir=dest) as tmp:
         root = Path(tmp)
         dev.run([args.archive_tool, 'extract', final, root, '--filter', '.'], dest, 'fresh-extract')
         actual = {p.relative_to(root).as_posix():file_sha(p) for p in root.rglob('*') if p.is_file()}

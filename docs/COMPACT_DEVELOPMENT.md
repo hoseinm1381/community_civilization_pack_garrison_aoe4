@@ -1,3 +1,16 @@
+# Current single-workspace route (0.9.0)
+
+Use the existing F:/aoe_4_temp/community_civilization_pack_garrison_aoe4 checkout.
+Do not restore a second source workspace for routine work. Follow AGENTS.md and
+docs/GITHUB_WORKSPACE_090.md. Configure installed tools in workspace.local.json;
+run tools/compact/github_build.py native, then package. Its source snapshot gate
+requires an explicit compiled-delta update after gameplay/art changes.
+
+The older restore/configure commands below describe recovery on another machine.
+Their per-version destinations and owner-authoring-folder references are
+historical, superseded for current local work. New scratch must use only
+F:/aoe_4_temp/Temp_before_github_push and be removed after confirmed push.
+
 # Working with the compact repository
 
 Current release is **0.8.8**. See [the compact update proof](compact/UPDATE_088.md).

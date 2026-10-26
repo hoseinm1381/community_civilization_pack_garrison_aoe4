@@ -1,7 +1,7 @@
 # Functional Persia port — Garrison 0.9.0
 
 The owner approved the functional port on 2026-10-26, with complete new Persian
-art deferred to the next milestone. The existing Garrison folder is the single
+art deferred to the next milestone. The existing F: GitHub Garrison folder is the single
 active workspace and Git checkout. No new source worktree or versioned project
 copy is required. Existing ignored recovery/art/voice inputs remain protected.
 
@@ -53,8 +53,8 @@ Persian AI, Nomad and later-age starts are not newly qualified by this port.
 
 ## Git and rebuilds
 
-Use this existing folder on main; prepare and commit current source plus compact
-input deltas here. The owner performs the push. Existing immutable packs and
+Use this F: GitHub repository on main; prepare and commit current source plus compact
+input deltas here. The owner authorized pushing 0.9.0 for the independent build test. Existing immutable packs and
 indexes stay intact, including those retained only in the Git object database.
 Do not copy or upload a new full SGA, ZIP, Vietnam art/audio bank or history dump
 as development data. The final package is independently reconstructed from the

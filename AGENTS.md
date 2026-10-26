@@ -1,72 +1,52 @@
-# Current Garrison workspace handoff
+# Community Civilization Pack: Garrison GitHub workspace
 
-## Owner-approved single-workspace policy — 2026-10-26
+## Owner policy, 2026-10-26
 
-Develop in this existing Garrison folder. Reuse its source and current tooling;
-do not create per-version checkouts/worktrees/full source copies or backup ZIPs.
-Use Git commits for tracked-source history and rollback, a reusable
-`staging/current` for native build products, and `output/current` for the current
-delivery and compact receipts. Keep immutable Git/content-addressed rebuild
-inputs and required ignored art/audio/recovery assets: Git alone does not cover
-ignored data. Do not delete those stores or old deliveries as an incidental
-part of implementation.
+The sole Garrison workspace is F:/aoe_4_temp/community_civilization_pack_garrison_aoe4.
+Edit, build, commit and push here. E: holds the separate base-game/Normal edition;
+read it only as reference. Do not maintain or create another Garrison source copy,
+worktree, mirror or version folder. This supersedes all historical E: authority
+and restore-into-another-workspace instructions.
 
-This folder is now the active Git checkout on `main`. Its independent Git
-HEAD/index reuse historical objects through `.git/objects/info/alternates`
-pointing to the retained F: repository object database. Do not delete that
-database. Large immutable packs omitted from the working directory remain
-tracked with skip-worktree and can be read by the compact Git-backed reader;
-do not stage their absence as deletions. No second working copy is needed for
-milestone synchronization: commit the source and new compact delta here.
+The only scratch root is F:/aoe_4_temp/Temp_before_github_push. Native intermediate,
+cache, readback and input-verification work go there. After a successful build
+and confirmed successful GitHub push, preserve compact evidence and the current
+SGA/ZIP in output/current, then remove that scratch root. Never delete required
+uncommitted input merely because a push succeeded: Git covers tracked files only.
 
-The current authorized task is a functional Persia port with existing visuals,
-followed by local GitHub readiness. Full Persian art is the next milestone.
-Preserve Garrison identity, Vietnam's current art/voices/compiled fixes and the
-Normal/original-Persia source. Do not push; tell the owner when the Garrison
-branch is ready for their manual push. This supersedes historical requirements
-to create fresh per-version source/staging trees. Keep source/static, actual
-native burn, archive/package proof and game acceptance as separate gates.
+Current release: 0.9.0, functional Persia plus Vietnam; new Persian art is the
+next milestone. Read docs/GITHUB_WORKSPACE_090.md and docs/PERSIA_GARRISON.md.
+Use tools/compact/github_build.py native followed by package, configured through
+ignored workspace.local.json (see workspace.example.json). This compiles tracked
+source and checks the stored current delta; it refuses stale source/payload pairs.
+Changed gameplay/art requires a new explicit delta, not bypassing that check.
+Old tools/current_persia.py and current_sync.py document the one-time E: port;
+they are not the F: build or milestone-sync entrypoints. Historical freezes and
+receipts remain immutable evidence, not current path configuration.
 
-Parent instructions still apply. Preserved pre-port baseline is **0.8.8**; read
-`docs/DEVELOPMENT_085.md`, `docs/RELEASE_088_DELIVERY.md`, and `COLLABORATION.md` before resuming. Historical
-release commands/freezes are provenance, not instructions to rebuild old milestones.
+## Preservation and verification
 
-The owner continues developing in this E: workspace. Shared contributor checkout:
-`F:\aoe_4_temp\community_civilization_pack_garrison_aoe4`.
-
-When the owner requests a milestone sync, use its `docs/MILESTONE_SYNC.md`, retain
-previous immutable indexes/packs, export changed source/art/rebuild inputs, update
-discoveries and AI guides, verify restoration/package preservation, and report push
-readiness. Do not push or install a synchronization automation without instruction.
-Do not mirror with deletion or overwrite a contributor's unreviewed edit.
-
-The shared data contains lossless editable art, voice masters, recovery inputs,
-diagnostics and releases; installed tools/models are separate local dependencies.
-Do not interpret either temporary-folder names or installed-cache names as permission
-to delete. The completed cleanup is narrowly journaled under external
-`consolidation_084_collaboration`. Do not rerun historical retirement commands.
-
-Keep the existing GUID/bundle/NiceName, compiled-only owning-resource fixes, normal
-edition isolation, editable buffalo deviation and current rollback. Future packages
-start from the final owning archive with an explicit member-change policy. Report
-source/static, native compilation, cook/readback, package and game acceptance as
-separate gates. No further voice generation or extra model download is pending.
-
-The historical 085 hold on contributor-folder access was superseded for the
-explicitly requested minimal 088 update. Future synchronization still requires
-an owner request and must use the compact current-work policy. 085 cleanup uses independent local
-lossless ZIP bundles under external `resources_085`, with per-file restore hashes
-and operation journals in `consolidation_085`. Restore only needed prefixes using
-`tools/release_085/cold_storage.py`; never delete these recovery bundles. Current
-compressed playback audio remains embedded in the owning release archive.
-
-087 changes only Phổ Minh Tower resource drop-off and the three-age Skirmisher
-selection group. Use the 087 source-change policy and typed deltas; retain the
-086 dispatcher, compressed playback bank and all unrelated owning resources.
-Native build staging is restored from 087-native-development.zip if needed.
-
-088 repairs the Flooded Citadel moving_ext assertion and adds Phổ Minh’s explicit
-resource_drop_off interaction. The mobility admission generator normalizes
-comma-space removedIds; regenerate after unit additions or game updates. Keep
-all existing art/audio/cooldowns and use the current owning archive. The compact
-GitHub folder now has an 088 delta index; do not run the broad historical exporter.
+- Keep GUID b7fcea91-257b-408f-b9e8-ae4d8bc402e1, bundle community_civilization_pack
+  and archive namespace b7fcea91257b408fb9e8ae4d8bc402e1. Check .aoe4mod, manifest,
+  SCAR/RDO and assets/_default.burnproj NiceName before/after assembly.
+- development.json selects index-current.json.gz layered on index.json.gz.
+  Preserve every referenced immutable pack. They contain editable art, rigs,
+  textures, recipes, shipped Oggs, compiled-only resources and recovery inputs.
+  Never replace them with only a playable SGA or delete packs as caches.
+- Broad native source builds are reference archives, not the final owning archive.
+  Preserve Vietnam custom art, voices, owning-resource fixes and mount aliases.
+  Integrate only an explicit changed-resource map and compare all untouched bytes.
+- Resolve full current private and official inheritance before adding singleton
+  extensions. Use inherited variant IDs; refresh inheritance, run tuning/source
+  checks and confirm a real completed Content Editor burn.
+- Installed Garrison/Blender and Content Editor are external tools. Use current
+  aoe4-garrison-blender, modify-aoe4-tuning-packs and aoe4-game-mode-skill guidance.
+  Do not touch live Blender work or regenerate voices as part of a release rebuild.
+- Existing speech is complete; shipped Oggs rebuild from Git. Local AI environments,
+  model weights, omitted WAV masters and voice-production history are separate.
+  Inventory any such unique inputs before retiring old storage. A successful
+  package build alone does not prove full art recooking or speech regeneration.
+- Keep source/static, native burn, art cook, archive/package, client import,
+  fresh-match behavior, audible playback, save/load and multiplayer gates distinct.
+- No automatic history rewriting, force pushes, paid requests or scheduled sync.
+  The owner explicitly authorized updating/pushing 0.9.0 for this build test.

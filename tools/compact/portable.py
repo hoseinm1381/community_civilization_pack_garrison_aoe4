@@ -25,10 +25,13 @@ class AliasReader(Reader):
             raise ValueError('Unsafe or undeclared pack name')
         config=ROOT/'workspace.json'
         cfg=load(config) if config.exists() else {}
+        local=ROOT/'workspace.local.json'
+        if local.exists():cfg.update(load(local))
         executable=os.environ.get('GIT_EXECUTABLE') or cfg.get('git_path') or shutil.which('git')
         if not executable:raise ValueError('Git is required to read an omitted immutable pack')
         relative=(self.folder/name).resolve().relative_to(ROOT.resolve()).as_posix()
-        result=subprocess.run([str(executable),'-C',str(ROOT),'show','HEAD:'+relative],capture_output=True)
+        result=subprocess.run([str(executable),'-c','safe.directory='+str(ROOT.resolve()),
+                               '-C',str(ROOT),'show','HEAD:'+relative],capture_output=True)
         expected=self.doc['packs'][name]
         if result.returncode or len(result.stdout)!=expected['bytes'] or sha(result.stdout)!=expected['sha256']:
             raise ValueError('Missing or corrupt Git-backed immutable pack: '+name)
