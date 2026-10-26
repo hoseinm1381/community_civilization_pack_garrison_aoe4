@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-2056667985" List.ParentItemID="-2056667985">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="333513392" List.ParentItemID="333513392">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="-753404179" List.ParentItemID="-753404179">
+					<group name="info">
+						<file name="flag_icon_override" value="persia\safavid_flag" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-550574692" List.ParentItemID="-550574692">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="1351935825" List.ParentItemID="1351935825">
+					<instance_reference name="type" value="ebps\persia\ps_unit_culverin_4_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="9901245" List.ParentItemID="9901245">
+			<list name="requirement_table" comment="Requires Imperial age, Tech army, chemistry upgrade&#13;&#10;">
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="-2100060737" List.ParentItemID="-2100060737">
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\sultanate" List.ItemID="339530153" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_speech_ext" List.ItemID="-38175651" List.ParentItemID="-38175651">
+			<group name="squad_speech_parameters">
+				<string name="squad_name_code" value="culverin" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="-1921307612" List.ParentItemID="-1921307612">
+			<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482695" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_culverin_4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-647443472" List.ParentItemID="-647443472">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="-647285825" List.ParentItemID="-647285825">
+						<instance_reference name="type" value="ebps\persia\ps_unit_culverin_4_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="786264024" List.ParentItemID="786264024">
+				<list name="requirement_table" comment="Requires Imperial age, Tech army, chemistry upgrade&#13;&#10;">
+					<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-348429377" List.ParentItemID="-348429377">
+						<instance_reference name="upgrade_name" value="upgrade\races\sultanate\research\upgrade_siege_chemistry_sul" overrideParent="True" />
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="1014734626" List.ParentItemID="1014734626">
+				<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482695" />
+		<instance_reference name="parent_pbg" value="sbps\races\core\unit_culverin_4" />
+	</variant>
+</instance>

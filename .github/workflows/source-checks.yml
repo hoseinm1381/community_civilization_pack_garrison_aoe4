@@ -1,0 +1,31 @@
+name: Normal source checks
+
+on:
+  push:
+    branches: [normal]
+  pull_request:
+    branches: [normal]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements-tests.txt
+      - name: Install test dependencies
+        run: python -m pip install -r requirements-tests.txt
+      - name: Verify editable source
+        run: python -B tools/verify_source.py
+      - name: Run current regression tests
+        run: python -B -m unittest discover -s tests/current -p 'test_*.py'

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1391008678" List.ParentItemID="1391008678">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="-1296320340" List.ParentItemID="-1296320340">
+					<string name="state_tree" value="falcon_leader_action_apply" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-644516149" List.ParentItemID="-644516149">
+			<group name="sight_package">
+				<float name="inner_radius" value="200" overrideParent="True" />
+				<float name="outer_radius" value="200" overrideParent="True" />
+			</group>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482546" />
+	<instance_reference name="parent_pbg" value="ebps\races\mongol\animals\scout_falcon_mon" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1047162340" List.ParentItemID="1047162340">
+				<list name="action_state_trees">
+					<group name="container" List.ItemID="-2122820098" List.ParentItemID="-2122820098">
+						<string name="state_tree" value="campaignMod_falcon_leader_action_apply" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="692571795" List.ParentItemID="692571795">
+				<group name="sight_package">
+					<float name="inner_radius" value="200" overrideParent="True" />
+					<float name="outer_radius" value="200" overrideParent="True" />
+				</group>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482546" />
+		<instance_reference name="parent_pbg" value="ebps\races\mongol\animals\scout_falcon_mon" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1391008678" List.ParentItemID="1391008678">
+				<list name="action_state_trees">
+					<group name="container" List.ItemID="-1296320340" List.ParentItemID="-1296320340">
+						<string name="state_tree" value="xp3_falcon_leader_action_apply" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-644516149" List.ParentItemID="-644516149">
+				<group name="sight_package">
+					<float name="inner_radius" value="200" overrideParent="True" />
+					<float name="outer_radius" value="200" overrideParent="True" />
+				</group>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482546" />
+		<instance_reference name="parent_pbg" value="ebps\races\mongol\animals\scout_falcon_mon" />
+	</variant>
+</instance>

@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="cooldown">
+			<group name="duration">
+				<float name="max" value="0" overrideParent="True" />
+				<float name="min" value="0" overrideParent="True" />
+			</group>
+		</group>
+		<group name="damage">
+			<float name="max" value="12" overrideParent="True" />
+			<float name="min" value="12" overrideParent="True" />
+		</group>
+		<group name="fire" overrideParent="True">
+			<float name="wind_down" value="0.5" overrideParent="True" />
+			<float name="wind_up" value="0.375" />
+			<float name="animation_impact_frame_time" value="0.375" />
+		</group>
+		<group name="penetration">
+			<float name="near" value="0" overrideParent="True" />
+			<float name="far" value="0" overrideParent="True" />
+			<float name="mid" value="0" overrideParent="True" />
+		</group>
+		<locstring name="ui_name" value="5038" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+		<list name="target_type_table">
+			<group name="target_unit_type_multipliers" List.ItemID="1453160848" List.ListAction="Append">
+				<enum name="unit_type" value="infantry_light" overrideParent="True" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="1" />
+					<float name="penetration_multiplier" value="1" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+				<float name="base_damage_modifier" value="7" overrideParent="True" />
+			</group>
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="2147482777" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_manatarms_3" />
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<group name="cooldown">
+				<group name="duration">
+					<float name="max" value="0" overrideParent="True" />
+					<float name="min" value="0" overrideParent="True" />
+				</group>
+			</group>
+			<group name="damage">
+				<float name="max" value="12" overrideParent="True" />
+				<float name="min" value="12" overrideParent="True" />
+			</group>
+			<group name="fire" overrideParent="True">
+				<float name="wind_down" value="0.5" overrideParent="True" />
+				<float name="animation_impact_frame_time" value="0.375" overrideParent="True" />
+				<float name="wind_up" value="0.375" />
+			</group>
+			<group name="penetration">
+				<float name="near" value="0" overrideParent="True" />
+				<float name="far" value="0" overrideParent="True" />
+				<float name="mid" value="0" overrideParent="True" />
+			</group>
+			<locstring name="ui_name" value="5039" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+			<list name="target_type_table">
+				<group name="target_unit_type_multipliers" List.ItemID="602745622" List.ListAction="Append">
+					<enum name="unit_type" value="infantry_light" overrideParent="True" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="7" overrideParent="True" />
+				</group>
+			</list>
+		</group>
+		<uniqueid name="pbgid" value="2147482777" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_manatarms_3" />
+	</variant>
+	<variant name="xp3">
+		<group name="weapon_bag">
+			<group name="cooldown">
+				<group name="duration">
+					<float name="max" value="0" overrideParent="True" />
+					<float name="min" value="0" overrideParent="True" />
+				</group>
+			</group>
+			<group name="damage">
+				<float name="max" value="12" overrideParent="True" />
+				<float name="min" value="12" overrideParent="True" />
+			</group>
+			<group name="fire" overrideParent="True">
+				<float name="wind_down" value="0.5" overrideParent="True" />
+				<float name="wind_up" value="0.375" />
+				<float name="animation_impact_frame_time" value="0.375" />
+			</group>
+			<group name="penetration">
+				<float name="near" value="0" overrideParent="True" />
+				<float name="far" value="0" overrideParent="True" />
+				<float name="mid" value="0" overrideParent="True" />
+			</group>
+			<locstring name="ui_name" value="5040" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+			<list name="target_type_table">
+				<group name="target_unit_type_multipliers" List.ItemID="152525294" List.ListAction="Append">
+					<enum name="unit_type" value="infantry_light" overrideParent="True" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="7" overrideParent="True" />
+				</group>
+			</list>
+		</group>
+		<uniqueid name="pbgid" value="2147482777" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_manatarms_3" />
+	</variant>
+</instance>

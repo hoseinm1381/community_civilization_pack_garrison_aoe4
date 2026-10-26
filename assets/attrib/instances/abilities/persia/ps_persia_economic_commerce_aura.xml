@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="4" description="COHUNG_TEST&#13;&#10;&#13;&#10;This ability is just a dummy ability which displays the range of the &quot;Trade Protection&quot; aura on the Ottoman Sea Gate.&#13;&#10;&#13;&#10;This ability not intended to have any gameplay functionality" template="abilities">
+	<group name="ability_bag">
+		<enum name="target" value="" overrideParent="True" />
+		<group name="ui_info">
+			<locstring name="screen_name" value="5238" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+			<file name="icon_name" value="races\ottoman\upgrades\trade_bags" overrideParent="True" />
+			<template_reference name="help_text_formatter" value="ui_text_formatter">
+				<locstring name="formatter" value="5240" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+			</template_reference>
+		</group>
+		<list name="ui_contextual_info" overrideParent="True">
+		</list>
+		<list name="requirements" overrideParent="True">
+			<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="1463410878">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="False" />
+				<int name="max_completed" value="100" />
+				<int name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\persia\ps_eco_divan_shah_persia" mod="a743d7d1d7534cf78817e29d8ded7366" />
+				<bool name="include_completed" value="True" />
+				<bool name="include_queued" value="False" />
+				<group name="include_pbg_parenting">
+					<bool name="include_child_pbgs" value="False" />
+					<bool name="include_parent_pbgs" value="False" />
+				</group>
+			</template_reference>
+		</list>
+		<state_tree_node name="entity_tree" value="" overrideParent="True" />
+		<bool name="ui_ability_can_display" value="False" overrideParent="True" />
+		<float name="range" value="31" overrideParent="True" />
+	</group>
+	<uniqueid name="pbgid" value="2147482528" />
+	<instance_reference name="parent_pbg" value="abilities\always_on_abilities\ottoman\keep_trader_speed_boost_aura_ott" />
+</instance>

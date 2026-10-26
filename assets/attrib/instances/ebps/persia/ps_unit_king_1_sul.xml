@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-2078854337" List.ParentItemID="-2078854337">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-433665015" List.ParentItemID="-433665015">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\sultanate" List.ItemID="-1536894107" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="903084984" List.ParentItemID="903084984">
+			<list name="deferred_action_state_trees_run_once">
+				<group name="container" List.ItemID="-453579828" List.ListAction="Append">
+					<string name="state_tree" value="king_action_apply\Sul\Sul_Random_Selector" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="2081103240" List.ParentItemID="2081103240">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1937759202" List.ParentItemID="-1937759202">
+					<group name="tier" List.ItemID="-1144010367" List.ParentItemID="-1144010367">
+						<instance_reference name="attachments" value="attachments\attachment_lists\races\sultanate\units\unit_king_1_sul" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482616" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_king_1" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1263966175" List.ParentItemID="1263966175">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="402838840" List.ParentItemID="402838840">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\sultanate" List.ItemID="-1124649038" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="789809030" List.ParentItemID="789809030">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="2072640789" List.ParentItemID="2072640789">
+						<group name="tier" List.ItemID="441065516" List.ParentItemID="441065516">
+							<instance_reference name="attachments" value="attachments\attachment_lists\races\sultanate\units\unit_king_1_sul" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482616" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_king_1" />
+	</variant>
+</instance>

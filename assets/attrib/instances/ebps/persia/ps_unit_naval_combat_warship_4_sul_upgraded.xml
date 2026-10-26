@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-638368952" List.ParentItemID="-638368952">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_large_lateen" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-948361275" List.ParentItemID="-948361275">
+			<group name="time_cost">
+				<float name="time_seconds" value="36" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-791983380" List.ParentItemID="-791983380">
+			<group name="sight_package">
+				<float name="inner_radius" value="24" overrideParent="True" />
+				<float name="outer_radius" value="48" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1481453663" List.ParentItemID="-1481453663">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="-847011946" />
+				<enum name="unit_type" value="ship" List.ItemID="-1521929802" />
+				<enum name="unit_type" value="naval_broadside" List.ItemID="1654164772" />
+				<enum name="unit_type" value="naval_warship" List.ItemID="877617413" />
+				<enum name="unit_type" value="naval_unit" List.ItemID="30731232" />
+				<enum name="unit_type" value="ranged" List.ItemID="-1186290734" />
+				<enum name="unit_type" value="siegeable" List.ItemID="-1692372160" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="367987646" />
+				<enum name="unit_type" value="gunpowder" List.ItemID="78450233" />
+				<enum name="unit_type" value="naval_eastern" List.ItemID="-1147535766" />
+				<enum name="unit_type" value="naval_military" overrideParent="True" List.ItemID="-1942019820" List.ParentItemID="-2059902898" />
+				<enum name="unit_type" value="massive" List.ItemID="-76800118" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1092792524" List.ParentItemID="1092792524">
+			<list name="hardpoints">
+				<group name="hardpoint" comment="AI Left 1" List.ItemID="1847161327" List.ParentItemID="1847161327">
+				</group>
+				<group name="hardpoint" comment="Left 4" List.ItemID="822147706" List.ParentItemID="822147706">
+				</group>
+				<group name="hardpoint" comment="Left 5" List.ItemID="-1159284020" List.ParentItemID="-1159284020">
+				</group>
+				<group name="hardpoint" comment="AI Right 1" List.ItemID="1848079065" List.ParentItemID="1848079065">
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1265230428" List.ParentItemID="-1265230428">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="86044439" List.ParentItemID="86044439">
+					<group name="tier" List.ItemID="1888019086" List.ParentItemID="1888019086">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier4_naval_combat_warship_sul" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482599" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_warship_4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-718687731" List.ParentItemID="-718687731">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_large_lateen" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1108099770" List.ParentItemID="1108099770">
+				<group name="time_cost">
+					<float name="time_seconds" value="36" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1562115440" List.ParentItemID="1562115440">
+				<list name="tier_group_list">
+					<list name="tier_group" List.ItemID="1473829252" List.ParentItemID="1473829252">
+						<group name="tier" List.ItemID="1040271146" List.ParentItemID="1040271146">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier4_naval_combat_warship_sul" overrideParent="True" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482599" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_warship_4" />
+	</variant>
+</instance>

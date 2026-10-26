@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="damage">
+			<float name="max" value="12" overrideParent="True" />
+			<float name="min" value="12" overrideParent="True" />
+		</group>
+		<string name="name" value="Heavy Crossbow Weapon" overrideParent="True" />
+		<group name="range">
+			<group name="distance">
+				<float name="near" value="-1" overrideParent="True" />
+				<float name="far" value="-1" overrideParent="True" />
+				<float name="mid" value="-1" overrideParent="True" />
+			</group>
+			<float name="max_animation_angle_distance" value="22" overrideParent="True" />
+		</group>
+		<group name="scatter">
+			<float name="angle_scatter" value="6" overrideParent="True" />
+			<float name="distance_scatter_ratio" value="0" overrideParent="True" />
+		</group>
+		<list name="target_type_table">
+			<group name="target_unit_type_multipliers" List.ItemID="349900250" List.ParentItemID="349900250">
+				<float name="base_damage_modifier" value="17" overrideParent="True" />
+			</group>
+			<group name="target_unit_type_multipliers" List.ItemID="364852582" List.ListAction="Append">
+				<enum name="unit_type" value="worker" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="1" />
+					<float name="penetration_multiplier" value="1" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+				<float name="base_damage_modifier" value="3" overrideParent="True" />
+			</group>
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="2147482794" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_crossbow_3" />
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<group name="aim">
+				<group name="aim_time_multiplier">
+					<float name="far" value="1" overrideParent="True" />
+					<float name="mid" value="1" overrideParent="True" />
+				</group>
+			</group>
+			<group name="damage">
+				<float name="max" value="12" overrideParent="True" />
+				<float name="min" value="12" overrideParent="True" />
+			</group>
+			<string name="name" value="Heavy Crossbow Weapon" overrideParent="True" />
+			<group name="range">
+				<group name="distance">
+					<float name="far" value="22" overrideParent="True" />
+					<float name="mid" value="15" overrideParent="True" />
+				</group>
+				<float name="max_animation_angle_distance" value="22" overrideParent="True" />
+			</group>
+			<group name="reload">
+				<group name="duration">
+					<float name="max" value="2.75" overrideParent="True" />
+					<float name="min" value="2.75" overrideParent="True" />
+				</group>
+			</group>
+			<group name="scatter">
+				<float name="angle_scatter" value="6" overrideParent="True" />
+				<float name="distance_scatter_ratio" value="0" overrideParent="True" />
+			</group>
+			<list name="target_type_table">
+				<group name="target_unit_type_multipliers" List.ItemID="327856471" List.ParentItemID="327856471">
+					<float name="base_damage_modifier" value="17" overrideParent="True" />
+				</group>
+				<group name="target_unit_type_multipliers" List.ItemID="-906947448" List.ListAction="Append">
+					<enum name="unit_type" value="worker" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="3" overrideParent="True" />
+				</group>
+			</list>
+		</group>
+		<uniqueid name="pbgid" value="2147482794" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_crossbow_3" />
+	</variant>
+	<variant name="xp3">
+		<group name="weapon_bag">
+			<group name="damage">
+				<float name="max" value="12" overrideParent="True" />
+				<float name="min" value="12" overrideParent="True" />
+			</group>
+			<string name="name" value="Heavy Crossbow Weapon" overrideParent="True" />
+			<group name="range">
+				<group name="distance">
+					<float name="near" value="-1" overrideParent="True" />
+					<float name="far" value="-1" overrideParent="True" />
+					<float name="mid" value="-1" overrideParent="True" />
+				</group>
+				<float name="max_animation_angle_distance" value="22" overrideParent="True" />
+			</group>
+			<group name="scatter">
+				<float name="angle_scatter" value="6" overrideParent="True" />
+				<float name="distance_scatter_ratio" value="0" overrideParent="True" />
+			</group>
+			<list name="target_type_table">
+				<group name="target_unit_type_multipliers" List.ItemID="349900250" List.ParentItemID="349900250">
+					<float name="base_damage_modifier" value="17" overrideParent="True" />
+				</group>
+				<group name="target_unit_type_multipliers" List.ItemID="-908418745" List.ListAction="Append">
+					<enum name="unit_type" value="worker" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="3" overrideParent="True" />
+				</group>
+			</list>
+		</group>
+		<uniqueid name="pbgid" value="2147482794" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_crossbow_3" />
+	</variant>
+</instance>

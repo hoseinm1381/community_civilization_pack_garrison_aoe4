@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="4" description="COHUNG_TEST&#13;&#10;&#13;&#10;This ability is just a dummy ability which displays the range of the &quot;Trade Protection&quot; aura on the Ottoman Sea Gate.&#13;&#10;&#13;&#10;This ability not intended to have any gameplay functionality" template="abilities">
+	<group name="ability_bag">
+		<enum name="target" value="" overrideParent="True" />
+		<group name="ui_info">
+			<file name="icon_name" value="races\ottoman\upgrades\trade_bags" overrideParent="True" />
+		</group>
+		<list name="ui_contextual_info" overrideParent="True">
+		</list>
+		<list name="requirements" overrideParent="True">
+		</list>
+		<state_tree_node name="entity_tree" value="" overrideParent="True" />
+		<bool name="ui_ability_can_display" value="False" overrideParent="True" />
+		<float name="range" value="31" overrideParent="True" />
+	</group>
+	<uniqueid name="pbgid" value="2147482531" />
+	<instance_reference name="parent_pbg" value="abilities\always_on_abilities\ottoman\keep_trader_speed_boost_aura_ott" />
+</instance>

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="-860567808" List.ParentItemID="-860567808">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="688466212" List.ParentItemID="688466212">
+					<group name="info">
+						<file name="flag_icon_override" value="persia\safavid_flag" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="2081176993" List.ParentItemID="2081176993">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="-452136274" List.ParentItemID="-452136274">
+					<instance_reference name="type" value="ebps\persia\ps_unit_king_1_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="-2048487164" List.ParentItemID="-2048487164">
+			<list name="squad_type_list" overrideParent="True">
+				<enum name="squad_type" value="king" List.ItemID="563833611" />
+				<enum name="squad_type" value="scar_age1" List.ItemID="1822176601" />
+			</list>
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\sultanate" List.ItemID="1892907391" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_audio_ext" List.ItemID="-1564177448" List.ParentItemID="-1564177448">
+			<enum name="unit_type" value="maa_axe" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="-1120146292" List.ParentItemID="-1120146292">
+			<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482701" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_king_1" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="51502420" List.ParentItemID="51502420">
+				<list name="race_list">
+					<group name="race_data" List.ItemID="-1135459451" List.ParentItemID="-1135459451">
+						<group name="info">
+							<file name="icon_name" value="races\common\units\vip" overrideParent="True" />
+							<string name="selection_group" value="king" overrideParent="True" />
+							<file name="portrait_name" value="" overrideParent="True" />
+							<string name="selection_datatemplate" value="VillagerSelectionDataTemplate" overrideParent="True" />
+							<string name="tooltip_data_template" value="SquadItemTooltipDataTemplate" overrideParent="True" />
+							<bool name="is_unique" value="True" overrideParent="True" />
+						</group>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-680452735" List.ParentItemID="-680452735">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="-1115349480" List.ParentItemID="-1115349480">
+						<instance_reference name="type" value="ebps\persia\ps_unit_king_1_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="-1704016233" List.ParentItemID="-1704016233">
+				<list name="squad_type_list" overrideParent="True">
+					<enum name="squad_type" value="king" List.ItemID="-1991403357" />
+					<enum name="squad_type" value="scar_age1" List.ItemID="1507296398" />
+				</list>
+				<list name="squad_race_type_list" overrideParent="True">
+					<instance_reference name="squad_race_type" value="racebps\sultanate" List.ItemID="-1059517597" />
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_audio_ext" List.ItemID="865874119" List.ParentItemID="865874119">
+				<enum name="unit_type" value="maa_axe" overrideParent="True" />
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="-334186510" List.ParentItemID="-334186510">
+				<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482701" />
+		<instance_reference name="parent_pbg" value="sbps\races\core\unit_king_1" />
+	</variant>
+</instance>

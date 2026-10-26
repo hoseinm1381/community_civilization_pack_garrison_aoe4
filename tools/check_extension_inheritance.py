@@ -24,39 +24,11 @@ def summarize(data):
     return result
 
 def refresh(cache):
-    sys.path.insert(0, str(ROOT / 'work/vietnam_redesign'))
-    import read_official_members as official
-    archive = official.BASE / 'ReferenceAttributes.sga'
+    import official_archive
+    archive = official_archive.archive_path()
     records = {}
-    with archive.open('rb') as stream:
-        assert stream.read(12) == b'_ARCHIVE\x0a\x00\x00\x00'
-        meta = official.handler.meta_serializer.unpack(stream)
-        stream.seek(meta.ptrs.header_pos)
-        toc = official.handler.toc_serializer.unpack(stream)
-        assembler = official.FSAssembler(stream=stream, ptrs=meta.ptrs, toc=toc,
-            toc_serialization_info=official.handler.toc_serialization_info,
-            build_file_meta=official.handler.build_file_meta)
-        drives, folders, files, names = assembler.read_toc()
-        for folder in folders:
-            directory = names[folder.name_pos]
-            if not directory.startswith(('instances\\ebps\\', 'instances\\sbps\\')):
-                continue
-            for entry in files[folder.file_range[0]:folder.file_range[1]]:
-                name = names[entry.name_pos]
-                if not name.endswith('.xml'): continue
-                assert int(entry.encryption) == 0
-                stream.seek(meta.ptrs.data_pos + entry.data_pos)
-                raw = stream.read(entry.length_in_archive)
-                if int(entry.storage_type) == 3:
-                    out = ctypes.create_string_buffer(entry.length_on_disk)
-                    size = ctypes.c_size_t(entry.length_on_disk)
-                    assert official._decode(len(raw), raw, ctypes.byref(size), out) == 1
-                    data = out.raw[:size.value]
-                else:
-                    data = zlib.decompress(raw) if int(entry.storage_type) else raw
-                assert len(data) == entry.length_on_disk
-                key = directory[len('instances\\'):] + '\\' + name[:-4]
-                records[key] = summarize(data)
+    for name,data in official_archive.members(archive, lambda name: name.startswith(('instances\\ebps\\','instances\\sbps\\')) and name.endswith('.xml')):
+        records[name[len('instances\\'):-4]] = summarize(data)
     receipt = {'archive': str(archive), 'archive_sha256': hashlib.sha256(archive.read_bytes()).hexdigest(),
                'records': records}
     cache.parent.mkdir(parents=True, exist_ok=True)
@@ -138,7 +110,7 @@ class Resolver:
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--official-cache', type=Path, default=ROOT/'work/vietnam_redesign/district_build_repair_20261022/official-extensions.json')
+    parser.add_argument('--official-cache', type=Path, default=ROOT/'.local/official-extensions.json')
     parser.add_argument('--refresh', action='store_true')
     parser.add_argument('--output', type=Path)
     args = parser.parse_args()

@@ -1,4 +1,4 @@
--- Stage 1 native conversion probe. The complete Persian roster is not active.
+-- Private Persian starting army; stock Delhi and Vietnam remain independent.
 PersiaInitializationState = {applied = {}}
 local prefix = "a743d7d1d7534cf78817e29d8ded7366:"
 
@@ -59,11 +59,11 @@ function PersiaInitialization_Apply(player)
     local mutated = false
     local converted, result = pcall(function()
         -- Resolve every blueprint before the first mutation.
-        local tc = BP_GetEntityBlueprint(prefix .. "ps_probe_building_town_center_capital_sul")
-        local vil = BP_GetEntityBlueprint(prefix .. "ps_probe_unit_villager_1_sul")
-        local vilSquad = BP_GetSquadBlueprint(prefix .. "ps_probe_unit_villager_1_sul")
-        local scout = BP_GetEntityBlueprint(prefix .. "ps_probe_unit_scout_1_sul")
-        local scoutSquad = BP_GetSquadBlueprint(prefix .. "ps_probe_unit_scout_1_sul")
+        local tc = BP_GetEntityBlueprint(prefix .. "ps_building_town_center_capital_sul")
+        local vil = BP_GetEntityBlueprint(prefix .. "ps_unit_villager_1_sul")
+        local vilSquad = BP_GetSquadBlueprint(prefix .. "ps_unit_villager_1_sul")
+        local scout = BP_GetEntityBlueprint(prefix .. "ps_unit_scout_1_sul")
+        local scoutSquad = BP_GetSquadBlueprint(prefix .. "ps_unit_scout_1_sul")
         mutated = true
         Entity_ConvertBlueprint(capitals[1], tc)
         -- Same entity-then-squad order as official gameplay/chatcheats.scar.
@@ -73,17 +73,17 @@ function PersiaInitialization_Apply(player)
         end
         Entity_ConvertBlueprint(scouts[1].entity, scout)
         Squad_ConvertBlueprint(scouts[1].squad, scoutSquad)
-        if blueprintName(Entity_GetBlueprint(capitals[1])) ~= "ps_probe_building_town_center_capital_sul" then
+        if blueprintName(Entity_GetBlueprint(capitals[1])) ~= "ps_building_town_center_capital_sul" then
             return "conversion-postcondition"
         end
         for _, item in ipairs(villagers) do
-            if blueprintName(Entity_GetBlueprint(item.entity)) ~= "ps_probe_unit_villager_1_sul"
-                or blueprintName(Squad_GetBlueprint(item.squad)) ~= "ps_probe_unit_villager_1_sul" then
+            if blueprintName(Entity_GetBlueprint(item.entity)) ~= "ps_unit_villager_1_sul"
+                or blueprintName(Squad_GetBlueprint(item.squad)) ~= "ps_unit_villager_1_sul" then
                 return "conversion-postcondition"
             end
         end
-        if blueprintName(Entity_GetBlueprint(scouts[1].entity)) ~= "ps_probe_unit_scout_1_sul"
-            or blueprintName(Squad_GetBlueprint(scouts[1].squad)) ~= "ps_probe_unit_scout_1_sul" then
+        if blueprintName(Entity_GetBlueprint(scouts[1].entity)) ~= "ps_unit_scout_1_sul"
+            or blueprintName(Squad_GetBlueprint(scouts[1].squad)) ~= "ps_unit_scout_1_sul" then
             return "conversion-postcondition"
         end
         return nil
@@ -93,6 +93,6 @@ function PersiaInitialization_Apply(player)
     -- Source and current official starting resources are identical (200/200/100/0).
     -- Leave lobby resources and map/army sheep intact; no second spawn or grant.
     PersiaInitializationState.applied[player.index] = true
-    print("PERSIA_PROBE_INIT_APPLIED player=" .. tostring(player.index) .. " tc=1 villagers=6 scouts=1")
+    print("PERSIA_INIT_APPLIED player=" .. tostring(player.index) .. " tc=1 villagers=6 scouts=1")
     return true, "applied", true
 end

@@ -1,31 +1,48 @@
-# Vietnam v2 source project
+# Community Civilization Pack Normal
 
-The current Persia port is at the **stage 1 conversion test**. Chinese humans
-choose China/Vietnam; Delhi humans choose Delhi/Persia (conversion test), with
-one shared 30-second deadline and the original civilization as the default.
-The Persia option currently uses private native Delhi definitions to qualify
-conversion, inherited menus/research and future production. Full Persian
-gameplay follows the user's native acceptance of this test. See
-`docs/PERSIA_PORT_STAGE1.md` for build instructions, limitations and rollback.
+Editable Age of Empires IV combined game mode and tuning pack, with Vietnam and
+Persia alongside their original civilizations.
 
-This is the editable Vietnam v2 combined game-mode and tuning-pack project. The original `Real_Vietnam_1` and the Berber template remain separate. The project GUID is `a743d7d1-d753-4cf7-8817-e29d8ded7366`; its game-mode RDO selects the matching tuning part.
+- Select China: choose **China or Vietnam** at match start.
+- Select Delhi Sultanate: choose **Delhi or Persia** at match start.
+- One shared 30-second choice window; timeout keeps the original civilization.
+- AI retains its original civilization.
 
-## Current status
+Use fresh standard Dark Age matches. Persian AI, Nomad, later-age starts and
+save/load are outside the current supported milestone.
 
-The latest source revision is `20261016-native-trap-tunnel-r1`. Trap combat/weapon settings and native tunneling are restored from `Real_Vietnam_1`, with this project's private references and identities. SCAR only destroys a trap four seconds after its first observed attack; it does not target, damage, modify trap research, or teleport units. See `docs/native-trap-tunnel-restoration.md` for the source comparison and build/test handoff.
+## Develop and verify
 
-The user-built feasibility package passed a **solo custom-skirmish** China/Vietnam selection check. The popup appeared; choosing either civilization worked. This establishes the opening selection path in that setting. It does not establish multiplayer coexistence, the migrated roster, later ages, the new SCAR mechanics, or a current package result.
+This is the independent `normal` branch for
+[hoseinm1381/community_civilization_pack_garrison_aoe4](https://github.com/hoseinm1381/community_civilization_pack_garrison_aoe4).
+It contains the complete editable gameplay source and custom icons. No Garrison,
+Blender, sibling project, historical archive or external asset store is needed.
 
-The editable source contains **237 active private attribute instances**, their localization, and game-mode modules for the Vietnamese starting army, landmarks, traps, tower timing, Rattan armor, and dynasty handling. Cleanup batch 1 removed 42 tower-only unit files, 13 Rattan unit variants, and seven obsolete feasibility probes; see `docs/cleanup-stage1.md` and its machine-readable deletion/replacement manifest. The later influence-tooltip repair adds two small Dock/Monastery child definitions that inherit the existing roster. Four earlier unused AI, map, and sacred-site experiments remain under `docs/retained-experiments/attrib`; the old project is untouched. The 16 original Vietnam icon PNGs are included under `assets/ui/icons`. The RDO lists 676 entity entries and 43 private squad entries, preserving surviving editor identities and all stock/foreign precache entries. The prematch hook covers the 93 private entities and 43 private squads. Effect, construction/destruction, and naval precache coverage still needs a full editor/runtime check.
+```text
+python -m pip install -r requirements-tests.txt
+python -B tools/verify_source.py
+python -B -m unittest discover -s tests/current -p "test_*.py"
+```
 
-The starting conversion now targets one capital Town Center, six villagers, and one scout, and spawns a Worker Elephant. It keeps 150 starting wood and subtracts 50 food. The starting sheep come from the ordinary map/army setup and have not been independently established for Vietnam. The original private army file is data reference, not an engine-selected player army.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for local setup and the owned Windows
+Content Editor build. Open `Community_Civilization_Pack_Normal.aoe4mod`. Configure
+machine paths in ignored `workspace.local.json` from `workspace.example.json`.
+Native inheritance refresh additionally uses `requirements-native.txt`.
 
-Traps use the original native weapon attachments, weapon stats, projectile, range research, and Roller reload behavior. The existing 25-wood/15-second construction definitions are retained. The former SCAR one-second blast, additive research calculation, and 80%-construction shortcut have been removed in favor of the original tuning data. Landmark source gates the Headquarters ability. Tower-training SCAR applies a 1.5-times queue duration and pauses tower production without a living, completed Pho Minh Tower; ordinary military buildings retain their shared squads. Rattan Shields armor is applied by SCAR when the 100-wood/200-gold upgrade is researched. These modifiers and the persistence of an ability's already-applied effect need native verification. Tunneling uses the original native ability, requirements, blink action, and 120-second recharge; the SCAR tunneling module and hooks are removed. Safe garrison handcannons remain unresolved.
+The Normal GUID is `a743d7d1-d753-4cf7-8817-e29d8ded7366`; Garrison has an
+independent identity and build pipeline. Do not copy GUIDs between editions.
 
-## Editing boundary
+## Current evidence
 
-Codex creates and reviews source. The user owns Content Editor save/build/package and all game tests. Nothing in this folder should be described as a tested release until those gates are run on the current source. Publication requires a separate request.
+The opening selection was user-tested. The full Persian roster is imported in
+editable source, with a functioning-Gundeshapur eligibility gate. Read the
+[full import report and native test checklist](docs/PERSIA_FULL_PORT.md).
 
-For the current scope, use a Dark Age start with a Chinese human choosing Vietnam and ordinary AI opponents. Nomad, later-age starts, Vietnamese AI, save/load, extra locales, and Garrison art remain later milestones. Multiplayer, teams, FFA, every age and landmark, trap races, occupied garrisons, tunneling, water, and long-match cleanup remain native acceptance gates.
+Source checks and mocked mechanics tests do not establish native compilation,
+import, roster gameplay or multiplayer acceptance. Native landmark donor-effect
+teardown on ruin/repair remains an explicit test gate; no speculative scripted
+bonus was added. Historical tests and reports describe older snapshots and are
+not the maintained test-discovery entrypoint.
 
-The immediate editor/game handoff is `docs/next-user-build-check.md`. The current cleanup inventory and rollback reference are in `docs/cleanup-stage1-manifest.json` and `docs/cleanup-stage1.md`. `docs/implementation-ledger.md`, `docs/solo-selection-pass.md`, `docs/migration-map.json`, and `docs/precache-inventory.json` preserve historical evidence; the old migration and precache inventories are not current regeneration inputs. Earlier native errors and repairs remain documented in the three native-run repair notes.
+Credits: **hosein81 and chilly5**. Original Persia source also credits Hossein
+and ChillyEmpire. Source visuals and author attribution are retained.

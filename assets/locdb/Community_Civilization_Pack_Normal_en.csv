@@ -1,0 +1,851 @@
+﻿ID,Pipeline,PipelineStage,Notes,TranslationNotes,Tags,Text
+4,,,,,,Win Conditions
+5,,,,,,Landmark Victory
+6,,,,,,Landmark Victory Enabled
+7,,,,,,"If enabled, destroy all enemy Landmarks to win."
+8,,,,,,Sacred Victory
+9,,,,,,Sacred Victory Enabled
+10,,,,,,"If enabled, control all Sacred Sites for 10 minutes to win."
+11,,,,,,Wonder Victory
+12,,,,,,Wonder Victory Enabled
+13,,,,,,"If enabled, construct and defend a Wonder for 15 minutes to win."
+14,,,,,,Dominion
+15,,,,,,Dominion Enabled
+16,,,,,,"If enabled, each player starts with a King. Losing your King eliminates you; killing an enemy King grants 50 Population capacity."
+17,,,,,,Starting Conditions
+18,,,,,,Score
+19,,,,,,Score Visible
+20,,,,,,Show player scores in game
+21,,,,,,Starting Age
+22,,,,,,Player Starting Age
+23,,,,,,Select each player's starting Age
+24,,,,,,Age I
+25,,,,,,Dark Age
+32,,,,,,Starting Resources
+33,,,,,,Starting Resources
+34,,,,,,Select starting resources
+35,,,,,,Standard
+36,,,,,,Standard
+37,,,,,,High
+38,,,,,,High
+39,,,,,,Very High
+40,,,,,,Very High
+41,,,,,,Max
+42,,,,,,Max
+43,,,,,,Vision
+44,,,,,,Player Vision
+45,,,,,,Select each player's starting vision
+46,,,,,,Concealed
+47,,,,,,Concealed
+48,,,,,,Explored
+49,,,,,,Explored
+50,,,,,,Revealed
+51,,,,,,Revealed
+1001,,,Vietnam v2 foundation,,,Community Civilization Pack Normal
+1002,,,Vietnam v2 foundation,,,Community Civilization Pack Normal.\r\n- Select China: choose China or Vietnam.\r\n- Select Delhi: choose Delhi or Persia.\r\n- 30-second choice; timeout keeps your original civilization.\r\nCredits: hosein81 and chilly5.
+1003,,,Vietnam v2 foundation,,,Choose your civilization
+1004,,,Vietnam v2 foundation,,,China
+1005,,,Vietnam v2 foundation,,,Vietnam
+1006,,,Vietnam v2 foundation,,,The Vietnamese - Civilization Selection
+1007,,,Vietnam v2 foundation,,,30 seconds to choose. Default: China.
+1008,,,Vietnam v2 foundation,,,Vietnam v2 private blueprints are unavailable. Confirm the matching tuning pack is enabled. China remains active; Vietnam selection is unavailable.
+1009,,,Vietnam v2 foundation,,,"Play as Vietnam.\r\n+ Water Buffalo and Rice Paddies.\r\n+ Defensive Hideouts, traps and tunnels.\r\n+ Unique light infantry and gunpowder units."
+1010,,,Vietnam v2 foundation,,,Community Civilization Pack Normal initialized. No eligible Chinese or Delhi human with the required tuning data was detected; ordinary civilizations remain active.
+2001,,,Mod name.,,,The Vietnamese - New Civilization
+2002,,,Mod description.,,,"THE VIETNAMESE\r\nDefense, light infantry and gunpowder.\r\n\r\n+ Water Buffalo build free Rice Paddies. One Villager gathers food while one Buffalo produces wood.\r\n+ Hideouts accept all four resources and can be fortified.\r\n+ Light infantry build free Bamboo Stake Traps.\r\n+ Lam Sơn Skirmishers counter ranged units; Heavy Arquebusiers fire penetrating shots.\r\n+ Nỏ thần fire scattered volleys of bolts.\r\n+ Town Center-rooted tunnels transport eligible land units between connected buildings.\r\n+ Unique landmarks provide free Buffalo, economic stealth and Royal Elephants.\r\n\r\nSelect China in the lobby, then choose Vietnam at match start.\r\nCredits: hosein81 and chilly5."
+2004,,,ui_name,,,Trap
+2005,,,ui_name,,,Trap
+2006,,,screen_name,,,Bamboo Trap Emplacement
+2007,,,screen_name,,,Bamboo Trap Emplacement
+2008,,,formatter,,,Add defensive Trap to this structure 
+2009,,,ui_name,,,Firelancewall
+2010,,,ui_name,,,Firelancewall
+2011,,,ui_name,,,Firelancewall
+2012,,,screen_name,,,Rattan Shields
+2013,,,screen_name,,,Rattan Shields
+2014,,,screen_name,,,Rattan Shields
+2015,,,extra_text,,,Ranged Technology
+2016,,,extra_text,,,Ranged Technology
+2017,,,extra_text,,,Ranged Technology
+2018,,,formatter,,,"+ %1% ranged armor for Archers, Lam Sơn Skirmishers, Crossbowmen and Heavy Arquebusiers."
+2019,,,formatter,,,Increase the ranged and melee armor of Ranged Infantry Unit by +%1%.
+2020,,,formatter,,,Increase the ranged and melee armor of Ranged Infantry Unit by +%1%.
+2021,,,screen_name,,,Bamboo Trap
+2022,,,screen_name,,,Bamboo Trap
+2023,,,screen_name,,,Worker Elephant
+2024,,,screen_name,,,Worker Elephant
+2025,,,ui_name,,,Tusk 
+2026,,,ui_name,,,Tusk 
+2027,,,ui_name,,,Tusk 
+2028,,,ui_name,,,Tusk 
+2029,,,help_text,,,Nearby troops gain increased attack speed and do more damage in 3 range radios if a villager is garrisoned inside of hideout or TC or Keep
+2030,,,help_text,,,Nearby troops gain increased attack speed and do more damage in 3 range radios if a villager is garrisoned inside of hideout or TC or Keep
+2031,,,help_text,,,Nearby troops gain increased attack speed and do more damage in 3 range radios if a villager is garrisoned inside of hideout or TC or Keep
+2032,,,formatter,,,Allows you to produce on imperial official to collect tax from lumber camp
+2033,,,screen_name,,,Monetary Reforrm
+2034,,,screen_name,,,Hideout
+2035,,,screen_name,,,Hideout
+2036,,,screen_name,,,Fortify Hideout
+2037,,,formatter,,,"Fortifies this Hideout.\r\n+ 1,200 health.\r\n+ 5 fire armor.\r\n+ Garrison capacity increases to 3.\r\nRetains current health percentage."
+2038,,,ui_name,,,Near Flooded Citadel
+2039,,,ui_name,,,Near Outpost
+2040,,,screen_name,,,One Pillar Pagoda
+2041,,,screen_name,,,One Pillar Pagoda
+2042,,,screen_name,,,One Pillar Pagoda
+2043,,,screen_name,,,One Pillar Pagoda
+2044,,,screen_name,,,Trap Planter
+2045,,,screen_name,,,Trap Planter
+2046,,,screen_name,,,The Flooded Citadel
+2047,,,screen_name,,,The Flooded Citadel
+2048,,,screen_name,,,The Flooded Citadel
+2049,,,ui_screen_name,,,Phổ Minh Tower
+2050,,,screen_name,,,Resistance Headquarters
+2051,,,extra_text,,,Religos landmark
+2052,,,help_text,,,Acts as a Monastery.\r\n+ Trains free Villagers; limit depends on your Hideouts.
+2053,,,ui_name,,,More outpost Or you reached maximum of 10 villagers
+2054,,,ui_name,,,More outpost Or you reached maximum of 10 villagers
+2055,,,formatter,,,Upgrade TC and outpost and keep Garrison Arrow to handcannon
+2056,,,ui_name,,,Poison Arrow
+2057,,,ui_name,,,Poison Arrow
+2058,,,ui_name,,,Poison Arrow
+2059,,,ui_name,,,Poison Arrow
+2060,,,ui_name,,,Poison Arrow
+2061,,,ui_name,,,Poison Arrow
+2062,,,screen_name,,,One Pillar Pagoda
+2063,,,screen_name,,,One Pillar Pagoda
+2064,,,extra_text,,,Age II - Defensive Landmark
+2065,,,extra_text,,,Age II - Defensive Landmark
+2066,,,help_text,,,"Acts as a Hideout.\r\n+ Garrisons 6 units.\r\n+ Permanently unlocks light-infantry training at Hideouts.\r\nTraining takes 1.5 times the ordinary duration, or 6 times while this landmark is destroyed. Full repair restores the shorter duration."
+2067,,,help_text,,,Fires a long range hand cannon and adds arrowslits while garrisoned. Can be upgraded with weaponry and offers vision into Stealth Forests. \r\n\r\nImperial Officials can drop off taxes at this building.
+2068,,,help_text,,,Fires a long range hand cannon and adds arrowslits while garrisoned. Can be upgraded with weaponry and offers vision into Stealth Forests. \r\n\r\nImperial Officials can drop off taxes at this building.
+2069,,,extra_text,,,Garrison Technology
+2070,,,screen_name,,,Garrison
+2071,,,formatter,,,"DO NOT CONSTRUCT AN OUTPOST , TC OR KEEP WHILE REASERCH IS IN PROGRESS , IF YOU DO GAME MAY CRASH\R\N Also when you are getting this upgrade do not garrison any unit it any building , if you do you lose the population forever\r\n Replaces Garrisoned poison arrow with handcannon "
+2072,,,screen_name,,,Hideout
+2073,,,screen_name,,,Hideout
+2074,,,help_text,,,"Resource drop-off and defensive building.\r\n+ Accepts Food, Wood, Gold and Stone.\r\n+ Garrisons 1 unit.\r\n+ Can be fortified in the Feudal Age."
+2075,,,help_text,,,"Resource drop-off and defensive building.\r\n+ Accepts Food, Wood, Gold and Stone.\r\n+ Garrisons 1 unit.\r\n+ Can be fortified in the Feudal Age."
+2076,,,help_text,,,"Resource drop-off and defensive building.\r\n+ Accepts Food, Wood, Gold and Stone.\r\n+ Garrisons 1 unit.\r\n+ Can be fortified in the Feudal Age."
+2077,,,help_text,,,"Resource drop-off and defensive building.\r\n+ Accepts Food, Wood, Gold and Stone.\r\n+ Garrisons 1 unit.\r\n+ Can be fortified in the Feudal Age."
+2078,,,screen_name,,,Bamboo Trap
+2079,,,screen_name,,,Bamboo Trap
+2080,,,help_text,,,"Can Be upgraded to have explosive traps , offers very small line of sight \r\n Unit Can't pass this building"
+2081,,,help_text,,,"Can Be upgraded to have explosive traps , offers very small line of sight \r\n Unit Can't pass this building"
+2082,,,screen_name,,,Rice Paddy
+2083,,,screen_name,,,Rice Paddy
+2084,,,help_text,,,"Free economic building, built by one Water Buffalo in 60 seconds.\r\n+ One Villager gathers renewable Food 20% faster than on an ordinary Farm.\r\n+ One garrisoned Water Buffalo produces Wood at half a Villager's wood-gathering work rate.\r\nBoth workers operate independently; Champa Rice improves both outputs."
+2085,,,help_text,,,"Free economic building, built by one Water Buffalo in 60 seconds.\r\n+ One Villager gathers renewable Food 20% faster than on an ordinary Farm.\r\n+ One garrisoned Water Buffalo produces Wood at half a Villager's wood-gathering work rate.\r\nBoth workers operate independently; Champa Rice improves both outputs."
+2086,,,help_text,,,A mobile universal resource drop-off. \r\nWeak in combat.
+2087,,,help_text,,,"Universal drop off moving unit , it has fighting capability\r\n Ability to research food Upgrades \r\n not Possible to cancel them"
+2088,,,help_text,,,Heavy gunpowder infantry.\r\n+ Shots pierce enemies in a line.\r\n+ High damage.\r\n- Short range and slow movement.
+2089,,,help_text,,,Heavy gunpowder infantry.\r\n+ Shots pierce enemies in a line.\r\n+ High damage.\r\n- Short range and slow movement.
+2090,,,screen_name,,,Giao Chỉ Arquebusier
+2091,,,screen_name,,,Giao Chỉ Arquebusier
+2092,,,screen_name,,,Giao Chỉ Heavy Arquebusier
+2093,,,screen_name,,,Giao Chỉ Heavy Arquebusier
+2094,,,help_text,,,Heavy gunpowder infantry.\r\n+ Shots pierce enemies in a line.\r\n+ High damage.\r\n- Short range and slow movement.
+2095,,,help_text,,,Heavy gunpowder infantry.\r\n+ Shots pierce enemies in a line.\r\n+ High damage.\r\n- Short range and slow movement.
+2096,,,extra_text,,,"Ranged Heavy Cavalry, Elephant"
+2097,,,screen_name,,,Royal Elephant
+2098,,,screen_name,,,Annam FireLances 
+2099,,,formatter,,,Spearmen and gain a Fire Lance when charging and Bracing \r\nAdd 2 torch damage
+2100,,,extra_text,,,Spearman Technology
+2101,,,help_text,,,Light melee infantry.\r\n+ Bonus damage against cavalry.\r\n+ Can brace against cavalry charges.\r\n- Vulnerable to Archers.
+2102,,,help_text,,,Light melee infantry.\r\n+ Bonus damage against cavalry.\r\n+ Can brace against cavalry charges.\r\n- Vulnerable to Archers.
+2103,,,help_text,,,Light melee infantry.\r\n+ Bonus damage against cavalry.\r\n+ Can brace against cavalry charges.\r\n- Vulnerable to Archers.
+2104,,,help_text,,,Light melee infantry.\r\n+ Bonus damage against cavalry.\r\n+ Can brace against cavalry charges.\r\n- Vulnerable to Archers.
+2105,,,help_text,,,Light melee infantry.\r\n+ Bonus damage against cavalry.\r\n+ Can brace against cavalry charges.\r\n- Vulnerable to Archers.
+2106,,,help_text,,,Light melee infantry.\r\n+ Bonus damage against cavalry.\r\n+ Can brace against cavalry charges.\r\n- Vulnerable to Archers.
+2107,,,help_text,,,Light melee infantry.\r\n+ Bonus damage against cavalry.\r\n+ Can brace against cavalry charges.\r\n- Vulnerable to Archers.
+2108,,,help_text,,,Light melee infantry.\r\n+ Bonus damage against cavalry.\r\n+ Can brace against cavalry charges.\r\n- Vulnerable to Archers.
+2109,,,help_text,,,Light melee infantry.\r\n+ Bonus damage against cavalry.\r\n+ Can brace against cavalry charges.\r\n- Vulnerable to Archers.
+2110,,,help_text,,,Light melee infantry.\r\n+ Bonus damage against cavalry.\r\n+ Can brace against cavalry charges.\r\n- Vulnerable to Archers.
+2111,,,help_text,,,Light melee infantry.\r\n+ Bonus damage against cavalry.\r\n+ Can brace against cavalry charges.\r\n- Vulnerable to Archers.
+2112,,,help_text,,,Light melee infantry.\r\n+ Bonus damage against cavalry.\r\n+ Can brace against cavalry charges.\r\n- Vulnerable to Archers.
+2113,,,help_text,,,Light melee infantry.\r\n+ Bonus damage against cavalry.\r\n+ Can brace against cavalry charges.\r\n- Vulnerable to Archers.
+2114,,,help_text,,,Light melee infantry.\r\n+ Bonus damage against cavalry.\r\n+ Can brace against cavalry charges.\r\n- Vulnerable to Archers.
+2115,,,help_text,,,Light melee infantry.\r\n+ Bonus damage against cavalry.\r\n+ Can brace against cavalry charges.\r\n- Vulnerable to Archers.
+2116,,,help_text,,,Light melee infantry.\r\n+ Bonus damage against cavalry.\r\n+ Can brace against cavalry charges.\r\n- Vulnerable to Archers.
+2117,,,help_text,,,"Acts as a Hideout.\r\n+ Garrisons 6 units.\r\n+ Permanently unlocks light-infantry training at Hideouts.\r\nTraining takes 1.5 times the ordinary duration, or 6 times while this landmark is destroyed. Full repair restores the shorter duration."
+2118,,,help_text,,,Acts as an Economic Ministry.\r\n+ Produces one free Water Buffalo every 75 seconds alongside paid production and research.\r\n- Free production pauses at the shared 15-Buffalo limit.\r\nDestruction resets progress; full repair restarts production.
+2119,,,help_text,,,Acts as an Economic Ministry.\r\n+ Produces one free Water Buffalo every 75 seconds alongside paid production and research.\r\n- Free production pauses at the shared 15-Buffalo limit.\r\nDestruction resets progress; full repair restarts production.
+2120,,,help_text,,,Acts as a Keep.\r\n+ Slows enemy land units by 30% within 8 tiles of its footprint.\r\nField stops while destroyed; returns after full repair.
+2121,,,help_text,,,Acts as a Keep.\r\n+ Slows enemy land units by 30% within 8 tiles of its footprint.\r\nField stops while destroyed; returns after full repair.
+2122,,,help_text,,,Acts as a Keep.\r\n+ Slows enemy land units by 30% within 8 tiles of its footprint.\r\nField stops while destroyed; returns after full repair.
+2123,,,screen_name,,,The Imperial Garden
+2124,,,extra_text,,,Age IV - Military Landmark
+2125,,,help_text,,,"Grants one free Royal Elephant on initial completion.\r\n+ After its death, automatically trains one free replacement in 100 seconds.\r\n- Maximum one living or queued Royal Elephant; uses 3 population.\r\nDestruction resets replacement progress. Full repair starts a new replacement queue if needed."
+2126,,,screen_name,,,The Imperial Garden
+2127,,,screen_name,,,The Imperial Garden
+2128,,,screen_name,,,Trừng Foundries
+2129,,,screen_name,,,Trừng Foundries
+2130,,,extra_text,,,Age IV - Military Landmark
+2131,,,extra_text,,,Age IV - Military Landmark
+2132,,,formatter,,,Decrease the cost of Nearby siege weapon by 20% \r\nAllows you to get an upgrade to replace garrisoned poisoned arrow by handcannon ( read the upgrade text to not crash )
+2133,,,formatter,,,Decrease the cost of Nearby siege weapon by 20% \r\nAllows you to get an upgrade to replace garrisoned poisoned arrow by handcannon ( read the upgrade text to not crash )
+2134,,,screen_name,,,Tunneling
+2135,,,help_text,,,"Activate Tunnel and click a ground destination. The nearest owned building within 8 metres of its footprint must connect to a Town Center or Headquarters.\r\n+ Load for 3 seconds; travel at 24 metres per second (minimum 1 second); unload for 1 second.\r\n- New orders before departure cancel the journey. Siege, Villagers, Traders, ships and Water Buffalo cannot travel.\r\nThe destination click starts a visible empire-wide 30-second cooldown, including rejected destinations."
+2136,,,extra_text,,,Military Technology 
+2137,,,formatter,,,Your First 10 Farm generate %1% gold every %2% seconds.
+2138,,,extra_text,,,Gold Technology
+2139,,,screen_name,,,Monetary Reform
+2140,,,help_text,,,Trains Heavy Arquebusiers and Culverins.\r\n+ Their resource costs are reduced by 20% at all producers.\r\n+ Chemistry and Serpentine Powder cost 20% less.\r\nDiscount stops while destroyed; returns after full repair.
+2141,,,help_text,,,Trains Heavy Arquebusiers and Culverins.\r\n+ Their resource costs are reduced by 20% at all producers.\r\n+ Chemistry and Serpentine Powder cost 20% less.\r\nDiscount stops while destroyed; returns after full repair.
+2142,,,screen_name,,,Defender of Home
+2143,,,screen_name,,,Defender of Home
+2144,,,screen_name,,,Defender of Home
+2145,,,ui_name,,,alarm
+2146,,,ui_name,,,alarm
+2147,,,screen_name,,,Bambo Trap
+2148,,,screen_name,,,Bambo Trap
+2149,,,screen_name,,,Bamboo Stake Trap
+2150,,,screen_name,,,Bamboo Stake Trap
+2151,,,help_text,,,Single-use Bamboo Stake Trap.\r\n+ Free; built by Villagers and light infantry.\r\n+ Fires 12 poisoned arrows.\r\n+ Each hit slows movement by 20% for 5 seconds; stacks.\r\n+ Units can pass over completed traps.\r\nDestroyed 4 seconds after its first attack.
+2152,,,help_text,,,Single-use Bamboo Stake Trap.\r\n+ Free; built by Villagers and light infantry.\r\n+ Fires 12 poisoned arrows.\r\n+ Each hit slows movement by 20% for 5 seconds; stacks.\r\n+ Units can pass over completed traps.\r\nDestroyed 4 seconds after its first attack.
+2153,,,help_text,,,Single-use Bamboo Stake Trap.\r\n+ Free; built by Villagers and light infantry.\r\n+ Fires 12 poisoned arrows.\r\n+ Each hit slows movement by 20% for 5 seconds; stacks.\r\n+ Units can pass over completed traps.\r\nDestroyed 4 seconds after its first attack.
+2154,,,help_text,,,Single-use Bamboo Stake Trap.\r\n+ Free; built by Villagers and light infantry.\r\n+ Fires 12 poisoned arrows.\r\n+ Each hit slows movement by 20% for 5 seconds; stacks.\r\n+ Units can pass over completed traps.\r\nDestroyed 4 seconds after its first attack.
+2155,,,help_text,,,Upgrades Men-at-arms to Elite Men-at-arms.
+2156,,,help_text,,,Upgrades Men-at-arms to Elite Men-at-arms.
+2157,,,extra_text,,,Defensive Fortification
+2158,,,extra_text,,,Defensive Fortification
+2159,,,extra_text,,,Defensive Fortification
+2160,,,formatter,,,Add +%1% health and +%2% fire armor to this Outpost.\r\n Replaces Poison Arrow with handcannon for garrison weapon
+2161,,,formatter,,,Add +%1% health and +%2% fire armor to this Outpost.\r\n Replaces Poison Arrow with handcannon for garrison weapon
+2162,,,formatter,,,Add +%1% health and +%2% fire armor to this Outpost.\r\n Replaces Poison Arrow with handcannon for garrison weapon
+2163,,,screen_name,,,Weaponize Outpost
+2164,,,screen_name,,,Weaponize Outpost
+2165,,,screen_name,,,Weaponize Outpost
+2166,,,extra_text,,,Religious Building
+2167,,,formatter,,,"Religious building.\r\n+ Trains Monks and researches religious technologies.\r\n+ Stores collected Relics for normal Gold income.\r\nMonks heal friendly units, collect Relics and capture Sacred Sites."
+2168,,,formatter,,,"Religious building.\r\n+ Trains Monks and researches religious technologies.\r\n+ Stores collected Relics for normal Gold income.\r\nMonks heal friendly units, collect Relics and capture Sacred Sites."
+2169,,,ui_name,,,Relic Nearby
+2170,,,ui_name,,,Relic Nearby
+2171,,,ui_name,,,Relic Nearby
+2172,,,help_text,,,"Support unit with no combat capability. Can Not  pick up Relics, But capture Sacred Sites.\r\n+ Heals friendly units\r\n- Slow movement speed"
+2173,,,help_text,,,"Support unit with no combat capability. Can Not  pick up Relics, But capture Sacred Sites.\r\n+ Heals friendly units\r\n- Slow movement speed"
+2174,,,help_text,,,Economic support unit with no combat capability. Automatically gathers Tax (Gold) from buildings.\r\n- Only a certain number of Officials can exist at a time
+2175,,,help_text,,,Economic support unit with no combat capability. Automatically gathers Tax (Gold) from buildings.\r\n- Only a certain number of Officials can exist at a time
+2176,,,screen_name,,,Shield
+2177,,,screen_name,,,Giao Chỉ Arquebusier
+2178,,,screen_name,,,Giao Chỉ Arquebusier
+2179,,,screen_name,,,Giao Chỉ Arquebusier
+2180,,,screen_name,,,Giao Chỉ Arquebusier
+2181,,,formatter,,,Increases damage of Trap by %1%%%. For the second time
+2182,,,formatter,,,Increases damage of Trap by %1%%%. For the second time
+2183,,,formatter,,,Increases damage of Trap by %1%%%. For the second time
+2184,,,formatter,,,Increases damage of Trap by %1%%%.
+2185,,,formatter,,,Increases damage of Trap by %1%%%.
+2186,,,formatter,,,Increases damage of Trap by %1%%%.
+2187,,,screen_name,,,Shrapnel Bombs 
+2188,,,screen_name,,,Shrapnel Bombs 
+2189,,,screen_name,,,Shrapnel Bombs 
+2190,,,screen_name,,,Improved Shrapnel Bombs 
+2191,,,screen_name,,,Improved Shrapnel Bombs 
+2192,,,screen_name,,,Improved Shrapnel Bombs 
+2193,,,screen_name,,,Empty Gardens
+2194,,,screen_name,,,Sacred Site
+2195,,,screen_name,,,Sacred Site
+2196,,,screen_name,,,Sacred Site
+2197,,,screen_name,,,Monetary Reform
+2198,,,screen_name,,,Monetary Reform
+2199,,,screen_name,,,Monetary Reform
+2200,,,formatter,,,Aura that increases ranged infantry damage by +%1%%%.
+2201,,,screen_name,,,Defend the Homeland
+2202,,,screen_name,,,Defend the Homeland
+2203,,,formatter,,,Aura that increases melee infantry damage by +%1%%%.
+2204,,,screen_name,,,Lumber Carriage
+2205,,,formatter,,,Workers In 3 tile range of Elephant Build %1%%% Faster
+2206,,,screen_name_short,,,Phổ Minh Tower
+2207,,,screen_name_short,,,Phổ Minh Tower
+2208,,,extra_text,,,Age II - Economic Landmark
+2209,,,extra_text,,,Age II - Economic Landmark
+2210,,,screen_name,,,Elephant Trainer 
+2211,,,screen_name,,,Lumber Carriages
+2212,,,screen_name,,,Worker Elephant
+2213,,,screen_name,,,Worker Elephant
+2214,,,screen_name,,,Phổ Minh Tower
+2215,,,screen_name,,,Phổ Minh Tower
+2216,,,ui_name,,,10 Rice Terrace Required 
+2217,,,screen_name,,,Royal Elephant
+2218,,,extra_text,,,"Ranged Heavy Cavalry, Elephant"
+2219,,,help_text,,,Heavy elephant with a rocket rider.\r\n+ Single-target rockets deal bonus damage to infantry and cavalry.\r\n+ Tusk attack deals bonus damage to buildings.\r\n+ Grants Bannerman bonuses to nearby eligible units.\r\n- Slow movement; uses 3 population.
+2220,,,help_text,,,Houses are 50% cheaper.
+2221,,,extra_text,,,Trap Technology
+2222,,,extra_text,,,Trap Technology
+2223,,,extra_text,,,Trap Technology
+2224,,,extra_text,,,Trap Technology
+2225,,,extra_text,,,Trap Technology
+2226,,,extra_text,,,Trap Technology
+2227,,,extra_text,,,Age III - Defensive Landmark
+2228,,,screen_name,,,Resistance Headquarters
+2229,,,screen_name,,,Resistance Headquarters
+2230,,,screen_name,,,Resistance Headquarters
+2231,,,extra_text,,,Age III - Defensive and Economic Landmark
+2232,,,extra_text,,,Age III - Defensive and Economic Landmark
+2233,,,extra_text,,,Age III - Defensive and Economic Landmark
+2234,,,help_text,,,Acts as a Town Center.\r\n+ Automatically grants Stealth to your Villagers and Traders within 8 tiles beyond its footprint.\r\nThe benefit ends outside the area or when the landmark is destroyed; full repair restores it. Detection and combat reveal follow normal Stealth rules.
+2235,,,help_text,,,Acts as a Town Center.\r\n+ Automatically grants Stealth to your Villagers and Traders within 8 tiles beyond its footprint.\r\nThe benefit ends outside the area or when the landmark is destroyed; full repair restores it. Detection and combat reveal follow normal Stealth rules.
+2236,,,help_text,,,Acts as a Town Center.\r\n+ Automatically grants Stealth to your Villagers and Traders within 8 tiles beyond its footprint.\r\nThe benefit ends outside the area or when the landmark is destroyed; full repair restores it. Detection and combat reveal follow normal Stealth rules.
+2237,,,extra_text,,,Worker Elephant Technology 
+2238,,,help_text,,,Worker Elephants gain +50 health and +40% movement speed (equivalent to Villagers with Wheelbarrow).
+2239,,,help_text,,,Worker Elephants boost nearby Villager build speed by 33% for ALL structures (including Landmarks).
+2240,,,extra_text,,,Ranged Infantry Technology 
+2241,,,screen_name,,,Giao Chỉ Arquebusier
+2242,,,screen_name,,,Giao Chỉ Arquebusier
+2243,,,screen_name,,,Giao Chỉ Arquebusier
+2244,,,screen_name,,,Giao Chỉ Arquebusier
+2245,,,screen_name,,,Giao Chỉ Heavy Arquebusier
+2246,,,screen_name,,,Giao Chỉ Heavy Arquebusier
+2247,,,screen_name,,,Giao Chỉ Arquebusier
+2248,,,screen_name,,,Giao Chỉ Arquebusier
+2249,,,help_text,,,Heavy gunpowder infantry.\r\n+ Shots pierce enemies in a line.\r\n+ High damage.\r\n- Short range and slow movement.
+2250,,,help_text,,,Heavy gunpowder infantry.\r\n+ Shots pierce enemies in a line.\r\n+ High damage.\r\n- Short range and slow movement.
+2251,,,help_text,,,Heavy gunpowder infantry.\r\n+ Shots pierce enemies in a line.\r\n+ High damage.\r\n- Short range and slow movement.
+2252,,,help_text,,,Heavy gunpowder infantry.\r\n+ Shots pierce enemies in a line.\r\n+ High damage.\r\n- Short range and slow movement.
+2253,,,help_text,,,Heavy gunpowder infantry.\r\n+ Shots pierce enemies in a line.\r\n+ High damage.\r\n- Short range and slow movement.
+2254,,,help_text,,,Heavy gunpowder infantry.\r\n+ Shots pierce enemies in a line.\r\n+ High damage.\r\n- Short range and slow movement.
+2255,,,help_text,,,Heavy gunpowder infantry.\r\n+ Shots pierce enemies in a line.\r\n+ High damage.\r\n- Short range and slow movement.
+2256,,,help_text,,,Heavy gunpowder infantry.\r\n+ Shots pierce enemies in a line.\r\n+ High damage.\r\n- Short range and slow movement.
+2257,,,help_text,,,Heavy gunpowder infantry.\r\n+ Shots pierce enemies in a line.\r\n+ High damage.\r\n- Short range and slow movement.
+2258,,,help_text,,,Heavy gunpowder infantry.\r\n+ Shots pierce enemies in a line.\r\n+ High damage.\r\n- Short range and slow movement.
+2259,,,help_text,,,Heavy gunpowder infantry.\r\n+ Shots pierce enemies in a line.\r\n+ High damage.\r\n- Short range and slow movement.
+2260,,,help_text,,,Heavy gunpowder infantry.\r\n+ Shots pierce enemies in a line.\r\n+ High damage.\r\n- Short range and slow movement.
+2261,,,formatter,,,Automatically grants Stealth to your Villagers and Traders within 8 tiles beyond an operational Resistance Headquarters. Detection and combat reveal follow normal Stealth rules.
+2262,,,screen_name,,,Headquarters Stealth
+2263,,,screen_name,,,Chemistry
+2264,,,screen_name,,,Chemistry
+2265,,,screen_name,,,Chemistry
+2266,,,formatter,,,Increase the damage of gunpowder units by +%1%%%.
+2267,,,formatter,,,Increase the damage of gunpowder units by +%1%%%.
+2268,,,extra_text,,,Increase the damage of gunpowder units by +%1%%%.
+2269,,,extra_text,,,Increase the damage of gunpowder units by +%1%%%.
+2270,,,extra_text,,,Increase the damage of gunpowder units by +%1%%%.
+2271,,,extra_text,,,Gunpowder Technology
+2272,,,extra_text,,,Gunpowder Technology
+2273,,,extra_text,,,Gunpowder Technology
+2274,,,screen_name,,,Bút Tháp Temple
+2275,,,screen_name,,,Bút Tháp Temple
+2276,,,formatter,,,Increase Villagers' gathering rate for Wood by %1%%%.
+2277,,,formatter,,,Increase Villagers' gathering rate for Wood by %1%%%.
+2278,,,formatter,,,Increase Villagers' gathering rate for Wood by %1%%%.
+2279,,,ui_name,,,Poison Arrow
+2280,,,ui_name,,,Poison Arrow
+2281,,,ui_name,,,Poison Arrow
+2282,,,ui_name,,,Explosive Trap
+2283,,,ui_name,,,Explosive Trap
+2284,,,ui_name,,,"Near Landmark , TC or Keep"
+2285,,,ui_name,,,Explosive Trap
+2286,,,ui_name,,,Explosive Trap
+2287,,,screen_name,,,Destroy
+2288,,,screen_name,,,Destroy
+2289,,,screen_name,,,Destroy
+2290,,,extra_text,,,House Technology 
+2291,,,help_text,,,Increase the damage of Explosive Traps by 30%
+2292,,,help_text,,,Increase the damage of Explosive Traps by 30%
+2293,,,help_text,,,Increase the damage of Explosive Traps by 30%
+2294,,,extra_text,,,Trap Technology
+2295,,,extra_text,,,Trap Technology
+2296,,,help_text,,,+ Increases Bamboo Stake Trap attack range from 2 to 3 tiles.
+2297,,,help_text,,,+ Increases Bamboo Stake Trap attack range from 2 to 3 tiles.
+2298,,,screen_name,,,Barbed Stakes
+2299,,,screen_name,,,Barbed Stakes
+2300,,,help_text,,,Heavy elephant with a rocket rider.\r\n+ Single-target rockets deal bonus damage to infantry and cavalry.\r\n+ Tusk attack deals bonus damage to buildings.\r\n+ Grants Bannerman bonuses to nearby eligible units.\r\n- Slow movement; uses 3 population.
+2301,,,ui_name,,,Poison Arrow
+2302,,,ui_name,,,Poison Arrow
+2303,,,ui_name,,,Poison Arrow
+2304,,,help_text,,,Worker Elephants boost nearby Villager build speed by 33% for ALL structures (including Landmarks).
+2305,,,formatter,,,Aura that increases cavalry unit damage by +%1%%%.
+2306,,,ui_name,,,Poison Arrow
+2307,,,ui_name,,,Poison Arrow
+2308,,,ui_name,,,Poison Arrow
+2309,,,ui_name,,,Poison Arrow
+2310,,,ui_name,,,Poison Arrow
+2311,,,ui_name,,,Poison Arrow
+2312,,,ui_name,,,Poison Arrow
+2313,,,ui_name,,,Poison Arrow
+2314,,,ui_name,,,Poison Arrow
+2315,,,ui_name,,,Poison Arrow
+2316,,,ui_name,,,Poison Arrow
+2317,,,ui_name,,,Poison Arrow
+2318,,,ui_name,,,Poison Arrow
+2319,,,locstring_value,,,20%
+2320,,,help_text,,,Tower improve the movement speed of nearby infantry.
+2321,,,screen_name,,,Resistance Network
+2322,,,help_text,,,Worker Elephants gain the ability Overseer: 20% of the resources dropped off at the Worker Elephant are now gained as bonus resources (Worker Elephants can now Supervise themselves).
+2323,,,extra_text,,,Worker Elephant Technology
+2324,,,extra_text,,,Worker Elephant Technology
+2325,,,help_text,,,Worker Elephants gain the ability Overseer: 20% of the resources dropped off at the Worker Elephant are now gained as bonus resources (Worker Elephants can now Supervise themselves).
+2326,,,screen_name,,,Overseers
+2327,,,screen_name,,,Overseers
+2328,,,help_text,,,Worker Elephant Generate 20% of the resources dropped off at them as additional bonus resources while Overseers Activated 
+2329,,,help_text,,,Worker Elephant Generate 20% of the resources dropped off at them as additional bonus resources while Overseers Activated 
+2330,,,screen_name,,,OverSeers
+2331,,,screen_name,,,OverSeers
+2332,,,help_text,,,Increase Villagers' gathering rate for Wood by 20% and Wood gatherers carry capacity by +5.
+2333,,,help_text,,,Increase Villagers' gathering rate for Wood by 20% and Wood gatherers carry capacity by +5.
+2334,,,help_text,,,Increase Villagers' gathering rate for Wood by 20% and Wood gatherers carry capacity by +5.
+2335,,,help_text,,,"Spearmen gain +20% torch damage, as well as a Fire Lance that detonates on charge or brace."
+2336,,,ui_name,,,Overseers 
+2337,,,ui_name,,,Overseers 
+2338,,,extra_text,,,Worker Elephant Upgrade
+2339,,,formatter,,,Allows you to train Two additional Worker Elephant.
+2340,,,screen_name,,,Elephant Trainer 
+2341,,,ui_name,,,You reached the limit
+2342,,,ui_name,,,You reached the limit
+2343,,,ui_name,,,You reached the limit
+2344,,,ui_name,,,You reached the limit
+2345,,,screen_name,,,Economic Ministry
+2346,,,screen_name,,,Economic Ministry
+2347,,,help_text,,,Economic research and training building.\r\n+ Researches economic technologies.\r\n+ Trains Water Buffalo.\r\n- Does not accept resource drop-offs.
+2348,,,help_text,,,Economic research and training building.\r\n+ Researches economic technologies.\r\n+ Trains Water Buffalo.\r\n- Does not accept resource drop-offs.
+2349,,,help_text,,,+ Automatically queues a free Water Buffalo every 75 seconds.\r\n+ Native production queue shows progress.\r\n- Stops queuing at the shared 15-Buffalo limit.\r\n- Train paid Buffalo at other producers.\r\nDestruction resets progress; full repair restarts production.
+2350,,,help_text,,,+ Automatically queues a free Water Buffalo every 75 seconds.\r\n+ Native production queue shows progress.\r\n- Stops queuing at the shared 15-Buffalo limit.\r\n- Train paid Buffalo at other producers.\r\nDestruction resets progress; full repair restarts production.
+2351,,,formatter,,,Increase Villagers' gathering rate for Wood by %1%%%.
+2352,,,formatter,,,Increase Villagers' gathering rate for Wood by %1%%%.
+2353,,,formatter,,,Increase Villagers' gathering rate for Wood by %1%%%.
+2354,,,formatter,,,Increase Villagers' gathering rate for Wood by %1%%%.
+2355,,,formatter,,,Increase Villagers' gathering rate for Wood by %1%%%.
+2356,,,formatter,,,Increase Villagers' gathering rate for Wood by %1%%%.
+2357,,,formatter,,,Increase Villagers' gathering rate for Wood by %1%%% and Wood gatherers carry capacity by +%3%.
+2358,,,formatter,,,Increase Villagers' gathering rate for Wood by %1%%% and Wood gatherers carry capacity by +%3%.
+2359,,,formatter,,,Increase Villagers' gathering rate for Wood by %1%%% and Wood gatherers carry capacity by +%3%.
+2360,,,extra_text,,,Worker Elephant Technology
+2361,,,formatter,,,Worker Elephant generate now passively generate %1% gold per Minute.
+2362,,,screen_name,,,Ivory Trade
+2363,,,extra_text,,,Worker Elephant Technology
+2364,,,extra_text,,,Worker Elephant Technology
+2365,,,extra_text,,,Worker Elephant Technology
+2366,,,extra_text,,,Worker Elephant Technology
+2367,,,extra_text,,,Worker Elephant Technology
+2368,,,extra_text,,,Worker Elephant Technology
+2369,,,help_text,,,Worker Elephants gain +35% health.
+2370,,,help_text,,,Worker Elephants gain +35% health.
+2371,,,help_text,,,Worker Elephants gain +35% health.
+2372,,,help_text,,,Worker Elephants gain +35% health.
+2373,,,help_text,,,Worker Elephants gain +35% health.
+2374,,,help_text,,,Worker Elephants gain +35% health.
+2375,,,screen_name,,,Elephant Trainer
+2376,,,screen_name,,,Elephant Trainer
+2377,,,screen_name,,,Elephant Trainer
+2378,,,screen_name,,,Elephant Trainer
+2379,,,screen_name,,,Elephant Trainer
+2380,,,screen_name,,,Elephant Trainer
+2381,,,screen_name,,,Ivory Trade
+2382,,,formatter,,,Worker Elephant generate now passively generate %1% gold per Minute.
+2383,,,extra_text,,,Worker Elephant Technology
+2384,,,extra_text,,,Ranged Technology
+2385,,,screen_name,,,Lam Sơn Guerilla
+2386,,,screen_name,,,Lam Sơn Guerilla
+2387,,,screen_name,,,Lam Sơn Guerilla
+2388,,,screen_name,,,Lam Sơn Guerilla
+2389,,,screen_name,,,Veteran Lam Sơn Guerilla
+2390,,,screen_name,,,Veteran Lam Sơn Guerilla
+2391,,,screen_name,,,Veteran Lam Sơn Guerilla
+2392,,,screen_name,,,Veteran Lam Sơn Guerilla
+2393,,,screen_name,,,Elite Lam Sơn Guerilla
+2394,,,screen_name,,,Elite Lam Sơn Guerilla
+2395,,,screen_name,,,Elite Lam Sơn Guerilla
+2396,,,screen_name,,,Elite Lam Sơn Guerilla
+2397,,,screen_name,,,Lam Sơn Guerilla
+2398,,,screen_name,,,Lam Sơn Guerilla
+2399,,,screen_name,,,Lam Sơn Guerilla
+2400,,,screen_name,,,Lam Sơn Guerilla
+2401,,,screen_name,,,Veteran Lam Sơn Guerilla
+2402,,,screen_name,,,Veteran Lam Sơn Guerilla
+2403,,,screen_name,,,Veteran Lam Sơn Guerilla
+2404,,,screen_name,,,Veteran Lam Sơn Guerilla
+2405,,,screen_name,,,Elite Lam Sơn Guerilla
+2406,,,screen_name,,,Elite Lam Sơn Guerilla
+2407,,,screen_name,,,Elite Lam Sơn Guerilla
+2408,,,screen_name,,,Elite Lam Sơn Guerilla
+2409,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2410,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2411,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2412,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2413,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2414,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2415,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2416,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2417,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2418,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2419,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2420,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2421,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2422,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2423,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2424,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2425,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2426,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2427,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2428,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2429,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2430,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2431,,,help_text,,,Light ranged infantry.\r\n+ Effective against unarmored targets.\r\n- Weak against armored units and cavalry.
+2432,,,ui_name,,,"Near Landmark , TC or Keep"
+2433,,,ui_name,,,"Near Landmark , TC or Keep"
+3000,,,help_text,,,Roller Shutter Triggers: Explosive Traps finish construction 20% sooner.
+3001,,,screen_name,,,Scorched Earth
+3002,,,help_text,,,+ Light infantry deal 20% more torch damage.
+3003,,,extra_text,,,Light Infantry Technology
+3004,,,screen_name,,,Lobed Maces
+3005,,,help_text,,,+ Men-at-arms deal +10 melee damage against armored units.\r\nTorch damage is unchanged.
+3006,,,extra_text,,,Men-at-arms Technology
+3007,,,unit_name,,,Lam Sơn Skirmisher
+3008,,,veteran_name,,,Veteran Lam Sơn Skirmisher
+3009,,,elite_name,,,Elite Lam Sơn Skirmisher
+3010,,,unit_help,,,Light javelin infantry.\r\n+ Bonus damage against ranged units.\r\n+ Can enter stealth and build Bamboo Stake Traps.\r\n+ Uses torches against buildings.
+3011,,,veteran_tech,,,Veteran Lam Sơn Skirmishers
+3012,,,veteran_help,,,Upgrades Lam Sơn Skirmishers to Veteran.\r\n+ Improves combat statistics.
+3013,,,elite_tech,,,Elite Lam Sơn Skirmishers
+3014,,,elite_help,,,Upgrades Lam Sơn Skirmishers to Elite.\r\n+ Improves combat statistics.
+3015,,,,,,Empty Gardens
+3016,,,,,,"+ Refunds 25% of a completed building's listed construction cost when destroyed or deleted.\r\n- Excludes Landmarks, Wonders and upgrade costs."
+3017,,,,,,Economic Technology
+3020,,,,,,Water Buffalo
+3021,,,,,,Economic animal.\r\n+ Builds free Rice Paddies.\r\n+ Supervise a completed Rice Paddy to generate Wood at half a Villager wood-gathering work rate.\r\n+ Uses no population; limit 15.\r\n- Cannot attack.
+3022,,,,,,Economic Animal
+3023,,,,,,Nỏ thần
+3024,,,,,,"Multishot siege weapon.\r\n+ Fires a scattered burst of 7 bolts, or 9 with Reinforced Frames.\r\n+ Bonus damage against melee infantry.\r\n+ Very small impact area.\r\n- Bolts do not pierce through units."
+3025,,,,,,Multishot Siege
+3026,,,,,,Reinforced Frames
+3027,,,,,,+ Nỏ thần fire 9 bolts per burst instead of 7.\r\n+ Nỏ thần ranged damage reduction increases to 65%.
+3028,,,,,,Unique Military Technology
+3029,,,screen_name,,,Water Buffalo
+3030,,,formatter,,,test water buffalo
+3031,,,extra_text,,,Worker
+3032,,,,,,Water Buffalo limit reached (15).
+3033,,,,,,Champa Rice
+3034,,,,,,+ Villager Food gathering and Buffalo Wood production at Rice Paddies improve by 10%.
+3035,,,,,,One Pillar Pagoda: Next free Buffalo
+3036,,,,,,One Pillar Pagoda: Buffalo limit reached (15)
+3037,,,,,,One Pillar Pagoda: Fully repair to resume Buffalo
+3038,,,,,,One Pillar Pagoda: Waiting for space
+3039,,,,,,Tunnels: activate and click near an owned building
+3040,,,,,,Tunnels: units approaching or loading
+3041,,,,,,Tunnels: units travelling or unloading
+3042,,,,,,Tunnels: shared cooldown
+3043,,,,,,Tunnels: destination is not connected
+3044,,,,,,Tunnels: no eligible units selected
+3045,,,,,,Tunnels: another journey is active
+3046,,,,,,Tunnel destination
+3047,,,,,,Reinforced Nỏ thần
+3048,,,,,,Multishot siege weapon.\r\n+ Fires a tight burst of 9 bolts.\r\n+ Reduces incoming ranged damage by 65%.\r\n+ Bonus damage against melee infantry.\r\n- Bolts do not pierce through units.
+3049,,,,,,Supervise Rice Paddy
+3050,,,,,,"Moves to the centre of an owned, completed Rice Paddy. Generates Wood while supervising. An overhead arrow marks active work. One Buffalo per Paddy. Move to stop."
+3051,,,,,,Stop supervising
+3052,,,,,,End this Buffalo's Rice Paddy supervision.
+3053,,,,,,Only Buffalo can construct Rice Paddies.
+1104,,,,,,Delhi Sultanate
+1105,,,,,,Persia
+1107,,,,,,30 seconds to choose. Default: Delhi Sultanate.
+1109,,,,,,"Play as Persia.\r\n+ Iranian dynasties and unique counter units.\r\n+ Divan supervision and economic reforms.\r\n+ Caravanserais, siege camels and Ali Qapu army batches."
+1110,,,,,,Civilization conversion was not applied. Your original civilization remains active. See warnings.log for the reason.
+1111,,,,,,"Civilization conversion failed after changes may have begun. The opening hold is released, but this army is not a validated Delhi or Persia state. Restart the test and retain warnings.log."
+5001,,,,,,The Persians - New Civilization
+5002,,,,,,"This mod adds the Persian civilization to the game. To play, enable Community Civilization Pack Normal, select the Delhi Sultanate, then choose Persia at match start.\r\n\r\nSpecial thanks to ChillyEmpire for his design concept and assistance during development.\r\n\r\nContact us at:\r\nHossein - youtube.com/@aoe4kingdom\r\nChillyEmpire - youtube.com/@ChillyEmpire\r\n\r\n===================================\r\n\r\nTHE PERSIANS\r\n934-1629 CE\r\nIRANIAN DYNASTIES, DIVANS, TRADE\r\nDifficulty: 3 stars\r\n\r\nThe collapse of the Sassanian Empire saw Persia fall into disunity for over 700 years. Yet, in spite of its fractionalization, Persian culture, language, and martial traditions continued to foster and grow. In Age of Empires IV, the Persian civilization represents the various medieval dynasties, both native and foreign, that ruled over the region of “Ērān.” In-game, Persia sports a powerful economy, with an emphasis on trade and flexibility. In combat, this is THE “counter” civ, with units that are weaker at a base level, but much more effective against their counters.\r\n\r\nSTRENGTHS:\r\nStrong economy enabled by Divans that can supervise.\r\nFlexible - can easily switch army compositions.\r\nVery strong trade!\r\nZamburak Siege Camels!\r\n\r\nWEAKNESSES:\r\nCannot upgrade unit Veterancy seperately.\r\nUnits are weak in general-purpose roles.\r\nWeak in early Imperial due to expensive techs.\r\n\r\nUNIQUE UNITS:\r\nQizilbash: Fast moving Horse Archer that deals bonus damage to melee units.\r\nDaylamite: Cheap Man-at-arms with less armor, but deals bonus damage to light infantry.\r\nSavar: Slow, tanky Lancer with an anti-armor mace attack.\r\nAssassin*: Stealthed killer that first strikes for double damage. Can’t attack buildings but can Sabotage them.\r\nZamburak*: Siege Camelry. Functions like Mounted Ozutsu. Place it in the Archery Range just like the Grenadier.\r\n\r\nIRANIAN DYNASTIES:\r\nMedieval Iran was a melting pot of diverse cultures and transient empires. Each conquering dynasty brought their own veteran forces with them. This is represented in-game by the Dynasty system.\r\n\r\nUnlike other civilization’s units, Persian units do not research veterancy individually. Instead, all of your units are upgraded simultaneously as you upgrade your dynasty.\r\n\r\nBuyid (Regular) ➟ Khwarazmid (Hardened) ➟ Il-Khanid (Veteran) ➟ Safavid (Elite)\r\n\r\nMILITARY SPECIALIZATION:\r\nAll of Persia’s unique units have less base damage but more bonus damage vs. the units they counter. This makes them weaker as generalist units but much stronger as specialist units.\r\n\r\nINFLUENCE - DYNASTIC BUREAUCRACY:\r\nEach time you advance your Dynasty, you can build an additional Divan. Divans are special buildings that can supervise nearby structures (think Chinese Imperial Official, but in the form of a building). Choose either:\r\n\r\nDivan of Commerce:\r\nHouses unique economic technologies. Emits an aura range of 4 units.\r\nAbility: Commerce Vizier - Supervise a nearby economic drop-off, granting +20% bonus resources and improving research speed (does not affect Town Centers, Docks, or Markets).\r\n\r\nDivan of War:\r\nHouses unique military technologies. Emits an influence range of 4 units.\r\nAbility: War Vizier - Supervise a military production or technology building within the Divan’s influence, boosting its military production or research speed by +150%.\r\n\r\nUNIQUE BUILDING: CARAVANSERAI:\r\nUnique structure that massively buffs nearby Traders’ movement speed and armor. Unlocked in the Castle Age.\r\n\r\nTURKOMAN HORSE ARCHERS:\r\nIn the Feudal Age unlock the Qizilbash, a unique Horse Archer that counters melee units. In Age IV, research Turkoman Traditions to enable the Qizilbash to attack while moving, just like Mongol Mangudai.\r\n\r\nGARDEN BOUNTY:\r\nMills constructed near Berry Bushes create Orchards, increasing Food capacity by +100. Gather from Berry Bushes +30% faster, but cannot gather from Boar. Berry carry capacity increased +3.\r\n\r\n===================================\r\n\r\nKNOWN ISSUES:\r\n\r\nMajor:\r\nAI will act really janky if you try to get them to play as the Persians.\r\nSome Landmarks will still provide their bonus even when destroyed.\r\n\r\nMinor:\r\nWe cannot affect unit visuals, building visuals, voice lines, sound effects, music, or image assets, so all assets are recycled.\r\n"
+5003,,,,,,"Supervise a production With war divan to make it work %1%%% faster. Cannot be used on Landmarks, Town Centers, or Docks."
+5004,,,,,,"Supervise a drop-off building with an Economic Divan to make Resource drop-off buildings receive %2%%% more resources. Cannot be used on Landmarks, Town Centers, or Docks."
+5005,,,,,,Supervise a drop-off building with an Economic Divan to make Resource drop-off buildings receive %2%%% more resources.
+5006,,,,,,Divan of Commerce
+5007,,,,,,Divan of Commerce
+5008,,,,,,Divan of Commerce
+5009,,,,,,Divan of War
+5010,,,,,,Divan of War
+5011,,,,,,Divan of War
+5012,,,,,,You reached Maximum capacity
+5013,,,,,,You reached Maximum capacity
+5014,,,,,,You reached Maximum capacity
+5015,,,,,,You reached Maximum capacity
+5016,,,,,,You reached Maximum capacity
+5017,,,,,,You reached Maximum capacity
+5018,,,,,,Khwarazmian Dynasty
+5019,,,,,,Il-Khanid Dynasty
+5020,,,,,,Safavid Dynasty
+5021,,,,,,Tabar
+5022,,,,,,Tabar
+5023,,,,,,Tabar
+5024,,,,,,Tabar
+5025,,,,,,Tabar
+5026,,,,,,Tabar
+5027,,,,,,Tabar
+5028,,,,,,Tabar
+5029,,,,,,Tabar
+5030,,,,,,Tabar
+5031,,,,,,Shamshir
+5032,,,,,,Shamshir
+5033,,,,,,Shamshir
+5034,,,,,,Shamshir
+5035,,,,,,Shamshir
+5036,,,,,,Shamshir
+5037,,,,,,Shamshir
+5038,,,,,,Shamshir
+5039,,,,,,Shamshir
+5040,,,,,,Shamshir
+5041,,,,,,Kamandaran
+5042,,,,,,Shamshir
+5043,,,,,,Parthian shot
+5044,,,,,,Parthian shot
+5045,,,,,,Parthian shot
+5046,,,,,,Dynastic Reform
+5047,,,,,,Caravanserai
+5048,,,,,,Caravanserai
+5049,,,,,,Caravanserai
+5050,,,,,,Crop Sharing
+5051,,,,,,Mathematics
+5052,,,,,,Mathematics
+5053,,,,,,The Grand Caravanserai
+5054,,,,,,The Grand Caravanserai
+5055,,,,,,"Functions as a Caravanserai (has 5 garrison slots, and provides +30% movement speed and +8 armor to nearby Traders).\r\nAll Traders are now 33% cheaper.\r\n"
+5056,,,,,,"Functions as a Caravanserai (has 5 garrison slots, and provides +30% movement speed and +8 armor to nearby Traders).\r\nAll Traders are now 33% cheaper.\r\n"
+5057,,,,,,Gundeshapur
+5058,,,,,,Gundeshapur
+5059,,,,,,"Functions as an additional Divan of War.\r\nUnlocks Daylamites in the Feudal Age.\r\nWhile functioning, permits Il-Khanid research in Feudal after the preceding dynasty."
+5060,,,,,,"Functions as an additional Divan of War.\r\nUnlocks Daylamites in the Feudal Age.\r\nWhile functioning, permits Il-Khanid research in Feudal after the preceding dynasty."
+5061,,,,,,Samarkand Bazaar
+5062,,,,,,Samarkand Bazaar
+5063,,,,,,Assassin Brotherhood
+5064,,,,,,Assassin Brotherhood
+5065,,,,,,Functions as an extra Commerce Ministry with the ability to oversee TownFunctions as an extra Commerce Ministry with the ability to oversee Town
+5066,,,,,,Functions as an extra Commerce Ministry with the ability to oversee TownFunctions as an extra Commerce Ministry with the ability to oversee Town
+5067,,,,,,"Functions as an additional Divan of Commerce with the added ability to oversee Town Centers, Markets, or Docks as well.\r\n This Landmark is 10% more expensive."
+5068,,,,,,"Functions as an additional Divan of Commerce with the added ability to oversee Town Centers, Markets, or Docks as well.\r\n This Landmark is 10% more expensive."
+5069,,,,,,This landmark has two abilities:\r\nSpy Network - This landmark gains +50 vision radius for 2 minutes (3 minute cooldown).\r\nAssassination Contract - Pay 100 gold to spawn an Assassin anywhere you have vision (1 minute cooldown)
+5070,,,,,,This landmark has two abilities:\r\nSpy Network - This landmark gains +50 vision radius for 2 minutes (3 minute cooldown).\r\nAssassination Contract - Pay 100 gold to spawn an Assassin anywhere you have vision (1 minute cooldown)
+5071,,,,,,Ali Qapu Palace
+5072,,,,,,Ali Qapu Palace
+5073,,,,,,Ali Qapu Palace
+5074,,,,,,Shah Abbas Siege Factory
+5075,,,,,,Shah Abbas Siege Factory
+5076,,,,,,Shah Abbas Siege Factory
+5077,,,,,,Trains Siege units that only cost gold with a 25% discount.\r\nCan train the unique Zamburak Siege Camel.
+5078,,,,,,Trains Siege units that only cost gold with a 25% discount.\r\nCan train the unique Zamburak Siege Camel.
+5079,,,,,,Trains Siege units that only cost gold with a 25% discount.\r\nCan train the unique Zamburak Siege Camel.
+5080,,,,,,"Trains batches of units at a discount.\r\nArmy of Kerman: 3 Savar, 2 archer\r\nArmy of Gilan: 3 Daylamites, 2 Crossbow.\r\nArmy of Khorasan: 3 Qizilbash, 2 Horsemen. \r\nArmy of Isfahan: 3 Handcannoneer , 2 Spearman.\r\n"
+5081,,,,,,"Trains batches of units at a discount.\r\nArmy of Kerman: 3 Savar, 2 archer\r\nArmy of Gilan: 3 Daylamites, 2 Crossbow.\r\nArmy of Khorasan: 3 Qizilbash, 2 Horsemen. \r\nArmy of Isfahan: 3 Handcannoneer , 2 Spearman.\r\n"
+5082,,,,,,"Trains batches of units at a discount.\r\nArmy of Kerman: 3 Savar, 2 archer\r\nArmy of Gilan: 3 Daylamites, 2 Crossbow.\r\nArmy of Khorasan: 3 Qizilbash, 2 Horsemen. \r\nArmy of Isfahan: 3 Handcannoneer , 2 Spearman.\r\n"
+5083,,,,,,"Can supervise a nearby economic drop-off, boosting research speed and granting +20% bonus resources.\r\n Houses unique Persian economic technologies.\r\n(You can build one new Divan with each Dynasty)"
+5084,,,,,,"Can supervise a nearby economic drop-off, boosting research speed and granting +20% bonus resources.\r\n Houses unique Persian economic technologies.\r\n(You can build one new Divan with each Dynasty)"
+5085,,,,,,"Can supervise a nearby economic drop-off, boosting research speed and granting +20% bonus resources.\r\n Houses unique Persian economic technologies.\r\n(You can build one new Divan with each Dynasty)"
+5086,,,,,,"Can supervise a nearby military production or technology building, boosting production speed by +150%.\r\n Houses Persia’s Dynastic upgrades, \r\nand other unique Persian military technologies. (You can build one new Divan with each Dynasty)"
+5087,,,,,,"Can supervise a nearby military production or technology building, boosting production speed by +150%.\r\n Houses Persia’s Dynastic upgrades, \r\nand other unique Persian military technologies. (You can build one new Divan with each Dynasty)"
+5088,,,,,,"Can supervise a nearby military production or technology building, boosting production speed by +150%.\r\n Houses Persia’s Dynastic upgrades, \r\nand other unique Persian military technologies. (You can build one new Divan with each Dynasty)"
+5089,,,,,,Tanky structure that provides +30% movement speed and +8 armor to nearby Traders as well as 5 garrison slot
+5090,,,,,,Tanky structure that provides +30% movement speed and +8 armor to nearby Traders as well as 5 garrison slot
+5091,,,,,,Tanky structure that provides +30% movement speed and +8 armor to nearby Traders as well as 5 garrison slot
+5092,,,,,,"Siege Ranged Cavalry, Camel"
+5093,,,,,,"Siege Ranged Cavalry, Camel"
+5094,,,,,,"Siege Ranged Cavalry, Camel"
+5095,,,,,,Siege Camelry. Functions like a Mounted Ozutsu.\r\n
+5096,,,,,,Siege Camelry. Functions like a Mounted Ozutsu.\r\n
+5097,,,,,,Siege Camelry. Functions like a Mounted Ozutsu.\r\n
+5098,,,,,,Zamburak
+5099,,,,,,Zamburak
+5100,,,,,,Zamburak
+5101,,,,,,Army of Kerman
+5102,,,,,,Army of Kerman
+5103,,,,,,Army of Kerman
+5104,,,,,,Army of Gilan
+5105,,,,,,Army of Gilan
+5106,,,,,,Army of Gilan
+5107,,,,,,Army of Khorasan
+5108,,,,,,Army of Khorasan
+5109,,,,,,Army of Khorasan
+5110,,,,,,Army of Isfahan
+5111,,,,,,Army of Isfahan
+5112,,,,,,Army of Isfahan
+5113,,,,,,Produces an army including  3 Hand Cannoneer and 2 spear.
+5114,,,,,,Produces an army including  3 Hand Cannoneer and 2 spear.
+5115,,,,,,Produces an army including  3 Hand Cannoneer and 2 spear.
+5116,,,,,,"Produces an army including  3 Qizilbash, 2 Horsemen."
+5117,,,,,,"Produces an army including  3 Qizilbash, 2 Horsemen."
+5118,,,,,,"Produces an army including  3 Qizilbash, 2 Horsemen."
+5119,,,,,,"Produces an army including  3 Daylamites, 2 Crossbow."
+5120,,,,,,"Produces an army including  3 Daylamites, 2 Crossbow."
+5121,,,,,,"Produces an army including  3 Daylamites, 2 Crossbow."
+5122,,,,,,"Produces an army including  3 Savar, 2 Archer."
+5123,,,,,,"Produces an army including  3 Savar, 2 Archer."
+5124,,,,,,"Produces an army including  3 Savar, 2 Archer."
+5125,,,,,,Qizilbash
+5126,,,,,,Qizilbash
+5127,,,,,,Veteran Qizilbash
+5128,,,,,,Veteran Qizilbash
+5129,,,,,,Elite Qizilbash
+5130,,,,,,Elite Qizilbash
+5131,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5132,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5133,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5134,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5135,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5136,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5137,,,,,,Daylamite
+5138,,,,,,Daylamite
+5139,,,,,,Daylamite
+5140,,,,,,Daylamite
+5141,,,,,,Daylamite
+5142,,,,,,Daylamite
+5143,,,,,,Veteran Daylamite
+5144,,,,,,Veteran Daylamite
+5145,,,,,,Veteran Daylamite
+5146,,,,,,Veteran Daylamite
+5147,,,,,,Elite Daylamite
+5148,,,,,,Elite Daylamite
+5149,,,,,,Elite Daylamite
+5150,,,,,,Elite Daylamite
+5151,,,,,,"Tough and cheap infantry with good damage vs light infantry.\r\n+ High armor\r\n- Slow movement\r\n- Countered by Knights, Lancers, and Crossbowmen"
+5152,,,,,,"Tough and cheap infantry with good damage vs light infantry.\r\n+ High armor\r\n- Slow movement\r\n- Countered by Knights, Lancers, and Crossbowmen"
+5153,,,,,,"Tough and cheap infantry with good damage vs light infantry.\r\n+ High armor\r\n- Slow movement\r\n- Countered by Knights, Lancers, and Crossbowmen"
+5154,,,,,,"Tough and cheap infantry with good damage vs light infantry.\r\n+ High armor\r\n- Slow movement\r\n- Countered by Knights, Lancers, and Crossbowmen"
+5155,,,,,,"Tough and cheap infantry with good damage vs light infantry.\r\n+ High armor\r\n- Slow movement\r\n- Countered by Knights, Lancers, and Crossbowmen"
+5156,,,,,,"Tough and cheap infantry with good damage vs light infantry.\r\n+ High armor\r\n- Slow movement\r\n- Countered by Knights, Lancers, and Crossbowmen"
+5157,,,,,,"Tough and cheap infantry with good damage vs light infantry.\r\n+ High armor\r\n- Slow movement\r\n- Countered by Knights, Lancers, and Crossbowmen"
+5158,,,,,,Savar
+5159,,,,,,Savar
+5160,,,,,,Elite Savar
+5161,,,,,,Elite Savar
+5162,,,,,,Expensive cavalry with high damage and melee armor. Effective against Heavy units.\r\n+ Heavy armor\r\n+ Strong in melee combat\r\n- Countered by Spearmen and Crossbowmen
+5163,,,,,,Expensive cavalry with high damage and melee armor. Effective against Heavy units.\r\n+ Heavy armor\r\n+ Strong in melee combat\r\n- Countered by Spearmen and Crossbowmen
+5164,,,,,,Expensive cavalry with high damage and melee armor. Effective against Heavy units.\r\n+ Heavy armor\r\n+ Strong in melee combat\r\n- Countered by Spearmen and Crossbowmen
+5165,,,,,,Expensive cavalry with high damage and melee armor. Effective against Heavy units.\r\n+ Heavy armor\r\n+ Strong in melee combat\r\n- Countered by Spearmen and Crossbowmen
+5166,,,,,,Tofangchi
+5167,,,,,,Tofangchi
+5168,,,,,,Age IV -  Military Landmark
+5169,,,,,,Age II - Military Landmark
+5170,,,,,,Age IV -  Military Landmark
+5171,,,,,,Age IV -  Military Landmark
+5172,,,,,,Age II -  Military Landmark
+5173,,,,,,Age II -  Military Landmark
+5174,,,,,,Age II -  Economic Landmark
+5175,,,,,,Age II -  Economic Landmark
+5176,,,,,,Age III -  Economic Landmark
+5177,,,,,,Age III -  Economic Landmark
+5178,,,,,,Age III -  Ability Landmark
+5179,,,,,,Age III -  Ability Landmark
+5180,,,,,, Farms are 33% cheaper
+5181,,,,,,Economic Upgrade
+5182,,,,,,Economic Upgrade
+5183,,,,,,Economic Upgrade
+5184,,,,,,Economic Upgrade
+5185,,,,,,Economic Upgrade
+5186,,,,,,Economic Upgrade
+5187,,,,,,Economic Upgrade
+5188,,,,,,Improves Villager gather rate based on the dynasty you’re in at the time of researching this technology. (Buyid +4%)\r\n\r\n
+5189,,,,,,Improves Villager gather rate based on the dynasty you’re in at the time of researching this technology. (Khwarazmid +7%)
+5190,,,,,,Improves Villager gather rate based on the dynasty you’re in at the time of researching this technology. (Il-Khanid +12%)
+5191,,,,,,Improves Villager gather rate based on the dynasty you’re in at the time of researching this technology. (Safavid +19%)
+5192,,,,,, All economic technologies are 30% cheaper.
+5193,,,,,, All economic technologies are 30% cheaper.
+5194,,,,,,Cavalry Technology
+5195,,,,,,Cavalry Technology
+5196,,,,,,Cavalry Technology
+5197,,,,,,Qizilbash can now attack while moving .
+5198,,,,,,Qizilbash can now attack while moving .
+5199,,,,,,Qizilbash can now attack while moving .
+5200,,,,,,Increases Daylamite attack speed by 50%.
+5201,,,,,,Archer Technology
+5202,,,,,,Archers and Qizilbash cost 30% less wood.
+5203,,,,,,Man-at-arms Technology
+5204,,,,,,Economic Building
+5205,,,,,,Economic Building
+5206,,,,,,Economic Building
+5207,,,,,,Economic Building
+5208,,,,,,Economic Building
+5209,,,,,,Economic Building
+5210,,,,,,Military Building
+5211,,,,,,Military Building
+5212,,,,,,Military Building
+5213,,,,,,Commerce Vizier
+5214,,,,,,Commerce Vizier
+5215,,,,,,War Vizier
+5216,,,,,,War Vizier
+5217,,,,,,Dynasty Upgrade
+5218,,,,,,Dynasty Upgrade
+5219,,,,,,Dynasty Upgrade
+5220,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5221,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5222,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5223,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5224,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5225,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5226,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5227,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5228,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5229,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5230,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5231,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5232,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5233,,,,,,Fast moving Horse Archer that counters Melee units.\r\n+ High rate of fire\r\n+ Bonus vs Melee\r\n- Low weapon range\r\n
+5234,,,,,,Divan of Commerce Aura
+5235,,,,,,Economic building in this range can be overseer
+5236,,,,,,Shahanshah
+5237,,,,,,Increase the range of Divans of Commerce by +2.
+5238,,,,,,Divan of Commerce range
+5239,,,,,,Divan of Commerce range
+5240,,,,,,Range of Divan of Commerce
+5241,,,,,,Range of Divan of Commerce
+5242,,,,,,Imperial Domain
+5243,,,,,,There is no longer a limit on the number of Divans you can build.
+5244,,,,,,The Shah Masjid
+5245,,,,,,The Shah Masjid
+5246,,,,,,Tabar
+5247,,,,,,Tabar
+5248,,,,,,Tabar
+5249,,,,,,Tabar
+5250,,,,,,Tabar
+5251,,,,,,Tabar
+5252,,,,,,Tabar
+5253,,,,,,Tabar
+5254,,,,,,Tabar
+5255,,,,,,Tabar
+5256,,,,,,Shamshir
+5257,,,,,,Shamshir
+5258,,,,,,Shamshir
+5259,,,,,,Shamshir
+5260,,,,,,Shamshir
+5261,,,,,,Shamshir
+5262,,,,,,Shamshir
+5263,,,,,,Shamshir
+5264,,,,,,Shamshir
+5265,,,,,,Shamshir
+5266,,,,,,"Advance to the Khwarazmian Dynasty, upgrading your units to the Hardened level"
+5267,,,,,,"Advance to the Il-Khanid Dynasty, upgrading your units to the Veteran level."
+5268,,,,,,"Advance to the Safavid Dynasty, upgrading your units to the Elite level."
+5269,,,,,,Hashashin
+5270,,,,,,Hashashin
+5271,,,,,,Hashashin Contract
+5272,,,,,,Hashashin Contract
+5273,,,,,,Pay 100 gold to spawn an assassin anywhere you have vision
+5274,,,,,,Pay 100 gold to spawn an assassin anywhere you have vision
+5275,,,,,,Spy network
+5276,,,,,,Spy network
+5277,,,,,,Spy network
+5278,,,,,,This landmark gains +50 vision radius for 2 minutes 
+5279,,,,,,This landmark gains +50 vision radius for 2 minutes 
+5280,,,,,,This landmark gains +50 vision radius for 2 minutes 
+5281,,,,,,Handcannoneers gain +10% attack speed and 10% movement speed.
+5282,,,,,,Tofangchi 
+5283,,,,,,HandCannoneer Upgrade
+5284,,,,,,Imam
+5285,,,,,,Imam
+5286,,,,,,Assassination Training
+5287,,,,,,Assassination Training
+5288,,,,,,Activate to increase weapon range by +%1% tile and gain +%2% ranged armor.\r\n\r\nRemains active for %3% seconds or until the Zamburak moves away.
+5289,,,,,,Activate to increase weapon range by +%1% tile and gain +%2% ranged armor.\r\n\r\nRemains active for %3% seconds or until the Zamburak moves away.
+5290,,,,,,Activate to increase weapon range by +%1% tile and gain +%2% ranged armor.\r\n\r\nRemains active for %3% seconds or until the Zamburak moves away.
+5291,,,,,,"Spies gain First Strike if they attack from stealth, do 50 damage instead of 25."
+5292,,,,,,"Spies gain First Strike if they attack from stealth, do 50 damage instead of 25."
+5293,,,,,,Naval Technology
+5294,,,,,,Dhows gain 10% bonus damage vs Incendiary Ships.\r\n\r\nBaghlahs gain 10% bonus damage vs Arrow Ships.
+5295,,,,,,Crew Specialization
+5296,,,,,,Tofang
+5297,,,,,,Tofang
+5298,,,,,,"Qizilbash: Fast moving Horse Archer that deals bonus damage to melee units.\r\n\r\nDaylamite: Cheap Man-at-arms with less armor, but deals bonus damage to light infantry.\r\n\r\nSavar: Slow, tanky Lancer with an anti-armor mace attack.\r\n\r\nAssassin*: Stealthed killer that first strikes for double damage. Can’t attack buildings but can Sabotage them.\r\n\r\nZamburak*: Siege Camelry. Functions like Mounted Ozutsu. Place it in the Archery Range just like the Grenadier."
+5299,,,,,,"Each time you advance your Dynasty, you can build an additional Divan. Divans are special buildings that can supervise nearby structures (think Chinese Imperial Official, but in the form of a building). Choose either:"
+5300,,,,,,IRANIAN DYNASTIES
+5301,,,,,,"Medieval Iran was a melting pot of diverse cultures and transient empires. Each conquering dynasty brought their own veteran forces with them. This is represented in-game by the Dynasty system.\r\n\r\nUnlike other civilization’s units, Persian units do not research veterancy individually. Instead, all of your units are upgraded simultaneously as you upgrade your dynasty.\r\n\r\nBuyid (Regular) ➟ Khwarazmid (Hardened) ➟ Il-Khanid (Veteran) ➟ Safavid (Elite)"
+5302,,,,,,STRENGTHS:\r\nStrong economy enabled by Divans that can supervise.\r\nFlexible - can easily switch army compositions.\r\nVery strong trade!\r\nZamburak Siege Camels!\r\n\r\nWEAKNESSES:\r\nCannot upgrade unit Veterancy seperately.\r\nUnits are weak in general-purpose roles.\r\nWeak in early Imperial due to expensive techs.
+5303,,,,,,Divan of Commerce
+5304,,,,,,"Houses unique economic technologies. Emits an aura range of 4 units.\r\nAbility: Commerce Vizier - Supervise a nearby economic drop-off, granting +20% bonus resources and improving research speed (does not affect Town Centers, Docks, or Markets).\r\n"
+5305,,,,,,Divan of War
+5306,,,,,,"Houses unique military technologies. Emits an influence range of 4 units.\r\nAbility: War Vizier - Supervise a military production or technology building within the Divan’s influence, boosting its military production or research speed by +150%."
+5307,,,,,,CARAVANSERAI
+5308,,,,,,Unique structure that massively buffs nearby Traders’ movement speed and armor. Unlocked in the Castle Age.

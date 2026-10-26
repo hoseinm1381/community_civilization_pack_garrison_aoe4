@@ -1,12 +1,23 @@
 param(
-    [string]$EditorRoot = 'E:\Games\steamapps\common\Age of Empires IV',
-    [string]$PythonPath = 'C:\Users\RS\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
+    [string]$EditorRoot = '',
+    [string]$PythonPath = ''
 )
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent $PSScriptRoot
-& $PythonPath (Join-Path $PSScriptRoot 'check_extension_inheritance.py') --refresh
-if ($LASTEXITCODE -ne 0) { throw 'Inherited extension validation failed; Content Editor build was not started.' }
-$project = Join-Path $projectRoot 'Vietnam_v2.aoe4mod'
+$configPath = Join-Path $projectRoot 'workspace.local.json'
+$config = if (Test-Path -LiteralPath $configPath) { Get-Content -LiteralPath $configPath -Raw | ConvertFrom-Json } else { $null }
+if (-not $EditorRoot -and $config) { $EditorRoot = $config.editor_root }
+if (-not $PythonPath) { $PythonPath = if ($config -and $config.python_path) { $config.python_path } else { 'python' } }
+if (-not $EditorRoot) { throw 'Set editor_root in workspace.local.json or pass -EditorRoot.' }
+& $PythonPath (Join-Path $PSScriptRoot 'verify_source.py')
+if ($LASTEXITCODE -ne 0) { throw 'Portable source validation failed; no build was started.' }
+$previousEditorRoot = $env:AOE4_EDITOR_ROOT
+try {
+    $env:AOE4_EDITOR_ROOT = $EditorRoot
+    & $PythonPath (Join-Path $PSScriptRoot 'check_extension_inheritance.py') --refresh
+    if ($LASTEXITCODE -ne 0) { throw 'Inherited extension validation failed; no build was started.' }
+} finally { $env:AOE4_EDITOR_ROOT = $previousEditorRoot }
+$project = Join-Path $projectRoot 'Community_Civilization_Pack_Normal.aoe4mod'
 $buildRoot = Join-Path $projectRoot 'output\editor-build'
 $log = Join-Path $projectRoot 'output\editor-burn.log'
 New-Item -ItemType Directory -Force -Path $buildRoot | Out-Null
@@ -16,4 +27,5 @@ $arguments = @('-build_mod', ('"' + $project + '"'), '-build_path', ('"' + $buil
     '-no_burn_window', '-burn_platform', 'PC', '-burn_log_path', ('"' + $log + '"'))
 $process = Start-Process -FilePath (Join-Path $EditorRoot 'EssenceEditor.exe') -WorkingDirectory $EditorRoot -ArgumentList $arguments -WindowStyle Hidden -Wait -PassThru
 Write-Output ('Content Editor exit code: ' + $process.ExitCode)
+Write-Output ('Verify the completed native burn and errors in ' + $log)
 if ($process.ExitCode -ne 0) { exit $process.ExitCode }

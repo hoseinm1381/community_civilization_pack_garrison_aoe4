@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-2056667985" List.ParentItemID="-2056667985">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="-1963442601" List.ParentItemID="-1963442601">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="-222079756" List.ParentItemID="-222079756">
+					<group name="info">
+						<file name="flag_icon_override" value="persia\safavid_flag" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-1218214089" List.ParentItemID="-1218214089">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="-633928310" List.ParentItemID="-633928310">
+					<instance_reference name="type" value="ebps\persia\ps_unit_ribauldequin_4_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="-1322311642" List.ParentItemID="-1322311642">
+			<list name="requirement_table" comment="Requires Imperial age, Tech army, chemistry upgrade&#13;&#10;">
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="-316649756" List.ParentItemID="-316649756">
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\sultanate" List.ItemID="-2093307010" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="-645029135" List.ParentItemID="-645029135">
+			<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482711" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_ribauldequin_4" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-970496986" List.ParentItemID="-970496986">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="573148063" List.ParentItemID="573148063">
+						<instance_reference name="type" value="ebps\persia\ps_unit_ribauldequin_4_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="-1689005292" List.ParentItemID="-1689005292">
+				<list name="requirement_table" comment="Requires Imperial age, Tech army, chemistry upgrade&#13;&#10;">
+					<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-511732071" List.ParentItemID="-511732071">
+						<instance_reference name="upgrade_name" value="upgrade\races\sultanate\research\upgrade_siege_chemistry_sul" overrideParent="True" />
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="-1487623536" List.ParentItemID="-1487623536">
+				<list name="squad_race_type_list" overrideParent="True">
+					<instance_reference name="squad_race_type" value="racebps\sultanate" List.ItemID="-2054847668" />
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="-2093678467" List.ParentItemID="-2093678467">
+				<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482711" />
+		<instance_reference name="parent_pbg" value="sbps\races\core\unit_ribauldequin_4" />
+	</variant>
+</instance>

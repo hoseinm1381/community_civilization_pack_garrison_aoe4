@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="behaviour">
+			<bool name="enable_auto_target_search" value="False" overrideParent="True" />
+		</group>
+		<group name="cooldown">
+			<group name="duration">
+				<float name="max" value="0.5" overrideParent="True" />
+				<float name="min" value="0.5" overrideParent="True" />
+			</group>
+		</group>
+		<group name="fire">
+			<float name="wind_down" value="0.5" overrideParent="True" />
+			<float name="wind_up" value="0.25" overrideParent="True" />
+		</group>
+		<string name="fx_munition_name" value="common_sword_broad_charge" overrideParent="True" />
+		<group name="range">
+			<float name="max" value="2.18" overrideParent="True" />
+		</group>
+		<template_reference name="charge_option" value="options\weapon\charge_option" overrideParent="True">
+			<float name="weapon_hit_disabled_duration" value="1" />
+			<float name="charge_attack_target_position_offset" value="2" />
+		</template_reference>
+		<bool name="ui_show_on_tooltip" value="False" overrideParent="True" />
+		<group name="damage">
+			<float name="max" value="10" overrideParent="True" />
+			<float name="min" value="10" overrideParent="True" />
+		</group>
+		<list name="target_type_table">
+			<group name="target_unit_type_multipliers" List.ItemID="1736886273" List.ListAction="Append">
+				<enum name="unit_type" value="infantry_light" overrideParent="True" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="1" />
+					<float name="penetration_multiplier" value="1" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+				<float name="base_damage_modifier" value="5" overrideParent="True" />
+			</group>
+		</list>
+		<locstring name="ui_name" value="5259" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+	</group>
+	<uniqueid name="pbgid" value="2147482771" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_manatarms_3" />
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<group name="behaviour">
+				<bool name="enable_auto_target_search" value="False" overrideParent="True" />
+			</group>
+			<group name="cooldown">
+				<group name="duration">
+					<float name="max" value="0.5" overrideParent="True" />
+					<float name="min" value="0.5" overrideParent="True" />
+				</group>
+			</group>
+			<group name="fire">
+				<float name="wind_down" value="0.5" overrideParent="True" />
+				<float name="wind_up" value="0.25" overrideParent="True" />
+			</group>
+			<string name="fx_munition_name" value="common_sword_broad_charge" overrideParent="True" />
+			<group name="range">
+				<float name="max" value="2.18" overrideParent="True" />
+			</group>
+			<template_reference name="charge_option" value="options\weapon\charge_option" overrideParent="True">
+				<float name="weapon_hit_disabled_duration" value="1" />
+				<float name="charge_attack_target_position_offset" value="2" />
+			</template_reference>
+			<group name="damage">
+				<float name="max" value="10" overrideParent="True" />
+				<float name="min" value="10" overrideParent="True" />
+			</group>
+			<list name="target_type_table">
+				<group name="target_unit_type_multipliers" List.ItemID="-1092448313" List.ListAction="Append">
+					<enum name="unit_type" value="infantry_light" overrideParent="True" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="5" overrideParent="True" />
+				</group>
+			</list>
+			<locstring name="ui_name" value="5260" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+		</group>
+		<uniqueid name="pbgid" value="2147482771" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_manatarms_3" />
+	</variant>
+	<variant name="xp3">
+		<group name="weapon_bag">
+			<group name="behaviour">
+				<bool name="enable_auto_target_search" value="False" overrideParent="True" />
+			</group>
+			<group name="cooldown">
+				<group name="duration">
+					<float name="max" value="0.5" overrideParent="True" />
+					<float name="min" value="0.5" overrideParent="True" />
+				</group>
+			</group>
+			<group name="fire">
+				<float name="wind_down" value="0.5" overrideParent="True" />
+				<float name="wind_up" value="0.25" overrideParent="True" />
+			</group>
+			<string name="fx_munition_name" value="common_sword_broad_charge" overrideParent="True" />
+			<group name="range">
+				<float name="max" value="2.18" overrideParent="True" />
+			</group>
+			<template_reference name="charge_option" value="options\weapon\charge_option" overrideParent="True">
+				<float name="weapon_hit_disabled_duration" value="1" />
+				<float name="charge_attack_target_position_offset" value="2" />
+			</template_reference>
+			<bool name="ui_show_on_tooltip" value="False" overrideParent="True" />
+			<group name="damage">
+				<float name="max" value="10" overrideParent="True" />
+				<float name="min" value="10" overrideParent="True" />
+			</group>
+			<list name="target_type_table">
+				<group name="target_unit_type_multipliers" List.ItemID="762401930" List.ListAction="Append">
+					<enum name="unit_type" value="infantry_light" overrideParent="True" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="5" overrideParent="True" />
+				</group>
+			</list>
+			<locstring name="ui_name" value="5261" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+		</group>
+		<uniqueid name="pbgid" value="2147482771" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_manatarms_3" />
+	</variant>
+	<variant name="hre_brawl">
+		<group name="weapon_bag">
+			<group name="behaviour">
+				<bool name="enable_auto_target_search" value="False" overrideParent="True" />
+			</group>
+			<group name="cooldown">
+				<group name="duration">
+					<float name="max" value="0.5" overrideParent="True" />
+					<float name="min" value="0.5" overrideParent="True" />
+				</group>
+			</group>
+			<group name="fire">
+				<float name="wind_down" value="0.5" overrideParent="True" />
+				<float name="wind_up" value="0.25" overrideParent="True" />
+			</group>
+			<string name="fx_munition_name" value="common_sword_broad_charge" overrideParent="True" />
+			<group name="range">
+				<float name="max" value="2.18" overrideParent="True" />
+			</group>
+			<template_reference name="charge_option" value="options\weapon\charge_option" overrideParent="True">
+				<float name="weapon_hit_disabled_duration" value="1" />
+				<float name="charge_attack_target_position_offset" value="2" />
+			</template_reference>
+			<bool name="ui_show_on_tooltip" value="False" overrideParent="True" />
+			<group name="damage">
+				<float name="max" value="10" overrideParent="True" />
+				<float name="min" value="10" overrideParent="True" />
+			</group>
+			<list name="target_type_table">
+				<group name="target_unit_type_multipliers" List.ItemID="1425777398" List.ListAction="Append">
+					<enum name="unit_type" value="infantry_light" overrideParent="True" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="5" overrideParent="True" />
+				</group>
+			</list>
+			<locstring name="ui_name" value="5262" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+		</group>
+		<uniqueid name="pbgid" value="2147482771" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_manatarms_3" />
+	</variant>
+</instance>

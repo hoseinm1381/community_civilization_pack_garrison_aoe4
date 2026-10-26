@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="2065319766" List.ParentItemID="2065319766">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="103676099" List.ParentItemID="103676099">
+					<group name="info">
+						<bool name="is_unique_to_race" value="True" overrideParent="True" />
+						<file name="flag_icon_override" value="persia\safavid_flag" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-1721305897" List.ParentItemID="-1721305897">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="125465963" List.ParentItemID="125465963">
+					<instance_reference name="type" value="ebps\persia\ps_unit_naval_fishing_boat_2_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="372345797" List.ParentItemID="372345797">
+			<list name="requirement_table" comment="Requires castle age&#13;&#10;">
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_combat_behaviour_ext" List.ItemID="236721758" List.ParentItemID="236721758">
+			<bool name="accept_move_commands_while_combat" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext" List.ItemID="-1907894250" List.ParentItemID="-1907894250">
+			<group name="squad_orders">
+				<group name="attack_move">
+					<bool name="available" value="True" overrideParent="True" />
+				</group>
+			</group>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="1846070421" List.ParentItemID="1846070421">
+			<list name="squad_type_list" overrideParent="True">
+				<enum name="squad_type" value="scar_age2" List.ItemID="374729776" />
+				<enum name="squad_type" value="naval_unit" List.ItemID="1246113593" />
+				<enum name="squad_type" value="small_ship" List.ItemID="-1923825876" />
+				<enum name="squad_type" value="naval_fishing_ship" List.ItemID="-151794062" />
+				<enum name="squad_type" value="worker" List.ItemID="497226110" />
+				<enum name="squad_type" value="military" List.ItemID="-1580595037" />
+				<enum name="squad_type" value="scar_fishing_ship" List.ItemID="993609867" />
+			</list>
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\sultanate" List.ItemID="-1136579724" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_speech_ext" List.ItemID="69914956" List.ParentItemID="69914956">
+			<list name="age_mapping">
+				<int name="age_number" value="2" overrideParent="True" List.ItemID="1491119968" List.ParentItemID="1491119968" />
+				<int name="age_number" value="2" overrideParent="True" List.ItemID="227516412" List.ParentItemID="227516412" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-1958350476" List.ParentItemID="-1958350476">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482706" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_naval_fishing_boat_2" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="956243710" List.ParentItemID="956243710">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="-1853401915" List.ParentItemID="-1853401915">
+						<instance_reference name="type" value="ebps\persia\ps_unit_naval_fishing_boat_2_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="-897266600" List.ParentItemID="-897266600">
+				<list name="requirement_table" comment="Requires castle age&#13;&#10;">
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_speech_ext" List.ItemID="-1953547287" List.ParentItemID="-1953547287">
+				<list name="age_mapping">
+					<int name="age_number" value="2" overrideParent="True" List.ItemID="644039865" List.ParentItemID="644039865" />
+					<int name="age_number" value="2" overrideParent="True" List.ItemID="-2057206613" List.ParentItemID="-2057206613" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482706" />
+		<instance_reference name="parent_pbg" value="sbps\races\core\unit_naval_fishing_boat_2" />
+	</variant>
+</instance>
