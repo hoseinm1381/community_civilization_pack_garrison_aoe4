@@ -1,9 +1,16 @@
 # Functional Persia port — Garrison 0.9.0
 
+Historical port record. Current accepted release is **1.0.6**, including the
+Persian art and asset repairs. The owner accepted it and authorized main push
+and a ZIP GitHub release on 2026-10-28. See [RELEASE_106.md](RELEASE_106.md).
+
 The owner approved the functional port on 2026-10-26, with complete new Persian
-art deferred to the next milestone. The existing F: GitHub Garrison folder is the single
-active workspace and Git checkout. No new source worktree or versioned project
-copy is required. Existing ignored recovery/art/voice inputs remain protected.
+art deferred to the next milestone. That asset milestone now starts with
+Gundeshapur, developed/reviewed in the owner's Temp_before_github_push workspace
+before acceptance and promotion to the permanent F: GitHub repository. Follow
+PERSIA_ASSET_WORKFLOW.md; its newer owner policy supersedes the direct-development
+instructions in the historical functional-port record below. Existing ignored
+recovery/art/voice inputs remain protected.
 
 ## Implementation
 

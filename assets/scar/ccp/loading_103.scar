@@ -1,0 +1,53 @@
+-- Match-wide resource policy. Every client uses all human slots, never local UI.
+-- Called by the existing Scar_AddInit callbacks after core's player-table init.
+CCPLoading103State = CCPLoading103State or {required = {}, shared = false}
+local state = CCPLoading103State
+local sharedEntities = {
+    "core_tree",
+    "projectile_arrow",
+    "projectile_arrow_incendiary",
+    "projectile_arrow_poison",
+    "projectile_great_bombard_stone",
+    "projectile_mangonel_tower",
+    "projectile_rocket_jpn",
+    "projectile_shot_cannon",
+    "projectile_shot_handgun",
+    "projectile_torch",
+    "wpn_ebps_template_ai",
+    "wpn_range_dummy",
+    "wpn_range_keep_springald",
+    "wpn_siege_keep_cannon",
+    "wpn_siege_keep_murder_hole",
+}
+
+function CCPLoading103_Required(race)
+    if state.required[race] ~= nil then return state.required[race] end
+    -- Preserve visibility if a different framework invokes prematch callbacks
+    -- before core has supplied PLAYERS. Log the conservative fallback explicitly.
+    if type(PLAYERS) ~= "table" or #PLAYERS == 0 then
+        print("CCP103_PRECACHE_ROSTER_UNAVAILABLE fallback=full race=" .. race)
+        state.required[race] = true
+        return true
+    end
+    for _, player in ipairs(PLAYERS) do
+        if player.isHuman and Player_GetRaceName(player.id) == race then
+            state.required[race] = true
+            return true
+        end
+    end
+    state.required[race] = false
+    return false
+end
+
+function CCPLoading103_Shared()
+    if state.shared then return end
+    state.shared = true
+    for _, name in ipairs(sharedEntities) do
+        if EBP_Exists(name) then
+            Scar_PrecachePrematchResource(BP_GetEntityBlueprint(name))
+        else
+            print("CCP103_PRECACHE_MISSING_SHARED " .. name)
+        end
+    end
+    print("CCP103_PRECACHE_SHARED entities=" .. tostring(#sharedEntities))
+end

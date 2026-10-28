@@ -32,7 +32,7 @@ def apply_verification_delta(original, delta):
     return result
 
 
-def write_package(target, entries, sources):
+def write_package(target, entries, sources, compresslevel=6):
     target = Path(target)
     if target.exists():
         raise FileExistsError('Existing package preserved')
@@ -42,7 +42,7 @@ def write_package(target, entries, sources):
     for name in names:
         if '/' in name or '\\' in name or ':' in name or name in ('', '.', '..'):
             raise ValueError('Unsafe package member')
-    with zipfile.ZipFile(target, 'x', zipfile.ZIP_DEFLATED, compresslevel=6) as z:
+    with zipfile.ZipFile(target, 'x', zipfile.ZIP_DEFLATED, compresslevel=compresslevel) as z:
         for row in entries:
             info = zipfile.ZipInfo(row['filename'], tuple(row['date_time']))
             for field in ('compress_type', 'create_system', 'create_version',
@@ -50,12 +50,15 @@ def write_package(target, entries, sources):
                 setattr(info, field, row[field])
             info.extra = bytes.fromhex(row.get('extra_hex', ''))
             info.comment = bytes.fromhex(row.get('comment_hex', ''))
-            info._compresslevel = 6
+            info._compresslevel = compresslevel
             with Path(sources[info.filename]).open('rb') as src, z.open(info, 'w') as dst:
                 shutil.copyfileobj(src, dst, 1024*1024)
 
 
 def rebuild(args, reader):
+    if reader.doc['milestone'].get('assembly_mode') == 'complete-members':
+        from complete_package import rebuild as rebuild_complete
+        return rebuild_complete(args, reader)
     from store import file_sha, sha, write_json
     import dev
     policy = reader.doc['milestone']

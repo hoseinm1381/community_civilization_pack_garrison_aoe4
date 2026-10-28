@@ -4,6 +4,16 @@ ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'tools/compa
 from github_build import completed_native, verify_source_snapshot
 
 class IndependentBuildTests(unittest.TestCase):
+    def test_logged_final_archive_copy_qualifies_when_child_burn_log_is_truncated(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);(root/'logs').mkdir();(root/'output').mkdir()
+            archive=root/'output/reference.sga';archive.write_bytes(b'_ARCHIVE'+b'\0'*512)
+            (root/'run.json').write_text(json.dumps({'status':'succeeded','exit_code':0,'timed_out':False}))
+            log='658 instances validated\n['+str(root/'intermediate/archives/reference.sga')+'] copied to ['+str(archive)+']'
+            (root/'logs/stdout.log').write_text(log)
+            self.assertEqual(completed_native(root,658)['status'],'succeeded')
+            (root/'logs/stdout.log').write_text(log.replace('reference.sga','other.sga'))
+            with self.assertRaises(ValueError):completed_native(root,658)
     def test_zero_exit_without_completed_instance_log_is_rejected(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);(root/'logs').mkdir()

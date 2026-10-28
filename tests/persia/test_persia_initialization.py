@@ -54,6 +54,7 @@ class PersiaInitializationTests(unittest.TestCase):
             end
             function Squad_ConvertBlueprint(s,bp) env.mutations=env.mutations+1; s.bp=bp end
         ''')
+        self.lua.globals()['import'] = lambda name: self.lua.execute((ROOT / 'assets/scar' / name).read_text())
         self.lua.execute((ROOT / 'assets/scar/persia/blueprints.scar').read_text().replace('Scar_AddInit(PersiaPrecache_Init)', ''))
         self.lua.execute((ROOT / 'assets/scar/persia/initialization.scar').read_text())
 

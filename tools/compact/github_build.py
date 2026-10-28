@@ -37,8 +37,13 @@ def completed_native(root, instances):
                      for p in (root/'logs').glob('*') if p.is_file())
     counts = re.findall(r'(\d+) instances validated', logs)
     archives = list((root/'output').rglob('*.sga'))
+    copied_completion = False
+    if len(archives)==1:
+        archive=archives[0]
+        marker=f'[{root / "intermediate/archives" / archive.name}] copied to [{archive}]'
+        copied_completion=marker.replace('\\','/').lower() in logs.replace('\\','/').lower()
     if (not counts or int(counts[-1]) != instances or 'EssenceEditor.exe Error:' in logs
-            or not re.search(r'Package \[Archive\] created', logs)
+            or not (re.search(r'Package \[Archive\] created', logs) or copied_completion)
             or len(archives) != 1 or archives[0].stat().st_size < 428):
         raise ValueError('Native editor completion/instance diagnostics differ')
     return state
@@ -82,6 +87,9 @@ def deny_former_roots(event, args):
         path = str(Path(os.fsdecode(args[0])).resolve()).replace('\\', '/').removeprefix('//?/').lower()
         if any(path == p.lower() or path.startswith(p.lower()+'/') for p in FORBIDDEN):
             raise PermissionError('Former owner-root access prohibited: '+path)
+        candidate = 'f:/aoe_4_temp/temp_before_github_push'
+        if any(path == candidate+'/'+p or path.startswith(candidate+'/'+p+'/') for p in ('art','research','b100')):
+            raise PermissionError('Candidate input prohibited during isolated build: '+path)
 
 
 def run(command, log):
@@ -93,8 +101,9 @@ def run(command, log):
 
 
 def main():
+    global TEMP
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('command', choices=['native', 'package'])
+    parser.add_argument('command', choices=['native', 'verify-native', 'package'])
     args = parser.parse_args()
     cfg = json.loads((ROOT/'workspace.local.json').read_text(encoding='utf-8-sig'))
     TEMP.mkdir(exist_ok=True)
@@ -108,6 +117,9 @@ def main():
     from current_package import rebuild, apply_verification_delta
     from store import write_json
     reader = portable.reader()
+    if reader.doc['milestone'].get('assembly_mode') == 'complete-members':
+        TEMP = TEMP/'github106'
+        TEMP.mkdir(exist_ok=True)
     try:
         source_count = verify_source_snapshot(ROOT, tracked, reader.doc['files'])
         if args.command == 'native':
@@ -135,25 +147,42 @@ def main():
             raise ValueError('Native archive identity/verification differs')
         readback = TEMP/'native-readback'
         if readback.exists():
-            raise FileExistsError('Inspect previous native-readback before retrying')
-        readback.mkdir()
-        run([cfg['archive_tool'], 'extract', native, readback, '--filter', '.'], TEMP/'native-extract.log')
+            proof=json.loads((TEMP/'native-readback-proof.json').read_text())
+            if proof['native_sga_sha256']!=file_sha(native):raise ValueError('Native readback checkpoint differs')
+        else:
+            readback.mkdir()
+            run([cfg['archive_tool'], 'extract', native, readback, '--filter', '.'], TEMP/'native-extract.log')
         policy = reader.doc['milestone']
         expected = apply_verification_delta(json.loads(reader.read(policy['verification'])),
                                              policy.get('verification_delta', {}))
-        members = [k for k in expected['member_sha256'] if
+        native_expected = policy.get('native_source_expectations')
+        members = list(native_expected) if native_expected else [k for k in expected['member_sha256'] if
                    (k.startswith('attrib/') and '/persia/' in k) or
                    k.startswith('ui/icons/persia/') or k == 'en/en.ucs']
-        if len(members) != 309:
+        if (not native_expected and len(members) != 309) or (native_expected and len(members) != 313):
             raise ValueError('Persia compiled-resource closure differs')
         for member in members:
-            if file_sha(readback/member) != expected['member_sha256'][member]:
+            if file_sha(readback/member) != (native_expected or expected['member_sha256'])[member]:
                 raise ValueError('Fresh native payload differs from stored release: '+member)
+        write_json(TEMP/'native-readback-proof.json',dict(status='passed',native_sga_sha256=file_sha(native),
+                   members_verified=members,native_instances=658,source_inputs=source_count))
+        if args.command=='verify-native':
+            print('NATIVE_REFERENCE_PAYLOADS_VERIFIED',len(members),flush=True)
+            return
         destination = TEMP/'package'
-        rebuild(SimpleNamespace(destination=destination, archive_tool=Path(cfg['archive_tool'])), reader)
-        output = ROOT/'output/current'
+        if destination.exists() and policy.get('assembly_mode')=='complete-members':
+            proof=json.loads((destination/'compact-rebuild-proof.json').read_text())
+            if (proof['version']!=policy['version'] or proof['sga_sha256']!=expected['sga_sha256']
+                or proof['zip_sha256']!=expected['zip_sha256']
+                or file_sha(destination/'community_civilization_pack.sga')!=expected['sga_sha256']
+                or file_sha(destination/f"community_civilization_pack-{policy['version']}.zip")!=expected['zip_sha256']):
+                raise ValueError('Parallel reconstruction differs from current accepted inputs')
+        else:
+            rebuild(SimpleNamespace(destination=destination, archive_tool=Path(cfg['archive_tool'])), reader)
+        version=policy['version']
+        output = ROOT/'output/current'/version if version!='0.9.0' else ROOT/'output/current'
         output.mkdir(parents=True, exist_ok=True)
-        names = ['community_civilization_pack.sga', 'community_civilization_pack-0.9.0.zip',
+        names = ['community_civilization_pack.sga', f'community_civilization_pack-{version}.zip',
                  'garrison.json', 'START-HERE.txt', 'compact-rebuild-proof.json', 'verification.json']
         for name in names:
             target = output/name
@@ -161,7 +190,7 @@ def main():
                 raise FileExistsError('Existing delivery preserved: '+str(target))
         for name in names:
             shutil.move(str(destination/name), str(output/name))
-        write_json(output/'github-build-proof.json', dict(version='0.9.0',
+        write_json(output/'github-build-proof.json', dict(version=version,
             source_inputs=source_count, source_root=str(ROOT), scratch_root=str(TEMP),
             python_open_audit_denied_roots=list(FORBIDDEN),
             subprocess_scope='Explicit repository/temp paths; no OS sandbox or subprocess I/O tracing',

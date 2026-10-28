@@ -1,8 +1,11 @@
 # Garrison storage ownership
 
-Active workspace: F:/aoe_4_temp/community_civilization_pack_garrison_aoe4.
-Only scratch root: F:/aoe_4_temp/Temp_before_github_push; remove it after verified
-build and confirmed successful push, retaining compact evidence and final delivery.
+Permanent repository: F:/aoe_4_temp/community_civilization_pack_garrison_aoe4.
+Dirty asset development/review workspace: F:/aoe_4_temp/Temp_before_github_push.
+Promote accepted assets and all important editable inputs, document and verify,
+then commit/push main. Remove temp only after owner acceptance, verified durable
+input preservation/reconstruction and confirmed push. Keep compact evidence and
+final delivery. See docs/PERSIA_ASSET_WORKFLOW.md for the authoritative gates.
 E: is the separate base-game/Normal edition, not Garrison storage.
 
 The tracked development-data/current-084-v1 store is required current editable

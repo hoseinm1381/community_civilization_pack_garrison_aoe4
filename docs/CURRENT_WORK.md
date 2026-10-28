@@ -1,10 +1,17 @@
 # Current workspace policy
 
-The owner superseded the E: checkout arrangement: Garrison now lives exclusively
-in F:/aoe_4_temp/community_civilization_pack_garrison_aoe4. E: is Normal/base-game
-reference only. Follow docs/GITHUB_WORKSPACE_090.md and current AGENTS.md. The
-implementation ledger below records the earlier completed port; its E: workspace,
-manual-push and staging/output-location instructions are historical.
+Current accepted release: **1.0.6**. The owner confirmed it worked on 2026-10-28
+and authorized current-input promotion, main push and a ZIP GitHub release.
+See [RELEASE_106.md](RELEASE_106.md) and `development.json`. The 0.9.0 ledger below
+is historical. This publication preserves temp inputs and prior releases.
+
+Permanent Garrison repository: F:/aoe_4_temp/community_civilization_pack_garrison_aoe4.
+New asset work/review: F:/aoe_4_temp/Temp_before_github_push. Gundeshapur is the
+first Persian Feudal landmark asset. Follow docs/PERSIA_ASSET_WORKFLOW.md and
+current AGENTS.md: owner acceptance, complete editable-input promotion, documented
+verification, then commit/push main and verified temp cleanup. E: is Normal/base-
+game reference only. The implementation ledger below records the completed port;
+its earlier development-location/manual-push instructions are historical.
 
 # Current work: functional Persia port, Garrison 0.9.0
 

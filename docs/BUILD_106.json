@@ -1,0 +1,70 @@
+{
+  "version": "1.0.6",
+  "owner_acceptance": "2026-10-28: version 1.0.6 worked ok; individual native test coverage unspecified",
+  "native_source_compile": {
+    "status": "passed",
+    "duration_seconds": 576.125,
+    "instances": 658,
+    "fresh_pinned_members": 313,
+    "source_inputs": 752,
+    "completion_evidence": "Native parent stdout logs exact final archive copy from intermediate/archives to output; child burn log was truncated at25600 bytes. Regression rejects validation-only and unrelated copy logs."
+  },
+  "editable_source_closure": {
+    "status": "passed",
+    "Blender_masters": 321,
+    "packed_or_generated_images": 50,
+    "external_images_checked_against_promoted_store": 5034,
+    "geometry_loaded_or_scenes_saved": false
+  },
+  "promoted_inputs": {
+    "current_art_and_image_keys": 3908,
+    "new_packs": 66,
+    "new_pack_bytes": 1802643689,
+    "changed_store_keys_verified_before_final_tool_refresh": 5945,
+    "final_current_tool_bytes_read_back": true,
+    "all_original_packs_preserved": true,
+    "trial_cache_packs_not_in_current_index_or_push": true
+  },
+  "tests": {
+    "persia": 48,
+    "compact": 15
+  },
+  "accepted_zip_sha256": "6699db61d946c6f58119e7da365a19a79fc756b9546007f22bb4288510ca5996",
+  "accepted_sga_sha256": "9e82491506b667812daa831db8e2f4f9ab9bea79857bc60aa6911295fae2273c",
+  "exact_package_reconstruction": {
+    "version": "1.0.6",
+    "sga_sha256": "9e82491506b667812daa831db8e2f4f9ab9bea79857bc60aa6911295fae2273c",
+    "zip_sha256": "6699db61d946c6f58119e7da365a19a79fc756b9546007f22bb4288510ca5996",
+    "members": 13678,
+    "inputs_from_immutable_store": true,
+    "omitted_members": 180,
+    "source_art_recook": false,
+    "native_game_test": false
+  },
+  "native_art_recook_this_promotion": false,
+  "new_native_match_test_this_promotion": false,
+  "native_performance_save_load_multiplayer": "not inferred from owner acceptance",
+  "cleanup_or_deletion": false,
+  "source_and_output_verification": {
+    "version": "1.0.6",
+    "source_inputs": 752,
+    "source_root": "F:\\aoe_4_temp\\community_civilization_pack_garrison_aoe4",
+    "scratch_root": "F:\\aoe_4_temp\\Temp_before_github_push\\github106",
+    "python_open_audit_denied_roots": [
+      "F:/aoe_4_temp/Community_civilization_pack_garrison_temp",
+      "E:/age of empires 4 mods/01_Custom_Civilizations/Community_Civilization_pack"
+    ],
+    "subprocess_scope": "Explicit repository/temp paths; no OS sandbox or subprocess I/O tracing",
+    "native_source_compile": true,
+    "native_duration_seconds": 576.125,
+    "native_instances": 658,
+    "sga_sha256": "9e82491506b667812daa831db8e2f4f9ab9bea79857bc60aa6911295fae2273c",
+    "zip_sha256": "6699db61d946c6f58119e7da365a19a79fc756b9546007f22bb4288510ca5996",
+    "final_members": 13678,
+    "native_game_test": false,
+    "full_art_recook": false,
+    "new_speech_synthesis": false
+  },
+  "zip_bytes": 476743699,
+  "zip_exceeds_400000000_bytes": true
+}

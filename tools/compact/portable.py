@@ -184,9 +184,12 @@ def configure(args, r):
     legacy.configure(args)
     origins = [(r.doc['provenance']['source_root'],str(src)),
                (r.doc['provenance']['external_root'],str(external))]
+    if r.doc.get('milestone',{}).get('assembly_mode')=='complete-members':
+        origins.extend([('F:/aoe_4_temp/Temp_before_github_push',str(src)),
+                        ('F:/aoe_4_temp/community_civilization_pack_garrison_aoe4',str(src))])
     changes = []
     # Frozen reports remain original. These are new, logged working recipe copies.
-    roots = [src/'tools',src/'art/recipes',external/'garrison-library']
+    roots = [src/'tools',src/'art/recipes',src/'art/persia',external/'garrison-library']
     for base in roots:
         if not base.exists():
             continue

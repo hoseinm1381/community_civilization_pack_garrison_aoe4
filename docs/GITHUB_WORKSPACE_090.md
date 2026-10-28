@@ -1,5 +1,10 @@
 # Sole GitHub workspace and independent 0.9.0 build
 
+Historical functional-build record. For new Persian asset development, the later
+owner instruction in [PERSIA_ASSET_WORKFLOW.md](PERSIA_ASSET_WORKFLOW.md) supersedes
+the direct-development policy below: work/review in temp, promote after owner
+acceptance, then verify, push main and remove temp after preserving all inputs.
+
 Owner instruction, 2026-10-26: develop Garrison exclusively in this repository,
 F:/aoe_4_temp/community_civilization_pack_garrison_aoe4. E: is the independent
 base-game/Normal edition and may only be read as a reference. Temporary work is
