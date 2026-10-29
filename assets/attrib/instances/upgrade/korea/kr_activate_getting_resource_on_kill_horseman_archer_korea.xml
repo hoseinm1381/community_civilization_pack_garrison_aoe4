@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="4" description="" template="upgrade">
+	<group name="upgrade_bag">
+		<group name="ui_info">
+			<locstring name="extra_text" value="12065" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+			<locstring name="help_text" value="12064" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+			<locstring name="screen_name" value="12066" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+			<file name="icon_name" value="races\byzantine\upgrades\eastern_merc_contract" overrideParent="True" />
+			<bool name="is_unique_to_race" value="True" overrideParent="True" />
+			<string name="debug_text" value="" overrideParent="True" />
+		</group>
+		<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_mercenary_house\tech_eastern_contract_byz" overrideParent="True" />
+		<group name="time_cost">
+			<enum_table name="cost">
+				<float name="food" value="100" overrideParent="True" />
+				<float name="gold" value="250" overrideParent="True" />
+			</enum_table>
+			<float name="time_seconds" value="30" overrideParent="True" />
+		</group>
+		<group name="ui_position">
+			<int name="ui_position_row" value="3" overrideParent="True" />
+			<int name="ui_position_column" value="1" overrideParent="True" />
+		</group>
+		<list name="requirements">
+			<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="1797661703" List.ParentItemID="1797661703">
+				<instance_reference name="upgrade_name" value="upgrade\korea\kr_activate_getting_resource_on_kill_horseman_archer_korea" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+				<bool name="include_queued" value="False" overrideParent="True" />
+			</template_reference>
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="2147483125" />
+	<instance_reference name="parent_pbg" value="upgrade\races\byzantine\mercenary_contracts\merc_contract_base_byz" />
+</instance>

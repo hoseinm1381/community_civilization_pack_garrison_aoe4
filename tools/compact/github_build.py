@@ -117,8 +117,10 @@ def main():
     from current_package import rebuild, apply_verification_delta
     from store import write_json
     reader = portable.reader()
-    if reader.doc['milestone'].get('assembly_mode') == 'complete-members':
-        TEMP = TEMP/'github106'
+    policy = reader.doc['milestone']
+    native_instances = policy.get('native_instance_count', 658)
+    if policy.get('assembly_mode') == 'complete-members':
+        TEMP = TEMP/('github'+policy['version'].replace('.', ''))
         TEMP.mkdir(exist_ok=True)
     try:
         source_count = verify_source_snapshot(ROOT, tracked, reader.doc['files'])
@@ -127,11 +129,11 @@ def main():
             write_json(TEMP/'native-inputs.json', snapshot)
             run([cfg['garrison_core'], 'essence', 'build-mod', '--editor', cfg['content_editor'],
                  '--mod', ROOT/'community_civilization_pack.aoe4mod', '--run-root', TEMP/'native',
-                 '--timeout', '900'], TEMP/'native-cli.log')
-            completed_native(TEMP/'native', 658)
+                 '--timeout', str(policy.get('native_timeout_seconds', 900))], TEMP/'native-cli.log')
+            completed_native(TEMP/'native', native_instances)
             print('NATIVE_CURRENT_SOURCE_VERIFIED', source_count, flush=True)
             return
-        state = completed_native(TEMP/'native', 658)
+        state = completed_native(TEMP/'native', native_instances)
         if Path(state['mod']['path']).resolve() != (ROOT/'community_civilization_pack.aoe4mod').resolve():
             raise ValueError('Native run used another source workspace')
         frozen = json.loads((TEMP/'native-inputs.json').read_text())
@@ -159,13 +161,13 @@ def main():
         members = list(native_expected) if native_expected else [k for k in expected['member_sha256'] if
                    (k.startswith('attrib/') and '/persia/' in k) or
                    k.startswith('ui/icons/persia/') or k == 'en/en.ucs']
-        if (not native_expected and len(members) != 309) or (native_expected and len(members) != 313):
-            raise ValueError('Persia compiled-resource closure differs')
+        if (not native_expected and len(members) != 309) or (native_expected and len(members) != policy.get('native_expectation_count', 313)):
+            raise ValueError('Native compiled-resource closure differs')
         for member in members:
             if file_sha(readback/member) != (native_expected or expected['member_sha256'])[member]:
                 raise ValueError('Fresh native payload differs from stored release: '+member)
         write_json(TEMP/'native-readback-proof.json',dict(status='passed',native_sga_sha256=file_sha(native),
-                   members_verified=members,native_instances=658,source_inputs=source_count))
+                   members_verified=members,native_instances=native_instances,source_inputs=source_count))
         if args.command=='verify-native':
             print('NATIVE_REFERENCE_PAYLOADS_VERIFIED',len(members),flush=True)
             return
@@ -195,7 +197,7 @@ def main():
             python_open_audit_denied_roots=list(FORBIDDEN),
             subprocess_scope='Explicit repository/temp paths; no OS sandbox or subprocess I/O tracing',
             native_source_compile=True,
-            native_duration_seconds=state['duration_seconds'], native_instances=658,
+            native_duration_seconds=state['duration_seconds'], native_instances=native_instances,
             fresh_native_payloads_matching=members, sga_sha256=expected['sga_sha256'],
             zip_sha256=expected['zip_sha256'], final_members=len(expected['member_sha256']),
             native_game_test=False, full_art_recook=False, new_speech_synthesis=False))

@@ -30,6 +30,11 @@ function CCPLoading103_Required(race)
         return true
     end
     for _, player in ipairs(PLAYERS) do
+        if player.isHuman == nil or player.id == nil then
+            print("CCP110_PRECACHE_ROSTER_INCOMPLETE fallback=full race=" .. race)
+            state.required[race] = true
+            return true
+        end
         if player.isHuman and Player_GetRaceName(player.id) == race then
             state.required[race] = true
             return true

@@ -32,7 +32,7 @@ def rebuild(args,reader):
     policy=reader.doc['milestone'];basepolicy=policy['baseline'];dest=args.destination.resolve()
     if dest.exists():raise FileExistsError('Previous build preserved: '+str(dest))
     dest.mkdir(parents=True)
-    expected=json.loads(reader.read(policy['verification']))
+    expected=apply_verification_delta(json.loads(reader.read(policy['verification'])),policy.get('verification_delta',{}))
     prior=apply_verification_delta(json.loads(reader.read(basepolicy['verification'])),basepolicy.get('verification_delta',{}))
     payloads=check_policy(policy,expected,prior)
     baseline=dest/'baseline.sga'

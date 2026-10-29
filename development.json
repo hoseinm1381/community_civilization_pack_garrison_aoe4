@@ -1,15 +1,17 @@
 {
-  "version": "1.0.6",
-  "baseline_version": "0.8.4 immutable baseline plus current member deltas; 1.0.6 reassembly omits exact texture aliases",
+  "version": "1.1.0",
+  "baseline_version": "Accepted 1.0.6 assets plus the explicit Korea delta; immutable earlier inputs preserved",
   "project_guid": "b7fcea91-257b-408f-b9e8-ae4d8bc402e1",
   "bundle_key": "community_civilization_pack",
   "entrypoint": "tools/compact/github_build.py",
-  "guide": "docs/RELEASE_106.md",
+  "guide": "docs/RELEASE_110.md",
   "data_index": "development-data/current-084-v1/index-current.json.gz",
-  "zip_sha256": "6699db61d946c6f58119e7da365a19a79fc756b9546007f22bb4288510ca5996",
-  "sga_sha256": "9e82491506b667812daa831db8e2f4f9ab9bea79857bc60aa6911295fae2273c",
+  "zip_sha256": "f3c51cdf8060b69cb0c936703e6e8d92ec202d6e46f92918c048aa4340fcf344",
+  "sga_sha256": "80d8e008e9320232d4b8d56072c5fa6cc1040a4f3df526b63541dd4b8f60b4eb",
   "zip_limit_bytes": 600000000,
   "normal_edition_included": false,
-  "native_game_acceptance": "owner_confirmed_working_2026-10-28_scope_unspecified",
-  "package": "output/current/1.0.6/community_civilization_pack-1.0.6.zip"
+  "native_game_acceptance": "owner_reported_worked_2026-10-29_scope_unspecified",
+  "package": "output/current/1.1.0/community_civilization_pack-1.1.0.zip",
+  "source_status": "owner_accepted_for_main",
+  "release_publication": "not_requested; existing releases unchanged"
 }

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="damage">
+			<float name="max" value="15" overrideParent="True" />
+			<float name="min" value="15" overrideParent="True" />
+		</group>
+		<locstring name="ui_name" value="12306" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+	</group>
+	<uniqueid name="pbgid" value="2147483146" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_manatarms_3" />
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<group name="damage">
+				<float name="max" value="10" overrideParent="True" />
+				<float name="min" value="10" overrideParent="True" />
+			</group>
+		</group>
+		<uniqueid name="pbgid" value="2147483146" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_manatarms_3" />
+	</variant>
+</instance>

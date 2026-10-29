@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="upgrade">
+	<group name="upgrade_bag">
+		<group name="ui_position">
+			<int name="ui_position_row" value="3" overrideParent="True" />
+			<int name="ui_position_column" value="1" overrideParent="True" />
+		</group>
+		<list name="requirements">
+			<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="105388771" List.ParentItemID="105388771">
+				<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_armor_clad_cru" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+			</template_reference>
+		</list>
+		<list name="upgrade_type">
+			<enum name="upgrade_type" value="crusader_cmp_upgrade" overrideParent="True" List.ItemID="756392302" List.ParentItemID="756392302" />
+		</list>
+		<group name="ui_info" overrideParent="True">
+			<bool name="is_unique_to_race" value="True" overrideParent="True" />
+			<locstring name="extra_text" value="11191609" />
+			<locstring name="help_text" value="0" />
+			<string name="hotkey_name" value="A" />
+			<file name="icon_name" value="races\malian\upgrades\imported_armor" />
+			<bool name="reveal_for_decryption" value="False" />
+			<locstring name="screen_name" value="11218507" />
+			<locstring name="brief_text" value="0" />
+			<locstring name="screen_name_short" value="0" />
+			<string name="debug_text" value="" />
+			<string name="tooltip_data_template" value="UniqueBuildingUpgradeDataTemplate" />
+			<enum name="ui_combine_type" value="intersection" />
+			<template_reference name="brief_text_formatter" value="">
+			</template_reference>
+			<template_reference name="extra_text_formatter" value="">
+			</template_reference>
+			<template_reference name="help_text_formatter" value="ui_text_formatter">
+				<list name="formatter_arguments">
+					<int name="int_value" value="2" List.ItemID="-1366061" />
+				</list>
+				<locstring name="formatter" value="12173" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+			</template_reference>
+			<template_reference name="screen_name_formatter" value="">
+			</template_reference>
+			<template_reference name="screen_name_short_formatter" value="">
+			</template_reference>
+			<string name="sound" value="sfx_ui_produce_upgrade_building_click" />
+			<string name="sound_alternative" value="" />
+			<int name="global_unit_control_row" value="1" />
+			<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+				<template_reference name="command_card_info" value="">
+				</template_reference>
+				<template_reference name="quick_abilities_info" value="">
+				</template_reference>
+				<template_reference name="quick_commands_info" value="ui_quick_commands_info">
+					<int name="quick_commands_slot_index" value="2" />
+					<enum name="quick_commands_hotkey" value="x_quick_command_hold_y" />
+					<int name="quick_commands_priority" value="6" />
+				</template_reference>
+				<template_reference name="quick_formation_info" value="">
+				</template_reference>
+				<template_reference name="ping_menu_info" value="">
+				</template_reference>
+				<enum name="category" value="Economic" />
+				<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+					<enum name="quick_commands_hotkey" value="x_quick_command_x" />
+					<int name="quick_commands_priority" value="99" />
+					<int name="quick_commands_slot_index" value="3" />
+					<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+				</template_reference>
+				<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info">
+					<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+					<int name="nominal_index" value="8" />
+					<int name="priority" value="0" />
+					<instance_reference name="linked" value="" />
+				</template_reference>
+				<enum name="observer_type" value="Disabled" />
+				<group name="issuable_info">
+					<bool name="is_secondary" value="False" />
+					<instance_reference name="secondary_issuable" value="" />
+				</group>
+			</template_reference>
+			<locstring name="help_text_controller" value="0" />
+			<locstring name="extra_text_controller" value="0" />
+			<int name="custom_data_index" value="0" />
+		</group>
+		<group name="filter_conditions">
+			<list name="apply_to_unit_classes">
+				<enum name="unit_class" value="knight" overrideParent="True" List.ItemID="1791677042" List.ParentItemID="1791677042" />
+			</list>
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="2147483120" />
+	<instance_reference name="parent_pbg" value="upgrade\races\english\research\upgrade_armor_clad_eng" />
+	<variant name="xp3">
+		<group name="upgrade_bag">
+			<group name="ui_position">
+				<int name="ui_position_row" value="3" overrideParent="True" />
+				<int name="ui_position_column" value="1" overrideParent="True" />
+			</group>
+			<list name="requirements">
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="105388771" List.ParentItemID="105388771">
+					<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_armor_clad_cru" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+				</template_reference>
+			</list>
+			<list name="upgrade_type">
+				<enum name="upgrade_type" value="crusader_cmp_upgrade" overrideParent="True" List.ItemID="756392302" List.ParentItemID="756392302" />
+			</list>
+		</group>
+		<uniqueid name="pbgid" value="2147483120" />
+		<instance_reference name="parent_pbg" value="upgrade\races\english\research\upgrade_armor_clad_eng" />
+	</variant>
+</instance>

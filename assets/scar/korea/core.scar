@@ -1,0 +1,110 @@
+-- Private Korean state. Every simulation owner comes from the shared selection.
+KoreaState = {active = false, players = {}, order = {}, modifiers = {}, removed = {}, cache = {}, ending = false}
+
+function Korea_Player(id)
+    local player = Core_GetPlayersTableEntry(id)
+    return player and KoreaState.players[player.index] or nil
+end
+
+function Korea_IsPlayer(id)
+    return Korea_Player(id) ~= nil
+end
+
+function Korea_Name(pbg)
+    return string.match(BP_GetName(pbg), "[^:]+$")
+end
+
+function Korea_BP(category, name)
+    local key = category .. ":" .. name
+    if KoreaState.cache[key] == nil then
+        local full = KoreaCatalog[category] and KoreaCatalog[category][name] or name
+        local getters = {ebps = BP_GetEntityBlueprint, sbps = BP_GetSquadBlueprint,
+            upgrade = BP_GetUpgradeBlueprint, abilities = BP_GetAbilityBlueprint, weapon = BP_GetWeaponBlueprint}
+        KoreaState.cache[key] = getters[category](full)
+    end
+    return KoreaState.cache[key]
+end
+
+function Korea_Entity(id)
+    if id ~= nil and Entity_IsValid(id) then return Entity_FromID(id) end
+    return nil
+end
+
+function Korea_Alive(entity)
+    return entity ~= nil and Entity_IsValid(Entity_GetID(entity)) and Entity_IsAlive(entity)
+end
+
+function Korea_Functioning(entity)
+    return Korea_Alive(entity) and Entity_GetHealth(entity) > 0
+        and not Entity_IsUnderConstruction(entity) and Entity_GetBuildingProgress(entity) >= 1
+        and Entity_GetStateModelBool(entity, "landmark_active")
+end
+
+function Korea_EventPlayer(context)
+    if context.player ~= nil then
+        local player = Korea_Player(context.player)
+        if player ~= nil then return player end
+    end
+    if context.executer ~= nil then
+        -- Official score.scar distinguishes player and entity executers.
+        if scartype(context.executer) == ST_ENTITY then
+            if Korea_Alive(context.executer) and not World_OwnsEntity(context.executer) then
+                return Korea_Player(Entity_GetPlayerOwner(context.executer))
+            end
+        elseif scartype(context.executer) == ST_PLAYER then
+            return Korea_Player(context.executer)
+        end
+    end
+    return nil
+end
+
+function Korea_PlayerModifier(player, application, property, usage, value, target, duration)
+    local modifier = Modifier_Create(application, property, usage, false, value, target)
+    local handle = Modifier_ApplyToPlayer(modifier, player.id, duration or 0)
+    if handle ~= nil and (duration or 0) == 0 then table.insert(KoreaState.modifiers, handle) end
+    return handle
+end
+
+function Korea_EntityModifier(entity, property, usage, value, target, duration)
+    local modifier = Modifier_Create(MAT_Entity, property, usage, false, value, target)
+    local handle = Modifier_ApplyToEntity(modifier, entity, duration or 0)
+    if handle ~= nil and (duration or 0) == 0 then table.insert(KoreaState.modifiers, handle) end
+    return handle
+end
+
+function Korea_RemoveModifier(handle)
+    if handle ~= nil and not KoreaState.removed[handle] then
+        KoreaState.removed[handle] = true
+        Modifier_Remove(handle)
+    end
+end
+
+function Korea_AddLiterature(player, amount)
+    if player ~= nil and Player_IsAlive(player.id) then
+        Player_AddResource(player.id, RT_Merc_Byz, amount)
+    end
+end
+
+function Korea_Entities(player, callback)
+    local group = EGroup_CreateUnique()
+    Player_GetEntitiesEGroup(player.id, group)
+    for i = 1, EGroup_Count(group) do
+        local entity = EGroup_GetEntityAt(group, i)
+        if Korea_Alive(entity) then callback(entity) end
+    end
+    EGroup_Destroy(group)
+end
+
+function Korea_Squads(player, callback)
+    -- Player_GetSquads returns an engine-owned observer. Never filter/destroy it.
+    local group = Player_GetSquads(player.id)
+    for i = 1, SGroup_CountSpawned(group) do
+        local squad = SGroup_GetSpawnedSquadAt(group, i)
+        local entity = Squad_GetFirstEntity(squad)
+        if Korea_Alive(entity) then callback(squad, entity) end
+    end
+end
+
+function Korea_HasUpgrade(player, name)
+    return Player_HasUpgrade(player.id, Korea_BP("upgrade", name))
+end

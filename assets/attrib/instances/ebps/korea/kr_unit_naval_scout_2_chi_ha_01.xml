@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-746705299" List.ParentItemID="-746705299">
+			<group name="time_cost">
+				<float name="time_seconds" value="22.5" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1129058029" List.ParentItemID="1129058029">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="1820472813" List.ParentItemID="1820472813">
+					<group name="tier" List.ItemID="-1281607675" List.ParentItemID="-1281607675">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese\units\tier2_naval_scout_ship_chi" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147483013" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_scout_2" />
+</instance>

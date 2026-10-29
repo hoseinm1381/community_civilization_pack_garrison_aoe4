@@ -1,0 +1,493 @@
+{
+  "entry": "winconditions/Korea_civ_by_hossein_and_chilly.scar",
+  "active_imported_donor_files": 32,
+  "destination_base": "assets/scar/",
+  "modules": [
+    {
+      "donor_module": "Korea_civ_by_hossein_and_chilly.scar",
+      "declared_functions": [
+        "StandardMode_OnGameSetup",
+        "StandardMode_OnInit",
+        "StandardMode_Start",
+        "StandardMode_OnGameOver",
+        "StandardMode_OnConstructionComplete",
+        "ability_event_handler",
+        "Upgrade_event_handler",
+        "korea_on_construction_complete",
+        "entity_attacked_handler",
+        "entity_kill_info",
+        "on_upgrade_canceled",
+        "contains_item",
+        "remove_by_value",
+        "resource_drop_off_remove_supervision"
+      ],
+      "destinations": [
+        "winconditions/VietnamMode.scar",
+        "korea/lifecycle.scar",
+        "korea/economy.scar",
+        "korea/research.scar"
+      ],
+      "decision": "Standalone StandardMode callbacks replaced by the existing Normal lifecycle; shared stock civilizations retain native mode ownership."
+    },
+    {
+      "donor_module": "building/keep_on_construction.scar",
+      "declared_functions": [
+        "add_swacha_emplacement_on_keep",
+        "keep_attack_ground_for_hwacha",
+        "fake_keep_hwacha_retarget",
+        "hwacha_keep_barrage_ability_end"
+      ],
+      "destinations": [
+        "korea/effects.scar"
+      ],
+      "decision": "Native private emplacement retained. Unused add_swacha helper omitted. Random retarget is repaired to Stop with owner, life and command guards."
+    },
+    {
+      "donor_module": "building/monestary.scar",
+      "declared_functions": [
+        "modify_monestary_gold_generation"
+      ],
+      "destinations": [
+        "korea/effects.scar"
+      ],
+      "decision": "Treasure Tower completion retains the private Royal Edict follow-up."
+    },
+    {
+      "donor_module": "building/seowon_free_senobi.scar",
+      "declared_functions": [
+        "queue_a_free_senobi"
+      ],
+      "destinations": [
+        "korea/economy.scar"
+      ],
+      "decision": "Free-scholar queue retained with identity receipts; repairs do not duplicate initial rewards."
+    },
+    {
+      "donor_module": "chinese_dynasty_ui.scar",
+      "declared_functions": [
+        "CreateCostData",
+        "DynastyUI_OnInit",
+        "DynastyUI_Start",
+        "DynastyUI_OnGameOver",
+        "DynastyUI_OnGameRestore",
+        "DynastyUI_OnConstructionComplete",
+        "DynastyUI_OnEntityKilled",
+        "DynastyUI_OnPlayerDefeated",
+        "DynastyUI_OnLocalPlayerChanged",
+        "DynastyUI_OnUpgradeComplete",
+        "DynastyUI_Show",
+        "DynastyUI_CreateUI",
+        "DynastyUI_SetCivData",
+        "DynastyUI_ToggleDropdown",
+        "DynastyUI_HideDropdown",
+        "DynastyUI_CreateDataContext",
+        "DynastyUI_Update",
+        "DynastyUI_CreateXboxUI"
+      ],
+      "destinations": [
+        "korea/ui.scar"
+      ],
+      "decision": "Stock DynastyUI replacement omitted; Korean Literature, kills and public offers use private local presentation."
+    },
+    {
+      "donor_module": "global_function.scar",
+      "declared_functions": [
+        "ApplyWeaponBurstRateModifier",
+        "ApplyWeaponScatterModifier",
+        "ApplySpecificEntity_range_modifier",
+        "ApplyWeaponBurstRateModifierForWeapon",
+        "ApplySpecificWeaponRangeModifier",
+        "ApplySpecificWeaponRangeModifier_with_player_id",
+        "ModifyWeaponBonusDamage",
+        "ModifyWeaponBonusDamage_player_id",
+        "ModifyUnitSpeedForDuration",
+        "ModifyWeaponDamage",
+        "ModifyWeaponReloadTime",
+        "ModifyWeaponcooldown",
+        "ModifyAllUpgradesResearchTime",
+        "ModifyAllUpgradescost",
+        "IncreaseBuildingHP",
+        "ModifyAbilityRange",
+        "ModifyUnitCost",
+        "ModifyupgradeCost",
+        "ModifyAbilityCost",
+        "Modify_upgrade_time_custom",
+        "Modify_building_drop_off"
+      ],
+      "destinations": [
+        "korea/core.scar",
+        "korea/effects.scar",
+        "korea/effect_catalog.scar",
+        "korea/research.scar"
+      ],
+      "decision": "Active helper consumers retained; exact handles replace inverse multipliers. Uncalled generic helpers are not imported."
+    },
+    {
+      "donor_module": "initial_setup.scar",
+      "declared_functions": [
+        "initilize_building_constrction_speed",
+        "ModifyBuildingsConstructionTimeByList"
+      ],
+      "destinations": [],
+      "decision": "initilize_building_constrction_speed and its helper have no active calls in the imported donor closure; no speculative x3 construction modifier introduced."
+    },
+    {
+      "donor_module": "landmark/Gyeongbokgung_Palace.scar",
+      "declared_functions": [
+        "Gyeongbokgung_Palace_initilize",
+        "check_if_kill_is_near_palace"
+      ],
+      "destinations": [
+        "korea/landmarks.scar",
+        "korea/research.scar"
+      ],
+      "decision": "Active landmark effects retained with functioning-building gates and one-time reward receipts."
+    },
+    {
+      "donor_module": "landmark/Jinju_Fortress.scar",
+      "declared_functions": [
+        "Jinju_Fortress",
+        "spawn_additional_petroling_guard",
+        "patroling_guards"
+      ],
+      "destinations": [
+        "korea/landmarks.scar",
+        "korea/research.scar"
+      ],
+      "decision": "Active landmark effects retained with functioning-building gates and one-time reward receipts."
+    },
+    {
+      "donor_module": "landmark/The_Stone_Pagoda.scar",
+      "declared_functions": [
+        "add_player_name_to_list_the_stone_pagoda",
+        "queue_villager_on_research",
+        "get_player_data_from_stone_pagoda_list"
+      ],
+      "destinations": [
+        "korea/landmarks.scar",
+        "korea/research.scar"
+      ],
+      "decision": "Active landmark effects retained with functioning-building gates and one-time reward receipts."
+    },
+    {
+      "donor_module": "landmark/age_3_observatory.scar",
+      "declared_functions": [
+        "Cheomseongdae_Observatory_initilize"
+      ],
+      "destinations": [
+        "korea/landmarks.scar",
+        "korea/research.scar"
+      ],
+      "decision": "Active landmark effects retained with functioning-building gates and one-time reward receipts."
+    },
+    {
+      "donor_module": "landmark/hall_of_worthies.scar",
+      "declared_functions": [
+        "hall_of_worthies_event_handler",
+        "apply_decree_to_player",
+        "revert_the_buff"
+      ],
+      "destinations": [
+        "korea/effects.scar",
+        "korea/lifecycle.scar"
+      ],
+      "decision": "Active landmark effects retained with functioning-building gates and one-time reward receipts."
+    },
+    {
+      "donor_module": "senobi/barracks_tech.scar",
+      "declared_functions": [
+        "barracks_tech_research_activation"
+      ],
+      "destinations": [
+        "korea/catalog.scar",
+        "korea/research_core.scar",
+        "korea/research.scar",
+        "korea/ui.scar"
+      ],
+      "decision": "All 91 active ability-to-upgrade routes consolidated, including helpers marked old. Native paid Literature and once-only settlement replace donor top-ups. The shared Delhi Sanctity compensator is unnecessary because Korean tuning is private."
+    },
+    {
+      "donor_module": "senobi/display_all_players_foreign_tech.scar",
+      "declared_functions": [
+        "UpgradeUI_Create",
+        "UpgradeUI_Show",
+        "UpgradeUI_Hide",
+        "Rule_UpgradeUI_Refresh"
+      ],
+      "destinations": [
+        "korea/catalog.scar",
+        "korea/research_core.scar",
+        "korea/research.scar",
+        "korea/ui.scar"
+      ],
+      "decision": "All 91 active ability-to-upgrade routes consolidated, including helpers marked old. Native paid Literature and once-only settlement replace donor top-ups. The shared Delhi Sanctity compensator is unnecessary because Korean tuning is private."
+    },
+    {
+      "donor_module": "senobi/economic_tech.scar",
+      "declared_functions": [
+        "economic_tech_research_activation"
+      ],
+      "destinations": [
+        "korea/catalog.scar",
+        "korea/research_core.scar",
+        "korea/research.scar",
+        "korea/ui.scar"
+      ],
+      "decision": "All 91 active ability-to-upgrade routes consolidated, including helpers marked old. Native paid Literature and once-only settlement replace donor top-ups. The shared Delhi Sanctity compensator is unnecessary because Korean tuning is private."
+    },
+    {
+      "donor_module": "senobi/foreign_tech.scar",
+      "declared_functions": [
+        "technologies_to_lock",
+        "foreign_tech_research_activation",
+        "modifying_sanctity_for_korea",
+        "abbasid_fresh_food_stuff_researched",
+        "unlock_specefic_tech_for_foreign_korea",
+        "foreign_upgrade_canceled",
+        "Ability_ShowUpgradePanel",
+        "Ability_ShowUpgradePanel_old"
+      ],
+      "destinations": [
+        "korea/catalog.scar",
+        "korea/research_core.scar",
+        "korea/research.scar",
+        "korea/ui.scar"
+      ],
+      "decision": "All 91 active ability-to-upgrade routes consolidated, including helpers marked old. Native paid Literature and once-only settlement replace donor top-ups. The shared Delhi Sanctity compensator is unnecessary because Korean tuning is private."
+    },
+    {
+      "donor_module": "senobi/naval_tech.scar",
+      "declared_functions": [
+        "naval_tech_research_activation"
+      ],
+      "destinations": [
+        "korea/catalog.scar",
+        "korea/research_core.scar",
+        "korea/research.scar",
+        "korea/ui.scar"
+      ],
+      "decision": "All 91 active ability-to-upgrade routes consolidated, including helpers marked old. Native paid Literature and once-only settlement replace donor top-ups. The shared Delhi Sanctity compensator is unnecessary because Korean tuning is private."
+    },
+    {
+      "donor_module": "senobi/other_technologies.scar",
+      "declared_functions": [
+        "other_tech_research_activation"
+      ],
+      "destinations": [
+        "korea/catalog.scar",
+        "korea/research_core.scar",
+        "korea/research.scar",
+        "korea/ui.scar"
+      ],
+      "decision": "All 91 active ability-to-upgrade routes consolidated, including helpers marked old. Native paid Literature and once-only settlement replace donor top-ups. The shared Delhi Sanctity compensator is unnecessary because Korean tuning is private."
+    },
+    {
+      "donor_module": "senobi/range_tech.scar",
+      "declared_functions": [
+        "ranged_tech_research_activation"
+      ],
+      "destinations": [
+        "korea/catalog.scar",
+        "korea/research_core.scar",
+        "korea/research.scar",
+        "korea/ui.scar"
+      ],
+      "decision": "All 91 active ability-to-upgrade routes consolidated, including helpers marked old. Native paid Literature and once-only settlement replace donor top-ups. The shared Delhi Sanctity compensator is unnecessary because Korean tuning is private."
+    },
+    {
+      "donor_module": "senobi/seowon_blacksmith.scar",
+      "declared_functions": [
+        "blacksmith_melee_damage_research",
+        "blacksmith_melee_armor_research",
+        "blacksmith_range_damage_research",
+        "blacksmith_range_armor_research",
+        "blacksmith_other_upgrades_code"
+      ],
+      "destinations": [
+        "korea/catalog.scar",
+        "korea/research_core.scar",
+        "korea/research.scar",
+        "korea/ui.scar"
+      ],
+      "decision": "All 91 active ability-to-upgrade routes consolidated, including helpers marked old. Native paid Literature and once-only settlement replace donor top-ups. The shared Delhi Sanctity compensator is unnecessary because Korean tuning is private."
+    },
+    {
+      "donor_module": "senobi/siege_workshop_tech.scar",
+      "declared_functions": [
+        "siege_workshop_tech_research_activation"
+      ],
+      "destinations": [
+        "korea/catalog.scar",
+        "korea/research_core.scar",
+        "korea/research.scar",
+        "korea/ui.scar"
+      ],
+      "decision": "All 91 active ability-to-upgrade routes consolidated, including helpers marked old. Native paid Literature and once-only settlement replace donor top-ups. The shared Delhi Sanctity compensator is unnecessary because Korean tuning is private."
+    },
+    {
+      "donor_module": "senobi/stable_tech.scar",
+      "declared_functions": [
+        "stable_tech_research_activation"
+      ],
+      "destinations": [
+        "korea/catalog.scar",
+        "korea/research_core.scar",
+        "korea/research.scar",
+        "korea/ui.scar"
+      ],
+      "decision": "All 91 active ability-to-upgrade routes consolidated, including helpers marked old. Native paid Literature and once-only settlement replace donor top-ups. The shared Delhi Sanctity compensator is unnecessary because Korean tuning is private."
+    },
+    {
+      "donor_module": "senobi/university_tech.scar",
+      "declared_functions": [
+        "university_tech_research_activation"
+      ],
+      "destinations": [
+        "korea/catalog.scar",
+        "korea/research_core.scar",
+        "korea/research.scar",
+        "korea/ui.scar"
+      ],
+      "decision": "All 91 active ability-to-upgrade routes consolidated, including helpers marked old. Native paid Literature and once-only settlement replace donor top-ups. The shared Delhi Sanctity compensator is unnecessary because Korean tuning is private."
+    },
+    {
+      "donor_module": "seowon_v3/new_resource_ui.scar",
+      "declared_functions": [
+        "CustomResourceUI_Create",
+        "CustomResourceUI_Update"
+      ],
+      "destinations": [
+        "korea/ui.scar"
+      ],
+      "decision": "Local Literature, kills and two-second unit information presentation consolidated; local commands do not mutate simulation."
+    },
+    {
+      "donor_module": "seowon_v3/seowon_v3.scar",
+      "declared_functions": [
+        "initilize_seowon_assigning",
+        "new_seowon_constructed",
+        "remove_senobi_on_destruction_from_list",
+        "generate_ticker_for_each_seowon",
+        "generate_10_ticket_patronage",
+        "update_the_ticket_counter",
+        "check_seonbi_near_seowon",
+        "senobi_event_handler"
+      ],
+      "destinations": [
+        "korea/economy.scar",
+        "korea/research.scar",
+        "korea/research_core.scar",
+        "korea/lifecycle.scar"
+      ],
+      "decision": "Resource snapshots, proximity scholars, defenses, Patronage and research dispatch retained; player IDs and engine-owned observers are handled without fixed ranges or destructive filters."
+    },
+    {
+      "donor_module": "show_kill_count_on_unit.scar",
+      "declared_functions": [
+        "TempUI_Create",
+        "TempUI_Show",
+        "Rule_TempUI_Hide",
+        "Rule_TempUI_Refresh"
+      ],
+      "destinations": [
+        "korea/ui.scar"
+      ],
+      "decision": "Local Literature, kills and two-second unit information presentation consolidated; local commands do not mutate simulation."
+    },
+    {
+      "donor_module": "ui_kill_count_korea.scar",
+      "declared_functions": [
+        "KillCounter_ToggleMinimize",
+        "KillCounter_CreateForPlayer",
+        "KillCounter_Update",
+        "Rule_KillCounter_Refresh",
+        "KillCounter_Remove"
+      ],
+      "destinations": [
+        "korea/ui.scar"
+      ],
+      "decision": "Local Literature, kills and two-second unit information presentation consolidated; local commands do not mutate simulation."
+    },
+    {
+      "donor_module": "unique_unit/horse_to_archer_mechanic.scar",
+      "declared_functions": [
+        "initial_setup_Hwarang",
+        "convert_horseman_to_archer",
+        "convert_archer_to_horseman",
+        "track_the_kill_count",
+        "FindTrackerIndex",
+        "activate_player_resource_income_on_kill",
+        "give_resource_per_min",
+        "GetTotalKillsForPlayer",
+        "DisplayAllKillCounts",
+        "Ability_DisplayKillCount",
+        "give_resource_per_min_new"
+      ],
+      "destinations": [
+        "korea/effects.scar",
+        "korea/landmarks.scar",
+        "korea/ui.scar"
+      ],
+      "decision": "Active transformations preserve health and kill identity; kill income uses the active give_resource_per_min_new behavior. Disabled initial_setup_Hwarang and unused older income/reporting implementations omitted."
+    },
+    {
+      "donor_module": "unique_unit/hwacha_functions.scar",
+      "declared_functions": [
+        "hwacha_barrage_ability",
+        "hwacha_barrage_ability_end"
+      ],
+      "destinations": [
+        "korea/effects.scar"
+      ],
+      "decision": "Burst/range values retained; per-entity timers and native Stop replace shared FIFO and fake movement, with explicit cleanup."
+    },
+    {
+      "donor_module": "unique_unit/tiger_hunter.scar",
+      "declared_functions": [
+        "changing_tiger_hunter_weapon"
+      ],
+      "destinations": [
+        "korea/effect_catalog.scar",
+        "korea/effects.scar",
+        "korea/economy.scar"
+      ],
+      "decision": "124 active numerical weapon effects retained, identical accidental duplicates consolidated. Approved x1.4 Castle archer fix and Hangul gold behavior retained."
+    },
+    {
+      "donor_module": "unit_sepcial_upgrades.scar",
+      "declared_functions": [
+        "unique_upgrade_unit_handler",
+        "elite_knight_reseached_apply_Iron_Flails",
+        "Dangpa_Trident_bonus_activation",
+        "apply_Dangpa_Trident_debuff",
+        "removing_heavy_spear_debuff",
+        "Chongtong_code_upgrade_extra_range",
+        "increase_archer_range",
+        "Reflex_Bow_apply",
+        "Hangul_Script_apply",
+        "hungul_script_invertal",
+        "hwacha_additional_barrel"
+      ],
+      "destinations": [
+        "korea/effect_catalog.scar",
+        "korea/effects.scar",
+        "korea/economy.scar"
+      ],
+      "decision": "124 active numerical weapon effects retained, identical accidental duplicates consolidated. Approved x1.4 Castle archer fix and Hangul gold behavior retained."
+    },
+    {
+      "donor_module": "water_mechanics.scar",
+      "declared_functions": [
+        "initilize_water_weapon_range",
+        "generate_ticket_for_fishing_boat",
+        "generate_ticket_for_military_boat"
+      ],
+      "destinations": [
+        "korea/effect_catalog.scar",
+        "korea/economy.scar"
+      ],
+      "decision": "Naval weapon adjustments, fishing and upgraded ship Literature retained."
+    }
+  ],
+  "coverage_limit": "The map traces all 32 imported source files and their consumers. Exact research dispatch and tuning comparisons are automated separately. This is not proof of identical native behavior."
+}

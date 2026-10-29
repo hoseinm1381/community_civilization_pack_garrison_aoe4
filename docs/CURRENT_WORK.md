@@ -1,3 +1,14 @@
+# Current source: Garrison 1.1.0 Korea
+
+Owner reported "it worked" on 2026-10-29 and authorized GitHub source promotion
+and main push. No release upload. See ACCEPTANCE_110.md and RELEASE_110.md.
+Normal and donor sources remain unchanged. Existing Garrison art/voices and
+all prior immutable rebuild inputs are preserved. Korean models are deferred.
+No additional multiplayer/performance coverage was reported. The temp test
+delivery stays in place; no installation or cleanup is included.
+
+---
+
 # Current workspace policy
 
 Current accepted release: **1.0.6**. The owner confirmed it worked on 2026-10-28

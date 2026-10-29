@@ -1,0 +1,1056 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="Adds archers to the castle" template="upgrade">
+	<group name="upgrade_bag">
+		<bool name="enable_in_hold" value="False" />
+		<float name="global_max_limit" value="0" />
+		<bool name="has_speech_code" value="False" />
+		<float name="local_max_limit" value="1" />
+		<enum name="owner_type" value="self" />
+		<group name="time_cost">
+			<enum_table name="cost">
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="popcap" value="0" />
+				<float name="food" value="0" />
+				<float name="wood" value="0" />
+				<float name="stone" value="375" />
+				<float name="gold" value="125" />
+				<float name="militia_hre" value="0" />
+				<float name="merc_byz" value="0" />
+			</enum_table>
+			<float name="time_seconds" value="60" />
+		</group>
+		<bool name="ui_event_cue" value="True" />
+		<enum name="ui_production_group" value="command_panel" />
+		<group name="ui_info">
+			<locstring name="extra_text" value="11146084" />
+			<locstring name="help_text" value="0" />
+			<string name="hotkey_name" value="e" />
+			<file name="icon_name" value="races\common\upgrades\cannon" />
+			<bool name="reveal_for_decryption" value="False" />
+			<locstring name="screen_name" value="11146085" />
+			<locstring name="brief_text" value="0" />
+			<locstring name="screen_name_short" value="0" />
+			<string name="debug_text" value="" />
+			<string name="tooltip_data_template" value="BuildingUpgradeDataTemplate" />
+			<enum name="ui_combine_type" value="intersection" />
+			<template_reference name="brief_text_formatter" value="">
+			</template_reference>
+			<template_reference name="extra_text_formatter" value="">
+			</template_reference>
+			<template_reference name="help_text_formatter" value="ui_text_formatter">
+				<list name="formatter_arguments">
+				</list>
+				<locstring name="formatter" value="11220924" />
+			</template_reference>
+			<template_reference name="screen_name_formatter" value="">
+			</template_reference>
+			<template_reference name="screen_name_short_formatter" value="">
+			</template_reference>
+			<string name="sound" value="sfx_ui_produce_upgrade_building_click" />
+			<string name="sound_alternative" value="" />
+			<int name="global_unit_control_row" value="1" />
+			<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+				<template_reference name="command_card_info" value="ui_command_card_info">
+					<group name="ui_position">
+						<int name="ui_position_row" value="1" />
+						<int name="ui_position_column" value="3" />
+					</group>
+					<int name="command_card_priority" value="1" />
+				</template_reference>
+				<template_reference name="quick_abilities_info" value="">
+				</template_reference>
+				<template_reference name="quick_commands_info" value="ui_quick_commands_info">
+					<int name="quick_commands_slot_index" value="2" />
+					<enum name="quick_commands_hotkey" value="x_quick_command_hold_y" />
+					<int name="quick_commands_priority" value="4" />
+				</template_reference>
+				<template_reference name="quick_formation_info" value="">
+				</template_reference>
+				<template_reference name="ping_menu_info" value="">
+				</template_reference>
+				<enum name="category" value="Economic" />
+				<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+					<enum name="quick_commands_hotkey" value="x_quick_command_y" />
+					<int name="quick_commands_priority" value="72" />
+					<int name="quick_commands_slot_index" value="2" />
+					<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+				</template_reference>
+				<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info">
+					<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+					<int name="nominal_index" value="6" />
+					<int name="priority" value="0" />
+					<instance_reference name="linked" value="" />
+				</template_reference>
+				<enum name="observer_type" value="Disabled" />
+				<group name="issuable_info">
+					<bool name="is_secondary" value="False" />
+					<instance_reference name="secondary_issuable" value="" />
+				</group>
+			</template_reference>
+			<locstring name="help_text_controller" value="0" />
+			<locstring name="extra_text_controller" value="0" />
+			<int name="custom_data_index" value="0" />
+			<bool name="is_unique_to_race" value="False" />
+		</group>
+		<list name="requirements">
+			<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="1025980704">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="True" />
+				<int name="max_completed" value="100" />
+				<int name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" />
+				<bool name="include_queued" value="False" />
+				<group name="include_pbg_parenting">
+					<bool name="include_child_pbgs" value="False" />
+					<bool name="include_parent_pbgs" value="False" />
+				</group>
+				<bool name="include_completed" value="True" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="-1125323708">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="11246227" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_outpost_arrowslits" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+				<bool name="include_queued" value="True" />
+				<int name="min_completed" value="1" />
+				<int name="max_completed" value="100" />
+				<group name="include_pbg_parenting">
+					<bool name="include_child_pbgs" value="True" />
+					<bool name="include_parent_pbgs" value="False" />
+				</group>
+				<bool name="include_completed" value="True" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="-466544881">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_outpost_arrowslits" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+				<bool name="include_queued" value="False" />
+				<int name="min_completed" value="1" />
+				<int name="max_completed" value="100" />
+				<group name="include_pbg_parenting">
+					<bool name="include_child_pbgs" value="True" />
+					<bool name="include_parent_pbgs" value="False" />
+				</group>
+				<bool name="include_completed" value="True" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="-1447849184">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_outpost_springald" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+				<bool name="include_queued" value="False" />
+				<int name="min_completed" value="1" />
+				<int name="max_completed" value="100" />
+				<group name="include_pbg_parenting">
+					<bool name="include_child_pbgs" value="False" />
+					<bool name="include_parent_pbgs" value="False" />
+				</group>
+				<bool name="include_completed" value="True" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="167193686">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="11246227" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_outpost_springald" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+				<bool name="include_queued" value="True" />
+				<int name="min_completed" value="1" />
+				<int name="max_completed" value="100" />
+				<group name="include_pbg_parenting">
+					<bool name="include_child_pbgs" value="False" />
+					<bool name="include_parent_pbgs" value="False" />
+				</group>
+				<bool name="include_completed" value="True" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="2131442692">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="11246227" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_outpost_cannon" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+				<bool name="include_queued" value="True" />
+				<int name="min_completed" value="1" />
+				<int name="max_completed" value="100" />
+				<group name="include_pbg_parenting">
+					<bool name="include_child_pbgs" value="False" />
+					<bool name="include_parent_pbgs" value="False" />
+				</group>
+				<bool name="include_completed" value="True" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="783445471">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_outpost_cannon" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+				<bool name="include_queued" value="False" />
+				<int name="min_completed" value="1" />
+				<int name="max_completed" value="100" />
+				<group name="include_pbg_parenting">
+					<bool name="include_child_pbgs" value="False" />
+					<bool name="include_parent_pbgs" value="False" />
+				</group>
+				<bool name="include_completed" value="True" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="-1433197798">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="11150626" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\races\chinese\research\upgrade_outpost_handcannonslits_chi" />
+				<bool name="include_queued" value="True" />
+				<int name="min_completed" value="1" />
+				<int name="max_completed" value="100" />
+				<group name="include_pbg_parenting">
+					<bool name="include_child_pbgs" value="False" />
+					<bool name="include_parent_pbgs" value="False" />
+				</group>
+				<bool name="include_completed" value="True" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="-347662786">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\races\chinese\research\upgrade_outpost_handcannonslits_chi" />
+				<bool name="include_queued" value="False" />
+				<int name="min_completed" value="1" />
+				<int name="max_completed" value="100" />
+				<group name="include_pbg_parenting">
+					<bool name="include_child_pbgs" value="False" />
+					<bool name="include_parent_pbgs" value="False" />
+				</group>
+				<bool name="include_completed" value="True" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="1706895781">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\races\byzantine\research\upgrade_outpost_mangonel_byz" />
+				<bool name="include_queued" value="False" />
+				<int name="min_completed" value="1" />
+				<int name="max_completed" value="100" />
+				<group name="include_pbg_parenting">
+					<bool name="include_child_pbgs" value="False" />
+					<bool name="include_parent_pbgs" value="False" />
+				</group>
+				<bool name="include_completed" value="True" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="1805589555">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="11246227" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\races\byzantine\research\upgrade_outpost_mangonel_byz" />
+				<bool name="include_queued" value="True" />
+				<int name="min_completed" value="1" />
+				<int name="max_completed" value="100" />
+				<group name="include_pbg_parenting">
+					<bool name="include_child_pbgs" value="False" />
+					<bool name="include_parent_pbgs" value="False" />
+				</group>
+				<bool name="include_completed" value="True" />
+			</template_reference>
+		</list>
+		<file name="ui_kicker_icon_name" value="" />
+		<locstring name="ui_squad_name_override" value="0" />
+		<locstring name="ui_squad_help_text_override" value="0" />
+		<locstring name="ui_squad_extra_text_override" value="0" />
+		<list name="ui_preview">
+		</list>
+		<string name="speech_code" value="" />
+		<file name="ui_squad_portrait_icon_override" value="" />
+		<group name="ui_position">
+			<int name="ui_position_row" value="1" />
+			<int name="ui_position_column" value="3" />
+		</group>
+		<float name="min_music_intensity" value="0" />
+		<group name="state_tree_references">
+			<template_reference name="on_begin_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<template_reference name="on_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="upgrade_outpost\upgrade_outpost_cannon" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<template_reference name="on_cancel_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<template_reference name="on_action_entity_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+			<template_reference name="on_action_squad_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" />
+				<bool name="start_suspended" value="False" />
+			</template_reference>
+		</group>
+		<list name="upgrade_type">
+			<enum name="upgrade_type" value="military_upgrade" List.ItemID="-362390328" />
+			<enum name="upgrade_type" value="abbasid_upgrade" List.ItemID="-1414574612" />
+			<enum name="upgrade_type" value="abbasid_ha_01_upgrade" List.ItemID="544919412" />
+			<enum name="upgrade_type" value="ayyubid_cmp_upgrade" List.ItemID="2040290388" />
+			<enum name="upgrade_type" value="byzantine_upgrade" List.ItemID="-1288623904" />
+			<enum name="upgrade_type" value="chinese_upgrade" List.ItemID="-536385527" />
+			<enum name="upgrade_type" value="chinese_ha_01_upgrade" List.ItemID="502870676" />
+			<enum name="upgrade_type" value="crusader_cmp_upgrade" List.ItemID="-714497725" />
+			<enum name="upgrade_type" value="english_upgrade" List.ItemID="-668076702" />
+			<enum name="upgrade_type" value="french_upgrade" List.ItemID="-1617624935" />
+			<enum name="upgrade_type" value="french_ha_01_upgrade" List.ItemID="-295358658" />
+			<enum name="upgrade_type" value="hre_upgrade" List.ItemID="-1640762293" />
+			<enum name="upgrade_type" value="japanese_upgrade" List.ItemID="-502353275" />
+			<enum name="upgrade_type" value="malian_upgrade" List.ItemID="-13686270" />
+			<enum name="upgrade_type" value="ottoman_upgrade" List.ItemID="190221520" />
+			<enum name="upgrade_type" value="sultinate_upgrade" List.ItemID="-923845609" />
+			<enum name="upgrade_type" value="scar_imperial_age_upgrade" List.ItemID="1639855503" />
+			<enum name="upgrade_type" value="scar_abbasid_wing_culture" List.ItemID="908933950" />
+		</list>
+		<string name="requirements_openingbranch" value="" />
+		<instance_reference name="ui_menu" value="" />
+		<bool name="is_progress_permanent" value="False" />
+		<group name="ui_codex_info">
+			<int name="priority" value="4700" />
+			<bool name="exclusive" value="False" />
+			<group name="ui_position">
+				<int name="ui_position_column" value="-1" />
+				<int name="ui_position_row" value="-1" />
+			</group>
+		</group>
+		<group name="filter_conditions">
+			<state_tree_node name="apply_to_filter_condition_statetree_ref" value="" />
+			<enum name="apply_to_target_type" value="entity" />
+			<list name="apply_to_unit_classes">
+			</list>
+			<enum name="apply_to_application_type" value="current_and_future_units" />
+			<enum name="apply_to_future_units" value="current_and_future_units" />
+			<group name="ai_unit_types">
+				<list name="any">
+				</list>
+				<list name="none">
+				</list>
+			</group>
+		</group>
+		<enum_table name="squad_cost">
+			<float name="action" value="0" />
+			<float name="command" value="0" />
+			<float name="popcap" value="0" />
+			<float name="food" value="0" />
+			<float name="wood" value="0" />
+			<float name="stone" value="0" />
+			<float name="gold" value="0" />
+			<float name="militia_hre" value="0" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<list name="float_properties">
+		</list>
+		<list name="int_properties">
+		</list>
+		<enum name="ui_group_cast_type" value="single" />
+		<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_outpost\tech_outpost_cannon" />
+		<bool name="ignore_completion_state_tree_openingbranch" value="False" />
+	</group>
+	<uniqueid name="pbgid" value="2147483108" />
+	<instance_reference name="parent_pbg" value="" />
+	<variant name="campaign">
+		<group name="upgrade_bag">
+			<bool name="enable_in_hold" value="False" />
+			<float name="global_max_limit" value="0" />
+			<bool name="has_speech_code" value="False" />
+			<float name="local_max_limit" value="1" />
+			<enum name="owner_type" value="self" />
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="action" value="0" />
+					<float name="command" value="0" />
+					<float name="popcap" value="0" />
+					<float name="food" value="0" />
+					<float name="wood" value="0" />
+					<float name="stone" value="600" />
+					<float name="gold" value="0" />
+					<float name="militia_hre" value="0" />
+					<float name="merc_byz" value="0" />
+				</enum_table>
+				<float name="time_seconds" value="60" />
+			</group>
+			<bool name="ui_event_cue" value="True" />
+			<enum name="ui_production_group" value="command_panel" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="11146084" />
+				<locstring name="help_text" value="11146083" />
+				<string name="hotkey_name" value="e" />
+				<file name="icon_name" value="races\common\upgrades\cannon" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="11146085" />
+				<locstring name="brief_text" value="0" />
+				<locstring name="screen_name_short" value="0" />
+				<string name="debug_text" value="" />
+				<string name="tooltip_data_template" value="BuildingUpgradeDataTemplate" />
+				<enum name="ui_combine_type" value="intersection" />
+				<template_reference name="brief_text_formatter" value="">
+				</template_reference>
+				<template_reference name="extra_text_formatter" value="">
+				</template_reference>
+				<template_reference name="help_text_formatter" value="">
+				</template_reference>
+				<template_reference name="screen_name_formatter" value="">
+				</template_reference>
+				<template_reference name="screen_name_short_formatter" value="">
+				</template_reference>
+				<string name="sound" value="sfx_ui_produce_upgrade_building_click" />
+				<string name="sound_alternative" value="" />
+				<int name="global_unit_control_row" value="1" />
+				<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+					<template_reference name="command_card_info" value="ui_command_card_info">
+						<group name="ui_position">
+							<int name="ui_position_row" value="1" />
+							<int name="ui_position_column" value="3" />
+						</group>
+						<int name="command_card_priority" value="1" />
+					</template_reference>
+					<template_reference name="quick_abilities_info" value="">
+					</template_reference>
+					<template_reference name="quick_commands_info" value="ui_quick_commands_info">
+						<int name="quick_commands_slot_index" value="2" />
+						<enum name="quick_commands_hotkey" value="x_quick_command_hold_y" />
+						<int name="quick_commands_priority" value="4" />
+					</template_reference>
+					<template_reference name="quick_formation_info" value="">
+					</template_reference>
+					<template_reference name="ping_menu_info" value="">
+					</template_reference>
+					<enum name="category" value="Economic" />
+					<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+						<enum name="quick_commands_hotkey" value="x_quick_command_y" />
+						<int name="quick_commands_priority" value="72" />
+						<int name="quick_commands_slot_index" value="2" />
+						<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+					</template_reference>
+					<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info">
+						<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+						<int name="nominal_index" value="6" />
+						<int name="priority" value="0" />
+						<instance_reference name="linked" value="" />
+					</template_reference>
+					<enum name="observer_type" value="Disabled" />
+					<group name="issuable_info">
+						<bool name="is_secondary" value="False" />
+						<instance_reference name="secondary_issuable" value="" />
+					</group>
+				</template_reference>
+				<locstring name="help_text_controller" value="0" />
+				<locstring name="extra_text_controller" value="0" />
+				<int name="custom_data_index" value="0" />
+				<bool name="is_unique_to_race" value="False" />
+			</group>
+			<list name="requirements">
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-2011628213">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_any_in_list" List.ItemID="2005485257">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="11143390" />
+					<list name="requirements">
+						<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="-1038672220">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="is_present" value="True" />
+							<int name="max_completed" value="100" />
+							<int name="min_completed" value="1" />
+							<instance_reference name="upgrade_name" value="upgrade\races\common\research\upgrade_siege_chemistry" />
+							<bool name="include_queued" value="False" />
+							<group name="include_pbg_parenting">
+								<bool name="include_child_pbgs" value="False" />
+								<bool name="include_parent_pbgs" value="False" />
+							</group>
+							<bool name="include_completed" value="True" />
+						</template_reference>
+						<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="-89926687">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="is_present" value="True" />
+							<int name="max_completed" value="100" />
+							<int name="min_completed" value="1" />
+							<instance_reference name="upgrade_name" value="upgrade\races\sultanate\research\upgrade_siege_chemistry_sul" />
+							<bool name="include_queued" value="False" />
+							<group name="include_pbg_parenting">
+								<bool name="include_child_pbgs" value="False" />
+								<bool name="include_parent_pbgs" value="False" />
+							</group>
+							<bool name="include_completed" value="True" />
+						</template_reference>
+						<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="-1596317373">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="is_present" value="True" />
+							<int name="max_completed" value="100" />
+							<int name="min_completed" value="1" />
+							<instance_reference name="upgrade_name" value="upgrade\races\mongol\research\upgrade_siege_chemistry_mon" />
+							<bool name="include_queued" value="False" />
+							<group name="include_pbg_parenting">
+								<bool name="include_child_pbgs" value="False" />
+								<bool name="include_parent_pbgs" value="False" />
+							</group>
+							<bool name="include_completed" value="True" />
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="-204843450">
+					<enum name="reason" value="usage_and_display" />
+					<locstring name="ui_name" value="11150626" />
+					<bool name="is_present" value="False" />
+					<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_outpost_arrowslits" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<bool name="include_queued" value="True" />
+					<int name="min_completed" value="1" />
+					<int name="max_completed" value="100" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="145493123">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="False" />
+					<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_outpost_arrowslits" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<bool name="include_queued" value="False" />
+					<int name="min_completed" value="1" />
+					<int name="max_completed" value="100" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="1291733936">
+					<enum name="reason" value="usage_and_display" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="False" />
+					<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_outpost_springald" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<bool name="include_queued" value="False" />
+					<int name="min_completed" value="1" />
+					<int name="max_completed" value="100" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="-80761550">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="11150626" />
+					<bool name="is_present" value="False" />
+					<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_outpost_springald" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<bool name="include_queued" value="True" />
+					<int name="min_completed" value="1" />
+					<int name="max_completed" value="100" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="72488544">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="11150626" />
+					<bool name="is_present" value="False" />
+					<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_outpost_cannon" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<bool name="include_queued" value="True" />
+					<int name="min_completed" value="1" />
+					<int name="max_completed" value="100" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="-1874715047">
+					<enum name="reason" value="usage_and_display" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="False" />
+					<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_outpost_cannon" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<bool name="include_queued" value="False" />
+					<int name="min_completed" value="1" />
+					<int name="max_completed" value="100" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="-2126145786">
+					<enum name="reason" value="usage_and_display" />
+					<locstring name="ui_name" value="11150626" />
+					<bool name="is_present" value="False" />
+					<instance_reference name="upgrade_name" value="upgrade\races\chinese\research\upgrade_outpost_handcannonslits_chi" />
+					<bool name="include_queued" value="True" />
+					<int name="min_completed" value="1" />
+					<int name="max_completed" value="100" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="-232609692">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="False" />
+					<instance_reference name="upgrade_name" value="upgrade\races\chinese\research\upgrade_outpost_handcannonslits_chi" />
+					<bool name="include_queued" value="False" />
+					<int name="min_completed" value="1" />
+					<int name="max_completed" value="100" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+			</list>
+			<file name="ui_kicker_icon_name" value="" />
+			<locstring name="ui_squad_name_override" value="0" />
+			<locstring name="ui_squad_help_text_override" value="0" />
+			<locstring name="ui_squad_extra_text_override" value="0" />
+			<list name="ui_preview">
+			</list>
+			<string name="speech_code" value="" />
+			<file name="ui_squad_portrait_icon_override" value="" />
+			<group name="ui_position">
+				<int name="ui_position_row" value="1" />
+				<int name="ui_position_column" value="3" />
+			</group>
+			<float name="min_music_intensity" value="0" />
+			<group name="state_tree_references">
+				<template_reference name="on_begin_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="on_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_upgrade_outpost\upgrade_outpost_cannon" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="on_cancel_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="on_action_entity_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="on_action_squad_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+			</group>
+			<list name="upgrade_type">
+				<enum name="upgrade_type" value="military_upgrade" List.ItemID="-259314840" />
+			</list>
+			<string name="requirements_openingbranch" value="" />
+			<instance_reference name="ui_menu" value="" />
+			<bool name="is_progress_permanent" value="False" />
+			<group name="ui_codex_info">
+				<int name="priority" value="4700" />
+				<bool name="exclusive" value="False" />
+				<group name="ui_position">
+					<int name="ui_position_column" value="-1" />
+					<int name="ui_position_row" value="-1" />
+				</group>
+			</group>
+			<group name="filter_conditions">
+				<state_tree_node name="apply_to_filter_condition_statetree_ref" value="" />
+				<enum name="apply_to_target_type" value="entity" />
+				<list name="apply_to_unit_classes">
+				</list>
+				<enum name="apply_to_application_type" value="current_and_future_units" />
+				<enum name="apply_to_future_units" value="current_and_future_units" />
+				<group name="ai_unit_types">
+					<list name="any">
+					</list>
+					<list name="none">
+					</list>
+				</group>
+			</group>
+			<enum_table name="squad_cost">
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="popcap" value="0" />
+				<float name="food" value="0" />
+				<float name="wood" value="0" />
+				<float name="stone" value="0" />
+				<float name="gold" value="0" />
+				<float name="militia_hre" value="0" />
+				<float name="merc_byz" value="0" />
+			</enum_table>
+			<list name="float_properties">
+			</list>
+			<list name="int_properties">
+			</list>
+			<enum name="ui_group_cast_type" value="single" />
+			<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_outpost\tech_outpost_cannon" />
+			<bool name="ignore_completion_state_tree_openingbranch" value="False" />
+		</group>
+		<uniqueid name="pbgid" value="2147483108" />
+		<instance_reference name="parent_pbg" value="" />
+	</variant>
+	<variant name="xp3">
+		<group name="upgrade_bag">
+			<bool name="enable_in_hold" value="False" />
+			<float name="global_max_limit" value="0" />
+			<bool name="has_speech_code" value="False" />
+			<float name="local_max_limit" value="1" />
+			<enum name="owner_type" value="self" />
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="action" value="0" />
+					<float name="command" value="0" />
+					<float name="popcap" value="0" />
+					<float name="food" value="0" />
+					<float name="wood" value="0" />
+					<float name="stone" value="375" />
+					<float name="gold" value="125" />
+					<float name="militia_hre" value="0" />
+					<float name="merc_byz" value="0" />
+				</enum_table>
+				<float name="time_seconds" value="60" />
+			</group>
+			<bool name="ui_event_cue" value="True" />
+			<enum name="ui_production_group" value="command_panel" />
+			<group name="ui_info">
+				<locstring name="extra_text" value="11146084" />
+				<locstring name="help_text" value="0" />
+				<string name="hotkey_name" value="e" />
+				<file name="icon_name" value="races\common\upgrades\cannon" />
+				<bool name="reveal_for_decryption" value="False" />
+				<locstring name="screen_name" value="11146085" />
+				<locstring name="brief_text" value="0" />
+				<locstring name="screen_name_short" value="0" />
+				<string name="debug_text" value="" />
+				<string name="tooltip_data_template" value="BuildingUpgradeDataTemplate" />
+				<enum name="ui_combine_type" value="intersection" />
+				<template_reference name="brief_text_formatter" value="">
+				</template_reference>
+				<template_reference name="extra_text_formatter" value="">
+				</template_reference>
+				<template_reference name="help_text_formatter" value="ui_text_formatter">
+					<list name="formatter_arguments">
+					</list>
+					<locstring name="formatter" value="11220924" />
+				</template_reference>
+				<template_reference name="screen_name_formatter" value="">
+				</template_reference>
+				<template_reference name="screen_name_short_formatter" value="">
+				</template_reference>
+				<string name="sound" value="sfx_ui_produce_upgrade_building_click" />
+				<string name="sound_alternative" value="" />
+				<int name="global_unit_control_row" value="1" />
+				<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+					<template_reference name="command_card_info" value="ui_command_card_info">
+						<group name="ui_position">
+							<int name="ui_position_row" value="1" />
+							<int name="ui_position_column" value="3" />
+						</group>
+						<int name="command_card_priority" value="1" />
+					</template_reference>
+					<template_reference name="quick_abilities_info" value="">
+					</template_reference>
+					<template_reference name="quick_commands_info" value="ui_quick_commands_info">
+						<int name="quick_commands_slot_index" value="2" />
+						<enum name="quick_commands_hotkey" value="x_quick_command_hold_y" />
+						<int name="quick_commands_priority" value="4" />
+					</template_reference>
+					<template_reference name="quick_formation_info" value="">
+					</template_reference>
+					<template_reference name="ping_menu_info" value="">
+					</template_reference>
+					<enum name="category" value="Economic" />
+					<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+						<enum name="quick_commands_hotkey" value="x_quick_command_y" />
+						<int name="quick_commands_priority" value="72" />
+						<int name="quick_commands_slot_index" value="2" />
+						<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+					</template_reference>
+					<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info">
+						<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
+						<int name="nominal_index" value="6" />
+						<int name="priority" value="0" />
+						<instance_reference name="linked" value="" />
+					</template_reference>
+					<enum name="observer_type" value="Disabled" />
+					<group name="issuable_info">
+						<bool name="is_secondary" value="False" />
+						<instance_reference name="secondary_issuable" value="" />
+					</group>
+				</template_reference>
+				<locstring name="help_text_controller" value="0" />
+				<locstring name="extra_text_controller" value="0" />
+				<int name="custom_data_index" value="0" />
+				<bool name="is_unique_to_race" value="False" />
+			</group>
+			<list name="requirements">
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="2046592636">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="391807587">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="11246227" />
+					<bool name="is_present" value="False" />
+					<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_outpost_arrowslits" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<bool name="include_queued" value="True" />
+					<int name="min_completed" value="1" />
+					<int name="max_completed" value="100" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="-807379037">
+					<enum name="reason" value="usage_and_display" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="False" />
+					<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_outpost_arrowslits" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<bool name="include_queued" value="False" />
+					<int name="min_completed" value="1" />
+					<int name="max_completed" value="100" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="-106345776">
+					<enum name="reason" value="usage_and_display" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="False" />
+					<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_outpost_springald" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<bool name="include_queued" value="False" />
+					<int name="min_completed" value="1" />
+					<int name="max_completed" value="100" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="-584499661">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="11246227" />
+					<bool name="is_present" value="False" />
+					<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_outpost_springald" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<bool name="include_queued" value="True" />
+					<int name="min_completed" value="1" />
+					<int name="max_completed" value="100" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="272943062">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="11246227" />
+					<bool name="is_present" value="False" />
+					<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_outpost_cannon" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<bool name="include_queued" value="True" />
+					<int name="min_completed" value="1" />
+					<int name="max_completed" value="100" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="55719112">
+					<enum name="reason" value="usage_and_display" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="False" />
+					<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_outpost_cannon" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<bool name="include_queued" value="False" />
+					<int name="min_completed" value="1" />
+					<int name="max_completed" value="100" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="-730511984">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="11150626" />
+					<bool name="is_present" value="False" />
+					<instance_reference name="upgrade_name" value="upgrade\races\chinese\research\upgrade_outpost_handcannonslits_chi" />
+					<bool name="include_queued" value="True" />
+					<int name="min_completed" value="1" />
+					<int name="max_completed" value="100" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="-761475755">
+					<enum name="reason" value="usage_and_display" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="False" />
+					<instance_reference name="upgrade_name" value="upgrade\races\chinese\research\upgrade_outpost_handcannonslits_chi" />
+					<bool name="include_queued" value="False" />
+					<int name="min_completed" value="1" />
+					<int name="max_completed" value="100" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="1168124234">
+					<enum name="reason" value="usage_and_display" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="False" />
+					<instance_reference name="upgrade_name" value="upgrade\races\byzantine\research\upgrade_outpost_mangonel_byz" />
+					<bool name="include_queued" value="False" />
+					<int name="min_completed" value="1" />
+					<int name="max_completed" value="100" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="-1891755978">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="11246227" />
+					<bool name="is_present" value="False" />
+					<instance_reference name="upgrade_name" value="upgrade\races\byzantine\research\upgrade_outpost_mangonel_byz" />
+					<bool name="include_queued" value="True" />
+					<int name="min_completed" value="1" />
+					<int name="max_completed" value="100" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+			</list>
+			<file name="ui_kicker_icon_name" value="" />
+			<locstring name="ui_squad_name_override" value="0" />
+			<locstring name="ui_squad_help_text_override" value="0" />
+			<locstring name="ui_squad_extra_text_override" value="0" />
+			<list name="ui_preview">
+			</list>
+			<string name="speech_code" value="" />
+			<file name="ui_squad_portrait_icon_override" value="" />
+			<group name="ui_position">
+				<int name="ui_position_row" value="1" />
+				<int name="ui_position_column" value="3" />
+			</group>
+			<float name="min_music_intensity" value="0" />
+			<group name="state_tree_references">
+				<template_reference name="on_begin_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="on_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="xp3_upgrade_outpost\upgrade_outpost_cannon" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="on_cancel_action_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="on_action_entity_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+				<template_reference name="on_action_squad_tree" value="state_tree_reference_info">
+					<state_tree_node name="ActionTree_OpeningBranch" value="" />
+					<bool name="start_suspended" value="False" />
+				</template_reference>
+			</group>
+			<list name="upgrade_type">
+				<enum name="upgrade_type" value="military_upgrade" List.ItemID="1043124394" />
+				<enum name="upgrade_type" value="abbasid_upgrade" List.ItemID="1104733536" />
+				<enum name="upgrade_type" value="abbasid_ha_01_upgrade" List.ItemID="131557076" />
+				<enum name="upgrade_type" value="ayyubid_cmp_upgrade" List.ItemID="737876460" />
+				<enum name="upgrade_type" value="byzantine_upgrade" List.ItemID="1877694296" />
+				<enum name="upgrade_type" value="chinese_upgrade" List.ItemID="-43426920" />
+				<enum name="upgrade_type" value="chinese_ha_01_upgrade" List.ItemID="472553534" />
+				<enum name="upgrade_type" value="crusader_cmp_upgrade" List.ItemID="713246791" />
+				<enum name="upgrade_type" value="english_upgrade" List.ItemID="854587350" />
+				<enum name="upgrade_type" value="french_upgrade" List.ItemID="-384565986" />
+				<enum name="upgrade_type" value="french_ha_01_upgrade" List.ItemID="-1495656944" />
+				<enum name="upgrade_type" value="hre_upgrade" List.ItemID="-1604084462" />
+				<enum name="upgrade_type" value="japanese_upgrade" List.ItemID="-1250223331" />
+				<enum name="upgrade_type" value="malian_upgrade" List.ItemID="1669099560" />
+				<enum name="upgrade_type" value="ottoman_upgrade" List.ItemID="1873975237" />
+				<enum name="upgrade_type" value="sultinate_upgrade" List.ItemID="1235470599" />
+				<enum name="upgrade_type" value="scar_imperial_age_upgrade" List.ItemID="-1616116855" />
+			</list>
+			<string name="requirements_openingbranch" value="" />
+			<instance_reference name="ui_menu" value="" />
+			<bool name="is_progress_permanent" value="False" />
+			<group name="ui_codex_info">
+				<int name="priority" value="4700" />
+				<bool name="exclusive" value="False" />
+				<group name="ui_position">
+					<int name="ui_position_column" value="-1" />
+					<int name="ui_position_row" value="-1" />
+				</group>
+			</group>
+			<group name="filter_conditions">
+				<state_tree_node name="apply_to_filter_condition_statetree_ref" value="" />
+				<enum name="apply_to_target_type" value="entity" />
+				<list name="apply_to_unit_classes">
+				</list>
+				<enum name="apply_to_application_type" value="current_and_future_units" />
+				<enum name="apply_to_future_units" value="current_and_future_units" />
+				<group name="ai_unit_types">
+					<list name="any">
+					</list>
+					<list name="none">
+					</list>
+				</group>
+			</group>
+			<enum_table name="squad_cost">
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="popcap" value="0" />
+				<float name="food" value="0" />
+				<float name="wood" value="0" />
+				<float name="stone" value="0" />
+				<float name="gold" value="0" />
+				<float name="militia_hre" value="0" />
+				<float name="merc_byz" value="0" />
+			</enum_table>
+			<list name="float_properties">
+			</list>
+			<list name="int_properties">
+			</list>
+			<enum name="ui_group_cast_type" value="single" />
+			<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_outpost\tech_outpost_cannon" />
+			<bool name="ignore_completion_state_tree_openingbranch" value="False" />
+		</group>
+		<uniqueid name="pbgid" value="2147483108" />
+		<instance_reference name="parent_pbg" value="" />
+	</variant>
+</instance>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="4" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="982723393" List.ParentItemID="982723393">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="1868141578" List.ParentItemID="1868141578">
+					<group name="info">
+						<file name="flag_icon_override" value="korea\koreans_2" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="712128181" List.ParentItemID="712128181">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="-946627283" List.ParentItemID="-946627283">
+					<instance_reference name="type" value="ebps\korea\kr_unit_naval_fireship_3_chi_ha_01" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="395234859" List.ParentItemID="395234859">
+			<list name="requirement_table" comment="Requires castle age&#13;&#10;">
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="-658422521" List.ParentItemID="-658422521">
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\chinese_ha_01" overrideParent="True" List.ItemID="1900922488" />
+			</list>
+			<list name="squad_type_list">
+				<enum name="squad_type" value="ship" List.ItemID="-1799949028" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_speech_ext" List.ItemID="-1895530732" List.ParentItemID="-1895530732">
+			<list name="age_mapping">
+				<int name="age_number" value="3" overrideParent="True" List.ItemID="-333522356" List.ParentItemID="-333522356" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147483087" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_naval_fireship_3" />
+</instance>

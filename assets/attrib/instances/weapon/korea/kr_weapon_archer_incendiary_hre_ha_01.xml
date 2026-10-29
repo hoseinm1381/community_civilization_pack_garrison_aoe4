@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="4" description="" template="weapon">
+	<group name="weapon_bag">
+		<string name="fx_munition_name" value="common\arrow_incendiary" overrideParent="True" />
+		<string name="name" value="Archer Incendiary Siege" overrideParent="True" />
+		<group name="projectile">
+			<instance_reference name="projectile" value="ebps\projectiles\projectile_arrow_incendiary" overrideParent="True" />
+		</group>
+		<group name="burst" overrideParent="True">
+			<bool name="can_burst" value="True" overrideParent="True" />
+			<group name="duration">
+				<float name="max" value="0.25" overrideParent="True" />
+				<float name="min" value="0.25" overrideParent="True" />
+			</group>
+			<group name="rate_of_fire">
+				<float name="max" value="4" overrideParent="True" />
+				<float name="min" value="4" overrideParent="True" />
+			</group>
+			<group name="incremental_target_table">
+				<float name="accuracy_multiplier" value="0" />
+				<group name="search_radius">
+					<float name="far" value="0" />
+					<float name="near" value="0" />
+					<float name="mid" value="0" />
+				</group>
+			</group>
+			<group name="duration_multiplier">
+				<float name="near" value="1" />
+				<float name="far" value="1" />
+				<float name="mid" value="1" />
+			</group>
+			<group name="rate_of_fire_multiplier">
+				<float name="near" value="1" />
+				<float name="far" value="1" />
+				<float name="mid" value="1" />
+			</group>
+			<bool name="focus_fire" value="False" />
+			<bool name="convert_target_to_position_before_firing" value="False" />
+			<bool name="uninterruptible_burst_fire" value="False" />
+		</group>
+		<group name="fire">
+			<float name="wind_down" value="0.375" overrideParent="True" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="2147483161" />
+	<instance_reference name="parent_pbg" value="weapon\korea\kr_weapon_archer_2_hre_ha_01" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+</instance>

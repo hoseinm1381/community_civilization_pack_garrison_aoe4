@@ -1,3 +1,18 @@
+# Current source: owner-accepted Garrison 1.1.0
+
+On 2026-10-29 the owner reported "it worked" and authorized source promotion
+and GitHub main push, explicitly without uploading a release. Read
+docs/ACCEPTANCE_110.md, docs/RELEASE_110.md, development.json and README.md.
+This notice supersedes candidate-only and 1.0.6 current-source statements below.
+Acceptance test scope was not specified; do not infer multiplayer, performance
+or excluded-start/save support. Korean models remain deferred.
+Preserve all existing art, voices, independent identities and immutable rebuild
+packs. Keep temp test outputs and recovery inputs. No release publication,
+installation, cleanup or deletion is authorized. Future new work follows the
+existing candidate review workflow.
+
+---
+
 # Community Civilization Pack: Garrison GitHub workspace
 
 ## Accepted current release: 1.0.6 (2026-10-28)

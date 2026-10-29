@@ -1,47 +1,30 @@
-# Community Civilization Pack — Garrison
+# Community Civilization Pack â€” Garrison
 
-Current release: **1.0.6 — Persia and Vietnam**, accepted by the owner on 2026-10-28.
+Current source: **1.1.0 â€” Vietnam, Persia and Korea**. Accepted baseline: **1.0.6**.
 
-[Download 1.0.6](https://github.com/hoseinm1381/community_civilization_pack_garrison_aoe4/releases/download/v1.0.6/community_civilization_pack-1.0.6.zip) · [Patch notes and rebuild guide](docs/RELEASE_106.md)
+- China: China or Vietnam. Delhi Sultanate: Delhi or Persia.
+- Zhu Xi's Legacy: Zhu Xi's Legacy or Korea.
+- Shared 30-second selection; timeout and AI retain the original civilization.
+- Fresh standard Dark Age human matches. Korean models come later.
+- Accepted Persian/Vietnamese art, voices and native resource fixes are preserved.
 
-- Select China in the lobby: choose China or Vietnam at match start.
-- Select Delhi Sultanate: choose Delhi or Persia.
-- One shared 30-second deadline; timeout keeps the original civilization.
-- Use standard Dark Age human starts. AI remains native.
-- Persian buildings, landmarks and units now use the accepted custom visuals.
+Read [the 1.1.0 report and native checklist](docs/RELEASE_110.md).
+Native build and full package readback passed. On 2026-10-29 the owner reported
+that it worked and accepted the source for GitHub. Individual gameplay cases,
+multiplayer and measured performance have no additional recorded results.
+See [the acceptance record](docs/ACCEPTANCE_110.md). The latest published
+Garrison release remains 1.0.6; no 1.1.0 release upload was requested.
 
-Develop and review new Persian assets in `F:/aoe_4_temp/Temp_before_github_push`.
-After owner acceptance, transfer the accepted changes and all important editable
-inputs into `F:/aoe_4_temp/community_civilization_pack_garrison_aoe4`, document and
-verify, then commit/push `main`. Delete temp only after verified preservation and
-confirmed push. Keep storage compact without losing editable sources. The accepted
-1.0.6 inputs are promoted; future art follows [Persia asset workflow](docs/PERSIA_ASSET_WORKFLOW.md).
+Run `python -B tools/verify_current_source.py`,
+`python -B tools/verify_korea_garrison.py`, and both maintained suites under
+`tests/current` and `tests/persia`. Test dependency: `requirements-tests.txt`.
+Native/compact rebuild: configure `workspace.local.json`, then run
+`python -B tools/compact/github_build.py native` and `package`.
+Do not substitute a broad native burn for the owning archive assembly.
 
-Run `python -B tools/verify_current_source.py` and
-`python -B -m unittest discover -s tests/persia -p "test_*.py"`.
-The Lua tests need the pinned `requirements-tests.txt` dependency. Install it
-under `F:/aoe_4_temp/Temp_before_github_push/test-python` with pip `--target`,
-and set `PYTHONPATH` to that directory for the test run. It is disposable after
-the confirmed push; native build/package tools themselves use standard Python.
-Native builds and final selective assembly are separate from source checks.
-See [current implementation and evidence](docs/CURRENT_WORK.md),
-[Persia delivery and acceptance](docs/PERSIA_GARRISON.md), and
-[agent instructions](AGENTS.md).
-
-Independent build: configure `workspace.local.json` from `workspace.example.json`,
-then run `python -B tools/compact/github_build.py native` and
-`python -B tools/compact/github_build.py package`. All scratch work uses
-`F:/aoe_4_temp/Temp_before_github_push`; remove it after a confirmed push.
-See [GitHub-only build proof and storage policy](docs/GITHUB_WORKSPACE_090.md).
-
-Current local package: `output/current/1.0.6/community_civilization_pack-1.0.6.zip`.
-A source-only burn is not the final Garrison archive: it must retain the owning
-Vietnam art, voice and compiled-only resources. The compact reader reconstructs
-those inputs without duplicating old media packs.
-
-Source/static, native burn, archive/package verification and native-game
-acceptance are distinct gates. Fresh-match Persian roster/landmark/repair,
-save/load, matched performance and multiplayer coverage remain separate. The owner
-confirmed 1.0.6 worked; individual test coverage was not specified.
+Keep this permanent repository at its existing path. Candidate work belongs in
+`F:/aoe_4_temp/Temp_before_github_push`; promote only after owner confirmation.
+Keep immutable packs and editable art/audio/recovery inputs. No automatic push,
+publication, installation or cleanup follows from candidate preparation.
 
 Credits: **hosein81 and chilly5**.

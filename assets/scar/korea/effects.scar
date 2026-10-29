@@ -1,0 +1,203 @@
+local function weaponEffects(player, effects)
+    for _, effect in ipairs(effects) do
+        Korea_PlayerModifier(player, MAT_WeaponType, effect.property,
+            effect.multiply and MUT_Multiplication or MUT_Addition, effect.value,
+            Korea_BP("weapon", effect.weapon))
+    end
+end
+
+function KoreaEffects_Start(player)
+    weaponEffects(player, KoreaEffectCatalog.start)
+end
+
+function KoreaEffects_Upgrade(player, context)
+    local name = BP_GetName(context.upgrade)
+    if player.effects[name] then return end
+    player.effects[name] = true
+    for sourceName, effects in pairs(KoreaEffectCatalog.upgrades) do
+        if context.upgrade == Korea_BP("upgrade", sourceName) then weaponEffects(player, effects) end
+    end
+    if context.upgrade == Korea_BP("upgrade", "upgrade_library_flaming_charge") then player.trident = true end
+    if context.upgrade == Korea_BP("upgrade", "upgrade_econ_improved_carry_capacity_abb") then
+        for _, resource in ipairs({"food", "wood", "gold", "stone"}) do
+            Korea_PlayerModifier(player, MAT_EntityType, "resource_entity_cost_" .. resource,
+                MUT_Multiplication, 0.6, Korea_BP("ebps", "unit_villager_1_chi_ha_01"))
+        end
+    end
+    if context.upgrade == Korea_BP("upgrade", "upgrade_treasure_tower_tem") then
+        -- The donor's follow-up is automatic and has no separate Literature payment.
+        Player_CompleteUpgrade(player.id, Korea_BP("upgrade", "upgrade_royal_edict_hre"))
+    end
+end
+
+function KoreaEffects_Damage(context)
+    if not Korea_Alive(context.attacker) or not Korea_Alive(context.victim) or World_OwnsEntity(context.attacker) then return end
+    local player = Korea_Player(Entity_GetPlayerOwner(context.attacker))
+    if player == nil or not player.trident or context.victimSquad == nil then return end
+    local bp = Entity_GetBlueprint(context.attacker)
+    local spear = false
+    for age = 1, 4 do
+        if bp == Korea_BP("ebps", "unit_spearman_" .. tostring(age) .. "_chi_ha_01") then spear = true end
+    end
+    if not spear then return end
+    local id = Entity_GetID(context.victim)
+    local previous = KoreaState.debuffs[id]
+    if previous then for _, handle in ipairs(previous.handles) do Korea_RemoveModifier(handle) end end
+    local handles = {}
+    for _, property in ipairs({"speed_maximum_modifier", "acceleration_modifier"}) do
+        local handle = Korea_EntityModifier(context.victim, property, MUT_Multiplication, 0.9, nil, 6)
+        if handle ~= nil then table.insert(handles, handle) end
+    end
+    KoreaState.debuffs[id] = {handles = handles, expires = World_GetGameTime() + 6}
+end
+
+function KoreaEffects_Transform(context, player, toArcher)
+    local entity = context.executer
+    if not Korea_Alive(entity) then return end
+    for age = 2, 4 do
+        local from = "unit_" .. (toArcher and "horseman" or "archer") .. "_" .. tostring(age) .. "_ayy"
+        if Entity_GetBlueprint(entity) == Korea_BP("ebps", from) then
+            local target = "unit_" .. (toArcher and "archer" or "horseman") .. "_" .. tostring(age) .. "_ayy"
+            local ebp, sbp = Korea_BP("ebps", target), Korea_BP("sbps", target)
+            local health = Entity_GetHealthPercentage(entity)
+            local squad = Entity_GetSquad(entity)
+            Entity_ConvertBlueprint(entity, ebp)
+            Squad_ConvertBlueprint(squad, sbp)
+            Entity_SetHealth(entity, health)
+            -- World entity identity survives conversion, as does its kill ledger.
+            return
+        end
+    end
+end
+
+function KoreaEffects_Kill(context)
+    if context.killer == nil or context.victim == nil or context.killer == context.victim
+        or not Korea_Alive(context.killer) or World_OwnsEntity(context.killer) then return end
+    local player = Korea_Player(Entity_GetPlayerOwner(context.killer))
+    if player == nil then return end
+    local bp = Entity_GetBlueprint(context.killer)
+    for age = 2, 4 do
+        for _, role in ipairs({"archer", "horseman"}) do
+            if bp == Korea_BP("ebps", "unit_" .. role .. "_" .. tostring(age) .. "_ayy") then
+                local id = Entity_GetID(context.killer)
+                player.unitKills[id] = (player.unitKills[id] or 0) + 1
+                player.kills = player.kills + 1
+                return
+            end
+        end
+    end
+end
+
+function KoreaEffects_Barrage(context, player, keep)
+    local entity = context.executer
+    if not Korea_Alive(entity) or context.target == nil
+        or Entity_GetPlayerOwner(entity) ~= player.id then return end
+    local id = Entity_GetID(entity)
+    if KoreaState.barrages[id] then return end
+    local weapon = Korea_BP("weapon", keep and "weapon_barrage_initial_explosive" or "weapon_acre_barrage_dot_abb")
+    local handles = {}
+    for _, effect in ipairs({{"weapon_burst_rate_of_fire_modifier", keep and 10 or 50},
+        {"range_weapon_modifier", keep and 20 or 16}}) do
+        local modifier = Modifier_Create(MAT_Weapon, effect[1], MUT_Multiplication, false, effect[2], weapon)
+        local handle = Modifier_ApplyToEntity(modifier, entity, 7)
+        if handle ~= nil then table.insert(handles, handle) end
+    end
+    local group = keep and EGroup_CreateUnique() or SGroup_CreateUnique()
+    if keep then
+        EGroup_Add(group, entity)
+        LocalCommand_EntityPos(player.id, group, CMD_AttackForced, context.target)
+        EGroup_Destroy(group)
+    else
+        SGroup_Add(group, Entity_GetSquad(entity))
+        LocalCommand_SquadPos(player.id, group, SCMD_Attack, context.target, false)
+        SGroup_Destroy(group)
+    end
+    KoreaState.barrages[id] = {id = id, player = player, keep = keep, handles = handles,
+        stopAt = World_GetGameTime() + (keep and 6 or 7), expires = World_GetGameTime() + 7}
+end
+
+local function stopBarrage(entity, record)
+    if record.stopped then return end
+    record.stopped = true
+    -- A captured entity belongs to its new player; never issue the old owner's
+    -- delayed command to it. Clear the forced ground order with native Stop,
+    -- not the donor's random attack point (which is inside the boosted range).
+    if Entity_GetPlayerOwner(entity) ~= record.player.id then return end
+    if record.keep then
+        if Entity_GetActiveCommand(entity) ~= CMD_AttackForced then return end
+        local group = EGroup_CreateUnique()
+        EGroup_Add(group, entity)
+        LocalCommand_Entity(record.player.id, group, CMD_Stop)
+        EGroup_Destroy(group)
+    else
+        local squad = Entity_GetSquad(entity)
+        if Squad_GetActiveCommand(squad) ~= SCMD_Attack then return end
+        local group = SGroup_CreateUnique()
+        SGroup_Add(group, squad)
+        LocalCommand_Squad(record.player.id, group, SCMD_Stop, false)
+        SGroup_Destroy(group)
+    end
+end
+
+local function applyDecree(player, record)
+    record.handles = {}
+    for _, resource in ipairs(record.resources) do
+        local factor = resource == "food" and 1.6 or 1.3
+        local properties = {"resource_entity_harvest_rate_" .. resource}
+        if resource == "wood" then table.insert(properties, "resource_carry_capacity_wood")
+        elseif resource ~= "food" then table.insert(properties, "resource_entity_harvest_efficiency_" .. resource) end
+        for _, property in ipairs(properties) do
+            local handle = Korea_PlayerModifier(player, MAT_EntityType, property, MUT_Multiplication, factor,
+                Korea_BP("ebps", "unit_villager_1_chi_ha_01"), math.max(0.01, record.expires - World_GetGameTime()))
+            if handle ~= nil then table.insert(record.handles, handle) end
+        end
+    end
+end
+
+function KoreaEffects_Decree(player, resources, ability)
+    if not Korea_Functioning(player.landmarks.hall) then
+        -- A queued native ability can complete on the same tick the Hall ruins.
+        local paid = 300
+        if ability ~= nil then paid = Player_GetAbilityBPCost(player.id, ability).merc_byz or 0 end
+        Korea_AddLiterature(player, paid)
+        return
+    end
+    local record = {resources = resources, expires = World_GetGameTime() + 60, active = true}
+    applyDecree(player, record)
+    table.insert(player.decrees, record)
+end
+
+function KoreaEffects_Tick(player, now)
+    for i = #player.decrees, 1, -1 do
+        local record = player.decrees[i]
+        local active = player.landmarks.hall ~= nil and now < record.expires
+        if record.active and not active then
+            for _, handle in ipairs(record.handles) do Korea_RemoveModifier(handle) end
+        elseif active and not record.active then applyDecree(player, record) end
+        record.active = active
+        if now >= record.expires then table.remove(player.decrees, i) end
+    end
+end
+
+function KoreaEffects_Timers(now)
+    for id, record in pairs(KoreaState.debuffs) do
+        if now >= record.expires or Korea_Entity(id) == nil then KoreaState.debuffs[id] = nil end
+    end
+    local barrageIDs = {}
+    for id, _ in pairs(KoreaState.barrages) do table.insert(barrageIDs, id) end
+    table.sort(barrageIDs)
+    for _, id in ipairs(barrageIDs) do
+        local record = KoreaState.barrages[id]
+        local entity = Korea_Entity(id)
+        local alive = Korea_Alive(entity)
+        local lost = alive and Entity_GetPlayerOwner(entity) ~= record.player.id
+        local ruined = alive and record.keep and not Korea_Functioning(entity)
+        if not alive or lost or ruined or now >= record.expires then
+            if alive then stopBarrage(entity, record) end
+            for _, handle in ipairs(record.handles) do Korea_RemoveModifier(handle) end
+            KoreaState.barrages[id] = nil
+        elseif now >= record.stopAt then
+            stopBarrage(entity, record)
+        end
+    end
+end

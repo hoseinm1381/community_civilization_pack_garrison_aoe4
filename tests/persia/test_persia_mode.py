@@ -22,6 +22,8 @@ class ModePairTests(unittest.TestCase):
             function EBP_Exists() return true end
             function SBP_Exists() return true end
             function PersiaBlueprints_Available() return true end
+            function KoreaBlueprints_Available() return true end
+            function KoreaLifecycle_Start() end
             function World_GetGameTime() return env.clock end
             function Network_RegisterEvent(name) env.network[name]=true end
             function Network_RemoveEvent(name) env.network[name]=nil end

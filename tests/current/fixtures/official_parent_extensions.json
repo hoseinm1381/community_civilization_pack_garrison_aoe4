@@ -1,0 +1,635 @@
+{
+  "archive_sha256": "cbaf6803ca8309cfb3861c8a19c3c9c34c0ec50d7c6c507f9c6906be301cfe5c",
+  "records": {
+    "ebps\\races\\core\\units\\unit_villager_1": {
+      "default": {
+        "parent": {
+          "name": "parent_pbg",
+          "value": "ebps\\races\\core\\units\\unit_alpha"
+        },
+        "list": {
+          "name": "extensions",
+          "overrideParent": "True"
+        },
+        "items": [
+          {
+            "name": "exts",
+            "value": "ebpextensions\\entity_blueprint_ext",
+            "List.ItemID": "847857005"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\sim_entity_ext",
+            "List.ItemID": "-802292235"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\ability_ext",
+            "List.ItemID": "-943554142"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\action_apply_ext",
+            "List.ItemID": "971424536"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\action_tree_ext",
+            "List.ItemID": "783699706"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\cost_ext",
+            "List.ItemID": "163824703"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\health_ext",
+            "List.ItemID": "440395020"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\hit_object_ext",
+            "List.ItemID": "-1344123118"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\line_of_sight_ext",
+            "List.ItemID": "-282204303"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\modifier_ext",
+            "List.ItemID": "349744145"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\population_ext",
+            "List.ItemID": "1610633927"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\sight_ext",
+            "List.ItemID": "778234458"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\type_ext",
+            "List.ItemID": "125879439"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\ui_ext",
+            "List.ItemID": "537445819"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\combat_ext",
+            "List.ItemID": "666654805"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\moving_ext",
+            "List.ItemID": "1666359935"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\holdable_ext",
+            "List.ItemID": "-1623318513"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\posture_ext",
+            "List.ItemID": "621630329"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\speech_ext",
+            "List.ItemID": "582469585"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\animation_action_tree_ext",
+            "List.ItemID": "2051648697"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\hit_react_tree_ext",
+            "List.ItemID": "-744831086"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\entity_targeting_ext",
+            "List.ItemID": "742474295"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\resource_gatherer_ext",
+            "comment": "NOTE!!!! The Mongol Villager has a unique Gather Type list and needs to be manually updated.\r\n\r\nThe Berry Bush and Farm have a different order in this list so that the Mongols will gather Berries when completing the Ger / House.",
+            "List.ItemID": "-138597253"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\stimulus_emission_ext",
+            "List.ItemID": "-833921478"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\stimulus_perception_ext",
+            "List.ItemID": "1170679707"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\statemodel_ext",
+            "List.ItemID": "-195887779"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\trigger_volume_ext",
+            "List.ItemID": "842378385"
+          }
+        ]
+      },
+      "campaign": {
+        "parent": {
+          "name": "parent_pbg",
+          "value": ""
+        },
+        "list": {
+          "name": "extensions"
+        },
+        "items": [
+          {
+            "name": "exts",
+            "value": "ebpextensions\\entity_blueprint_ext",
+            "List.ItemID": "-1637443658"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\sim_entity_ext",
+            "List.ItemID": "922638440"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\ability_ext",
+            "List.ItemID": "-1659154962"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\action_apply_ext",
+            "List.ItemID": "1085488736"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\action_tree_ext",
+            "List.ItemID": "380669700"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\cost_ext",
+            "List.ItemID": "-1743141385"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\health_ext",
+            "List.ItemID": "-904489017"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\hit_object_ext",
+            "List.ItemID": "-2059701879"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\line_of_sight_ext",
+            "List.ItemID": "1447177700"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\modifier_ext",
+            "List.ItemID": "-118069087"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\population_ext",
+            "List.ItemID": "1764043684"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\sight_ext",
+            "List.ItemID": "1848384559"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\type_ext",
+            "List.ItemID": "804994421"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\ui_ext",
+            "List.ItemID": "1091950821"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\combat_ext",
+            "List.ItemID": "105106156"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\modifier_apply_ext",
+            "List.ItemID": "-1483004228"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\moving_ext",
+            "List.ItemID": "1794245939"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\holdable_ext",
+            "List.ItemID": "-1093831096"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\posture_ext",
+            "List.ItemID": "988295327"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\speech_ext",
+            "List.ItemID": "1715600490"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\animation_action_tree_ext",
+            "List.ItemID": "524432385"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\hit_react_tree_ext",
+            "List.ItemID": "-556259776"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\entity_targeting_ext",
+            "List.ItemID": "681493670"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\resource_gatherer_ext",
+            "comment": "NOTE!!!! The Mongol Villager has a unique Gather Type list and needs to be manually updated.\r\n\r\nThe Berry Bush and Farm have a different order in this list so that the Mongols will gather Berries when completing the Ger / House.",
+            "List.ItemID": "173177125"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\stimulus_emission_ext",
+            "List.ItemID": "283927970"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\stimulus_perception_ext",
+            "List.ItemID": "-686536775"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\statemodel_ext",
+            "List.ItemID": "1472103589"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\trigger_volume_ext",
+            "List.ItemID": "841719195"
+          }
+        ]
+      },
+      "xp3": {
+        "parent": {
+          "name": "parent_pbg",
+          "value": "ebps\\races\\core\\units\\unit_alpha"
+        },
+        "list": {
+          "name": "extensions",
+          "overrideParent": "True"
+        },
+        "items": [
+          {
+            "name": "exts",
+            "value": "ebpextensions\\entity_blueprint_ext",
+            "List.ItemID": "847857005"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\sim_entity_ext",
+            "List.ItemID": "-802292235"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\ability_ext",
+            "List.ItemID": "-943554142"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\action_apply_ext",
+            "List.ItemID": "971424536"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\action_tree_ext",
+            "List.ItemID": "783699706"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\cost_ext",
+            "List.ItemID": "163824703"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\health_ext",
+            "List.ItemID": "440395020"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\hit_object_ext",
+            "List.ItemID": "-1344123118"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\line_of_sight_ext",
+            "List.ItemID": "-282204303"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\modifier_ext",
+            "List.ItemID": "349744145"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\population_ext",
+            "List.ItemID": "1610633927"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\sight_ext",
+            "List.ItemID": "778234458"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\type_ext",
+            "List.ItemID": "125879439"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\ui_ext",
+            "List.ItemID": "537445819"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\combat_ext",
+            "List.ItemID": "666654805"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\moving_ext",
+            "List.ItemID": "1666359935"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\holdable_ext",
+            "List.ItemID": "-1623318513"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\posture_ext",
+            "List.ItemID": "621630329"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\speech_ext",
+            "List.ItemID": "582469585"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\animation_action_tree_ext",
+            "List.ItemID": "2051648697"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\hit_react_tree_ext",
+            "List.ItemID": "-744831086"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\entity_targeting_ext",
+            "List.ItemID": "742474295"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\resource_gatherer_ext",
+            "comment": "NOTE!!!! The Mongol Villager has a unique Gather Type list and needs to be manually updated.\r\n\r\nThe Berry Bush and Farm have a different order in this list so that the Mongols will gather Berries when completing the Ger / House.",
+            "List.ItemID": "-138597253"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\stimulus_emission_ext",
+            "List.ItemID": "-833921478"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\stimulus_perception_ext",
+            "List.ItemID": "1170679707"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\statemodel_ext",
+            "List.ItemID": "-195887779"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\trigger_volume_ext",
+            "List.ItemID": "842378385"
+          }
+        ]
+      },
+      "cordoba": {
+        "parent": {
+          "name": "parent_pbg",
+          "value": "ebps\\races\\core\\units\\unit_alpha"
+        },
+        "list": {
+          "name": "extensions",
+          "overrideParent": "True"
+        },
+        "items": [
+          {
+            "name": "exts",
+            "value": "ebpextensions\\entity_blueprint_ext",
+            "List.ItemID": "847857005"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\sim_entity_ext",
+            "List.ItemID": "-802292235"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\ability_ext",
+            "List.ItemID": "-943554142"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\action_apply_ext",
+            "List.ItemID": "971424536"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\action_tree_ext",
+            "List.ItemID": "783699706"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\cost_ext",
+            "List.ItemID": "163824703"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\health_ext",
+            "List.ItemID": "440395020"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\hit_object_ext",
+            "List.ItemID": "-1344123118"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\line_of_sight_ext",
+            "List.ItemID": "-282204303"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\modifier_ext",
+            "List.ItemID": "349744145"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\population_ext",
+            "List.ItemID": "1610633927"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\sight_ext",
+            "List.ItemID": "778234458"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\type_ext",
+            "List.ItemID": "125879439"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\ui_ext",
+            "List.ItemID": "537445819"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\combat_ext",
+            "List.ItemID": "666654805"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\moving_ext",
+            "List.ItemID": "1666359935"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\holdable_ext",
+            "List.ItemID": "-1623318513"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\posture_ext",
+            "List.ItemID": "621630329"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\speech_ext",
+            "List.ItemID": "582469585"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\animation_action_tree_ext",
+            "List.ItemID": "2051648697"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\hit_react_tree_ext",
+            "List.ItemID": "-744831086"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\entity_targeting_ext",
+            "List.ItemID": "742474295"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\resource_gatherer_ext",
+            "comment": "NOTE!!!! The Mongol Villager has a unique Gather Type list and needs to be manually updated.\r\n\r\nThe Berry Bush and Farm have a different order in this list so that the Mongols will gather Berries when completing the Ger / House.",
+            "List.ItemID": "-138597253"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\stimulus_emission_ext",
+            "List.ItemID": "-833921478"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\stimulus_perception_ext",
+            "List.ItemID": "1170679707"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\statemodel_ext",
+            "List.ItemID": "-195887779"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\trigger_volume_ext",
+            "List.ItemID": "842378385"
+          }
+        ]
+      }
+    },
+    "ebps\\races\\core\\units\\unit_alpha": {
+      "default": {
+        "parent": {
+          "name": "parent_pbg",
+          "value": ""
+        },
+        "list": {
+          "name": "extensions"
+        },
+        "items": []
+      },
+      "xp3": {
+        "parent": {
+          "name": "parent_pbg",
+          "value": ""
+        },
+        "list": {
+          "name": "extensions"
+        },
+        "items": []
+      },
+      "cordoba": {
+        "parent": {
+          "name": "parent_pbg",
+          "value": ""
+        },
+        "list": {
+          "name": "extensions"
+        },
+        "items": []
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+function KoreaResearch_Observatory(player)
+    if not player.observatoryCapacityGranted then
+        player.observatoryCapacityGranted = true
+        -- Stock Zhu Xi stores only two library choices. The Observatory can
+        -- leave four unspent choices; increasing a ledger alone loses two.
+        Korea_PlayerModifier(player, MAT_Player, "resource_cap_action_player_modifier", MUT_Addition, 2, "")
+    end
+    enableOffers(player, KoreaResearchCore.Observatory(player.research, KoreaForeignPool, pick))
+    Player_SetResource(player.id, RT_Action, player.research.allowances)
+end

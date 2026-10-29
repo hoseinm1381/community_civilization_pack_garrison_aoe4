@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="4" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="2065319766" List.ParentItemID="2065319766">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="103676099" List.ParentItemID="103676099">
+					<group name="info">
+						<locstring name="help_text" value="12321" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<file name="flag_icon_override" value="korea\koreans_2" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-1721305897" List.ParentItemID="-1721305897">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="125465963" List.ParentItemID="125465963">
+					<instance_reference name="type" value="ebps\korea\kr_unit_naval_fishing_boat_2_chi_ha_01" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="1846070421" List.ParentItemID="1846070421">
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\chinese_ha_01" overrideParent="True" List.ItemID="1415923947" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_speech_ext" List.ItemID="69914956" List.ParentItemID="69914956">
+			<list name="age_mapping">
+				<int name="age_number" value="2" overrideParent="True" List.ItemID="1491119968" List.ParentItemID="1491119968" />
+				<int name="age_number" value="2" overrideParent="True" List.ItemID="227516412" List.ParentItemID="227516412" />
+				<int name="age_number" value="3" overrideParent="True" List.ItemID="1467963498" List.ParentItemID="1467963498" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147483088" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_naval_fishing_boat_2" />
+</instance>

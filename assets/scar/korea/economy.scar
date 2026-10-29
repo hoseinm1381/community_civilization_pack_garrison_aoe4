@@ -1,0 +1,130 @@
+local seowonName = "building_landmark_age1_meditation_gardens_control_chi_ha_01"
+
+local function complete(entity)
+    return Korea_Alive(entity) and not Entity_IsUnderConstruction(entity) and Entity_GetBuildingProgress(entity) >= 1
+end
+
+function KoreaEconomy_Register(player, entity)
+    if Entity_GetBlueprint(entity) ~= Korea_BP("ebps", seowonName) or not complete(entity) then return end
+    local id = Entity_GetID(entity)
+    if player.seowons[id] then return end
+    local group = EGroup_CreateUnique()
+    World_GetNeutralEntitiesNearPoint(group, Entity_GetPosition(entity), 32)
+    local base = 0
+    for i = 1, EGroup_Count(group) do
+        local resource = EGroup_GetEntityAt(group, i)
+        local bp = Entity_GetBlueprint(resource)
+        if Entity_IsEBPOfType(bp, "tree") then base = base + 0.2
+        elseif Entity_IsEBPOfType(bp, "forage_bush") then base = base + 1.5
+        elseif Entity_IsEBPOfType(bp, "gold") or Entity_IsEBPOfType(bp, "stone") then base = base + 6.25 end
+    end
+    EGroup_Destroy(group)
+    player.seowons[id] = {id = id, base = base}
+    -- The donor queues one scholar for each newly completed academy. Repairs
+    -- retain the same entity ID and never repeat the construction reward.
+    if not player.academyRewards[id] then
+        player.academyRewards[id] = true
+        Entity_QueueProductionItemByPBG(entity, PITEM_Spawn, Korea_BP("sbps", "unit_militia_cru"))
+    end
+end
+
+function KoreaEconomy_Snapshot(player)
+    local academies, scholars, defenses, dropoffs = {}, {}, {}, {}
+    Korea_Entities(player, function(entity)
+        local id = Entity_GetID(entity)
+        if Entity_GetBlueprint(entity) == Korea_BP("ebps", seowonName) then
+            KoreaEconomy_Register(player, entity)
+            if complete(entity) and player.seowons[id] then table.insert(academies, player.seowons[id]) end
+        elseif Entity_IsBuilding(entity) and complete(entity) then
+            local bp = Entity_GetBlueprint(entity)
+            if Entity_IsEBPOfType(bp, "defensive_structure") then table.insert(defenses, entity) end
+        end
+        if Entity_IsEBPOfType(Entity_GetBlueprint(entity), "resource_drop_off") then table.insert(dropoffs, entity) end
+    end)
+    table.sort(academies, function(a,b) return a.id < b.id end)
+    Korea_Squads(player, function(squad, entity)
+        if Squad_IsOfType(squad, "official") then table.insert(scholars, {squad = squad, entity = entity}) end
+    end)
+    return academies, scholars, defenses, dropoffs
+end
+
+function KoreaEconomy_Tick(player, now)
+    local academies, scholars, defenses, dropoffs = KoreaEconomy_Snapshot(player)
+    local boosted = Korea_HasUpgrade(player, "chart_a_course_aquarius_2")
+    if now >= player.nextAcademy then
+        player.nextAcademy = now + 15
+        local counts = {}
+        for _, scholar in ipairs(scholars) do
+            if boosted or not Squad_IsOfType(scholar.squad, "audio_wynguard_army") then
+                local position = Entity_GetPosition(scholar.entity)
+                for _, academy in ipairs(academies) do
+                    if World_DistancePointToPoint(position, Entity_GetPosition(Korea_Entity(academy.id))) <= 16 then
+                        counts[academy.id] = (counts[academy.id] or 0) + 1
+                        break
+                    end
+                end
+            end
+        end
+        for _, academy in ipairs(academies) do
+            local entity = Korea_Entity(academy.id)
+            local outposts, keeps = 0, 0
+            for _, building in ipairs(defenses) do
+                if World_DistancePointToPoint(Entity_GetPosition(entity), Entity_GetPosition(building)) <= 34 then
+                    local bp = Entity_GetBlueprint(building)
+                    if Entity_IsEBPOfType(bp, "castle") then keeps = keeps + 1
+                    elseif Entity_IsEBPOfType(bp, "outpost") then outposts = outposts + 1 end
+                end
+            end
+            local income = KoreaResearchCore.SeowonIncome(academy.base, counts[academy.id] or 0,
+                Korea_HasUpgrade(player, "upgrade_longbow_arrow_volley_cru"), outposts, keeps)
+            Korea_AddLiterature(player, income)
+            Entity_SetStateModelFloat(entity, "additional_carry_gold_amount", income * 4)
+        end
+    end
+    if now >= player.nextHangul then
+        player.nextHangul = now + 6
+        if Korea_HasUpgrade(player, "upgrade_longbow_arrow_volley_cru") then
+            local income = 0
+            for _, scholar in ipairs(scholars) do
+                for _, academy in ipairs(academies) do
+                    if World_DistancePointToPoint(Entity_GetPosition(scholar.entity), Entity_GetPosition(Korea_Entity(academy.id))) <= 32 then
+                        income = income + 2; break
+                    end
+                end
+            end
+            if income > 0 then Player_AddResource(player.id, RT_Gold, income) end
+        end
+    end
+    if now >= player.nextWater then
+        player.nextWater = now + 30
+        local boats = 0
+        Korea_Squads(player, function(squad)
+            if Squad_IsOfType(squad, "scar_fishing_ship") then boats = boats + 1 end
+            if Korea_HasUpgrade(player, "upgrade_unit_turkic_horse_archer_3_ayy") and Squad_IsOfType(squad, "ship") then
+                boats = boats + 1
+            end
+        end)
+        Korea_AddLiterature(player, boats * 3)
+    end
+    -- Retain the donor's 0.84 supervised drop-off adjustment, but remove its
+    -- exact modifier instead of multiplying by a rounded inverse on every visit.
+    for _, entity in ipairs(dropoffs) do
+        local id = Entity_GetID(entity)
+        local supervised = Entity_GetStateModelBool(entity, "is_supervised_chi")
+        if supervised and player.dropoffs[id] == nil then
+            local properties = {}
+            local bp = Entity_GetBlueprint(entity)
+            if bp == Korea_BP("ebps", "building_econ_food_control_chi_ha_01") then properties = {"food"}
+            elseif bp == Korea_BP("ebps", "building_econ_mining_camp_control_chi_ha_01") then properties = {"gold", "stone"}
+            elseif bp == Korea_BP("ebps", "building_econ_wood_control_chi_ha_01") then properties = {"wood"} end
+            player.dropoffs[id] = {}
+            for _, resource in ipairs(properties) do
+                local handle = Korea_EntityModifier(entity, "resource_drop_off_amount_" .. resource, MUT_Multiplication, 0.84, nil)
+                if handle ~= nil then table.insert(player.dropoffs[id], handle) end
+            end
+        elseif not supervised and player.dropoffs[id] ~= nil then
+            for _, handle in ipairs(player.dropoffs[id]) do Korea_RemoveModifier(handle) end
+            player.dropoffs[id] = nil
+        end
+    end
+end

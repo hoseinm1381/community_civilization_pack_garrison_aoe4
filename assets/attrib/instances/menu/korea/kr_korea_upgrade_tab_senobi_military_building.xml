@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="This menu is used for improved production items in buildings (granted by the Ovoo)." template="menu">
+	<group name="menu_bag">
+		<group name="ui_position">
+			<int name="ui_position_row" value="1" />
+			<int name="ui_position_column" value="2" />
+		</group>
+		<template_reference name="ui_info" value="tables\ui_info">
+			<locstring name="screen_name" value="12206" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+			<locstring name="help_text" value="12220" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+			<file name="icon_name" value="caster_mode\balance_panel\military_population" />
+			<string name="hotkey_name" value="access_secondary_ui_panel" />
+			<string name="tooltip_data_template" value="" />
+			<string name="hotkey_group" value="hud_game" />
+			<locstring name="screen_name_short" value="0" />
+		</template_reference>
+		<template_reference name="behaviour" value="options\menu\nest">
+			<instance_reference name="back" value="" />
+			<bool name="auto_exit" value="True" />
+		</template_reference>
+		<list name="requirements">
+		</list>
+		<instance_reference name="hotkey_binding" value="" />
+		<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+			<template_reference name="command_card_info" value="">
+			</template_reference>
+			<template_reference name="quick_abilities_info" value="">
+			</template_reference>
+			<template_reference name="quick_commands_info" value="">
+			</template_reference>
+			<template_reference name="quick_formation_info" value="">
+			</template_reference>
+			<template_reference name="ping_menu_info" value="">
+			</template_reference>
+			<enum name="category" value="Economic" />
+			<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+				<enum name="quick_commands_hotkey" value="" />
+				<int name="quick_commands_priority" value="-1" />
+				<int name="quick_commands_slot_index" value="-1" />
+				<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+			</template_reference>
+			<template_reference name="relic_radial_menu_info" value="">
+			</template_reference>
+			<enum name="observer_type" value="Disabled" />
+			<group name="issuable_info">
+				<bool name="is_secondary" value="False" />
+				<instance_reference name="secondary_issuable" value="" />
+			</group>
+		</template_reference>
+		<string name="data_template" value="" />
+	</group>
+	<uniqueid name="pbgid" value="2147483051" />
+	<variant name="campaign">
+		<group name="menu_bag">
+			<group name="ui_position">
+				<int name="ui_position_row" value="1" />
+				<int name="ui_position_column" value="2" />
+			</group>
+			<template_reference name="ui_info" value="tables\ui_info">
+				<locstring name="screen_name" value="0" />
+				<locstring name="help_text" value="0" />
+				<file name="icon_name" value="races\common\upgrades\upgrades" />
+				<string name="hotkey_name" value="access_secondary_ui_panel" />
+				<string name="tooltip_data_template" value="" />
+				<string name="hotkey_group" value="hud_selection_orders" />
+				<locstring name="screen_name_short" value="0" />
+			</template_reference>
+			<template_reference name="behaviour" value="options\menu\inline">
+				<int name="columns" value="4" />
+				<int name="rows" value="3" />
+				<bool name="auto_exit" value="True" />
+			</template_reference>
+			<list name="requirements">
+			</list>
+			<instance_reference name="hotkey_binding" value="" />
+			<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+				<template_reference name="command_card_info" value="">
+				</template_reference>
+				<template_reference name="quick_abilities_info" value="">
+				</template_reference>
+				<template_reference name="quick_commands_info" value="">
+				</template_reference>
+				<template_reference name="quick_formation_info" value="">
+				</template_reference>
+				<template_reference name="ping_menu_info" value="">
+				</template_reference>
+				<enum name="category" value="Economic" />
+				<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+					<enum name="quick_commands_hotkey" value="" />
+					<int name="quick_commands_priority" value="-1" />
+					<int name="quick_commands_slot_index" value="-1" />
+					<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+				</template_reference>
+				<template_reference name="relic_radial_menu_info" value="">
+				</template_reference>
+				<enum name="observer_type" value="Disabled" />
+				<group name="issuable_info">
+					<bool name="is_secondary" value="False" />
+					<instance_reference name="secondary_issuable" value="" />
+				</group>
+			</template_reference>
+			<string name="data_template" value="" />
+		</group>
+		<uniqueid name="pbgid" value="2147483051" />
+	</variant>
+</instance>

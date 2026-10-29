@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="behaviour">
+			<bool name="enable_auto_target_search" value="False" overrideParent="True" />
+		</group>
+		<group name="damage">
+			<float name="max" value="44" overrideParent="True" />
+			<float name="min" value="44" overrideParent="True" />
+		</group>
+		<list name="target_type_table" removedIds="-1750500515, 1470002849">
+		</list>
+		<bool name="ui_show_on_tooltip" value="True" overrideParent="True" />
+	</group>
+	<uniqueid name="pbgid" value="2147483166" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_horseman_3_charge" />
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<group name="behaviour">
+				<bool name="enable_auto_target_search" value="False" overrideParent="True" />
+			</group>
+			<group name="cooldown">
+				<group name="duration">
+					<float name="max" value="1.5" overrideParent="True" />
+					<float name="min" value="1.5" overrideParent="True" />
+				</group>
+			</group>
+			<group name="damage">
+				<float name="max" value="13" overrideParent="True" />
+				<float name="min" value="13" overrideParent="True" />
+			</group>
+			<group name="fire">
+				<float name="wind_down" value="0.125" overrideParent="True" />
+			</group>
+			<list name="target_type_table">
+				<group name="target_unit_type_multipliers" List.ItemID="-2132155304" List.ParentItemID="-2132155304">
+					<float name="base_damage_modifier" value="7" overrideParent="True" />
+				</group>
+			</list>
+		</group>
+		<uniqueid name="pbgid" value="2147483166" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_horseman_3_charge" />
+	</variant>
+	<variant name="xp3">
+		<group name="weapon_bag">
+			<group name="behaviour">
+				<bool name="enable_auto_target_search" value="False" overrideParent="True" />
+			</group>
+			<group name="damage">
+				<float name="max" value="13" overrideParent="True" />
+				<float name="min" value="13" overrideParent="True" />
+			</group>
+			<list name="target_type_table">
+				<group name="target_unit_type_multipliers" List.ItemID="-1750500515" List.ParentItemID="-1750500515">
+					<float name="base_damage_modifier" value="13" overrideParent="True" />
+				</group>
+			</list>
+			<bool name="ui_show_on_tooltip" value="False" overrideParent="True" />
+		</group>
+		<uniqueid name="pbgid" value="2147483166" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_horseman_3_charge" />
+	</variant>
+</instance>

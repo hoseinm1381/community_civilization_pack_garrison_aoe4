@@ -1,0 +1,135 @@
+-- Ability costs are charged by native tuning. Only the queued upgrade is free;
+-- the ledger records the effective Literature cost and settles it exactly once.
+KoreaResearchRoutes = {}
+KoreaForeignPool = {}
+local resourceEnums = {food = RT_Food, wood = RT_Wood, gold = RT_Gold, stone = RT_Stone,
+    merc_byz = RT_Merc_Byz, action = RT_Action}
+
+local function key(pbg) return BP_GetName(pbg) end
+
+local function refund(player, costs)
+    for name, enum in pairs(resourceEnums) do
+        local amount = costs[name] or 0
+        if amount ~= 0 then Player_AddResource(player.id, enum, amount) end
+    end
+end
+
+local function pick(count)
+    -- The official Table_GetRandomItem wrapper uses synchronized engine RNG.
+    local indices = {}
+    for i = 1, count do indices[i] = i end
+    return Table_GetRandomItem(indices)
+end
+
+local function enableOffers(player, offers)
+    for _, name in ipairs(offers) do
+        Player_SetAbilityAvailability(player.id, BP_GetAbilityBlueprint(name), ITEM_DEFAULT)
+    end
+end
+
+local function syncAllowances(player)
+    -- RT_Action is a native payment token with stock storage capacity two.
+    -- Keep the complete entitlement in the Korean ledger and refill tokens
+    -- after each payment. Four unspent choices need no shared cap change.
+    Player_SetResource(player.id, RT_Action, math.min(2, player.research.allowances))
+end
+
+function KoreaResearch_Init(player)
+    player.research = KoreaResearchCore.New()
+    local targets = {}
+    for _, route in ipairs(KoreaResearchCatalog) do
+        route.pbg = BP_GetAbilityBlueprint(route.ability)
+        route.upgradePBG = Korea_BP("upgrade", route.upgrade)
+        route.key = key(route.upgradePBG)
+        KoreaResearchRoutes[key(route.pbg)] = route
+        if not targets[route.key] then
+            targets[route.key] = true
+            for _, resource in ipairs({"food", "wood", "gold", "stone", "merc_byz"}) do
+                Korea_PlayerModifier(player, MAT_Upgrade, "upgrade_cost_" .. resource .. "_modifier", MUT_Multiplication, 0, route.upgradePBG)
+            end
+        end
+        if route.foreign then
+            Player_SetAbilityAvailability(player.id, route.pbg, ITEM_REMOVED)
+            Player_SetUpgradeAvailability(player.id, route.upgradePBG, ITEM_REMOVED)
+        end
+    end
+    if #KoreaForeignPool == 0 then
+        for _, route in ipairs(KoreaResearchCatalog) do
+            if route.foreign then table.insert(KoreaForeignPool, route.ability) end
+        end
+        table.sort(KoreaForeignPool)
+    end
+    enableOffers(player, KoreaResearchCore.Offer(player.research, KoreaForeignPool, 4, pick))
+    -- A per-player allowance, independent of stock Zhu Xi's library resource.
+    syncAllowances(player)
+end
+
+function KoreaResearch_Observatory(player)
+    enableOffers(player, KoreaResearchCore.Observatory(player.research, KoreaForeignPool, pick))
+    syncAllowances(player)
+end
+
+function KoreaResearch_Ability(context, player)
+    local route = KoreaResearchRoutes[key(context.ability)]
+    if route == nil then return false end
+    local actor = context.executer
+    if not Korea_Alive(actor) then return true end
+    -- Query effective cost, including any native ability discount. This API is
+    -- documented in ScarDoc; its engine behavior is a named native test gate.
+    local paid = Player_GetAbilityBPCost(player.id, context.ability)
+    local costs = {}
+    for resource, _ in pairs(resourceEnums) do costs[resource] = paid[resource] or 0 end
+    if (route.foreign and not player.research.offered[route.ability])
+        or Player_HasUpgrade(player.id, route.upgradePBG)
+        or not KoreaResearchCore.Begin(player.research, route.key, costs, route.foreign,
+            Entity_GetID(actor), route.ability) then
+        refund(player, costs)
+        syncAllowances(player)
+        return true
+    end
+    syncAllowances(player)
+    Player_SetAbilityAvailability(player.id, route.pbg, ITEM_REMOVED)
+    Player_SetUpgradeAvailability(player.id, route.upgradePBG, ITEM_DEFAULT)
+    if not Entity_QueueProductionItemByPBG(actor, PITEM_Upgrade, route.upgradePBG) then
+        KoreaResearch_Settle(player, route.key, false)
+    end
+    return true
+end
+
+function KoreaResearch_Settle(player, upgrade, complete)
+    local costs, transaction = KoreaResearchCore.Settle(player.research, upgrade, complete, player.observatoryActive)
+    if costs == nil then return end
+    refund(player, costs)
+    if not complete then
+        Player_SetAbilityAvailability(player.id, BP_GetAbilityBlueprint(transaction.ability), ITEM_DEFAULT)
+    end
+    syncAllowances(player)
+end
+
+function KoreaResearch_Completed(context)
+    local player = Korea_EventPlayer(context)
+    if player == nil or context.upgrade == nil then return end
+    KoreaLandmarks_Snapshot(player)
+    KoreaResearch_Settle(player, key(context.upgrade), true)
+    KoreaEffects_Upgrade(player, context)
+    KoreaLandmarks_Research(player, context.upgrade)
+end
+
+function KoreaResearch_Canceled(context)
+    local player = Korea_EventPlayer(context)
+    if player ~= nil and context.upgrade ~= nil then KoreaResearch_Settle(player, key(context.upgrade), false) end
+end
+
+function KoreaResearch_EntityLost(entityID)
+    -- Native cancellation may arrive before or after death. Taking the pending
+    -- transaction out first makes either event order refund once.
+    for _, index in ipairs(KoreaState.order) do
+        local player = KoreaState.players[index]
+        local names = {}
+        for name, transaction in pairs(player.research.pending) do
+            if transaction.actor == entityID then table.insert(names, name) end
+        end
+        table.sort(names)
+        for _, name in ipairs(names) do KoreaResearch_Settle(player, name, false) end
+    end
+end

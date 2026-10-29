@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="4" description="Chinese Castle Age Horseman" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="-1463089901" List.ParentItemID="-1463089901">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="-555061488" List.ParentItemID="-555061488">
+					<group name="info">
+						<file name="flag_icon_override" value="korea\koreans_2" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" overrideParent="True" List.ItemID="26981830" List.ParentItemID="26981830">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="303036288">
+					<float name="num" value="1" />
+					<instance_reference name="type" value="ebps\korea\kr_unit_horseman_3_chi_ha_01" overrideParent="True" mod="b7fcea91257b408fb9e8ae4d8bc402e1" />
+					<list name="unit_attachments" overrideParent="True">
+					</list>
+					<bool name="is_default_unit" value="True" />
+				</group>
+			</list>
+			<float name="squad_female_chance" value="0" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="1957031815" List.ParentItemID="1957031815">
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\chinese_ha_01" overrideParent="True" List.ItemID="1111304567" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_speech_ext" List.ItemID="797603681" List.ParentItemID="797603681">
+			<list name="age_mapping">
+				<int name="age_number" value="2" overrideParent="True" List.ItemID="1484708601" List.ParentItemID="1484708601" />
+				<int name="age_number" value="3" overrideParent="True" List.ItemID="-2130206531" List.ParentItemID="-2130206531" />
+			</list>
+			<group name="squad_speech_parameters">
+				<enum name="squad_race_code" value="mongols" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_audio_ext" List.ItemID="1526996840" List.ParentItemID="1526996840">
+			<enum name="unit_type" value="cavalry_light" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="-1257996388" List.ParentItemID="-1257996388">
+			<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147483083" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_horseman_3" />
+</instance>

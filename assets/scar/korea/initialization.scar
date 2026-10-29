@@ -1,0 +1,70 @@
+KoreaInitializationState = {applied = {}}
+
+function KoreaInitialization_Apply(player)
+    if player == nil or not player.isHuman or not Player_IsAlive(player.id)
+        or Player_GetRaceName(player.id) ~= "chinese_ha_01" then return false, "ineligible-player", false end
+    if KoreaInitializationState.applied[player.index] then return false, "already-applied", false end
+    if type(Entity_ConvertBlueprint) ~= "function" or type(Squad_ConvertBlueprint) ~= "function" then
+        return false, "conversion-contract-unavailable", false
+    end
+    if not KoreaBlueprints_Available() then return false, "blueprints-unavailable", false end
+    for _, age in ipairs({"feudal_age", "castle_age", "imperial_age"}) do
+        if Player_HasUpgrade(player.id, BP_GetUpgradeBlueprint(age)) then return false, "unsupported-age", false end
+    end
+    local capitals, workers, scouts, officials = {}, {}, 0, 0
+    local group = EGroup_CreateUnique()
+    local ok, reason = pcall(function()
+        Player_GetEntitiesEGroup(player.id, group)
+        for i = 1, EGroup_Count(group) do
+            local entity = EGroup_GetEntityAt(group, i)
+            if Korea_Alive(entity) and Korea_Name(Entity_GetBlueprint(entity)) == "building_town_center_capital_chi_ha_01" then
+                if Entity_IsUnderConstruction(entity) or Entity_GetFilledHoldSquadSlots(entity) ~= 0 then
+                    return "occupied-or-unfinished-capital"
+                end
+                table.insert(capitals, entity)
+            end
+        end
+        local squads = Player_GetSquads(player.id)
+        for i = 1, SGroup_CountSpawned(squads) do
+            local squad = SGroup_GetSpawnedSquadAt(squads, i)
+            local name = Korea_Name(Squad_GetBlueprint(squad))
+            if name == "unit_villager_1_chi_ha_01" or name == "unit_official_1_chi_ha_01" then
+                local entity = Squad_GetFirstEntity(squad)
+                if not Korea_Alive(entity) or Korea_Name(Entity_GetBlueprint(entity)) ~= name then return "invalid-starting-worker" end
+                table.insert(workers, {entity = entity, squad = squad})
+                if name == "unit_official_1_chi_ha_01" then officials = officials + 1 end
+            elseif name == "unit_scout_1_chi" then scouts = scouts + 1 end
+        end
+        -- Current official army has five villagers + an Official. The donor
+        -- has six villagers. Convert the Official as the sixth economic unit.
+        if #capitals ~= 1 or #workers ~= 6 or officials > 1 or scouts ~= 1 then return "unsupported-starting-army" end
+        return nil
+    end)
+    EGroup_Destroy(group)
+    if not ok then return false, "preflight-error:" .. tostring(reason), false end
+    if reason ~= nil then return false, reason, false end
+    local tc = Korea_BP("ebps", "building_town_center_capital_chi_ha_01")
+    local villager = Korea_BP("ebps", "unit_villager_1_chi_ha_01")
+    local squad = Korea_BP("sbps", "unit_villager_1_chi_ha_01")
+    local mutated = false
+    local converted, result = pcall(function()
+        mutated = true
+        Entity_ConvertBlueprint(capitals[1], tc)
+        for _, worker in ipairs(workers) do
+            Entity_ConvertBlueprint(worker.entity, villager)
+            Squad_ConvertBlueprint(worker.squad, squad)
+        end
+        if Entity_GetBlueprint(capitals[1]) ~= tc then return "conversion-postcondition" end
+        for _, worker in ipairs(workers) do
+            if Entity_GetBlueprint(worker.entity) ~= villager or Squad_GetBlueprint(worker.squad) ~= squad then
+                return "conversion-postcondition"
+            end
+        end
+        return nil
+    end)
+    if not converted then return false, "conversion-error:" .. tostring(result), mutated end
+    if result ~= nil then return false, result, mutated end
+    KoreaInitializationState.applied[player.index] = true
+    print("KOREA_INIT_APPLIED player=" .. tostring(player.index) .. " workers=6 scout=preserved sheep=preserved")
+    return true, "applied", true
+end

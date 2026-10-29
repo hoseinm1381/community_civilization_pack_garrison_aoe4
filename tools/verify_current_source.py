@@ -76,8 +76,19 @@ def verify(root=ROOT):
     for file in (root/'assets/scar').rglob('*.scar'):
         code=file.read_text(encoding='utf-8-sig')
         assert 'd8e25db92a5647d1892584dba19980f8' not in code
-        for item in re.findall(r'import\("((?:vietnam|persia)/[^\"]+)"\)',code):
+        for item in re.findall(r'import\("((?:vietnam|persia|korea|ccp)/[^\"]+)"\)',code):
             assert (root/'assets/scar'/item).is_file(),(file,item)
+    korea=json.loads((root/'docs/korea-import.json').read_text())
+    assert korea['destination_guid']==GUID
+    assert len(korea['instances'])==378
+    for row in korea['instances']:
+        assert row['private'] in instances
+        assert instances[row['private']].find("uniqueid[@name='pbgid']").get('value')==str(row['pbg_id'])
+    from korea_resource_contract import verify as verify_resources
+    verify_resources(root)
+    assert text['12000']=='Korea'
+    assert 'KoreaLifecycle_Start(state.civilizations)' in mode
+    assert not any(needle in mode for needle in ('a743d7d1d7534cf78817e29d8ded7366','97b53d72bd354bfd82d171ada023431f'))
     expected_parts=[int.from_bytes(uuid.UUID(GUID).bytes_le[i:i+4],'little') for i in range(0,16,4)]
     for file in (root/'assets').rglob('*.rdo'):
         tree=E.parse(file).getroot()
@@ -87,7 +98,7 @@ def verify(root=ROOT):
                 assert parts.get('m_locStringKey') in text,(file,parts)
                 assert [int(parts['m_modPart'+str(i)]) for i in range(4)]==expected_parts
     return {'status':'passed','instances':len(instances),'persia_source_instances':280,
-            'persia_icons':len(ledger['icons']),'localization_rows':len(ids),'guid':GUID}
+            'korea_source_instances':len(korea['instances']),'persia_icons':len(ledger['icons']),'localization_rows':len(ids),'guid':GUID}
 
 
 if __name__=='__main__':

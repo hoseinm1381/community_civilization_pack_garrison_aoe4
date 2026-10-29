@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="-1463089901" List.ParentItemID="-1463089901">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="-555061488" List.ParentItemID="-555061488">
+					<group name="info">
+						<locstring name="screen_name" value="12052" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<locstring name="help_text" value="12072" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+						<file name="icon_name" value="korea\hwarangicon2" overrideParent="True" />
+						<string name="selection_group" value="hwarang_cav" overrideParent="True" />
+						<file name="flag_icon_override" value="korea\koreans_2" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="26981830" List.ParentItemID="26981830">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="1247230489" List.ParentItemID="1247230489">
+					<instance_reference name="type" value="ebps\korea\kr_unit_horseman_2_ayy" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="2021268" List.ParentItemID="2021268">
+			<list name="requirement_table" overrideParent="True">
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-1256677755" List.ParentItemID="-1256677755">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\dev\ages\feudal_age" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-1195932457">
+					<enum name="reason" value="usage_and_display" overrideParent="True" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="False" overrideParent="True" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext" List.ItemID="1095429345" List.ParentItemID="1095429345">
+			<list name="abilities">
+				<instance_reference name="ability" value="abilities\korea\kr_convert_horseman_to_archer" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="-1277595046" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\korea\kr_hwarang_study_korea" mod="b7fcea91257b408fb9e8ae4d8bc402e1" List.ItemID="-416033299" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="1957031815" List.ParentItemID="1957031815">
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\chinese_ha_01" overrideParent="True" List.ItemID="-1490426529" />
+			</list>
+			<list name="squad_type_list">
+				<enum name="squad_type" value="audio_wynguard_army" List.ItemID="1836293825" List.ListAction="Append" />
+				<enum name="squad_type" value="official" List.ItemID="-132018561" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_speech_ext" List.ItemID="797603681" List.ParentItemID="797603681">
+			<group name="squad_speech_parameters">
+				<enum name="squad_race_code" value="mongols" overrideParent="True" />
+			</group>
+			<list name="age_mapping">
+				<int name="age_number" value="3" overrideParent="True" List.ItemID="-2130206531" List.ParentItemID="-2130206531" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147483059" />
+	<instance_reference name="parent_pbg" value="sbps\races\abbasid\unit_horseman_2_abb" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="26981830" List.ParentItemID="26981830">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="1247230489" List.ParentItemID="1247230489">
+						<instance_reference name="type" value="ebps\korea\kr_unit_horseman_2_ayy" mod="b7fcea91257b408fb9e8ae4d8bc402e1" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="1957031815" List.ParentItemID="1957031815">
+				<list name="squad_race_type_list" overrideParent="True">
+					<instance_reference name="squad_race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="-502556279" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147483059" />
+		<instance_reference name="parent_pbg" value="sbps\races\abbasid\unit_horseman_2_abb" />
+	</variant>
+</instance>

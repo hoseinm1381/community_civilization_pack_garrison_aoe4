@@ -1,4 +1,3 @@
-# Hash-sensitive XML, SCAR, recipes and frozen evidence must retain their bytes.
+# Native build inputs and preservation receipts use exact byte hashes.
+# Keep the reviewed bytes on every platform, regardless of core.autocrlf.
 * -text
-development-data/**/*.zip -diff -merge
-development-data/**/*.gz -diff -merge
