@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
 <instance version="6" description="" template="ebps">
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1491559579" List.ParentItemID="1491559579">
@@ -46,8 +45,6 @@
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\units\tier4_cavalry_horsearcher_ayy" overrideParent="True" />
 					</group>
 					<group name="tier" overrideParent="True" List.ItemID="251846173" List.ListAction="Append">
-						<list name="tier_requirements">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\units\tier3_cavalry_horsearcher_ayy" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca\Master\reapply_upgrades\reapply_turkic_horsearcher_weapon_upgrades" />
@@ -64,6 +61,7 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 				</list>
 			</list>
@@ -192,8 +190,6 @@
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\units\tier4_cavalry_horsearcher_ayy" overrideParent="True" />
 						</group>
 						<group name="tier" overrideParent="True" List.ItemID="2057919960" List.ListAction="Append">
-							<list name="tier_requirements">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\units\tier3_cavalry_horsearcher_ayy" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca\Master\reapply_upgrades\reapply_turkic_horsearcher_weapon_upgrades" />
@@ -210,6 +206,7 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 				</list>

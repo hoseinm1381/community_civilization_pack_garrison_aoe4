@@ -1,0 +1,69 @@
+<instance version="4" description="Resource type used in Cardinal" template="resource_type_info">
+	<uniqueid name="pbgid" value="2117401" />
+	<group name="resource_type_bag">
+		<group name="modifier_types">
+			<enum name="player_rate" value="" />
+			<enum name="player_upkeep" value="" />
+			<enum name="player_max_cap" value="" />
+			<enum name="entity_cost" value="resource_entity_cost_olive_oil" />
+			<enum name="entity_contained_amount" value="" />
+			<enum name="entity_harvest_rate" value="resource_entity_harvest_rate_merc_byz" />
+			<enum name="squad_cost" value="" />
+			<enum name="squad_rate" value="" />
+			<enum name="upgrade_cost" value="upgrade_cost_merc_byz_modifier" />
+			<enum name="ability_cost" value="" />
+			<enum name="entity_carry_capacity" value="" />
+			<enum name="entity_drop_off_time" value="" />
+			<enum name="entity_production_cost" value="" />
+			<enum name="player_trade_rate" value="" />
+			<enum name="entity_upgrade_production_cost" value="" />
+			<enum name="player_rate_cap" value="" />
+			<enum name="entity_harvest_efficiency" value="" />
+			<enum name="player_min_cap" value="" />
+			<enum name="entity_regrowth_time" value="" />
+			<enum name="entity_rate" value="" />
+			<enum name="entity_drop_off_amount" value="" />
+			<enum name="entity_upkeep_rate" value="" />
+			<enum name="squad_upkeep_rate" value="" />
+		</group>
+		<string name="lua_enum_string" value="RT_Merc_Byz" />
+		<enum name="resource_type" value="merc_byz" />
+		<float name="heuristic_weight" value="0" />
+		<group name="ui">
+			<locstring name="name" value="11244678" />
+			<locstring name="desc" value="11244655" />
+			<file name="kicker_texture" value="resources\resource_olive_oil" />
+			<file name="minimap_icon_texture" value="" />
+			<colour name="resource_point_default_color" value="4283143860" />
+			<file name="icon_primary" value="resources\resource_olive_oil" />
+			<file name="icon_insufficient" value="resources\resource_olive_oil_insufficient" />
+			<bool name="is_hidden" value="False" />
+			<bool name="is_common" value="True" />
+			<bool name="is_productionCost" value="True" />
+			<bool name="is_carryable" value="False" />
+			<list name="overrides">
+				<group name="item" List.ItemID="1944575485">
+					<instance_reference name="race" value="racebps\byzantine_ha_mac" />
+					<group name="ui">
+						<locstring name="name" value="11270787" />
+						<locstring name="description" value="11270788" />
+						<file name="icon_primary" value="resources\resource_silver_icon" />
+						<file name="icon_insufficient" value="resources\resource_silver_icon_insufficient" />
+						<file name="kicker_texture" value="resources\resource_silver_icon" />
+					</group>
+				</group>
+				<group name="item" List.ItemID="2147483184" List.ListAction="Append">
+					<instance_reference name="race" value="racebps\chinese_ha_01" />
+					<group name="ui">
+						<locstring name="name" value="11993" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<locstring name="description" value="11994" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<file name="icon_primary" value="korea\bookicon" />
+						<file name="icon_insufficient" value="korea\book_unavailable" />
+						<file name="kicker_texture" value="korea\bookicon" />
+					</group>
+				</group>
+			</list>
+		</group>
+		<enum name="num_workers" value="" />
+	</group>
+</instance>

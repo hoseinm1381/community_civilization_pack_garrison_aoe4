@@ -1,10 +1,25 @@
 # Community Civilization Pack Normal agent instructions
 
 This checkout is the independent Normal edition on branch `normal`. The current
-user-authorized work imports full Persia into the existing combined game mode and
-tuning pack. Treat old stage-one probe notes as historical evidence. Keep the
+user-authorized work adds Korea beside Zhu Xi's Legacy to the existing combined
+game mode and tuning pack, preserving Vietnam/Persia and existing dirty source.
+See `docs/KOREA_FULL_PORT.md` and `docs/korea-import.json`. Treat old stage-one
+probe notes as historical evidence. Keep the
 Garrison checkout and remote `main`/release branches unchanged unless a later user
 request explicitly expands the scope.
+
+The 2026-10-29 owner-approved repairs are in `docs/KOREA_REPAIR_20261029.md`.
+Preserve the narrow official Zhu Xi Literature storage / race UI exceptions
+constrained by `docs/korea-shared-resource.json`; do not restore the donor's global
+resource UI. Preserve roster-gated prematch loading and the empty unconditional
+RDO precache list. See `docs/KOREA_CONSTRUCTION_20261029.md` for the subsequent
+27 private construction-time repairs and Observatory token refill fix. Preserve
+the stock action cap: `resource_cap_action_player_modifier` is rejected by native
+SCAR; the Korean ledger retains all four allowances. Current source tests total
+81. The 2026-10-29 native build and archive/readback checks passed; the latest
+native gameplay acceptance remains pending. See `docs/NORMAL_RELEASE_20261029.md`.
+Publish source on `normal` and distribution ZIPs on the owner-selected
+`normal-release` branch; preserve Garrison and older distribution branches.
 
 ## Identity and source
 

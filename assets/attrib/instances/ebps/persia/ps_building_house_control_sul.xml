@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
 <instance version="6" description="" template="ebps">
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1131493931" List.ParentItemID="-1131493931">
@@ -23,8 +22,6 @@
 			<list name="tier_group_list" overrideParent="True">
 				<list name="tier_group" overrideParent="True" List.ItemID="872397969">
 					<group name="tier" List.ItemID="-1937344029">
-						<list name="tier_requirements">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\house_sul\tier1_house_a_sul" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -41,24 +38,9 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 					<group name="tier" List.ItemID="1029300484">
-						<list name="tier_requirements">
-							<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="-258035784">
-								<enum name="reason" value="usage" />
-								<locstring name="ui_name" value="0" />
-								<bool name="is_present" value="True" />
-								<int name="max_completed" value="100" />
-								<int name="min_completed" value="1" />
-								<instance_reference name="upgrade_name" value="upgrade\dev\ages\feudal_age" />
-								<bool name="include_queued" value="False" />
-								<group name="include_pbg_parenting">
-									<bool name="include_child_pbgs" value="False" />
-									<bool name="include_parent_pbgs" value="False" />
-								</group>
-								<bool name="include_completed" value="True" />
-							</template_reference>
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\house_sul\tier2_house_a_sul" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -75,24 +57,9 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 					<group name="tier" List.ItemID="1992642186">
-						<list name="tier_requirements">
-							<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="-1053411890">
-								<enum name="reason" value="usage" />
-								<locstring name="ui_name" value="0" />
-								<bool name="is_present" value="True" />
-								<int name="max_completed" value="100" />
-								<int name="min_completed" value="1" />
-								<instance_reference name="upgrade_name" value="upgrade\dev\ages\castle_age" />
-								<bool name="include_queued" value="False" />
-								<group name="include_pbg_parenting">
-									<bool name="include_child_pbgs" value="False" />
-									<bool name="include_parent_pbgs" value="False" />
-								</group>
-								<bool name="include_completed" value="True" />
-							</template_reference>
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\house_sul\tier3_house_a_sul" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -109,24 +76,9 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 					<group name="tier" List.ItemID="374951742">
-						<list name="tier_requirements">
-							<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="112306366">
-								<enum name="reason" value="usage" />
-								<locstring name="ui_name" value="0" />
-								<bool name="is_present" value="True" />
-								<int name="max_completed" value="100" />
-								<int name="min_completed" value="1" />
-								<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" />
-								<bool name="include_queued" value="False" />
-								<group name="include_pbg_parenting">
-									<bool name="include_child_pbgs" value="False" />
-									<bool name="include_parent_pbgs" value="False" />
-								</group>
-								<bool name="include_completed" value="True" />
-							</template_reference>
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\house_sul\tier4_house_a_sul" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -143,12 +95,11 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 				</list>
 				<list name="tier_group" overrideParent="True" List.ItemID="-1282477650">
 					<group name="tier" overrideParent="True" List.ItemID="683811228">
-						<list name="tier_requirements" overrideParent="True">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\outskirts\houses\sul_house_01" overrideParent="True" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -165,24 +116,9 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 					<group name="tier" overrideParent="True" List.ItemID="889885745">
-						<list name="tier_requirements" overrideParent="True">
-							<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="-238176405">
-								<enum name="reason" value="usage" />
-								<locstring name="ui_name" value="0" />
-								<bool name="is_present" value="True" />
-								<int name="max_completed" value="100" />
-								<int name="min_completed" value="1" />
-								<instance_reference name="upgrade_name" value="upgrade\dev\ages\castle_age" overrideParent="True" />
-								<bool name="include_queued" value="False" />
-								<group name="include_pbg_parenting">
-									<bool name="include_child_pbgs" value="False" />
-									<bool name="include_parent_pbgs" value="False" />
-								</group>
-								<bool name="include_completed" value="True" />
-							</template_reference>
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\outskirts\houses\sul_house_03" overrideParent="True" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -199,6 +135,7 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 				</list>
 			</list>
@@ -613,6 +550,7 @@
 			<bool name="is_indoors" value="True" />
 			<bool name="right_click_garrison_always_enabled" value="False" />
 			<bool name="exclude_allied_units" value="False" />
+			<bool name="on_loaded_squad_action_tree_reapply_on_bp_conversion" value="False" />
 		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="2147482554" />
@@ -631,8 +569,6 @@
 				<list name="tier_group_list" overrideParent="True">
 					<list name="tier_group" overrideParent="True" List.ItemID="1401957299">
 						<group name="tier" List.ItemID="-1854685826">
-							<list name="tier_requirements">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\house_sul\tier1_house_a_sul" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -649,24 +585,9 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 						<group name="tier" List.ItemID="-1537822858">
-							<list name="tier_requirements">
-								<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="336880261">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<bool name="is_present" value="True" />
-									<int name="max_completed" value="100" />
-									<int name="min_completed" value="1" />
-									<instance_reference name="upgrade_name" value="upgrade\dev\ages\feudal_age" />
-									<bool name="include_queued" value="False" />
-									<group name="include_pbg_parenting">
-										<bool name="include_child_pbgs" value="False" />
-										<bool name="include_parent_pbgs" value="False" />
-									</group>
-									<bool name="include_completed" value="True" />
-								</template_reference>
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\house_sul\tier2_house_a_sul" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -683,24 +604,9 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 						<group name="tier" List.ItemID="-1519781369">
-							<list name="tier_requirements">
-								<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="-1421734507">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<bool name="is_present" value="True" />
-									<int name="max_completed" value="100" />
-									<int name="min_completed" value="1" />
-									<instance_reference name="upgrade_name" value="upgrade\dev\ages\castle_age" />
-									<bool name="include_queued" value="False" />
-									<group name="include_pbg_parenting">
-										<bool name="include_child_pbgs" value="False" />
-										<bool name="include_parent_pbgs" value="False" />
-									</group>
-									<bool name="include_completed" value="True" />
-								</template_reference>
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\house_sul\tier3_house_a_sul" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -717,24 +623,9 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 						<group name="tier" List.ItemID="-1658585805">
-							<list name="tier_requirements">
-								<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="640880887">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<bool name="is_present" value="True" />
-									<int name="max_completed" value="100" />
-									<int name="min_completed" value="1" />
-									<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" />
-									<bool name="include_queued" value="False" />
-									<group name="include_pbg_parenting">
-										<bool name="include_child_pbgs" value="False" />
-										<bool name="include_parent_pbgs" value="False" />
-									</group>
-									<bool name="include_completed" value="True" />
-								</template_reference>
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\house_sul\tier4_house_a_sul" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -751,12 +642,11 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 					<list name="tier_group" overrideParent="True" List.ItemID="-1688942148">
 						<group name="tier" overrideParent="True" List.ItemID="-60941559">
-							<list name="tier_requirements" overrideParent="True">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\outskirts\houses\sul_house_01" overrideParent="True" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -773,24 +663,9 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 						<group name="tier" overrideParent="True" List.ItemID="-1274988065">
-							<list name="tier_requirements" overrideParent="True">
-								<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="1187041560">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<bool name="is_present" value="True" />
-									<int name="max_completed" value="100" />
-									<int name="min_completed" value="1" />
-									<instance_reference name="upgrade_name" value="upgrade\dev\ages\castle_age" overrideParent="True" />
-									<bool name="include_queued" value="False" />
-									<group name="include_pbg_parenting">
-										<bool name="include_child_pbgs" value="False" />
-										<bool name="include_parent_pbgs" value="False" />
-									</group>
-									<bool name="include_completed" value="True" />
-								</template_reference>
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\outskirts\houses\sul_house_03" overrideParent="True" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -807,6 +682,7 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 				</list>

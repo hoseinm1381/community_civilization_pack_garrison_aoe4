@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="4" description="" template="abilities">
+	<group name="ability_bag">
+		<group name="ui_info">
+			<locstring name="help_text" value="12276" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+			<locstring name="screen_name" value="12275" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+			<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+				<group name="issuable_info">
+					<bool name="is_secondary" value="True" overrideParent="True" />
+					<instance_reference name="secondary_issuable" value="" overrideParent="True" />
+				</group>
+			</template_reference>
+			<file name="icon_name" value="races\common\abilities\market_buy_bulk_olive_oil" overrideParent="True" />
+		</group>
+		<state_tree_node name="entity_tree" value="core_market_buy_merc\buy_merc_bulk_5" overrideParent="True" />
+	</group>
+	<uniqueid name="pbgid" value="2147482927" />
+	<instance_reference name="parent_pbg" value="abilities\timed_abilities\civ_core\core_market_buy_merc_byz" />
+</instance>

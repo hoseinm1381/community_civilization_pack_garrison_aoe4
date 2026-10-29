@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
 <instance version="6" description="" template="ebps">
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1853756747" List.ParentItemID="1853756747">
@@ -237,8 +236,6 @@
 			<list name="tier_group_list" overrideParent="True">
 				<list name="tier_group" List.ItemID="1284957965">
 					<group name="tier" List.ItemID="-73394928">
-						<list name="tier_requirements">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\buildings\ott_landmark_a_01" overrideParent="True" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -255,12 +252,11 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 				</list>
 				<list name="tier_group" overrideParent="True" List.ItemID="-1221132745">
 					<group name="tier" List.ItemID="1324143888">
-						<list name="tier_requirements">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rus\outskirts\wonders\won_fnovgorod" overrideParent="True" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -277,6 +273,7 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 				</list>
 			</list>
@@ -408,6 +405,7 @@
 			<bool name="is_indoors" value="True" />
 			<bool name="right_click_garrison_always_enabled" value="False" />
 			<bool name="exclude_allied_units" value="False" />
+			<bool name="on_loaded_squad_action_tree_reapply_on_bp_conversion" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\trigger_volume_ext" List.ItemID="-1712393760" List.ListAction="Append">
 		</template_reference>
@@ -439,6 +437,8 @@
 			<bool name="default_rally_points_allowed" value="True" />
 			<bool name="economic_rally_points_allowed" value="False" />
 			<bool name="always_use_economic_rally_points" value="False" />
+			<bool name="use_alternative_rally_point_system" value="False" />
+			<bool name="trade_only_economical_rally" value="False" />
 		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="2147482573" />
@@ -568,6 +568,7 @@
 				<locstring name="help_text_controller" value="0" />
 				<locstring name="extra_text_controller" value="0" />
 				<bool name="static_selection_bounds" value="False" />
+				<enum name="targeting_and_bandbox_selection_priority_controller" value="" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-124942387">
 				<list name="action_state_trees" overrideParent="True">
@@ -689,6 +690,7 @@
 				<list name="ignorable_entity_types">
 				</list>
 				<float name="aqueduct_cistern_proximity_test_square_scale" value="0" />
+				<bool name="destroy_stamps" value="True" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-728885784">
 				<list name="abilities" overrideParent="True">
@@ -828,6 +830,12 @@
 				<state_tree_node name="on_reach_invulnerable_min_cap_entity_state_tree_ref" value="" />
 				<state_tree_node name="on_reach_max_health_entity_state_tree_ref" value="" />
 				<bool name="can_be_damaged_by_ally" value="False" />
+				<enum_table name="percentage_reduction_armor_by_damage_type">
+					<float name="True Damage" value="0" />
+					<float name="Melee" value="0" />
+					<float name="Ranged" value="0" />
+					<float name="Fire" value="0" />
+				</enum_table>
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="-1413145621">
 				<instance_reference name="hit_material" value="hit_material\stone" />
@@ -1109,8 +1117,6 @@
 				<list name="tier_group_list" overrideParent="True">
 					<list name="tier_group" List.ItemID="-1099459480">
 						<group name="tier" List.ItemID="1433087208">
-							<list name="tier_requirements">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\buildings\ott_landmark_a_01" overrideParent="True" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -1127,12 +1133,11 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 					<list name="tier_group" overrideParent="True" List.ItemID="1106389398">
 						<group name="tier" List.ItemID="-1145488799">
-							<list name="tier_requirements">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rus\outskirts\wonders\won_fnovgorod" overrideParent="True" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -1149,6 +1154,7 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 				</list>
@@ -1290,6 +1296,7 @@
 				<bool name="is_indoors" value="True" />
 				<bool name="right_click_garrison_always_enabled" value="False" />
 				<bool name="exclude_allied_units" value="False" />
+				<bool name="on_loaded_squad_action_tree_reapply_on_bp_conversion" value="False" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\modifier_apply_ext" List.ItemID="-752410523">
 				<list name="modifiers">
@@ -1325,6 +1332,8 @@
 				<bool name="default_rally_points_allowed" value="True" />
 				<bool name="economic_rally_points_allowed" value="False" />
 				<bool name="always_use_economic_rally_points" value="False" />
+				<bool name="use_alternative_rally_point_system" value="False" />
+				<bool name="trade_only_economical_rally" value="False" />
 			</template_reference>
 		</list>
 		<uniqueid name="pbgid" value="2147482573" />

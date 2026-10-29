@@ -1,18 +1,7 @@
-<?xml version='1.0' encoding='utf-8'?>
 <instance version="6" description="Chinese Castle Age Crossbowman" template="ebps">
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1979743353" List.ParentItemID="-1979743353">
 			<bool name="browsable_in_editor" value="True" overrideParent="True" />
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1380317016" List.ParentItemID="1380317016">
-			<list name="action_state_trees">
-				<group name="container" List.ItemID="1517188997" List.ParentItemID="1517188997">
-					<string name="state_tree" value="unit_action_apply\units\ranged_infantry_other" overrideParent="True" />
-				</group>
-				<group name="container" List.ItemID="780814334" List.ParentItemID="780814334">
-					<string name="state_tree" value="unit_action_apply\units\ranged_infantry_other\audio\repeater_crossbow\3" overrideParent="True" />
-				</group>
-			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2097449255" List.ParentItemID="2097449255">
 			<float name="hitpoints" value="80" overrideParent="True" />
@@ -67,8 +56,6 @@
 			<list name="tier_group_list">
 				<list name="tier_group" overrideParent="True" List.ItemID="-1795771786">
 					<group name="tier" List.ItemID="774175474">
-						<list name="tier_requirements" overrideParent="True">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese\units\tier3_repeater_crossbowman_chi" overrideParent="True" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
@@ -85,10 +72,9 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 					<group name="tier" List.ItemID="1463715257">
-						<list name="tier_requirements" overrideParent="True">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese\units\tier4_repeater_crossbowman_chi" overrideParent="True" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
@@ -105,6 +91,7 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 				</list>
 			</list>
@@ -189,8 +176,6 @@
 				<list name="tier_group_list">
 					<list name="tier_group" overrideParent="True" List.ItemID="1211473707">
 						<group name="tier" List.ItemID="-790954198">
-							<list name="tier_requirements" overrideParent="True">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese\units\tier3_repeater_crossbowman_chi" overrideParent="True" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
@@ -207,10 +192,9 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 						<group name="tier" List.ItemID="-1772385168">
-							<list name="tier_requirements" overrideParent="True">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese\units\tier4_repeater_crossbowman_chi" overrideParent="True" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
@@ -227,6 +211,7 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 				</list>

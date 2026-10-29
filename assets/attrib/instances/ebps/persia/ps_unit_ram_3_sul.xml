@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
 <instance version="6" description="" template="ebps">
 	<list name="extensions" comment="Reminder to also edit the stats of the Workshop Ram." overrideParent="True">
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1410792167" List.ParentItemID="-1410792167">
@@ -358,6 +357,7 @@
 			<locstring name="help_text_controller" value="0" />
 			<locstring name="extra_text_controller" value="0" />
 			<bool name="static_selection_bounds" value="False" />
+			<enum name="targeting_and_bandbox_selection_priority_controller" value="" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-780527790" List.ParentItemID="-780527790">
 			<list name="hardpoints">
@@ -495,6 +495,7 @@
 			</enum_table>
 			<enum name="snap_to_surface_type" value="GroundOrWalkable" />
 			<float name="turn_in_place_distance" value="0" />
+			<bool name="snap_to_terrain" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\speech_ext" List.ItemID="655187019" List.ParentItemID="655187019">
 			<string name="speaker_code" value="seige" />
@@ -509,7 +510,7 @@
 			<enum name="holdable" value="hold_siege" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1982550370" List.ParentItemID="1982550370">
-			<instance_reference name="on_construction_squad" value="sbps\persia\ps_unit_ram_3_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+			<instance_reference name="on_construction_squad" value="sbps\persia\ps_unit_ram_3_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 			<bool name="automatic_fit_on_placement" value="False" />
 			<float name="cancel_refund_percentage" value="100" />
 			<string name="construction_state_name" value="construction_state" />
@@ -610,9 +611,10 @@
 			<list name="ignorable_entity_types">
 			</list>
 			<float name="aqueduct_cistern_proximity_test_square_scale" value="0" />
+			<bool name="destroy_stamps" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="-37156415" List.ParentItemID="-37156415">
-			<list name="requirement_table" comment="NOTE: Both Mongols and Sultanates of different requirements. Editing something here may not affect the requirements for those Civs and need to be updated uniquely.&#13;&#10;&#13;&#10;&#13;&#10;---">
+			<list name="requirement_table" comment="NOTE: Both Mongols and Sultanates of different requirements. Editing something here may not affect the requirements for those Civs and need to be updated uniquely.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;---">
 				<template_reference name="required" value="requirements\required_player_upgrade" overrideParent="True" List.ItemID="487091217" List.ParentItemID="487091217">
 					<instance_reference name="upgrade_name" value="upgrade\races\common\research\upgrade_siege_engineers" overrideParent="True" />
 					<enum name="reason" value="usage" />
@@ -696,6 +698,7 @@
 			<bool name="is_indoors" value="True" />
 			<bool name="right_click_garrison_always_enabled" value="True" />
 			<bool name="exclude_allied_units" value="False" />
+			<bool name="on_loaded_squad_action_tree_reapply_on_bp_conversion" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="1064459060" List.ParentItemID="1064459060">
 			<state_tree_node name="ActionTree_OpeningBranch" value="unit_constructed_entity" />
@@ -725,8 +728,6 @@
 			<list name="tier_group_list" overrideParent="True">
 				<list name="tier_group" overrideParent="True" List.ItemID="1425123578">
 					<group name="tier" List.ItemID="704624554">
-						<list name="tier_requirements" overrideParent="True">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier3_ram_sul" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
@@ -743,10 +744,9 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 					<group name="tier" List.ItemID="1737863346">
-						<list name="tier_requirements" overrideParent="True">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier4_ram_sul" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
@@ -763,6 +763,7 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 				</list>
 			</list>
@@ -862,7 +863,7 @@
 				</list>
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-1628240518" List.ParentItemID="-1628240518">
-				<instance_reference name="on_construction_squad" value="sbps\persia\ps_unit_ram_3_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+				<instance_reference name="on_construction_squad" value="sbps\persia\ps_unit_ram_3_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="147263592" List.ParentItemID="147263592">
 				<list name="requirement_table">
@@ -876,8 +877,6 @@
 				<list name="tier_group_list" overrideParent="True">
 					<list name="tier_group" overrideParent="True" List.ItemID="-1066977822">
 						<group name="tier" List.ItemID="1963265309">
-							<list name="tier_requirements" overrideParent="True">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier3_ram_sul" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
@@ -894,10 +893,9 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 						<group name="tier" List.ItemID="1815396502">
-							<list name="tier_requirements" overrideParent="True">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier4_ram_sul" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
@@ -914,6 +912,7 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 				</list>

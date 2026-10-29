@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
 <instance version="6" description="Castle Age Crossbowman" template="ebps">
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1979743353" List.ParentItemID="-1979743353">
@@ -100,8 +99,6 @@
 			<list name="tier_group_list" overrideParent="True">
 				<list name="tier_group" overrideParent="True" List.ItemID="1628438794">
 					<group name="tier" List.ItemID="1184845225">
-						<list name="tier_requirements" overrideParent="True">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier3_crossbowman_sul" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
@@ -118,10 +115,9 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 					<group name="tier" List.ItemID="-307763792">
-						<list name="tier_requirements" overrideParent="True">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier4_crossbowman_sul" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
@@ -129,7 +125,7 @@
 						</template_reference>
 						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\persia\ps_persia_unit_castle_to_imp" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\persia\ps_unit_crossbowman_4_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
-						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\persia\ps_unit_crossbowman_4_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\persia\ps_unit_crossbowman_4_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<string name="tier_attachment_action" value="" />
 						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
 							<bool name="reissue_commands" value="False" />
@@ -138,6 +134,7 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 				</list>
 			</list>
@@ -216,8 +213,6 @@
 				<list name="tier_group_list" overrideParent="True">
 					<list name="tier_group" overrideParent="True" List.ItemID="2083354009">
 						<group name="tier" List.ItemID="1427855283">
-							<list name="tier_requirements" overrideParent="True">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier3_crossbowman_sul" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
@@ -234,10 +229,9 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 						<group name="tier" List.ItemID="1433754547">
-							<list name="tier_requirements" overrideParent="True">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier4_crossbowman_sul" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
@@ -245,7 +239,7 @@
 							</template_reference>
 							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\persia\ps_persia_unit_castle_to_imp" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\persia\ps_unit_crossbowman_4_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
-							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\persia\ps_unit_crossbowman_4_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\persia\ps_unit_crossbowman_4_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 							<string name="tier_attachment_action" value="" />
 							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
 								<bool name="reissue_commands" value="False" />
@@ -254,6 +248,7 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 				</list>

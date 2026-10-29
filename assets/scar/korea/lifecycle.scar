@@ -1,0 +1,134 @@
+-- One deterministic rule services selected Korea players. No standalone
+-- StandardMode, stock DynastyUI replacement, or imported donor globals.
+function KoreaLifecycle_Ability(context)
+    local player = Korea_EventPlayer(context)
+    if player == nil or context.ability == nil then return end
+    if KoreaResearch_Ability(context, player) then return end
+    local ability = context.ability
+    local function is(name) return ability == Korea_BP("abilities", name) end
+    if is("convert_horseman_to_archer") then KoreaEffects_Transform(context, player, true)
+    elseif is("convert_archer_to_horseman") then KoreaEffects_Transform(context, player, false)
+    elseif is("acre_barrage_small_ayy") then KoreaEffects_Barrage(context, player, false)
+    elseif is("acre_barrage_ayy") then KoreaEffects_Barrage(context, player, true)
+    elseif is("monk_inspire_target_ayy") then Korea_AddLiterature(player, 100)
+    elseif is("hall_of_worthies_food_decree") then KoreaEffects_Decree(player, {"food"}, ability)
+    elseif is("hall_of_worthies_wood_decree") then KoreaEffects_Decree(player, {"wood"}, ability)
+    elseif is("hall_of_worthies_gold_decree") then KoreaEffects_Decree(player, {"gold", "stone"}, ability)
+    elseif is("hall_of_worthies_stone_decree") then KoreaEffects_Decree(player, {"stone"}, ability)
+    elseif is("horseman_or_archer_kill_tracker") then KoreaUI_Kills(context, player)
+    elseif is("display_foreign_tech_for_everyone") then
+        if Entity_GetPlayerOwner(context.executer) == Game_GetLocalPlayer() then KoreaUI_Toggle() end
+    end
+end
+
+function KoreaLifecycle_Constructed(context)
+    if not Korea_Alive(context.entity) or World_OwnsEntity(context.entity) then return end
+    local player = Korea_Player(Entity_GetPlayerOwner(context.entity))
+    if player ~= nil then
+        KoreaEconomy_Register(player, context.entity)
+        KoreaLandmarks_Snapshot(player)
+    end
+end
+
+function KoreaLifecycle_Killed(context)
+    KoreaEffects_Kill(context)
+    KoreaLandmarks_Kill(context)
+    if context.victim ~= nil then
+        local id = Entity_GetID(context.victim)
+        -- Persistent landmark ruins keep their identity and rewards. Removing a
+        -- Seowon from the live snapshot never discards its construction receipt.
+        KoreaResearch_EntityLost(id)
+        for _, index in ipairs(KoreaState.order) do KoreaState.players[index].unitKills[id] = nil end
+    end
+end
+
+function KoreaLifecycle_Tick()
+    if not KoreaState.active or KoreaState.ending then return end
+    local now = World_GetGameTime()
+    for _, index in ipairs(KoreaState.order) do
+        local player = KoreaState.players[index]
+        if Player_IsAlive(player.id) then
+            KoreaLandmarks_Tick(player, now)
+            KoreaEconomy_Tick(player, now)
+            KoreaEffects_Tick(player, now)
+        end
+    end
+    KoreaEffects_Timers(now)
+    KoreaUI_Update(now)
+end
+
+function KoreaLifecycle_Start(civilizations)
+    if KoreaState.active or KoreaState.ending then return end
+    local now = World_GetGameTime()
+    KoreaState.players = {}; KoreaState.order = {}
+    KoreaState.debuffs = {}; KoreaState.barrages = {}
+    for _, player in ipairs(PLAYERS) do
+        if civilizations[player.index] == "korea" then
+            local item = {id = player.id, index = player.index, effects = {}, seowons = {},
+                academyRewards = {}, dropoffs = {}, landmarks = {}, decrees = {}, unitKills = {},
+                stoneRewards = 0, stoneResearch = {}, kills = 0, nextAcademy = now + 15,
+                nextHangul = now + 6, nextWater = now + 30, nextGuard = now + 20,
+                nextPatrol = now + 5, nextKillIncome = now + 10}
+            KoreaState.players[player.index] = item
+            table.insert(KoreaState.order, player.index)
+        end
+    end
+    table.sort(KoreaState.order)
+    if #KoreaState.order == 0 then return end
+    KoreaState.active = true
+    for _, index in ipairs(KoreaState.order) do
+        local player = KoreaState.players[index]
+        -- Transfer the donor's scholar capacity and first-free-scholar token
+        -- per selected player, without overriding Zhu Xi's shared army.
+        Korea_PlayerModifier(player, MAT_Player, "max_vehicle_cap_player_modifier", MUT_Addition,
+            99 - Player_GetMaxPopulationCap(player.id, CT_Vehicle), "")
+        Korea_PlayerModifier(player, MAT_Player, "vehicle_cap_player_modifier", MUT_Addition,
+            99 - Player_GetCurrentPopulationCap(player.id, CT_Vehicle), "")
+        Player_SetResource(player.id, RT_Militia_HRE, 1)
+        KoreaResearch_Init(player)
+        KoreaEffects_Start(player)
+        KoreaLandmarks_Snapshot(player)
+        Korea_Entities(player, function(entity) KoreaEconomy_Register(player, entity) end)
+        Player_SetStateModelFloat(player.id, "dynasty_tax_multiplier_chi_ha_01", 0)
+        print("KOREA_ACTIVE player=" .. tostring(index))
+    end
+    Rule_AddGlobalEvent(KoreaLifecycle_Ability, GE_AbilityExecuted)
+    Rule_AddGlobalEvent(KoreaResearch_Completed, GE_UpgradeComplete)
+    Rule_AddGlobalEvent(KoreaResearch_Canceled, GE_UpgradeCancelled)
+    Rule_AddGlobalEvent(KoreaLifecycle_Constructed, GE_ConstructionComplete)
+    Rule_AddGlobalEvent(KoreaLifecycle_Killed, GE_EntityKilled)
+    Rule_AddGlobalEvent(KoreaEffects_Damage, GE_DamageReceived)
+    KoreaUI_Create()
+    Rule_AddInterval(KoreaLifecycle_Tick, 1)
+end
+
+function KoreaLifecycle_Cleanup()
+    if KoreaState.ending then return end
+    KoreaState.ending = true
+    Rule_Remove(KoreaLifecycle_Tick)
+    if KoreaState.active then
+        Rule_RemoveGlobalEvent(KoreaLifecycle_Ability)
+        Rule_RemoveGlobalEvent(KoreaResearch_Completed)
+        Rule_RemoveGlobalEvent(KoreaResearch_Canceled)
+        Rule_RemoveGlobalEvent(KoreaLifecycle_Constructed)
+        Rule_RemoveGlobalEvent(KoreaLifecycle_Killed)
+        Rule_RemoveGlobalEvent(KoreaEffects_Damage)
+        for _, index in ipairs(KoreaState.order) do
+            local player = KoreaState.players[index]
+            for _, record in ipairs(player.decrees) do
+                if record.active then for _, handle in ipairs(record.handles) do Korea_RemoveModifier(handle) end end
+            end
+        end
+        for _, records in ipairs({KoreaState.debuffs, KoreaState.barrages}) do
+            for _, record in pairs(records) do
+                for _, handle in ipairs(record.handles) do Korea_RemoveModifier(handle) end
+            end
+        end
+        for _, handle in ipairs(KoreaState.modifiers) do Korea_RemoveModifier(handle) end
+        KoreaUI_Cleanup()
+    end
+    KoreaState.active = false
+    KoreaState.players = {}; KoreaState.order = {}; KoreaState.modifiers = {}; KoreaState.removed = {}; KoreaState.cache = {}
+    KoreaState.debuffs = {}; KoreaState.barrages = {}
+    KoreaInitializationState.applied = {}
+end

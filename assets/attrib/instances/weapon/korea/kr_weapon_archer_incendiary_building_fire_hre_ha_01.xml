@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="4" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="range">
+			<float name="max_animation_angle_distance" value="27" overrideParent="True" />
+		</group>
+		<string name="fx_munition_name" value="common\arrow_incendiary" overrideParent="True" />
+		<string name="name" value="Archer Incendiary Siege" overrideParent="True" />
+		<group name="projectile">
+			<instance_reference name="projectile" value="ebps\projectiles\projectile_arrow_incendiary" overrideParent="True" />
+		</group>
+		<group name="scatter">
+			<float name="angle_scatter" value="4" overrideParent="True" />
+			<float name="distance_scatter_max" value="4" overrideParent="True" />
+		</group>
+		<group name="damage">
+			<float name="max" value="6" overrideParent="True" />
+			<float name="min" value="6" overrideParent="True" />
+			<enum name="damage_type" value="True Damage" overrideParent="True" />
+		</group>
+		<list name="target_type_table" removedIds="116151180, -222295425">
+		</list>
+		<template_reference name="siege_option" value="options\weapon\siege_option">
+			<bool name="is_siege_only" value="True" overrideParent="True" />
+		</template_reference>
+		<group name="burst" overrideParent="True">
+			<bool name="can_burst" value="True" overrideParent="True" />
+			<group name="duration">
+				<float name="max" value="0.25" overrideParent="True" />
+				<float name="min" value="0.25" overrideParent="True" />
+			</group>
+			<group name="rate_of_fire">
+				<float name="max" value="4" overrideParent="True" />
+				<float name="min" value="4" overrideParent="True" />
+			</group>
+			<group name="incremental_target_table">
+				<float name="accuracy_multiplier" value="0" />
+				<group name="search_radius">
+					<float name="far" value="0" />
+					<float name="near" value="0" />
+					<float name="mid" value="0" />
+				</group>
+			</group>
+			<group name="duration_multiplier">
+				<float name="near" value="1" />
+				<float name="far" value="1" />
+				<float name="mid" value="1" />
+			</group>
+			<group name="rate_of_fire_multiplier">
+				<float name="near" value="1" />
+				<float name="far" value="1" />
+				<float name="mid" value="1" />
+			</group>
+			<bool name="focus_fire" value="False" />
+			<bool name="convert_target_to_position_before_firing" value="False" />
+			<bool name="uninterruptible_burst_fire" value="False" />
+		</group>
+		<group name="fire">
+			<float name="wind_down" value="0.375" overrideParent="True" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="2147483160" />
+	<instance_reference name="parent_pbg" value="weapon\korea\kr_weapon_archer_4_hre_ha_01" mod="a743d7d1d7534cf78817e29d8ded7366" />
+</instance>

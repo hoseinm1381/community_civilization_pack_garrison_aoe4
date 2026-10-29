@@ -1,15 +1,16 @@
 -- Pure deterministic selection policy. No local-player or engine mutations.
 VietnamSelectionCore = {}
 local Core = VietnamSelectionCore
+local alternatives = {china = "vietnam", delhi = "persia", zhu_xi = "korea"}
 
 function Core.New(indices, startedAt, timeout, originals)
     local state = {players = {}, order = {}, deadline = startedAt + timeout, closed = false}
     for _, index in ipairs(indices) do
         if state.players[index] == nil then
             local original = originals and originals[index] or "china"
-            assert(original == "china" or original == "delhi", "Unsupported selection pair")
+            assert(alternatives[original] ~= nil, "Unsupported selection pair")
             state.players[index] = {choice = nil, dropped = false, original = original,
-                alternate = original == "delhi" and "persia" or "vietnam"}
+                alternate = alternatives[original]}
             table.insert(state.order, index)
         end
     end

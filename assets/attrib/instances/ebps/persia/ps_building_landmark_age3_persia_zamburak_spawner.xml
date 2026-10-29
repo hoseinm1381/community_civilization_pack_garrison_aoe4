@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
 <instance version="6" description="" template="ebps">
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="665441583" List.ParentItemID="665441583">
@@ -171,8 +170,6 @@
 			<list name="tier_group_list" overrideParent="True">
 				<list name="tier_group" List.ItemID="1092367192">
 					<group name="tier" List.ItemID="-380005592">
-						<list name="tier_requirements">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\buildings\acre_siegecamp_ayy" overrideParent="True" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -189,12 +186,11 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 				</list>
 				<list name="tier_group" overrideParent="True" List.ItemID="1682890875">
 					<group name="tier" List.ItemID="1234569351">
-						<list name="tier_requirements">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\french\outskirts\wonders\won_universiten" overrideParent="True" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -211,6 +207,7 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 				</list>
 			</list>
@@ -221,7 +218,7 @@
 			<list name="spawn_items" overrideParent="True">
 				<group name="spawn_item" comment="springald - castle" List.ItemID="-1704061281">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\persia\ps_unit_springald_3_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_springald_3_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="1" />
@@ -282,10 +279,13 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
 				<group name="spawn_item" comment="mangonel - castle" List.ItemID="867457493">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\persia\ps_unit_mangonel_3_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_mangonel_3_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="1" />
@@ -346,10 +346,13 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
 				<group name="spawn_item" comment="bombard - imperial + chemistry" List.ItemID="35626962">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\persia\ps_unit_bombard_4_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_bombard_4_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="2" overrideParent="True" />
@@ -407,10 +410,13 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
 				<group name="spawn_item" comment="Trebuchet - imperial" List.ItemID="1448108372">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\persia\ps_unit_trebuchet_4_cw_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_trebuchet_4_cw_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="1" />
@@ -468,6 +474,9 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
 				<group name="spawn_item" comment="Battering Ram" List.ItemID="1233497765">
 					<group name="ui_position">
@@ -475,7 +484,7 @@
 						<int name="ui_position_column" value="4" overrideParent="True" />
 					</group>
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\persia\ps_unit_workshop_ram_3_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_workshop_ram_3_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<instance_reference name="ui_menu" value="" />
 					<int name="number_to_spawn" value="1" />
@@ -529,6 +538,9 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
 				<group name="spawn_item" comment="cannon (wheeled bombard) - imperial + chemistry + unlock" List.ItemID="472435298">
 					<group name="ui_position">
@@ -593,6 +605,9 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
 			</list>
 			<list name="bonus_xp_from_hold_list">
@@ -619,6 +634,7 @@
 			<bool name="economic_rally_points_allowed" value="False" />
 			<bool name="always_use_economic_rally_points" value="False" />
 			<bool name="use_alternative_rally_point_system" value="False" />
+			<bool name="trade_only_economical_rally" value="False" />
 		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="2147482577" />
@@ -768,8 +784,6 @@
 				<list name="tier_group_list" overrideParent="True">
 					<list name="tier_group" List.ItemID="1613429102">
 						<group name="tier" List.ItemID="-1945138813">
-							<list name="tier_requirements">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\buildings\acre_siegecamp_ayy" overrideParent="True" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -786,12 +800,11 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 					<list name="tier_group" overrideParent="True" List.ItemID="-1519156885">
 						<group name="tier" List.ItemID="693858486">
-							<list name="tier_requirements">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\french\outskirts\wonders\won_universiten" overrideParent="True" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -808,6 +821,7 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 				</list>
@@ -818,7 +832,7 @@
 				<list name="spawn_items" overrideParent="True">
 					<group name="spawn_item" comment="springald - castle" List.ItemID="1614671218">
 						<instance_reference name="entity" value="" />
-						<instance_reference name="squad" value="sbps\persia\ps_unit_springald_3_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_springald_3_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
 						<group name="ui_position">
 							<int name="ui_position_row" value="1" />
@@ -879,10 +893,13 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 					<group name="spawn_item" comment="mangonel - castle" List.ItemID="-55814449">
 						<instance_reference name="entity" value="" />
-						<instance_reference name="squad" value="sbps\persia\ps_unit_mangonel_3_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_mangonel_3_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
 						<group name="ui_position">
 							<int name="ui_position_row" value="1" />
@@ -943,10 +960,13 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 					<group name="spawn_item" comment="bombard - imperial + chemistry" List.ItemID="-960886419">
 						<instance_reference name="entity" value="" />
-						<instance_reference name="squad" value="sbps\persia\ps_unit_bombard_4_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_bombard_4_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
 						<group name="ui_position">
 							<int name="ui_position_row" value="2" overrideParent="True" />
@@ -1004,10 +1024,13 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 					<group name="spawn_item" comment="Trebuchet - imperial" List.ItemID="-896315187">
 						<instance_reference name="entity" value="" />
-						<instance_reference name="squad" value="sbps\persia\ps_unit_trebuchet_4_cw_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_trebuchet_4_cw_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
 						<group name="ui_position">
 							<int name="ui_position_row" value="1" />
@@ -1065,6 +1088,9 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 					<group name="spawn_item" comment="Battering Ram" List.ItemID="-350868846">
 						<group name="ui_position">
@@ -1072,7 +1098,7 @@
 							<int name="ui_position_column" value="4" overrideParent="True" />
 						</group>
 						<instance_reference name="entity" value="" />
-						<instance_reference name="squad" value="sbps\persia\ps_unit_workshop_ram_3_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_workshop_ram_3_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
 						<instance_reference name="ui_menu" value="" />
 						<int name="number_to_spawn" value="1" />
@@ -1126,6 +1152,9 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 					<group name="spawn_item" comment="cannon (wheeled bombard) - imperial + chemistry + unlock" List.ItemID="1740348923">
 						<group name="ui_position">
@@ -1190,6 +1219,9 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 				</list>
 				<list name="bonus_xp_from_hold_list">
@@ -1216,6 +1248,7 @@
 				<bool name="economic_rally_points_allowed" value="False" />
 				<bool name="always_use_economic_rally_points" value="False" />
 				<bool name="use_alternative_rally_point_system" value="False" />
+				<bool name="trade_only_economical_rally" value="False" />
 			</template_reference>
 		</list>
 		<uniqueid name="pbgid" value="2147482577" />
@@ -1393,8 +1426,6 @@
 				<list name="tier_group_list" overrideParent="True">
 					<list name="tier_group" List.ItemID="1086567185">
 						<group name="tier" List.ItemID="1973663670">
-							<list name="tier_requirements">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\buildings\acre_siegecamp_ayy" overrideParent="True" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -1411,12 +1442,11 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 					<list name="tier_group" overrideParent="True" List.ItemID="-647907399">
 						<group name="tier" List.ItemID="-1991940139">
-							<list name="tier_requirements">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\french\outskirts\wonders\won_universiten" overrideParent="True" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -1433,6 +1463,7 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 				</list>
@@ -1443,7 +1474,7 @@
 				<list name="spawn_items" overrideParent="True">
 					<group name="spawn_item" comment="springald - castle" List.ItemID="-1678006240">
 						<instance_reference name="entity" value="" />
-						<instance_reference name="squad" value="sbps\persia\ps_unit_springald_3_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_springald_3_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
 						<group name="ui_position">
 							<int name="ui_position_row" value="1" />
@@ -1504,10 +1535,13 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 					<group name="spawn_item" comment="mangonel - castle" List.ItemID="1836339757">
 						<instance_reference name="entity" value="" />
-						<instance_reference name="squad" value="sbps\persia\ps_unit_mangonel_3_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_mangonel_3_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
 						<group name="ui_position">
 							<int name="ui_position_row" value="1" />
@@ -1568,10 +1602,13 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 					<group name="spawn_item" comment="bombard - imperial + chemistry" List.ItemID="-800568484">
 						<instance_reference name="entity" value="" />
-						<instance_reference name="squad" value="sbps\persia\ps_unit_bombard_4_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_bombard_4_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
 						<group name="ui_position">
 							<int name="ui_position_row" value="2" overrideParent="True" />
@@ -1629,10 +1666,13 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 					<group name="spawn_item" comment="Trebuchet - imperial" List.ItemID="1234187589">
 						<instance_reference name="entity" value="" />
-						<instance_reference name="squad" value="sbps\persia\ps_unit_trebuchet_4_cw_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_trebuchet_4_cw_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
 						<group name="ui_position">
 							<int name="ui_position_row" value="1" />
@@ -1690,6 +1730,9 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 					<group name="spawn_item" comment="Battering Ram" List.ItemID="-816550458">
 						<group name="ui_position">
@@ -1697,7 +1740,7 @@
 							<int name="ui_position_column" value="4" overrideParent="True" />
 						</group>
 						<instance_reference name="entity" value="" />
-						<instance_reference name="squad" value="sbps\persia\ps_unit_workshop_ram_3_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_workshop_ram_3_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
 						<instance_reference name="ui_menu" value="" />
 						<int name="number_to_spawn" value="1" />
@@ -1751,6 +1794,9 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 					<group name="spawn_item" comment="cannon (wheeled bombard) - imperial + chemistry + unlock" List.ItemID="-1235345762">
 						<group name="ui_position">
@@ -1815,6 +1861,9 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 				</list>
 				<list name="bonus_xp_from_hold_list">
@@ -1841,6 +1890,7 @@
 				<bool name="economic_rally_points_allowed" value="False" />
 				<bool name="always_use_economic_rally_points" value="False" />
 				<bool name="use_alternative_rally_point_system" value="False" />
+				<bool name="trade_only_economical_rally" value="False" />
 			</template_reference>
 		</list>
 		<uniqueid name="pbgid" value="2147482577" />

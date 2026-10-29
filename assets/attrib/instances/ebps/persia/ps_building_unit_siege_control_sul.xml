@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
 <instance version="6" description="" template="ebps">
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1514652847" List.ParentItemID="-1514652847">
@@ -30,7 +29,7 @@
 			<list name="spawn_items" overrideParent="True">
 				<group name="spawn_item" comment="springald - castle" List.ItemID="388648688">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\persia\ps_unit_springald_3_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_springald_3_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="1" />
@@ -91,10 +90,13 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
 				<group name="spawn_item" comment="mangonel - castle" List.ItemID="1079988329">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\persia\ps_unit_mangonel_3_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_mangonel_3_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="1" />
@@ -155,10 +157,13 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
 				<group name="spawn_item" comment="bombard - imperial + chemistry" List.ItemID="232851919">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\persia\ps_unit_bombard_4_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_bombard_4_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="2" overrideParent="True" />
@@ -216,10 +221,13 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
 				<group name="spawn_item" comment="Trebuchet - imperial" List.ItemID="1555043092">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\persia\ps_unit_trebuchet_4_cw_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_trebuchet_4_cw_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="1" />
@@ -277,6 +285,9 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
 				<group name="spawn_item" comment="Battering Ram" List.ItemID="1478596054">
 					<group name="ui_position">
@@ -284,7 +295,7 @@
 						<int name="ui_position_column" value="4" overrideParent="True" />
 					</group>
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\persia\ps_unit_workshop_ram_3_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_workshop_ram_3_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<instance_reference name="ui_menu" value="" />
 					<int name="number_to_spawn" value="1" />
@@ -338,6 +349,9 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
 			</list>
 		</template_reference>
@@ -376,8 +390,6 @@
 			<list name="tier_group_list" overrideParent="True">
 				<list name="tier_group" overrideParent="True" List.ItemID="-1451431703">
 					<group name="tier" List.ItemID="-829229606">
-						<list name="tier_requirements" overrideParent="True">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\unit_siege_sul\tier3_unit_siege_control_sul" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -394,24 +406,9 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 					<group name="tier" List.ItemID="884155288">
-						<list name="tier_requirements">
-							<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="-1590230490">
-								<enum name="reason" value="usage" />
-								<locstring name="ui_name" value="0" />
-								<bool name="is_present" value="True" />
-								<int name="max_completed" value="100" />
-								<int name="min_completed" value="1" />
-								<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" />
-								<bool name="include_queued" value="False" />
-								<group name="include_pbg_parenting">
-									<bool name="include_child_pbgs" value="False" />
-									<bool name="include_parent_pbgs" value="False" />
-								</group>
-								<bool name="include_completed" value="True" />
-							</template_reference>
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\unit_siege_sul\tier4_unit_siege_control_sul" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -428,12 +425,11 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 				</list>
 				<list name="tier_group" overrideParent="True" List.ItemID="-938411078">
 					<group name="tier" List.ItemID="-128844781">
-						<list name="tier_requirements">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\military\military_01" overrideParent="True" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -450,10 +446,9 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 					<group name="tier" overrideParent="True" List.ItemID="-660893158">
-						<list name="tier_requirements" overrideParent="True">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\military\military_02" overrideParent="True" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -470,10 +465,9 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 					<group name="tier" List.ItemID="1512418187">
-						<list name="tier_requirements" overrideParent="True">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\military\military_03" overrideParent="True" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -490,10 +484,9 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 					<group name="tier" List.ItemID="-1619066527">
-						<list name="tier_requirements" overrideParent="True">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\military\military_04" overrideParent="True" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -510,6 +503,7 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 				</list>
 			</list>
@@ -577,6 +571,7 @@
 			<bool name="is_indoors" value="True" />
 			<bool name="right_click_garrison_always_enabled" value="False" />
 			<bool name="exclude_allied_units" value="False" />
+			<bool name="on_loaded_squad_action_tree_reapply_on_bp_conversion" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" overrideParent="True" List.ItemID="495798211" List.ListAction="Append">
 			<bool name="update_on_upgrade_changed" value="False" />
@@ -587,7 +582,7 @@
 						<list name="dynamic_requirements" overrideParent="True">
 						</list>
 						<list name="satisfying_entity_groups" overrideParent="True">
-							<group name="satisfying_entity_group" comment="Place of Knowledge&#13;&#10;" overrideParent="True" List.ItemID="-461424942">
+							<group name="satisfying_entity_group" comment="Place of Knowledge&#xD;&#xA;" overrideParent="True" List.ItemID="-461424942">
 								<list name="satisfying_entities">
 									<instance_reference name="entity" value="ebps\persia\ps_building_divan_military_persia" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" List.ItemID="-823572063" />
 									<instance_reference name="entity" value="ebps\persia\ps_building_landmark_age1_military_divan_persia" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" List.ItemID="-498120292" />
@@ -646,7 +641,7 @@
 				<list name="spawn_items" overrideParent="True">
 					<group name="spawn_item" comment="springald - castle" List.ItemID="505392383">
 						<instance_reference name="entity" value="" />
-						<instance_reference name="squad" value="sbps\persia\ps_unit_springald_3_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_springald_3_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
 						<group name="ui_position">
 							<int name="ui_position_row" value="1" />
@@ -703,10 +698,13 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 					<group name="spawn_item" comment="mangonel - castle" List.ItemID="1787956708">
 						<instance_reference name="entity" value="" />
-						<instance_reference name="squad" value="sbps\persia\ps_unit_mangonel_3_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_mangonel_3_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
 						<group name="ui_position">
 							<int name="ui_position_row" value="1" />
@@ -763,10 +761,13 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 					<group name="spawn_item" comment="bombard - imperial + chemistry" List.ItemID="935607483">
 						<instance_reference name="entity" value="" />
-						<instance_reference name="squad" value="sbps\persia\ps_unit_bombard_4_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_bombard_4_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
 						<group name="ui_position">
 							<int name="ui_position_row" value="2" />
@@ -823,10 +824,13 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 					<group name="spawn_item" comment="Springald - imperial" List.ItemID="1453456044">
 						<instance_reference name="entity" value="" />
-						<instance_reference name="squad" value="sbps\persia\ps_unit_trebuchet_4_cw_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_trebuchet_4_cw_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
 						<group name="ui_position">
 							<int name="ui_position_row" value="1" />
@@ -883,6 +887,9 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 				</list>
 			</template_reference>
@@ -911,8 +918,6 @@
 				<list name="tier_group_list" overrideParent="True">
 					<list name="tier_group" overrideParent="True" List.ItemID="-183917409">
 						<group name="tier" List.ItemID="2004503151">
-							<list name="tier_requirements" overrideParent="True">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\unit_siege_sul\tier3_unit_siege_control_sul" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -929,24 +934,9 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 						<group name="tier" List.ItemID="-1933802025">
-							<list name="tier_requirements">
-								<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="-33934590">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<bool name="is_present" value="True" />
-									<int name="max_completed" value="100" />
-									<int name="min_completed" value="1" />
-									<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" />
-									<bool name="include_queued" value="False" />
-									<group name="include_pbg_parenting">
-										<bool name="include_child_pbgs" value="False" />
-										<bool name="include_parent_pbgs" value="False" />
-									</group>
-									<bool name="include_completed" value="True" />
-								</template_reference>
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\buildings\unit_siege_sul\tier4_unit_siege_control_sul" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -963,12 +953,11 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 					<list name="tier_group" overrideParent="True" List.ItemID="1075758947">
 						<group name="tier" List.ItemID="894433499">
-							<list name="tier_requirements">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\military\military_01" overrideParent="True" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -985,10 +974,9 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 						<group name="tier" overrideParent="True" List.ItemID="998321531">
-							<list name="tier_requirements" overrideParent="True">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\military\military_02" overrideParent="True" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -1005,10 +993,9 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 						<group name="tier" List.ItemID="-2112517842">
-							<list name="tier_requirements" overrideParent="True">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\military\military_03" overrideParent="True" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -1025,10 +1012,9 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 						<group name="tier" List.ItemID="717685578">
-							<list name="tier_requirements" overrideParent="True">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\military\military_04" overrideParent="True" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -1045,6 +1031,7 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 				</list>
@@ -1112,6 +1099,7 @@
 				<bool name="is_indoors" value="True" />
 				<bool name="right_click_garrison_always_enabled" value="False" />
 				<bool name="exclude_allied_units" value="False" />
+				<bool name="on_loaded_squad_action_tree_reapply_on_bp_conversion" value="False" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\district_bonuses_ext" overrideParent="True" List.ItemID="1652110699" List.ListAction="Append">
 				<bool name="update_on_upgrade_changed" value="False" />
@@ -1122,7 +1110,7 @@
 							<list name="dynamic_requirements" overrideParent="True">
 							</list>
 							<list name="satisfying_entity_groups" overrideParent="True">
-								<group name="satisfying_entity_group" comment="Place of Knowledge&#13;&#10;" overrideParent="True" List.ItemID="-461424942">
+								<group name="satisfying_entity_group" comment="Place of Knowledge&#xD;&#xA;" overrideParent="True" List.ItemID="-461424942">
 									<list name="satisfying_entities">
 										<instance_reference name="entity" value="ebps\persia\ps_building_divan_military_persia" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" List.ItemID="-823572063" />
 										<instance_reference name="entity" value="ebps\persia\ps_building_landmark_age1_military_divan_persia" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" List.ItemID="600044441" />

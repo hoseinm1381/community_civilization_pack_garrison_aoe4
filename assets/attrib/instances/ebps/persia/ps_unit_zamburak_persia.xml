@@ -1,12 +1,9 @@
-<?xml version='1.0' encoding='utf-8'?>
 <instance version="6" description="Imperial Age Horseman" template="ebps">
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="1672650537" List.ParentItemID="1672650537">
 			<list name="tier_group_list">
 				<list name="tier_group" overrideParent="True" List.ItemID="-1587347723">
 					<group name="tier" List.ItemID="-744480727">
-						<list name="tier_requirements" overrideParent="True">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier4_cavalry_camel_archer_abb" overrideParent="True" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="armored_camel_convert" overrideParent="True" />
@@ -23,6 +20,7 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 				</list>
 			</list>
@@ -118,8 +116,6 @@
 				<list name="tier_group_list">
 					<list name="tier_group" overrideParent="True" List.ItemID="611941523">
 						<group name="tier" List.ItemID="1028667350">
-							<list name="tier_requirements" overrideParent="True">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier4_cavalry_camel_archer_abb" overrideParent="True" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_armored_camel_convert" overrideParent="True" />
@@ -136,6 +132,7 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 				</list>
@@ -212,8 +209,6 @@
 				<list name="tier_group_list">
 					<list name="tier_group" overrideParent="True" List.ItemID="-1867387484">
 						<group name="tier" List.ItemID="-1791653693">
-							<list name="tier_requirements" overrideParent="True">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier4_cavalry_camel_archer_abb" overrideParent="True" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="xp3_armored_camel_convert" overrideParent="True" />
@@ -230,6 +225,7 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 				</list>

@@ -1,0 +1,42 @@
+-- Ported from the accepted Garrison 1.0.5/1.0.6 loading policy.
+-- Selection follows loading: preload a family if any human can select it.
+-- Every client inspects the same roster; never gate simulation loading on UI.
+CCPLoadingState = {required = {}, shared = false}
+local sharedEntities = {
+    "core_tree", "projectile_arrow", "projectile_arrow_incendiary",
+    "projectile_arrow_poison", "projectile_great_bombard_stone",
+    "projectile_mangonel_tower", "projectile_rocket_jpn",
+    "projectile_shot_cannon", "projectile_shot_handgun", "projectile_torch",
+    "wpn_ebps_template_ai", "wpn_range_dummy", "wpn_range_keep_springald",
+    "wpn_siege_keep_cannon", "wpn_siege_keep_murder_hole"}
+
+function CCPLoading_Required(race)
+    if CCPLoadingState.required[race] ~= nil then return CCPLoadingState.required[race] end
+    if type(PLAYERS) ~= "table" or #PLAYERS == 0 then
+        print("CCP_PRECACHE_ROSTER_UNAVAILABLE fallback=full race=" .. race)
+        CCPLoadingState.required[race] = true
+        return true
+    end
+    for _, player in ipairs(PLAYERS) do
+        if player.isHuman == nil or player.id == nil then
+            print("CCP_PRECACHE_ROSTER_INCOMPLETE fallback=full race=" .. race)
+            CCPLoadingState.required[race] = true
+            return true
+        end
+        if player.isHuman and Player_GetRaceName(player.id) == race then
+            CCPLoadingState.required[race] = true
+            return true
+        end
+    end
+    CCPLoadingState.required[race] = false
+    return false
+end
+
+function CCPLoading_Shared()
+    if CCPLoadingState.shared then return end
+    CCPLoadingState.shared = true
+    for _, name in ipairs(sharedEntities) do
+        if EBP_Exists(name) then Scar_PrecachePrematchResource(BP_GetEntityBlueprint(name))
+        else print("CCP_PRECACHE_MISSING_SHARED " .. name) end
+    end
+end

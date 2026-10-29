@@ -2,11 +2,24 @@ import("cardinal.scar")
 -- Register before standard initialization so the opening hold precedes input.
 Core_RegisterModule("VietnamMode")
 import("gamemodes/standard_mode.scar")
+import("ccp/loading.scar")
 import("vietnam/prematch_precache.scar")
 import("vietnam/selection_core.scar")
 import("persia/blueprints.scar")
 import("persia/initialization.scar")
 import("persia/lifecycle.scar")
+import("korea/catalog.scar")
+import("korea/core.scar")
+import("korea/blueprints.scar")
+import("korea/initialization.scar")
+import("korea/research_core.scar")
+import("korea/research.scar")
+import("korea/effect_catalog.scar")
+import("korea/effects.scar")
+import("korea/economy.scar")
+import("korea/landmarks.scar")
+import("korea/ui.scar")
+import("korea/lifecycle.scar")
 import("vietnam/blueprints.scar")
 import("vietnam/initialization.scar")
 import("vietnam/tunnel_core.scar")
@@ -159,7 +172,8 @@ end
 function VietnamMode_RefreshDynastyUI()
     if state.ending then return end
     local player = Core_GetPlayersTableEntry(Game_GetLocalPlayer())
-    local vietnam = player ~= nil and state.civilizations[player.index] == "vietnam"
+    local vietnam = player ~= nil and (state.civilizations[player.index] == "vietnam"
+        or state.civilizations[player.index] == "korea")
     if vietnam then
         -- The stock template ORs its show flag with Chinese RaceID. Hide the
         -- presenter itself so that inherited race visibility cannot win.
@@ -201,6 +215,8 @@ local function finishSelection()
             local ok, applied, reason, mutated
             if record.choice == "persia" then
                 ok, applied, reason, mutated = pcall(PersiaInitialization_Apply, player)
+            elseif record.choice == "korea" then
+                ok, applied, reason, mutated = pcall(KoreaInitialization_Apply, player)
             else
                 ok, applied = pcall(VietnamInitialization_Apply, player)
                 reason = "vietnam-initialization-rejected"
@@ -223,6 +239,7 @@ local function finishSelection()
     releaseHold()
     VietnamLifecycle_Start(state.civilizations)
     PersiaLifecycle_Start(state.civilizations)
+    KoreaLifecycle_Start(state.civilizations)
     VietnamMode_RefreshDynastyUI()
     Rule_AddInterval(VietnamMode_RefreshDynastyUI, 0.5)
     Rule_AddGlobalEvent(VietnamMode_OnLocalPlayerChanged, GE_LocalPlayerChanged)
@@ -260,11 +277,13 @@ function VietnamMode_Tick()
         local player = Core_GetPlayersTableEntry(Game_GetLocalPlayer())
         local record = player and state.selection.players[player.index]
         if record and record.choice == nil and not state.popupActive and not state.choiceSent then
-            local delhi = record.original == "delhi"
+            local labels = {china = {1007, 1004, 1005, 1009}, delhi = {1107, 1104, 1105, 1109},
+                zhu_xi = {11991, 11990, 12000, 11992}}
+            local pair = labels[record.original]
             UI_MessageBoxReset()
-            UI_MessageBoxSetText(text(1003), text(delhi and 1107 or 1007))
-            UI_MessageBoxSetButton(DB_Button1, text(delhi and 1104 or 1004), text(delhi and 1104 or 1004), "", true)
-            UI_MessageBoxSetButton(DB_Button2, text(delhi and 1105 or 1005), text(delhi and 1109 or 1009), "", true)
+            UI_MessageBoxSetText(text(1003), text(pair[1]))
+            UI_MessageBoxSetButton(DB_Button1, text(pair[2]), text(pair[2]), "", true)
+            UI_MessageBoxSetButton(DB_Button2, text(pair[3]), text(pair[4]), "", true)
             state.popupActive = true
             UI_MessageBoxShow(DC_Default, VietnamMode_DialogChoice)
         end
@@ -289,13 +308,16 @@ function VietnamMode_OnInit()
         and SBP_Exists(blueprintPrefix .. "vn_unit_scout_1_chi")
         and SBP_Exists(blueprintPrefix .. "vn_unit_water_buffalo_vit")
     local persiaAvailable = PersiaBlueprints_Available()
+    local koreaAvailable = KoreaBlueprints_Available()
     for _, player in ipairs(PLAYERS) do
         print("VIETNAM_V2_PLAYER index=" .. tostring(player.index) .. " human=" .. tostring(player.isHuman)
             .. " race=" .. Player_GetRaceName(player.id) .. " alive=" .. tostring(Player_IsAlive(player.id)))
         local race = Player_GetRaceName(player.id)
-        local original = race == "chinese" and "china" or (race == "sultanate" and "delhi" or nil)
+        local original = race == "chinese" and "china" or (race == "sultanate" and "delhi"
+            or (race == "chinese_ha_01" and "zhu_xi" or nil))
         if player.isHuman and original ~= nil and Player_IsAlive(player.id) then
-            if (original == "china" and vietnamAvailable) or (original == "delhi" and persiaAvailable) then
+            if (original == "china" and vietnamAvailable) or (original == "delhi" and persiaAvailable)
+                or (original == "zhu_xi" and koreaAvailable) then
                 table.insert(eligible, player.index)
                 originals[player.index] = original
             else
@@ -349,5 +371,6 @@ function VietnamMode_OnGameOver()
     VietnamInitialization_Cleanup()
     VietnamLifecycle_Cleanup()
     PersiaLifecycle_Cleanup()
+    KoreaLifecycle_Cleanup()
     print("VIETNAM_V2_CLEANUP")
 end

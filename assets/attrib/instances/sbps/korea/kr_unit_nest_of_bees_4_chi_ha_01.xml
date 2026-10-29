@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="4" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="1627760721" List.ParentItemID="1627760721">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="1549991796" List.ParentItemID="1549991796">
+					<group name="info">
+						<file name="icon_name" value="korea\hwacha_3" overrideParent="True" />
+						<locstring name="screen_name" value="12094" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+						<string name="selection_group" value="nest_of_bees" overrideParent="True" />
+						<bool name="is_unique_to_race" value="True" overrideParent="True" />
+						<locstring name="help_text" value="12337" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+						<file name="flag_icon_override" value="korea\koreans_2" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="108014063" List.ParentItemID="108014063">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="-515746888" List.ParentItemID="-515746888">
+					<instance_reference name="type" value="ebps\korea\kr_unit_nest_of_bees_4_chi_ha_01" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+					<list name="unit_attachments" overrideParent="True">
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="1325491857" List.ParentItemID="1325491857">
+			<list name="requirement_table" overrideParent="True">
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="1502438494">
+					<enum name="reason" value="usage" overrideParent="True" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_combat_behaviour_ext" List.ItemID="1906875032" List.ParentItemID="1906875032">
+			<float name="reveal_self_attacker_time" value="6" overrideParent="True" />
+			<bool name="reveal_self_attacker_time_use" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext" List.ItemID="-950529441" List.ParentItemID="-950529441">
+			<list name="abilities">
+				<instance_reference name="ability" value="abilities\korea\kr_acre_barrage_small_ayy" mod="a743d7d1d7534cf78817e29d8ded7366" List.ItemID="-1116190650" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="1699780273" List.ParentItemID="1699780273">
+			<list name="squad_type_list" overrideParent="True">
+				<enum name="squad_type" value="military" List.ItemID="-954100969" />
+				<enum name="squad_type" value="scar_age4" overrideParent="True" List.ItemID="-1243655141" />
+				<enum name="squad_type" value="siege" List.ItemID="-1771694549" />
+				<enum name="squad_type" value="siege_range" List.ItemID="1587574393" />
+				<enum name="squad_type" value="nest_of_bees" List.ItemID="-1800510097" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_speech_ext" List.ItemID="183719508" List.ParentItemID="183719508">
+			<group name="squad_speech_parameters">
+				<string name="squad_name_code" value="nest_of_bees" overrideParent="True" />
+			</group>
+			<list name="age_mapping">
+				<int name="age_number" value="3" overrideParent="True" List.ItemID="6666475" List.ParentItemID="6666475" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="134431530" List.ParentItemID="134431530">
+			<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147483062" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_mangonel_3" />
+</instance>

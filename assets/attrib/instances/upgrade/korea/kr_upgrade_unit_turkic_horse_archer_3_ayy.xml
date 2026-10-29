@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="upgrade">
+	<group name="upgrade_bag">
+		<group name="ui_info">
+			<locstring name="help_text" value="12324" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+			<file name="icon_name" value="korea\bookicon" overrideParent="True" />
+			<locstring name="extra_text" value="12322" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+			<locstring name="screen_name" value="12323" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+			<string name="debug_text" value="" overrideParent="True" />
+		</group>
+		<list name="requirements">
+			<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-1879532453" List.ParentItemID="-1879532453">
+				<instance_reference name="upgrade_name" value="upgrade\dev\ages\feudal_age" overrideParent="True" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="1413127965" List.ParentItemID="1413127965">
+				<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_unit_turkic_horse_archer_3_ayy" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+			</template_reference>
+		</list>
+		<list name="upgrade_type" overrideParent="True">
+			<enum name="upgrade_type" value="military_upgrade" List.ItemID="-1440289165" />
+			<enum name="upgrade_type" value="ayyubid_cmp_upgrade" overrideParent="True" List.ItemID="751077151" />
+			<enum name="upgrade_type" value="scar_unit_upgrade" List.ItemID="104927308" />
+			<enum name="upgrade_type" value="scar_tiered_upgrade" List.ItemID="-21297811" />
+			<enum name="upgrade_type" value="scar_castle_age_upgrade" List.ItemID="2046306601" />
+		</list>
+		<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_archery_range\cmp_tech_upgrade_turkichorsearcher_ayy" overrideParent="True" />
+		<group name="time_cost">
+			<enum_table name="cost">
+				<float name="food" value="0" overrideParent="True" />
+				<float name="gold" value="0" overrideParent="True" />
+				<float name="merc_byz" value="350" overrideParent="True" />
+			</enum_table>
+		</group>
+		<group name="ui_position">
+			<int name="ui_position_row" value="1" overrideParent="True" />
+			<int name="ui_position_column" value="2" overrideParent="True" />
+		</group>
+		<instance_reference name="ui_menu" value="menu\building_naval_upgrade" overrideParent="True" />
+	</group>
+	<uniqueid name="pbgid" value="2147483129" />
+	<instance_reference name="parent_pbg" value="upgrade\races\abbasid\units\upgrade_unit_camel_archer_3_abb" />
+	<variant name="xp3">
+		<group name="upgrade_bag">
+			<group name="ui_info">
+				<file name="icon_name" value="races\common\units\horsearcher_3" overrideParent="True" />
+			</group>
+			<list name="requirements">
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="1413127965" List.ParentItemID="1413127965">
+					<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_unit_turkic_horse_archer_3_ayy" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+				</template_reference>
+			</list>
+			<list name="upgrade_type" overrideParent="True">
+				<enum name="upgrade_type" value="military_upgrade" List.ItemID="239572195" />
+				<enum name="upgrade_type" value="ayyubid_cmp_upgrade" overrideParent="True" List.ItemID="663352892" />
+				<enum name="upgrade_type" value="scar_unit_upgrade" List.ItemID="-1267448357" />
+				<enum name="upgrade_type" value="scar_tiered_upgrade" List.ItemID="-558072441" />
+				<enum name="upgrade_type" value="scar_castle_age_upgrade" List.ItemID="1972598493" />
+			</list>
+			<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_archery_range\cmp_tech_upgrade_turkichorsearcher_ayy" overrideParent="True" />
+		</group>
+		<uniqueid name="pbgid" value="2147483129" />
+		<instance_reference name="parent_pbg" value="upgrade\races\abbasid\units\upgrade_unit_camel_archer_3_abb" />
+	</variant>
+</instance>

@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
 <instance version="6" description="" template="ebps">
 	<list name="extensions" overrideParent="True">
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="267168923" List.ParentItemID="267168923">
@@ -122,6 +121,12 @@
 			<state_tree_node name="on_reach_invulnerable_min_cap_entity_state_tree_ref" value="" />
 			<state_tree_node name="on_reach_max_health_entity_state_tree_ref" value="" />
 			<bool name="can_be_damaged_by_ally" value="False" />
+			<enum_table name="percentage_reduction_armor_by_damage_type">
+				<float name="True Damage" value="0" />
+				<float name="Melee" value="0" />
+				<float name="Ranged" value="0" />
+				<float name="Fire" value="0" />
+			</enum_table>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="560136838" List.ParentItemID="560136838">
 			<instance_reference name="hit_material" value="hit_material\wood" />
@@ -373,6 +378,7 @@
 			<locstring name="help_text_controller" value="0" />
 			<locstring name="extra_text_controller" value="0" />
 			<bool name="static_selection_bounds" value="False" />
+			<enum name="targeting_and_bandbox_selection_priority_controller" value="" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-2826050" List.ParentItemID="-2826050">
 			<enum name="snap_to_surface_type" value="Water" overrideParent="True" />
@@ -422,6 +428,7 @@
 			<bool name="can_evacuate_enemy_unit" value="False" />
 			<instance_reference name="pass_type_destination" value="" />
 			<float name="turn_in_place_distance" value="0" />
+			<bool name="snap_to_terrain" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="1142046019" List.ParentItemID="1142046019">
 			<bool name="must_be_in_supply" value="False" />
@@ -456,7 +463,7 @@
 			<int name="history_size" value="2" />
 			<bool name="allow_entity_scan_close_enemies" value="True" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\resource_gatherer_ext" comment="NOTE!!!! The Mongol Villager has a unique Gather Type list and needs to be manually updated.&#13;&#10;&#13;&#10;The Berry Bush and Farm have a different order in this list so that the Mongols will gather Berries when completing the Ger / House." List.ItemID="-151063231" List.ParentItemID="-151063231">
+		<template_reference name="exts" value="ebpextensions\resource_gatherer_ext" comment="NOTE!!!! The Mongol Villager has a unique Gather Type list and needs to be manually updated.&#xD;&#xA;&#xD;&#xA;The Berry Bush and Farm have a different order in this list so that the Mongols will gather Berries when completing the Ger / House." List.ItemID="-151063231" List.ParentItemID="-151063231">
 			<list name="gather_types">
 				<group name="gather_target" comment="BERRY BUSH" List.ItemID="-993611447" List.ParentItemID="-993611447">
 					<float name="gather_rate" value="0.8" />
@@ -540,8 +547,6 @@
 				<list name="tier_group" List.ItemID="-659887307" List.ParentItemID="-659887307">
 					<group name="tier" List.ItemID="2025676610" List.ParentItemID="2025676610">
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\units\tier2_naval_fishing_boat_ott" overrideParent="True" />
-						<list name="tier_requirements">
-						</list>
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
 							<bool name="start_suspended" value="False" />
@@ -557,6 +562,7 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 				</list>
 			</list>
@@ -710,6 +716,12 @@
 				<state_tree_node name="on_reach_invulnerable_min_cap_entity_state_tree_ref" value="" />
 				<state_tree_node name="on_reach_max_health_entity_state_tree_ref" value="" />
 				<bool name="can_be_damaged_by_ally" value="False" />
+				<enum_table name="percentage_reduction_armor_by_damage_type">
+					<float name="True Damage" value="0" />
+					<float name="Melee" value="0" />
+					<float name="Ranged" value="0" />
+					<float name="Fire" value="0" />
+				</enum_table>
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="560136838" List.ParentItemID="560136838">
 				<instance_reference name="hit_material" value="hit_material\wood" />
@@ -961,6 +973,7 @@
 				<locstring name="help_text_controller" value="0" />
 				<locstring name="extra_text_controller" value="0" />
 				<bool name="static_selection_bounds" value="False" />
+				<enum name="targeting_and_bandbox_selection_priority_controller" value="" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-2826050" List.ParentItemID="-2826050">
 				<enum name="snap_to_surface_type" value="Water" overrideParent="True" />
@@ -1010,6 +1023,7 @@
 				<bool name="can_evacuate_enemy_unit" value="False" />
 				<instance_reference name="pass_type_destination" value="" />
 				<float name="turn_in_place_distance" value="0" />
+				<bool name="snap_to_terrain" value="True" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="1142046019" List.ParentItemID="1142046019">
 				<bool name="must_be_in_supply" value="False" />
@@ -1044,7 +1058,7 @@
 				<int name="history_size" value="2" />
 				<bool name="allow_entity_scan_close_enemies" value="True" />
 			</template_reference>
-			<template_reference name="exts" value="ebpextensions\resource_gatherer_ext" comment="NOTE!!!! The Mongol Villager has a unique Gather Type list and needs to be manually updated.&#13;&#10;&#13;&#10;The Berry Bush and Farm have a different order in this list so that the Mongols will gather Berries when completing the Ger / House." List.ItemID="-151063231" List.ParentItemID="-151063231">
+			<template_reference name="exts" value="ebpextensions\resource_gatherer_ext" comment="NOTE!!!! The Mongol Villager has a unique Gather Type list and needs to be manually updated.&#xD;&#xA;&#xD;&#xA;The Berry Bush and Farm have a different order in this list so that the Mongols will gather Berries when completing the Ger / House." List.ItemID="-151063231" List.ParentItemID="-151063231">
 				<list name="gather_types">
 					<group name="gather_target" comment="BERRY BUSH" List.ItemID="-993611447" List.ParentItemID="-993611447">
 						<float name="gather_rate" value="0.8" />
@@ -1128,8 +1142,6 @@
 					<list name="tier_group" List.ItemID="-659887307" List.ParentItemID="-659887307">
 						<group name="tier" List.ItemID="2025676610" List.ParentItemID="2025676610">
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\units\tier2_naval_fishing_boat_ott" overrideParent="True" />
-							<list name="tier_requirements">
-							</list>
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
 								<bool name="start_suspended" value="False" />
@@ -1145,6 +1157,7 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 				</list>

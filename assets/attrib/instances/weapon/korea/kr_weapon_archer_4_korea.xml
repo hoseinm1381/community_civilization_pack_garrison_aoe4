@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="aim">
+			<group name="fire_aim_time">
+				<float name="max" value="0.25" overrideParent="True" />
+				<float name="min" value="0.25" overrideParent="True" />
+			</group>
+			<group name="aim_time_multiplier">
+				<float name="near" value="1" overrideParent="True" />
+				<float name="mid" value="1" overrideParent="True" />
+			</group>
+		</group>
+		<group name="damage">
+			<float name="max" value="8" overrideParent="True" />
+			<float name="min" value="8" overrideParent="True" />
+		</group>
+		<group name="fire">
+			<float name="wind_up" value="0" overrideParent="True" />
+		</group>
+		<group name="range">
+			<float name="max_animation_angle_distance" value="27" overrideParent="True" />
+			<float name="max" value="28" overrideParent="True" />
+		</group>
+		<group name="reload">
+			<group name="duration">
+				<float name="max" value="0.75" overrideParent="True" />
+				<float name="min" value="0.75" overrideParent="True" />
+			</group>
+		</group>
+		<group name="scatter">
+			<float name="angle_scatter" value="3" overrideParent="True" />
+			<float name="distance_scatter_max" value="3" overrideParent="True" />
+		</group>
+		<list name="target_type_table">
+			<group name="target_unit_type_multipliers" List.ItemID="-222295425" List.ParentItemID="-222295425">
+				<enum name="unit_type" value="light_melee_infantry" overrideParent="True" />
+				<float name="base_damage_modifier" value="8" overrideParent="True" />
+			</group>
+			<group name="target_unit_type_multipliers" List.ItemID="116151180" List.ParentItemID="116151180">
+				<float name="base_damage_modifier" value="8" overrideParent="True" />
+			</group>
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="2147483170" />
+	<instance_reference name="parent_pbg" value="weapon\korea\kr_weapon_archer_3" mod="a743d7d1d7534cf78817e29d8ded7366" />
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<group name="aim">
+				<group name="fire_aim_time">
+					<float name="max" value="0.25" overrideParent="True" />
+					<float name="min" value="0.25" overrideParent="True" />
+				</group>
+				<group name="aim_time_multiplier">
+					<float name="near" value="1" overrideParent="True" />
+					<float name="mid" value="1" overrideParent="True" />
+				</group>
+			</group>
+			<group name="damage">
+				<float name="max" value="9" overrideParent="True" />
+				<float name="min" value="9" overrideParent="True" />
+			</group>
+			<group name="fire">
+				<float name="wind_up" value="0" overrideParent="True" />
+			</group>
+			<group name="range">
+				<group name="distance">
+					<float name="near" value="10" overrideParent="True" />
+					<float name="far" value="25" overrideParent="True" />
+					<float name="mid" value="20" overrideParent="True" />
+				</group>
+				<float name="max_animation_angle_distance" value="27" overrideParent="True" />
+			</group>
+			<group name="reload">
+				<group name="duration">
+					<float name="max" value="0.75" overrideParent="True" />
+					<float name="min" value="0.75" overrideParent="True" />
+				</group>
+			</group>
+			<group name="scatter">
+				<float name="angle_scatter" value="3" overrideParent="True" />
+				<float name="distance_scatter_max" value="3" overrideParent="True" />
+			</group>
+			<list name="target_type_table" overrideParent="True">
+				<group name="target_unit_type_multipliers" List.ItemID="-1082116086">
+					<enum name="unit_type" value="spearman" overrideParent="True" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="2" overrideParent="True" />
+				</group>
+			</list>
+		</group>
+		<uniqueid name="pbgid" value="2147483170" />
+		<instance_reference name="parent_pbg" value="weapon\korea\kr_weapon_archer_3" mod="a743d7d1d7534cf78817e29d8ded7366" />
+	</variant>
+	<variant name="xp3">
+		<group name="weapon_bag">
+			<group name="aim">
+				<group name="fire_aim_time">
+					<float name="max" value="0.25" overrideParent="True" />
+					<float name="min" value="0.25" overrideParent="True" />
+				</group>
+				<group name="aim_time_multiplier">
+					<float name="near" value="1" overrideParent="True" />
+					<float name="mid" value="1" overrideParent="True" />
+				</group>
+			</group>
+			<group name="damage">
+				<float name="max" value="8" overrideParent="True" />
+				<float name="min" value="8" overrideParent="True" />
+			</group>
+			<group name="fire">
+				<float name="wind_up" value="0" overrideParent="True" />
+			</group>
+			<group name="range">
+				<float name="max_animation_angle_distance" value="27" overrideParent="True" />
+			</group>
+			<group name="reload">
+				<group name="duration">
+					<float name="max" value="0.75" overrideParent="True" />
+					<float name="min" value="0.75" overrideParent="True" />
+				</group>
+			</group>
+			<group name="scatter">
+				<float name="angle_scatter" value="3" overrideParent="True" />
+				<float name="distance_scatter_max" value="3" overrideParent="True" />
+			</group>
+			<list name="target_type_table" overrideParent="True">
+				<group name="target_unit_type_multipliers" List.ItemID="-369895193">
+					<enum name="unit_type" value="light_melee_infantry" overrideParent="True" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="8" overrideParent="True" />
+				</group>
+			</list>
+		</group>
+		<uniqueid name="pbgid" value="2147483170" />
+		<instance_reference name="parent_pbg" value="weapon\korea\kr_weapon_archer_3" mod="a743d7d1d7534cf78817e29d8ded7366" />
+	</variant>
+</instance>

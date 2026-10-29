@@ -22,6 +22,7 @@ class ModePairTests(unittest.TestCase):
             function EBP_Exists() return true end
             function SBP_Exists() return true end
             function PersiaBlueprints_Available() return true end
+            function KoreaBlueprints_Available() return true end
             function World_GetGameTime() return env.clock end
             function Network_RegisterEvent(name) env.network[name]=true end
             function Network_RemoveEvent(name) env.network[name]=nil end
@@ -45,6 +46,7 @@ class ModePairTests(unittest.TestCase):
             function UI_SetPropertyValue() end
             function VietnamLifecycle_Start(civs) env.civs=civs end
             function PersiaLifecycle_Start(civs) env.pcivs=civs end
+            function KoreaLifecycle_Start(civs) env.kcivs=civs end
             function VietnamInitialization_Apply() env.vn=env.vn+1; return true end
             function PersiaInitialization_Apply()
                 env.ps=env.ps+1

@@ -203,6 +203,11 @@ function PersiaBlueprints_Available()
 end
 
 function PersiaPrecache_Init()
+    if not CCPLoading_Required("sultanate") then
+        print("CCP_PRECACHE_SKIP family=persia")
+        return
+    end
+    CCPLoading_Shared()
     for _, name in ipairs(PersiaBlueprints.entities) do
         if EBP_Exists(name) then Scar_PrecachePrematchResource(BP_GetEntityBlueprint(name))
         else print("PERSIA_PRECACHE_MISSING_ENTITY " .. name) end

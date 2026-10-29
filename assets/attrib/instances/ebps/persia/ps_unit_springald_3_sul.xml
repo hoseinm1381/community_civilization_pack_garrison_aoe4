@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
 <instance version="6" description="" template="ebps">
 	<list name="extensions" overrideParent="True">
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="811590333" List.ParentItemID="811590333">
@@ -368,6 +367,7 @@
 			<locstring name="help_text_controller" value="0" />
 			<locstring name="extra_text_controller" value="0" />
 			<bool name="static_selection_bounds" value="False" />
+			<enum name="targeting_and_bandbox_selection_priority_controller" value="" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-587241534" List.ParentItemID="-587241534">
 			<list name="hardpoints">
@@ -505,6 +505,7 @@
 			</enum_table>
 			<enum name="snap_to_surface_type" value="GroundOrWalkable" />
 			<float name="turn_in_place_distance" value="1.5" />
+			<bool name="snap_to_terrain" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\speech_ext" List.ItemID="-219398357" List.ParentItemID="-219398357">
 			<string name="speaker_code" value="seigeRanged" />
@@ -607,8 +608,6 @@
 				<list name="tier_group" List.ItemID="1058977672" List.ParentItemID="1058977672">
 					<group name="tier" List.ItemID="-617385585" List.ParentItemID="-617385585">
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier3_scorpion_sul" overrideParent="True" />
-						<list name="tier_requirements">
-						</list>
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" />
 							<bool name="start_suspended" value="False" />
@@ -624,6 +623,7 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 				</list>
 			</list>

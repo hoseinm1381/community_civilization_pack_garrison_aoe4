@@ -1,0 +1,277 @@
+{
+  "reason": "Owner-reported inherited construction inflation; normal single-builder times",
+  "official_archive": "E:\\Games\\steamapps\\common\\Age of Empires IV\\cardinal\\archives\\ReferenceAttributes.sga",
+  "changes": [
+    {
+      "blueprint": "ebps\\korea\\kr_building_defense_keep_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_defense_keep_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "360",
+      "after": "180",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_defense_keep",
+      "before_sha256": "4c51107b7f2f2786af01775b22e0110a4c8e4d6baffae4ef0aa4de84ddf77cc7",
+      "before_semantic_sha256": "4764eadf49d2777e37f1b87a2a8d8823e68d621ce2d6d0e682fc2f996e5f21ff"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_defense_outpost_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_defense_outpost_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "120",
+      "after": "60",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_defense_outpost",
+      "before_sha256": "667467747c67848001b2a32a3c7af49fa3992e4bb1c9226e8d6a965aeab42d2e",
+      "before_semantic_sha256": "f5aec7cc2ab032bdff93a1fbd72d18a59c50d90aa0f366c8e5b8df71cd78372d"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_defense_palisade_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_defense_palisade_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "12",
+      "after": "8",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_defense_palisade",
+      "before_sha256": "5bb9d194034392137d758e4f9fe7cde25c74bf7f01ed179377f18d572c4d78a1",
+      "before_semantic_sha256": "1d27d5df038fbc06a59d7dc517d630dc0dc7fbd0cc94f83e04ea70ce2da13b92"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_defense_palisade_gate_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_defense_palisade_gate_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "15",
+      "after": "10",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_defense_palisade_gate",
+      "before_sha256": "5d64ebcd05e498939358c2622a992f933aac212ec09fb07c819688dd66c6baa9",
+      "before_semantic_sha256": "551965871c8b4dead2e3823890ebbd6ccedaf35643111045cb340a5eae155023"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_defense_tower_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_defense_tower_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "135",
+      "after": "90",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_defense_tower",
+      "before_sha256": "2c42414893d7f3bb277f65e3688706ad554c9bf1c6e2ab5446e6cbd1394a24bb",
+      "before_semantic_sha256": "de1c3fbead57eaea912a5a5f5eadac4864baa2b4e4b005c7b8d4bb8a421c2a4e"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_defense_wall_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_defense_wall_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "24",
+      "after": "16",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_defense_wall",
+      "before_sha256": "ff56f5ec085f58c6da339b62b99317f1b5c0c395a47071faccddffdcdc9339ec",
+      "before_semantic_sha256": "9ad550540d718d5c1e4613a4eb584e9edd750be8eac26ccce8f09a42c50a6750"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_defense_wall_gate_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_defense_wall_gate_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "45",
+      "after": "30",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_defense_wall_gate",
+      "before_sha256": "51318fd927731b1f483aeb80323c4fbc451a614c3921b9dc0f9c8b79d7713436",
+      "before_semantic_sha256": "9337f4722f313388e397ae6167004826f20ed5af2f02a116f74a1d0fff4de7ea"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_econ_food_control_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_econ_food_control_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "40",
+      "after": "20",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_econ_food",
+      "before_sha256": "696266ef244765d16bcebb22eb49edea311282a9ec889893f50c6e6339207bfd",
+      "before_semantic_sha256": "82ad245d8e4f2ae1cf84fdbfbe57641d566d9818c4d244e2e9bad976a931b006"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_econ_mining_camp_control_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_econ_mining_camp_control_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "40",
+      "after": "20",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_econ_mining_camp",
+      "before_sha256": "66a2975c21b746b58cd789519f3c5a5d4e24627f22716dae36866f6eba6d6346",
+      "before_semantic_sha256": "0afae04a204734414d87e086315dfa0023002c9e42f7387ce9244841a3e5a340"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_econ_wood_control_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_econ_wood_control_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "40",
+      "after": "20",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_econ_wood",
+      "before_sha256": "4ed1fed3b48266513f896595c9b2dfd117ec03897de6a20106aca251674391be",
+      "before_semantic_sha256": "06e332a78781d0280397a04fb33cf59e875cba006310f05e1700dde2e6cf343f"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_house_control_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_house_control_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "30",
+      "after": "15",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_house",
+      "before_sha256": "b4bae061c121a92b4cc8cf24e1686885f2158150581cbaa63c1f072982497be2",
+      "before_semantic_sha256": "20691088be2cb8b5ad79405810ce1c81b410f4eff29081816d291f29530f98fe"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_landmark_age1_prefecture_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_landmark_age1_prefecture_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "380",
+      "after": "190",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_wonder_age1",
+      "before_sha256": "303e61700bfb97733fbaa653207b86de30d2b3d2b26443a1899e61bd0cad2881",
+      "before_semantic_sha256": "da7b77647cf411d412d5ef5a8f912b2333457fb601ae216ac4988bfd3ab9f304"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_landmark_age2_shaolin_temple_control_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_landmark_age2_shaolin_temple_control_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "440",
+      "after": "220",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_wonder_age2",
+      "before_sha256": "4804997fafaa8257d875ce02c40131063215261cf43b799b26ae5060355fda1a",
+      "before_semantic_sha256": "564bfdd3173656bcdd5c9bb745496311fa5a6e74f81c031e263cd39ed7038ab2"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_landmark_age2_white_deer_grotto_control_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_landmark_age2_white_deer_grotto_control_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "440",
+      "after": "220",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_wonder_age2",
+      "before_sha256": "781f6a8e8b4abea74eccfd024f04fece285db909a250867587b65c43c40a367c",
+      "before_semantic_sha256": "93c8dd3dd50d55bb3757d27f92fdf2b03b9df30710ef29b138992ea9c13a08f6"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_landmark_age3_library_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_landmark_age3_library_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "500",
+      "after": "250",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_wonder_age3",
+      "before_sha256": "2e54f1bf2c06d0efbb4aeaf0b0696406533fe5311978bc8379bae65c1e53e21f",
+      "before_semantic_sha256": "9acec03ad8288fa5a9b10331f6a7c6ac2faeba2ba03ddfb8606f17120a35eb65"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_landmark_age3_temple_of_the_sun_control_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_landmark_age3_temple_of_the_sun_control_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "500",
+      "after": "250",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_wonder_age3",
+      "before_sha256": "f80761e9861b022a234f8237674fdd6aea8c89c9c79b0ac7aa373482b9b8a292",
+      "before_semantic_sha256": "0cb12cb8ab51a4256845b9eb064d74af5572f34727109513ded3ecf6c7224f11"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_resource_farm_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_resource_farm_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "12",
+      "after": "6",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_resource_farm",
+      "before_sha256": "115de606cf9976da0d759250eb7db248c14256b7fe99f275e0032c42e1112ddb",
+      "before_semantic_sha256": "8d2fe3a3b505e7b595b89199a440260447743720743a879195667efded14dbbb"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_tech_unit_infantry_control_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_tech_unit_infantry_control_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "50",
+      "after": "25",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_tech_unit_infantry",
+      "before_sha256": "d681635ae402da6856b0ab54a0c3a67e26c761484bc8f6a83530f992a27609ee",
+      "before_semantic_sha256": "b13780fd262ce473e6ee8162d0318cc3050dbf79cc73a1057477dbde4d8e26ba"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_tech_university_control_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_tech_university_control_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "120",
+      "after": "60",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_tech_university",
+      "before_sha256": "7996a147fbe121e9f2e6f758208609a9e893407e4eb67fbd224dbc23d1ff163b",
+      "before_semantic_sha256": "f85d593ae0e81400772a9e4313303de459ef17881e9761dc3ca0dcd06049dd07"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_town_center_capital_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_town_center_capital_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "300",
+      "after": "150",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_town_center",
+      "before_sha256": "157d537054febe12a59051a15684659e11c464159418339e897d8ee6015a4084",
+      "before_semantic_sha256": "a7271d1e1c9c94604f8e766fc32a723864d03fd7f36e5f2f57d03c60987c1b91"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_town_center_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_town_center_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "300",
+      "after": "150",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_town_center",
+      "before_sha256": "6b8d695d5f4a29e722c1898365375d46c37de46b6f58a95a6d22b1110e014bb6",
+      "before_semantic_sha256": "e51efcec8787dda1cbbdf3d2e8f0259e6698eddd631484bf32a5f011d0c5be17"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_unit_cavalry_control_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_unit_cavalry_control_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "60",
+      "after": "30",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_unit_cavalry",
+      "before_sha256": "e7390703680f76efdf4ff1870ff1af17a27b74f26ff39f2847e306c7500f0ea5",
+      "before_semantic_sha256": "2b43109249a3f0cd3df69bc676105d4a6f1cbc15e4500cee5215ee6052d988ca"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_unit_infantry_control_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_unit_infantry_control_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "60",
+      "after": "30",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_unit_infantry",
+      "before_sha256": "adb8a69bf2b838e60ef0b3681723086a4a837fd8be88e7c4af5d13bf1596533b",
+      "before_semantic_sha256": "d630c535b0064af78007f8eb635092f9c599d7af22b4fba6733d800fb82d7881"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_unit_naval_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_unit_naval_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "60",
+      "after": "30",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_unit_naval",
+      "before_sha256": "f2840a312ce4b886912b95513721ba021d1800bf0b1c5ff3c46795fe6ca7fed2",
+      "before_semantic_sha256": "ffdc8e6ccfbfd9971e50a3fa8d2158b7444c78285556c5cd4d020a612d610010"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_unit_ranged_control_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_unit_ranged_control_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "60",
+      "after": "30",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_unit_ranged",
+      "before_sha256": "49d9c88f99f467cd4a470807c01564b38ddfce72adc8610dd72375e3ccecd64d",
+      "before_semantic_sha256": "2ad986e71f57a16a23cce2070e085d19fc7be6f0484889285b867dc38c3dc94a"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_unit_religious_control_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_unit_religious_control_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "50",
+      "after": "25",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_unit_religious",
+      "before_sha256": "ae7a3b39202b5987b0fb11ae87235be83e59acb920356d9f38af644e78c8cb70",
+      "before_semantic_sha256": "f82ee0539777df75e059bb93e386c3ab9249a38a31c34392211bbc90df57ee55"
+    },
+    {
+      "blueprint": "ebps\\korea\\kr_building_unit_siege_control_chi_ha_01",
+      "file": "assets/attrib/instances/ebps/korea/kr_building_unit_siege_control_chi_ha_01.xml",
+      "xpath": "list/template_reference[@value='ebpextensions\\cost_ext']/group[@name='time_cost']/float[@name='time_seconds']",
+      "before": "90",
+      "after": "45",
+      "official_time_owner": "ebps\\races\\core\\buildings\\building_unit_siege",
+      "before_sha256": "d600d8a4a69f183318c3678fd28112d6ac97aea90224035450f6db10e30865ee",
+      "before_semantic_sha256": "79cf76e2cc41aa80c26c470eb074a4135c9a998c86cc17064a57baf863dc544a"
+    }
+  ],
+  "official_archive_sha256": "cbaf6803ca8309cfb3861c8a19c3c9c34c0ec50d7c6c507f9c6906be301cfe5c"
+}

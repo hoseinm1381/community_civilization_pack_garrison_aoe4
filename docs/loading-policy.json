@@ -1,0 +1,3845 @@
+{
+  "source": "Accepted Garrison 1.0.5/1.0.6 loading_103.scar",
+  "removed_unconditional_items": 761,
+  "before_rdo_sha256": "ace17eb6ba5f8da8b74f7f1ec2951515d8bbd129c6fc99a65b0d7aa3d91e7f7f",
+  "families": {
+    "vietnam": "chinese",
+    "persia": "sultanate",
+    "korea": "chinese_ha_01"
+  },
+  "shared_stock_entities": 15,
+  "prior_items": [
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_acacia_med_wild_stealth_vit",
+      "object_id": "12379813733990400201"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_bambo_outpost_chi",
+      "object_id": "12379813733990400203"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_bambo_outpost_chi_passable",
+      "object_id": "12379813733990402205"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_defense_keep_2_chi",
+      "object_id": "12379813733990400205"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_defense_keep_chi",
+      "object_id": "12379813733990400207"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_defense_outpost_2_chi",
+      "object_id": "12379813733990400209"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_defense_outpost_bambo_chi",
+      "object_id": "12379813733990400211"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_defense_outpost_bambo_chi_passable",
+      "object_id": "12379813733990402207"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_defense_outpost_chi",
+      "object_id": "12379813733990400213"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_dynasty_granary_control_chi",
+      "object_id": "12379813733990400215"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_dynasty_granary_control_chi2",
+      "object_id": "12379813733990400217"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_dynasty_pagoda_control_vit",
+      "object_id": "12379813733990400219"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_econ_food_control_chi",
+      "object_id": "12379813733990400221"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_econ_wood_control_chi",
+      "object_id": "12379813733990400223"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_house_control_chi",
+      "object_id": "12379813733990400225"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_house_control_faster_chi",
+      "object_id": "12379813733990400227"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_house_mon",
+      "object_id": "12379813733990400229"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_landmark_age1_gatehouse_control_chi",
+      "object_id": "12379813733990400231"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_landmark_age1_headquarters_control_chi",
+      "object_id": "12379813733990400233"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_landmark_age1_vit_one_pilar_pagoda",
+      "object_id": "12379813733990400235"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_landmark_age2_headquarter_vit",
+      "object_id": "12379813733990400237"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_landmark_age2_imperrial_citadel_vit",
+      "object_id": "12379813733990400239"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_landmark_age2_minh_pagoda_control_vit",
+      "object_id": "12379813733990400241"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_landmark_age3_imperial_garden_vit",
+      "object_id": "12379813733990400243"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_landmark_age3_new_imperial_garden",
+      "object_id": "12379813733990400245"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_landmark_age3_trung_foundaries_vit",
+      "object_id": "12379813733990400247"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_resource_farm2_chi",
+      "object_id": "12379813733990400249"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_resource_farm_chi",
+      "object_id": "12379813733990400251"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_tech_unit_infantry_control_chi",
+      "object_id": "12379813733990400253"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_tech_university_control_chi",
+      "object_id": "12379813733990400255"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_town_center_2_chi",
+      "object_id": "12379813733990400257"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_town_center_capital_2_chi",
+      "object_id": "12379813733990400259"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_town_center_capital_chi",
+      "object_id": "12379813733990400261"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_town_center_chi",
+      "object_id": "12379813733990400263"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_unit_cavalry_control_chi",
+      "object_id": "12379813733990400265"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_unit_infantry_control_chi",
+      "object_id": "12379813733990400267"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_unit_ranged_control_chi",
+      "object_id": "12379813733990400269"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_unit_siege_control_chi",
+      "object_id": "12379813733990400271"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_wonder_age4_forbidden_control_chi",
+      "object_id": "12379813733990400273"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_unit_naval_chi",
+      "object_id": "12379813733990402201"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_unit_religious_control_chi",
+      "object_id": "12379813733990402203"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_cherry_young_stealth_vit",
+      "object_id": "12379813733990400275"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_projectile_trap",
+      "object_id": "12379813733990400279"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_stealth_tree_vit",
+      "object_id": "12379813733990400281"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_2_vit",
+      "object_id": "12379813733990400285"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_3_vit",
+      "object_id": "12379813733990400289"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_4_vit",
+      "object_id": "12379813733990400293"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_crossbowman_3_chi",
+      "object_id": "12379813733990400307"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_crossbowman_4_chi",
+      "object_id": "12379813733990400311"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_handcannon_4_chi",
+      "object_id": "12379813733990400323"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_horseman_2_chi",
+      "object_id": "12379813733990400331"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_horseman_3_chi",
+      "object_id": "12379813733990400333"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_horseman_4_chi",
+      "object_id": "12379813733990400335"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_knight_3_chi",
+      "object_id": "12379813733990400337"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_knight_4_chi",
+      "object_id": "12379813733990400339"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_manatarms_3_chi",
+      "object_id": "12379813733990400341"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_manatarms_3_mon_for_vit",
+      "object_id": "12379813733990400343"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_manatarms_4_chi",
+      "object_id": "12379813733990400345"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_manatarms_4_mon_for_vit",
+      "object_id": "12379813733990400347"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_monk_3_chi",
+      "object_id": "12379813733990400349"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_official_1_chi",
+      "object_id": "12379813733990400351"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_scout_1_chi",
+      "object_id": "12379813733990400353"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_1_chi",
+      "object_id": "12379813733990400355"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_2_chi",
+      "object_id": "12379813733990400357"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_3_chi",
+      "object_id": "12379813733990400359"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_4_chi",
+      "object_id": "12379813733990400361"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_fire_1_chi",
+      "object_id": "12379813733990400363"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_fire_2_chi",
+      "object_id": "12379813733990400365"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_fire_3_chi",
+      "object_id": "12379813733990400367"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_fire_4_chi",
+      "object_id": "12379813733990400369"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_trade_cart_chi",
+      "object_id": "12379813733990400387"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_villager_1_chi",
+      "object_id": "12379813733990400389"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_villager_3_chi",
+      "object_id": "12379813733990400391"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_villager_bambo_chi",
+      "object_id": "12379813733990400393"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_war_elephant_1_vit",
+      "object_id": "12379813733990400395"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_war_elephant_2_vit",
+      "object_id": "12379813733990400397"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_war_elephant_handcannon_4_vit",
+      "object_id": "12379813733990400399"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_war_elephant_handcannon_4_vit_free",
+      "object_id": "12379813733990400401"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_war_elephant_tower_handcannoneer_4_vit",
+      "object_id": "12379813733990400403"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_wpn_range_barbican_handcannon_chi",
+      "object_id": "12379813733990400405"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_wpn_range_garrison_keep_arrows_garrison_vit",
+      "object_id": "12379813733990400407"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_wpn_range_keep_arrows_garrison_new_vit",
+      "object_id": "12379813733990400409"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_wpn_range_keep_arrows_garrison_vit",
+      "object_id": "12379813733990400411"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_wpn_range_keep_handcannon_vit",
+      "object_id": "12379813733990400413"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_wpn_range_landmarktc_arrows_garrison_vit",
+      "object_id": "12379813733990400415"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_wpn_range_outpost_arrows_garrison_vit",
+      "object_id": "12379813733990400417"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_wpn_range_outpost_arrows_garrison_vit_landmark",
+      "object_id": "12379813733990400419"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_wpn_range_tc_main_arrows_garrison_vit",
+      "object_id": "12379813733990400421"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_wpn_range_tcandkeep_arrows_garrison_vit",
+      "object_id": "12379813733990400423"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_wpn_range_town_center_arrows_garrison_for_vietnam",
+      "object_id": "12379813733990400425"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_wpn_range_town_center_arrows_garrison_vietnam",
+      "object_id": "12379813733990400427"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_wpn_siege_outpost_handcannon_alarrm_chi",
+      "object_id": "12379813733990400429"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_wpn_siege_outpost_handcannon_chi",
+      "object_id": "12379813733990400431"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_wpn_siege_outpost_handcannon_new_chi",
+      "object_id": "12379813733990400433"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_wpn_siege_outpost_handcannon_slit_chi",
+      "object_id": "12379813733990400435"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_alpha",
+      "object_id": "12379813733990400437"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_aqueduct_byz",
+      "object_id": "12379813733990400439"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_cistern_byz",
+      "object_id": "12379813733990400441"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_keep",
+      "object_id": "12379813733990400443"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_keep_byz",
+      "object_id": "12379813733990400445"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_keep_chi_ha_01",
+      "object_id": "12379813733990400447"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_keep_control_abb",
+      "object_id": "12379813733990400449"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_keep_control_abb_ha_01",
+      "object_id": "12379813733990400451"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_keep_control_rus",
+      "object_id": "12379813733990400453"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_keep_control_sul",
+      "object_id": "12379813733990400455"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_keep_eng",
+      "object_id": "12379813733990400457"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_keep_fre",
+      "object_id": "12379813733990400459"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_keep_fre_ha_01",
+      "object_id": "12379813733990400461"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_keep_hre",
+      "object_id": "12379813733990400463"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_keep_hre_ha_01",
+      "object_id": "12379813733990400465"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_keep_jpn",
+      "object_id": "12379813733990400467"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_keep_mal",
+      "object_id": "12379813733990400469"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_keep_ott",
+      "object_id": "12379813733990400471"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_outpost",
+      "object_id": "12379813733990400473"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_outpost_byz",
+      "object_id": "12379813733990400475"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_outpost_chi_ha_01",
+      "object_id": "12379813733990400477"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_outpost_control_abb",
+      "object_id": "12379813733990400479"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_outpost_control_abb_ha_01",
+      "object_id": "12379813733990400481"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_outpost_control_sul",
+      "object_id": "12379813733990400483"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_outpost_eng",
+      "object_id": "12379813733990400485"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_outpost_fre",
+      "object_id": "12379813733990400487"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_outpost_fre_ha_01",
+      "object_id": "12379813733990400489"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_outpost_hre",
+      "object_id": "12379813733990400491"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_outpost_hre_ha_01",
+      "object_id": "12379813733990400493"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_outpost_jpn",
+      "object_id": "12379813733990400495"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_outpost_mal",
+      "object_id": "12379813733990400497"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_outpost_mon",
+      "object_id": "12379813733990400499"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_outpost_ott",
+      "object_id": "12379813733990400501"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_bastion_chi",
+      "object_id": "12379813733990400503"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_byz",
+      "object_id": "12379813733990400505"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_chi",
+      "object_id": "12379813733990400507"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_chi_ha_01",
+      "object_id": "12379813733990400509"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_eng",
+      "object_id": "12379813733990400511"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_fre",
+      "object_id": "12379813733990400513"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_fre_ha_01",
+      "object_id": "12379813733990400515"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_gate_byz",
+      "object_id": "12379813733990400517"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_gate_chi",
+      "object_id": "12379813733990400519"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_gate_chi_ha_01",
+      "object_id": "12379813733990400521"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_gate_eng",
+      "object_id": "12379813733990400523"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_gate_fre",
+      "object_id": "12379813733990400525"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_gate_fre_ha_01",
+      "object_id": "12379813733990400527"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_gate_hre",
+      "object_id": "12379813733990400529"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_gate_hre_ha_01",
+      "object_id": "12379813733990400531"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_gate_jpn",
+      "object_id": "12379813733990400533"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_gate_mal",
+      "object_id": "12379813733990400535"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_gate_ott",
+      "object_id": "12379813733990400537"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_gate_rus",
+      "object_id": "12379813733990400539"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_gate_sul",
+      "object_id": "12379813733990400541"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_hre",
+      "object_id": "12379813733990400543"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_hre_ha_01",
+      "object_id": "12379813733990400545"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_jpn",
+      "object_id": "12379813733990400547"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_lith",
+      "object_id": "12379813733990400549"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_mal",
+      "object_id": "12379813733990400551"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_ott",
+      "object_id": "12379813733990400553"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_rus",
+      "object_id": "12379813733990400555"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_palisade_sul",
+      "object_id": "12379813733990400557"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_tower",
+      "object_id": "12379813733990400559"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_tower_abb",
+      "object_id": "12379813733990400561"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_tower_abb_ha_01",
+      "object_id": "12379813733990400563"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_tower_byz",
+      "object_id": "12379813733990400565"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_tower_chi",
+      "object_id": "12379813733990400567"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_tower_chi_ha_01",
+      "object_id": "12379813733990400569"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_tower_eng",
+      "object_id": "12379813733990400571"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_tower_fre",
+      "object_id": "12379813733990400573"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_tower_fre_ha_01",
+      "object_id": "12379813733990400575"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_tower_hre",
+      "object_id": "12379813733990400577"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_tower_hre_ha_01",
+      "object_id": "12379813733990400579"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_tower_jpn",
+      "object_id": "12379813733990400581"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_tower_mal",
+      "object_id": "12379813733990400583"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_tower_ott",
+      "object_id": "12379813733990400585"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_tower_rus",
+      "object_id": "12379813733990400587"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_tower_sul",
+      "object_id": "12379813733990400589"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall",
+      "object_id": "12379813733990400591"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_abb",
+      "object_id": "12379813733990400593"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_bastion_chi",
+      "object_id": "12379813733990400595"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_byz",
+      "object_id": "12379813733990400597"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_chi",
+      "object_id": "12379813733990400599"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_chi_ha_01",
+      "object_id": "12379813733990400601"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_eng",
+      "object_id": "12379813733990400603"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_fre",
+      "object_id": "12379813733990400605"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_fre_ha_01",
+      "object_id": "12379813733990400607"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_gate_abb",
+      "object_id": "12379813733990400609"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_gate_byz",
+      "object_id": "12379813733990400611"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_gate_chi",
+      "object_id": "12379813733990400613"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_gate_chi_ha_01",
+      "object_id": "12379813733990400615"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_gate_eng",
+      "object_id": "12379813733990400617"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_gate_fre",
+      "object_id": "12379813733990400619"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_gate_fre_ha_01",
+      "object_id": "12379813733990400621"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_gate_hre",
+      "object_id": "12379813733990400623"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_gate_hre_ha_01",
+      "object_id": "12379813733990400625"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_gate_jpn",
+      "object_id": "12379813733990400627"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_gate_mal",
+      "object_id": "12379813733990400629"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_gate_ott",
+      "object_id": "12379813733990400631"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_gate_rus",
+      "object_id": "12379813733990400633"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_gate_sul",
+      "object_id": "12379813733990400635"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_hre",
+      "object_id": "12379813733990400637"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_hre_ha_01",
+      "object_id": "12379813733990400639"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_jpn",
+      "object_id": "12379813733990400641"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_lith",
+      "object_id": "12379813733990400643"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_mal",
+      "object_id": "12379813733990400645"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_ott",
+      "object_id": "12379813733990400647"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_rus",
+      "object_id": "12379813733990400649"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wall_sul",
+      "object_id": "12379813733990400651"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_defense_wooden_fort_rus",
+      "object_id": "12379813733990400653"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_dynasty_granary_control_chi_ha_01",
+      "object_id": "12379813733990400655"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_dynasty_pagoda_control_chi",
+      "object_id": "12379813733990400657"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_dynasty_pagoda_control_chi_ha_01",
+      "object_id": "12379813733990400659"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_dynasty_village_control_chi",
+      "object_id": "12379813733990400661"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_dynasty_village_control_chi_ha_01",
+      "object_id": "12379813733990400663"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_food",
+      "object_id": "12379813733990400665"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_food_control_abb",
+      "object_id": "12379813733990400667"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_food_control_abb_ha_01",
+      "object_id": "12379813733990400669"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_food_control_byz",
+      "object_id": "12379813733990400671"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_food_control_chi_ha_01",
+      "object_id": "12379813733990400673"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_food_control_eng",
+      "object_id": "12379813733990400675"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_food_control_fre",
+      "object_id": "12379813733990400677"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_food_control_fre_ha_01",
+      "object_id": "12379813733990400679"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_food_control_hre",
+      "object_id": "12379813733990400681"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_food_control_hre_ha_01",
+      "object_id": "12379813733990400683"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_food_control_sul",
+      "object_id": "12379813733990400685"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_food_mal",
+      "object_id": "12379813733990400687"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_food_ott",
+      "object_id": "12379813733990400689"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_market",
+      "object_id": "12379813733990400691"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_market_control_abb",
+      "object_id": "12379813733990400693"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_market_control_abb_ha_01",
+      "object_id": "12379813733990400695"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_market_control_byz",
+      "object_id": "12379813733990400697"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_market_control_chi",
+      "object_id": "12379813733990400699"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_market_control_chi_ha_01",
+      "object_id": "12379813733990400701"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_market_control_eng",
+      "object_id": "12379813733990400703"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_market_control_fre",
+      "object_id": "12379813733990400705"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_market_control_fre_ha_01",
+      "object_id": "12379813733990400707"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_market_control_hre",
+      "object_id": "12379813733990400709"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_market_control_hre_ha_01",
+      "object_id": "12379813733990400711"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_market_control_rus",
+      "object_id": "12379813733990400713"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_market_control_sul",
+      "object_id": "12379813733990400715"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_market_jpn",
+      "object_id": "12379813733990400717"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_market_mal",
+      "object_id": "12379813733990400719"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_market_mon",
+      "object_id": "12379813733990400721"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_market_ott",
+      "object_id": "12379813733990400723"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_mining_camp_control_abb",
+      "object_id": "12379813733990400725"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_mining_camp_control_abb_ha_01",
+      "object_id": "12379813733990400727"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_mining_camp_control_byz",
+      "object_id": "12379813733990400729"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_mining_camp_control_chi",
+      "object_id": "12379813733990400731"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_mining_camp_control_chi_ha_01",
+      "object_id": "12379813733990400733"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_mining_camp_control_eng",
+      "object_id": "12379813733990400735"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_mining_camp_control_fre",
+      "object_id": "12379813733990400737"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_mining_camp_control_fre_ha_01",
+      "object_id": "12379813733990400739"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_mining_camp_control_hre",
+      "object_id": "12379813733990400741"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_mining_camp_control_hre_ha_01",
+      "object_id": "12379813733990400743"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_mining_camp_control_rus",
+      "object_id": "12379813733990400745"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_mining_camp_control_sul",
+      "object_id": "12379813733990400747"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_mining_camp_jpn",
+      "object_id": "12379813733990400749"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_mining_camp_mal",
+      "object_id": "12379813733990400751"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_mining_camp_ott",
+      "object_id": "12379813733990400753"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_ranch_mal",
+      "object_id": "12379813733990400755"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_wood",
+      "object_id": "12379813733990400757"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_wood_control_abb",
+      "object_id": "12379813733990400759"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_wood_control_abb_ha_01",
+      "object_id": "12379813733990400761"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_wood_control_byz",
+      "object_id": "12379813733990400763"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_wood_control_chi_ha_01",
+      "object_id": "12379813733990400765"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_wood_control_eng",
+      "object_id": "12379813733990400767"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_wood_control_fre",
+      "object_id": "12379813733990400769"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_wood_control_fre_ha_01",
+      "object_id": "12379813733990400771"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_wood_control_hre",
+      "object_id": "12379813733990400773"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_wood_control_hre_ha_01",
+      "object_id": "12379813733990400775"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_wood_control_rus",
+      "object_id": "12379813733990400777"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_wood_control_sul",
+      "object_id": "12379813733990400779"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_wood_jpn",
+      "object_id": "12379813733990400781"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_wood_mal",
+      "object_id": "12379813733990400783"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_econ_wood_ott",
+      "object_id": "12379813733990400785"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_house",
+      "object_id": "12379813733990400787"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_house_control_abb",
+      "object_id": "12379813733990400789"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_house_control_abb_ha_01",
+      "object_id": "12379813733990400791"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_house_control_byz",
+      "object_id": "12379813733990400793"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_house_control_chi_ha_01",
+      "object_id": "12379813733990400795"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_house_control_eng",
+      "object_id": "12379813733990400797"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_house_control_fre",
+      "object_id": "12379813733990400799"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_house_control_fre_ha_01",
+      "object_id": "12379813733990400801"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_house_control_hre",
+      "object_id": "12379813733990400803"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_house_control_hre_ha_01",
+      "object_id": "12379813733990400805"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_house_control_rus",
+      "object_id": "12379813733990400807"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_house_control_sul",
+      "object_id": "12379813733990400809"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_house_jpn",
+      "object_id": "12379813733990400811"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_house_mal",
+      "object_id": "12379813733990400813"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_house_of_wisdom_control_abb",
+      "object_id": "12379813733990400815"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_house_of_wisdom_control_abb_ha_01",
+      "object_id": "12379813733990400817"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_house_ott",
+      "object_id": "12379813733990400819"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_hunting_cabin_rus",
+      "object_id": "12379813733990400821"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_academy_control_chi",
+      "object_id": "12379813733990400823"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_casernes_centrales_fre",
+      "object_id": "12379813733990400825"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_casernes_centrales_fre_ha_01",
+      "object_id": "12379813733990400827"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_chamber_of_commerce_fre",
+      "object_id": "12379813733990400829"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_chamber_of_commerce_fre_ha_01",
+      "object_id": "12379813733990400831"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_cifte_minareli_medrese_ott",
+      "object_id": "12379813733990400833"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_golden_gate_vladimir_control_rus",
+      "object_id": "12379813733990400835"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_han_caravanserai_ott",
+      "object_id": "12379813733990400837"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_hippodrome_byz",
+      "object_id": "12379813733990400839"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_imperial_palace_of_paderborn_hre",
+      "object_id": "12379813733990400841"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_imperial_palace_of_paderborn_hre_ha_01",
+      "object_id": "12379813733990400843"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_landmarka_mal",
+      "object_id": "12379813733990400845"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_landmarkb_mal",
+      "object_id": "12379813733990400847"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_meditation_gardens_control_chi_ha_01",
+      "object_id": "12379813733990400849"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_novgorod_kremlin_control_rus",
+      "object_id": "12379813733990400851"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_palantine_chapel_hre",
+      "object_id": "12379813733990400853"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_palantine_chapel_hre_ha_01",
+      "object_id": "12379813733990400855"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_prefecture_chi_ha_01",
+      "object_id": "12379813733990400857"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_qutub_minar_control_sul",
+      "object_id": "12379813733990400859"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_quwwat_ul_islam_control_sul",
+      "object_id": "12379813733990400861"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_shinobi_jpn",
+      "object_id": "12379813733990400863"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_storehouse_jpn",
+      "object_id": "12379813733990400865"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_westminster_abbey_eng",
+      "object_id": "12379813733990400867"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_westminster_hall_eng",
+      "object_id": "12379813733990400869"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age1_winery_byz",
+      "object_id": "12379813733990400871"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_bamberg_cathedral_hre",
+      "object_id": "12379813733990400873"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_bamberg_cathedral_hre_ha_01",
+      "object_id": "12379813733990400875"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_buddhist_jpn",
+      "object_id": "12379813733990400877"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_cistern_byz",
+      "object_id": "12379813733990400879"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_clocktower_control_chi",
+      "object_id": "12379813733990400881"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_galata_tower_byz",
+      "object_id": "12379813733990400883"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_guild_hall_fre",
+      "object_id": "12379813733990400885"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_guild_hall_fre_ha_01",
+      "object_id": "12379813733990400887"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_khiji_mosque_control_sul",
+      "object_id": "12379813733990400889"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_la_chateau_rouge_fre",
+      "object_id": "12379813733990400891"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_la_chateau_rouge_fre_ha_01",
+      "object_id": "12379813733990400893"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_landmarkc_control_mal",
+      "object_id": "12379813733990400895"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_landmarkd_control_mal",
+      "object_id": "12379813733990400897"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_muscovy_trade_company_control_rus",
+      "object_id": "12379813733990400899"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_nuremberg_castle_hre",
+      "object_id": "12379813733990400901"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_nuremberg_castle_hre_ha_01",
+      "object_id": "12379813733990400903"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_palace_control_chi",
+      "object_id": "12379813733990400905"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_shaolin_temple_control_chi_ha_01",
+      "object_id": "12379813733990400907"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_shinto_jpn",
+      "object_id": "12379813733990400909"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_siri_fort_control_sul",
+      "object_id": "12379813733990400911"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_tophane_armory_ott",
+      "object_id": "12379813733990400913"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_topkapi_palace_ott",
+      "object_id": "12379813733990400915"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_trinity_lavra_control_rus",
+      "object_id": "12379813733990400917"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_westminster_palace_eng",
+      "object_id": "12379813733990400919"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_white_deer_grotto_control_chi_ha_01",
+      "object_id": "12379813733990400921"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age2_white_tower_eng",
+      "object_id": "12379813733990400923"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_bijay_mandal_palace_control_sul",
+      "object_id": "12379813733990400925"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_eastern_merc_house_byz",
+      "object_id": "12379813733990400927"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_ecole_de_poudre_a_canon_fre",
+      "object_id": "12379813733990400929"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_ecole_de_poudre_a_canon_fre_ha_01",
+      "object_id": "12379813733990400931"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_eltz_castle_hre",
+      "object_id": "12379813733990400933"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_eltz_castle_hre_ha_01",
+      "object_id": "12379813733990400935"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_great_wall_control_chi",
+      "object_id": "12379813733990400937"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_hohenzollern_castle_hre",
+      "object_id": "12379813733990400939"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_hohenzollern_castle_hre_ha_01",
+      "object_id": "12379813733990400941"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_istanbul_observatory_ott",
+      "object_id": "12379813733990400943"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_kilitbahir_castle_ott",
+      "object_id": "12379813733990400945"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_kremlin_armoury_rus",
+      "object_id": "12379813733990400947"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_landmarke_mal",
+      "object_id": "12379813733990400949"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_landmarkf_mal",
+      "object_id": "12379813733990400951"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_le_grande_university_fre",
+      "object_id": "12379813733990400953"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_le_grande_university_fre_ha_01",
+      "object_id": "12379813733990400955"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_library_chi_ha_01",
+      "object_id": "12379813733990400957"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_madrasa_e_firoz_sul",
+      "object_id": "12379813733990400959"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_ozutsu_jpn",
+      "object_id": "12379813733990400961"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_spassakaya_tower_control_rus",
+      "object_id": "12379813733990400963"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_spirit_way_control_chi",
+      "object_id": "12379813733990400965"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_temple_of_the_sun_control_chi_ha_01",
+      "object_id": "12379813733990400967"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_treasure_jpn",
+      "object_id": "12379813733990400969"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_western_merc_house_byz",
+      "object_id": "12379813733990400971"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_whitehall_palace_eng",
+      "object_id": "12379813733990400973"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_landmark_age3_windsor_castle_eng",
+      "object_id": "12379813733990400975"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_military_school_ott",
+      "object_id": "12379813733990400977"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_open_pit_mine_mal",
+      "object_id": "12379813733990400979"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_open_pit_mine_small_mal",
+      "object_id": "12379813733990400981"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_pasture_mon",
+      "object_id": "12379813733990400983"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_placeholder_religious_choice_jpn",
+      "object_id": "12379813733990400985"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_resource_farm",
+      "object_id": "12379813733990400987"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_resource_farm_byz",
+      "object_id": "12379813733990400989"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_resource_farm_chi_ha_01",
+      "object_id": "12379813733990400991"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_resource_farm_control_abb",
+      "object_id": "12379813733990400993"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_resource_farm_control_abb_ha_01",
+      "object_id": "12379813733990400995"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_resource_farm_control_rus",
+      "object_id": "12379813733990400997"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_resource_farm_control_sul",
+      "object_id": "12379813733990400999"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_resource_farm_eng",
+      "object_id": "12379813733990401001"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_resource_farm_fre",
+      "object_id": "12379813733990401003"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_resource_farm_fre_ha_01",
+      "object_id": "12379813733990401005"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_resource_farm_hre",
+      "object_id": "12379813733990401007"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_resource_farm_hre_ha_01",
+      "object_id": "12379813733990401009"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_resource_farm_jpn",
+      "object_id": "12379813733990401011"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_resource_farm_mal",
+      "object_id": "12379813733990401013"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_resource_farm_ott",
+      "object_id": "12379813733990401015"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_stone_deposit_ovoo_large_mon",
+      "object_id": "12379813733990401017"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_stone_deposit_ovoo_mon",
+      "object_id": "12379813733990401019"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_infantry",
+      "object_id": "12379813733990401021"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_infantry_control_abb",
+      "object_id": "12379813733990401023"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_infantry_control_abb_ha_01",
+      "object_id": "12379813733990401025"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_infantry_control_byz",
+      "object_id": "12379813733990401027"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_infantry_control_chi_ha_01",
+      "object_id": "12379813733990401029"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_infantry_control_eng",
+      "object_id": "12379813733990401031"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_infantry_control_fre",
+      "object_id": "12379813733990401033"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_infantry_control_fre_ha_01",
+      "object_id": "12379813733990401035"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_infantry_control_hre",
+      "object_id": "12379813733990401037"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_infantry_control_hre_ha_01",
+      "object_id": "12379813733990401039"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_infantry_control_rus",
+      "object_id": "12379813733990401041"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_infantry_control_sul",
+      "object_id": "12379813733990401043"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_infantry_mal",
+      "object_id": "12379813733990401045"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_infantry_mon",
+      "object_id": "12379813733990401047"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_infantry_moving_mon",
+      "object_id": "12379813733990401049"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_infantry_ott",
+      "object_id": "12379813733990401051"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_ranged_control_abb",
+      "object_id": "12379813733990401053"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_ranged_control_chi",
+      "object_id": "12379813733990401055"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_ranged_control_eng",
+      "object_id": "12379813733990401057"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_ranged_control_fre",
+      "object_id": "12379813733990401059"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_ranged_control_hre",
+      "object_id": "12379813733990401061"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_ranged_control_rus",
+      "object_id": "12379813733990401063"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_ranged_control_sul",
+      "object_id": "12379813733990401065"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_unit_ranged_mon",
+      "object_id": "12379813733990401067"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_university",
+      "object_id": "12379813733990401069"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_university_control_abb",
+      "object_id": "12379813733990401071"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_university_control_abb_ha_01",
+      "object_id": "12379813733990401073"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_university_control_byz",
+      "object_id": "12379813733990401075"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_university_control_chi_ha_01",
+      "object_id": "12379813733990401077"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_university_control_eng",
+      "object_id": "12379813733990401079"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_university_control_fre",
+      "object_id": "12379813733990401081"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_university_control_fre_ha_01",
+      "object_id": "12379813733990401083"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_university_control_hre",
+      "object_id": "12379813733990401085"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_university_control_hre_ha_01",
+      "object_id": "12379813733990401087"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_university_control_rus",
+      "object_id": "12379813733990401089"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_university_control_sul",
+      "object_id": "12379813733990401091"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_university_jpn",
+      "object_id": "12379813733990401093"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_university_mal",
+      "object_id": "12379813733990401095"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_tech_university_ott",
+      "object_id": "12379813733990401097"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center",
+      "object_id": "12379813733990401099"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_abb",
+      "object_id": "12379813733990401101"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_abb_ha_01",
+      "object_id": "12379813733990401103"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_byz",
+      "object_id": "12379813733990401105"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_capital",
+      "object_id": "12379813733990401107"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_capital_abb",
+      "object_id": "12379813733990401109"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_capital_abb_ha_01",
+      "object_id": "12379813733990401111"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_capital_byz",
+      "object_id": "12379813733990401113"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_capital_chi_ha_01",
+      "object_id": "12379813733990401115"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_capital_eng",
+      "object_id": "12379813733990401117"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_capital_fre",
+      "object_id": "12379813733990401119"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_capital_fre_ha_01",
+      "object_id": "12379813733990401121"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_capital_hre",
+      "object_id": "12379813733990401123"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_capital_hre_ha_01",
+      "object_id": "12379813733990401125"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_capital_jpn",
+      "object_id": "12379813733990401127"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_capital_mal",
+      "object_id": "12379813733990401129"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_capital_mon",
+      "object_id": "12379813733990401131"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_capital_ott",
+      "object_id": "12379813733990401133"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_capital_rus",
+      "object_id": "12379813733990401135"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_capital_sul",
+      "object_id": "12379813733990401137"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_chi_ha_01",
+      "object_id": "12379813733990401139"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_eng",
+      "object_id": "12379813733990401141"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_fre",
+      "object_id": "12379813733990401143"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_fre_ha_01",
+      "object_id": "12379813733990401145"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_hre",
+      "object_id": "12379813733990401147"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_hre_ha_01",
+      "object_id": "12379813733990401149"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_jpn",
+      "object_id": "12379813733990401151"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_mal",
+      "object_id": "12379813733990401153"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_mon",
+      "object_id": "12379813733990401155"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_ott",
+      "object_id": "12379813733990401157"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_rus",
+      "object_id": "12379813733990401159"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_town_center_sul",
+      "object_id": "12379813733990401161"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_cavalry",
+      "object_id": "12379813733990401163"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_cavalry_control_abb",
+      "object_id": "12379813733990401165"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_cavalry_control_abb_ha_01",
+      "object_id": "12379813733990401167"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_cavalry_control_byz",
+      "object_id": "12379813733990401169"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_cavalry_control_chi_ha_01",
+      "object_id": "12379813733990401171"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_cavalry_control_eng",
+      "object_id": "12379813733990401173"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_cavalry_control_fre",
+      "object_id": "12379813733990401175"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_cavalry_control_fre_ha_01",
+      "object_id": "12379813733990401177"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_cavalry_control_hre",
+      "object_id": "12379813733990401179"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_cavalry_control_hre_ha_01",
+      "object_id": "12379813733990401181"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_cavalry_control_rus",
+      "object_id": "12379813733990401183"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_cavalry_control_sul",
+      "object_id": "12379813733990401185"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_cavalry_jpn",
+      "object_id": "12379813733990401187"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_cavalry_mal",
+      "object_id": "12379813733990401189"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_cavalry_mon",
+      "object_id": "12379813733990401191"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_cavalry_moving_mon",
+      "object_id": "12379813733990401193"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_cavalry_ott",
+      "object_id": "12379813733990401195"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_infantry",
+      "object_id": "12379813733990401197"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_infantry_control_abb",
+      "object_id": "12379813733990401199"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_infantry_control_abb_ha_01",
+      "object_id": "12379813733990401201"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_infantry_control_byz",
+      "object_id": "12379813733990401203"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_infantry_control_chi_ha_01",
+      "object_id": "12379813733990401205"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_infantry_control_eng",
+      "object_id": "12379813733990401207"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_infantry_control_fre",
+      "object_id": "12379813733990401209"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_infantry_control_fre_ha_01",
+      "object_id": "12379813733990401211"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_infantry_control_hre",
+      "object_id": "12379813733990401213"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_infantry_control_hre_ha_01",
+      "object_id": "12379813733990401215"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_infantry_control_rus",
+      "object_id": "12379813733990401217"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_infantry_control_sul",
+      "object_id": "12379813733990401219"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_infantry_jpn",
+      "object_id": "12379813733990401221"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_infantry_mal",
+      "object_id": "12379813733990401223"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_infantry_mon",
+      "object_id": "12379813733990401225"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_infantry_moving_mon",
+      "object_id": "12379813733990401227"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_infantry_ott",
+      "object_id": "12379813733990401229"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_mercenary_house_byz",
+      "object_id": "12379813733990401231"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_naval_abb",
+      "object_id": "12379813733990401233"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_naval_abb_ha_01",
+      "object_id": "12379813733990401235"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_naval_byz",
+      "object_id": "12379813733990401237"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_naval_chi",
+      "object_id": "12379813733990401239"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_naval_chi_ha_01",
+      "object_id": "12379813733990401241"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_naval_eng",
+      "object_id": "12379813733990401243"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_naval_fre",
+      "object_id": "12379813733990401245"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_naval_fre_ha_01",
+      "object_id": "12379813733990401247"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_naval_hre",
+      "object_id": "12379813733990401249"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_naval_hre_ha_01",
+      "object_id": "12379813733990401251"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_naval_jpn",
+      "object_id": "12379813733990401253"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_naval_mal",
+      "object_id": "12379813733990401255"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_naval_mon",
+      "object_id": "12379813733990401257"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_naval_ott",
+      "object_id": "12379813733990401259"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_naval_rus",
+      "object_id": "12379813733990401261"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_naval_sul",
+      "object_id": "12379813733990401263"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_ranged",
+      "object_id": "12379813733990401265"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_ranged_control_abb",
+      "object_id": "12379813733990401267"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_ranged_control_abb_ha_01",
+      "object_id": "12379813733990401269"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_ranged_control_byz",
+      "object_id": "12379813733990401271"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_ranged_control_chi_ha_01",
+      "object_id": "12379813733990401273"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_ranged_control_eng",
+      "object_id": "12379813733990401275"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_ranged_control_fre",
+      "object_id": "12379813733990401277"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_ranged_control_fre_ha_01",
+      "object_id": "12379813733990401279"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_ranged_control_hre",
+      "object_id": "12379813733990401281"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_ranged_control_hre_ha_01",
+      "object_id": "12379813733990401283"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_ranged_control_rus",
+      "object_id": "12379813733990401285"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_ranged_control_sul",
+      "object_id": "12379813733990401287"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_ranged_jpn",
+      "object_id": "12379813733990401289"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_ranged_mal",
+      "object_id": "12379813733990401291"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_ranged_mon",
+      "object_id": "12379813733990401293"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_ranged_moving_mon",
+      "object_id": "12379813733990401295"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_ranged_ott",
+      "object_id": "12379813733990401297"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_religious_buddhist_jpn",
+      "object_id": "12379813733990401299"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_religious_control_abb",
+      "object_id": "12379813733990401301"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_religious_control_abb_ha_01",
+      "object_id": "12379813733990401303"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_religious_control_byz",
+      "object_id": "12379813733990401305"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_religious_control_chi",
+      "object_id": "12379813733990401307"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_religious_control_chi_ha_01",
+      "object_id": "12379813733990401309"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_religious_control_eng",
+      "object_id": "12379813733990401311"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_religious_control_fre",
+      "object_id": "12379813733990401313"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_religious_control_fre_ha_01",
+      "object_id": "12379813733990401315"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_religious_control_hre",
+      "object_id": "12379813733990401317"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_religious_control_hre_ha_01",
+      "object_id": "12379813733990401319"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_religious_control_rus",
+      "object_id": "12379813733990401321"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_religious_control_sul",
+      "object_id": "12379813733990401323"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_religious_district_mon",
+      "object_id": "12379813733990401325"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_religious_mal",
+      "object_id": "12379813733990401327"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_religious_mon",
+      "object_id": "12379813733990401329"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_religious_ott",
+      "object_id": "12379813733990401331"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_religious_shinto_jpn",
+      "object_id": "12379813733990401333"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_siege",
+      "object_id": "12379813733990401335"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_siege_control_abb",
+      "object_id": "12379813733990401337"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_siege_control_abb_ha_01",
+      "object_id": "12379813733990401339"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_siege_control_byz",
+      "object_id": "12379813733990401341"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_siege_control_chi_ha_01",
+      "object_id": "12379813733990401343"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_siege_control_eng",
+      "object_id": "12379813733990401345"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_siege_control_fre",
+      "object_id": "12379813733990401347"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_siege_control_fre_ha_01",
+      "object_id": "12379813733990401349"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_siege_control_hre",
+      "object_id": "12379813733990401351"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_siege_control_hre_ha_01",
+      "object_id": "12379813733990401353"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_siege_control_rus",
+      "object_id": "12379813733990401355"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_siege_control_sul",
+      "object_id": "12379813733990401357"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_siege_jpn",
+      "object_id": "12379813733990401359"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_siege_mal",
+      "object_id": "12379813733990401361"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_siege_mon",
+      "object_id": "12379813733990401363"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_siege_moving_mon",
+      "object_id": "12379813733990401365"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_unit_siege_ott",
+      "object_id": "12379813733990401367"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age1",
+      "object_id": "12379813733990401369"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age1_deer_stones_mon",
+      "object_id": "12379813733990401371"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age1_kurultai_mon",
+      "object_id": "12379813733990401373"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age2",
+      "object_id": "12379813733990401375"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age2_karakorum_mon",
+      "object_id": "12379813733990401377"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age2_khara_khoto_mon",
+      "object_id": "12379813733990401379"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age3",
+      "object_id": "12379813733990401381"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age3_khanbaliq_mon",
+      "object_id": "12379813733990401383"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age3_stupa_mon",
+      "object_id": "12379813733990401385"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age4",
+      "object_id": "12379813733990401387"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age4_agra_fort_control_sul",
+      "object_id": "12379813733990401389"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age4_blue_mosque_ott",
+      "object_id": "12379813733990401391"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age4_canterbury_cathedral_eng",
+      "object_id": "12379813733990401393"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age4_final_wonder_mon",
+      "object_id": "12379813733990401395"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age4_forbidden_control_chi_ha_01",
+      "object_id": "12379813733990401397"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age4_glucksburg_castle_hre",
+      "object_id": "12379813733990401399"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age4_glucksburg_castle_hre_ha_01",
+      "object_id": "12379813733990401401"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age4_great_mosque_control_abb",
+      "object_id": "12379813733990401403"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age4_great_mosque_control_abb_ha_01",
+      "object_id": "12379813733990401405"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age4_great_mosque_control_mal",
+      "object_id": "12379813733990401407"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age4_hagia_sophia_byz",
+      "object_id": "12379813733990401409"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age4_la_grande_cathedral_fre",
+      "object_id": "12379813733990401411"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age4_la_grande_cathedral_fre_ha_01",
+      "object_id": "12379813733990401413"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age4_nikko_toshogu_jpn",
+      "object_id": "12379813733990401415"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "building_wonder_age4_saint_basils_cathedral_control_rus",
+      "object_id": "12379813733990401417"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "core_tree",
+      "object_id": "12379813733990401419"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "projectile_arrow",
+      "object_id": "12379813733990401421"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "projectile_arrow_incendiary",
+      "object_id": "12379813733990401423"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "projectile_arrow_poison",
+      "object_id": "12379813733990401425"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "projectile_great_bombard_stone",
+      "object_id": "12379813733990401427"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "projectile_mangonel_tower",
+      "object_id": "12379813733990401429"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "projectile_rocket_jpn",
+      "object_id": "12379813733990401431"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "projectile_shot_cannon",
+      "object_id": "12379813733990401433"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "projectile_shot_handgun",
+      "object_id": "12379813733990401435"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "projectile_torch",
+      "object_id": "12379813733990401437"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_archer_2",
+      "object_id": "12379813733990401439"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_archer_3",
+      "object_id": "12379813733990401441"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_archer_4",
+      "object_id": "12379813733990401443"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_bombard_4_chi",
+      "object_id": "12379813733990401445"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_crossbowman_3",
+      "object_id": "12379813733990401447"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_crossbowman_4",
+      "object_id": "12379813733990401449"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_culverin_4_chi",
+      "object_id": "12379813733990401451"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_great_trebuchet_cmp_mon",
+      "object_id": "12379813733990401453"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_handcannon_4",
+      "object_id": "12379813733990401455"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_horseman_2",
+      "object_id": "12379813733990401457"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_horseman_3",
+      "object_id": "12379813733990401459"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_horseman_4",
+      "object_id": "12379813733990401461"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_knight_3",
+      "object_id": "12379813733990401463"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_knight_4",
+      "object_id": "12379813733990401465"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_manatarms_3",
+      "object_id": "12379813733990401467"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_manatarms_4",
+      "object_id": "12379813733990401469"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_mangonel_3_buildable_abb",
+      "object_id": "12379813733990401471"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_mangonel_3_buildable_abb_ha_01",
+      "object_id": "12379813733990401473"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_mangonel_3_buildable_byz",
+      "object_id": "12379813733990401475"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_mangonel_3_chi",
+      "object_id": "12379813733990401477"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_mangonel_3_field_construct_mon",
+      "object_id": "12379813733990401479"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_monk_3",
+      "object_id": "12379813733990401481"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_naval_transport_ship_2_field_construct_byz",
+      "object_id": "12379813733990401483"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_official_free_chi_ha_01",
+      "object_id": "12379813733990401485"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_ram_3",
+      "object_id": "12379813733990401487"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_ram_3_abb",
+      "object_id": "12379813733990401489"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_ram_3_abb_ha_01",
+      "object_id": "12379813733990401491"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_ram_3_byz",
+      "object_id": "12379813733990401493"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_ram_3_chi",
+      "object_id": "12379813733990401495"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_ram_3_chi_ha_01",
+      "object_id": "12379813733990401497"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_ram_3_eng",
+      "object_id": "12379813733990401499"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_ram_3_fre",
+      "object_id": "12379813733990401501"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_ram_3_hre",
+      "object_id": "12379813733990401503"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_ram_3_hre_ha_01",
+      "object_id": "12379813733990401505"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_ram_3_jpn",
+      "object_id": "12379813733990401507"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_ram_3_mal",
+      "object_id": "12379813733990401509"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_ram_3_mon",
+      "object_id": "12379813733990401511"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_ram_3_ott",
+      "object_id": "12379813733990401513"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_ram_3_rus",
+      "object_id": "12379813733990401515"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_ram_3_sul",
+      "object_id": "12379813733990401517"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_ram_cru",
+      "object_id": "12379813733990401519"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_ram_fire_3_byz",
+      "object_id": "12379813733990401521"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_ram_tower_3_abb_ha_01",
+      "object_id": "12379813733990401523"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_ribauldequin_4_eng",
+      "object_id": "12379813733990401525"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_scout_1",
+      "object_id": "12379813733990401527"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_scout_1_fre_ha_01",
+      "object_id": "12379813733990401529"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_siege_cart",
+      "object_id": "12379813733990401531"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_siege_tower_3",
+      "object_id": "12379813733990401533"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_siege_tower_3_abb",
+      "object_id": "12379813733990401535"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_siege_tower_3_abb_ha_01",
+      "object_id": "12379813733990401537"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_siege_tower_3_byz",
+      "object_id": "12379813733990401539"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_siege_tower_3_chi",
+      "object_id": "12379813733990401541"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_siege_tower_3_chi_ha_01",
+      "object_id": "12379813733990401543"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_siege_tower_3_eng",
+      "object_id": "12379813733990401545"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_siege_tower_3_fre",
+      "object_id": "12379813733990401547"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_siege_tower_3_hre",
+      "object_id": "12379813733990401549"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_siege_tower_3_hre_ha_01",
+      "object_id": "12379813733990401551"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_siege_tower_3_jpn",
+      "object_id": "12379813733990401553"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_siege_tower_3_mal",
+      "object_id": "12379813733990401555"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_siege_tower_3_mon",
+      "object_id": "12379813733990401557"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_siege_tower_3_ott",
+      "object_id": "12379813733990401559"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_siege_tower_3_rus",
+      "object_id": "12379813733990401561"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_siege_tower_3_sul",
+      "object_id": "12379813733990401563"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_siege_tower_cru",
+      "object_id": "12379813733990401565"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_spearman_1",
+      "object_id": "12379813733990401567"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_spearman_2",
+      "object_id": "12379813733990401569"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_spearman_3",
+      "object_id": "12379813733990401571"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_spearman_4",
+      "object_id": "12379813733990401573"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_springald_3_buildable_abb_ha_01",
+      "object_id": "12379813733990401575"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_springald_3_buildable_byz",
+      "object_id": "12379813733990401577"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_springald_3_field_construct_mon",
+      "object_id": "12379813733990401579"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_trade_cart",
+      "object_id": "12379813733990401581"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_trebuchet_4_cw_field_construct_mon",
+      "object_id": "12379813733990401583"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_trebuchet_4_tr_field_construct_mon",
+      "object_id": "12379813733990401585"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_villager_1",
+      "object_id": "12379813733990401587"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_villager_free_chi_ha_01",
+      "object_id": "12379813733990401589"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "unit_war_elephant",
+      "object_id": "12379813733990401591"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "wpn_ebps_template_ai",
+      "object_id": "12379813733990401593"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "wpn_range_dummy",
+      "object_id": "12379813733990401595"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "wpn_range_keep_springald",
+      "object_id": "12379813733990401597"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "wpn_siege_keep_cannon",
+      "object_id": "12379813733990401599"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "wpn_siege_keep_murder_hole",
+      "object_id": "12379813733990401601"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_2_chi",
+      "object_id": "12379813733990401603"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_2_vit",
+      "object_id": "12379813733990401607"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_3_chi",
+      "object_id": "12379813733990401609"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_3_vit",
+      "object_id": "12379813733990401613"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_4_chi",
+      "object_id": "12379813733990401615"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_archer_4_vit",
+      "object_id": "12379813733990401619"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_bombard_4_chi",
+      "object_id": "12379813733990401633"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_bombard_4_chi_cheap",
+      "object_id": "12379813733990401635"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_crossbowman_3_chi",
+      "object_id": "12379813733990401637"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_crossbowman_4_chi",
+      "object_id": "12379813733990401641"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_culverin_4_chi",
+      "object_id": "12379813733990401653"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_culverin_4_chi_cheap",
+      "object_id": "12379813733990401655"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_handcannon_4_chi",
+      "object_id": "12379813733990401657"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_handcannon_4_chi_cheap",
+      "object_id": "12379813733990401659"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_horseman_2_chi",
+      "object_id": "12379813733990401673"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_horseman_3_chi",
+      "object_id": "12379813733990401675"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_horseman_4_chi",
+      "object_id": "12379813733990401677"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_knight_3_chi",
+      "object_id": "12379813733990401679"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_knight_4_chi",
+      "object_id": "12379813733990401681"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_manatarms_3_chi",
+      "object_id": "12379813733990401683"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_manatarms_3_mon_for_vit",
+      "object_id": "12379813733990401685"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_manatarms_4_chi",
+      "object_id": "12379813733990401687"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_manatarms_4_mon_for_vit",
+      "object_id": "12379813733990401689"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_mangonel_3_chi",
+      "object_id": "12379813733990401691"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_monk_3_chi",
+      "object_id": "12379813733990401693"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_official_1_chi",
+      "object_id": "12379813733990401695"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_ribauldequin_4_chi",
+      "object_id": "12379813733990401697"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_scout_1_chi",
+      "object_id": "12379813733990401699"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_1_chi",
+      "object_id": "12379813733990401701"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_2_chi",
+      "object_id": "12379813733990401703"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_3_chi",
+      "object_id": "12379813733990401705"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_4_chi",
+      "object_id": "12379813733990401707"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_fire_1_chi",
+      "object_id": "12379813733990401709"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_fire_2_chi",
+      "object_id": "12379813733990401711"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_fire_3_chi",
+      "object_id": "12379813733990401713"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_spearman_fire_4_chi",
+      "object_id": "12379813733990401715"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_villager_1_chi",
+      "object_id": "12379813733990401733"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_villager_3_chi",
+      "object_id": "12379813733990401735"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_villager_bambo_chi",
+      "object_id": "12379813733990401737"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_war_elephant_1_vit",
+      "object_id": "12379813733990401739"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_war_elephant_2_vit",
+      "object_id": "12379813733990401741"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_war_elephant_handcannon_4_vit",
+      "object_id": "12379813733990401743"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_war_elephant_handcannon_4_vit_free",
+      "object_id": "12379813733990401745"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_defense_outpost_chi_fortified",
+      "object_id": "12379813733990402209"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_building_defense_outpost_2_chi_fortified",
+      "object_id": "12379813733990402211"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_manatarms_3_chi_lobed",
+      "object_id": "12379813733990400071"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_manatarms_3_mon_for_vit_lobed",
+      "object_id": "12379813733990400073"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_manatarms_4_chi_lobed",
+      "object_id": "12379813733990400078"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_manatarms_4_mon_for_vit_lobed",
+      "object_id": "12379813733990400080"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_manatarms_3_chi_lobed",
+      "object_id": "12379813733990400082"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_manatarms_3_mon_for_vit_lobed",
+      "object_id": "12379813733990400084"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_manatarms_4_chi_lobed",
+      "object_id": "12379813733990400086"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_manatarms_4_mon_for_vit_lobed",
+      "object_id": "12379813733990400088"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_skirmisher_2_vit",
+      "object_id": "12379813733990400090"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_skirmisher_3_vit",
+      "object_id": "12379813733990400092"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_skirmisher_4_vit",
+      "object_id": "12379813733990400094"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_skirmisher_2_vit",
+      "object_id": "12379813733990400096"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_skirmisher_3_vit",
+      "object_id": "12379813733990400098"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_skirmisher_4_vit",
+      "object_id": "12379813733990400100"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_tower_train_archer_2_vit",
+      "object_id": "12379813733990400102"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_tower_train_archer_3_vit",
+      "object_id": "12379813733990400104"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_tower_train_archer_4_vit",
+      "object_id": "12379813733990400106"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_tower_train_crossbowman_3_chi",
+      "object_id": "12379813733990400108"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_tower_train_crossbowman_4_chi",
+      "object_id": "12379813733990400110"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_tower_train_handcannon_4_chi",
+      "object_id": "12379813733990400112"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_tower_train_handcannon_4_chi_cheap",
+      "object_id": "12379813733990400114"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_tower_train_skirmisher_2_vit",
+      "object_id": "12379813733990400116"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_tower_train_skirmisher_3_vit",
+      "object_id": "12379813733990400118"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_tower_train_skirmisher_4_vit",
+      "object_id": "12379813733990400120"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_tower_train_spearman_1_chi",
+      "object_id": "12379813733990400122"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_tower_train_spearman_2_chi",
+      "object_id": "12379813733990400124"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_tower_train_spearman_3_chi",
+      "object_id": "12379813733990400126"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_tower_train_spearman_4_chi",
+      "object_id": "12379813733990400128"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_projectile_arquebusier_vit",
+      "object_id": "12379813733990400067"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_handcannon_4_chi_serpentine",
+      "object_id": "12379813733990400069"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_handcannon_4_chi_serpentine",
+      "object_id": "12379813733990400130"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_water_buffalo_vit",
+      "object_id": "12379813733990402213"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_no_than_vit",
+      "object_id": "12379813733990402215"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_no_than_vit_reinforced",
+      "object_id": "12379813733990402217"
+    },
+    {
+      "kind": "EntityPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_projectile_no_than_vit",
+      "object_id": "12379813733990402219"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_water_buffalo_vit",
+      "object_id": "12379813733990402221"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_no_than_vit",
+      "object_id": "12379813733990402223"
+    },
+    {
+      "kind": "SquadPrecacheItem",
+      "name": "a743d7d1d7534cf78817e29d8ded7366:vn_unit_no_than_vit_reinforced",
+      "object_id": "12379813733990402225"
+    }
+  ],
+  "source_request_counts": {
+    "none": {
+      "explicit_precache_requests": 0,
+      "private_requests": 0,
+      "shared_stock_requests": 0
+    },
+    "vietnam": {
+      "explicit_precache_requests": 193,
+      "private_requests": 178,
+      "shared_stock_requests": 15
+    },
+    "persia": {
+      "explicit_precache_requests": 207,
+      "private_requests": 192,
+      "shared_stock_requests": 15
+    },
+    "korea": {
+      "explicit_precache_requests": 166,
+      "private_requests": 151,
+      "shared_stock_requests": 15
+    },
+    "all": {
+      "explicit_precache_requests": 536,
+      "private_requests": 521,
+      "shared_stock_requests": 15
+    }
+  }
+}

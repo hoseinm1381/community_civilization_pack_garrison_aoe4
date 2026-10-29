@@ -1,0 +1,88 @@
+-- Local presentation only. Offers are public information; this panel never
+-- grants resources, chooses an offer, or mutates simulation state.
+KoreaUI = {created = false, visible = false, killText = "", killUntil = 0}
+
+function KoreaUI_Toggle()
+    KoreaUI.visible = not KoreaUI.visible
+    KoreaUI_Update(World_GetGameTime())
+end
+
+function KoreaUI_Create()
+    if KoreaUI.created or UI_IsReplay() then return end
+    KoreaUI.context = {summary = "", players = {}, visible = false,
+        command_toggle = UI_CreateCommand("KoreaUI_Toggle")}
+    local xaml = [[<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" HorizontalAlignment="Left"
+        VerticalAlignment="Bottom" Margin="105,0,0,245">
+      <Grid.Resources><ResourceDictionary><ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,ui/Resources/HUDResources.xaml"/>
+      </ResourceDictionary.MergedDictionaries></ResourceDictionary></Grid.Resources>
+      <StackPanel>
+        <TextBlock Text="{Binding [summary]}" Foreground="White" FontSize="16"/>
+        <Button Command="{Binding [command_toggle]}" Style="{StaticResource HUDBaseButtonStyle}">
+          <Border Background="#D0222222" Padding="8,5"><TextBlock Text="Korean technologies" Foreground="White"/></Border>
+        </Button>
+        <Border Background="#EB111111" Padding="12" MaxWidth="500"
+          Visibility="{Binding [visible], Converter={StaticResource BoolToVis}}">
+          <ScrollViewer MaxHeight="450" VerticalScrollBarVisibility="Auto">
+            <ItemsControl ItemsSource="{Binding [players]}"><ItemsControl.ItemTemplate>
+              <DataTemplate><StackPanel Margin="0,0,0,12">
+                <TextBlock Text="{Binding [name]}" Foreground="#FFD700" FontSize="16"/>
+                <ItemsControl ItemsSource="{Binding [offers]}"><ItemsControl.ItemTemplate>
+                  <DataTemplate><StackPanel Margin="0,5,0,5">
+                    <TextBlock Text="{Binding [name]}" Foreground="White" TextWrapping="Wrap"/>
+                    <TextBlock Text="{Binding [description]}" Foreground="#DDDDDD" TextWrapping="Wrap"/>
+                  </StackPanel></DataTemplate>
+                </ItemsControl.ItemTemplate></ItemsControl>
+              </StackPanel></DataTemplate>
+            </ItemsControl.ItemTemplate></ItemsControl>
+          </ScrollViewer>
+        </Border>
+      </StackPanel>
+    </Grid>]]
+    UI_AddChild("ScarNotReplay", "XamlPresenter", "KoreaInformationUI", {
+        IsHitTestVisible = true, Xaml = xaml, DataContext = UI_CreateDataContext(KoreaUI.context)})
+    KoreaUI.created = true
+    KoreaUI_Update(World_GetGameTime())
+end
+
+function KoreaUI_Kills(context, player)
+    if player.id ~= Game_GetLocalPlayer() then return end
+    local count = player.unitKills[Entity_GetID(context.executer)] or 0
+    KoreaUI.killText = "Selected unit kills: " .. tostring(count)
+    KoreaUI.killUntil = World_GetGameTime() + 2
+    KoreaUI_Update(World_GetGameTime())
+end
+
+function KoreaUI_Update(now)
+    if not KoreaUI.created then return end
+    local localPlayer = Korea_Player(Game_GetLocalPlayer())
+    local summary = ""
+    if localPlayer ~= nil then
+        summary = "Literature: " .. tostring(math.floor(Player_GetResource(localPlayer.id, RT_Merc_Byz)))
+            .. "   Kills: " .. tostring(localPlayer.kills)
+    end
+    if now < KoreaUI.killUntil then summary = summary .. "   " .. KoreaUI.killText end
+    KoreaUI.context.summary = summary
+    KoreaUI.context.visible = KoreaUI.visible
+    if KoreaUI.visible then
+        local players = {}
+        for _, index in ipairs(KoreaState.order) do
+            local player = KoreaState.players[index]
+            local offers = {}
+            for _, name in ipairs(player.research.offers) do
+                local route = KoreaResearchRoutes[BP_GetName(BP_GetAbilityBlueprint(name))]
+                local info = BP_GetUpgradeUIInfo(route.upgradePBG)
+                table.insert(offers, {name = Loc_GetString(info.screenName), description = Loc_GetString(info.helpText)})
+            end
+            table.insert(players, {name = Player_GetDisplayName(player.id).LocString, offers = offers})
+        end
+        KoreaUI.context.players = players
+    end
+    UI_SetDataContext("KoreaInformationUI", KoreaUI.context)
+end
+
+function KoreaUI_Cleanup()
+    if KoreaUI.created then UI_Remove("KoreaInformationUI") end
+    KoreaUI.created = false; KoreaUI.visible = false
+end

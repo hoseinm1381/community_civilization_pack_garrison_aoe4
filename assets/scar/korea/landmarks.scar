@@ -1,0 +1,111 @@
+KoreaLandmarkNames = {
+    bulguksa = "building_landmark_age1_meditation_gardens_control_chi_ha_01_main",
+    stone = "building_landmark_age1_prefecture_chi_ha_01",
+    jinju = "building_landmark_age2_shaolin_temple_control_chi_ha_01",
+    observatory = "building_landmark_age2_white_deer_grotto_control_chi_ha_01",
+    palace = "building_landmark_age3_temple_of_the_sun_control_chi_ha_01",
+    hall = "building_landmark_age3_library_chi_ha_01"}
+
+function KoreaLandmarks_Snapshot(player)
+    player.landmarks = {}
+    Korea_Entities(player, function(entity)
+        local bp = Entity_GetBlueprint(entity)
+        for _, kind in ipairs({"bulguksa", "stone", "jinju", "observatory", "palace", "hall"}) do
+            local name = KoreaLandmarkNames[kind]
+            if bp == Korea_BP("ebps", name) then
+                if Korea_Functioning(entity) then
+                    player.landmarks[kind] = entity
+                end
+                break
+            end
+        end
+    end)
+    player.observatoryActive = player.landmarks.observatory ~= nil
+    if player.observatoryActive then KoreaResearch_Observatory(player) end
+    local fortress = player.landmarks.jinju
+    if fortress ~= nil and not player.jinjuGranted then
+        player.jinjuGranted = true
+        for i = 1, 8 do KoreaLandmarks_SpawnGuard(player, fortress) end
+    end
+end
+
+function KoreaLandmarks_SpawnGuard(player, fortress)
+    local bp = Korea_BP("sbps", "unit_leader_baibars_ayy")
+    local position = Entity_GetPosition(fortress)
+    local squad = Squad_CreateAndSpawnToward(bp, player.id, 1, position, position)
+    Misc_SetSquadSelectable(squad, false)
+end
+
+function KoreaLandmarks_Research(player, upgrade)
+    local stone = player.landmarks.stone
+    if stone == nil then return end
+    for _, age in ipairs({"dark_age", "feudal_age", "castle_age", "imperial_age"}) do
+        if upgrade == BP_GetUpgradeBlueprint(age) then return end
+    end
+    -- Preserve the active donor's first-eight qualifying research rewards.
+    if player.stoneRewards < 8 and not player.stoneResearch[BP_GetName(upgrade)] then
+        player.stoneResearch[BP_GetName(upgrade)] = true
+        if Entity_QueueProductionItemByPBG(stone, PITEM_Spawn, Korea_BP("sbps", "unit_villager_1_chi_ha_01")) then
+            player.stoneRewards = player.stoneRewards + 1
+        end
+    end
+end
+
+function KoreaLandmarks_Kill(context)
+    if context.victim == nil then return end
+    for _, index in ipairs(KoreaState.order) do
+        local player = KoreaState.players[index]
+        local palace = player.landmarks.palace
+        if Korea_Functioning(palace) and context.victimOwner ~= nil and Player_GetRelationship(player.id, context.victimOwner) == R_ENEMY then
+            if World_DistancePointToPoint(Entity_GetPosition(palace), Entity_GetPosition(context.victim)) < 60 then
+                local increase = math.min(125, 10000 - Entity_GetHealthMax(palace))
+                if increase > 0 then Korea_EntityModifier(palace, "health_maximum_modifier", MUT_Addition, increase, nil) end
+            end
+        end
+    end
+end
+
+function KoreaLandmarks_Guards(player, now)
+    local fortress = player.landmarks.jinju
+    if fortress == nil then return end
+    local guards = SGroup_CreateUnique()
+    Korea_Squads(player, function(squad)
+        if Squad_GetBlueprint(squad) == Korea_BP("sbps", "unit_leader_baibars_ayy") then SGroup_Add(guards, squad) end
+    end)
+    if now >= player.nextGuard then
+        player.nextGuard = now + 20
+        local cap = Korea_HasUpgrade(player, "imperial_age") and 24 or 12
+        if SGroup_Count(guards) < cap then KoreaLandmarks_SpawnGuard(player, fortress) end
+    end
+    if now >= player.nextPatrol and SGroup_Count(guards) > 0 then
+        player.nextPatrol = now + 5
+        local enemies = SGroup_CreateUnique()
+        local buildings = EGroup_CreateUnique()
+        local position = Entity_GetPosition(fortress)
+        World_GetSquadsNearPoint(player.id, enemies, position, 48, OT_Enemy)
+        SGroup_Filter(enemies, "gaia", FILTER_REMOVE)
+        World_GetEntitiesNearPoint(player.id, buildings, position, 48, OT_Enemy)
+        if SGroup_Count(enemies) > 0 then
+            Cmd_AttackMove(guards, Squad_GetPosition(SGroup_GetSquadAt(enemies, 1)), false)
+        elseif EGroup_Count(buildings) > 0 then
+            Cmd_AttackMove(guards, Entity_GetPosition(EGroup_GetEntityAt(buildings, 1)), false)
+        else
+            Cmd_Move(guards, Prox_GetRandomPosition(position, 48, 16), false)
+        end
+        SGroup_Destroy(enemies); EGroup_Destroy(buildings)
+    end
+    SGroup_Destroy(guards)
+end
+
+function KoreaLandmarks_Tick(player, now)
+    KoreaLandmarks_Snapshot(player)
+    KoreaLandmarks_Guards(player, now)
+    if now >= player.nextKillIncome then
+        player.nextKillIncome = now + 10
+        local landmark = player.landmarks.bulguksa
+        if landmark ~= nil then
+            Korea_AddLiterature(player, player.kills / 3)
+            Entity_SetStateModelFloat(landmark, "additional_carry_gold_amount", player.kills)
+        end
+    end
+end

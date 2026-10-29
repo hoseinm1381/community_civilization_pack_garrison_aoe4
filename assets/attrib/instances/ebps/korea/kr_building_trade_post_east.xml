@@ -1,0 +1,140 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="766079826" List.ParentItemID="766079826">
+			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1714696841" List.ParentItemID="-1714696841">
+			<list name="abilities">
+				<instance_reference name="ability" value="abilities\korea\kr_leader_siege_damage_activated" mod="a743d7d1d7534cf78817e29d8ded7366" List.ItemID="107695637" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\korea\kr_leader_improved_incendiary_attack_speed_arrow" mod="a743d7d1d7534cf78817e29d8ded7366" List.ItemID="-1350306425" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\korea\kr_leader_damage_activated" mod="a743d7d1d7534cf78817e29d8ded7366" List.ItemID="-857837158" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\korea\kr_leader_falcon_sight" mod="a743d7d1d7534cf78817e29d8ded7366" List.ItemID="-399099313" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\korea\kr_leader_ranged_attack_speed_activated" mod="a743d7d1d7534cf78817e29d8ded7366" List.ItemID="-1306752473" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\korea\kr_leader_production_mon_activated" mod="a743d7d1d7534cf78817e29d8ded7366" List.ItemID="988410504" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\korea\kr_shirkuh_speed_activate_ayy" mod="a743d7d1d7534cf78817e29d8ded7366" List.ItemID="-50058569" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\korea\kr_leader_improved_armor_maneuver_arrow" mod="a743d7d1d7534cf78817e29d8ded7366" List.ItemID="192052882" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\korea\kr_leader_armor_activated" mod="a743d7d1d7534cf78817e29d8ded7366" List.ItemID="-119262858" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\korea\kr_leader_production_activated" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" List.ItemID="2024151863" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\korea\kr_saladin_armor_activated_ayy" mod="a743d7d1d7534cf78817e29d8ded7366" List.ItemID="483086968" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\korea\kr_leader_knight_damage_move_speed_activated" mod="a743d7d1d7534cf78817e29d8ded7366" List.ItemID="608293901" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\korea\kr_leader_attack_speed_activated" mod="a743d7d1d7534cf78817e29d8ded7366" List.ItemID="996176186" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\korea\kr_leader_move_speed_activated" mod="a743d7d1d7534cf78817e29d8ded7366" List.ItemID="-2076473310" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\korea\kr_leader_construction_activated" mod="a743d7d1d7534cf78817e29d8ded7366" List.ItemID="-147474383" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\korea\kr_leader_gunpowder_attack_speed_activated" mod="a743d7d1d7534cf78817e29d8ded7366" List.ItemID="417604824" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\korea\kr_leader_healing_activated" mod="a743d7d1d7534cf78817e29d8ded7366" List.ItemID="1614697899" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\korea\kr_leader_decay_armor_activated" mod="a743d7d1d7534cf78817e29d8ded7366" List.ItemID="734046949" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="156611694" List.ParentItemID="156611694">
+			<file name="icon_name" value="races\common\buildings\trading_post" overrideParent="True" />
+			<float name="minimap_icon_scale" value="0.35" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1436039390" List.ParentItemID="1436039390">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" List.ItemID="351996929">
+					<group name="tier" List.ItemID="704149682">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\neutral\buildings\tier1_building_trade_post_east" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147483036" />
+	<instance_reference name="parent_pbg" value="ebps\korea\kr_building_trade_post_core" mod="a743d7d1d7534cf78817e29d8ded7366" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="422243435" List.ParentItemID="422243435">
+				<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="2075916665" List.ParentItemID="2075916665">
+				<file name="icon_name" value="races\common\buildings\trading_post" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1983341912" List.ParentItemID="1983341912">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" List.ItemID="819267856">
+						<group name="tier" List.ItemID="-405220413">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\neutral\buildings\tier1_building_trade_post_east" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="747372561" List.ParentItemID="747372561">
+				<enum_table name="armor_scaler_by_damage_type">
+					<float name="Melee" value="0" overrideParent="True" />
+				</enum_table>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147483036" />
+		<instance_reference name="parent_pbg" value="ebps\korea\kr_building_trade_post_core" mod="a743d7d1d7534cf78817e29d8ded7366" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="290426413" List.ParentItemID="290426413">
+				<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1393399040" List.ParentItemID="1393399040">
+				<file name="icon_name" value="races\common\buildings\trading_post" overrideParent="True" />
+				<float name="minimap_icon_scale" value="0.35" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1932363251" List.ParentItemID="1932363251">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" List.ItemID="-1515849782">
+						<group name="tier" List.ItemID="-983869036">
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\neutral\buildings\tier1_building_trade_post_east" overrideParent="True" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="False" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147483036" />
+		<instance_reference name="parent_pbg" value="ebps\korea\kr_building_trade_post_core" mod="a743d7d1d7534cf78817e29d8ded7366" />
+	</variant>
+</instance>

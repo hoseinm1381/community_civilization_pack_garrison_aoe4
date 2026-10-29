@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="4" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="damage">
+			<float name="max" value="14" overrideParent="True" />
+			<float name="min" value="14" overrideParent="True" />
+			<bool name="allow_overkill" value="False" overrideParent="True" />
+		</group>
+		<group name="projectile">
+			<instance_reference name="projectile" value="ebps\projectiles\projectile_arrow_nestofbees" overrideParent="True" />
+		</group>
+		<group name="area_effect" overrideParent="True">
+			<group name="accuracy">
+				<float name="far" value="1" />
+				<float name="near" value="1" />
+				<float name="mid" value="1" />
+			</group>
+			<template_reference name="area_info" value="options\area_info_options\circle_area_option">
+				<float name="outer_radius" value="4" />
+				<float name="inner_radius" value="0" />
+				<bool name="is_two_dimensional" value="True" />
+				<enum name="dynamic_radius_type" value="fixed" />
+			</template_reference>
+			<group name="damage">
+				<float name="far" value="0.4" />
+				<float name="near" value="1" />
+				<float name="mid" value="0.7" />
+			</group>
+			<group name="damage_friendly">
+				<float name="far" value="1" />
+				<float name="near" value="1" />
+				<float name="mid" value="1" />
+			</group>
+			<group name="distance">
+				<float name="far" value="2" />
+				<float name="near" value="0.5" />
+				<float name="mid" value="1" />
+			</group>
+			<bool name="has_friendly_fire" value="True" />
+			<bool name="can_harm_shooter" value="False" />
+			<group name="suppression">
+				<float name="far" value="0" />
+				<float name="near" value="0" />
+				<float name="mid" value="0" />
+			</group>
+			<group name="suppression_friendly">
+				<float name="far" value="0" />
+				<float name="near" value="0" />
+				<float name="mid" value="0" />
+			</group>
+			<bool name="damage_all_in_hold" value="False" />
+			<template_reference name="aoe_penetration" value="tables\range_table">
+				<float name="far" value="0" />
+				<float name="mid" value="0" />
+				<float name="near" value="0" />
+			</template_reference>
+			<int name="damage_max_members_per_squad" value="-1" />
+			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
+			<group name="fx">
+				<float name="exponential_distribution_lambda" value="0" />
+				<int name="num_randomized_ground_hit_fx" value="0" />
+			</group>
+			<template_reference name="area_over_time_option" value="">
+			</template_reference>
+		</group>
+		<group name="burst">
+			<group name="rate_of_fire">
+				<float name="max" value="2" overrideParent="True" />
+				<float name="min" value="2" overrideParent="True" />
+			</group>
+		</group>
+		<group name="range">
+			<float name="max" value="22" overrideParent="True" />
+		</group>
+		<group name="fire">
+			<float name="wind_up" value="0.25" overrideParent="True" />
+		</group>
+		<group name="reload">
+			<group name="duration">
+				<float name="max" value="1.25" overrideParent="True" />
+				<float name="min" value="1.25" overrideParent="True" />
+			</group>
+		</group>
+		<list name="target_type_table">
+			<group name="target_unit_type_multipliers" List.ItemID="-745539955" List.ListAction="Append">
+				<enum name="unit_type" value="building" overrideParent="True" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="1" />
+					<float name="penetration_multiplier" value="1" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+				<float name="base_damage_modifier" value="40" overrideParent="True" />
+			</group>
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="2147483177" />
+	<instance_reference name="parent_pbg" value="weapon\races\chinese\ranged\weapon_repeater_crossbow_2_chi" />
+</instance>

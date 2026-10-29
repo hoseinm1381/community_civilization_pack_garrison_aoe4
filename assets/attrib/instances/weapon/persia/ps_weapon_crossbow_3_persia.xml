@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
 <instance version="6" description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
@@ -99,7 +98,6 @@
 			<float name="ground_hit_rate" value="0" />
 			<bool name="ignore_shot_blocking" value="False" />
 			<bool name="non_moving_setup" value="False" />
-			<bool name="point_blank" value="False" />
 			<bool name="prevents_prone" value="False" />
 			<bool name="reset_rotation_on_teardown" value="False" />
 			<bool name="share_parent_anim" value="False" />
@@ -122,6 +120,7 @@
 			<bool name="can_damage_allies" value="False" />
 			<bool name="hit_everything_on_hit" value="False" />
 			<bool name="can_abort_winddown_on_move_command" value="False" />
+			<bool name="force_square_attack" value="False" />
 		</group>
 		<group name="burst">
 			<bool name="can_burst" value="False" />
@@ -173,6 +172,11 @@
 			<enum name="damage_type" value="Ranged" />
 			<bool name="allow_overkill" value="False" />
 			<list name="on_penetrated_state_trees">
+			</list>
+			<bool name="should_keep_above_one" value="True" />
+			<float name="critical_damage_chance" value="0.02" />
+			<float name="critical_damage_factor" value="5" />
+			<list name="on_critical_hit_state_trees">
 			</list>
 		</group>
 		<group name="deflection">
@@ -567,7 +571,6 @@
 				<float name="ground_hit_rate" value="0" />
 				<bool name="ignore_shot_blocking" value="False" />
 				<bool name="non_moving_setup" value="False" />
-				<bool name="point_blank" value="False" />
 				<bool name="prevents_prone" value="False" />
 				<bool name="reset_rotation_on_teardown" value="False" />
 				<bool name="share_parent_anim" value="False" />
@@ -590,6 +593,7 @@
 				<bool name="can_damage_allies" value="False" />
 				<bool name="hit_everything_on_hit" value="False" />
 				<bool name="can_abort_winddown_on_move_command" value="False" />
+				<bool name="force_square_attack" value="False" />
 			</group>
 			<group name="burst">
 				<bool name="can_burst" value="False" />
@@ -641,6 +645,11 @@
 				<enum name="damage_type" value="Ranged" />
 				<bool name="allow_overkill" value="False" />
 				<list name="on_penetrated_state_trees">
+				</list>
+				<bool name="should_keep_above_one" value="True" />
+				<float name="critical_damage_chance" value="0.02" />
+				<float name="critical_damage_factor" value="5" />
+				<list name="on_critical_hit_state_trees">
 				</list>
 			</group>
 			<group name="deflection">
@@ -1036,7 +1045,6 @@
 				<float name="ground_hit_rate" value="0" />
 				<bool name="ignore_shot_blocking" value="False" />
 				<bool name="non_moving_setup" value="False" />
-				<bool name="point_blank" value="False" />
 				<bool name="prevents_prone" value="False" />
 				<bool name="reset_rotation_on_teardown" value="False" />
 				<bool name="share_parent_anim" value="False" />
@@ -1059,6 +1067,7 @@
 				<bool name="can_damage_allies" value="False" />
 				<bool name="hit_everything_on_hit" value="False" />
 				<bool name="can_abort_winddown_on_move_command" value="False" />
+				<bool name="force_square_attack" value="False" />
 			</group>
 			<group name="burst">
 				<bool name="can_burst" value="False" />
@@ -1110,6 +1119,11 @@
 				<enum name="damage_type" value="Ranged" />
 				<bool name="allow_overkill" value="False" />
 				<list name="on_penetrated_state_trees">
+				</list>
+				<bool name="should_keep_above_one" value="True" />
+				<float name="critical_damage_chance" value="0.02" />
+				<float name="critical_damage_factor" value="5" />
+				<list name="on_critical_hit_state_trees">
 				</list>
 			</group>
 			<group name="deflection">
@@ -1505,7 +1519,6 @@
 				<float name="ground_hit_rate" value="0" />
 				<bool name="ignore_shot_blocking" value="False" />
 				<bool name="non_moving_setup" value="False" />
-				<bool name="point_blank" value="False" />
 				<bool name="prevents_prone" value="False" />
 				<bool name="reset_rotation_on_teardown" value="False" />
 				<bool name="share_parent_anim" value="False" />
@@ -1528,6 +1541,7 @@
 				<bool name="can_damage_allies" value="False" />
 				<bool name="hit_everything_on_hit" value="False" />
 				<bool name="can_abort_winddown_on_move_command" value="False" />
+				<bool name="force_square_attack" value="False" />
 			</group>
 			<group name="burst">
 				<bool name="can_burst" value="False" />
@@ -1579,6 +1593,11 @@
 				<enum name="damage_type" value="Ranged" />
 				<bool name="allow_overkill" value="False" />
 				<list name="on_penetrated_state_trees">
+				</list>
+				<bool name="should_keep_above_one" value="True" />
+				<float name="critical_damage_chance" value="0.02" />
+				<float name="critical_damage_factor" value="5" />
+				<list name="on_critical_hit_state_trees">
 				</list>
 			</group>
 			<group name="deflection">

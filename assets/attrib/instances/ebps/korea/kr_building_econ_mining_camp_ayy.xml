@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="638199223" List.ParentItemID="638199223">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="-25735409" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="-114611824" List.ParentItemID="-114611824">
+			<list name="district_bonuses">
+				<template_reference name="district_bonus" value="district_bonus" List.ItemID="-162957550" List.ParentItemID="-162957550">
+					<uniqueid name="id" value="1073741825" />
+				</template_reference>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482942" />
+	<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_econ_mining_camp_control_abb" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="638199223" List.ParentItemID="638199223">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="2096862853" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\district_bonuses_ext" List.ItemID="-114611824" List.ParentItemID="-114611824">
+				<list name="district_bonuses">
+					<template_reference name="district_bonus" value="district_bonus" List.ItemID="-162957550" List.ParentItemID="-162957550">
+						<uniqueid name="id" value="1073741826" />
+					</template_reference>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147482942" />
+		<instance_reference name="parent_pbg" value="ebps\races\abbasid\buildings\building_econ_mining_camp_control_abb" />
+	</variant>
+</instance>

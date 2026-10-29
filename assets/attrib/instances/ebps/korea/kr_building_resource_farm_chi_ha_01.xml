@@ -1,0 +1,88 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-845778417" List.ParentItemID="-845778417">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<enum name="subclass_type" value="ConstructibleResourceDeposit" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="-1623752631" List.ParentItemID="-1623752631">
+			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1432368975" List.ParentItemID="1432368975">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\chinese_ha_01" overrideParent="True" List.ItemID="628867884" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="816602380" List.ParentItemID="816602380">
+			<group name="time_cost">
+				<float name="time_seconds" value="6" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="1868816774" List.ParentItemID="1868816774">
+			<template_reference name="resource_spline_option" value="options\resource_deposit\resource_spline_option">
+				<float name="edge_padding" value="1" overrideParent="True" />
+				<float name="distance_between_splines_minimum" value="0.5" overrideParent="True" />
+				<float name="distance_between_splines_maximum" value="1.65" overrideParent="True" />
+				<list name="resource_animator_groups" overrideParent="True">
+					<group name="resource_animator_group" List.ItemID="642785632">
+						<list name="resource_animator_list">
+							<file name="resource_animator" value="art\environment\nat_economy\farm\farm_rice\farm_rice_a" overrideParent="True" List.ItemID="-1969723539" />
+						</list>
+					</group>
+				</list>
+				<float name="desired_row_count" value="4" overrideParent="True" />
+				<float name="sub_splines_per_row" value="4" overrideParent="True" />
+			</template_reference>
+			<float name="base_regrowth_rate" value="30" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\modifier_ext" List.ItemID="2142679905" List.ListAction="Append">
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1054394449" List.ListAction="Append">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="-1484582505">
+					<group name="tier" List.ItemID="-1838611328">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese\buildings\resource_farm_chi\tier1_resource_farm_chi" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+				<list name="tier_group" overrideParent="True" List.ItemID="-392367723">
+					<group name="tier" List.ItemID="940816811">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese\outskirts\general\chi_farms" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147482957" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_resource_farm" />
+</instance>

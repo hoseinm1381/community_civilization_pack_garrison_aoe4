@@ -1,0 +1,57 @@
+-- Deterministic payment/offer policy, independent of engine or local UI.
+KoreaResearchCore = {}
+
+function KoreaResearchCore.New()
+    return {pending = {}, completed = {}, offers = {}, offered = {}, allowances = 2, observatoryGranted = false}
+end
+
+function KoreaResearchCore.Offer(state, pool, count, pick)
+    local candidates = {}
+    for _, name in ipairs(pool) do
+        if not state.offered[name] then table.insert(candidates, name) end
+    end
+    local added = {}
+    for i = 1, math.min(count, #candidates) do
+        local index = pick(#candidates)
+        assert(index >= 1 and index <= #candidates and index == math.floor(index))
+        local name = table.remove(candidates, index)
+        state.offered[name] = true
+        table.insert(state.offers, name)
+        table.insert(added, name)
+    end
+    return added
+end
+
+function KoreaResearchCore.Observatory(state, pool, pick)
+    if state.observatoryGranted then return {} end
+    state.observatoryGranted = true
+    state.allowances = state.allowances + 2
+    return KoreaResearchCore.Offer(state, pool, 4, pick)
+end
+
+function KoreaResearchCore.Begin(state, upgrade, paid, foreign, actor, ability)
+    if state.pending[upgrade] or state.completed[upgrade] then return false end
+    if foreign and state.allowances <= 0 then return false end
+    if foreign then state.allowances = state.allowances - 1 end
+    state.pending[upgrade] = {paid = paid, foreign = foreign, actor = actor, ability = ability}
+    return true
+end
+
+function KoreaResearchCore.Settle(state, upgrade, completed, observatoryActive)
+    local transaction = state.pending[upgrade]
+    if transaction == nil then return nil end
+    state.pending[upgrade] = nil
+    if completed then state.completed[upgrade] = true
+    elseif transaction.foreign then state.allowances = state.allowances + 1 end
+    local refund = {}
+    if completed then
+        refund.merc_byz = observatoryActive and (transaction.paid.merc_byz or 0) * 0.15 or 0
+    else
+        for resource, amount in pairs(transaction.paid) do refund[resource] = amount end
+    end
+    return refund, transaction
+end
+
+function KoreaResearchCore.SeowonIncome(base, scholars, upgraded, outposts, keeps)
+    return base * (1 + scholars * (upgraded and 0.40 or 0.25)) + outposts * 0.75 + keeps * 2.5
+end

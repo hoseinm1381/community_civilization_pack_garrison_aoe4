@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
 <instance version="6" description="" template="ebps">
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-289828657" List.ListAction="Append">
@@ -28,8 +27,6 @@
 			<list name="tier_group_list">
 				<list name="tier_group" List.ItemID="1589601281">
 					<group name="tier" List.ItemID="-321195965">
-						<list name="tier_requirements">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier3_war_elephant_spearman_sul" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -46,6 +43,7 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 				</list>
 			</list>
@@ -111,6 +109,7 @@
 			</enum_table>
 			<enum name="snap_to_surface_type" value="GroundOrWalkable" />
 			<float name="turn_in_place_distance" value="0" />
+			<bool name="snap_to_terrain" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1014327574" List.ListAction="Append">
 			<list name="unit_type_list">
@@ -403,8 +402,6 @@
 				<list name="tier_group_list">
 					<list name="tier_group" List.ItemID="-143242520">
 						<group name="tier" List.ItemID="-230069887">
-							<list name="tier_requirements">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\units\tier3_war_elephant_spearman_sul" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -421,6 +418,7 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 				</list>
@@ -486,6 +484,7 @@
 				</enum_table>
 				<enum name="snap_to_surface_type" value="GroundOrWalkable" />
 				<float name="turn_in_place_distance" value="0" />
+				<bool name="snap_to_terrain" value="True" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-825749172" List.ListAction="Append">
 				<list name="unit_type_list">

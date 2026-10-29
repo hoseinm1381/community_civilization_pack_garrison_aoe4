@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
 <instance version="6" description="Villager" template="ebps">
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="847857005" List.ParentItemID="847857005">
@@ -73,7 +72,7 @@
 				<group name="gather_target" List.ItemID="-1922234524" List.ParentItemID="-1922234524">
 					<float name="gather_rate" value="0.8925" overrideParent="True" />
 				</group>
-				<group name="gather_target" comment="Hunting Boar has been disabled for the Sultanate.&#13;&#10;HUNTABLE - Dangerous (boar and croc)" List.ItemID="-1408090057" List.ParentItemID="-1408090057">
+				<group name="gather_target" comment="Hunting Boar has been disabled for the Sultanate.&#xD;&#xA;HUNTABLE - Dangerous (boar and croc)" List.ItemID="-1408090057" List.ParentItemID="-1408090057">
 					<float name="gather_rate" value="0" overrideParent="True" />
 					<instance_reference name="resource_sub_type" value="" overrideParent="True" />
 					<float name="search_radius" value="0" overrideParent="True" />
@@ -105,8 +104,6 @@
 			<list name="tier_group_list" overrideParent="True">
 				<list name="tier_group" overrideParent="True" List.ItemID="48900136">
 					<group name="tier" List.ItemID="-357125400">
-						<list name="tier_requirements" overrideParent="True">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier4_villager_abb" overrideParent="True" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
@@ -123,6 +120,7 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="default" overrideParent="True" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 				</list>
 			</list>
@@ -204,7 +202,7 @@
 					<group name="gather_target" List.ItemID="1893683830" List.ParentItemID="1893683830">
 						<float name="gather_rate" value="0.8925" overrideParent="True" />
 					</group>
-					<group name="gather_target" comment="Hunting Boar has been disabled for the Sultanate.&#13;&#10;HUNTABLE - Dangerous (boar and croc)" List.ItemID="767693115" List.ParentItemID="767693115">
+					<group name="gather_target" comment="Hunting Boar has been disabled for the Sultanate.&#xD;&#xA;HUNTABLE - Dangerous (boar and croc)" List.ItemID="767693115" List.ParentItemID="767693115">
 						<float name="gather_rate" value="0.98" overrideParent="True" />
 						<instance_reference name="resource_sub_type" value="" overrideParent="True" />
 						<float name="search_radius" value="0" overrideParent="True" />
@@ -229,8 +227,6 @@
 				<list name="tier_group_list" overrideParent="True">
 					<list name="tier_group" overrideParent="True" List.ItemID="1691695802">
 						<group name="tier" List.ItemID="-1192040003">
-							<list name="tier_requirements" overrideParent="True">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier4_villager_abb" overrideParent="True" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
@@ -247,6 +243,7 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 				</list>

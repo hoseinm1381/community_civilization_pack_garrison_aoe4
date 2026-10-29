@@ -1,0 +1,554 @@
+{
+  "archive_sha256": "cbaf6803ca8309cfb3861c8a19c3c9c34c0ec50d7c6c507f9c6906be301cfe5c",
+  "private": "ebps\\korea\\kr_building_trade_post_east",
+  "source_sha256": "e61f568f597e07a220c947e8442b41609a2db97ff9a6e648a883d310653227da",
+  "local": {
+    "ebps\\korea\\kr_building_trade_post_core": {
+      "default": {
+        "parent": {
+          "name": "parent_pbg",
+          "value": "ebps\\races\\core\\buildings\\building_alpha"
+        },
+        "list": {
+          "name": "extensions",
+          "overrideParent": "True"
+        },
+        "items": [
+          {
+            "name": "exts",
+            "value": "ebpextensions\\entity_blueprint_ext",
+            "List.ItemID": "-455330956"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\sim_entity_ext",
+            "List.ItemID": "1090566296"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\hit_object_ext",
+            "List.ItemID": "1108327669"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\line_of_sight_ext",
+            "List.ItemID": "1334893416"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\marker_ext",
+            "List.ItemID": "-1887505744"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\modifier_ext",
+            "List.ItemID": "-1930192417"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\site_ext",
+            "List.ItemID": "766079826"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\type_ext",
+            "List.ItemID": "426535272"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\ability_ext",
+            "List.ItemID": "-1714696841"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\construction_ext",
+            "List.ItemID": "-831476542"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\cost_ext",
+            "List.ItemID": "-265737757"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\impass_ext",
+            "List.ItemID": "-1056669998"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\sight_ext",
+            "List.ItemID": "-393908449"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\ui_ext",
+            "List.ItemID": "156611694"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\action_apply_ext",
+            "List.ItemID": "-599358669"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\supply_ext",
+            "List.ItemID": "708575850"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\requirement_ext",
+            "List.ItemID": "-405484029"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\interactive_object_ext",
+            "List.ItemID": "-1119132779"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\tier_ext",
+            "List.ItemID": "1436039390"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\entity_targeting_ext",
+            "List.ItemID": "-711385774"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\action_tree_ext",
+            "List.ItemID": "159937257"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\animation_action_tree_ext",
+            "List.ItemID": "606680842"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\statemodel_ext",
+            "List.ItemID": "-2041434774"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\boundary_cells_ext",
+            "List.ItemID": "-11880471"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\audio_ext",
+            "List.ItemID": "354287350"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\health_ext",
+            "List.ItemID": "1931006246"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\hit_react_tree_ext",
+            "List.ItemID": "-1890245975"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\upgrade_ext",
+            "List.ItemID": "-1416897150"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\mercenary_set_ext",
+            "comment": "Allow this building to unlock mercenary units for Byzantine Mercenary Houses ",
+            "List.ItemID": "-1348881357"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\spawner_ext",
+            "List.ItemID": "-1450227129"
+          }
+        ]
+      },
+      "campaign": {
+        "parent": {
+          "name": "parent_pbg",
+          "value": ""
+        },
+        "list": {
+          "name": "extensions"
+        },
+        "items": [
+          {
+            "name": "exts",
+            "value": "ebpextensions\\entity_blueprint_ext",
+            "List.ItemID": "1296061288",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\sim_entity_ext",
+            "List.ItemID": "-1098709503",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\hit_object_ext",
+            "List.ItemID": "-423594101",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\line_of_sight_ext",
+            "List.ItemID": "1465024808",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\marker_ext",
+            "List.ItemID": "-265310603",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\modifier_ext",
+            "List.ItemID": "-1152419470",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\site_ext",
+            "List.ItemID": "422243435",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\type_ext",
+            "List.ItemID": "-467320208",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\ability_ext",
+            "List.ItemID": "-474465220",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\construction_ext",
+            "List.ItemID": "-973025100",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\cost_ext",
+            "List.ItemID": "733106490",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\impass_ext",
+            "List.ItemID": "-1934327643",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\sight_ext",
+            "List.ItemID": "961646179",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\ui_ext",
+            "List.ItemID": "2075916665",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\action_apply_ext",
+            "List.ItemID": "354162652",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\modifier_apply_ext",
+            "List.ItemID": "-512144686",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\supply_ext",
+            "List.ItemID": "211014847",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\requirement_ext",
+            "List.ItemID": "2009712124",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\interactive_object_ext",
+            "List.ItemID": "-992200656",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\tier_ext",
+            "List.ItemID": "1983341912",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\entity_targeting_ext",
+            "List.ItemID": "1486764685",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\action_tree_ext",
+            "List.ItemID": "1765333751",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\animation_action_tree_ext",
+            "List.ItemID": "-2117346602",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\statemodel_ext",
+            "List.ItemID": "-1199943678",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\boundary_cells_ext",
+            "List.ItemID": "1456004730",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\audio_ext",
+            "List.ItemID": "78243549",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\health_ext",
+            "List.ItemID": "747372561",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\hit_react_tree_ext",
+            "List.ItemID": "-1224775133",
+            "List.ListAction": "Append"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\upgrade_ext",
+            "List.ItemID": "20029831",
+            "List.ListAction": "Append"
+          }
+        ]
+      },
+      "xp3": {
+        "parent": {
+          "name": "parent_pbg",
+          "value": "ebps\\races\\core\\buildings\\building_alpha"
+        },
+        "list": {
+          "name": "extensions",
+          "overrideParent": "True"
+        },
+        "items": [
+          {
+            "name": "exts",
+            "value": "ebpextensions\\entity_blueprint_ext",
+            "List.ItemID": "-1388310257"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\sim_entity_ext",
+            "List.ItemID": "730720660"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\hit_object_ext",
+            "List.ItemID": "-537127505"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\line_of_sight_ext",
+            "List.ItemID": "-739514861"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\marker_ext",
+            "List.ItemID": "-584618002"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\modifier_ext",
+            "List.ItemID": "862680938"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\site_ext",
+            "List.ItemID": "290426413"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\type_ext",
+            "List.ItemID": "-1131390657"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\ability_ext",
+            "List.ItemID": "1872529560"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\construction_ext",
+            "List.ItemID": "1266468534"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\cost_ext",
+            "List.ItemID": "266653621"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\impass_ext",
+            "List.ItemID": "-668476440"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\sight_ext",
+            "List.ItemID": "-1520450969"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\ui_ext",
+            "List.ItemID": "1393399040"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\action_apply_ext",
+            "List.ItemID": "-1191581779"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\supply_ext",
+            "List.ItemID": "826355506"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\requirement_ext",
+            "List.ItemID": "973646285"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\interactive_object_ext",
+            "List.ItemID": "634901791"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\tier_ext",
+            "List.ItemID": "1932363251"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\entity_targeting_ext",
+            "List.ItemID": "-1730644506"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\action_tree_ext",
+            "List.ItemID": "-458652565"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\animation_action_tree_ext",
+            "List.ItemID": "1556890664"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\statemodel_ext",
+            "List.ItemID": "-1890286502"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\boundary_cells_ext",
+            "List.ItemID": "1107159898"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\audio_ext",
+            "List.ItemID": "106268412"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\health_ext",
+            "List.ItemID": "-1145378816"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\hit_react_tree_ext",
+            "List.ItemID": "822998994"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\upgrade_ext",
+            "List.ItemID": "-107512703"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\mercenary_set_ext",
+            "comment": "Allow this building to unlock mercenary units for Byzantine Mercenary Houses ",
+            "List.ItemID": "-1322712456"
+          },
+          {
+            "name": "exts",
+            "value": "ebpextensions\\spawner_ext",
+            "List.ItemID": "-1658832653"
+          }
+        ]
+      }
+    }
+  },
+  "official": {
+    "ebps\\races\\core\\buildings\\building_alpha": {
+      "default": {
+        "parent": {
+          "name": "parent_pbg",
+          "value": ""
+        },
+        "list": {
+          "name": "extensions"
+        },
+        "items": []
+      },
+      "xp3": {
+        "parent": {
+          "name": "parent_pbg",
+          "value": ""
+        },
+        "list": {
+          "name": "extensions"
+        },
+        "items": []
+      },
+      "cordoba": {
+        "parent": {
+          "name": "parent_pbg",
+          "value": ""
+        },
+        "list": {
+          "name": "extensions"
+        },
+        "items": []
+      }
+    }
+  }
+}

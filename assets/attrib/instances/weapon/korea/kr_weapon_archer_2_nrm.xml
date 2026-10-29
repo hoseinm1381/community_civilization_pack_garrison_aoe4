@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="aim">
+			<group name="aim_time_multiplier">
+				<float name="near" value="1" overrideParent="True" />
+				<float name="mid" value="1" overrideParent="True" />
+			</group>
+		</group>
+		<group name="fire">
+			<float name="wind_up" value="0" overrideParent="True" />
+		</group>
+		<group name="range">
+			<float name="max" value="26" overrideParent="True" />
+		</group>
+		<group name="reload">
+			<group name="duration">
+				<float name="max" value="1.25" overrideParent="True" />
+				<float name="min" value="1.25" overrideParent="True" />
+			</group>
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="2147483139" />
+	<instance_reference name="parent_pbg" value="weapon\korea\kr_weapon_archer_2" mod="a743d7d1d7534cf78817e29d8ded7366" />
+	<variant name="xp3">
+		<group name="weapon_bag">
+			<group name="aim">
+				<group name="aim_time_multiplier">
+					<float name="near" value="1" overrideParent="True" />
+					<float name="mid" value="1" overrideParent="True" />
+				</group>
+			</group>
+			<group name="fire">
+				<float name="wind_up" value="0" overrideParent="True" />
+			</group>
+			<group name="range">
+				<float name="max" value="26" overrideParent="True" />
+			</group>
+			<group name="reload">
+				<group name="duration">
+					<float name="max" value="1.25" overrideParent="True" />
+					<float name="min" value="1.25" overrideParent="True" />
+				</group>
+			</group>
+		</group>
+		<uniqueid name="pbgid" value="2147483139" />
+		<instance_reference name="parent_pbg" value="weapon\korea\kr_weapon_archer_2" mod="a743d7d1d7534cf78817e29d8ded7366" />
+	</variant>
+</instance>

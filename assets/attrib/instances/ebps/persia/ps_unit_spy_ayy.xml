@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
 <instance version="6" description="" template="ebps">
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="2100559885" List.ListAction="Append">
@@ -120,6 +119,12 @@
 			</template_reference>
 			<state_tree_node name="on_reach_invulnerable_min_cap_entity_state_tree_ref" value="" />
 			<state_tree_node name="on_reach_max_health_entity_state_tree_ref" value="" />
+			<enum_table name="percentage_reduction_armor_by_damage_type">
+				<float name="True Damage" value="0" />
+				<float name="Melee" value="0" />
+				<float name="Ranged" value="0" />
+				<float name="Fire" value="0" />
+			</enum_table>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="258240563" List.ListAction="Append">
 			<instance_reference name="hit_material" value="hit_material\armour" />
@@ -371,6 +376,7 @@
 			<locstring name="help_text_controller" value="0" />
 			<locstring name="extra_text_controller" value="0" />
 			<bool name="static_selection_bounds" value="False" />
+			<enum name="targeting_and_bandbox_selection_priority_controller" value="" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-837528400" List.ListAction="Append">
 			<list name="hardpoints">
@@ -529,6 +535,7 @@
 			<instance_reference name="pass_type_destination" value="" />
 			<enum name="snap_to_surface_type" value="GroundOrWalkable" />
 			<float name="turn_in_place_distance" value="0" />
+			<bool name="snap_to_terrain" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\holdable_ext" List.ItemID="-452916980" List.ListAction="Append">
 			<enum name="holdable" value="hold_spy" />
@@ -575,8 +582,6 @@
 			<list name="tier_group_list">
 				<list name="tier_group" List.ItemID="185458462">
 					<group name="tier" List.ItemID="1304405299">
-						<list name="tier_requirements">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\units\tier1_spy_ayy" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" />
@@ -593,6 +598,7 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 				</list>
 			</list>
@@ -788,6 +794,12 @@
 				</template_reference>
 				<state_tree_node name="on_reach_invulnerable_min_cap_entity_state_tree_ref" value="" />
 				<state_tree_node name="on_reach_max_health_entity_state_tree_ref" value="" />
+				<enum_table name="percentage_reduction_armor_by_damage_type">
+					<float name="True Damage" value="0" />
+					<float name="Melee" value="0" />
+					<float name="Ranged" value="0" />
+					<float name="Fire" value="0" />
+				</enum_table>
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="1140216240" List.ListAction="Append">
 				<instance_reference name="hit_material" value="hit_material\armour" />
@@ -1039,6 +1051,7 @@
 				<locstring name="help_text_controller" value="0" />
 				<locstring name="extra_text_controller" value="0" />
 				<bool name="static_selection_bounds" value="False" />
+				<enum name="targeting_and_bandbox_selection_priority_controller" value="" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-470737366" List.ListAction="Append">
 				<list name="hardpoints">
@@ -1197,6 +1210,7 @@
 				<instance_reference name="pass_type_destination" value="" />
 				<enum name="snap_to_surface_type" value="GroundOrWalkable" />
 				<float name="turn_in_place_distance" value="0" />
+				<bool name="snap_to_terrain" value="True" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\holdable_ext" List.ItemID="1511138243" List.ListAction="Append">
 				<enum name="holdable" value="hold_spy" />
@@ -1243,8 +1257,6 @@
 				<list name="tier_group_list">
 					<list name="tier_group" List.ItemID="2087176123">
 						<group name="tier" List.ItemID="-517875249">
-							<list name="tier_requirements">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\units\tier1_spy_ayy" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="xp3_tier_unit_exposure_dca" />
@@ -1261,6 +1273,7 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 				</list>

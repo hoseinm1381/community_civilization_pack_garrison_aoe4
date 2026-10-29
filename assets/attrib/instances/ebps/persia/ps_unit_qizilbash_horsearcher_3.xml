@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
 <instance version="6" description="" template="ebps">
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1491559579" List.ParentItemID="1491559579">
@@ -63,8 +62,6 @@
 						</template_reference>
 						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" overrideParent="True" />
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\units\tier2_cavalry_horsearcher_ayy" overrideParent="True" />
-						<list name="tier_requirements">
-						</list>
 						<instance_reference name="statetree_tier_requirements_pbg" value="" />
 						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
 						<string name="tier_attachment_action" value="" />
@@ -75,10 +72,9 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 					<group name="tier" overrideParent="True" List.ItemID="1712484327">
-						<list name="tier_requirements">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\units\tier3_cavalry_horsearcher_ayy" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca\Master\reapply_upgrades\reapply_turkic_horsearcher_weapon_upgrades" />
@@ -95,6 +91,7 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 					<group name="tier" List.ItemID="-1592482335" List.ParentItemID="-1592482335">
 						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\persia\ps_persia_unit_castle_to_imp" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
@@ -105,8 +102,6 @@
 							<bool name="start_suspended" value="False" />
 						</template_reference>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\units\tier4_cavalry_horsearcher_ayy" overrideParent="True" />
-						<list name="tier_requirements">
-						</list>
 						<string name="tier_attachment_action" value="" />
 						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
 							<bool name="reissue_commands" value="False" />
@@ -115,6 +110,7 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 				</list>
 			</list>
@@ -260,8 +256,6 @@
 							</template_reference>
 							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" overrideParent="True" />
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\units\tier2_cavalry_horsearcher_ayy" overrideParent="True" />
-							<list name="tier_requirements">
-							</list>
 							<instance_reference name="statetree_tier_requirements_pbg" value="" />
 							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
 							<string name="tier_attachment_action" value="" />
@@ -272,10 +266,9 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 						<group name="tier" overrideParent="True" List.ItemID="-798664603">
-							<list name="tier_requirements">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\units\tier3_cavalry_horsearcher_ayy" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca\Master\reapply_upgrades\reapply_turkic_horsearcher_weapon_upgrades" />
@@ -292,6 +285,7 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 						<group name="tier" List.ItemID="-1592482335" List.ParentItemID="-1592482335">
 							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\persia\ps_persia_unit_castle_to_imp" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
@@ -302,8 +296,6 @@
 								<bool name="start_suspended" value="False" />
 							</template_reference>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ayyubid_cmp\units\tier4_cavalry_horsearcher_ayy" overrideParent="True" />
-							<list name="tier_requirements">
-							</list>
 							<string name="tier_attachment_action" value="" />
 							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
 								<bool name="reissue_commands" value="False" />
@@ -312,6 +304,7 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 				</list>

@@ -50,7 +50,7 @@ def main():
     from relic.sga.core.definitions import Version
     from relic.sga.v10 import EssenceFSHandler
 
-    project = ET.parse(root / 'Vietnam_v2.aoe4mod').getroot()
+    project = ET.parse(root / 'Community_Civilization_Pack_Normal.aoe4mod').getroot()
     expected_guid = next(n.text for n in project if n.tag.rsplit('}', 1)[-1] == 'ID').replace('-', '').lower()
     print('package_sha256=' + hashlib.sha256(args.package.read_bytes()).hexdigest())
     with args.package.open('rb') as stream:

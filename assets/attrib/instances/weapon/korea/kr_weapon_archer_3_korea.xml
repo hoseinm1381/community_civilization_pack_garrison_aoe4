@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="aim">
+			<group name="aim_time_multiplier">
+				<float name="near" value="1" overrideParent="True" />
+				<float name="mid" value="1" overrideParent="True" />
+			</group>
+		</group>
+		<group name="damage">
+			<float name="max" value="7" overrideParent="True" />
+			<float name="min" value="7" overrideParent="True" />
+		</group>
+		<group name="fire">
+			<float name="wind_up" value="0" overrideParent="True" />
+		</group>
+		<group name="range">
+			<float name="max_animation_angle_distance" value="22" overrideParent="True" />
+			<float name="max" value="28" overrideParent="True" />
+		</group>
+		<group name="reload">
+			<group name="duration">
+				<float name="max" value="0.75" overrideParent="True" />
+				<float name="min" value="0.75" overrideParent="True" />
+			</group>
+		</group>
+		<list name="target_type_table">
+			<group name="target_unit_type_multipliers" List.ItemID="-661797869" List.ParentItemID="-661797869">
+				<enum name="unit_type" value="light_melee_infantry" overrideParent="True" />
+				<float name="base_damage_modifier" value="7" overrideParent="True" />
+			</group>
+			<group name="target_unit_type_multipliers" List.ItemID="242049874" List.ParentItemID="242049874">
+				<float name="base_damage_modifier" value="7" overrideParent="True" />
+			</group>
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="2147483169" />
+	<instance_reference name="parent_pbg" value="weapon\korea\kr_weapon_archer_2" mod="a743d7d1d7534cf78817e29d8ded7366" />
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<group name="aim">
+				<group name="aim_time_multiplier">
+					<float name="near" value="1" overrideParent="True" />
+					<float name="mid" value="1" overrideParent="True" />
+				</group>
+			</group>
+			<group name="damage">
+				<float name="max" value="8" overrideParent="True" />
+				<float name="min" value="8" overrideParent="True" />
+			</group>
+			<group name="fire">
+				<float name="wind_up" value="0" overrideParent="True" />
+			</group>
+			<group name="range">
+				<group name="distance">
+					<float name="near" value="8" overrideParent="True" />
+					<float name="far" value="20" overrideParent="True" />
+					<float name="mid" value="15" overrideParent="True" />
+				</group>
+				<float name="max_animation_angle_distance" value="22" overrideParent="True" />
+			</group>
+			<group name="reload">
+				<group name="duration">
+					<float name="max" value="0.75" overrideParent="True" />
+					<float name="min" value="0.75" overrideParent="True" />
+				</group>
+			</group>
+			<list name="target_type_table" overrideParent="True">
+				<group name="target_unit_type_multipliers" List.ItemID="-522792020">
+					<enum name="unit_type" value="spearman" overrideParent="True" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="2" overrideParent="True" />
+				</group>
+			</list>
+		</group>
+		<uniqueid name="pbgid" value="2147483169" />
+		<instance_reference name="parent_pbg" value="weapon\korea\kr_weapon_archer_2" mod="a743d7d1d7534cf78817e29d8ded7366" />
+	</variant>
+	<variant name="xp3">
+		<group name="weapon_bag">
+			<group name="aim">
+				<group name="aim_time_multiplier">
+					<float name="near" value="1" overrideParent="True" />
+					<float name="mid" value="1" overrideParent="True" />
+				</group>
+			</group>
+			<group name="damage">
+				<float name="max" value="7" overrideParent="True" />
+				<float name="min" value="7" overrideParent="True" />
+			</group>
+			<group name="fire">
+				<float name="wind_up" value="0" overrideParent="True" />
+			</group>
+			<group name="range">
+				<float name="max_animation_angle_distance" value="22" overrideParent="True" />
+			</group>
+			<group name="reload">
+				<group name="duration">
+					<float name="max" value="0.75" overrideParent="True" />
+					<float name="min" value="0.75" overrideParent="True" />
+				</group>
+			</group>
+			<list name="target_type_table" overrideParent="True">
+				<group name="target_unit_type_multipliers" List.ItemID="-2000554806">
+					<enum name="unit_type" value="light_melee_infantry" overrideParent="True" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="7" overrideParent="True" />
+				</group>
+			</list>
+		</group>
+		<uniqueid name="pbgid" value="2147483169" />
+		<instance_reference name="parent_pbg" value="weapon\korea\kr_weapon_archer_2" mod="a743d7d1d7534cf78817e29d8ded7366" />
+	</variant>
+	<variant name="hre_brawl">
+		<group name="weapon_bag">
+			<group name="aim">
+				<group name="aim_time_multiplier">
+					<float name="near" value="1" overrideParent="True" />
+					<float name="mid" value="1" overrideParent="True" />
+				</group>
+			</group>
+			<group name="damage">
+				<float name="max" value="8" overrideParent="True" />
+				<float name="min" value="8" overrideParent="True" />
+			</group>
+			<group name="fire">
+				<float name="wind_up" value="0" overrideParent="True" />
+			</group>
+			<group name="range">
+				<float name="max_animation_angle_distance" value="22" overrideParent="True" />
+				<float name="max" value="14" overrideParent="True" />
+			</group>
+			<group name="reload">
+				<group name="duration">
+					<float name="max" value="0.75" overrideParent="True" />
+					<float name="min" value="0.75" overrideParent="True" />
+				</group>
+			</group>
+			<list name="target_type_table" overrideParent="True">
+				<group name="target_unit_type_multipliers" List.ItemID="1214342554">
+					<enum name="unit_type" value="light_melee_infantry" overrideParent="True" />
+					<group name="weapon_multipliers">
+						<float name="accuracy_multiplier" value="1" />
+						<float name="damage_multiplier" value="1" />
+						<float name="penetration_multiplier" value="1" />
+						<float name="suppression_multiplier" value="1" />
+					</group>
+					<float name="base_damage_modifier" value="5" overrideParent="True" />
+				</group>
+			</list>
+			<template_reference name="siege_option" value="options\none" overrideParent="True">
+			</template_reference>
+		</group>
+		<uniqueid name="pbgid" value="2147483169" />
+		<instance_reference name="parent_pbg" value="weapon\korea\kr_weapon_archer_2" mod="a743d7d1d7534cf78817e29d8ded7366" />
+	</variant>
+</instance>

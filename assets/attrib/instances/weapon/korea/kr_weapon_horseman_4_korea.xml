@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="damage">
+			<float name="max" value="22" overrideParent="True" />
+			<float name="min" value="22" overrideParent="True" />
+		</group>
+		<enum name="weapon_class" value="cdn_1h_spear" overrideParent="True" />
+		<list name="target_type_table" removedIds="-1750500515, 1470002849">
+		</list>
+		<group name="cooldown">
+			<group name="duration">
+				<float name="max" value="0.625" overrideParent="True" />
+				<float name="min" value="0.625" overrideParent="True" />
+			</group>
+		</group>
+		<group name="fire">
+			<float name="wind_down" value="0.25" overrideParent="True" />
+			<float name="wind_up" value="0.25" overrideParent="True" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="2147483167" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_horseman_3" />
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<group name="cooldown">
+				<group name="duration">
+					<float name="max" value="0.5" overrideParent="True" />
+					<float name="min" value="0.5" overrideParent="True" />
+				</group>
+			</group>
+			<group name="damage">
+				<float name="max" value="13" overrideParent="True" />
+				<float name="min" value="13" overrideParent="True" />
+			</group>
+			<group name="fire">
+				<float name="wind_down" value="0.625" overrideParent="True" />
+				<float name="wind_up" value="0.5" overrideParent="True" />
+				<float name="animation_impact_frame_time" value="0.375" overrideParent="True" />
+			</group>
+			<enum name="weapon_class" value="cdn_1h_spear" overrideParent="True" />
+			<list name="target_type_table">
+				<group name="target_unit_type_multipliers" List.ItemID="224018208" List.ParentItemID="224018208">
+					<float name="base_damage_modifier" value="7" overrideParent="True" />
+				</group>
+			</list>
+		</group>
+		<uniqueid name="pbgid" value="2147483167" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_horseman_3" />
+	</variant>
+	<variant name="xp3">
+		<group name="weapon_bag">
+			<group name="damage">
+				<float name="max" value="13" overrideParent="True" />
+				<float name="min" value="13" overrideParent="True" />
+			</group>
+			<enum name="weapon_class" value="cdn_1h_spear" overrideParent="True" />
+			<list name="target_type_table">
+				<group name="target_unit_type_multipliers" List.ItemID="-1750500515" List.ParentItemID="-1750500515">
+					<float name="base_damage_modifier" value="13" overrideParent="True" />
+				</group>
+			</list>
+		</group>
+		<uniqueid name="pbgid" value="2147483167" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_horseman_3" />
+	</variant>
+</instance>

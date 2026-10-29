@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="upgrade">
+	<group name="upgrade_bag">
+		<list name="upgrade_type">
+			<enum name="upgrade_type" value="crusader_cmp_upgrade" overrideParent="True" List.ItemID="1275544614" List.ParentItemID="1275544614" />
+		</list>
+		<group name="ui_info">
+			<bool name="is_unique_to_race" value="True" overrideParent="True" />
+			<locstring name="extra_text" value="12146" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+			<locstring name="help_text" value="12145" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+			<locstring name="screen_name" value="12144" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+			<template_reference name="help_text_formatter" value="" overrideParent="True">
+			</template_reference>
+			<file name="icon_name" value="races\common\abilities\heal" overrideParent="True" />
+		</group>
+		<group name="ui_position">
+			<int name="ui_position_column" value="3" overrideParent="True" />
+		</group>
+		<list name="requirements" removedIds="449983624, 185965253, -988570966">
+			<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="150019972" List.ParentItemID="150019972">
+				<instance_reference name="upgrade_name" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="31904855" List.ParentItemID="31904855">
+				<instance_reference name="upgrade_name" value="upgrade\korea\kr_upgrade_naval_long_guns_cru" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+			</template_reference>
+		</list>
+		<group name="state_tree_references">
+			<template_reference name="on_action_entity_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" overrideParent="True" />
+			</template_reference>
+		</group>
+		<group name="filter_conditions">
+			<list name="apply_to_unit_classes" removedIds="-770105115, 1358033044">
+			</list>
+		</group>
+		<list name="float_properties" removedIds="-2082099955">
+		</list>
+		<instance_reference name="ui_menu" value="" overrideParent="True" />
+	</group>
+	<uniqueid name="pbgid" value="2147483131" />
+	<instance_reference name="parent_pbg" value="upgrade\races\french\research\naval\upgrade_naval_long_guns_fre" />
+	<variant name="xp3">
+		<group name="upgrade_bag">
+			<list name="upgrade_type">
+				<enum name="upgrade_type" value="crusader_cmp_upgrade" overrideParent="True" List.ItemID="1275544614" List.ParentItemID="1275544614" />
+			</list>
+		</group>
+		<uniqueid name="pbgid" value="2147483131" />
+		<instance_reference name="parent_pbg" value="upgrade\races\french\research\naval\upgrade_naval_long_guns_fre" />
+	</variant>
+</instance>

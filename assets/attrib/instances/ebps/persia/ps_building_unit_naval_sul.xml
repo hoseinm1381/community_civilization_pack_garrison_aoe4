@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
 <instance version="6" description="" template="ebps">
 	<list name="extensions" overrideParent="True">
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1218543450" List.ParentItemID="-1218543450">
@@ -72,6 +71,12 @@
 			<state_tree_node name="on_reach_invulnerable_min_cap_entity_state_tree_ref" value="" />
 			<state_tree_node name="on_reach_max_health_entity_state_tree_ref" value="" />
 			<bool name="can_be_damaged_by_ally" value="False" />
+			<enum_table name="percentage_reduction_armor_by_damage_type">
+				<float name="True Damage" value="0" />
+				<float name="Melee" value="0" />
+				<float name="Ranged" value="0" />
+				<float name="Fire" value="0" />
+			</enum_table>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="1705520148" List.ParentItemID="1705520148">
 			<instance_reference name="hit_material" value="hit_material\wood" />
@@ -280,6 +285,7 @@
 			<list name="ignorable_entity_types">
 			</list>
 			<float name="aqueduct_cistern_proximity_test_square_scale" value="0" />
+			<bool name="destroy_stamps" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="27633050" List.ParentItemID="27633050">
 			<group name="time_cost">
@@ -477,12 +483,13 @@
 			<locstring name="help_text_controller" value="0" />
 			<locstring name="extra_text_controller" value="0" />
 			<bool name="static_selection_bounds" value="False" />
+			<enum name="targeting_and_bandbox_selection_priority_controller" value="" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="1985550230" List.ParentItemID="1985550230">
 			<list name="spawn_items" overrideParent="True">
 				<group name="spawn_item" comment="fireship" List.ItemID="1748218776">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_fireship_3_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_fireship_3_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="2" overrideParent="True" />
@@ -540,10 +547,13 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
 				<group name="spawn_item" comment="fishing boat" List.ItemID="-1375346792">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_fishing_boat_2_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_fishing_boat_2_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="1" overrideParent="True" />
@@ -604,10 +614,13 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
 				<group name="spawn_item" comment="transport ship" List.ItemID="-1163205377">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_transport_ship_2_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_transport_ship_2_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="1" overrideParent="True" />
@@ -668,10 +681,13 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
 				<group name="spawn_item" comment="baghlah" List.ItemID="2013788321">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_combat_ship_2_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_combat_ship_2_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="2" overrideParent="True" />
@@ -729,10 +745,13 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
-				<group name="spawn_item" comment="xebec&#13;&#10;" List.ItemID="1461597505">
+				<group name="spawn_item" comment="xebec&#xD;&#xA;" List.ItemID="1461597505">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_combat_warship_4_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_combat_warship_4_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="3" overrideParent="True" />
@@ -790,10 +809,13 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
 				<group name="spawn_item" comment="trade ship" List.ItemID="-1061505346">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_trade_ship_3_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_trade_ship_3_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="1" overrideParent="True" />
@@ -851,10 +873,13 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
 				<group name="spawn_item" comment="dhow" List.ItemID="-1271282146">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_dhow_2_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_dhow_2_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="2" overrideParent="True" />
@@ -912,6 +937,9 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
 				<group name="spawn_item" comment="fireship" List.ItemID="909053755">
 					<instance_reference name="entity" value="" />
@@ -973,6 +1001,9 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
 				<group name="spawn_item" comment="baghlah" List.ItemID="-1069160961">
 					<instance_reference name="entity" value="" />
@@ -1034,8 +1065,11 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
-				<group name="spawn_item" comment="xebec&#13;&#10;" List.ItemID="229380792">
+				<group name="spawn_item" comment="xebec&#xD;&#xA;" List.ItemID="229380792">
 					<instance_reference name="entity" value="" />
 					<instance_reference name="squad" value="sbps\persia\ps_unit_naval_combat_warship_4_sul_upgraded" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
@@ -1095,6 +1129,9 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
 				<group name="spawn_item" comment="dhow" List.ItemID="363322393">
 					<instance_reference name="entity" value="" />
@@ -1156,6 +1193,9 @@
 					</template_reference>
 					<string name="ui_tooltip_data_template" value="" />
 					<file name="ui_icon_name" value="" />
+					<state_tree_node name="cost_openingbranch" value="" />
+					<enum name="available_production_count_statemodel" value="" />
+					<bool name="available_production_count_is_shared" value="False" />
 				</group>
 			</list>
 			<bool name="must_be_in_supply" value="False" />
@@ -1183,6 +1223,8 @@
 			<bool name="default_rally_points_allowed" value="True" />
 			<bool name="economic_rally_points_allowed" value="True" />
 			<bool name="always_use_economic_rally_points" value="False" />
+			<bool name="use_alternative_rally_point_system" value="False" />
+			<bool name="trade_only_economical_rally" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\upgrade_ext" overrideParent="True" List.ItemID="1749087632" List.ParentItemID="1749087632">
 			<list name="standard_upgrades" overrideParent="True">
@@ -1541,6 +1583,7 @@
 			<bool name="is_indoors" value="True" />
 			<bool name="right_click_garrison_always_enabled" value="False" />
 			<bool name="exclude_allied_units" value="False" />
+			<bool name="on_loaded_squad_action_tree_reapply_on_bp_conversion" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\modifier_apply_ext" List.ItemID="458573636">
 			<list name="modifiers">
@@ -1550,8 +1593,6 @@
 			<list name="tier_group_list" overrideParent="True">
 				<list name="tier_group" overrideParent="True" List.ItemID="-1575346133">
 					<group name="tier" List.ItemID="-254954308">
-						<list name="tier_requirements">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\buildings\unit_naval_ott\tier2_unit_naval_control_ott" overrideParent="True" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -1568,10 +1609,9 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 					<group name="tier" overrideParent="True" List.ItemID="1178622244">
-						<list name="tier_requirements">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\buildings\unit_naval_ott\tier3_unit_naval_control_ott" overrideParent="True" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -1588,10 +1628,9 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 					<group name="tier" List.ItemID="652823780">
-						<list name="tier_requirements">
-						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\buildings\unit_naval_ott\tier4_unit_naval_control_ott" overrideParent="True" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -1608,6 +1647,7 @@
 							<bool name="enable_all_extensions" value="True" />
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 					</group>
 				</list>
 			</list>
@@ -1688,6 +1728,12 @@
 				<state_tree_node name="on_reach_invulnerable_min_cap_entity_state_tree_ref" value="" />
 				<state_tree_node name="on_reach_max_health_entity_state_tree_ref" value="" />
 				<bool name="can_be_damaged_by_ally" value="False" />
+				<enum_table name="percentage_reduction_armor_by_damage_type">
+					<float name="True Damage" value="0" />
+					<float name="Melee" value="0" />
+					<float name="Ranged" value="0" />
+					<float name="Fire" value="0" />
+				</enum_table>
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="1705520148" List.ParentItemID="1705520148">
 				<instance_reference name="hit_material" value="hit_material\wood" />
@@ -1896,6 +1942,7 @@
 				<list name="ignorable_entity_types">
 				</list>
 				<float name="aqueduct_cistern_proximity_test_square_scale" value="0" />
+				<bool name="destroy_stamps" value="True" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="27633050" List.ParentItemID="27633050">
 				<group name="time_cost">
@@ -2093,12 +2140,13 @@
 				<locstring name="help_text_controller" value="0" />
 				<locstring name="extra_text_controller" value="0" />
 				<bool name="static_selection_bounds" value="False" />
+				<enum name="targeting_and_bandbox_selection_priority_controller" value="" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="1985550230" List.ParentItemID="1985550230">
 				<list name="spawn_items" overrideParent="True">
 					<group name="spawn_item" comment="fireship" List.ItemID="132407323">
 						<instance_reference name="entity" value="" />
-						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_fireship_3_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_fireship_3_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
 						<group name="ui_position">
 							<int name="ui_position_row" value="2" overrideParent="True" />
@@ -2156,10 +2204,13 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 					<group name="spawn_item" comment="fishing boat" List.ItemID="-1836357650">
 						<instance_reference name="entity" value="" />
-						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_fishing_boat_2_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_fishing_boat_2_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
 						<group name="ui_position">
 							<int name="ui_position_row" value="1" overrideParent="True" />
@@ -2220,10 +2271,13 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 					<group name="spawn_item" comment="transport ship" List.ItemID="1237122679">
 						<instance_reference name="entity" value="" />
-						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_transport_ship_2_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_transport_ship_2_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
 						<group name="ui_position">
 							<int name="ui_position_row" value="1" overrideParent="True" />
@@ -2284,10 +2338,13 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 					<group name="spawn_item" comment="baghlah" List.ItemID="533391665">
 						<instance_reference name="entity" value="" />
-						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_combat_ship_2_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_combat_ship_2_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
 						<group name="ui_position">
 							<int name="ui_position_row" value="2" overrideParent="True" />
@@ -2345,10 +2402,13 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
-					<group name="spawn_item" comment="xebec&#13;&#10;" List.ItemID="1697832863">
+					<group name="spawn_item" comment="xebec&#xD;&#xA;" List.ItemID="1697832863">
 						<instance_reference name="entity" value="" />
-						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_combat_warship_4_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_combat_warship_4_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
 						<group name="ui_position">
 							<int name="ui_position_row" value="3" overrideParent="True" />
@@ -2406,10 +2466,13 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 					<group name="spawn_item" comment="trade ship" List.ItemID="-94260486">
 						<instance_reference name="entity" value="" />
-						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_trade_ship_3_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_trade_ship_3_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
 						<group name="ui_position">
 							<int name="ui_position_row" value="1" overrideParent="True" />
@@ -2467,10 +2530,13 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 					<group name="spawn_item" comment="dhow" List.ItemID="-1503235125">
 						<instance_reference name="entity" value="" />
-						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_dhow_2_sul" overrideParent="True" mod="a743d7d1d7534cf78817e29d8ded7366" />
+						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_dhow_2_sul" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
 						<group name="ui_position">
 							<int name="ui_position_row" value="2" overrideParent="True" />
@@ -2528,6 +2594,9 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 					<group name="spawn_item" comment="fireship" List.ItemID="-584083728">
 						<instance_reference name="entity" value="" />
@@ -2589,6 +2658,9 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 					<group name="spawn_item" comment="baghlah" List.ItemID="1547064666">
 						<instance_reference name="entity" value="" />
@@ -2650,8 +2722,11 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
-					<group name="spawn_item" comment="xebec&#13;&#10;" List.ItemID="-2100600302">
+					<group name="spawn_item" comment="xebec&#xD;&#xA;" List.ItemID="-2100600302">
 						<instance_reference name="entity" value="" />
 						<instance_reference name="squad" value="sbps\persia\ps_unit_naval_combat_warship_4_sul_upgraded" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
 						<bool name="spawn_at_map_entry_point" value="False" />
@@ -2711,6 +2786,9 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 					<group name="spawn_item" comment="dhow" List.ItemID="-1128147984">
 						<instance_reference name="entity" value="" />
@@ -2772,6 +2850,9 @@
 						</template_reference>
 						<string name="ui_tooltip_data_template" value="" />
 						<file name="ui_icon_name" value="" />
+						<state_tree_node name="cost_openingbranch" value="" />
+						<enum name="available_production_count_statemodel" value="" />
+						<bool name="available_production_count_is_shared" value="False" />
 					</group>
 				</list>
 				<bool name="must_be_in_supply" value="False" />
@@ -2799,6 +2880,8 @@
 				<bool name="default_rally_points_allowed" value="True" />
 				<bool name="economic_rally_points_allowed" value="True" />
 				<bool name="always_use_economic_rally_points" value="False" />
+				<bool name="use_alternative_rally_point_system" value="False" />
+				<bool name="trade_only_economical_rally" value="False" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\upgrade_ext" overrideParent="True" List.ItemID="1749087632" List.ParentItemID="1749087632">
 				<list name="standard_upgrades" overrideParent="True">
@@ -3157,6 +3240,7 @@
 				<bool name="is_indoors" value="True" />
 				<bool name="right_click_garrison_always_enabled" value="False" />
 				<bool name="exclude_allied_units" value="False" />
+				<bool name="on_loaded_squad_action_tree_reapply_on_bp_conversion" value="False" />
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\modifier_apply_ext" List.ItemID="2143288309">
 				<list name="modifiers">
@@ -3166,8 +3250,6 @@
 				<list name="tier_group_list" overrideParent="True">
 					<list name="tier_group" overrideParent="True" List.ItemID="-1575346133">
 						<group name="tier" List.ItemID="-254954308">
-							<list name="tier_requirements">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\buildings\unit_naval_ott\tier2_unit_naval_control_ott" overrideParent="True" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -3184,10 +3266,9 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 						<group name="tier" overrideParent="True" List.ItemID="1178622244">
-							<list name="tier_requirements">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\buildings\unit_naval_ott\tier3_unit_naval_control_ott" overrideParent="True" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -3204,10 +3285,9 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 						<group name="tier" List.ItemID="652823780">
-							<list name="tier_requirements">
-							</list>
 							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\buildings\unit_naval_ott\tier4_unit_naval_control_ott" overrideParent="True" />
 							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 								<state_tree_node name="ActionTree_OpeningBranch" value="" />
@@ -3224,6 +3304,7 @@
 								<bool name="enable_all_extensions" value="True" />
 							</template_reference>
 							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+							<enum name="statetree_tier_requirements_pbg_owner" value="player" />
 						</group>
 					</list>
 				</list>

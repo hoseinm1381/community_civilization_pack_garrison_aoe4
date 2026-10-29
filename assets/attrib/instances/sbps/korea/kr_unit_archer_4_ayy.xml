@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_ui_ext" List.ItemID="71247335" List.ParentItemID="71247335">
+			<list name="race_list">
+				<group name="race_data" List.ItemID="1131010880" List.ParentItemID="1131010880">
+					<group name="info">
+						<locstring name="screen_name" value="12059" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+						<locstring name="help_text" value="12072" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+						<file name="icon_name" value="korea\hwarangicon4" overrideParent="True" />
+						<string name="selection_group" value="Hwarang" overrideParent="True" />
+						<locstring name="extra_text" value="12310" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+						<file name="flag_icon_override" value="korea\koreans_2" overrideParent="True" />
+					</group>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-1479400647" List.ParentItemID="-1479400647">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="-1620025801" List.ParentItemID="-1620025801">
+					<instance_reference name="type" value="ebps\korea\kr_unit_archer_4_ayy" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext" List.ItemID="1598045404" List.ParentItemID="1598045404">
+			<list name="requirement_table">
+				<template_reference name="required" value="requirements\required_player_upgrade" overrideParent="True" List.ItemID="1703562510" List.ParentItemID="1703562510">
+					<enum name="reason" value="usage_and_display" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" overrideParent="True" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\dev\ages\imperial_age" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext" List.ItemID="-2098523511" List.ParentItemID="-2098523511">
+			<list name="abilities">
+				<instance_reference name="ability" value="abilities\korea\kr_convert_archer_to_horseman" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" List.ItemID="-1348418400" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\korea\kr_hwarang_study_korea" mod="a743d7d1d7534cf78817e29d8ded7366" List.ItemID="-1510415118" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="-1816252207" List.ParentItemID="-1816252207">
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\chinese_ha_01" overrideParent="True" List.ItemID="-1513508264" />
+			</list>
+			<list name="squad_type_list">
+				<enum name="squad_type" value="audio_wynguard_army" List.ItemID="95036816" List.ListAction="Append" />
+				<enum name="squad_type" value="official" List.ItemID="-611100235" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_speech_ext" List.ItemID="984874715" List.ParentItemID="984874715">
+			<group name="squad_speech_parameters" overrideParent="True">
+				<enum name="squad_race_code" value="mongols" overrideParent="True" />
+				<string name="squad_class_code" value="military" />
+				<string name="squad_name_code" value="manatarms" />
+				<string name="squad_unit_code" value="non_mounted" />
+			</group>
+			<list name="age_mapping">
+				<int name="age_number" value="3" overrideParent="True" List.ItemID="1452689488" List.ParentItemID="1452689488" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_engineer_ext" List.ItemID="591179255" List.ParentItemID="591179255">
+			<list name="construction_groups" overrideParent="True">
+				<group name="construction_group" List.ItemID="-373616448" List.ParentItemID="-373616448">
+					<list name="construction_items">
+						<group name="construction_item" List.ItemID="1250814574" List.ParentItemID="1250814574">
+							<instance_reference name="ebp" value="ebps\races\chinese\units\unit_ram_3_chi" overrideParent="True" />
+							<template_reference name="ui_info_extended" value="tables\ui_info_ext" overrideParent="True">
+								<template_reference name="command_card_info" value="ui_command_card_info">
+									<group name="ui_position">
+										<int name="ui_position_row" value="1" />
+										<int name="ui_position_column" value="1" />
+									</group>
+									<int name="command_card_priority" value="1" />
+								</template_reference>
+								<template_reference name="quick_abilities_info" value="ui_quick_abilities_info">
+									<enum name="dpad_position" value="dpad_up" />
+									<int name="quick_abilities_page_num" value="1" />
+									<int name="quick_abilities_priority" value="4" />
+								</template_reference>
+								<template_reference name="quick_commands_info" value="">
+								</template_reference>
+								<template_reference name="quick_formation_info" value="">
+								</template_reference>
+								<template_reference name="ping_menu_info" value="">
+								</template_reference>
+								<enum name="category" value="Military" />
+								<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+									<enum name="quick_commands_hotkey" value="" />
+									<int name="quick_commands_priority" value="-1" />
+									<int name="quick_commands_slot_index" value="-1" />
+									<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+								</template_reference>
+								<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info">
+									<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\field_upgrades" />
+									<int name="nominal_index" value="12" />
+									<int name="priority" value="0" />
+									<instance_reference name="linked" value="" />
+								</template_reference>
+								<enum name="observer_type" value="Disabled" />
+								<group name="issuable_info">
+									<bool name="is_secondary" value="False" />
+									<instance_reference name="secondary_issuable" value="" />
+								</group>
+							</template_reference>
+							<group name="ui_position">
+								<int name="ui_position_row" value="1" />
+								<int name="ui_position_column" value="1" />
+							</group>
+							<list name="associated_ebps">
+							</list>
+							<list name="alternate_ebps">
+							</list>
+							<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\abilities\ability_build_battering_ram" />
+							<list name="additional_requirements">
+							</list>
+							<state_tree_node name="additional_requirement_statetree" value="" />
+							<bool name="do_requirement_check_for_construction_on_existing_item" value="False" />
+						</group>
+						<group name="construction_item" List.ItemID="326558624" List.ParentItemID="326558624">
+							<instance_reference name="ebp" value="ebps\races\chinese\units\unit_siege_tower_3_chi" overrideParent="True" />
+							<template_reference name="ui_info_extended" value="tables\ui_info_ext" overrideParent="True">
+								<template_reference name="command_card_info" value="ui_command_card_info">
+									<group name="ui_position">
+										<int name="ui_position_row" value="1" />
+										<int name="ui_position_column" value="2" />
+									</group>
+									<int name="command_card_priority" value="1" />
+								</template_reference>
+								<template_reference name="quick_abilities_info" value="ui_quick_abilities_info">
+									<enum name="dpad_position" value="dpad_right" />
+									<int name="quick_abilities_page_num" value="1" />
+									<int name="quick_abilities_priority" value="4" />
+								</template_reference>
+								<template_reference name="quick_commands_info" value="">
+								</template_reference>
+								<template_reference name="quick_formation_info" value="">
+								</template_reference>
+								<template_reference name="ping_menu_info" value="">
+								</template_reference>
+								<enum name="category" value="Military" />
+								<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+									<enum name="quick_commands_hotkey" value="" />
+									<int name="quick_commands_priority" value="-1" />
+									<int name="quick_commands_slot_index" value="-1" />
+									<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
+								</template_reference>
+								<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info">
+									<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\field_upgrades" />
+									<int name="nominal_index" value="4" />
+									<int name="priority" value="0" />
+									<instance_reference name="linked" value="" />
+								</template_reference>
+								<enum name="observer_type" value="Disabled" />
+								<group name="issuable_info">
+									<bool name="is_secondary" value="False" />
+									<instance_reference name="secondary_issuable" value="" />
+								</group>
+							</template_reference>
+							<group name="ui_position">
+								<int name="ui_position_row" value="1" />
+								<int name="ui_position_column" value="2" />
+							</group>
+							<list name="associated_ebps">
+							</list>
+							<list name="alternate_ebps">
+							</list>
+							<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\abilities\ability_build_siege_tower" />
+							<list name="additional_requirements">
+							</list>
+							<state_tree_node name="additional_requirement_statetree" value="" />
+							<bool name="do_requirement_check_for_construction_on_existing_item" value="False" />
+						</group>
+					</list>
+					<instance_reference name="construction_menu" value="menu\siege_engineer" />
+					<enum name="construction_type" value="tp_construction_base" />
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2147483058" />
+	<instance_reference name="parent_pbg" value="sbps\races\abbasid\unit_archer_4_abb" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-1479400647" List.ParentItemID="-1479400647">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="-1620025801" List.ParentItemID="-1620025801">
+						<instance_reference name="type" value="ebps\korea\kr_unit_archer_4_ayy" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="-1816252207" List.ParentItemID="-1816252207">
+				<list name="squad_race_type_list" overrideParent="True">
+					<instance_reference name="squad_race_type" value="racebps\campaign_xp3\ayyubid_cmp" overrideParent="True" List.ItemID="-1917424419" />
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_engineer_ext" List.ItemID="591179255" List.ParentItemID="591179255">
+				<list name="construction_groups">
+					<group name="construction_group" List.ItemID="-1589856796" List.ParentItemID="-1589856796">
+						<list name="construction_items">
+							<group name="construction_item" List.ItemID="-973956091" List.ParentItemID="-973956091">
+								<instance_reference name="ebp" value="ebps\races\ayyubid_cmp\units\unit_ram_ayy" overrideParent="True" />
+							</group>
+							<group name="construction_item" List.ItemID="45952148" List.ParentItemID="45952148">
+								<instance_reference name="ebp" value="ebps\races\ayyubid_cmp\units\unit_siege_tower_ayy" overrideParent="True" />
+							</group>
+							<group name="construction_item" List.ItemID="-835428229" List.ParentItemID="-835428229">
+								<instance_reference name="ebp" value="ebps\races\ayyubid_cmp\units\unit_springald_buildable_ayy" overrideParent="True" />
+								<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+									<template_reference name="command_card_info" value="ui_command_card_info">
+										<group name="ui_position">
+											<int name="ui_position_row" value="1" overrideParent="True" />
+											<int name="ui_position_column" value="3" overrideParent="True" />
+										</group>
+									</template_reference>
+								</template_reference>
+							</group>
+							<group name="construction_item" List.ItemID="-1335352396" List.ParentItemID="-1335352396">
+								<instance_reference name="ebp" value="ebps\races\ayyubid_cmp\units\unit_mangonel_buildable_ayy" overrideParent="True" />
+								<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+									<template_reference name="command_card_info" value="ui_command_card_info">
+										<group name="ui_position">
+											<int name="ui_position_row" value="1" overrideParent="True" />
+											<int name="ui_position_column" value="4" overrideParent="True" />
+										</group>
+									</template_reference>
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2147483058" />
+		<instance_reference name="parent_pbg" value="sbps\races\abbasid\unit_archer_4_abb" />
+	</variant>
+</instance>

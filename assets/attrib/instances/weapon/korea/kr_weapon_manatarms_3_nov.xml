@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<instance version="6" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="damage">
+			<float name="max" value="13" overrideParent="True" />
+			<float name="min" value="13" overrideParent="True" />
+		</group>
+		<group name="fire">
+			<float name="wind_down" value="0.75" overrideParent="True" />
+			<float name="wind_up" value="0.5" overrideParent="True" />
+		</group>
+		<locstring name="ui_name" value="12305" mod="a743d7d1d7534cf78817e29d8ded7366" overrideParent="True" />
+	</group>
+	<uniqueid name="pbgid" value="2147483145" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_manatarms_2" />
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<group name="damage">
+				<float name="max" value="8" overrideParent="True" />
+				<float name="min" value="8" overrideParent="True" />
+			</group>
+		</group>
+		<uniqueid name="pbgid" value="2147483145" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\melee\weapon_manatarms_2" />
+	</variant>
+</instance>
