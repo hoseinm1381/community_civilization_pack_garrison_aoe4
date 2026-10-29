@@ -1,0 +1,427 @@
+{
+  "schema": "ccp-normal-distribution/v2",
+  "date": "2026-10-29",
+  "edition": "Normal",
+  "project_guid": "a743d7d1-d753-4cf7-8817-e29d8ded7366",
+  "source_branch": "normal",
+  "source_commit": "b9c504e9016d7bd355dbb0799d4e9bb827acd6ec",
+  "distribution_branch": "normal-release",
+  "source_snapshot_files": 1226,
+  "native_compile_performed_for_distribution": true,
+  "native_compile_and_package_verification": {
+    "archive_sha256": "ab65ea16818adaf0ef5a4844449bd57d67afe056716fee914ac239bc7ba0b05c",
+    "archive_bytes": 12839445,
+    "archive_namespace": "a743d7d1d7534cf78817e29d8ded7366",
+    "archive_members": 1035,
+    "verified_members": 1035,
+    "compiled_local_instances": 910,
+    "matching_scar_files": 44,
+    "construction_readback": [
+      {
+        "member": "attrib/ebps/korea/kr_building_defense_keep_chi_ha_01.rgd",
+        "seconds": 180.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_defense_outpost_chi_ha_01.rgd",
+        "seconds": 60.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_defense_palisade_chi_ha_01.rgd",
+        "seconds": 8.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_defense_palisade_gate_chi_ha_01.rgd",
+        "seconds": 10.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_defense_tower_chi_ha_01.rgd",
+        "seconds": 90.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_defense_wall_chi_ha_01.rgd",
+        "seconds": 16.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_defense_wall_gate_chi_ha_01.rgd",
+        "seconds": 30.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_econ_food_control_chi_ha_01.rgd",
+        "seconds": 20.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_econ_mining_camp_control_chi_ha_01.rgd",
+        "seconds": 20.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_econ_wood_control_chi_ha_01.rgd",
+        "seconds": 20.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_house_control_chi_ha_01.rgd",
+        "seconds": 15.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_landmark_age1_prefecture_chi_ha_01.rgd",
+        "seconds": 190.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_landmark_age2_shaolin_temple_control_chi_ha_01.rgd",
+        "seconds": 220.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_landmark_age2_white_deer_grotto_control_chi_ha_01.rgd",
+        "seconds": 220.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_landmark_age3_library_chi_ha_01.rgd",
+        "seconds": 250.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_landmark_age3_temple_of_the_sun_control_chi_ha_01.rgd",
+        "seconds": 250.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_resource_farm_chi_ha_01.rgd",
+        "seconds": 6.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_tech_unit_infantry_control_chi_ha_01.rgd",
+        "seconds": 25.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_tech_university_control_chi_ha_01.rgd",
+        "seconds": 60.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_town_center_capital_chi_ha_01.rgd",
+        "seconds": 150.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_town_center_chi_ha_01.rgd",
+        "seconds": 150.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_unit_cavalry_control_chi_ha_01.rgd",
+        "seconds": 30.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_unit_infantry_control_chi_ha_01.rgd",
+        "seconds": 30.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_unit_naval_chi_ha_01.rgd",
+        "seconds": 30.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_unit_ranged_control_chi_ha_01.rgd",
+        "seconds": 30.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_unit_religious_control_chi_ha_01.rgd",
+        "seconds": 25.0,
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "member": "attrib/ebps/korea/kr_building_unit_siege_control_chi_ha_01.rgd",
+        "seconds": 45.0,
+        "variants": [
+          "default"
+        ]
+      }
+    ],
+    "stock_action_cap": 2,
+    "literature_cap": 100000,
+    "korean_exclusive_member_count": 423,
+    "korean_exclusive_stored_bytes": 5414754,
+    "korean_exclusive_decoded_bytes": 12872473,
+    "playable_zip": "Community_Civilization_Pack_Normal-local.zip",
+    "playable_zip_bytes": 12585477,
+    "playable_zip_sha256": "1953dc6831e609f1f126e5b657465d731a826377aefb5ffe391be346fbb154eb",
+    "scripts": [
+      {
+        "member": "scar/ccp/loading.scar",
+        "sha256": "101124130d7da1697fc9c07f7d03bdee9d1d28c9243d6371f5add405f83adb6b"
+      },
+      {
+        "member": "scar/korea/blueprints.scar",
+        "sha256": "209f390a4cfd30bbf8db0bb3cf09163c42e382a01c5d231eb4a374267fa012d7"
+      },
+      {
+        "member": "scar/korea/catalog.scar",
+        "sha256": "6e9d70cc57847bd63bda1de3f4d083f0c76df4f5bf1210137744cdb30257709e"
+      },
+      {
+        "member": "scar/korea/core.scar",
+        "sha256": "2bd0b4e811b5eb6a2893c88992e8c2381a82400a449c2ce068376c982a3fea94"
+      },
+      {
+        "member": "scar/korea/economy.scar",
+        "sha256": "41064eb55893395b16dc4675ca51b35708c1976ea1bc44305327b40780ea5219"
+      },
+      {
+        "member": "scar/korea/effect_catalog.scar",
+        "sha256": "94acec3b66dd72d1d191bbb1a799caba9c2f51b13b6ab02d5311956023e3c86b"
+      },
+      {
+        "member": "scar/korea/effects.scar",
+        "sha256": "80122a92a9df583b0ed85858a87410b39bce70b09546e3cca6137fc15f278e92"
+      },
+      {
+        "member": "scar/korea/initialization.scar",
+        "sha256": "95592d8ce9776171e57a18021dd42480d713271199cb05d5adc131dd6e376484"
+      },
+      {
+        "member": "scar/korea/landmarks.scar",
+        "sha256": "8896a7bc0e2f2e113fd9c41c70881ec432ccbf0355dfceb2c56d5171d3f3e747"
+      },
+      {
+        "member": "scar/korea/lifecycle.scar",
+        "sha256": "ebb5396aa2135096b92f3eb5a7c99f5ef52c183ddec840786e2bf45b05978e30"
+      },
+      {
+        "member": "scar/korea/research.scar",
+        "sha256": "e3f30c402c126445716437706b30bb1b2904f4e87c36e053e96747e2bcae0a4b"
+      },
+      {
+        "member": "scar/korea/research_core.scar",
+        "sha256": "3572104568937e9e4bf1c8414f4993623bed6eb06b276132281f053e20ab127b"
+      },
+      {
+        "member": "scar/korea/ui.scar",
+        "sha256": "3d08c48ecf82d6946393703a26b4f916a49100ebedbf628376ed3cd8f6684029"
+      },
+      {
+        "member": "scar/persia/blueprints.scar",
+        "sha256": "b3c7918fd01a68e317f012dcf2ba1c379b8afce10e3c4476ecbeb46163659741"
+      },
+      {
+        "member": "scar/persia/initialization.scar",
+        "sha256": "c3a00c58fcb5da338a40cf1c084b160b09ab49b3f1a26c17006a33a144ed320c"
+      },
+      {
+        "member": "scar/persia/lifecycle.scar",
+        "sha256": "f6d007bcd4b337112e0dad5d676fca0c080391b5379767f3c536d73c109e6222"
+      },
+      {
+        "member": "scar/vietnam/blueprints.scar",
+        "sha256": "ab43abd60a26feda169f9793caecf9248d3b4184162db9ede8da253e18d02362"
+      },
+      {
+        "member": "scar/vietnam/buffalo.scar",
+        "sha256": "87b3f3f6b5bc2b6b91eaafded822161d375e0892e81f35a0261aa1ed63fa04ed"
+      },
+      {
+        "member": "scar/vietnam/dynasty.scar",
+        "sha256": "97c4e9ec26880b3189cbe0f059662d23f6525bd8071687981cefa640d70aecf9"
+      },
+      {
+        "member": "scar/vietnam/empty_gardens.scar",
+        "sha256": "4e76403b7f7dfa4b2e8d42e4595b5c522f5ec1fbbeb1e7910be99a78ea12b8c1"
+      },
+      {
+        "member": "scar/vietnam/flooded_citadel.scar",
+        "sha256": "e18e94c21866e5a53f6bda791e22610f3f02e8b62955814269e603d60125e699"
+      },
+      {
+        "member": "scar/vietnam/foundries_discount.scar",
+        "sha256": "1f2240134fdfc148ce206e8cbe3e16a8ca3af1d88b4d09b604310075715747a6"
+      },
+      {
+        "member": "scar/vietnam/garden.scar",
+        "sha256": "09d95295efded1245551387fbb5365e3be2c2b0d28ac2f2956fb7d10cd2bdb38"
+      },
+      {
+        "member": "scar/vietnam/hideouts.scar",
+        "sha256": "c29492d3b65f13ef60cfc672cbbcb51247bdcc0333919fb3c94e42d7328249ad"
+      },
+      {
+        "member": "scar/vietnam/initialization.scar",
+        "sha256": "bdf8419d37a0d6899b2cf1786ae6da77a10e9a72c0d2414549e55c4f9f051f8d"
+      },
+      {
+        "member": "scar/vietnam/landmarks.scar",
+        "sha256": "2a8383219a48e5a97a2b7d1cb0e5f00bc5a0d5625e054c4da05ac32f02210494"
+      },
+      {
+        "member": "scar/vietnam/lifecycle.scar",
+        "sha256": "1b967194ee4cdc603bd3436f2d22d253b606e976ea9a1c69d00f78a0e14039c8"
+      },
+      {
+        "member": "scar/vietnam/paddy_construction.scar",
+        "sha256": "2aace8b1697de3d39b26180e32f6513b2827f90b533f096349ac0fa951c4c2f8"
+      },
+      {
+        "member": "scar/vietnam/paddy_food.scar",
+        "sha256": "339ed76e7db6a269a9ee8bb8dd42a16ba386deecef50953bd8befe3fe28a9e3a"
+      },
+      {
+        "member": "scar/vietnam/paddy_wood.scar",
+        "sha256": "097e6c8dcd0366815bb7d400b829b184529b70db76c95db9d7d41fc5374745ef"
+      },
+      {
+        "member": "scar/vietnam/pagoda_buffalo.scar",
+        "sha256": "519609d7dbeb07ab235609b2f9721c535344f67c5775ee9fd7ecf753792a2a75"
+      },
+      {
+        "member": "scar/vietnam/prematch_precache.scar",
+        "sha256": "ff4eba7f5e20b092112ba4c9afb8517cfbe2c4d89090dceadea9acda5c4471bf"
+      },
+      {
+        "member": "scar/vietnam/rattan_armor.scar",
+        "sha256": "247a7c3a2cd8049ab09f124446c6a72311cbe7762c499a81836f99a97a50ff14"
+      },
+      {
+        "member": "scar/vietnam/scorched_earth.scar",
+        "sha256": "e5d424fc710f02b8225066a371f799fd2d97a0c4922a7f9b80240a615591b2ed"
+      },
+      {
+        "member": "scar/vietnam/selection_core.scar",
+        "sha256": "809fb59e60ad14bf00f4fb40bb546261aa4a8137b1d433b091b7f656c78f4486"
+      },
+      {
+        "member": "scar/vietnam/siege_research.scar",
+        "sha256": "fafbc3f679cfcbb89f4fd8b70ae27178cc0d9e9918e10b97a45e0f02d544106b"
+      },
+      {
+        "member": "scar/vietnam/tower_training.scar",
+        "sha256": "577c703166af3930af67f296411df23132f5154f27f9bdf24bba25dc74ea7407"
+      },
+      {
+        "member": "scar/vietnam/traps.scar",
+        "sha256": "53d79b35c2bcc53fc814ff2f70d9abfe553658c59b6c183fcb237403039067fa"
+      },
+      {
+        "member": "scar/vietnam/tunnel_ability_squads.scar",
+        "sha256": "64e519dcf5d037c105864ac360c9fc92c4840c365b378633aa2f1ee4e70d4da7"
+      },
+      {
+        "member": "scar/vietnam/tunnel_buildings.scar",
+        "sha256": "6445be29896ae08807b53cd9953c615d0f27bf7dc4db23750a1487678651032a"
+      },
+      {
+        "member": "scar/vietnam/tunnel_core.scar",
+        "sha256": "3499e866df86722102d57e8416e1ee3d0eadd6214593c6df66ba0f3f8175c5d6"
+      },
+      {
+        "member": "scar/vietnam/tunnel_target_buildings.scar",
+        "sha256": "ca0750e494d90e0c861f89bff0b98c2883619fee73412a3eeb6e305095af09e9"
+      },
+      {
+        "member": "scar/vietnam/tunnels.scar",
+        "sha256": "5fa44d84651366a20ad12e1f3b82e9a351100eac759b706dd4c7cb1bc62c83f3"
+      },
+      {
+        "member": "scar/winconditions/vietnammode.scar",
+        "sha256": "23f75aedec6caccfb1736787faf44d805b08e1ba9257f1619731b61b6b420428"
+      }
+    ],
+    "native_gameplay_after_latest_repairs": "not tested",
+    "vram_and_frame_time": "not measured",
+    "native_build_completed": "2026-10-29",
+    "native_build_evidence": "Fresh completed SGA copied by native BuildApplet; 1035 stored members verified; all 44 scripts match source; 27 changed cost records decoded and verified",
+    "tests_passed": 81,
+    "preserved_original_persia_files": 104,
+    "preserved_donor_files": 463,
+    "burn_log_sha256": "1a6a5d16083c63eac8a95290c07da740dc4bef59859ac639b20be1b8af4e07cc",
+    "native_log_sha256": "e24a0594d36e77f24d4f2268b1657bb94d6ba6c3ad9439a5d705c30957213422",
+    "baseline_zip_bytes": 7253990,
+    "incremental_zip_bytes": 5331487
+  },
+  "source_tests_passed": 81,
+  "game_installation_modified": false,
+  "current_native_gameplay": "Latest construction and Observatory changes await native retest",
+  "excluded": [
+    "Git database",
+    "local machine configuration",
+    "installed tools",
+    "cache/work/output/history"
+  ],
+  "downloads": {
+    "Community_Civilization_Pack_Normal-local.zip": {
+      "bytes": 12585477,
+      "sha256": "1953dc6831e609f1f126e5b657465d731a826377aefb5ffe391be346fbb154eb"
+    },
+    "Community_Civilization_Pack_Normal-editable-source.zip": {
+      "bytes": 12388552,
+      "sha256": "c3dffd1a1f39d487c7eed591ed831b35bd196da5570c81d78c8f9705c9dade8d"
+    }
+  }
+}
